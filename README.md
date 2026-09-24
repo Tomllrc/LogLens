@@ -60,9 +60,9 @@ _TODO: parsing throughput, memory use on larger-than-RAM files, and template-min
 ## Roadmap
 
 - [x] Project scaffold, CLI entry point, CI
-- [ ] Ingestion (files, folders, archives, stdin, streaming)
-- [ ] Record splitting
-- [ ] Format detection
+- [x] Ingestion (files, folders, archives, stdin, streaming)
+- [x] Record splitting
+- [x] Format detection
 - [ ] Parsers: known formats, generic + Drain, AI-taught plugins
 - [ ] Unified event table (Parquet + DuckDB)
 - [ ] Analysis: clustering, anomalies, incident reports

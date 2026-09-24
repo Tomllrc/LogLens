@@ -1,0 +1,10 @@
+Starting the nightly backup job.
+Connected to the storage server, checking quota, then copying files.
+Copied 1204 files in 3 minutes
+Some files were skipped because retry=3 was reached
+<not really xml> just a note
+Warning: disk nearly full, please clean up soon
+Backup finished; everything looks fine
+Next run scheduled for tomorrow night
+User bob asked for a restore, so we restored it, checked it, and closed the ticket.
+Done.

@@ -53,8 +53,9 @@ LEVEL_START: Final = re.compile(
 )
 BRACKET_START: Final = re.compile(r"^(?:\[[^\]\n]{1,100}\]|<\d{1,3}>)")
 JSON_START: Final = re.compile(r"^\{")
+XML_START: Final = re.compile(r"^<[A-Za-z_?]")
 
-_STRONG_CONTINUATION: Final = re.compile(r"^(?:\s|at\s|Caused by:|Suppressed:|\.\.\.|[}\]])")
+_STRONG_CONTINUATION: Final = re.compile(r"^(?:\s|at\s|Caused by:|Suppressed:|\.\.\.|[}\]]|</)")
 _WEAK_CONTINUATION: Final = re.compile(
     r"^(?:Traceback \(most recent call last\):"
     r"|During handling of the above exception"
@@ -72,7 +73,8 @@ class Signature:
 
 
 def is_strong_continuation(text: str) -> bool:
-    """True for lines that can only continue a record: blank, indented, stack frames, ``}``."""
+    """True for lines that can only continue a record: blank, indented, stack frames, ``}``,
+    XML closing tags (``</Event>``)."""
     return not text or _STRONG_CONTINUATION.match(text) is not None
 
 
@@ -88,11 +90,12 @@ def _regex_signature(name: str, pattern: re.Pattern[str]) -> Signature:
 TIMESTAMP: Final = _regex_signature("timestamp", TIMESTAMP_START)
 LEVEL: Final = _regex_signature("level", LEVEL_START)
 JSON: Final = _regex_signature("json", JSON_START)
+XML: Final = _regex_signature("xml", XML_START)
 BRACKET: Final = _regex_signature("bracket", BRACKET_START)
 UNINDENTED: Final = Signature("unindented", lambda text: not is_strong_continuation(text))
 EVERY_LINE: Final = Signature("every-line", lambda _text: True)
 
-CANDIDATES: Final = (TIMESTAMP, LEVEL, JSON, BRACKET)
+CANDIDATES: Final = (TIMESTAMP, LEVEL, JSON, XML, BRACKET)
 """Candidate signatures, most specific first (earlier wins exact ties)."""
 
 

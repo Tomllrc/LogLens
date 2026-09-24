@@ -101,6 +101,7 @@ def test_bracket_start(text: str, expected: bool) -> None:
         ("... 5 more", True, True),
         ("}", True, True),
         ("]", True, True),
+        ("</Event>", True, True),
         ("", True, True),
         ("Traceback (most recent call last):", False, True),
         ("ValueError: boom", False, True),
@@ -159,6 +160,17 @@ def test_learn_bracket() -> None:
 def test_learn_json() -> None:
     assert _learn("{", '  "a": 1', "}", "{", '  "a": 2', "}") == "json"
     assert _learn('{"a": 1}', '{"a": 2}') == "json"
+
+
+def test_learn_xml() -> None:
+    pretty = ("<Event>", "  <System>", "    <EventID>1</EventID>", "  </System>", "</Event>")
+    assert _learn(*pretty, *pretty) == "xml"
+    assert _learn('<?xml version="1.0"?>', *pretty) == "xml"
+    assert _learn("<a>1</a>", "<a>2</a>") == "xml"
+
+
+def test_learn_syslog_pri_is_not_xml() -> None:
+    assert _learn("<34>Oct 11 22:14:15 host a", "<35>Oct 11 22:14:16 host b") == "bracket"
 
 
 def test_learn_level_first_python_format() -> None:

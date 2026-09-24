@@ -123,6 +123,14 @@ def test_pretty_printed_json() -> None:
     assert report.signatures["app.log"] == "json"
 
 
+def test_pretty_printed_xml_events() -> None:
+    event = ["<Event>", "  <System>", "    <EventID>1</EventID>", "  </System>", "</Event>"]
+    records, report = _split(['<?xml version="1.0"?>', *event, *event])
+    assert _ranges(records) == [(1, 1), (2, 6), (7, 11)]
+    assert records[1].text == "\n".join(event)
+    assert report.signatures["app.log"] == "xml"
+
+
 def test_json_lines() -> None:
     texts = ['{"a": 1}', '{"a": 2}', '{"a": 3}']
     records, _ = _split(texts)

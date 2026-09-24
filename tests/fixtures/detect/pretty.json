@@ -1,0 +1,56 @@
+{
+  "time": "2026-01-01T10:00:00Z",
+  "level": "info",
+  "ctx": {
+    "user": "alice"
+  }
+}
+{
+  "time": "2026-01-01T10:00:01Z",
+  "level": "info",
+  "ctx": {
+    "user": "bob"
+  }
+}
+{
+  "time": "2026-01-01T10:00:02Z",
+  "level": "info",
+  "ctx": {
+    "user": "carol"
+  }
+}
+{
+  "time": "2026-01-01T10:00:03Z",
+  "level": "info",
+  "ctx": {
+    "user": "dave"
+  }
+}
+{
+  "time": "2026-01-01T10:00:04Z",
+  "level": "info",
+  "ctx": {
+    "user": "alice"
+  }
+}
+{
+  "time": "2026-01-01T10:00:05Z",
+  "level": "info",
+  "ctx": {
+    "user": "bob"
+  }
+}
+{
+  "time": "2026-01-01T10:00:06Z",
+  "level": "info",
+  "ctx": {
+    "user": "carol"
+  }
+}
+{
+  "time": "2026-01-01T10:00:07Z",
+  "level": "info",
+  "ctx": {
+    "user": "dave"
+  }
+}

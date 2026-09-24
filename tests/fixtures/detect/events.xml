@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <EventID>4624</EventID>
+    <TimeCreated SystemTime="2026-01-01T10:00:00.000Z"/>
+    <Computer>host01</Computer>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">alice</Data>
+  </EventData>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <EventID>4625</EventID>
+    <TimeCreated SystemTime="2026-01-01T10:00:01.000Z"/>
+    <Computer>host01</Computer>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">bob</Data>
+  </EventData>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <EventID>4624</EventID>
+    <TimeCreated SystemTime="2026-01-01T10:00:02.000Z"/>
+    <Computer>host01</Computer>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">carol</Data>
+  </EventData>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <EventID>4625</EventID>
+    <TimeCreated SystemTime="2026-01-01T10:00:03.000Z"/>
+    <Computer>host01</Computer>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">dave</Data>
+  </EventData>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <EventID>4624</EventID>
+    <TimeCreated SystemTime="2026-01-01T10:00:04.000Z"/>
+    <Computer>host01</Computer>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">alice</Data>
+  </EventData>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <EventID>4625</EventID>
+    <TimeCreated SystemTime="2026-01-01T10:00:05.000Z"/>
+    <Computer>host01</Computer>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">bob</Data>
+  </EventData>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <EventID>4624</EventID>
+    <TimeCreated SystemTime="2026-01-01T10:00:06.000Z"/>
+    <Computer>host01</Computer>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">carol</Data>
+  </EventData>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <EventID>4625</EventID>
+    <TimeCreated SystemTime="2026-01-01T10:00:07.000Z"/>
+    <Computer>host01</Computer>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">dave</Data>
+  </EventData>
+</Event>

@@ -1,0 +1,36 @@
+2026-01-01 10:00:00,000 - app.worker - INFO - task 0 finished
+2026-01-01 10:00:01,001 - app.worker - DEBUG - task 1 finished
+2026-01-01 10:00:02,002 - app.worker - WARNING - task 2 finished
+2026-01-01 10:00:03,003 - app.worker - ERROR - task 3 finished
+Traceback (most recent call last):
+  File "worker.py", line 10, in run
+    process(task)
+ValueError: bad task
+2026-01-01 10:00:04,004 - app.worker - INFO - task 4 finished
+2026-01-01 10:00:05,005 - app.worker - DEBUG - task 5 finished
+2026-01-01 10:00:06,006 - app.worker - WARNING - task 6 finished
+2026-01-01 10:00:07,007 - app.worker - ERROR - task 7 finished
+2026-01-01 10:00:08,008 - app.worker - INFO - task 8 finished
+2026-01-01 10:00:09,009 - app.worker - DEBUG - task 9 finished
+2026-01-01 10:00:10,010 - app.worker - WARNING - task 10 finished
+2026-01-01 10:00:11,011 - app.worker - ERROR - task 11 finished
+Traceback (most recent call last):
+  File "worker.py", line 10, in run
+    process(task)
+ValueError: bad task
+2026-01-01 10:00:12,012 - app.worker - INFO - task 12 finished
+2026-01-01 10:00:13,013 - app.worker - DEBUG - task 13 finished
+2026-01-01 10:00:14,014 - app.worker - WARNING - task 14 finished
+2026-01-01 10:00:15,015 - app.worker - ERROR - task 15 finished
+2026-01-01 10:00:16,016 - app.worker - INFO - task 16 finished
+2026-01-01 10:00:17,017 - app.worker - DEBUG - task 17 finished
+2026-01-01 10:00:18,018 - app.worker - WARNING - task 18 finished
+2026-01-01 10:00:19,019 - app.worker - ERROR - task 19 finished
+Traceback (most recent call last):
+  File "worker.py", line 10, in run
+    process(task)
+ValueError: bad task
+2026-01-01 10:00:20,020 - app.worker - INFO - task 20 finished
+2026-01-01 10:00:21,021 - app.worker - DEBUG - task 21 finished
+2026-01-01 10:00:22,022 - app.worker - WARNING - task 22 finished
+2026-01-01 10:00:23,023 - app.worker - ERROR - task 23 finished
