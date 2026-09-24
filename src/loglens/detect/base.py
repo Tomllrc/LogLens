@@ -1,7 +1,7 @@
 """The detector abstraction and scoring helpers shared by all detectors."""
 
 import re
-from collections.abc import Callable, Sequence
+from collections.abc import Callable, Mapping, Sequence
 from dataclasses import dataclass, field
 
 
@@ -11,10 +11,15 @@ class Detector:
 
     ``score`` receives the texts of a file's sample records and returns a value in
     [0, 1], normally the share of (non-blank) records it can structurally parse.
+    ``describe``, optional, is called on the same sample only when this detector wins,
+    and returns format-specific details for later stages (e.g. a CSV delimiter).
     """
 
     name: str
     score: Callable[[Sequence[str]], float] = field(compare=False)
+    describe: Callable[[Sequence[str]], Mapping[str, str]] | None = field(
+        default=None, compare=False
+    )
 
 
 def non_blank(sample: Sequence[str]) -> list[str]:

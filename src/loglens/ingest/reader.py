@@ -11,7 +11,7 @@ import tempfile
 import zipfile
 import zlib
 from collections.abc import Iterable, Iterator
-from contextlib import ExitStack
+from contextlib import ExitStack, closing
 from dataclasses import dataclass
 from pathlib import Path
 from typing import IO, Final
@@ -260,15 +260,20 @@ def _read_text(
         ctx.warn(source, "encoding not detected; decoded as UTF-8 with replacement characters")
 
     max_chars = ctx.options.max_line_chars
+    line_limit = ctx.options.max_lines_per_file
     last_line = 0
     split_reported = False
+    pieces = iter_text_lines(replay, encoding.name, max_line_chars=max_chars)
     try:
-        for piece in iter_text_lines(replay, encoding.name, max_line_chars=max_chars):
-            if piece.continued and not split_reported:
-                ctx.warn(source, f"lines longer than {max_chars} characters were split")
-                split_reported = True
-            last_line = piece.number
-            yield Line(source, piece.number, piece.text)
+        with closing(pieces):
+            for piece in pieces:
+                if line_limit is not None and piece.number > line_limit:
+                    break
+                if piece.continued and not split_reported:
+                    ctx.warn(source, f"lines longer than {max_chars} characters were split")
+                    split_reported = True
+                last_line = piece.number
+                yield Line(source, piece.number, piece.text)
     except _READ_ERRORS as exc:
         ctx.warn(source, f"read error after line {last_line}, rest of file skipped: {exc}")
     finally:

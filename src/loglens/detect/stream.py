@@ -6,7 +6,7 @@ from itertools import groupby, islice
 from operator import attrgetter
 
 from loglens.detect.formats import detect_format
-from loglens.detect.models import DetectedRecord, Detection, DetectOptions, DetectReport
+from loglens.detect.models import DetectedRecord, DetectionResult, DetectOptions, DetectReport
 from loglens.detect.registry import FREE_TEXT
 from loglens.ingest.models import FileIssue
 from loglens.split.models import Record
@@ -54,7 +54,7 @@ def _detect_file(
         yield DetectedRecord(record, detection.format_name, detection.confidence)
 
 
-def _warn_partial_match(report: DetectReport, source: str, detection: Detection) -> None:
+def _warn_partial_match(report: DetectReport, source: str, detection: DetectionResult) -> None:
     """Warn when a structured format was chosen although some sample records don't fit."""
     if detection.format_name != FREE_TEXT and detection.confidence < 1.0:
         mismatched = 1.0 - detection.confidence

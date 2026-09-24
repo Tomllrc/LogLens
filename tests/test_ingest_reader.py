@@ -441,6 +441,22 @@ def test_report_is_filled_progressively(tmp_path: Path) -> None:
     assert report.files_read == [_src(path)]
 
 
+def test_max_lines_per_file_stops_each_file_early(tmp_path: Path) -> None:
+    first, second = tmp_path / "a.log", tmp_path / "b.log"
+    first.write_text("".join(f"a{i}\n" for i in range(200_000)), encoding="utf-8")  # ~1.5 MB
+    second.write_text("b0\nb1\n", encoding="utf-8")
+    archive = tmp_path / "c.tar"
+    archive.write_bytes(_tar({"x.log": b"x0\nx1\nx2\n", "y.log": b"y0\ny1\ny2\n"}))
+
+    lines, report = _read([first, second, archive], max_lines_per_file=2)
+
+    assert _texts(lines) == ["a0", "a1", "b0", "b1", "x0", "x1", "y0", "y1"]
+    assert report.bytes_read < first.stat().st_size / 10  # the rest of a.log was never read
+    assert report.warnings == []
+
+
 def test_invalid_options_are_rejected() -> None:
     with pytest.raises(ValueError, match="max_line_chars"):
         IngestOptions(max_line_chars=0)
+    with pytest.raises(ValueError, match="max_lines_per_file"):
+        IngestOptions(max_lines_per_file=0)

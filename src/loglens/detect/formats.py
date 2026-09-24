@@ -2,9 +2,10 @@
 
 import math
 from collections.abc import Callable, Mapping, Sequence
+from dataclasses import replace
 
 from loglens.detect.base import Detector
-from loglens.detect.models import Detection
+from loglens.detect.models import DetectionResult
 from loglens.detect.registry import DEFAULT_DETECTORS, DEFAULT_MIN_CONFIDENCE, FREE_TEXT
 from loglens.detect.text import FREE_TEXT_SCORE
 
@@ -42,7 +43,7 @@ def score_candidates(
 
 def choose(
     scores: Mapping[str, float], min_confidence: float = DEFAULT_MIN_CONFIDENCE
-) -> Detection:
+) -> DetectionResult:
     """Pick the best-scoring candidate; on exact ties the one listed first wins.
 
     ``free_text`` wins when no other candidate reaches ``min_confidence`` (or all score 0).
@@ -52,8 +53,8 @@ def choose(
         if name != FREE_TEXT and score > best_score:
             best_name, best_score = name, score
     if best_name == FREE_TEXT or best_score < min_confidence:
-        return Detection(FREE_TEXT, scores.get(FREE_TEXT, FREE_TEXT_SCORE), dict(scores))
-    return Detection(best_name, best_score, dict(scores))
+        return DetectionResult(FREE_TEXT, scores.get(FREE_TEXT, FREE_TEXT_SCORE), dict(scores))
+    return DetectionResult(best_name, best_score, dict(scores))
 
 
 def detect_format(
@@ -62,11 +63,22 @@ def detect_format(
     detectors: Sequence[Detector] = DEFAULT_DETECTORS,
     min_confidence: float = DEFAULT_MIN_CONFIDENCE,
     on_error: ErrorHandler | None = None,
-) -> Detection:
+) -> DetectionResult:
     """Detect a file's format from the texts of a sample of its records.
 
     Every candidate is scored (see :func:`score_candidates`). The highest score wins if
     it reaches ``min_confidence``; exact ties go to the candidate listed first (the more
     specific one). Otherwise the result is ``free_text`` with its low fixed confidence.
+    If the winner can describe itself, its details are attached to the result.
     """
-    return choose(score_candidates(sample, detectors, on_error), min_confidence)
+    result = choose(score_candidates(sample, detectors, on_error), min_confidence)
+    winner = next((d for d in detectors if d.name == result.format_name), None)
+    if winner is None or winner.describe is None:
+        return result
+    try:
+        details = {str(key): str(value) for key, value in winner.describe(sample).items()}
+    except Exception as error:  # a plugin detector must never crash the pipeline
+        if on_error is not None:
+            on_error(winner.name, error)
+        return result
+    return replace(result, details=details)

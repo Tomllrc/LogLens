@@ -2,16 +2,80 @@
 
 import pytest
 
-from loglens.detect import CsvDialect, sniff_csv
+from loglens.detect import CsvDialect, detect_format, sniff_csv, split_prefix_json
 from loglens.detect.structured import (
     CSV_DETECTOR,
     JSON_DETECTOR,
     LOGFMT_DETECTOR,
+    PREFIX_JSON_DETECTOR,
     XML_DETECTOR,
     is_json_object,
     is_logfmt,
+    is_prefix_json,
     is_xml_element,
 )
+
+# --- Text prefix + JSON -----------------------------------------------------------
+
+
+def test_split_prefix_json() -> None:
+    text = '2026-01-01T10:00:00Z INFO payments {"order": 1, "ok": true}'
+    assert split_prefix_json(text) == (
+        "2026-01-01T10:00:00Z INFO payments ",
+        {"order": 1, "ok": True},
+    )
+
+
+def test_split_prefix_json_skips_braces_inside_the_prefix() -> None:
+    assert split_prefix_json('[{main}] ctx={a} {"k": "v"}') == ("[{main}] ctx={a} ", {"k": "v"})
+
+
+def test_split_prefix_json_payload_may_span_lines() -> None:
+    text = 'ERROR payload follows:\n{\n  "order": 1,\n  "items": [1, 2]\n}'
+    assert split_prefix_json(text) == ("ERROR payload follows:\n", {"order": 1, "items": [1, 2]})
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        '{"plain": "json, no prefix"}',
+        '   {"only": "whitespace before"}',
+        'INFO {"trailing": "text"} after',
+        "INFO [1, 2, 3]",
+        'INFO {"broken": }',
+        "INFO no json at all",
+        "{} {} {} {} {} {bad",
+        "",
+    ],
+)
+def test_split_prefix_json_rejects(text: str) -> None:
+    assert split_prefix_json(text) is None
+    assert not is_prefix_json(text)
+
+
+def test_split_prefix_json_gives_up_after_a_few_braces() -> None:
+    prefix = "{x} " * 5
+    assert split_prefix_json(prefix + '{"k": 1}') is None
+
+
+def test_prefix_json_detector_scores_share() -> None:
+    sample = ['INFO a {"n": 1}', 'INFO b {"n": 2}', "INFO c plain", "  "]
+    assert PREFIX_JSON_DETECTOR.score(sample) == pytest.approx(2 / 3)
+
+
+def test_known_text_format_beats_prefix_json_on_a_tie() -> None:
+    log4j_with_json = [
+        f'2026-01-01 10:00:0{i},123 INFO  [main] com.acme.App - {{"order": {i}}}' for i in range(5)
+    ]
+    result = detect_format(log4j_with_json)
+    assert result.format_name == "log4j"
+    assert result.scores_by_format["prefix_json"] == 1.0
+
+
+def test_prefix_json_beats_plain_json_only_when_there_is_a_prefix() -> None:
+    assert detect_format(['{"a": 1}', '{"a": 2}']).format_name == "json"
+    assert detect_format(['app {"a": 1}', 'app {"a": 2}']).format_name == "prefix_json"
+
 
 # --- JSON -------------------------------------------------------------------------
 

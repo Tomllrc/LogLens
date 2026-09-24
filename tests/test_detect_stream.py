@@ -13,7 +13,7 @@ from loglens.detect import (
     DEFAULT_DETECTORS,
     FREE_TEXT,
     DetectedRecord,
-    Detection,
+    DetectionResult,
     DetectOptions,
     Detector,
     DetectReport,
@@ -28,7 +28,10 @@ EXPECTED = {
     "json_lines.jsonl": "json",
     "pretty.json": "json",
     "header.csv": "csv",
+    "noheader.csv": "csv",
     "data.tsv": "csv",
+    "prefix_json.log": "prefix_json",
+    "ambiguous.log": "logfmt",
     "logfmt.log": "logfmt",
     "events.xml": "xml",
     "syslog_rfc3164.log": "syslog_rfc3164",
@@ -77,6 +80,28 @@ def test_whole_fixture_folder_each_file_independent() -> None:
         assert item.format_name == EXPECTED[Path(item.record.source_file).name]
     assert report.format_counts["json"] == 2
     assert report.format_counts["apache_combined"] == 2
+
+
+@pytest.mark.parametrize(
+    ("name", "details"),
+    [
+        ("header.csv", {"delimiter": "comma", "columns": "4", "header": "yes"}),
+        ("noheader.csv", {"delimiter": "comma", "columns": "4", "header": "no"}),
+        ("data.tsv", {"delimiter": "tab", "columns": "4", "header": "no"}),
+    ],
+)
+def test_csv_fixture_details(name: str, details: dict[str, str]) -> None:
+    _, report = _pipeline(FIXTURES / name)
+    assert report.detections[(FIXTURES / name).as_posix()].details == details
+
+
+def test_ambiguous_file_two_formats_compete() -> None:
+    """Quoted logfmt messages with two commas each: csv fits every record too."""
+    _, report = _pipeline(FIXTURES / "ambiguous.log")
+    result = report.detections[(FIXTURES / "ambiguous.log").as_posix()]
+    assert result.scores_by_format["logfmt"] == result.scores_by_format["csv"] == 1.0
+    assert result.format_name == "logfmt"  # the more specific format wins the tie
+    assert result.runner_up == ("csv", 1.0)
 
 
 def test_multi_line_records_keep_their_stack_traces() -> None:
@@ -138,7 +163,7 @@ def test_detection_uses_only_the_sample() -> None:
     report = DetectReport()
     options = DetectOptions(sample_records=3)
     detected = list(iter_detected(_records(texts), options=options, report=report))
-    assert report.detections["app.log"] == Detection(FREE_TEXT, 0.1)
+    assert report.detections["app.log"] == DetectionResult(FREE_TEXT, 0.1)
     assert len(detected) == 13
 
 

@@ -6,22 +6,40 @@ from dataclasses import dataclass, field
 from typing import NamedTuple
 
 from loglens.detect.base import Detector
-from loglens.detect.registry import DEFAULT_DETECTORS, DEFAULT_MIN_CONFIDENCE
+from loglens.detect.registry import (
+    DEFAULT_DETECTORS,
+    DEFAULT_MIN_CONFIDENCE,
+    DEFAULT_SAMPLE_RECORDS,
+    FREE_TEXT,
+)
 from loglens.ingest.models import FileIssue
 from loglens.split.models import Record
 
 
 @dataclass(frozen=True)
-class Detection:
+class DetectionResult:
     """The format chosen for one file.
 
-    ``confidence`` is in [0, 1]. ``scores`` maps every candidate format to its score,
-    in priority order (most specific first), for debugging.
+    ``confidence`` is in [0, 1]. ``scores_by_format`` maps every candidate format to its
+    score, in priority order (most specific first). ``details`` holds what the winning
+    detector learned about the file, when it describes itself (for ``csv``: delimiter,
+    column count, and whether there is a header).
     """
 
     format_name: str
     confidence: float
-    scores: Mapping[str, float] = field(default_factory=dict, compare=False)
+    scores_by_format: Mapping[str, float] = field(default_factory=dict, compare=False)
+    details: Mapping[str, str] = field(default_factory=dict, compare=False)
+
+    @property
+    def runner_up(self) -> tuple[str, float] | None:
+        """The best-scoring other candidate (``free_text`` excluded), if any scored above 0."""
+        others = [
+            (name, score)
+            for name, score in self.scores_by_format.items()
+            if name not in (self.format_name, FREE_TEXT) and score > 0
+        ]
+        return max(others, key=lambda item: item[1], default=None)
 
 
 class DetectedRecord(NamedTuple):
@@ -41,7 +59,7 @@ class DetectOptions:
     ``min_confidence``; otherwise the file is ``free_text``.
     """
 
-    sample_records: int = 200
+    sample_records: int = DEFAULT_SAMPLE_RECORDS
     min_confidence: float = DEFAULT_MIN_CONFIDENCE
     detectors: tuple[Detector, ...] = DEFAULT_DETECTORS
 
@@ -59,7 +77,7 @@ class DetectOptions:
 class DetectReport:
     """What happened during detection. Filled in progressively while records are consumed."""
 
-    detections: dict[str, Detection] = field(default_factory=dict)
+    detections: dict[str, DetectionResult] = field(default_factory=dict)
     warnings: list[FileIssue] = field(default_factory=list)
 
     @property

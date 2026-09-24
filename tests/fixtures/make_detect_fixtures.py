@@ -46,6 +46,27 @@ def header_csv() -> list[str]:
     return rows
 
 
+def noheader_csv() -> list[str]:
+    return [f"{_ts(i)}Z,{LEVELS[i % 4]},{USERS[i % 4]},{i * 7}" for i in range(N)]
+
+
+def prefix_json() -> list[str]:
+    """A text prefix (timestamp, level, service) followed by a JSON payload."""
+    return [
+        f"{_ts(i)}Z {LEVELS[i % 4]} payments "
+        + json.dumps({"order": 8800 + i, "user": USERS[i % 4], "amount": i * 1.5})
+        for i in range(N)
+    ]
+
+
+def ambiguous() -> list[str]:
+    """logfmt whose quoted messages hold two commas each: csv scores just as high."""
+    return [
+        f'ts={_ts(i)}Z level={LEVELS[i % 4].lower()} msg="cache {i}, {i * 2} keys, ok"'
+        for i in range(N)
+    ]
+
+
 def tsv() -> list[str]:
     return [f"{_ts(i, ' ')}\t{LEVELS[i % 4]}\tworker-{i % 3}\tjob {i} done" for i in range(N)]
 
@@ -168,7 +189,10 @@ GENERATORS = {
     "json_lines.jsonl": json_lines,
     "pretty.json": pretty_json,
     "header.csv": header_csv,
+    "noheader.csv": noheader_csv,
     "data.tsv": tsv,
+    "prefix_json.log": prefix_json,
+    "ambiguous.log": ambiguous,
     "logfmt.log": logfmt,
     "events.xml": xml_events,
     "syslog_rfc3164.log": syslog_rfc3164,

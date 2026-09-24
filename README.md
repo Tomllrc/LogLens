@@ -13,7 +13,7 @@
 </div>
 
 > [!NOTE]
-> LogLens is in active early development. The ingestion and record-splitting stages are implemented and tested. Parsing, analysis, and the AI investigator are next. See [Project status](#project-status).
+> LogLens is in active early development. Ingestion, record splitting, and format detection are implemented and tested. Parsing, analysis, and the AI investigator are next. See [Project status](#project-status).
 
 ---
 
@@ -57,7 +57,7 @@ flowchart LR
 
 1. **Ingest.** Opens every input and streams its lines lazily. Archives are recognized by their content (magic bytes), not their file extension, and unpacked on the fly. Members get traceable names like `logs.tar.gz!/app/server.log`. Binary files are detected and skipped. The encoding is detected per file (BOMs, UTF-16, UTF-8, legacy code pages). Memory stays constant regardless of file size.
 2. **Split records.** Learns, per file, what the start of a record looks like (a timestamp, a level token, a JSON object, a bracketed prefix) by scoring candidates on a sample. Continuation lines such as `at com.acme…`, `Caused by:`, `Traceback`, or indented JSON are attached to the record they belong to.
-3. **Detect format.** Scores candidate formats per file: JSON lines, CSV, logfmt, XML, known text formats, free text.
+3. **Detect format.** Every candidate format scores a sample of each file's records from 0 to 1. The candidates are JSON, XML, syslog (RFC 3164 and 5424), Apache/nginx access, nginx error, log4j/logback, Python `logging`, text prefix + JSON payload, logfmt, and CSV/TSV (with delimiter and header sniffing). The best score above 0.6 wins, and exact ties go to the more specific format. Otherwise the file is treated as free text. Every score is kept, so ambiguous files are visible.
 4. **Parse.** Three strategies, from most to least specific:
    - dedicated parsers for well-known formats;
    - a generic parser that extracts timestamps and levels, masks variables (IDs, IPs, numbers), and mines message templates with the [Drain](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf) algorithm;
@@ -88,12 +88,12 @@ Every event, from any source, has the same shape:
 |---|---|
 | Ingestion: files, folders, archives, stdin, encodings, streaming | ✅ Done |
 | Record splitting: stack traces, multi-line JSON and SQL | ✅ Done |
-| Format detection | 🚧 Next |
-| Parsers: known formats, generic + Drain, AI-taught plugins | Planned |
+| Format detection: 12 formats, per-file scores, `loglens detect` | ✅ Done |
+| Parsers: known formats, generic + Drain, AI-taught plugins | 🚧 Next |
 | Unified event table (Parquet + DuckDB) | Planned |
 | Analysis: recurring issues, anomalies, incident reports | Planned |
 | AI investigator with cited answers | Planned |
-| CLI, HTTP API, web dashboard | Planned (CLI skeleton exists) |
+| CLI, HTTP API, web dashboard | Partial: `loglens detect` works |
 
 ## Getting started
 
@@ -106,7 +106,23 @@ uv sync
 uv run loglens --version
 ```
 
-The command-line `parse` command is not wired up yet, but the implemented stages can already be used from Python. Given `logs.tar.gz`, which contains a Java service log and a gzipped JSON log:
+### Detect the format of every file
+
+Given `logs.tar.gz`, which contains a Java service log and a gzipped JSON log:
+
+```text
+$ loglens detect logs.tar.gz
+  File                                 Format   Confidence   Details   Runner-up
+ ──────────────────────────────────────────────────────────────────────────────
+  logs.tar.gz!/logs/app.log            log4j          1.00
+  logs.tar.gz!/logs/payments.json.gz   json           1.00
+```
+
+The archive, and the gzip file nested inside it, are opened transparently. `Details` shows what a format learned about the file (for CSV: `delimiter=tab, columns=4, header=no`). `Runner-up` shows the next-best candidate, so ambiguous files are easy to spot. Folders, several paths, and stdin (`-`) work too.
+
+### Use the pipeline from Python
+
+The `parse` command is not wired up yet, but the implemented stages can already be used as a library:
 
 ```python
 from loglens.ingest import iter_lines
@@ -114,7 +130,10 @@ from loglens.split import SplitReport, iter_records
 
 report = SplitReport()
 for record in iter_records(iter_lines("logs.tar.gz"), report=report):
-    print(f"{record.source_file}:{record.line_start}-{record.line_end}", record.text.splitlines()[0][:48])
+    print(
+        f"{record.source_file}:{record.line_start}-{record.line_end}",
+        record.text.splitlines()[0][:48],
+    )
 
 print(report.signatures)
 ```

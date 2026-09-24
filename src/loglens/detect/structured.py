@@ -1,4 +1,5 @@
-"""Detectors for self-describing structured formats: JSON, XML, logfmt, delimited (CSV).
+"""Detectors for self-describing structured formats: JSON, text prefix + JSON, XML,
+logfmt, delimited (CSV).
 
 Each predicate decides whether one record parses as the format. They never raise:
 anything unparseable is simply "not this format".
@@ -27,6 +28,47 @@ def is_json_object(text: str) -> bool:
         return isinstance(json.loads(stripped), dict)
     except (ValueError, RecursionError):
         return False
+
+
+# --- Text prefix + JSON payload ---------------------------------------------------
+
+_JSON_DECODER: Final = json.JSONDecoder()
+PREFIX_JSON_MAX_ATTEMPTS: Final = 5
+"""How many ``{`` positions are tried as the start of the payload (the prefix may hold braces)."""
+
+
+def split_prefix_json(text: str) -> tuple[str, dict[str, object]] | None:
+    """Split a record into a non-empty text prefix and the JSON object ending it.
+
+    ``2026-01-01T10:00:00Z INFO payments {"order": 1}`` gives
+    ``("2026-01-01T10:00:00Z INFO payments ", {"order": 1})``. The object must run to the
+    end of the record (it may span several lines). Returns None if there is no such
+    split, including when the whole record is plain JSON (the prefix would be empty).
+    """
+    stripped = text.rstrip()
+    if not stripped.endswith("}"):
+        return None
+    start = 0
+    for _ in range(PREFIX_JSON_MAX_ATTEMPTS):
+        brace = stripped.find("{", start)
+        if brace == -1:
+            return None
+        start = brace + 1
+        prefix = stripped[:brace]
+        if not prefix.strip():
+            continue
+        try:
+            payload, end = _JSON_DECODER.raw_decode(stripped, brace)
+        except (ValueError, RecursionError):
+            continue
+        if end == len(stripped) and isinstance(payload, dict):
+            return prefix, payload
+    return None
+
+
+def is_prefix_json(text: str) -> bool:
+    """True if the record is a text prefix followed by a JSON object (see above)."""
+    return split_prefix_json(text) is not None
 
 
 # --- XML --------------------------------------------------------------------------
@@ -180,7 +222,22 @@ def _csv_score(sample: Sequence[str]) -> float:
     return 0.0 if dialect is None else dialect.score
 
 
+_DELIMITER_NAMES: Final = {",": "comma", "\t": "tab", ";": "semicolon", "|": "pipe"}
+
+
+def _csv_details(sample: Sequence[str]) -> dict[str, str]:
+    dialect = sniff_csv(sample)
+    if dialect is None:
+        return {}
+    return {
+        "delimiter": _DELIMITER_NAMES.get(dialect.delimiter, dialect.delimiter),
+        "columns": str(dialect.columns),
+        "header": "yes" if dialect.has_header else "no",
+    }
+
+
 JSON_DETECTOR: Final = share_detector("json", is_json_object)
+PREFIX_JSON_DETECTOR: Final = share_detector("prefix_json", is_prefix_json)
 XML_DETECTOR: Final = share_detector("xml", is_xml_element)
 LOGFMT_DETECTOR: Final = share_detector("logfmt", is_logfmt)
-CSV_DETECTOR: Final = Detector("csv", _csv_score)
+CSV_DETECTOR: Final = Detector("csv", _csv_score, describe=_csv_details)

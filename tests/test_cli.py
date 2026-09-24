@@ -54,6 +54,80 @@ def test_parse_placeholder_fails_explicitly(tmp_path: Path) -> None:
     assert "not implemented" in result.output
 
 
+DETECT_FIXTURES = Path(__file__).parent / "fixtures" / "detect"
+WIDE = {"COLUMNS": "250"}  # keep Rich from folding long paths in the table
+
+
+def test_detect_prints_one_row_per_file() -> None:
+    result = runner.invoke(app, ["detect", str(DETECT_FIXTURES)], env=WIDE)
+    assert result.exit_code == 0, result.output
+    prefix = DETECT_FIXTURES.as_posix()
+    rows = {
+        line.split()[0]: line.split()[1:3]
+        for line in result.output.splitlines()
+        if line.strip().startswith(prefix)
+    }
+    assert len(rows) == len(list(DETECT_FIXTURES.iterdir()))
+    assert rows[f"{prefix}/prefix_json.log"] == ["prefix_json", "1.00"]
+    assert rows[f"{prefix}/free_text.txt"] == ["free_text", "0.10"]
+    assert rows[f"{prefix}/header.csv"] == ["csv", "1.00"]
+    for header in ("File", "Format", "Confidence", "Details", "Runner-up"):
+        assert header in result.output
+
+
+def test_detect_shows_csv_details_and_runner_up() -> None:
+    result = runner.invoke(
+        app,
+        ["detect", str(DETECT_FIXTURES / "data.tsv"), str(DETECT_FIXTURES / "ambiguous.log")],
+        env=WIDE,
+    )
+    assert result.exit_code == 0
+    assert "delimiter=tab, columns=4, header=no" in result.output
+    ambiguous_row = next(line for line in result.output.splitlines() if "ambiguous.log" in line)
+    assert ambiguous_row.split()[1:] == ["logfmt", "1.00", "csv", "1.00"]
+
+
+def test_detect_reports_empty_and_skipped_files(tmp_path: Path) -> None:
+    (tmp_path / "empty.log").write_bytes(b"")
+    (tmp_path / "image.bin").write_bytes(b"\x89PNG\x00\x00\x00binary")
+    (tmp_path / "app.log").write_text('INFO a {"n": 1}\nINFO b {"n": 2}\n', encoding="utf-8")
+
+    result = runner.invoke(app, ["detect", str(tmp_path)], env=WIDE)
+
+    assert result.exit_code == 0
+    empty_row = next(line for line in result.output.splitlines() if "empty.log" in line)
+    assert empty_row.split()[1:] == ["empty", "-"]
+    assert "skipped" in result.output and "binary content" in result.output
+    assert "prefix_json" in result.output
+
+
+def test_detect_shows_partial_match_warnings(tmp_path: Path) -> None:
+    path = tmp_path / "mostly.jsonl"
+    path.write_text("".join(f'{{"n": {i}}}\n' for i in range(9)) + "not json\n", encoding="utf-8")
+    result = runner.invoke(app, ["detect", str(path)], env=WIDE)
+    assert result.exit_code == 0
+    assert "warning" in result.output
+    # "not json" doesn't start with "{", so splitting attaches it to the 9th record: 1 in 9.
+    assert "detected json but 11% of sampled records do not match it" in result.output
+
+
+def test_detect_nothing_readable_exits_1(tmp_path: Path) -> None:
+    result = runner.invoke(app, ["detect", str(tmp_path / "missing.log")], env=WIDE)
+    assert result.exit_code == 1
+    assert "not found" in result.output
+    assert "No readable file" in result.output
+
+
+def test_detect_reads_stdin() -> None:
+    result = runner.invoke(app, ["detect", "-"], input="a=1 b=2\nc=3 d=4\n", env=WIDE)
+    assert result.exit_code == 0
+    assert "<stdin>" in result.output and "logfmt" in result.output
+
+
+def test_detect_sample_option_is_validated() -> None:
+    assert runner.invoke(app, ["detect", "--sample", "0", str(DETECT_FIXTURES)]).exit_code != 0
+
+
 def test_parse_requires_a_path() -> None:
     result = runner.invoke(app, ["parse"])
     assert result.exit_code != 0

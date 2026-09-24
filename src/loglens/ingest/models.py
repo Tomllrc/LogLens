@@ -36,18 +36,24 @@ class IngestOptions:
 
     Lines longer than ``max_line_chars`` are yielded in several pieces sharing one line
     number, so a file without line breaks cannot exhaust memory.
+
+    ``max_lines_per_file`` stops reading each file after that many lines, for callers
+    that only need a sample (such as format detection). ``None`` reads everything.
     """
 
     include: tuple[str, ...] = ()
     exclude: tuple[str, ...] = ()
     max_line_chars: int = 1_000_000
     max_archive_depth: int = 8
+    max_lines_per_file: int | None = None
 
     def __post_init__(self) -> None:
         if self.max_line_chars < 1:
             raise ValueError("max_line_chars must be at least 1")
         if self.max_archive_depth < 0:
             raise ValueError("max_archive_depth must not be negative")
+        if self.max_lines_per_file is not None and self.max_lines_per_file < 1:
+            raise ValueError("max_lines_per_file must be at least 1")
 
 
 @dataclass

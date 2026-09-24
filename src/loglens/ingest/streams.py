@@ -1,7 +1,7 @@
 """Streaming primitives: replaying sniffed bytes and splitting decoded text into lines."""
 
 import io
-from collections.abc import Iterator
+from collections.abc import Generator
 from typing import TYPE_CHECKING, NamedTuple, Protocol
 
 if TYPE_CHECKING:
@@ -72,7 +72,9 @@ class ReplayStream(io.RawIOBase):
         return len(data)
 
 
-def iter_text_lines(raw: io.RawIOBase, encoding: str, *, max_line_chars: int) -> Iterator[TextLine]:
+def iter_text_lines(
+    raw: io.RawIOBase, encoding: str, *, max_line_chars: int
+) -> Generator[TextLine, None, None]:
     """Decode a raw byte stream lazily and yield its lines without terminators.
 
     ``\\n``, ``\\r\\n`` and ``\\r`` all end a line, even when split across reads.
