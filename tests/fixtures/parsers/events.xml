@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing"/>
+    <EventID>4624</EventID>
+    <Level>4</Level>
+    <TimeCreated SystemTime="2026-03-14T09:12:01.114Z"/>
+    <Computer>dc01.corp.example</Computer>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">alice</Data>
+    <Data Name="IpAddress">10.0.0.5</Data>
+  </EventData>
+  <RenderingInfo Culture="en-US">
+    <Message>An account was successfully logged on.</Message>
+  </RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing"/>
+    <EventID>4625</EventID>
+    <Level>2</Level>
+    <TimeCreated SystemTime="2026-03-14T09:12:02.001Z"/>
+    <Computer>dc01.corp.example</Computer>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">bob</Data>
+    <Data Name="IpAddress">203.0.113.7</Data>
+  </EventData>
+  <RenderingInfo Culture="en-US">
+    <Message>An account failed to log on.</Message>
+  </RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing"/>
+    <EventID>4625</EventID>
+    <Level>2</Level>
+    <TimeCreated SystemTime="2026-03-14T09:12:02.310Z"/>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Service Control Manager"/>
+    <EventID>7036</EventID>
+    <Level>4</Level>
+    <TimeCreated SystemTime="2026-03-14T09:12:03.500Z"/>
+    <Computer>dc01.corp.example</Computer>
+  </System>
+  <EventData>
+    <Data Name="param1">Windows Update</Data>
+    <Data Name="param2">running</Data>
+  </EventData>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Kernel-Power"/>
+    <EventID>41</EventID>
+    <Level>1</Level>
+    <TimeCreated SystemTime="2026-03-14T09:12:04.000Z"/>
+    <Computer>dc01.corp.example</Computer>
+  </System>
+  <RenderingInfo Culture="en-US">
+    <Message>The system has rebooted without cleanly shutting down first.</Message>
+  </RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing"/>
+    <EventID>4634</EventID>
+    <Level>4</Level>
+    <TimeCreated SystemTime="2026-03-14T09:12:05.250Z"/>
+    <Computer>dc01.corp.example</Computer>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">alice</Data>
+  </EventData>
+  <RenderingInfo Culture="en-US">
+    <Message>An account was logged off.</Message>
+  </RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing"/>
+    <EventID>4624</EventID>
+    <Level>4</Level>
+    <TimeCreated SystemTime="2026-03-14T09:12:06.800Z"/>
+    <Computer>dc01.corp.example</Computer>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">carol</Data>
+  </EventData>
+  <RenderingInfo Culture="en-US">
+    <Message>An account was successfully logged on.</Message>
+  </RenderingInfo>
+</Event>
+</Events>

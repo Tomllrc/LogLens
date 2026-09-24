@@ -89,7 +89,8 @@ Every event, from any source, has the same shape:
 | Ingestion: files, folders, archives, stdin, encodings, streaming | ✅ Done |
 | Record splitting: stack traces, multi-line JSON and SQL | ✅ Done |
 | Format detection: 12 formats, per-file scores, `loglens detect` | ✅ Done |
-| Parsers: known formats, generic + Drain, AI-taught plugins | 🚧 Next |
+| Parsers for structured formats: JSON, prefix + JSON, CSV/TSV, logfmt, XML, with automatic field mapping | ✅ Done |
+| Parsers: known text formats, generic + Drain, AI-taught plugins | 🚧 Next |
 | Unified event table (Parquet + DuckDB) | Planned |
 | Analysis: recurring issues, anomalies, incident reports | Planned |
 | AI investigator with cited answers | Planned |

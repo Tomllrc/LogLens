@@ -1,0 +1,7 @@
+time="2026-03-14T09:12:01Z" level=info msg="request completed" method=GET path=/api/orders status=200 duration=12.3ms remote_addr=10.0.0.5 request_id=7f3a
+time="2026-03-14T09:12:02Z" level=warning msg="slow request" method=POST path=/api/checkout status=200 duration=1.8s remote_addr=10.0.0.9 request_id=7f3b
+time="2026-03-14T09:12:03Z" level=error msg="upstream timeout" method=GET path=/api/payments status=504 duration=30s remote_addr=10.0.0.5 request_id=7f3c error="dial tcp 10.0.1.4:443: i/o timeout"
+at=info method=GET path="/" host=shop.example.com request_id=7f3d fwd="203.0.113.7" dyno=web.1 connect=0ms service=13ms status=200 bytes=1548 protocol=https
+time="2026-03-14T09:12:05Z" level=info msg="cache refreshed" component=cache entries=1532 note="said \"hello\" twice"
+garbage line without any pairs
+time="2026-03-14T09:12:06Z" level=info msg="request completed" method=GET path=/ status=200 duration=2ms remote_addr=10.0.0.7 request_id=7f3e

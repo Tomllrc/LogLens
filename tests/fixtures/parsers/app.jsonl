@@ -1,0 +1,8 @@
+{"timestamp": "2026-03-14T09:12:01.114Z", "level": "info", "logger": "orders.api", "message": "Order created", "order_id": 8812, "user": {"id": 42, "plan": "pro"}, "duration_ms": 12.5}
+{"@timestamp": "2026-03-14T09:12:01.532Z", "log.level": "error", "service.name": "payments", "message": "Payment declined", "error": {"type": "CardDeclined", "code": "insufficient_funds"}, "ecs.version": "8.11.0"}
+{"time": 1773479521700, "level": 30, "name": "checkout", "hostname": "web-1", "pid": 4312, "msg": "cart loaded", "items": 3}
+{"ts": "2026-03-14T09:12:02.007Z", "severity": "WARNING", "component": "inventory", "event": "stock low", "sku": "A-1002", "remaining": 2}
+{"timestamp": "2026-03-14T09:12:02.450Z", "level": "debug", "logger": "orders.db", "query": "SELECT * FROM orders WHERE id = ?", "rows": 1}
+not a json line at all
+{"timestamp": "2026-03-14T09:12:03.001Z", "level": "info", "logger": "orders.api", "message": "Order shipp
+{"timestamp": "2026-03-14T09:12:04.120Z", "level": "info", "logger": "orders.api", "message": "Order shipped", "order_id": 8812, "carrier": null, "tags": ["express", "gift"]}

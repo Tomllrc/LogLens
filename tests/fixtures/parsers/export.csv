@@ -1,0 +1,7 @@
+timestamp,severity,service,message,request_id,latency_ms
+2026-03-14T09:12:01Z,INFO,orders,"Order created, id 8812",7f3a,12
+2026-03-14T09:12:02Z,WARN,payments,"Retrying charge, attempt 2",7f3b,1830
+2026-03-14T09:12:03Z,ERROR,payments,"Charge failed: ""card declined""",7f3c,95
+2026-03-14T09:12:04Z,INFO,orders,Order shipped,7f3d
+2026-03-14T09:12:05Z,ERROR,orders,"broken quote,7f3e,3
+2026-03-14T09:12:06Z,INFO,orders,Order delivered,7f3f,8
