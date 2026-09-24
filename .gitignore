@@ -13,7 +13,15 @@ dist/
 .mypy_cache/
 .ruff_cache/
 .coverage
+coverage.xml
 htmlcov/
+
+# Secrets
+.env
+
+# Local data and outputs (never commit real logs)
+data/
+*.parquet
 
 # Editors / OS
 .vscode/

@@ -45,8 +45,9 @@ Every stage after parsing sees only the **unified event schema**. Analysis code 
 - Python 3.11+, with **uv** for dependency management
 - Polars, DuckDB, PyArrow
 - Typer and Rich for the CLI
-- pytest, ruff, mypy (strict on `src/`)
-- src layout: `src/loglens/`
+- pytest (+ pytest-cov, hypothesis), ruff, mypy (strict on `src/`)
+- src layout: `src/loglens/`, with one subpackage per pipeline stage: `ingest`, `split`, `detect`, `parsers`, `schema`, `analysis`, `ai`, `api`; the CLI lives in `loglens/cli.py`
+- CI: GitHub Actions (`.github/workflows/ci.yml`) runs ruff, mypy, and pytest with coverage on Python 3.11 and 3.12
 
 ## Coding rules
 
@@ -65,5 +66,5 @@ Every stage after parsing sees only the **unified event schema**. Analysis code 
 ## Current status
 
 - **Step 0: project context.** `CLAUDE.md` written.
-- **Step 1: scaffold.** `pyproject.toml`, empty `src/loglens/` package, smoke test, ruff/mypy/pytest config, `CHANGELOG.md`. No pipeline code yet.
+- **Step 1: scaffold (done).** uv project, `loglens` CLI (`--version` works; `parse` is a placeholder that exits 1), empty stage subpackages, CI workflow, MIT license, README skeleton. 7 tests, 100% coverage. No pipeline code yet.
 - **Next:** step 2, ingestion (files, folders, archives, stdin, encoding detection, chunked streaming).
