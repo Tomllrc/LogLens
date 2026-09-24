@@ -1,0 +1,3 @@
+2026-01-01T10:00:00Z INFO café service started ✓
+2026-01-01T10:00:01Z WARN naïve retry – attempt 2
+2026-01-01T10:00:02Z ERROR 日本語 request failed

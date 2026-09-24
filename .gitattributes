@@ -1,0 +1,2 @@
+# Test fixtures are byte-exact (encodings, BOMs, CRLF): never convert line endings.
+tests/fixtures/ingest/** binary
