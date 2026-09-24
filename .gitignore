@@ -23,6 +23,9 @@ htmlcov/
 data/
 *.parquet
 
+# Claude Code agent worktrees (local copies of the repo)
+.claude/worktrees/
+
 # Editors / OS
 .vscode/
 .idea/
