@@ -1,0 +1,40 @@
+name: windows_event_csv
+description: >-
+  Windows Event Viewer "Save All Events As" export, as CSV or tab-delimited text
+  (English locale): Level, Date and Time, Source, Event ID, Task Category, then the
+  message, which may be quoted and span several lines.
+priority: 16
+flags: [DOTALL]
+record_start: '(?:Information|Warning|Error|Critical|Verbose|Audit Success|Audit Failure)[,\t]\d{1,2}/\d{1,2}/\d{4} '
+ignore: ['Level[,\t]Date and Time[,\t]Source[,\t]']
+regex:
+  - '(?P<level>Information|Warning|Error|Critical|Verbose|Audit Success|Audit Failure),(?P<timestamp>\d{1,2}/\d{1,2}/\d{4} \d{1,2}:\d{2}:\d{2}(?: [AP]M)?),(?P<component>"(?:[^"]|"")*"|[^,\n]*),(?P<event_id>\d+),(?P<task_category>"(?:[^"]|"")*"|[^,\n]*),(?P<message>.*)'
+  - '(?P<level>Information|Warning|Error|Critical|Verbose|Audit Success|Audit Failure)\t(?P<timestamp>\d{1,2}/\d{1,2}/\d{4} \d{1,2}:\d{2}:\d{2}(?: [AP]M)?)\t(?P<component>"(?:[^"]|"")*"|[^\t\n]*)\t(?P<event_id>\d+)\t(?P<task_category>"(?:[^"]|"")*"|[^\t\n]*)\t(?P<message>.*)'
+unquote: [component, task_category, message]
+timestamp_format: ['%m/%d/%Y %I:%M:%S %p', '%m/%d/%Y %H:%M:%S', '%d/%m/%Y %H:%M:%S']
+level:
+  map:
+    information: INFO
+    warning: WARN
+    error: ERROR
+    critical: FATAL
+    verbose: DEBUG
+    audit success: INFO
+    audit failure: WARN
+sample_lines:
+  - line: "Information,3/14/2026 9:12:01 AM,Microsoft-Windows-Security-Auditing,4624,Logon,\"An account was successfully logged on.\n\nSubject:\n\tSecurity ID:\t\tSYSTEM\n\tAccount Name:\t\tDC01$\""
+    expect:
+      level: INFO
+      timestamp: 3/14/2026 9:12:01 AM
+      component: Microsoft-Windows-Security-Auditing
+      event_id: 4624
+      task_category: Logon
+      message: "An account was successfully logged on.\n\nSubject:\n\tSecurity ID:\t\tSYSTEM\n\tAccount Name:\t\tDC01$"
+  - line: 'Error,3/14/2026 9:12:05 AM,Service Control Manager,7031,None,"The Print Spooler service terminated unexpectedly.  It has done this 1 time(s)."'
+    expect: {level: ERROR, component: Service Control Manager, event_id: 7031, message: The Print Spooler service terminated unexpectedly.  It has done this 1 time(s).}
+  - line: 'Warning,3/14/2026 9:12:07 AM,Microsoft-Windows-Time-Service,36,None,The time service has not synchronized the system time for 86400 seconds.'
+    expect: {level: WARN, event_id: 36}
+  - line: "Audit Failure\t3/14/2026 9:12:09 AM\tMicrosoft-Windows-Security-Auditing\t4625\tLogon\t\"An account failed to log on.\""
+    expect: {level: WARN, level_raw: Audit Failure, event_id: 4625, message: An account failed to log on.}
+  - line: 'Critical,14/03/2026 09:12:11,Microsoft-Windows-Kernel-Power,41,(63),"The system has rebooted without cleanly shutting down first. It said ""oops""."'
+    expect: {level: FATAL, timestamp: 14/03/2026 09:12:11, task_category: (63), message: 'The system has rebooted without cleanly shutting down first. It said "oops".'}

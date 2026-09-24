@@ -20,7 +20,7 @@ from collections.abc import Callable, Mapping
 from dataclasses import dataclass
 from typing import Final
 
-from loglens.parsers.patterns import LEVEL_VALUE, NUMERIC_LEVEL, TIMESTAMP_VALUE
+from loglens.parsers.values import LEVEL_VALUE, NUMERIC_LEVEL, TIMESTAMP_VALUE
 
 _IGNORED_KEY_CHARS: Final = re.compile(r"[@_\-\s]")
 

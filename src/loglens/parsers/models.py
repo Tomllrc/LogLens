@@ -13,6 +13,8 @@ class ParsedEvent:
     """What a parser extracted from one record: a partial unified event.
 
     ``timestamp_raw`` and ``level_raw`` are the original texts, not yet normalized.
+    ``level`` is the normalized level (see :data:`loglens.schema.LEVELS`) when the
+    parser knows how to map ``level_raw`` (text formats declare a mapping), else None.
     ``extra`` holds every field that was not mapped to a schema column, with values
     rendered as strings (non-strings as JSON). ``confidence`` is in [0, 1].
 
@@ -29,3 +31,4 @@ class ParsedEvent:
     confidence: float = 1.0
     is_event: bool = True
     error: str | None = None
+    level: str | None = None

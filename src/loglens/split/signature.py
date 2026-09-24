@@ -18,7 +18,7 @@ gets one record per line. If most of the sample is indented, every line is a rec
 """
 
 import re
-from collections.abc import Callable, Iterable
+from collections.abc import Callable, Iterable, Sequence
 from dataclasses import dataclass, field
 from typing import Final
 
@@ -98,12 +98,33 @@ EVERY_LINE: Final = Signature("every-line", lambda _text: True)
 CANDIDATES: Final = (TIMESTAMP, LEVEL, JSON, XML, BRACKET)
 """Candidate signatures, most specific first (earlier wins exact ties)."""
 
+MAX_DECLARED_START_OFFSET: Final = 1
+"""A declared record start must match one of the first two non-blank lines (0-based
+index <= 1), leaving room for one header line such as a CSV header."""
 
-def learn_signature(sample: Iterable[str]) -> Signature:
-    """Choose the signature that best explains a sample of a file's lines."""
+
+@dataclass(frozen=True)
+class DeclaredStart:
+    """A record-start regex declared by a known multi-line format (a YAML ``record_start``)."""
+
+    name: str
+    pattern: re.Pattern[str]
+
+
+def learn_signature(sample: Iterable[str], declared: Sequence[DeclaredStart] = ()) -> Signature:
+    """Choose the signature that best explains a sample of a file's lines.
+
+    A declared start is trusted outright when it matches one of the first two non-blank
+    lines: such patterns are specific (``__CURSOR=``, ``Event[0]:``), and their records
+    can be long enough that scoring would reject them.
+    """
     lines = [text for text in sample if text.strip()]
     if not lines:
         return UNINDENTED
+    for start in declared:
+        head = lines[: MAX_DECLARED_START_OFFSET + 1]
+        if any(start.pattern.match(text) for text in head):
+            return _regex_signature(start.name, start.pattern)
 
     total = len(lines)
     continuation = [looks_like_continuation(text) for text in lines]

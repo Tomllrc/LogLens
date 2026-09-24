@@ -1,0 +1,62 @@
+name: windows_event_text
+description: >-
+  Windows events as printed by "wevtutil qe <log> /f:text": an "Event[n]:" line, indented
+  "Name: value" header lines, then "Description:" followed by the message, which may span
+  several lines.
+priority: 14
+flags: [DOTALL, MULTILINE]
+record_start: 'Event\[\d+\]:'
+regex: 'Event\[(?P<record_index>\d+)\]:[ \t]*$(?:(?=.*?^[ \t]+Source:[ \t]*(?P<component>[^\n]*?)[ \t]*$))?(?:(?=.*?^[ \t]+Date:[ \t]*(?P<timestamp>[^\n]*?)[ \t]*$))?(?:(?=.*?^[ \t]+Level:[ \t]*(?P<level>[^\n]*?)[ \t]*$))?(?:(?=.*?^[ \t]+Description:[ \t]*\n(?P<message>.*)))?.*'
+extra_fields:
+  regex: '^[ \t]+(?P<key>Log Name|Event ID|Task|Opcode|Keyword|User|User Name|Computer):[ \t]*(?P<value>[^\n]*?)[ \t]*$'
+timestamp_format: iso8601
+level:
+  map: {information: INFO, warning: WARN, error: ERROR, critical: FATAL, verbose: DEBUG}
+sample_lines:
+  - line: |
+      Event[0]:
+        Log Name: System
+        Source: Microsoft-Windows-Kernel-General
+        Date: 2026-03-14T09:12:01.1140000Z
+        Event ID: 12
+        Task: N/A
+        Level: Information
+        Opcode: Info
+        Keyword: N/A
+        User: S-1-5-18
+        User Name: NT AUTHORITY\SYSTEM
+        Computer: dc01.corp.example
+        Description:
+      The operating system started at system time 2026-03-14T09:12:01.114000000Z.
+    expect:
+      record_index: 0
+      component: Microsoft-Windows-Kernel-General
+      timestamp: '2026-03-14T09:12:01.1140000Z'
+      level: INFO
+      Event ID: 12
+      User Name: NT AUTHORITY\SYSTEM
+      Computer: dc01.corp.example
+      message: The operating system started at system time 2026-03-14T09:12:01.114000000Z.
+  - line: |
+      Event[1]:
+        Log Name: Security
+        Source: Microsoft-Windows-Security-Auditing
+        Date: 2026-03-14T09:12:02.0010000Z
+        Event ID: 4625
+        Task: Logon
+        Level: Information
+        Opcode: Info
+        Keyword: Audit Failure
+        User: N/A
+        User Name: N/A
+        Computer: dc01.corp.example
+        Description:
+      An account failed to log on.
+
+      Account For Which Logon Failed:
+      	Security ID:		NULL SID
+      	Account Name:		bob
+    expect:
+      Event ID: 4625
+      Keyword: Audit Failure
+      message: "An account failed to log on.\n\nAccount For Which Logon Failed:\n\tSecurity ID:\t\tNULL SID\n\tAccount Name:\t\tbob"

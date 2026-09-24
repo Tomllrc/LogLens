@@ -1,0 +1,30 @@
+name: apache_common
+description: >-
+  Apache / Nginx Common Log Format (CLF): client ident user [time] "request" status
+  bytes. The level is derived from the HTTP status (4xx WARN, 5xx ERROR).
+priority: 31
+regex: '(?P<client>\S+) (?P<ident>\S+) (?P<user>\S+) \[(?P<timestamp>[^\]]+)\] "(?P<message>(?P<method>[A-Z]+) (?P<path>(?:[^"\\\s]|\\.)+)(?: (?P<protocol>[^"\s]+))?|(?:[^"\\]|\\.)*)" (?P<status>\d{3}|-) (?P<bytes>\d+|-)\s*\Z'
+null_values: ['-']
+timestamp_format: '%d/%b/%Y:%H:%M:%S %z'
+level:
+  group: status
+  transform: http_status
+  map: {1xx: INFO, 2xx: INFO, 3xx: INFO, 4xx: WARN, 5xx: ERROR}
+sample_lines:
+  - line: '127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326'
+    expect:
+      client: 127.0.0.1
+      user: frank
+      timestamp: '10/Oct/2000:13:55:36 -0700'
+      message: GET /apache_pb.gif HTTP/1.0
+      method: GET
+      path: /apache_pb.gif
+      protocol: HTTP/1.0
+      status: 200
+      bytes: 2326
+      level_raw: 200
+      level: INFO
+  - line: '203.0.113.7 - - [14/Mar/2026:09:12:01 +0000] "POST /api/checkout HTTP/1.1" 502 157'
+    expect: {level: ERROR, method: POST}
+  - line: '2001:db8::1 - - [14/Mar/2026:09:12:02 +0000] "GET /missing HTTP/2.0" 404 -'
+    expect: {client: '2001:db8::1', level: WARN, path: /missing}

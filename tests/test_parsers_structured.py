@@ -14,11 +14,12 @@ from loglens.parsers import (
     ParsedEvent,
     Parser,
     PrefixJsonParser,
+    TextFormatParser,
     XmlParser,
     create_parser,
     safe_parse,
 )
-from loglens.parsers.patterns import split_text_prefix
+from loglens.parsers.values import split_text_prefix
 from loglens.split import Record
 
 
@@ -351,8 +352,14 @@ def test_create_parser(format_name: str, parser_type: type) -> None:
 
 
 def test_create_parser_unknown_format() -> None:
-    assert create_parser("log4j") is None
+    assert create_parser("no_such_format") is None
     assert create_parser("free_text") is None
+
+
+def test_create_parser_text_formats_come_from_yaml() -> None:
+    parser = create_parser("log4j")  # had no parser before step 5b
+    assert isinstance(parser, TextFormatParser)
+    assert parser.format_name == "log4j"
 
 
 def test_create_parser_returns_fresh_stateful_parsers() -> None:

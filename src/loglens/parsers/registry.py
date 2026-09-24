@@ -11,6 +11,7 @@ from loglens.parsers.structured import (
     PrefixJsonParser,
     XmlParser,
 )
+from loglens.parsers.textformats import TEXT_FORMATS, TextFormatParser
 
 ParserFactory = Callable[[dict[str, str]], Parser]
 """Builds a fresh parser from the detection's ``details``."""
@@ -26,9 +27,13 @@ STRUCTURED_PARSERS: Final[Mapping[str, ParserFactory]] = {
 
 
 def create_parser(format_name: str, details: Mapping[str, str] | None = None) -> Parser | None:
-    """A new parser for a detected format, or None if no structured parser handles it.
+    """A new parser for a detected format, or None if no parser handles it.
 
-    Create one per file: some parsers keep state (a CSV header).
+    Structured formats come first, then the text formats declared in YAML. Create one
+    parser per file: some parsers keep state (a CSV header).
     """
     factory = STRUCTURED_PARSERS.get(format_name)
-    return None if factory is None else factory(dict(details or {}))
+    if factory is not None:
+        return factory(dict(details or {}))
+    text_format = TEXT_FORMATS.get(format_name)
+    return None if text_format is None else TextFormatParser(text_format)

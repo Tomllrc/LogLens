@@ -2,12 +2,13 @@
 
 import logging
 from collections.abc import Iterable, Iterator
+from functools import cache
 from itertools import groupby, islice
 from operator import attrgetter
 
 from loglens.ingest.models import FileIssue, Line
 from loglens.split.models import Record, SplitOptions, SplitReport
-from loglens.split.signature import learn_signature
+from loglens.split.signature import DeclaredStart, learn_signature
 
 logger = logging.getLogger(__name__)
 
@@ -26,15 +27,35 @@ def iter_records(
     """
     options = options or SplitOptions()
     report = report if report is not None else SplitReport()
+    declared = options.declared_starts
+    if declared is None:
+        declared = builtin_declared_starts()
     for source, file_lines in groupby(lines, key=attrgetter("source_file")):
-        yield from _split_file(source, file_lines, options, report)
+        yield from _split_file(source, file_lines, options, declared, report)
+
+
+@cache
+def builtin_declared_starts() -> tuple[DeclaredStart, ...]:
+    """Record starts declared by the built-in text formats (YAML ``record_start``)."""
+    # Imported here, not at module level: the parsers package itself depends on split.
+    from loglens.parsers.textformats import TEXT_FORMATS
+
+    return tuple(
+        DeclaredStart(fmt.name, fmt.record_start)
+        for fmt in TEXT_FORMATS.values()
+        if fmt.record_start is not None
+    )
 
 
 def _split_file(
-    source: str, lines: Iterator[Line], options: SplitOptions, report: SplitReport
+    source: str,
+    lines: Iterator[Line],
+    options: SplitOptions,
+    declared: tuple[DeclaredStart, ...],
+    report: SplitReport,
 ) -> Iterator[Record]:
     sample = list(islice(lines, options.sample_lines))
-    signature = learn_signature(_first_pieces(sample))
+    signature = learn_signature(_first_pieces(sample), declared)
     report.signatures[source] = signature.name
 
     builder = _RecordBuilder(source)

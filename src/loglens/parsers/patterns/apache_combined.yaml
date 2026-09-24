@@ -1,0 +1,25 @@
+name: apache_combined
+description: >-
+  Apache / Nginx combined log format: the Common Log Format plus "referer" and
+  "user agent". This is Nginx's default access_log format. Extra fields appended
+  after the user agent (forwarded-for, request time) are kept as `trailing`.
+priority: 30
+regex: '(?P<client>\S+) (?P<ident>\S+) (?P<user>\S+) \[(?P<timestamp>[^\]]+)\] "(?P<message>(?P<method>[A-Z]+) (?P<path>(?:[^"\\\s]|\\.)+)(?: (?P<protocol>[^"\s]+))?|(?:[^"\\]|\\.)*)" (?P<status>\d{3}|-) (?P<bytes>\d+|-) "(?P<referer>(?:[^"\\]|\\.)*)" "(?P<user_agent>(?:[^"\\]|\\.)*)"(?:\s+(?P<trailing>\S.*?))?\s*\Z'
+null_values: ['-']
+timestamp_format: '%d/%b/%Y:%H:%M:%S %z'
+level:
+  group: status
+  transform: http_status
+  map: {1xx: INFO, 2xx: INFO, 3xx: INFO, 4xx: WARN, 5xx: ERROR}
+sample_lines:
+  - line: '127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326 "http://www.example.com/start.html" "Mozilla/4.08 [en] (Win98; I ;Nav)"'
+    expect:
+      referer: http://www.example.com/start.html
+      user_agent: Mozilla/4.08 [en] (Win98; I ;Nav)
+      level: INFO
+  - line: '203.0.113.7 - - [14/Mar/2026:09:12:01 +0000] "GET /api/orders?page=2 HTTP/1.1" 200 5123 "https://shop.example.com/orders" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_3) AppleWebKit/605.1.15"'
+    expect: {path: '/api/orders?page=2', bytes: 5123}
+  - line: '10.0.0.5 - - [14/Mar/2026:09:12:02 +0000] "POST /api/checkout HTTP/1.1" 504 167 "-" "curl/8.5.0" "203.0.113.9" rt=30.001'
+    expect: {level: ERROR, user_agent: curl/8.5.0, trailing: '"203.0.113.9" rt=30.001'}
+  - line: '198.51.100.23 - - [14/Mar/2026:09:12:03 +0000] "\x16\x03\x01\x00\xca\x01\x00\x00\xc6\x03\x03" 400 157 "-" "-"'
+    expect: {status: 400, level: WARN, message: '\x16\x03\x01\x00\xca\x01\x00\x00\xc6\x03\x03'}

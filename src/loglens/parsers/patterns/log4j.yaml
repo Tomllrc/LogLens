@@ -1,0 +1,45 @@
+name: log4j
+description: >-
+  Java log4j / logback pattern layouts: "%d %-5p [%t] %c - %m" (log4j), "%d [%t] %-5p
+  %c - %m" and logback's default "%d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg",
+  plus Spring Boot's default console layout. Stack traces on the following lines are
+  kept in the message.
+priority: 50
+regex:
+  # %d %-5p [%t] %c - %m   (level before thread)
+  - '(?P<timestamp>(?:\d{4}-\d{2}-\d{2}[ T])?\d{2}:\d{2}:\d{2}[,.]\d{3}) +(?P<level>TRACE|DEBUG|INFO|WARN|WARNING|ERROR|FATAL|SEVERE) +\[(?P<thread>[^\]]*)\] +(?P<component>\S+) +- (?P<message>.*)'
+  # %d [%t] %-5p %c - %m   (thread before level; logback's default)
+  - '(?P<timestamp>(?:\d{4}-\d{2}-\d{2}[ T])?\d{2}:\d{2}:\d{2}[,.]\d{3}) +\[(?P<thread>[^\]]*)\] +(?P<level>TRACE|DEBUG|INFO|WARN|WARNING|ERROR|FATAL|SEVERE) +(?P<component>\S+) +- (?P<message>.*)'
+  # Spring Boot: "2026-03-14 09:12:03.001  INFO 4312 --- [app] [   main] c.a.App : msg"
+  - '(?P<timestamp>\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}:\d{2}[.,]\d{3}(?:Z|[+-]\d{2}:?\d{2})?) +(?P<level>TRACE|DEBUG|INFO|WARN|WARNING|ERROR|FATAL|SEVERE) +(?P<pid>\d+) +--- +(?:\[(?P<application>[^\]]*)\] +)?\[ *(?P<thread>[^\]]*?) *\] +(?P<component>\S+) +: (?P<message>.*)'
+timestamp_format:
+  - '%Y-%m-%d %H:%M:%S,%f'
+  - '%Y-%m-%d %H:%M:%S.%f'
+  - '%Y-%m-%dT%H:%M:%S,%f'
+  - '%Y-%m-%dT%H:%M:%S.%f'
+  - '%H:%M:%S.%f'
+  - '%H:%M:%S,%f'
+  - iso8601
+level:
+  map: {TRACE: TRACE, DEBUG: DEBUG, INFO: INFO, WARN: WARN, WARNING: WARN, ERROR: ERROR, FATAL: FATAL, SEVERE: ERROR}
+sample_lines:
+  - line: '2026-03-14 09:12:01,114 INFO  [main] com.acme.OrderService - Order 8812 received'
+    expect:
+      timestamp: 2026-03-14 09:12:01,114
+      level: INFO
+      thread: main
+      component: com.acme.OrderService
+      message: Order 8812 received
+  - line: "2026-03-14 09:12:01,532 ERROR [http-nio-8080-exec-3] com.acme.PaymentClient - Charge failed\njava.lang.IllegalStateException: card declined\n\tat com.acme.PaymentClient.charge(PaymentClient.java:88)\n\tat com.acme.OrderService.checkout(OrderService.java:41)"
+    expect:
+      level: ERROR
+      thread: http-nio-8080-exec-3
+      message: "Charge failed\njava.lang.IllegalStateException: card declined\n\tat com.acme.PaymentClient.charge(PaymentClient.java:88)\n\tat com.acme.OrderService.checkout(OrderService.java:41)"
+  - line: '09:12:01.114 [main] DEBUG c.a.orders.OrderRepository - Loaded 3 orders'
+    expect: {timestamp: '09:12:01.114', level: DEBUG, component: c.a.orders.OrderRepository}
+  - line: '2026-03-14 09:12:02,007 [pool-2-thread-1] WARN  com.acme.Inventory - Stock low for SKU A-1002'
+    expect: {level: WARN, thread: pool-2-thread-1}
+  - line: '2026-03-14 09:12:03.001  INFO 4312 --- [           main] c.a.OrderApplication                     : Started OrderApplication in 3.2 seconds (process running for 3.6)'
+    expect: {level: INFO, pid: 4312, thread: main, component: c.a.OrderApplication}
+  - line: '2026-03-14T09:12:03.001+01:00  WARN 4312 --- [orders] [nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico'
+    expect: {level: WARN, application: orders, thread: nio-8080-exec-1, message: No mapping for GET /favicon.ico}

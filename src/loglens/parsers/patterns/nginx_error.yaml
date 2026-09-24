@@ -1,0 +1,29 @@
+name: nginx_error
+description: >-
+  Nginx error log: "yyyy/mm/dd hh:mm:ss [level] pid#tid: *connection message". The
+  ", client: ..., server: ..., request: ..." context Nginx appends is also extracted.
+priority: 40
+regex: '(?P<timestamp>\d{4}/\d{2}/\d{2} \d{2}:\d{2}:\d{2}) \[(?P<level>debug|info|notice|warn|error|crit|alert|emerg)\] (?P<pid>\d+)#(?P<tid>\d+): (?:\*(?P<connection>\d+) )?(?P<message>.*)'
+extra_fields:
+  regex: ', (?P<key>client|server|request|subrequest|upstream|host|referrer): (?P<value>"(?:[^"\\]|\\.)*"|[^,]*)'
+timestamp_format: '%Y/%m/%d %H:%M:%S'
+level:
+  map: {debug: DEBUG, info: INFO, notice: INFO, warn: WARN, error: ERROR, crit: FATAL, alert: FATAL, emerg: FATAL}
+sample_lines:
+  - line: '2026/03/14 09:12:01 [error] 1234#1234: *5678 connect() failed (111: Connection refused) while connecting to upstream, client: 203.0.113.7, server: shop.example.com, request: "GET /api/orders HTTP/1.1", upstream: "http://127.0.0.1:8080/api/orders", host: "shop.example.com"'
+    expect:
+      timestamp: 2026/03/14 09:12:01
+      level: ERROR
+      pid: 1234
+      connection: 5678
+      client: 203.0.113.7
+      server: shop.example.com
+      request: GET /api/orders HTTP/1.1
+      upstream: http://127.0.0.1:8080/api/orders
+      host: shop.example.com
+  - line: '2026/03/14 09:12:00 [notice] 1#1: start worker processes'
+    expect: {level: INFO, message: start worker processes}
+  - line: '2026/03/14 09:12:02 [emerg] 1#1: bind() to 0.0.0.0:80 failed (98: Address already in use)'
+    expect: {level: FATAL}
+  - line: '2026/03/14 09:12:03 [warn] 1234#1234: *5679 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 10.0.0.5, server: shop.example.com, request: "GET /export.csv HTTP/1.1"'
+    expect: {level: WARN, request: GET /export.csv HTTP/1.1}

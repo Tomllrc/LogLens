@@ -1,0 +1,27 @@
+name: python_logging
+description: >-
+  Python's standard logging module: the basicConfig default "%(levelname)s:%(name)s:%(message)s"
+  and the common "%(asctime)s - %(name)s - %(levelname)s - %(message)s". Tracebacks on
+  the following lines are kept in the message.
+priority: 60
+regex:
+  - '(?P<timestamp>\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}:\d{2},\d{3}) - (?P<component>\S.*?) - (?P<level>DEBUG|INFO|WARNING|ERROR|CRITICAL) - (?P<message>.*)'
+  - '(?P<level>DEBUG|INFO|WARNING|ERROR|CRITICAL):(?P<component>[\w.\-]+):(?P<message>.*)'
+timestamp_format: ['%Y-%m-%d %H:%M:%S,%f', '%Y-%m-%dT%H:%M:%S,%f']
+level:
+  map: {DEBUG: DEBUG, INFO: INFO, WARNING: WARN, ERROR: ERROR, CRITICAL: FATAL}
+sample_lines:
+  - line: 'WARNING:root:Disk usage at 91% on /var/lib/postgresql'
+    expect: {level: WARN, level_raw: WARNING, component: root, message: Disk usage at 91% on /var/lib/postgresql}
+  - line: 'ERROR:app.worker:Job 42 failed after 3 retries'
+    expect: {level: ERROR, component: app.worker}
+  - line: 'CRITICAL:celery.worker:Worker lost connection to broker'
+    expect: {level: FATAL}
+  - line: "2026-03-14 09:12:01,114 - app.api - ERROR - Unhandled exception\nTraceback (most recent call last):\n  File \"app.py\", line 10, in handle\nValueError: bad input"
+    expect:
+      timestamp: 2026-03-14 09:12:01,114
+      component: app.api
+      level: ERROR
+      message: "Unhandled exception\nTraceback (most recent call last):\n  File \"app.py\", line 10, in handle\nValueError: bad input"
+  - line: '2026-03-14 09:12:02,450 - sqlalchemy.engine.Engine - INFO - SELECT orders.id FROM orders WHERE orders.id = %(id_1)s - - with a dash'
+    expect: {component: sqlalchemy.engine.Engine, message: SELECT orders.id FROM orders WHERE orders.id = %(id_1)s - - with a dash}

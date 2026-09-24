@@ -20,7 +20,7 @@ from loglens.parsers.base import (
 )
 from loglens.parsers.fields import flatten, map_by_value, map_fields
 from loglens.parsers.models import ParsedEvent
-from loglens.parsers.patterns import split_text_prefix
+from loglens.parsers.values import split_text_prefix
 from loglens.split.models import Record
 
 PARTIAL_CONFIDENCE: Final = 0.5

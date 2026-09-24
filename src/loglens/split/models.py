@@ -4,6 +4,7 @@ from dataclasses import dataclass, field
 from typing import NamedTuple
 
 from loglens.ingest.models import FileIssue
+from loglens.split.signature import DeclaredStart
 
 
 class Record(NamedTuple):
@@ -26,10 +27,15 @@ class SplitOptions:
     ``sample_lines`` leading lines of each file are used to learn its record-start
     signature. No record grows beyond ``max_record_lines``; the overflow starts a new
     record and is reported as a warning.
+
+    ``declared_starts`` are record-start patterns of known multi-line formats, tried
+    before any guessing. ``None`` (the default) uses the ``record_start`` of the built-in
+    text formats (see :mod:`loglens.parsers.textformats`); ``()`` disables them.
     """
 
     max_record_lines: int = 500
     sample_lines: int = 1000
+    declared_starts: tuple[DeclaredStart, ...] | None = None
 
     def __post_init__(self) -> None:
         if self.max_record_lines < 1:

@@ -1,0 +1,24 @@
+name: go_log
+description: >-
+  Go's standard library "log" package: "2009/11/10 23:00:00 message", with optional
+  microseconds (Lmicroseconds), file:line (Lshortfile/Llongfile), a "prefix: " set with
+  log.SetPrefix, and a conventional [LEVEL] tag. Panics on the following lines are kept
+  in the message.
+priority: 70
+regex: '(?:(?P<component>[\w.\-]+): )?(?P<timestamp>\d{4}/\d{2}/\d{2} \d{2}:\d{2}:\d{2}(?:\.\d{1,6})?) (?:(?P<file>[\w./\-]+\.go:\d+): )?(?:\[?(?P<level>DEBUG|INFO|WARN|WARNING|ERROR|FATAL|PANIC)\]?:? )?(?P<message>.*)'
+timestamp_format: ['%Y/%m/%d %H:%M:%S', '%Y/%m/%d %H:%M:%S.%f']
+level:
+  map: {DEBUG: DEBUG, INFO: INFO, WARN: WARN, WARNING: WARN, ERROR: ERROR, FATAL: FATAL, PANIC: FATAL}
+sample_lines:
+  - line: '2026/03/14 09:12:01 Starting server on :8080'
+    expect: {timestamp: 2026/03/14 09:12:01, message: 'Starting server on :8080'}
+  - line: '2026/03/14 09:12:01.114623 main.go:42: connected to postgres at db:5432'
+    expect: {timestamp: 2026/03/14 09:12:01.114623, file: 'main.go:42', message: 'connected to postgres at db:5432'}
+  - line: 'api: 2026/03/14 09:12:02 [ERROR] request failed: context deadline exceeded'
+    expect: {component: api, level: ERROR, message: 'request failed: context deadline exceeded'}
+  - line: '2026/03/14 09:12:03 http: TLS handshake error from 203.0.113.7:51234: EOF'
+    expect: {message: 'http: TLS handshake error from 203.0.113.7:51234: EOF'}
+  - line: "2026/03/14 09:12:04 /src/cmd/api/main.go:57: panic: runtime error: index out of range [3] with length 3\n\ngoroutine 1 [running]:\nmain.main()\n\t/src/cmd/api/main.go:57 +0x1d"
+    expect:
+      file: /src/cmd/api/main.go:57
+      message: "panic: runtime error: index out of range [3] with length 3\n\ngoroutine 1 [running]:\nmain.main()\n\t/src/cmd/api/main.go:57 +0x1d"

@@ -57,9 +57,9 @@ flowchart LR
 
 1. **Ingest.** Opens every input and streams its lines lazily. Archives are recognized by their content (magic bytes), not their file extension, and unpacked on the fly. Members get traceable names like `logs.tar.gz!/app/server.log`. Binary files are detected and skipped. The encoding is detected per file (BOMs, UTF-16, UTF-8, legacy code pages). Memory stays constant regardless of file size.
 2. **Split records.** Learns, per file, what the start of a record looks like (a timestamp, a level token, a JSON object, a bracketed prefix) by scoring candidates on a sample. Continuation lines such as `at com.acme…`, `Caused by:`, `Traceback`, or indented JSON are attached to the record they belong to.
-3. **Detect format.** Every candidate format scores a sample of each file's records from 0 to 1. The candidates are JSON, XML, syslog (RFC 3164 and 5424), Apache/nginx access, nginx error, log4j/logback, Python `logging`, text prefix + JSON payload, logfmt, and CSV/TSV (with delimiter and header sniffing). The best score above 0.6 wins, and exact ties go to the more specific format. Otherwise the file is treated as free text. Every score is kept, so ambiguous files are visible.
+3. **Detect format.** Every candidate format scores a sample of each file's records from 0 to 1. The candidates are JSON, XML, the well-known text formats (syslog RFC 3164 and 5424, Apache/Nginx access, Nginx error, log4j/logback/Spring Boot, Python `logging`, Go `log`, systemd journal export, Windows event exports), text prefix + JSON payload, logfmt, and CSV/TSV (with delimiter and header sniffing). The best score above 0.6 wins, and exact ties go to the more specific format. Otherwise the file is treated as free text. Every score is kept, so ambiguous files are visible.
 4. **Parse.** Three strategies, from most to least specific:
-   - dedicated parsers for well-known formats;
+   - parsers for known formats. Structured ones (JSON, logfmt, CSV, XML) map their fields automatically. Text formats are declared in YAML, one file per format ([`src/loglens/parsers/patterns/`](src/loglens/parsers/patterns)): a regex with named groups, timestamp hints, a level mapping, and sample lines that double as tests. Adding a format needs no Python code;
    - a generic parser that extracts timestamps and levels, masks variables (IDs, IPs, numbers), and mines message templates with the [Drain](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf) algorithm;
    - an AI-taught parser: for an unknown format, a language model proposes a parser as a YAML plugin, which is validated against the file before it is used.
 5. **Analyze.** Clusters recurring issues, detects anomalies, and produces incident reports. The AI investigator answers questions with citations back to source lines.
@@ -90,11 +90,28 @@ Every event, from any source, has the same shape:
 | Record splitting: stack traces, multi-line JSON and SQL | ✅ Done |
 | Format detection: 12 formats, per-file scores, `loglens detect` | ✅ Done |
 | Parsers for structured formats: JSON, prefix + JSON, CSV/TSV, logfmt, XML, with automatic field mapping | ✅ Done |
-| Parsers: known text formats, generic + Drain, AI-taught plugins | 🚧 Next |
+| Parsers for 11 text formats declared in YAML: syslog, Apache/Nginx, log4j, Python, Go, journald, Windows events | ✅ Done |
+| Generic parser (free text, Drain templates), normalization, AI-taught plugins | 🚧 Next |
 | Unified event table (Parquet + DuckDB) | Planned |
 | Analysis: recurring issues, anomalies, incident reports | Planned |
 | AI investigator with cited answers | Planned |
 | CLI, HTTP API, web dashboard | Partial: `loglens detect` works |
+
+## Benchmarks
+
+Text-format parsing (regex match, field mapping, level normalization, event construction), measured with [`benchmarks/bench_text_formats.py`](benchmarks/bench_text_formats.py) on one core of a laptop, Python 3.13:
+
+| Format | Records/s |
+|---|---:|
+| syslog RFC 3164 | 341k |
+| Apache common | 239k |
+| Nginx error | 196k |
+| syslog RFC 5424 | 163k |
+| Apache / Nginx combined | 145k |
+| log4j, Python logging, Go log (incl. multi-line records) | 296k–388k |
+| systemd journal export (≈13 lines per entry) | 90k entries |
+
+Every single-line format is above the 100k records/s target. Ingestion streams files of any size in constant memory (checked with `tracemalloc` in the test suite).
 
 ## Getting started
 

@@ -1,0 +1,42 @@
+name: syslog_rfc3164
+description: >-
+  BSD syslog (RFC 3164) as written to /var/log by syslogd and rsyslog, with or without
+  a <PRI> prefix. Also covers rsyslog's high-precision RFC 3339 timestamps and the
+  journalctl short, short-precise, short-iso and short-unix outputs.
+priority: 20
+regex:
+  # "Mmm dd hh:mm:ss host tag[pid]: message". The tag is optional
+  # ("host last message repeated 3 times").
+  - '(?:<(?P<pri>\d{1,3})>)?(?P<timestamp>(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) [ \d]\d \d{2}:\d{2}:\d{2}(?:\.\d{1,6})?) (?P<host>\S+) (?:(?P<component>[^\s:\[\]]+)(?:\[(?P<pid>\d+)\])?: )?(?P<message>.*)'
+  # RFC 3339 or Unix timestamps. The tag is required here, so that other
+  # "timestamp word ..." formats are not mistaken for syslog.
+  - '(?:<(?P<pri>\d{1,3})>)?(?P<timestamp>\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,9})?(?:Z|[+-]\d{2}:?\d{2})|\d{10}\.\d{1,6}) (?P<host>\S+) (?P<component>[^\s:\[\]]+)(?:\[(?P<pid>\d+)\])?: (?P<message>.*)'
+timestamp_format: ['%b %d %H:%M:%S', '%b %d %H:%M:%S.%f', iso8601, epoch]
+level:
+  group: pri
+  transform: syslog_priority
+  map: {0: FATAL, 1: FATAL, 2: FATAL, 3: ERROR, 4: WARN, 5: INFO, 6: INFO, 7: DEBUG}
+sample_lines:
+  - line: 'Mar 14 09:12:01 web-1 sshd[4312]: Accepted publickey for deploy from 10.0.0.5 port 52814 ssh2'
+    expect:
+      timestamp: 'Mar 14 09:12:01'
+      host: web-1
+      component: sshd
+      pid: 4312
+      message: Accepted publickey for deploy from 10.0.0.5 port 52814 ssh2
+  - line: '<34>Oct 11 22:14:15 mymachine su: ''su root'' failed for lonvick on /dev/pts/8'
+    expect: {level_raw: 34, level: FATAL, host: mymachine, component: su}
+  - line: 'Mar  4 06:25:01 web-1 CRON[20881]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)'
+    expect: {timestamp: 'Mar  4 06:25:01', component: CRON, pid: 20881}
+  - line: 'Mar 14 09:12:07 web-1 kernel: [184467.521063] Out of memory: Killed process 4312 (java) total-vm:8388608kB'
+    expect: {component: kernel, message: '[184467.521063] Out of memory: Killed process 4312 (java) total-vm:8388608kB'}
+  - line: 'Mar 14 09:12:09 web-1 last message repeated 3 times'
+    expect: {host: web-1, message: last message repeated 3 times}
+  - line: '2026-03-14T09:12:01.114623+00:00 web-1 systemd[1]: Started Session 42 of user deploy.'
+    expect: {timestamp: '2026-03-14T09:12:01.114623+00:00', component: systemd, pid: 1}
+  - line: '2026-03-14T09:12:01+0000 web-1 sshd[4312]: Connection closed by 10.0.0.5 port 52814'
+    expect: {timestamp: '2026-03-14T09:12:01+0000'}
+  - line: 'Mar 14 09:12:01.114623 web-1 systemd-logind[512]: New session 42 of user deploy.'
+    expect: {timestamp: 'Mar 14 09:12:01.114623', component: systemd-logind}
+  - line: '1773479521.114623 web-1 postfix/smtpd[2201]: connect from unknown[203.0.113.7]'
+    expect: {timestamp: '1773479521.114623', component: postfix/smtpd, pid: 2201}

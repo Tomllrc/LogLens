@@ -1,0 +1,49 @@
+name: journal_export
+description: >-
+  systemd journal export format (journalctl -o export): one KEY=value field per line,
+  entries separated by a blank line, each starting with __CURSOR. Every text field is
+  kept; binary (length-prefixed) fields are not supported. For journalctl's default
+  "short" outputs, see syslog_rfc3164.
+priority: 12
+flags: [DOTALL, MULTILINE]
+record_start: '__CURSOR='
+regex: '__CURSOR=[^\n]*(?:(?=.*?^__REALTIME_TIMESTAMP=(?P<timestamp>\d+)$))?(?:(?=.*?^PRIORITY=(?P<level>[0-7])$))?(?:(?=.*?^SYSLOG_IDENTIFIER=(?P<component>[^\n]*)$))?(?:(?=.*?^MESSAGE=(?P<message>[^\n]*)$))?.*'
+extra_fields:
+  regex: '^(?P<key>[A-Z0-9_]+)=(?P<value>[^\n]*)$'
+  exclude: [__REALTIME_TIMESTAMP, PRIORITY, SYSLOG_IDENTIFIER, MESSAGE]
+timestamp_format: epoch_us
+level:
+  map: {0: FATAL, 1: FATAL, 2: FATAL, 3: ERROR, 4: WARN, 5: INFO, 6: INFO, 7: DEBUG}
+sample_lines:
+  - line: |
+      __CURSOR=s=739ad463348b4ceca5a9e69c95a3c93f;i=4ece7;b=6c7c6013a8b34d8a9b3b2d5f7e1c0e1c;m=264ab7cb;t=5a8b3e1f0c0e4;x=2c1
+      __REALTIME_TIMESTAMP=1773479521114000
+      __MONOTONIC_TIMESTAMP=642430923
+      _BOOT_ID=6c7c6013a8b34d8a9b3b2d5f7e1c0e1c
+      PRIORITY=6
+      _TRANSPORT=syslog
+      SYSLOG_FACILITY=4
+      SYSLOG_IDENTIFIER=sshd
+      _PID=4312
+      _COMM=sshd
+      _HOSTNAME=web-1
+      _SYSTEMD_UNIT=ssh.service
+      MESSAGE=Accepted publickey for deploy from 10.0.0.5 port 52814 ssh2
+    expect:
+      timestamp: 1773479521114000
+      level: INFO
+      level_raw: 6
+      component: sshd
+      message: Accepted publickey for deploy from 10.0.0.5 port 52814 ssh2
+      _HOSTNAME: web-1
+      _PID: 4312
+      _SYSTEMD_UNIT: ssh.service
+  - line: |
+      __CURSOR=s=739ad463348b4ceca5a9e69c95a3c93f;i=4ece8;b=6c7c6013a8b34d8a9b3b2d5f7e1c0e1c;m=264ab8aa;t=5a8b3e1f0c1c3;x=2c2
+      __REALTIME_TIMESTAMP=1773479527431000
+      MESSAGE=Out of memory: Killed process 4312 (java) total-vm:8388608kB
+      PRIORITY=3
+      _TRANSPORT=kernel
+      SYSLOG_IDENTIFIER=kernel
+      _HOSTNAME=web-1
+    expect: {level: ERROR, component: kernel, _TRANSPORT: kernel}
