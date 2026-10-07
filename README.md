@@ -100,6 +100,9 @@ Every event, from any source, has the same shape:
 
 ## Benchmarks
 
+**Loghub** ([16 public datasets](https://github.com/logpai/loghub), 2,000 lines each, with ground-truth templates), full pipeline, no per-dataset tuning: average **grouping accuracy 75.8%**, parsing accuracy 33.4%, timestamps found on 100% of lines, about **23,000 lines/s per worker**. Per-dataset table: [benchmarks/RESULTS.md](benchmarks/RESULTS.md); what failed and what was fixed: [benchmarks/ANALYSIS.md](benchmarks/ANALYSIS.md).
+
+
 Text-format parsing (regex match, field mapping, level normalization, event construction), measured with [`benchmarks/bench_text_formats.py`](benchmarks/bench_text_formats.py) on one core of a laptop, Python 3.13:
 
 | Format | Records/s |

@@ -55,3 +55,45 @@ Naive timestamps are read in `--timezone` (default UTC; DST handled by zoneinfo,
 `tzdata` shipped for Windows). Year-less timestamps (syslog) take the run's year, or
 the year before if that would be more than a day in the future. A time without a date
 cannot be placed and is stored as null (`timestamp_raw` keeps it).
+
+## D9. A `<HOST>` placeholder, beyond the briefed list
+
+Host names (`www.example.com:443`, `proxy.cse.cuhk.edu.hk`) are variables just like IPs;
+without masking, every host made its own template. Accepted: labels ending in a common
+generic TLD, or 3+ labels ending in a two-letter country code (so `main.go` is a file).
+
+## D10. Equal typed placeholders are neutral in Drain's similarity
+
+Refines D5 after the Loghub analysis: `<NUM> normal` and `<NUM> running` shared a
+placeholder, which plain Drain counts as similarity, so 2-token events merged. Equal
+placeholders now say "same kind of value", not "same event"; only literals are similar.
+
+## D11. Benchmark fixes are general only; Drain's threshold is never tuned
+
+Phase 2 fixes came from real failing examples but each is a rule for any log (headers,
+masking, similarity). Per-dataset thresholds or rules keyed to a dataset were ruled out.
+Remaining errors are documented in `benchmarks/ANALYSIS.md`.
+
+## D12. drain3 persistence is attached only to load and save
+
+drain3 saves its whole state after every new cluster when a persistence handler is set:
+quadratic on logs with many templates (20k unique lines took minutes). The handler is
+attached only to load at start and to save once at the end.
+
+## D13. Drain compares a new message with at most 256 clusters of its leaf
+
+Bounded worst case for free text whose first words are random (one leaf fills with
+thousands of clusters). Normal logs never reach the cap: benchmark results were
+identical with and without it.
+
+## D14. Small files are bundled into tasks; rotation sets are read oldest first
+
+Tasks bundle consecutive small files (up to 8 MB or 256 files), cutting per-task costs
+for folders of thousands of tiny files; order is kept, so mining stays deterministic.
+Folder discovery orders `app.log.N[.gz]` before `app.log`, highest N first.
+
+## D15. Slow torture tests are a separate marker
+
+Tests over a million lines or ten thousand files take over a minute; they are marked
+`slow`, excluded from the default `pytest` run, and run with `pytest -m slow` (CI runs
+both).

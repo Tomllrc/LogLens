@@ -32,6 +32,14 @@ _WORDS: Final = {
     "emerg": "FATAL",
     "emergency": "FATAL",
     "panic": "FATAL",
+    # Single letters of logcat, glog and similar C/C++ loggers (parsers only report them
+    # when they sit in a header position).
+    "v": "DEBUG",
+    "d": "DEBUG",
+    "i": "INFO",
+    "w": "WARN",
+    "e": "ERROR",
+    "f": "FATAL",
 }
 _SYSLOG_SEVERITIES: Final = ("FATAL", "FATAL", "FATAL", "ERROR", "WARN", "INFO", "INFO", "DEBUG")
 _PINO_LEVELS: Final = {10: "TRACE", 20: "DEBUG", 30: "INFO", 40: "WARN", 50: "ERROR", 60: "FATAL"}

@@ -11,6 +11,7 @@ from collections import Counter
 from collections.abc import Iterator
 from dataclasses import dataclass, field
 from datetime import datetime
+from itertools import count
 from pathlib import Path
 from typing import Any, BinaryIO, Final
 from zoneinfo import ZoneInfo
@@ -57,10 +58,10 @@ STAGING_SCHEMA: Final = pa.schema(
 
 @dataclass(frozen=True)
 class Task:
-    """One input to process."""
+    """Inputs processed together (small files are bundled to save per-task costs)."""
 
     index: int
-    item: InputFile
+    items: tuple[InputFile, ...]
     staging_path: Path
     options: ParseOptions
     reference: datetime
@@ -71,7 +72,6 @@ class TaskResult:
     """What one task produced (counts, detections and problems; events are on disk)."""
 
     index: int
-    source: str
     staging_path: Path
     records: int = 0
     events: int = 0
@@ -85,7 +85,8 @@ class TaskResult:
     warnings: list[tuple[str, FileIssue]] = field(default_factory=list)
     detections: dict[str, DetectionResult] = field(default_factory=dict)
     events_per_source: Counter[str] = field(default_factory=Counter)
-    error: str | None = None
+    errors: list[tuple[str, str]] = field(default_factory=list)
+    """Inputs that failed: (source, error). Their events read before the failure are kept."""
 
 
 class _StagingWriter:
@@ -132,48 +133,62 @@ class _SourceState:
 
 
 def run_task(task: Task, stdin: BinaryIO | None = None) -> TaskResult:
-    """Process one input into a staging file. Never raises: failures are reported."""
+    """Process a task's inputs into one staging file. Never raises: failures are reported."""
     started = time.perf_counter()
-    result = TaskResult(task.index, task.item.source, task.staging_path)
-    try:
-        _process(task, result, stdin)
-    except Exception as error:  # last-resort guard: one bad input must not stop the run
-        result.error = f"{type(error).__name__}: {error}"
-    result.seconds = time.perf_counter() - started
-    return result
-
-
-def _process(task: Task, result: TaskResult, stdin: BinaryIO | None) -> None:
+    result = TaskResult(task.index, task.staging_path)
     options = task.options
-    ingest_report, split_report, detect_report = IngestReport(), SplitReport(), DetectReport()
-    ingest_options = IngestOptions(include=options.include, exclude=options.exclude)
-    lines = iter_input_lines(task.item, options=ingest_options, report=ingest_report, stdin=stdin)
-    records = iter_records(
-        lines,
-        options=SplitOptions(max_record_lines=options.max_record_lines),
-        report=split_report,
-    )
     masker = Masker(
         load_masking_rules(options.masking_file) if options.masking_file else DEFAULT_RULES
     )
     writer = _StagingWriter(task.staging_path, options.batch_rows)
+    ordinals = count()
     try:
-        for ordinal, row in enumerate(
-            _rows(iter_detected(records, report=detect_report), detect_report, task, masker, result)
-        ):
-            row["task_index"], row["ordinal"] = task.index, ordinal
-            writer.add(row)
+        for item in task.items:
+            try:
+                _process_item(task, item, result, writer, masker, ordinals, stdin)
+            except Exception as error:  # one bad input must not stop the others
+                result.errors.append((item.source, f"{type(error).__name__}: {error}"))
     finally:
         writer.close()
-    result.files_read = list(ingest_report.files_read)
-    result.skipped = list(ingest_report.files_skipped)
-    result.bytes_read = ingest_report.bytes_read
-    result.warnings = [
-        *(("ingest", issue) for issue in ingest_report.warnings),
-        *(("split", issue) for issue in split_report.warnings),
-        *(("detect", issue) for issue in detect_report.warnings),
-    ]
-    result.detections = dict(detect_report.detections)
+    result.seconds = time.perf_counter() - started
+    return result
+
+
+def _process_item(
+    task: Task,
+    item: InputFile,
+    result: TaskResult,
+    writer: "_StagingWriter",
+    masker: Masker,
+    ordinals: Iterator[int],
+    stdin: BinaryIO | None,
+) -> None:
+    options = task.options
+    ingest_report, split_report, detect_report = IngestReport(), SplitReport(), DetectReport()
+    ingest_options = IngestOptions(include=options.include, exclude=options.exclude)
+    try:
+        lines = iter_input_lines(item, options=ingest_options, report=ingest_report, stdin=stdin)
+        records = iter_records(
+            lines,
+            options=SplitOptions(max_record_lines=options.max_record_lines),
+            report=split_report,
+        )
+        detected = iter_detected(records, report=detect_report)
+        for row in _rows(detected, detect_report, task, masker, result):
+            row["task_index"], row["ordinal"] = task.index, next(ordinals)
+            writer.add(row)
+    finally:
+        result.files_read.extend(ingest_report.files_read)
+        result.skipped.extend(ingest_report.files_skipped)
+        result.bytes_read += ingest_report.bytes_read
+        result.warnings.extend(
+            [
+                *(("ingest", issue) for issue in ingest_report.warnings),
+                *(("split", issue) for issue in split_report.warnings),
+                *(("detect", issue) for issue in detect_report.warnings),
+            ]
+        )
+        result.detections.update(detect_report.detections)
 
 
 def _rows(

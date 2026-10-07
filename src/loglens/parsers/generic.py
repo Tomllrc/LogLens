@@ -97,7 +97,15 @@ ANY_CASE_LEVEL_WINDOW: Final = 3
 """Tokens after the timestamp in which a level word of any case is accepted."""
 
 _COMPONENT_AFTER_LEVEL: Final = re.compile(r"([A-Za-z_][\w.$/\-]*(?:\([\w.\-]*\))?):")
-_SYSLOG_TAG: Final = re.compile(r"([A-Za-z_][\w.$/\-]*(?:\([\w.\-]*\))?)\[(\d+)\]:")
+_QUALIFIED_NAME: Final = re.compile(r"[A-Za-z_][\w$\-]*(?:[.$][\w$\-]+)+")
+"""A dotted logger/module name (``nova.compute.manager``, ``dfs.DataNode$Responder``)."""
+_PROGRAM_NAME: Final = re.compile(r"(?=[\w$\-]*[A-Za-z])[A-Za-z0-9_][\w$\-]*(?:[./$][\w$\-]+)+")
+"""A program or module name with a dot, slash or ``$`` (``chrome.exe``, ``bin/app``)."""
+_SINGLE_LETTER_LEVEL: Final = frozenset("VDIWEF")
+"""logcat / glog style levels, accepted only right before a ``Tag:`` component."""
+_SYSLOG_TAG: Final = re.compile(r"([A-Za-z_/][\w.$/\-]*(?:\([\w.\-]*\))?)\[(\d+)\]:")
+PROGRAM_SEPARATOR_WINDOW: Final = 2
+"""``program [tag] - message``: tokens allowed before the `` - `` separator."""
 SYSLOG_TAG_WINDOW: Final = 8
 _SEPARATORS: Final = " \t-:|,"
 _TOKEN: Final = re.compile(r"\S+")
@@ -154,9 +162,15 @@ class GenericParser:
                 extra["pid"] = pid
                 if level_index is None or tag_index >= cursor:
                     cursor = tag_index + 1
+        if component is None and level_index is None and timestamp is not None:
+            program = _program_before_dash(tokens)
+            if program is not None:
+                component, cursor = program
 
         start = tokens[cursor][0] if cursor < len(tokens) else len(first)
         message = first[start:].strip(_SEPARATORS) if (timestamp or level or component) else first
+        if not message:  # never swallow the whole line into header fields ("... 1 warning")
+            message = first[position:].strip(_SEPARATORS) or first
         message = (message + newline + rest).strip()
 
         confidence = BASE_CONFIDENCE
@@ -180,6 +194,12 @@ def _tokens(line: str, start: int) -> list[tuple[int, str]]:
 
 def _find_level(tokens: list[tuple[int, str]]) -> tuple[str | None, int | None]:
     for index, (_, token) in enumerate(tokens[:UPPER_LEVEL_WINDOW]):
+        if (
+            token in _SINGLE_LETTER_LEVEL
+            and index + 1 < len(tokens)
+            and _COMPONENT_AFTER_LEVEL.fullmatch(tokens[index + 1][1])
+        ):
+            return token, index  # "1702  8671 D PowerManagerService: ..."
         stripped = token.strip(",;")
         upper = _UPPER_LEVEL.fullmatch(stripped)
         if upper is not None:
@@ -207,6 +227,10 @@ def _component_after(tokens: list[tuple[int, str]], index: int) -> tuple[str | N
         found = _COMPONENT_AFTER_LEVEL.fullmatch(tokens[index][1])
         if found is not None:
             return found.group(1), index + 1
+        following = tokens[index + 1][1] if index + 1 < len(tokens) else ""
+        if _QUALIFIED_NAME.fullmatch(tokens[index][1]) and following.startswith(("[", "-")):
+            # "nova.compute.manager [req-1 - - -] message": skip the context in brackets.
+            return tokens[index][1], _skip_brackets_and_separators(tokens, index + 1)
     return None, index
 
 
@@ -215,4 +239,33 @@ def _syslog_tag(tokens: list[tuple[int, str]]) -> tuple[str, str, int] | None:
         found = _SYSLOG_TAG.fullmatch(token)
         if found is not None:
             return found.group(1), found.group(2), index
+    return None
+
+
+def _skip_brackets_and_separators(tokens: list[tuple[int, str]], index: int) -> int:
+    """Index of the first token after one bracketed context group and lone separators.
+
+    Only the first group is header context (``[req-1 - - -]``); later ones, such as
+    ``[instance: 42]``, belong to the message.
+    """
+    skipped_group = False
+    while index < len(tokens):
+        token = tokens[index][1]
+        if token in {"-", "|", ":"}:
+            index += 1
+        elif token.startswith("[") and not skipped_group:
+            while index < len(tokens) and not tokens[index][1].endswith("]"):
+                index += 1
+            index += 1
+            skipped_group = True
+        else:
+            break
+    return index
+
+
+def _program_before_dash(tokens: list[tuple[int, str]]) -> tuple[str, int] | None:
+    """``chrome.exe - message`` or ``chrome.exe *64 - message`` right after the timestamp."""
+    for dash in range(1, PROGRAM_SEPARATOR_WINDOW + 1):
+        if dash < len(tokens) and tokens[dash][1] == "-" and _PROGRAM_NAME.fullmatch(tokens[0][1]):
+            return " ".join(token for _, token in tokens[:dash]), dash + 1
     return None

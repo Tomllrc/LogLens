@@ -73,6 +73,11 @@ def _from_epoch(text: str) -> datetime | None:
         return None
 
 
+_CACHE_SIZE: Final = 4096
+"""Recent conversions kept per file: lines within the same second repeat timestamps."""
+_MISSING: Final = object()
+
+
 class TimestampNormalizer:
     """Turns raw timestamps into aware UTC datetimes, for one file.
 
@@ -87,11 +92,21 @@ class TimestampNormalizer:
         self._hints = list(dict.fromkeys(hints))
         self._tz = tz
         self._reference = reference
+        self._cache: dict[str, datetime | None] = {}
 
     def to_utc(self, raw: str | None) -> datetime | None:
         """The UTC datetime for ``raw``, or None if it cannot be read or placed."""
         if not raw:
             return None
+        cached = self._cache.get(raw, _MISSING)
+        if cached is not _MISSING:
+            return cached  # type: ignore[return-value]
+        if len(self._cache) >= _CACHE_SIZE:
+            self._cache.clear()
+        result = self._cache[raw] = self._convert(raw)
+        return result
+
+    def _convert(self, raw: str) -> datetime | None:
         text = raw.strip()
         epoch = _from_epoch(text)
         if epoch is not None:

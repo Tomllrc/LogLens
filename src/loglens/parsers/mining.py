@@ -31,6 +31,11 @@ from drain3.template_miner_config import TemplateMinerConfig
 from loglens.parsers.masking import PLACEHOLDER
 
 MAX_MINING_CHARS: Final = 1000
+MAX_LEAF_CANDIDATES: Final = 256
+"""Clusters of a Drain leaf compared with a new message (the most recent ones).
+
+Real logs keep leaves far smaller; free text with random first words fills one leaf
+with thousands of clusters, which made matching quadratic."""
 WILDCARD: Final = "<*>"
 
 logging.getLogger("drain3").setLevel(logging.WARNING)
@@ -67,7 +72,7 @@ def template_id(text: str) -> str:
 
 def is_placeholder(token: str) -> bool:
     """True for a whole-token placeholder (``<IP>``, ``<*>``)."""
-    return PLACEHOLDER.fullmatch(token) is not None
+    return token[:1] == "<" and token[-1:] == ">" and PLACEHOLDER.fullmatch(token) is not None
 
 
 def literal_share(text: str) -> float:
@@ -79,33 +84,51 @@ def literal_share(text: str) -> float:
 
 
 class TypedDrain(Drain):  # type: ignore[misc]
-    """Drain whose similarity knows that typed placeholders carry type evidence.
+    """Drain whose similarity treats typed placeholders as evidence of type, not identity.
 
-    Plain Drain counts ``peer`` vs ``<IP>`` as a neutral mismatch, so the 4-token
-    messages ``Connection reset by peer`` and ``Connection refused by <IP>`` reach the 0.4
-    threshold and merge. Masking already proved those positions hold different kinds of
-    values, so a typed placeholder facing a literal (or another type) counts against the
-    similarity. Pairs differing at a single position are still unified afterwards by
+    Two rules on top of plain Drain (``similar tokens / all tokens``):
+
+    - a typed placeholder facing a literal or another type (``peer`` vs ``<IP>``) counts
+      against the similarity: masking already proved those values are of different
+      kinds, so ``Connection reset by peer`` and ``Connection refused by <IP>`` stay apart;
+    - two equal typed placeholders (``<NUM>`` vs ``<NUM>``) are neutral: they say the
+      values have the same kind, not that the events are the same, so ``<NUM> normal``
+      and ``<NUM> running`` stay apart. Only literal tokens count as similar.
+
+    Pairs differing at a single position are still unified afterwards by
     :func:`merge_templates`.
     """
+
+    def fast_match(
+        self, cluster_ids: Sequence[int], tokens: list[str], sim_th: float, include_params: bool
+    ) -> object:
+        """Drain's best match, among the leaf's most recent clusters only."""
+        return super().fast_match(
+            cluster_ids[-MAX_LEAF_CANDIDATES:], tokens, sim_th, include_params
+        )
 
     def get_seq_distance(
         self, seq1: Sequence[str], seq2: Sequence[str], include_params: bool
     ) -> tuple[float, int]:
-        if len(seq1) == 0:
-            return 1.0, 0
+        considered = 0
         similar = 0.0
         params = 0
         for template_token, token in zip(seq1, seq2, strict=True):
             if template_token == self.param_str:
                 params += 1
+                considered += 1
             elif template_token == token:
+                if is_placeholder(template_token):
+                    continue  # same kind of value: neutral
                 similar += 1
-            elif is_placeholder(template_token) or is_placeholder(token):
-                similar -= 1  # a typed value against a different kind of value
+                considered += 1
+            else:
+                considered += 1
+                if is_placeholder(template_token) or is_placeholder(token):
+                    similar -= 1  # a typed value against a different kind of value
         if include_params:
             similar += params
-        return similar / len(seq1), params
+        return (similar / considered if considered else 1.0), params
 
 
 class TemplateMiner:
@@ -123,13 +146,15 @@ class TemplateMiner:
         drain_config.masking_instructions = []
         drain_config.snapshot_interval_minutes = 10**6  # we save explicitly
         drain_config.snapshot_compress_state = True
-        persistence = None
+        self._persistence = None
         if state_path is not None:
             state_path.parent.mkdir(parents=True, exist_ok=True)
-            persistence = FilePersistence(str(state_path))
-        self._drain = Drain3Miner(persistence, drain_config)
+            self._persistence = FilePersistence(str(state_path))
+        # The state file is attached only to load and save: drain3 otherwise saves its whole
+        # state after every new cluster, which is quadratic on logs with many templates.
+        self._drain = Drain3Miner(self._persistence, drain_config)
+        self._drain.persistence_handler = None
         self._drain.drain.__class__ = TypedDrain  # also persisted, so reloads keep the rule
-        self._has_state = state_path is not None
 
     def add(self, masked: str) -> int:
         """Cluster one masked message; returns its cluster id (0 for an empty message)."""
@@ -145,9 +170,13 @@ class TemplateMiner:
         }
 
     def save(self) -> None:
-        """Persist the state (no-op without a state file)."""
-        if self._has_state:
-            self._drain.save_state("loglens")
+        """Persist the state, once (no-op without a state file)."""
+        if self._persistence is not None:
+            self._drain.persistence_handler = self._persistence
+            try:
+                self._drain.save_state("loglens")
+            finally:
+                self._drain.persistence_handler = None
 
 
 def merge_templates(templates: dict[int, str]) -> dict[int, str]:

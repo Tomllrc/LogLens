@@ -20,6 +20,7 @@ from collections.abc import Callable, Mapping
 from dataclasses import dataclass
 from typing import Final
 
+from loglens.parsers.generic import GENERIC_TIMESTAMP
 from loglens.parsers.values import LEVEL_VALUE, NUMERIC_LEVEL, TIMESTAMP_VALUE
 
 _IGNORED_KEY_CHARS: Final = re.compile(r"[@_\-\s]")
@@ -237,11 +238,11 @@ def map_fields(fields: Mapping[str, object]) -> MappedFields:
 def map_by_value(fields: Mapping[str, str]) -> MappedFields:
     """Assign roles from what values look like, for columns without meaningful names.
 
-    The first timestamp-looking value is the timestamp, the first level word the level,
-    and the remaining value with the most words (at least two; the last column wins
-    ties) the message. No component is guessed.
+    The first timestamp-looking value (any layout the generic parser knows) is the
+    timestamp, the first level word the level, and the remaining value with the most
+    words (at least two; the last column wins ties) the message. No component is guessed.
     """
-    timestamp = next((k for k, v in fields.items() if TIMESTAMP_VALUE.fullmatch(v.strip())), None)
+    timestamp = next((k for k, v in fields.items() if _is_timestamp(v)), None)
     level = next(
         (k for k, v in fields.items() if k != timestamp and LEVEL_VALUE.fullmatch(v.strip())),
         None,
@@ -256,6 +257,12 @@ def map_by_value(fields: Mapping[str, str]) -> MappedFields:
         message=fields[message].strip() if message else None,
         extra={k: v for k, v in fields.items() if k not in taken},
     )
+
+
+def _is_timestamp(value: str) -> bool:
+    """A whole value in any timestamp layout the generic parser knows."""
+    text = value.strip()
+    return bool(TIMESTAMP_VALUE.fullmatch(text) or GENERIC_TIMESTAMP.fullmatch(text))
 
 
 def describe_fields(fields: Mapping[str, str]) -> str:

@@ -4,6 +4,7 @@ import bz2
 import gzip
 import io
 import os
+import re
 import shutil
 import sys
 import tarfile
@@ -144,8 +145,9 @@ def _as_input_list(inputs: InputPath | Iterable[InputPath]) -> list[InputPath]:
 def _walk(root: Path, ctx: _Context) -> Iterator[Path]:
     """Yield regular files under ``root``, pruning excluded directories.
 
-    Order is stable: a directory's own files (sorted by name) come before its
-    subdirectories (also sorted by name).
+    Order is stable: a directory's own files come before its subdirectories (sorted by
+    name). Files are sorted by name, except that a rotation set is read oldest first:
+    ``app.log.2.gz``, ``app.log.1``, then ``app.log`` (see :func:`rotation_sort_key`).
     """
 
     def on_error(error: OSError) -> None:
@@ -161,12 +163,27 @@ def _walk(root: Path, ctx: _Context) -> Iterator[Path]:
             else:
                 kept.append(dirname)
         dirnames[:] = kept
-        for filename in sorted(filenames):
+        for filename in sorted(filenames, key=rotation_sort_key):
             file_path = Path(dirpath, filename)
             if file_path.is_file():
                 yield file_path
             else:
                 ctx.skip(file_path.as_posix(), "not a regular file")
+
+
+_ROTATED: Final = re.compile(r"(?P<base>.+?)\.(?P<generation>\d{1,4})(?:\.(?:gz|bz2|zip|xz))?")
+
+
+def rotation_sort_key(name: str) -> tuple[str, int, str]:
+    """Sort key putting a rotation set in chronological order (oldest first).
+
+    ``app.log.N`` (optionally compressed) is generation N of ``app.log``; higher
+    generations are older. Other files sort by name.
+    """
+    rotated = _ROTATED.fullmatch(name)
+    if rotated is None:
+        return name, 0, name
+    return rotated.group("base"), -int(rotated.group("generation")), name
 
 
 def _read_file(path: Path, ctx: _Context, *, filtered: bool) -> Iterator[Line]:

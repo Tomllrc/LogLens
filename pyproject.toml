@@ -59,7 +59,9 @@ ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = ["--strict-markers"]
+# Slow torture tests (1M lines, 10k files) run with `pytest -m slow`, and in CI.
+addopts = ["--strict-markers", "-m", "not slow"]
+markers = ["slow: long-running torture tests, excluded by default (run with -m slow)"]
 
 [tool.coverage.run]
 source = ["loglens"]

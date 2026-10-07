@@ -36,3 +36,6 @@ jobs:
 
       - name: Tests (pytest + coverage)
         run: uv run pytest --cov --cov-report=term-missing
+
+      - name: Torture tests (slow)
+        run: uv run pytest -m slow -q

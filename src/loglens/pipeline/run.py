@@ -29,7 +29,7 @@ import duckdb
 import pyarrow as pa
 
 from loglens import __version__
-from loglens.ingest import FileIssue, IngestOptions, IngestReport, discover_inputs
+from loglens.ingest import FileIssue, IngestOptions, IngestReport, InputFile, discover_inputs
 from loglens.parsers.mining import (
     MiningConfig,
     Template,
@@ -129,8 +129,8 @@ def run_parse(
     summary.inputs = len(items)
     summary.skipped.extend(discovery.files_skipped)
     tasks = [
-        Task(index, item, staging / f"{index:06d}.parquet", options, reference)
-        for index, item in enumerate(items)
+        Task(index, bundle, staging / f"{index:06d}.parquet", options, reference)
+        for index, bundle in enumerate(bundle_inputs(items))
     ]
     results = _run_tasks(tasks, options.workers, progress, stdin)
     staged = [r.staging_path.as_posix() for r in results if r.staging_path.is_file()]
@@ -162,8 +162,8 @@ def _run_tasks(
     stdin: BinaryIO | None,
 ) -> list[TaskResult]:
     results: list[TaskResult] = []
-    disk_tasks = [t for t in tasks if t.item.path is not None]
-    stdin_tasks = [t for t in tasks if t.item.path is None]
+    disk_tasks = [t for t in tasks if all(item.path is not None for item in t.items)]
+    stdin_tasks = [t for t in tasks if any(item.path is None for item in t.items)]
     total = len(tasks)
 
     def done(result: TaskResult) -> None:
@@ -191,8 +191,48 @@ def _run_tasks(
 
 
 def _staging_relation(staged: list[str]) -> str:
-    files = ", ".join("'" + path.replace("'", "''") + "'" for path in staged)
-    return f"read_parquet([{files}])"
+    """All staging files, by glob (a file list in SQL would grow with the input count)."""
+    folder = Path(staged[0]).parent.as_posix().replace("'", "''")
+    return f"read_parquet('{folder}/*.parquet')"
+
+
+BUNDLE_MAX_BYTES: Final = 8 * 1024 * 1024
+BUNDLE_MAX_FILES: Final = 256
+
+
+def bundle_inputs(items: Sequence[InputFile]) -> list[tuple[InputFile, ...]]:
+    """Group consecutive small files into tasks; large files and stdin go alone.
+
+    Order is preserved, so the first-seen order used for mining does not change.
+    """
+    bundles: list[tuple[InputFile, ...]] = []
+    current: list[InputFile] = []
+    size = 0
+    for item in items:
+        item_size = _size(item)
+        if item.path is None or item_size >= BUNDLE_MAX_BYTES:
+            if current:
+                bundles.append(tuple(current))
+                current, size = [], 0
+            bundles.append((item,))
+            continue
+        current.append(item)
+        size += item_size
+        if size >= BUNDLE_MAX_BYTES or len(current) >= BUNDLE_MAX_FILES:
+            bundles.append(tuple(current))
+            current, size = [], 0
+    if current:
+        bundles.append(tuple(current))
+    return bundles
+
+
+def _size(item: InputFile) -> int:
+    if item.path is None:
+        return 0
+    try:
+        return item.path.stat().st_size
+    except OSError:
+        return 0
 
 
 def _mine(
@@ -304,8 +344,7 @@ def _collect(summary: ParseSummary, results: Iterable[TaskResult]) -> None:
         summary.bytes_read += result.bytes_read
         summary.skipped.extend(result.skipped)
         summary.warnings += len(result.warnings)
-        if result.error is not None:
-            summary.failed_inputs.append((result.source, result.error))
+        summary.failed_inputs.extend(result.errors)
         for source, detection in result.detections.items():
             events = result.events_per_source.get(source, 0)
             summary.files.append(

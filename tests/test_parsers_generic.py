@@ -71,8 +71,8 @@ def _parse(text: str) -> tuple[str | None, str | None, str | None, str, float]:
             "[10.30 16:49:06] chrome.exe - proxy.example.com:5070 close, 0 bytes sent",
             "10.30 16:49:06",
             None,
-            None,
-            "chrome.exe - proxy.example.com:5070 close, 0 bytes sent",
+            "chrome.exe",  # "program - message" header (before Phase 2: left in the message)
+            "proxy.example.com:5070 close, 0 bytes sent",
         ),
         (
             "20171223-22:15:29:606|Step_LSC|30002312|onStandStepChanged 3579",

@@ -268,14 +268,14 @@ def test_a_failing_input_does_not_stop_the_run(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     source = build_mixed(tmp_path / "in")
-    real = worker_module._process
+    real = worker_module._process_item
 
-    def flaky(task: worker_module.Task, result: worker_module.TaskResult, stdin: Any) -> None:
-        if task.item.source.endswith("auth.log"):
+    def flaky(task: Any, item: Any, *args: Any) -> None:
+        if item.source.endswith("auth.log"):
             raise RuntimeError("disk on fire")
-        real(task, result, stdin)
+        real(task, item, *args)
 
-    monkeypatch.setattr(worker_module, "_process", flaky)
+    monkeypatch.setattr(worker_module, "_process_item", flaky)
     summary = run_parse([source], tmp_path / "out", ParseOptions(workers=1))
     assert [(s.rsplit("/", 1)[-1], e) for s, e in summary.failed_inputs] == [
         ("auth.log", "RuntimeError: disk on fire")

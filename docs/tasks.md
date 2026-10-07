@@ -16,11 +16,11 @@ Legend: `[x]` done, `[~]` in progress, `[ ]` to do.
 - [x] 1.8 Checks, CHANGELOG, CLAUDE.md status, commit "Phase 1: ..."
 
 ## Phase 2: Benchmark and robustness
-- [ ] 2.1 Loghub 2k download (data/loghub, gitignored), grouping/parsing accuracy, timestamp/level rates, throughput; RESULTS.md + JSON history; regression check
-- [ ] 2.2 Analyze 3 worst datasets, general fixes only, before/after
-- [ ] 2.3 tests/torture/ (encodings, invalid UTF-8, NUL, 10 MB line, truncation, time going backwards, DST, missing timestamps, 10k files, 1M identical lines, all-unique lines, ANSI, rotation sets)
-- [ ] 2.4 Hypothesis fuzz test through the whole pipeline
-- [ ] 2.5 Checks, docs, commit
+- [x] 2.1 Loghub 2k download (data/loghub, gitignored), grouping/parsing accuracy, timestamp/level rates, throughput; RESULTS.md + JSON history; regression check
+- [x] 2.2 Analyze 3 worst datasets, general fixes only, before/after
+- [x] 2.3 tests/torture/ (encodings, invalid UTF-8, NUL, 10 MB line, truncation, time going backwards, DST, missing timestamps, 10k files, 1M identical lines, all-unique lines, ANSI, rotation sets)
+- [x] 2.4 Hypothesis fuzz test through the whole pipeline
+- [x] 2.5 Checks, docs, commit
 
 ## Phase 3: Teaching LogLens any format
 - [ ] 3.1 User format plugins (~/.loglens/formats, --formats-dir, override, JSON Schema validation)
