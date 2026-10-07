@@ -23,12 +23,12 @@ Legend: `[x]` done, `[~]` in progress, `[ ]` to do.
 - [x] 2.5 Checks, docs, commit
 
 ## Phase 3: Teaching LogLens any format
-- [ ] 3.1 User format plugins (~/.loglens/formats, --formats-dir, override, JSON Schema validation)
-- [ ] 3.2 `loglens formats list|test|new`
-- [ ] 3.3 LLM layer: `ai/llm.py` interface, GeminiClient (google-genai), FakeClient, cache, backoff, throttle, token usage, --no-ai, `loglens doctor`
+- [x] 3.1 User format plugins (~/.loglens/formats, --formats-dir, override, JSON Schema validation)
+- [x] 3.2 `loglens formats list|test|new`
+- [x] 3.3 LLM layer: `ai/llm.py` interface, GeminiClient (google-genai), FakeClient, cache, backoff, throttle, token usage, --no-ai, `loglens doctor`
 - [ ] 3.4 STOP: ask the user to confirm GEMINI_API_KEY before the first real call
-- [ ] 3.5 AI format learner (`ai/format_learner.py`, `loglens learn`)
-- [ ] 3.6 Three exotic synthetic formats + docs/ai-parser.md
+- [x] 3.5 AI format learner (`ai/format_learner.py`, `loglens learn`, `parse --learn`), tested with FakeClient
+- [ ] 3.6 Three exotic synthetic formats (done: fixtures + before numbers) + docs/ai-parser.md (needs the real run)
 - [ ] 3.7 Checks, docs, commit
 
 ## Phase 4: Analysis (no AI)

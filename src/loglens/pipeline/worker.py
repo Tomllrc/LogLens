@@ -19,9 +19,10 @@ from zoneinfo import ZoneInfo
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-from loglens.detect import DetectionResult, DetectReport, iter_detected
+from loglens.detect import DetectionResult, DetectOptions, DetectReport, iter_detected
+from loglens.formats import FormatRegistry, cached_registry
 from loglens.ingest import FileIssue, IngestOptions, IngestReport, InputFile, iter_input_lines
-from loglens.parsers import TEXT_FORMATS, ParsedEvent, Parser, create_parser, safe_parse
+from loglens.parsers import ParsedEvent, Parser, safe_parse
 from loglens.parsers.generic import GENERIC_TIMESTAMP_HINTS, GenericParser, strip_ansi
 from loglens.parsers.masking import DEFAULT_RULES, Masker, load_masking_rules
 from loglens.parsers.mining import mining_text
@@ -121,11 +122,17 @@ class _StagingWriter:
 class _SourceState:
     """Per-source parsing state: the parser (stateful for CSV) and timestamp normalizer."""
 
-    def __init__(self, detection: DetectionResult | None, tz: ZoneInfo, reference: datetime):
+    def __init__(
+        self,
+        detection: DetectionResult | None,
+        registry: FormatRegistry,
+        tz: ZoneInfo,
+        reference: datetime,
+    ):
         format_name = detection.format_name if detection else "free_text"
         details = dict(detection.details) if detection else {}
-        self.parser: Parser | None = create_parser(format_name, details)
-        text_format = TEXT_FORMATS.get(format_name)
+        self.parser: Parser | None = registry.create_parser(format_name, details)
+        text_format = registry.text_formats.get(format_name)
         hints = text_format.timestamp_formats if text_format else ()
         self.normalizer = TimestampNormalizer(
             (*hints, *GENERIC_TIMESTAMP_HINTS), tz=tz, reference=reference
@@ -164,17 +171,23 @@ def _process_item(
     stdin: BinaryIO | None,
 ) -> None:
     options = task.options
+    registry = cached_registry(options.formats_dirs)
     ingest_report, split_report, detect_report = IngestReport(), SplitReport(), DetectReport()
     ingest_options = IngestOptions(include=options.include, exclude=options.exclude)
     try:
         lines = iter_input_lines(item, options=ingest_options, report=ingest_report, stdin=stdin)
         records = iter_records(
             lines,
-            options=SplitOptions(max_record_lines=options.max_record_lines),
+            options=SplitOptions(
+                max_record_lines=options.max_record_lines,
+                declared_starts=registry.declared_starts(),
+            ),
             report=split_report,
         )
-        detected = iter_detected(records, report=detect_report)
-        for row in _rows(detected, detect_report, task, masker, result):
+        detected = iter_detected(
+            records, options=DetectOptions(detectors=registry.detectors()), report=detect_report
+        )
+        for row in _rows(detected, detect_report, registry, task, masker, result):
             row["task_index"], row["ordinal"] = task.index, next(ordinals)
             writer.add(row)
     finally:
@@ -194,6 +207,7 @@ def _process_item(
 def _rows(
     detected: Iterator[Any],
     detect_report: DetectReport,
+    registry: FormatRegistry,
     task: Task,
     masker: Masker,
     result: TaskResult,
@@ -207,7 +221,9 @@ def _rows(
         result.records += 1
         if record.source_file != current_source:
             current_source = record.source_file
-            state = _SourceState(detect_report.detections.get(current_source), tz, task.reference)
+            state = _SourceState(
+                detect_report.detections.get(current_source), registry, tz, task.reference
+            )
         assert state is not None
         event, used_generic = _parse(record, state.parser, generic)
         if not event.is_event:

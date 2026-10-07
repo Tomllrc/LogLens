@@ -1,0 +1,2000 @@
+[2026/073-06:00:02.130][I][match#8812] KILL Mira -> noob_7 (deagle, headshot, noscope)
+[2026/073-06:00:03.732][E][anticheat] Sn1per_42 flagged: aim snap 731 deg/s
+[2026/073-06:00:05.776][I][match#8812] CHAT Lumen: rush B
+[2026/073-06:00:06.161][I][match#8812] CHAT xX_Rex_Xx: gg
+[2026/073-06:00:06.433][D][net] TICK rate=116Hz lag=149ms
+[2026/073-06:00:08.805][I][match#8812] CHAT kappa_99: rush B
+[2026/073-06:00:09.070][D][net] TICK rate=123Hz lag=78ms
+[2026/073-06:00:11.993][W][net] Lumen packet loss 40% (ping 238ms)
+[2026/073-06:00:13.882][I][match#8812] KILL kappa_99 -> xX_Rex_Xx (awp, headshot)
+[2026/073-06:00:15.762][D][net] TICK rate=85Hz lag=57ms
+[2026/073-06:00:17.210][I][match#8812] KILL kappa_99 -> xX_Rex_Xx (m4a1)
+[2026/073-06:00:18.661][I][match#8812] KILL noob_7 -> Lumen (deagle, headshot, noscope)
+[2026/073-06:00:21.481][I][match#8812] KILL kappa_99 -> noob_7 (ak47, wallbang)
+[2026/073-06:00:21.871][I][match#8812] KILL noob_7 -> xX_Rex_Xx (awp)
+[2026/073-06:00:24.142][I][match#8812] KILL kappa_99 -> xX_Rex_Xx (deagle)
+[2026/073-06:00:25.329][I][match#8812] KILL Dr.Frag -> noob_7 (deagle, wallbang)
+[2026/073-06:00:27.370][I][match#8812] KILL Sn1per_42 -> Lumen (deagle, headshot, noscope)
+[2026/073-06:00:28.819][I][match#8812] KILL kappa_99 -> Lumen (deagle, headshot)
+[2026/073-06:00:31.704][W][net] noob_7 packet loss 13% (ping 303ms)
+[2026/073-06:00:31.935][D][net] TICK rate=108Hz lag=155ms
+[2026/073-06:00:32.631][I][match#8812] CHAT Mira: nice shot
+[2026/073-06:00:35.536][W][net] xX_Rex_Xx packet loss 40% (ping 328ms)
+[2026/073-06:00:37.496][W][net] xX_Rex_Xx packet loss 11% (ping 85ms)
+[2026/073-06:00:37.621][I][lobby] JOIN kappa_99 from 16.238.221.16
+[2026/073-06:00:38.164][I][match#8812] CHAT Lumen: lag?
+[2026/073-06:00:39.757][I][match#8812] KILL noob_7 -> xX_Rex_Xx (knife)
+[2026/073-06:00:42.430][I][match#8813] ROUND_START map=de_dust2
+[2026/073-06:00:45.060][I][match#8813] KILL kappa_99 -> Dr.Frag (ak47, headshot, noscope)
+[2026/073-06:00:46.738][I][match#8814] ROUND_START map=de_inferno
+[2026/073-06:00:47.071][I][lobby] JOIN xX_Rex_Xx from 33.86.211.26
+[2026/073-06:00:49.725][I][match#8814] CHAT Sn1per_42: nice shot
+[2026/073-06:00:49.976][I][match#8814] CHAT noob_7: gg
+[2026/073-06:00:52.753][I][match#8814] KILL xX_Rex_Xx -> Sn1per_42 (ak47, headshot)
+[2026/073-06:00:54.510][W][net] noob_7 packet loss 30% (ping 125ms)
+[2026/073-06:00:54.883][I][match#8814] KILL xX_Rex_Xx -> kappa_99 (ak47, headshot)
+[2026/073-06:00:57.841][I][match#8814] KILL Sn1per_42 -> Mira (knife, headshot, noscope)
+[2026/073-06:01:00.640][W][net] Mira packet loss 32% (ping 91ms)
+[2026/073-06:01:01.523][I][match#8814] KILL xX_Rex_Xx -> Sn1per_42 (awp, headshot, noscope)
+[2026/073-06:01:01.879][E][anticheat] Sn1per_42 flagged: aim snap 247 deg/s
+[2026/073-06:01:02.705][I][match#8814] KILL Mira -> noob_7 (ak47)
+[2026/073-06:01:04.337][D][net] TICK rate=113Hz lag=237ms
+[2026/073-06:01:05.985][D][net] TICK rate=94Hz lag=143ms
+[2026/073-06:01:06.589][D][net] TICK rate=116Hz lag=143ms
+[2026/073-06:01:06.979][E][anticheat] Lumen flagged: aim snap 221 deg/s
+[2026/073-06:01:08.734][I][match#8814] KILL Dr.Frag -> noob_7 (deagle, headshot, noscope)
+[2026/073-06:01:09.324][I][match#8814] CHAT Lumen: nice shot
+[2026/073-06:01:12.006][I][match#8814] KILL Lumen -> kappa_99 (m4a1, headshot, noscope)
+[2026/073-06:01:14.092][E][anticheat] Mira flagged: aim snap 508 deg/s
+[2026/073-06:01:15.739][I][match#8814] KILL Lumen -> kappa_99 (ak47, headshot, noscope)
+[2026/073-06:01:15.916][I][match#8814] CHAT xX_Rex_Xx: gg
+[2026/073-06:01:18.233][I][match#8814] KILL Sn1per_42 -> Lumen (knife, headshot)
+[2026/073-06:01:19.446][I][lobby] JOIN Lumen from 7.14.77.49
+[2026/073-06:01:20.752][I][match#8814] KILL Sn1per_42 -> Mira (deagle, wallbang)
+[2026/073-06:01:22.907][I][match#8814] KILL noob_7 -> Sn1per_42 (deagle, headshot, noscope)
+[2026/073-06:01:23.062][I][match#8814] KILL Mira -> Sn1per_42 (knife)
+[2026/073-06:01:25.336][I][match#8814] CHAT noob_7: lag?
+[2026/073-06:01:26.969][I][match#8815] ROUND_START map=de_nuke
+[2026/073-06:01:29.082][I][match#8815] CHAT kappa_99: lag?
+[2026/073-06:01:29.465][W][net] Lumen packet loss 19% (ping 357ms)
+[2026/073-06:01:32.185][I][match#8815] CHAT noob_7: nice shot
+[2026/073-06:01:34.935][I][match#8815] KILL noob_7 -> Lumen (ak47)
+[2026/073-06:01:36.663][W][net] Mira packet loss 21% (ping 259ms)
+[2026/073-06:01:39.391][D][net] TICK rate=82Hz lag=123ms
+[2026/073-06:01:41.233][D][net] TICK rate=111Hz lag=9ms
+[2026/073-06:01:41.838][I][match#8815] KILL Mira -> xX_Rex_Xx (knife)
+[2026/073-06:01:43.934][D][net] TICK rate=110Hz lag=186ms
+[2026/073-06:01:46.903][I][match#8815] KILL Dr.Frag -> kappa_99 (ak47, headshot, noscope)
+[2026/073-06:01:48.648][I][match#8815] KILL noob_7 -> Lumen (deagle, headshot, noscope)
+[2026/073-06:01:50.724][I][match#8815] KILL kappa_99 -> Sn1per_42 (deagle, wallbang)
+[2026/073-06:01:51.677][I][match#8815] KILL Dr.Frag -> xX_Rex_Xx (m4a1, headshot)
+[2026/073-06:01:53.954][I][match#8815] CHAT Lumen: lag?
+[2026/073-06:01:56.604][I][match#8815] KILL Lumen -> Sn1per_42 (ak47, headshot)
+[2026/073-06:01:57.386][I][match#8815] KILL xX_Rex_Xx -> Lumen (knife, headshot, noscope)
+[2026/073-06:01:58.502][I][match#8815] KILL xX_Rex_Xx -> Dr.Frag (knife, headshot)
+[2026/073-06:01:58.755][W][net] xX_Rex_Xx packet loss 23% (ping 326ms)
+[2026/073-06:01:59.838][I][lobby] JOIN xX_Rex_Xx from 133.178.86.241
+[2026/073-06:02:00.166][I][match#8815] KILL kappa_99 -> noob_7 (m4a1)
+[2026/073-06:02:02.446][I][match#8815] KILL noob_7 -> Dr.Frag (awp)
+[2026/073-06:02:02.763][I][lobby] JOIN Sn1per_42 from 3.134.220.27
+[2026/073-06:02:05.640][I][match#8815] KILL xX_Rex_Xx -> Sn1per_42 (m4a1, headshot, noscope)
+[2026/073-06:02:07.928][W][net] xX_Rex_Xx packet loss 26% (ping 352ms)
+[2026/073-06:02:09.679][I][match#8815] KILL Lumen -> Mira (awp, wallbang)
+[2026/073-06:02:12.298][W][net] noob_7 packet loss 20% (ping 88ms)
+[2026/073-06:02:12.676][I][match#8815] CHAT noob_7: lag?
+[2026/073-06:02:13.160][D][net] TICK rate=121Hz lag=198ms
+[2026/073-06:02:15.206][I][match#8815] KILL Dr.Frag -> kappa_99 (awp, wallbang)
+[2026/073-06:02:17.487][I][match#8815] CHAT noob_7: nice shot
+[2026/073-06:02:19.036][D][net] TICK rate=68Hz lag=81ms
+[2026/073-06:02:20.755][D][net] TICK rate=102Hz lag=191ms
+[2026/073-06:02:22.291][W][net] Sn1per_42 packet loss 8% (ping 254ms)
+[2026/073-06:02:24.830][D][net] TICK rate=104Hz lag=53ms
+[2026/073-06:02:27.387][I][match#8815] CHAT Dr.Frag: rush B
+[2026/073-06:02:29.431][I][match#8815] KILL kappa_99 -> Sn1per_42 (deagle)
+[2026/073-06:02:30.973][I][match#8815] KILL Mira -> xX_Rex_Xx (m4a1, headshot, noscope)
+[2026/073-06:02:33.955][D][net] TICK rate=73Hz lag=129ms
+[2026/073-06:02:34.610][I][lobby] JOIN Mira from 92.117.11.13
+[2026/073-06:02:36.380][W][net] Sn1per_42 packet loss 31% (ping 336ms)
+[2026/073-06:02:36.424][I][match#8815] CHAT noob_7: nice shot
+[2026/073-06:02:36.870][I][match#8815] KILL kappa_99 -> Dr.Frag (ak47)
+[2026/073-06:02:37.769][I][match#8815] KILL xX_Rex_Xx -> Lumen (knife, headshot)
+[2026/073-06:02:37.854][I][match#8815] KILL xX_Rex_Xx -> Mira (m4a1)
+[2026/073-06:02:39.857][D][net] TICK rate=82Hz lag=193ms
+[2026/073-06:02:41.019][I][match#8815] KILL kappa_99 -> Sn1per_42 (knife)
+[2026/073-06:02:43.312][I][match#8815] KILL xX_Rex_Xx -> Lumen (awp, headshot)
+[2026/073-06:02:45.552][D][net] TICK rate=91Hz lag=27ms
+[2026/073-06:02:47.929][D][net] TICK rate=122Hz lag=112ms
+[2026/073-06:02:49.856][I][match#8815] KILL Dr.Frag -> noob_7 (deagle, headshot)
+[2026/073-06:02:51.110][I][match#8815] KILL Dr.Frag -> kappa_99 (knife, headshot, noscope)
+[2026/073-06:02:53.424][I][match#8815] KILL Lumen -> Dr.Frag (knife)
+[2026/073-06:02:53.909][D][net] TICK rate=76Hz lag=25ms
+[2026/073-06:02:54.445][I][match#8815] CHAT kappa_99: lag?
+[2026/073-06:02:56.504][I][match#8815] CHAT noob_7: lag?
+[2026/073-06:02:59.158][D][net] TICK rate=70Hz lag=89ms
+[2026/073-06:03:02.036][I][match#8815] CHAT Mira: nice shot
+[2026/073-06:03:03.868][I][match#8815] KILL Dr.Frag -> Lumen (ak47, wallbang)
+[2026/073-06:03:06.348][I][match#8815] CHAT noob_7: rush B
+[2026/073-06:03:07.720][E][anticheat] Lumen flagged: aim snap 239 deg/s
+[2026/073-06:03:09.675][I][match#8815] KILL Dr.Frag -> Mira (awp)
+[2026/073-06:03:12.185][D][net] TICK rate=61Hz lag=39ms
+[2026/073-06:03:13.904][I][lobby] JOIN Sn1per_42 from 110.225.5.163
+[2026/073-06:03:16.370][I][match#8815] CHAT kappa_99: rush B
+[2026/073-06:03:17.566][D][net] TICK rate=68Hz lag=97ms
+[2026/073-06:03:18.420][I][match#8815] KILL noob_7 -> Sn1per_42 (awp, headshot)
+[2026/073-06:03:20.584][I][match#8815] KILL Sn1per_42 -> xX_Rex_Xx (ak47, wallbang)
+[2026/073-06:03:22.053][W][net] noob_7 packet loss 20% (ping 360ms)
+[2026/073-06:03:24.155][I][match#8815] KILL Sn1per_42 -> xX_Rex_Xx (awp, headshot)
+[2026/073-06:03:25.596][I][lobby] JOIN noob_7 from 3.46.108.190
+[2026/073-06:03:28.387][I][match#8815] KILL Mira -> noob_7 (knife, headshot)
+[2026/073-06:03:29.685][I][match#8815] CHAT Mira: rush B
+[2026/073-06:03:30.488][W][net] Mira packet loss 31% (ping 230ms)
+[2026/073-06:03:32.240][I][match#8815] KILL Lumen -> Sn1per_42 (knife, headshot)
+[2026/073-06:03:33.987][I][match#8815] KILL Sn1per_42 -> xX_Rex_Xx (knife, headshot, noscope)
+[2026/073-06:03:35.693][W][net] noob_7 packet loss 8% (ping 246ms)
+[2026/073-06:03:37.100][W][net] noob_7 packet loss 25% (ping 330ms)
+[2026/073-06:03:37.433][W][net] xX_Rex_Xx packet loss 10% (ping 107ms)
+[2026/073-06:03:39.077][I][match#8815] CHAT Mira: lag?
+[2026/073-06:03:41.661][I][match#8815] KILL kappa_99 -> Dr.Frag (ak47, headshot, noscope)
+[2026/073-06:03:42.184][D][net] TICK rate=76Hz lag=56ms
+[2026/073-06:03:44.955][D][net] TICK rate=69Hz lag=121ms
+[2026/073-06:03:47.864][D][net] TICK rate=89Hz lag=37ms
+[2026/073-06:03:49.253][I][lobby] JOIN Sn1per_42 from 110.234.178.220
+[2026/073-06:03:51.418][I][match#8815] KILL kappa_99 -> Lumen (ak47, wallbang)
+[2026/073-06:03:53.812][I][match#8815] CHAT Mira: nice shot
+[2026/073-06:03:55.627][I][lobby] JOIN Lumen from 100.209.112.84
+[2026/073-06:03:56.847][I][match#8815] CHAT noob_7: rush B
+[2026/073-06:03:58.802][I][match#8815] KILL xX_Rex_Xx -> Sn1per_42 (ak47, wallbang)
+[2026/073-06:03:59.038][I][match#8815] KILL kappa_99 -> Sn1per_42 (ak47, headshot, noscope)
+[2026/073-06:04:00.505][I][lobby] JOIN noob_7 from 116.202.112.241
+[2026/073-06:04:02.049][D][net] TICK rate=71Hz lag=228ms
+[2026/073-06:04:04.200][I][match#8815] KILL Mira -> Sn1per_42 (awp)
+[2026/073-06:04:06.936][I][match#8815] KILL xX_Rex_Xx -> kappa_99 (ak47)
+[2026/073-06:04:09.758][D][net] TICK rate=101Hz lag=44ms
+[2026/073-06:04:11.347][I][match#8815] KILL Mira -> Sn1per_42 (awp, headshot)
+[2026/073-06:04:14.168][W][net] kappa_99 packet loss 7% (ping 298ms)
+[2026/073-06:04:14.243][I][match#8815] KILL Sn1per_42 -> kappa_99 (ak47, headshot)
+[2026/073-06:04:15.741][I][match#8815] KILL Sn1per_42 -> Dr.Frag (deagle, wallbang)
+[2026/073-06:04:18.559][I][match#8816] ROUND_START map=de_inferno
+[2026/073-06:04:19.189][I][match#8816] KILL kappa_99 -> noob_7 (deagle, headshot)
+[2026/073-06:04:19.903][I][lobby] JOIN Sn1per_42 from 118.222.121.185
+[2026/073-06:04:21.232][I][match#8816] KILL noob_7 -> Sn1per_42 (awp, wallbang)
+[2026/073-06:04:22.799][I][match#8816] KILL kappa_99 -> xX_Rex_Xx (deagle, wallbang)
+[2026/073-06:04:25.514][W][net] noob_7 packet loss 6% (ping 204ms)
+[2026/073-06:04:28.149][I][match#8816] KILL Mira -> Dr.Frag (awp)
+[2026/073-06:04:31.083][I][match#8816] KILL noob_7 -> Dr.Frag (awp)
+[2026/073-06:04:32.577][I][match#8816] KILL Dr.Frag -> Mira (deagle, headshot)
+[2026/073-06:04:32.626][W][net] Dr.Frag packet loss 9% (ping 247ms)
+[2026/073-06:04:35.410][D][net] TICK rate=63Hz lag=180ms
+[2026/073-06:04:38.112][I][match#8816] KILL Dr.Frag -> Mira (deagle, headshot, noscope)
+[2026/073-06:04:38.123][I][match#8816] KILL kappa_99 -> Sn1per_42 (knife, headshot)
+[2026/073-06:04:38.199][W][net] Dr.Frag packet loss 6% (ping 245ms)
+[2026/073-06:04:40.764][I][match#8816] KILL noob_7 -> Sn1per_42 (ak47, headshot)
+[2026/073-06:04:43.089][I][match#8816] KILL Mira -> kappa_99 (deagle, wallbang)
+[2026/073-06:04:44.348][I][match#8816] KILL Dr.Frag -> kappa_99 (ak47, wallbang)
+[2026/073-06:04:45.949][I][match#8816] KILL kappa_99 -> Lumen (ak47, headshot, noscope)
+[2026/073-06:04:48.687][D][net] TICK rate=118Hz lag=249ms
+[2026/073-06:04:50.328][I][match#8816] CHAT kappa_99: lag?
+[2026/073-06:04:52.505][I][match#8816] KILL xX_Rex_Xx -> Dr.Frag (awp, headshot)
+[2026/073-06:04:52.713][I][match#8816] KILL Dr.Frag -> noob_7 (deagle)
+[2026/073-06:04:53.111][I][match#8816] KILL kappa_99 -> noob_7 (awp)
+[2026/073-06:04:53.807][I][match#8816] KILL Sn1per_42 -> kappa_99 (ak47)
+[2026/073-06:04:54.440][I][match#8816] KILL noob_7 -> Lumen (knife, headshot, noscope)
+[2026/073-06:04:57.339][I][match#8816] KILL noob_7 -> xX_Rex_Xx (awp, wallbang)
+[2026/073-06:04:58.072][I][lobby] JOIN xX_Rex_Xx from 79.255.153.132
+[2026/073-06:04:59.664][I][lobby] JOIN xX_Rex_Xx from 21.215.224.254
+[2026/073-06:05:02.157][D][net] TICK rate=123Hz lag=188ms
+[2026/073-06:05:03.951][I][lobby] JOIN Sn1per_42 from 10.233.7.19
+[2026/073-06:05:05.728][W][net] Lumen packet loss 29% (ping 145ms)
+[2026/073-06:05:07.812][I][match#8816] KILL noob_7 -> kappa_99 (ak47, headshot, noscope)
+[2026/073-06:05:09.576][I][match#8816] KILL noob_7 -> Dr.Frag (deagle, wallbang)
+[2026/073-06:05:12.508][I][match#8816] KILL Dr.Frag -> xX_Rex_Xx (knife, headshot, noscope)
+[2026/073-06:05:12.593][I][match#8816] KILL Sn1per_42 -> Lumen (deagle, wallbang)
+[2026/073-06:05:14.878][E][anticheat] Dr.Frag flagged: aim snap 405 deg/s
+[2026/073-06:05:15.625][I][lobby] JOIN Mira from 74.202.182.232
+[2026/073-06:05:18.422][I][match#8816] KILL Mira -> Sn1per_42 (ak47)
+[2026/073-06:05:19.652][I][match#8816] KILL xX_Rex_Xx -> noob_7 (knife, headshot)
+[2026/073-06:05:21.540][D][net] TICK rate=122Hz lag=148ms
+[2026/073-06:05:22.710][W][net] Sn1per_42 packet loss 34% (ping 376ms)
+[2026/073-06:05:23.803][D][net] TICK rate=128Hz lag=119ms
+[2026/073-06:05:24.683][I][match#8816] KILL noob_7 -> xX_Rex_Xx (ak47)
+[2026/073-06:05:25.011][I][match#8816] CHAT Lumen: rush B
+[2026/073-06:05:25.569][I][lobby] JOIN Lumen from 69.164.9.185
+[2026/073-06:05:27.233][W][net] Mira packet loss 10% (ping 176ms)
+[2026/073-06:05:29.795][I][match#8816] KILL noob_7 -> Mira (ak47)
+[2026/073-06:05:30.935][I][match#8816] CHAT Lumen: nice shot
+[2026/073-06:05:31.351][I][match#8816] KILL kappa_99 -> xX_Rex_Xx (m4a1)
+[2026/073-06:05:33.759][I][match#8816] KILL noob_7 -> Dr.Frag (deagle, headshot, noscope)
+[2026/073-06:05:36.029][D][net] TICK rate=124Hz lag=40ms
+[2026/073-06:05:37.677][I][match#8816] KILL Mira -> Dr.Frag (deagle)
+[2026/073-06:05:40.209][I][match#8816] KILL Mira -> noob_7 (knife, headshot)
+[2026/073-06:05:42.819][I][match#8816] KILL Sn1per_42 -> noob_7 (ak47, headshot)
+[2026/073-06:05:43.184][I][match#8816] KILL Lumen -> Sn1per_42 (m4a1, headshot, noscope)
+[2026/073-06:05:43.944][I][match#8816] CHAT xX_Rex_Xx: gg
+[2026/073-06:05:45.662][W][net] Mira packet loss 39% (ping 234ms)
+[2026/073-06:05:47.463][E][anticheat] Dr.Frag flagged: aim snap 616 deg/s
+[2026/073-06:05:47.480][D][net] TICK rate=121Hz lag=194ms
+[2026/073-06:05:47.695][I][match#8816] KILL xX_Rex_Xx -> Dr.Frag (m4a1, headshot, noscope)
+[2026/073-06:05:47.888][E][anticheat] Lumen flagged: aim snap 241 deg/s
+[2026/073-06:05:50.504][I][match#8816] CHAT Dr.Frag: lag?
+[2026/073-06:05:52.955][I][match#8816] KILL Dr.Frag -> Mira (knife, headshot, noscope)
+[2026/073-06:05:54.851][D][net] TICK rate=73Hz lag=121ms
+[2026/073-06:05:55.144][I][lobby] JOIN Lumen from 172.28.177.224
+[2026/073-06:05:55.375][E][anticheat] Dr.Frag flagged: aim snap 329 deg/s
+[2026/073-06:05:57.274][I][match#8816] KILL Mira -> Lumen (knife, headshot, noscope)
+[2026/073-06:05:58.427][I][match#8816] KILL Lumen -> Mira (knife, wallbang)
+[2026/073-06:05:59.907][I][match#8816] KILL Lumen -> Mira (ak47, wallbang)
+[2026/073-06:06:02.093][I][lobby] JOIN xX_Rex_Xx from 89.118.180.37
+[2026/073-06:06:02.968][I][match#8816] CHAT kappa_99: rush B
+[2026/073-06:06:04.009][I][match#8816] CHAT Sn1per_42: nice shot
+[2026/073-06:06:04.936][I][match#8816] KILL xX_Rex_Xx -> Dr.Frag (ak47)
+[2026/073-06:06:07.445][I][match#8816] KILL xX_Rex_Xx -> Mira (awp)
+[2026/073-06:06:09.534][D][net] TICK rate=75Hz lag=20ms
+[2026/073-06:06:10.889][I][match#8816] KILL Lumen -> Dr.Frag (deagle, headshot, noscope)
+[2026/073-06:06:13.853][I][match#8816] KILL Dr.Frag -> Mira (knife)
+[2026/073-06:06:16.134][W][net] Lumen packet loss 27% (ping 334ms)
+[2026/073-06:06:16.790][I][match#8816] CHAT kappa_99: rush B
+[2026/073-06:06:18.338][I][match#8816] KILL Mira -> Dr.Frag (knife, headshot)
+[2026/073-06:06:18.637][I][match#8816] KILL xX_Rex_Xx -> noob_7 (m4a1, wallbang)
+[2026/073-06:06:21.361][I][lobby] JOIN kappa_99 from 120.162.141.174
+[2026/073-06:06:22.072][I][match#8816] CHAT Dr.Frag: nice shot
+[2026/073-06:06:23.101][I][match#8816] KILL xX_Rex_Xx -> Mira (m4a1, wallbang)
+[2026/073-06:06:23.979][D][net] TICK rate=81Hz lag=64ms
+[2026/073-06:06:24.745][W][net] kappa_99 packet loss 23% (ping 95ms)
+[2026/073-06:06:26.582][W][net] Lumen packet loss 31% (ping 261ms)
+[2026/073-06:06:29.066][D][net] TICK rate=90Hz lag=27ms
+[2026/073-06:06:31.497][W][net] Dr.Frag packet loss 38% (ping 387ms)
+[2026/073-06:06:31.941][I][match#8816] CHAT kappa_99: gg
+[2026/073-06:06:34.087][I][match#8816] CHAT noob_7: lag?
+[2026/073-06:06:35.109][W][net] xX_Rex_Xx packet loss 32% (ping 185ms)
+[2026/073-06:06:37.202][I][match#8816] KILL noob_7 -> Mira (deagle, wallbang)
+[2026/073-06:06:37.936][I][match#8816] KILL kappa_99 -> xX_Rex_Xx (deagle, headshot)
+[2026/073-06:06:39.977][I][match#8816] CHAT Lumen: lag?
+[2026/073-06:06:40.294][W][net] noob_7 packet loss 11% (ping 123ms)
+[2026/073-06:06:41.282][E][anticheat] noob_7 flagged: aim snap 630 deg/s
+[2026/073-06:06:42.424][D][net] TICK rate=105Hz lag=121ms
+[2026/073-06:06:45.404][I][match#8816] KILL Dr.Frag -> Sn1per_42 (awp, headshot)
+[2026/073-06:06:47.168][I][match#8816] KILL Mira -> Lumen (deagle, headshot)
+[2026/073-06:06:48.384][W][net] Mira packet loss 38% (ping 353ms)
+[2026/073-06:06:50.746][W][net] noob_7 packet loss 21% (ping 146ms)
+[2026/073-06:06:53.185][D][net] TICK rate=72Hz lag=135ms
+[2026/073-06:06:53.936][I][match#8817] ROUND_START map=de_nuke
+[2026/073-06:06:56.398][W][net] kappa_99 packet loss 26% (ping 394ms)
+[2026/073-06:06:57.743][D][net] TICK rate=74Hz lag=64ms
+[2026/073-06:06:59.517][I][match#8817] KILL Dr.Frag -> noob_7 (m4a1, headshot, noscope)
+[2026/073-06:07:00.914][D][net] TICK rate=109Hz lag=55ms
+[2026/073-06:07:03.192][I][match#8817] KILL Mira -> xX_Rex_Xx (knife, wallbang)
+[2026/073-06:07:03.729][W][net] kappa_99 packet loss 25% (ping 284ms)
+[2026/073-06:07:04.854][I][match#8817] CHAT Mira: lag?
+[2026/073-06:07:06.678][I][lobby] JOIN Mira from 217.51.33.26
+[2026/073-06:07:06.977][I][match#8817] CHAT Sn1per_42: gg
+[2026/073-06:07:08.237][I][lobby] JOIN xX_Rex_Xx from 109.119.33.213
+[2026/073-06:07:08.755][I][match#8817] KILL Sn1per_42 -> xX_Rex_Xx (awp, headshot, noscope)
+[2026/073-06:07:09.167][I][match#8818] ROUND_START map=de_inferno
+[2026/073-06:07:09.731][I][match#8818] KILL noob_7 -> xX_Rex_Xx (m4a1)
+[2026/073-06:07:11.837][I][match#8818] KILL xX_Rex_Xx -> Sn1per_42 (m4a1, headshot, noscope)
+[2026/073-06:07:12.137][E][anticheat] kappa_99 flagged: aim snap 862 deg/s
+[2026/073-06:07:14.042][I][match#8818] KILL xX_Rex_Xx -> Mira (ak47, headshot)
+[2026/073-06:07:15.452][D][net] TICK rate=99Hz lag=181ms
+[2026/073-06:07:17.238][I][match#8818] KILL kappa_99 -> Dr.Frag (awp, headshot, noscope)
+[2026/073-06:07:17.420][D][net] TICK rate=83Hz lag=135ms
+[2026/073-06:07:19.635][I][match#8818] KILL Dr.Frag -> noob_7 (ak47, wallbang)
+[2026/073-06:07:21.057][I][match#8818] KILL Mira -> Lumen (awp, headshot, noscope)
+[2026/073-06:07:21.665][I][match#8818] KILL Mira -> Dr.Frag (m4a1)
+[2026/073-06:07:24.217][D][net] TICK rate=61Hz lag=43ms
+[2026/073-06:07:25.514][D][net] TICK rate=88Hz lag=102ms
+[2026/073-06:07:28.177][I][match#8818] KILL noob_7 -> Sn1per_42 (knife, headshot)
+[2026/073-06:07:28.423][I][lobby] JOIN Mira from 185.110.69.174
+[2026/073-06:07:31.065][I][lobby] JOIN xX_Rex_Xx from 94.237.123.47
+[2026/073-06:07:32.060][W][net] Mira packet loss 9% (ping 227ms)
+[2026/073-06:07:33.822][I][match#8818] KILL kappa_99 -> Dr.Frag (ak47, headshot)
+[2026/073-06:07:34.428][I][match#8818] CHAT Sn1per_42: nice shot
+[2026/073-06:07:35.298][I][match#8818] KILL kappa_99 -> Dr.Frag (deagle, headshot)
+[2026/073-06:07:37.918][I][lobby] JOIN Lumen from 152.215.31.168
+[2026/073-06:07:40.015][I][match#8818] KILL Mira -> Sn1per_42 (deagle, headshot)
+[2026/073-06:07:41.650][I][lobby] JOIN Sn1per_42 from 3.192.6.71
+[2026/073-06:07:43.350][D][net] TICK rate=126Hz lag=212ms
+[2026/073-06:07:45.676][I][match#8818] CHAT Dr.Frag: gg
+[2026/073-06:07:47.241][D][net] TICK rate=100Hz lag=138ms
+[2026/073-06:07:48.790][I][match#8818] KILL xX_Rex_Xx -> Sn1per_42 (knife, headshot, noscope)
+[2026/073-06:07:50.884][W][net] Dr.Frag packet loss 27% (ping 94ms)
+[2026/073-06:07:53.322][D][net] TICK rate=119Hz lag=129ms
+[2026/073-06:07:53.637][I][match#8818] KILL Sn1per_42 -> Lumen (ak47, headshot)
+[2026/073-06:07:56.092][E][anticheat] kappa_99 flagged: aim snap 413 deg/s
+[2026/073-06:07:59.085][E][anticheat] Lumen flagged: aim snap 492 deg/s
+[2026/073-06:07:59.350][W][net] xX_Rex_Xx packet loss 9% (ping 367ms)
+[2026/073-06:08:02.113][E][anticheat] Sn1per_42 flagged: aim snap 387 deg/s
+[2026/073-06:08:04.610][I][match#8818] KILL noob_7 -> xX_Rex_Xx (deagle, wallbang)
+[2026/073-06:08:07.139][I][match#8818] CHAT Dr.Frag: rush B
+[2026/073-06:08:08.748][I][match#8818] CHAT Sn1per_42: nice shot
+[2026/073-06:08:09.227][I][match#8818] KILL Sn1per_42 -> Dr.Frag (knife, headshot, noscope)
+[2026/073-06:08:09.650][I][match#8818] KILL kappa_99 -> Lumen (awp, wallbang)
+[2026/073-06:08:11.775][D][net] TICK rate=89Hz lag=247ms
+[2026/073-06:08:13.305][I][match#8818] KILL Mira -> Lumen (awp, headshot, noscope)
+[2026/073-06:08:13.632][E][anticheat] noob_7 flagged: aim snap 515 deg/s
+[2026/073-06:08:14.209][I][match#8818] KILL Lumen -> Sn1per_42 (knife, headshot, noscope)
+[2026/073-06:08:16.767][I][match#8818] CHAT kappa_99: nice shot
+[2026/073-06:08:18.445][E][anticheat] kappa_99 flagged: aim snap 885 deg/s
+[2026/073-06:08:20.027][E][anticheat] Mira flagged: aim snap 669 deg/s
+[2026/073-06:08:22.762][I][match#8818] KILL xX_Rex_Xx -> Dr.Frag (m4a1)
+[2026/073-06:08:24.167][I][match#8819] ROUND_START map=de_inferno
+[2026/073-06:08:24.733][D][net] TICK rate=99Hz lag=90ms
+[2026/073-06:08:27.656][I][match#8819] KILL noob_7 -> Lumen (knife)
+[2026/073-06:08:29.580][I][match#8819] CHAT Mira: rush B
+[2026/073-06:08:32.354][I][match#8819] KILL Dr.Frag -> Lumen (knife, headshot, noscope)
+[2026/073-06:08:33.584][I][match#8819] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:08:33.645][D][net] TICK rate=120Hz lag=83ms
+[2026/073-06:08:34.021][D][net] TICK rate=79Hz lag=204ms
+[2026/073-06:08:36.857][I][match#8819] KILL Lumen -> Sn1per_42 (deagle)
+[2026/073-06:08:38.159][D][net] TICK rate=76Hz lag=144ms
+[2026/073-06:08:40.991][I][match#8819] KILL Mira -> xX_Rex_Xx (knife, headshot)
+[2026/073-06:08:43.747][W][net] kappa_99 packet loss 25% (ping 346ms)
+[2026/073-06:08:46.081][W][net] Sn1per_42 packet loss 7% (ping 347ms)
+[2026/073-06:08:47.535][D][net] TICK rate=105Hz lag=175ms
+[2026/073-06:08:47.962][I][match#8819] KILL noob_7 -> xX_Rex_Xx (ak47, headshot)
+[2026/073-06:08:50.555][D][net] TICK rate=64Hz lag=187ms
+[2026/073-06:08:50.728][I][match#8819] KILL xX_Rex_Xx -> kappa_99 (knife, headshot)
+[2026/073-06:08:51.651][I][lobby] JOIN Dr.Frag from 145.194.42.221
+[2026/073-06:08:52.844][D][net] TICK rate=84Hz lag=77ms
+[2026/073-06:08:55.603][I][match#8819] KILL Sn1per_42 -> noob_7 (awp, headshot)
+[2026/073-06:08:56.689][I][match#8819] KILL kappa_99 -> Dr.Frag (deagle, headshot)
+[2026/073-06:08:57.992][E][anticheat] Lumen flagged: aim snap 182 deg/s
+[2026/073-06:09:00.452][D][net] TICK rate=78Hz lag=29ms
+[2026/073-06:09:00.547][I][lobby] JOIN kappa_99 from 101.195.94.146
+[2026/073-06:09:02.618][I][match#8819] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:09:05.483][D][net] TICK rate=60Hz lag=200ms
+[2026/073-06:09:07.860][D][net] TICK rate=127Hz lag=36ms
+[2026/073-06:09:08.370][I][match#8819] KILL Sn1per_42 -> noob_7 (m4a1, wallbang)
+[2026/073-06:09:11.121][D][net] TICK rate=113Hz lag=225ms
+[2026/073-06:09:11.654][I][match#8819] KILL Sn1per_42 -> xX_Rex_Xx (deagle, headshot)
+[2026/073-06:09:12.294][I][lobby] JOIN Lumen from 27.154.72.187
+[2026/073-06:09:14.068][I][match#8819] KILL kappa_99 -> Mira (deagle)
+[2026/073-06:09:15.402][D][net] TICK rate=72Hz lag=22ms
+[2026/073-06:09:16.135][I][lobby] JOIN kappa_99 from 93.144.105.1
+[2026/073-06:09:16.631][I][match#8819] KILL Lumen -> kappa_99 (deagle)
+[2026/073-06:09:19.386][I][match#8819] KILL Sn1per_42 -> Dr.Frag (ak47)
+[2026/073-06:09:19.807][I][match#8819] KILL kappa_99 -> Lumen (knife, headshot)
+[2026/073-06:09:22.499][I][match#8819] CHAT Dr.Frag: lag?
+[2026/073-06:09:23.151][I][match#8819] KILL noob_7 -> Mira (knife, headshot)
+[2026/073-06:09:24.581][I][match#8819] KILL noob_7 -> Mira (ak47)
+[2026/073-06:09:25.750][I][lobby] JOIN xX_Rex_Xx from 158.201.232.157
+[2026/073-06:09:26.529][W][net] noob_7 packet loss 39% (ping 221ms)
+[2026/073-06:09:28.892][I][lobby] JOIN xX_Rex_Xx from 58.63.187.86
+[2026/073-06:09:30.723][I][match#8819] KILL noob_7 -> Mira (knife)
+[2026/073-06:09:31.609][I][match#8819] KILL Mira -> Dr.Frag (knife, headshot, noscope)
+[2026/073-06:09:32.718][I][match#8819] KILL Dr.Frag -> kappa_99 (knife, headshot)
+[2026/073-06:09:33.572][E][anticheat] Mira flagged: aim snap 476 deg/s
+[2026/073-06:09:33.946][I][match#8819] KILL Lumen -> Mira (ak47, headshot)
+[2026/073-06:09:36.814][I][match#8819] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:09:38.412][I][match#8819] KILL xX_Rex_Xx -> Dr.Frag (knife)
+[2026/073-06:09:40.214][I][match#8819] KILL kappa_99 -> Lumen (awp)
+[2026/073-06:09:42.771][I][match#8819] KILL Mira -> xX_Rex_Xx (awp)
+[2026/073-06:09:43.186][D][net] TICK rate=73Hz lag=63ms
+[2026/073-06:09:43.439][I][match#8819] KILL noob_7 -> Sn1per_42 (deagle, headshot)
+[2026/073-06:09:45.446][I][match#8819] KILL Dr.Frag -> kappa_99 (m4a1, headshot)
+[2026/073-06:09:46.080][I][match#8819] KILL xX_Rex_Xx -> Sn1per_42 (deagle)
+[2026/073-06:09:46.617][W][net] xX_Rex_Xx packet loss 12% (ping 137ms)
+[2026/073-06:09:47.334][I][match#8819] KILL kappa_99 -> Sn1per_42 (awp, headshot)
+[2026/073-06:09:49.169][I][match#8819] KILL xX_Rex_Xx -> Dr.Frag (knife)
+[2026/073-06:09:49.676][I][match#8819] CHAT Lumen: lag?
+[2026/073-06:09:50.360][I][match#8819] KILL Dr.Frag -> Sn1per_42 (m4a1, headshot)
+[2026/073-06:09:51.713][I][lobby] JOIN Dr.Frag from 216.170.77.19
+[2026/073-06:09:54.423][I][match#8819] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:09:56.208][I][match#8819] CHAT xX_Rex_Xx: gg
+[2026/073-06:09:57.685][W][net] Mira packet loss 8% (ping 197ms)
+[2026/073-06:09:58.057][D][net] TICK rate=117Hz lag=107ms
+[2026/073-06:09:59.574][I][match#8819] KILL Sn1per_42 -> Dr.Frag (awp)
+[2026/073-06:10:00.039][E][anticheat] xX_Rex_Xx flagged: aim snap 162 deg/s
+[2026/073-06:10:00.357][I][match#8819] KILL Mira -> Dr.Frag (m4a1, wallbang)
+[2026/073-06:10:02.302][I][match#8819] KILL Sn1per_42 -> noob_7 (deagle)
+[2026/073-06:10:02.430][I][match#8819] KILL noob_7 -> xX_Rex_Xx (knife)
+[2026/073-06:10:05.260][W][net] Sn1per_42 packet loss 21% (ping 367ms)
+[2026/073-06:10:06.069][I][match#8819] KILL noob_7 -> Mira (ak47, headshot, noscope)
+[2026/073-06:10:08.836][I][match#8819] KILL Mira -> Sn1per_42 (knife, headshot, noscope)
+[2026/073-06:10:09.977][I][lobby] JOIN Mira from 166.16.18.191
+[2026/073-06:10:10.215][I][match#8819] KILL noob_7 -> kappa_99 (m4a1, headshot)
+[2026/073-06:10:12.184][I][match#8820] ROUND_START map=de_inferno
+[2026/073-06:10:14.353][D][net] TICK rate=88Hz lag=122ms
+[2026/073-06:10:15.458][I][match#8820] KILL Lumen -> Sn1per_42 (awp, wallbang)
+[2026/073-06:10:17.200][I][match#8820] KILL Dr.Frag -> kappa_99 (knife)
+[2026/073-06:10:19.481][I][match#8820] KILL Lumen -> noob_7 (awp)
+[2026/073-06:10:19.810][W][net] Sn1per_42 packet loss 22% (ping 241ms)
+[2026/073-06:10:22.166][I][match#8820] KILL Mira -> xX_Rex_Xx (deagle)
+[2026/073-06:10:23.689][I][match#8820] CHAT noob_7: rush B
+[2026/073-06:10:25.462][D][net] TICK rate=70Hz lag=180ms
+[2026/073-06:10:26.914][I][match#8820] KILL Dr.Frag -> xX_Rex_Xx (knife, wallbang)
+[2026/073-06:10:27.891][I][match#8820] CHAT Mira: rush B
+[2026/073-06:10:27.916][I][match#8820] KILL Dr.Frag -> Mira (ak47, headshot, noscope)
+[2026/073-06:10:30.194][W][net] kappa_99 packet loss 23% (ping 316ms)
+[2026/073-06:10:32.018][I][match#8820] KILL xX_Rex_Xx -> Mira (ak47)
+[2026/073-06:10:32.516][I][match#8820] KILL Sn1per_42 -> noob_7 (m4a1, wallbang)
+[2026/073-06:10:34.524][I][match#8820] KILL xX_Rex_Xx -> Sn1per_42 (awp, headshot, noscope)
+[2026/073-06:10:36.960][I][match#8820] KILL xX_Rex_Xx -> kappa_99 (m4a1, headshot)
+[2026/073-06:10:38.450][I][match#8820] KILL noob_7 -> Mira (m4a1, headshot)
+[2026/073-06:10:39.809][I][match#8820] KILL noob_7 -> kappa_99 (deagle, wallbang)
+[2026/073-06:10:40.352][I][match#8820] KILL Mira -> xX_Rex_Xx (knife)
+[2026/073-06:10:42.609][D][net] TICK rate=121Hz lag=243ms
+[2026/073-06:10:44.909][I][lobby] JOIN Lumen from 30.126.148.165
+[2026/073-06:10:46.073][I][match#8820] KILL xX_Rex_Xx -> Dr.Frag (knife, headshot, noscope)
+[2026/073-06:10:47.902][W][net] Mira packet loss 32% (ping 346ms)
+[2026/073-06:10:48.164][I][match#8820] KILL xX_Rex_Xx -> Dr.Frag (ak47, wallbang)
+[2026/073-06:10:49.603][I][match#8820] KILL noob_7 -> kappa_99 (ak47)
+[2026/073-06:10:50.731][I][match#8820] CHAT Dr.Frag: rush B
+[2026/073-06:10:52.847][I][match#8820] CHAT noob_7: gg
+[2026/073-06:10:53.550][I][match#8820] KILL Dr.Frag -> Lumen (deagle, headshot)
+[2026/073-06:10:53.917][I][match#8820] KILL noob_7 -> Dr.Frag (knife, headshot, noscope)
+[2026/073-06:10:54.986][I][lobby] JOIN Dr.Frag from 165.33.185.229
+[2026/073-06:10:57.621][D][net] TICK rate=87Hz lag=167ms
+[2026/073-06:10:58.806][I][match#8820] CHAT Dr.Frag: lag?
+[2026/073-06:10:59.199][E][anticheat] xX_Rex_Xx flagged: aim snap 326 deg/s
+[2026/073-06:10:59.450][I][match#8820] CHAT noob_7: nice shot
+[2026/073-06:10:59.536][W][net] xX_Rex_Xx packet loss 10% (ping 337ms)
+[2026/073-06:11:01.142][I][match#8820] KILL noob_7 -> kappa_99 (deagle, headshot)
+[2026/073-06:11:01.524][D][net] TICK rate=91Hz lag=169ms
+[2026/073-06:11:04.240][D][net] TICK rate=109Hz lag=178ms
+[2026/073-06:11:06.901][I][match#8820] KILL noob_7 -> Lumen (knife, wallbang)
+[2026/073-06:11:09.577][I][match#8821] ROUND_START map=de_dust2
+[2026/073-06:11:11.696][I][match#8821] KILL Mira -> Sn1per_42 (knife, headshot)
+[2026/073-06:11:12.598][I][match#8821] KILL Dr.Frag -> Lumen (awp, headshot, noscope)
+[2026/073-06:11:12.963][I][match#8821] KILL noob_7 -> kappa_99 (ak47, wallbang)
+[2026/073-06:11:13.061][I][match#8821] KILL Lumen -> Dr.Frag (ak47)
+[2026/073-06:11:14.663][E][anticheat] kappa_99 flagged: aim snap 497 deg/s
+[2026/073-06:11:16.347][I][match#8821] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:11:18.838][I][match#8821] KILL Lumen -> Sn1per_42 (awp, wallbang)
+[2026/073-06:11:19.101][I][match#8821] KILL Dr.Frag -> xX_Rex_Xx (knife, headshot, noscope)
+[2026/073-06:11:19.404][I][lobby] JOIN Dr.Frag from 121.35.83.141
+[2026/073-06:11:20.323][D][net] TICK rate=114Hz lag=73ms
+[2026/073-06:11:21.883][I][match#8821] KILL xX_Rex_Xx -> Mira (deagle, headshot)
+[2026/073-06:11:22.173][I][match#8821] KILL Dr.Frag -> noob_7 (deagle)
+[2026/073-06:11:22.989][W][net] Lumen packet loss 40% (ping 334ms)
+[2026/073-06:11:25.688][D][net] TICK rate=103Hz lag=164ms
+[2026/073-06:11:27.646][I][match#8821] KILL Lumen -> noob_7 (knife)
+[2026/073-06:11:29.643][W][net] Lumen packet loss 5% (ping 91ms)
+[2026/073-06:11:31.747][I][match#8821] KILL Lumen -> Mira (m4a1, headshot, noscope)
+[2026/073-06:11:34.448][I][match#8821] KILL noob_7 -> Sn1per_42 (deagle, wallbang)
+[2026/073-06:11:35.595][D][net] TICK rate=78Hz lag=68ms
+[2026/073-06:11:38.460][I][match#8821] CHAT Mira: rush B
+[2026/073-06:11:40.048][D][net] TICK rate=113Hz lag=70ms
+[2026/073-06:11:42.075][I][match#8821] KILL Mira -> Lumen (knife)
+[2026/073-06:11:44.445][I][match#8821] CHAT Mira: gg
+[2026/073-06:11:45.665][I][lobby] JOIN Lumen from 78.223.49.230
+[2026/073-06:11:47.926][I][lobby] JOIN xX_Rex_Xx from 106.17.167.94
+[2026/073-06:11:47.947][I][match#8821] CHAT kappa_99: rush B
+[2026/073-06:11:48.456][I][match#8821] KILL Sn1per_42 -> Dr.Frag (m4a1)
+[2026/073-06:11:49.252][I][match#8821] KILL Dr.Frag -> xX_Rex_Xx (m4a1, headshot)
+[2026/073-06:11:52.145][D][net] TICK rate=109Hz lag=122ms
+[2026/073-06:11:54.639][D][net] TICK rate=125Hz lag=240ms
+[2026/073-06:11:54.698][I][match#8821] CHAT Sn1per_42: nice shot
+[2026/073-06:11:55.275][W][net] xX_Rex_Xx packet loss 18% (ping 399ms)
+[2026/073-06:11:55.525][I][match#8821] CHAT kappa_99: lag?
+[2026/073-06:11:57.441][I][match#8821] KILL kappa_99 -> Lumen (awp)
+[2026/073-06:12:00.025][I][match#8821] KILL Lumen -> xX_Rex_Xx (awp, headshot)
+[2026/073-06:12:00.574][I][match#8821] CHAT Mira: nice shot
+[2026/073-06:12:03.095][D][net] TICK rate=103Hz lag=216ms
+[2026/073-06:12:03.554][W][net] kappa_99 packet loss 37% (ping 366ms)
+[2026/073-06:12:05.656][I][match#8821] KILL noob_7 -> kappa_99 (m4a1, headshot, noscope)
+[2026/073-06:12:07.087][I][match#8821] KILL noob_7 -> xX_Rex_Xx (m4a1, headshot, noscope)
+[2026/073-06:12:07.364][I][match#8821] KILL Mira -> Sn1per_42 (m4a1, wallbang)
+[2026/073-06:12:08.730][I][match#8821] KILL Mira -> Dr.Frag (m4a1)
+[2026/073-06:12:10.330][I][match#8821] KILL Mira -> Dr.Frag (ak47, wallbang)
+[2026/073-06:12:12.068][I][match#8821] KILL Lumen -> Sn1per_42 (awp, wallbang)
+[2026/073-06:12:12.939][I][match#8821] KILL Dr.Frag -> Sn1per_42 (awp)
+[2026/073-06:12:13.551][I][match#8821] CHAT Sn1per_42: lag?
+[2026/073-06:12:15.931][I][match#8821] KILL Mira -> noob_7 (ak47, headshot)
+[2026/073-06:12:16.258][D][net] TICK rate=67Hz lag=206ms
+[2026/073-06:12:17.319][I][match#8821] KILL Sn1per_42 -> kappa_99 (awp, headshot, noscope)
+[2026/073-06:12:20.058][I][match#8821] KILL Sn1per_42 -> Mira (ak47, headshot)
+[2026/073-06:12:22.652][I][match#8821] KILL Dr.Frag -> Sn1per_42 (ak47, headshot, noscope)
+[2026/073-06:12:25.503][W][net] xX_Rex_Xx packet loss 9% (ping 227ms)
+[2026/073-06:12:26.373][I][lobby] JOIN Sn1per_42 from 40.156.242.20
+[2026/073-06:12:28.921][I][match#8821] KILL noob_7 -> kappa_99 (m4a1, headshot)
+[2026/073-06:12:31.246][I][match#8821] KILL kappa_99 -> xX_Rex_Xx (m4a1, headshot)
+[2026/073-06:12:31.537][I][match#8821] KILL noob_7 -> kappa_99 (awp, wallbang)
+[2026/073-06:12:33.015][I][lobby] JOIN Mira from 114.200.66.50
+[2026/073-06:12:35.134][I][match#8821] CHAT noob_7: lag?
+[2026/073-06:12:36.516][I][match#8821] KILL xX_Rex_Xx -> Mira (knife)
+[2026/073-06:12:39.046][D][net] TICK rate=99Hz lag=138ms
+[2026/073-06:12:40.776][E][anticheat] noob_7 flagged: aim snap 430 deg/s
+[2026/073-06:12:42.600][D][net] TICK rate=104Hz lag=181ms
+[2026/073-06:12:45.442][I][match#8821] CHAT Mira: gg
+[2026/073-06:12:46.039][I][match#8821] KILL Dr.Frag -> xX_Rex_Xx (awp, wallbang)
+[2026/073-06:12:47.502][I][match#8821] KILL noob_7 -> Mira (awp, wallbang)
+[2026/073-06:12:49.881][D][net] TICK rate=96Hz lag=228ms
+[2026/073-06:12:50.705][E][anticheat] Mira flagged: aim snap 362 deg/s
+[2026/073-06:12:53.166][I][match#8821] KILL noob_7 -> Mira (awp, wallbang)
+[2026/073-06:12:55.219][D][net] TICK rate=83Hz lag=146ms
+[2026/073-06:12:56.376][I][match#8821] KILL Mira -> kappa_99 (knife, headshot)
+[2026/073-06:12:58.695][I][match#8821] KILL Dr.Frag -> Lumen (knife, headshot)
+[2026/073-06:12:59.076][I][match#8822] ROUND_START map=de_nuke
+[2026/073-06:12:59.114][D][net] TICK rate=101Hz lag=65ms
+[2026/073-06:13:01.197][D][net] TICK rate=82Hz lag=241ms
+[2026/073-06:13:02.317][W][net] Dr.Frag packet loss 5% (ping 233ms)
+[2026/073-06:13:04.388][W][net] xX_Rex_Xx packet loss 32% (ping 228ms)
+[2026/073-06:13:06.608][W][net] Lumen packet loss 36% (ping 347ms)
+[2026/073-06:13:07.036][I][lobby] JOIN Sn1per_42 from 45.62.164.201
+[2026/073-06:13:09.058][I][match#8822] CHAT Sn1per_42: nice shot
+[2026/073-06:13:09.276][I][match#8822] KILL Sn1per_42 -> Mira (knife, headshot, noscope)
+[2026/073-06:13:10.168][I][match#8822] KILL Dr.Frag -> noob_7 (ak47, headshot)
+[2026/073-06:13:11.067][I][match#8822] KILL Lumen -> Dr.Frag (knife, wallbang)
+[2026/073-06:13:11.139][I][match#8822] KILL noob_7 -> Dr.Frag (deagle, headshot)
+[2026/073-06:13:11.482][D][net] TICK rate=63Hz lag=209ms
+[2026/073-06:13:11.566][I][match#8822] KILL Sn1per_42 -> xX_Rex_Xx (knife, wallbang)
+[2026/073-06:13:13.761][I][match#8822] CHAT noob_7: rush B
+[2026/073-06:13:13.971][I][match#8822] KILL Mira -> Sn1per_42 (awp, headshot, noscope)
+[2026/073-06:13:15.051][I][match#8822] KILL kappa_99 -> Dr.Frag (knife, headshot)
+[2026/073-06:13:16.459][I][match#8822] KILL Mira -> Dr.Frag (m4a1, headshot)
+[2026/073-06:13:19.052][I][lobby] JOIN Mira from 143.115.195.41
+[2026/073-06:13:20.982][I][match#8822] KILL Sn1per_42 -> xX_Rex_Xx (knife)
+[2026/073-06:13:21.502][I][lobby] JOIN kappa_99 from 164.210.163.99
+[2026/073-06:13:21.665][I][lobby] JOIN xX_Rex_Xx from 104.198.40.155
+[2026/073-06:13:22.643][W][net] Dr.Frag packet loss 13% (ping 123ms)
+[2026/073-06:13:22.870][I][match#8822] KILL Mira -> xX_Rex_Xx (ak47, headshot)
+[2026/073-06:13:25.686][I][match#8822] KILL xX_Rex_Xx -> Dr.Frag (ak47, headshot)
+[2026/073-06:13:25.837][I][match#8822] KILL Mira -> Lumen (m4a1)
+[2026/073-06:13:28.052][I][lobby] JOIN Sn1per_42 from 36.140.95.105
+[2026/073-06:13:30.007][E][anticheat] Dr.Frag flagged: aim snap 302 deg/s
+[2026/073-06:13:31.518][I][lobby] JOIN Lumen from 205.112.245.67
+[2026/073-06:13:32.681][D][net] TICK rate=123Hz lag=230ms
+[2026/073-06:13:33.153][D][net] TICK rate=105Hz lag=65ms
+[2026/073-06:13:34.088][I][match#8822] KILL xX_Rex_Xx -> Mira (awp)
+[2026/073-06:13:34.864][D][net] TICK rate=99Hz lag=56ms
+[2026/073-06:13:36.425][I][match#8822] CHAT kappa_99: gg
+[2026/073-06:13:36.630][I][match#8822] KILL noob_7 -> Lumen (ak47, wallbang)
+[2026/073-06:13:37.678][I][match#8822] KILL Dr.Frag -> Sn1per_42 (awp, headshot, noscope)
+[2026/073-06:13:38.410][I][match#8822] KILL xX_Rex_Xx -> Sn1per_42 (ak47)
+[2026/073-06:13:40.286][I][match#8822] CHAT Lumen: lag?
+[2026/073-06:13:42.860][W][net] Lumen packet loss 36% (ping 191ms)
+[2026/073-06:13:45.527][D][net] TICK rate=111Hz lag=233ms
+[2026/073-06:13:48.157][I][match#8822] CHAT Dr.Frag: rush B
+[2026/073-06:13:49.310][W][net] xX_Rex_Xx packet loss 16% (ping 96ms)
+[2026/073-06:13:49.447][I][lobby] JOIN Mira from 188.93.56.54
+[2026/073-06:13:50.888][I][match#8822] KILL noob_7 -> Lumen (m4a1, headshot, noscope)
+[2026/073-06:13:53.333][I][match#8822] CHAT xX_Rex_Xx: rush B
+[2026/073-06:13:54.955][I][match#8822] KILL Lumen -> xX_Rex_Xx (m4a1, wallbang)
+[2026/073-06:13:55.887][D][net] TICK rate=104Hz lag=6ms
+[2026/073-06:13:56.947][I][lobby] JOIN Mira from 106.217.89.84
+[2026/073-06:13:57.235][I][match#8822] KILL kappa_99 -> Mira (ak47, headshot)
+[2026/073-06:13:57.399][D][net] TICK rate=106Hz lag=21ms
+[2026/073-06:13:57.855][I][match#8822] KILL Sn1per_42 -> Mira (deagle, headshot)
+[2026/073-06:13:59.962][I][match#8822] KILL noob_7 -> Sn1per_42 (m4a1, headshot)
+[2026/073-06:14:02.298][I][lobby] JOIN Sn1per_42 from 17.118.196.165
+[2026/073-06:14:04.656][I][match#8822] CHAT Dr.Frag: nice shot
+[2026/073-06:14:06.591][W][net] Dr.Frag packet loss 21% (ping 325ms)
+[2026/073-06:14:08.508][I][match#8822] CHAT Dr.Frag: nice shot
+[2026/073-06:14:09.128][I][match#8822] CHAT noob_7: rush B
+[2026/073-06:14:09.723][I][match#8822] KILL xX_Rex_Xx -> Sn1per_42 (m4a1, wallbang)
+[2026/073-06:14:11.138][I][match#8822] KILL Lumen -> noob_7 (deagle, headshot)
+[2026/073-06:14:13.775][I][match#8822] KILL Sn1per_42 -> Dr.Frag (ak47, wallbang)
+[2026/073-06:14:14.891][E][anticheat] Sn1per_42 flagged: aim snap 455 deg/s
+[2026/073-06:14:15.737][I][match#8822] KILL xX_Rex_Xx -> noob_7 (deagle, wallbang)
+[2026/073-06:14:16.636][I][lobby] JOIN kappa_99 from 40.132.80.18
+[2026/073-06:14:19.064][I][match#8822] KILL Lumen -> Mira (ak47, headshot, noscope)
+[2026/073-06:14:20.659][I][lobby] JOIN Lumen from 20.126.58.28
+[2026/073-06:14:21.279][I][match#8822] CHAT Lumen: lag?
+[2026/073-06:14:23.820][I][lobby] JOIN xX_Rex_Xx from 80.161.29.241
+[2026/073-06:14:24.168][I][match#8822] KILL Dr.Frag -> Lumen (m4a1, headshot, noscope)
+[2026/073-06:14:25.485][I][match#8822] KILL noob_7 -> Mira (ak47, wallbang)
+[2026/073-06:14:27.986][D][net] TICK rate=71Hz lag=86ms
+[2026/073-06:14:30.158][I][match#8822] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:14:31.916][I][match#8822] KILL noob_7 -> Mira (m4a1, headshot)
+[2026/073-06:14:34.127][I][lobby] JOIN noob_7 from 221.215.181.139
+[2026/073-06:14:34.315][I][match#8822] KILL kappa_99 -> noob_7 (deagle, headshot, noscope)
+[2026/073-06:14:35.435][I][match#8822] CHAT kappa_99: lag?
+[2026/073-06:14:38.388][I][match#8822] KILL Lumen -> Sn1per_42 (awp, headshot, noscope)
+[2026/073-06:14:39.925][I][match#8822] KILL noob_7 -> Mira (awp, headshot, noscope)
+[2026/073-06:14:42.062][D][net] TICK rate=116Hz lag=18ms
+[2026/073-06:14:44.384][D][net] TICK rate=120Hz lag=229ms
+[2026/073-06:14:46.474][I][match#8822] CHAT noob_7: rush B
+[2026/073-06:14:48.577][I][lobby] JOIN xX_Rex_Xx from 133.152.38.244
+[2026/073-06:14:49.287][I][match#8822] KILL Dr.Frag -> xX_Rex_Xx (awp, wallbang)
+[2026/073-06:14:51.766][I][match#8822] KILL Sn1per_42 -> noob_7 (ak47, headshot)
+[2026/073-06:14:54.420][E][anticheat] kappa_99 flagged: aim snap 861 deg/s
+[2026/073-06:14:55.714][I][match#8822] KILL Mira -> noob_7 (deagle, wallbang)
+[2026/073-06:14:56.827][I][match#8822] KILL Lumen -> xX_Rex_Xx (deagle, headshot)
+[2026/073-06:14:57.783][I][match#8822] KILL noob_7 -> Sn1per_42 (ak47)
+[2026/073-06:14:59.887][I][match#8822] KILL Sn1per_42 -> Mira (awp, headshot)
+[2026/073-06:15:02.381][W][net] Mira packet loss 8% (ping 367ms)
+[2026/073-06:15:05.368][I][match#8822] CHAT xX_Rex_Xx: rush B
+[2026/073-06:15:08.124][I][match#8822] KILL Lumen -> noob_7 (knife, headshot, noscope)
+[2026/073-06:15:10.191][I][match#8822] KILL Dr.Frag -> Lumen (ak47)
+[2026/073-06:15:12.382][I][match#8822] CHAT kappa_99: nice shot
+[2026/073-06:15:14.594][I][match#8822] KILL Lumen -> kappa_99 (m4a1, headshot, noscope)
+[2026/073-06:15:16.315][I][match#8822] CHAT Sn1per_42: gg
+[2026/073-06:15:17.024][I][match#8822] KILL Lumen -> xX_Rex_Xx (m4a1, headshot)
+[2026/073-06:15:17.412][I][match#8822] CHAT Sn1per_42: lag?
+[2026/073-06:15:18.954][I][match#8823] ROUND_START map=de_nuke
+[2026/073-06:15:19.428][I][match#8823] KILL kappa_99 -> Sn1per_42 (awp)
+[2026/073-06:15:20.062][D][net] TICK rate=80Hz lag=73ms
+[2026/073-06:15:21.242][W][net] Lumen packet loss 26% (ping 365ms)
+[2026/073-06:15:24.063][I][match#8823] KILL kappa_99 -> noob_7 (knife, wallbang)
+[2026/073-06:15:26.373][I][match#8823] KILL Mira -> Sn1per_42 (ak47)
+[2026/073-06:15:26.838][I][match#8823] CHAT kappa_99: gg
+[2026/073-06:15:27.541][I][match#8823] CHAT Mira: gg
+[2026/073-06:15:30.316][I][match#8823] KILL kappa_99 -> Mira (m4a1, wallbang)
+[2026/073-06:15:32.970][I][match#8823] KILL Mira -> xX_Rex_Xx (deagle)
+[2026/073-06:15:33.826][I][match#8823] KILL Dr.Frag -> Lumen (awp, wallbang)
+[2026/073-06:15:34.743][I][match#8823] KILL Lumen -> xX_Rex_Xx (deagle, headshot)
+[2026/073-06:15:36.542][D][net] TICK rate=72Hz lag=38ms
+[2026/073-06:15:39.217][I][match#8823] CHAT Dr.Frag: rush B
+[2026/073-06:15:40.032][I][match#8823] CHAT Sn1per_42: lag?
+[2026/073-06:15:42.298][I][match#8823] KILL kappa_99 -> xX_Rex_Xx (m4a1)
+[2026/073-06:15:42.475][D][net] TICK rate=60Hz lag=38ms
+[2026/073-06:15:42.664][I][match#8823] KILL Lumen -> Dr.Frag (ak47, headshot)
+[2026/073-06:15:43.931][I][match#8823] KILL xX_Rex_Xx -> Lumen (ak47, headshot)
+[2026/073-06:15:45.438][I][match#8823] KILL Dr.Frag -> kappa_99 (awp, wallbang)
+[2026/073-06:15:45.817][I][match#8823] CHAT xX_Rex_Xx: lag?
+[2026/073-06:15:46.591][W][net] Dr.Frag packet loss 8% (ping 291ms)
+[2026/073-06:15:48.617][I][lobby] JOIN noob_7 from 173.59.224.93
+[2026/073-06:15:50.890][I][match#8823] KILL Mira -> noob_7 (knife, headshot)
+[2026/073-06:15:51.057][I][match#8823] KILL Mira -> Dr.Frag (awp, headshot, noscope)
+[2026/073-06:15:52.102][I][match#8823] KILL Lumen -> noob_7 (m4a1, headshot)
+[2026/073-06:15:53.728][I][match#8823] KILL noob_7 -> xX_Rex_Xx (knife)
+[2026/073-06:15:56.684][W][net] kappa_99 packet loss 16% (ping 298ms)
+[2026/073-06:15:57.576][W][net] noob_7 packet loss 8% (ping 231ms)
+[2026/073-06:15:58.910][I][match#8823] KILL noob_7 -> Dr.Frag (ak47, wallbang)
+[2026/073-06:15:59.268][I][match#8823] KILL Sn1per_42 -> Dr.Frag (awp, wallbang)
+[2026/073-06:15:59.651][I][match#8823] CHAT kappa_99: gg
+[2026/073-06:16:00.740][D][net] TICK rate=94Hz lag=145ms
+[2026/073-06:16:02.354][I][lobby] JOIN noob_7 from 125.158.141.76
+[2026/073-06:16:04.967][I][match#8823] CHAT noob_7: rush B
+[2026/073-06:16:06.430][I][match#8823] KILL noob_7 -> Mira (knife, headshot, noscope)
+[2026/073-06:16:09.348][W][net] Dr.Frag packet loss 20% (ping 119ms)
+[2026/073-06:16:11.957][I][match#8823] KILL Sn1per_42 -> xX_Rex_Xx (deagle, wallbang)
+[2026/073-06:16:13.033][E][anticheat] Lumen flagged: aim snap 353 deg/s
+[2026/073-06:16:15.460][W][net] Dr.Frag packet loss 31% (ping 357ms)
+[2026/073-06:16:17.749][I][match#8823] KILL Dr.Frag -> Sn1per_42 (ak47, headshot)
+[2026/073-06:16:19.449][I][match#8823] KILL Dr.Frag -> kappa_99 (deagle, wallbang)
+[2026/073-06:16:20.416][W][net] kappa_99 packet loss 19% (ping 280ms)
+[2026/073-06:16:21.650][I][match#8823] KILL xX_Rex_Xx -> kappa_99 (deagle)
+[2026/073-06:16:23.606][D][net] TICK rate=126Hz lag=173ms
+[2026/073-06:16:24.025][D][net] TICK rate=115Hz lag=78ms
+[2026/073-06:16:24.037][D][net] TICK rate=115Hz lag=33ms
+[2026/073-06:16:26.793][D][net] TICK rate=128Hz lag=42ms
+[2026/073-06:16:28.690][E][anticheat] Mira flagged: aim snap 362 deg/s
+[2026/073-06:16:29.046][I][match#8823] KILL Sn1per_42 -> kappa_99 (deagle, headshot)
+[2026/073-06:16:31.676][I][match#8823] KILL Sn1per_42 -> kappa_99 (deagle, headshot, noscope)
+[2026/073-06:16:32.281][W][net] xX_Rex_Xx packet loss 34% (ping 192ms)
+[2026/073-06:16:34.367][I][match#8823] KILL Mira -> Lumen (m4a1)
+[2026/073-06:16:36.742][I][match#8823] KILL Dr.Frag -> Lumen (ak47)
+[2026/073-06:16:38.853][I][match#8823] KILL Lumen -> Mira (ak47)
+[2026/073-06:16:41.779][I][lobby] JOIN Mira from 211.93.136.76
+[2026/073-06:16:43.499][W][net] Lumen packet loss 11% (ping 147ms)
+[2026/073-06:16:43.711][W][net] noob_7 packet loss 27% (ping 296ms)
+[2026/073-06:16:44.871][I][match#8823] KILL Sn1per_42 -> noob_7 (awp)
+[2026/073-06:16:45.736][I][match#8823] CHAT Dr.Frag: nice shot
+[2026/073-06:16:48.249][W][net] Mira packet loss 21% (ping 100ms)
+[2026/073-06:16:50.842][I][match#8823] KILL noob_7 -> Dr.Frag (m4a1, headshot)
+[2026/073-06:16:52.176][I][match#8824] ROUND_START map=de_inferno
+[2026/073-06:16:55.098][I][match#8824] KILL Mira -> Dr.Frag (knife)
+[2026/073-06:16:58.037][W][net] kappa_99 packet loss 20% (ping 216ms)
+[2026/073-06:16:59.437][I][lobby] JOIN Dr.Frag from 8.172.170.111
+[2026/073-06:16:59.540][I][match#8824] KILL noob_7 -> Lumen (awp, headshot)
+[2026/073-06:17:01.265][I][match#8824] KILL noob_7 -> Lumen (deagle)
+[2026/073-06:17:03.222][E][anticheat] Mira flagged: aim snap 779 deg/s
+[2026/073-06:17:03.724][D][net] TICK rate=86Hz lag=181ms
+[2026/073-06:17:04.018][I][lobby] JOIN noob_7 from 5.181.239.207
+[2026/073-06:17:04.046][I][match#8824] CHAT Dr.Frag: lag?
+[2026/073-06:17:05.158][I][match#8824] KILL Lumen -> Mira (knife, headshot)
+[2026/073-06:17:06.462][I][match#8824] KILL kappa_99 -> xX_Rex_Xx (knife, headshot, noscope)
+[2026/073-06:17:07.429][I][match#8824] KILL kappa_99 -> Mira (awp)
+[2026/073-06:17:08.679][I][match#8824] KILL Dr.Frag -> xX_Rex_Xx (m4a1, wallbang)
+[2026/073-06:17:11.211][W][net] xX_Rex_Xx packet loss 39% (ping 317ms)
+[2026/073-06:17:13.017][I][match#8824] CHAT Sn1per_42: nice shot
+[2026/073-06:17:15.770][I][lobby] JOIN Sn1per_42 from 94.180.92.158
+[2026/073-06:17:18.164][I][lobby] JOIN Sn1per_42 from 148.203.67.110
+[2026/073-06:17:19.175][I][match#8824] KILL Dr.Frag -> kappa_99 (ak47)
+[2026/073-06:17:20.595][E][anticheat] Dr.Frag flagged: aim snap 805 deg/s
+[2026/073-06:17:23.019][I][lobby] JOIN noob_7 from 133.83.105.251
+[2026/073-06:17:25.354][I][match#8824] KILL Mira -> noob_7 (m4a1, headshot, noscope)
+[2026/073-06:17:28.301][I][lobby] JOIN Sn1per_42 from 117.169.84.240
+[2026/073-06:17:31.049][I][match#8824] KILL kappa_99 -> Mira (awp, wallbang)
+[2026/073-06:17:32.887][D][net] TICK rate=94Hz lag=74ms
+[2026/073-06:17:34.430][D][net] TICK rate=82Hz lag=30ms
+[2026/073-06:17:36.176][E][anticheat] Dr.Frag flagged: aim snap 546 deg/s
+[2026/073-06:17:37.071][I][match#8824] KILL kappa_99 -> Mira (deagle, headshot)
+[2026/073-06:17:39.094][I][match#8824] KILL Mira -> Sn1per_42 (ak47, headshot, noscope)
+[2026/073-06:17:39.841][I][match#8824] KILL noob_7 -> Dr.Frag (ak47, headshot, noscope)
+[2026/073-06:17:40.889][I][match#8824] KILL Mira -> Sn1per_42 (deagle, headshot, noscope)
+[2026/073-06:17:43.118][D][net] TICK rate=101Hz lag=250ms
+[2026/073-06:17:44.241][W][net] Sn1per_42 packet loss 9% (ping 356ms)
+[2026/073-06:17:46.614][I][match#8824] KILL kappa_99 -> Mira (knife)
+[2026/073-06:17:48.921][I][match#8824] KILL xX_Rex_Xx -> Lumen (ak47, wallbang)
+[2026/073-06:17:50.615][I][match#8825] ROUND_START map=de_nuke
+[2026/073-06:17:51.244][I][match#8825] KILL Lumen -> Sn1per_42 (deagle, headshot)
+[2026/073-06:17:52.460][W][net] Mira packet loss 31% (ping 136ms)
+[2026/073-06:17:53.383][I][lobby] JOIN noob_7 from 201.232.96.228
+[2026/073-06:17:55.284][I][match#8825] KILL Sn1per_42 -> noob_7 (awp, headshot)
+[2026/073-06:17:56.603][I][match#8825] KILL Sn1per_42 -> Mira (deagle)
+[2026/073-06:17:57.497][I][match#8825] KILL Dr.Frag -> Sn1per_42 (awp, wallbang)
+[2026/073-06:17:58.519][I][match#8825] CHAT kappa_99: rush B
+[2026/073-06:17:59.242][I][match#8825] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:18:00.267][W][net] Sn1per_42 packet loss 40% (ping 265ms)
+[2026/073-06:18:01.436][I][match#8825] KILL Sn1per_42 -> kappa_99 (m4a1, headshot, noscope)
+[2026/073-06:18:01.762][I][match#8825] KILL noob_7 -> Sn1per_42 (awp)
+[2026/073-06:18:01.963][I][match#8825] KILL Mira -> Lumen (knife, headshot)
+[2026/073-06:18:04.347][I][match#8825] KILL Lumen -> kappa_99 (ak47, headshot, noscope)
+[2026/073-06:18:06.531][D][net] TICK rate=121Hz lag=183ms
+[2026/073-06:18:09.254][D][net] TICK rate=92Hz lag=209ms
+[2026/073-06:18:12.006][I][match#8825] KILL kappa_99 -> noob_7 (m4a1, headshot)
+[2026/073-06:18:13.224][I][match#8825] KILL Sn1per_42 -> Lumen (awp, headshot)
+[2026/073-06:18:16.097][I][match#8825] CHAT noob_7: rush B
+[2026/073-06:18:18.936][I][match#8825] KILL noob_7 -> kappa_99 (awp, headshot, noscope)
+[2026/073-06:18:20.418][E][anticheat] Dr.Frag flagged: aim snap 437 deg/s
+[2026/073-06:18:23.250][I][match#8825] KILL Dr.Frag -> kappa_99 (knife, wallbang)
+[2026/073-06:18:25.443][I][match#8825] KILL Dr.Frag -> Sn1per_42 (awp, headshot)
+[2026/073-06:18:27.942][I][match#8825] KILL Mira -> Dr.Frag (awp)
+[2026/073-06:18:30.761][D][net] TICK rate=101Hz lag=181ms
+[2026/073-06:18:33.743][D][net] TICK rate=65Hz lag=109ms
+[2026/073-06:18:36.588][I][match#8825] KILL Mira -> Sn1per_42 (m4a1, headshot)
+[2026/073-06:18:38.145][I][match#8825] KILL xX_Rex_Xx -> Lumen (deagle, headshot, noscope)
+[2026/073-06:18:38.700][I][match#8825] KILL Lumen -> noob_7 (awp)
+[2026/073-06:18:39.737][I][match#8825] KILL Sn1per_42 -> noob_7 (awp)
+[2026/073-06:18:42.540][I][match#8825] KILL xX_Rex_Xx -> Dr.Frag (awp)
+[2026/073-06:18:44.301][I][match#8825] KILL Mira -> xX_Rex_Xx (deagle)
+[2026/073-06:18:45.046][I][match#8825] CHAT Dr.Frag: nice shot
+[2026/073-06:18:45.773][I][match#8825] KILL Sn1per_42 -> noob_7 (m4a1, wallbang)
+[2026/073-06:18:47.293][I][match#8825] KILL kappa_99 -> Sn1per_42 (ak47, wallbang)
+[2026/073-06:18:50.259][I][match#8825] KILL Dr.Frag -> noob_7 (knife, headshot)
+[2026/073-06:18:50.371][I][match#8825] KILL Sn1per_42 -> kappa_99 (knife, wallbang)
+[2026/073-06:18:53.176][I][match#8825] KILL kappa_99 -> Lumen (ak47, wallbang)
+[2026/073-06:18:55.332][I][lobby] JOIN Sn1per_42 from 77.185.38.139
+[2026/073-06:18:57.119][I][lobby] JOIN Mira from 61.146.106.206
+[2026/073-06:18:59.934][I][lobby] JOIN Sn1per_42 from 214.198.92.36
+[2026/073-06:19:01.138][I][lobby] JOIN Lumen from 146.95.233.113
+[2026/073-06:19:02.747][I][match#8825] KILL xX_Rex_Xx -> kappa_99 (m4a1, headshot)
+[2026/073-06:19:05.577][I][match#8825] KILL xX_Rex_Xx -> Mira (awp)
+[2026/073-06:19:08.239][I][match#8825] KILL Sn1per_42 -> Mira (ak47, headshot, noscope)
+[2026/073-06:19:10.558][D][net] TICK rate=110Hz lag=241ms
+[2026/073-06:19:10.729][I][match#8825] KILL Lumen -> Mira (awp, headshot, noscope)
+[2026/073-06:19:13.042][I][match#8825] KILL kappa_99 -> Sn1per_42 (awp, headshot)
+[2026/073-06:19:13.261][D][net] TICK rate=62Hz lag=119ms
+[2026/073-06:19:15.755][I][match#8825] KILL kappa_99 -> Sn1per_42 (m4a1)
+[2026/073-06:19:17.556][W][net] kappa_99 packet loss 40% (ping 239ms)
+[2026/073-06:19:20.464][I][match#8825] KILL kappa_99 -> noob_7 (knife)
+[2026/073-06:19:22.288][I][match#8825] KILL Lumen -> noob_7 (m4a1, wallbang)
+[2026/073-06:19:22.824][D][net] TICK rate=96Hz lag=83ms
+[2026/073-06:19:24.850][I][match#8825] KILL Lumen -> noob_7 (knife)
+[2026/073-06:19:26.576][W][net] Dr.Frag packet loss 26% (ping 400ms)
+[2026/073-06:19:26.990][I][match#8825] KILL Lumen -> Sn1per_42 (knife, headshot, noscope)
+[2026/073-06:19:29.683][D][net] TICK rate=119Hz lag=201ms
+[2026/073-06:19:30.953][I][match#8825] KILL Lumen -> Sn1per_42 (deagle, headshot, noscope)
+[2026/073-06:19:31.724][I][match#8825] KILL noob_7 -> xX_Rex_Xx (awp, headshot)
+[2026/073-06:19:34.331][D][net] TICK rate=116Hz lag=13ms
+[2026/073-06:19:35.255][I][match#8825] KILL Sn1per_42 -> Dr.Frag (knife, wallbang)
+[2026/073-06:19:36.834][I][match#8826] ROUND_START map=de_nuke
+[2026/073-06:19:37.474][I][match#8826] KILL xX_Rex_Xx -> Dr.Frag (deagle, wallbang)
+[2026/073-06:19:38.235][W][net] Mira packet loss 36% (ping 209ms)
+[2026/073-06:19:38.953][I][match#8826] CHAT Lumen: rush B
+[2026/073-06:19:39.159][I][match#8826] KILL noob_7 -> Lumen (m4a1, wallbang)
+[2026/073-06:19:41.576][I][match#8826] CHAT Mira: nice shot
+[2026/073-06:19:44.539][D][net] TICK rate=83Hz lag=48ms
+[2026/073-06:19:45.115][I][match#8826] KILL Dr.Frag -> Lumen (ak47, headshot, noscope)
+[2026/073-06:19:46.034][I][match#8826] KILL Sn1per_42 -> Lumen (m4a1, wallbang)
+[2026/073-06:19:46.905][I][match#8826] KILL Mira -> Dr.Frag (awp)
+[2026/073-06:19:49.452][I][lobby] JOIN Sn1per_42 from 194.65.30.254
+[2026/073-06:19:52.012][I][match#8826] KILL kappa_99 -> Lumen (m4a1, headshot, noscope)
+[2026/073-06:19:53.727][I][match#8826] CHAT Mira: gg
+[2026/073-06:19:56.051][D][net] TICK rate=90Hz lag=63ms
+[2026/073-06:19:57.644][I][match#8826] KILL noob_7 -> Lumen (knife, wallbang)
+[2026/073-06:19:59.460][I][match#8826] KILL kappa_99 -> Lumen (ak47, headshot, noscope)
+[2026/073-06:20:01.902][I][match#8826] CHAT noob_7: rush B
+[2026/073-06:20:04.063][D][net] TICK rate=73Hz lag=189ms
+[2026/073-06:20:05.649][W][net] xX_Rex_Xx packet loss 23% (ping 182ms)
+[2026/073-06:20:06.158][I][match#8826] CHAT noob_7: lag?
+[2026/073-06:20:08.062][I][match#8826] CHAT kappa_99: rush B
+[2026/073-06:20:10.176][E][anticheat] noob_7 flagged: aim snap 681 deg/s
+[2026/073-06:20:10.631][I][match#8826] CHAT kappa_99: gg
+[2026/073-06:20:12.294][I][match#8826] KILL Lumen -> Dr.Frag (m4a1, wallbang)
+[2026/073-06:20:12.404][I][match#8826] KILL Dr.Frag -> Mira (ak47)
+[2026/073-06:20:12.625][D][net] TICK rate=99Hz lag=140ms
+[2026/073-06:20:14.540][I][match#8826] KILL noob_7 -> Mira (knife, wallbang)
+[2026/073-06:20:16.070][D][net] TICK rate=83Hz lag=229ms
+[2026/073-06:20:18.812][I][match#8826] CHAT Mira: rush B
+[2026/073-06:20:20.151][I][lobby] JOIN kappa_99 from 137.215.66.81
+[2026/073-06:20:22.620][E][anticheat] noob_7 flagged: aim snap 593 deg/s
+[2026/073-06:20:23.709][D][net] TICK rate=107Hz lag=147ms
+[2026/073-06:20:25.719][I][match#8826] KILL Lumen -> Dr.Frag (ak47, headshot, noscope)
+[2026/073-06:20:27.980][D][net] TICK rate=107Hz lag=145ms
+[2026/073-06:20:28.896][I][match#8827] ROUND_START map=de_inferno
+[2026/073-06:20:30.447][I][lobby] JOIN Mira from 213.230.246.73
+[2026/073-06:20:32.778][I][match#8827] CHAT Mira: rush B
+[2026/073-06:20:34.339][E][anticheat] Dr.Frag flagged: aim snap 891 deg/s
+[2026/073-06:20:34.876][I][match#8827] KILL xX_Rex_Xx -> Lumen (ak47)
+[2026/073-06:20:35.898][I][match#8827] KILL xX_Rex_Xx -> noob_7 (deagle)
+[2026/073-06:20:37.605][I][match#8827] KILL xX_Rex_Xx -> Dr.Frag (deagle, headshot)
+[2026/073-06:20:38.849][I][match#8827] CHAT Lumen: lag?
+[2026/073-06:20:41.424][W][net] kappa_99 packet loss 33% (ping 222ms)
+[2026/073-06:20:41.972][I][match#8827] CHAT Dr.Frag: rush B
+[2026/073-06:20:43.347][D][net] TICK rate=87Hz lag=100ms
+[2026/073-06:20:44.619][D][net] TICK rate=94Hz lag=230ms
+[2026/073-06:20:45.224][I][match#8827] KILL xX_Rex_Xx -> Mira (deagle, wallbang)
+[2026/073-06:20:46.539][I][match#8827] CHAT Sn1per_42: nice shot
+[2026/073-06:20:46.741][I][lobby] JOIN Dr.Frag from 21.180.126.70
+[2026/073-06:20:48.469][E][anticheat] Sn1per_42 flagged: aim snap 498 deg/s
+[2026/073-06:20:50.029][D][net] TICK rate=101Hz lag=186ms
+[2026/073-06:20:50.524][W][net] noob_7 packet loss 23% (ping 400ms)
+[2026/073-06:20:53.466][I][match#8827] KILL noob_7 -> Lumen (m4a1)
+[2026/073-06:20:56.401][I][lobby] JOIN noob_7 from 50.87.56.251
+[2026/073-06:20:58.644][D][net] TICK rate=85Hz lag=131ms
+[2026/073-06:20:59.365][D][net] TICK rate=97Hz lag=62ms
+[2026/073-06:21:01.858][I][match#8827] KILL kappa_99 -> Lumen (awp, headshot)
+[2026/073-06:21:04.628][D][net] TICK rate=90Hz lag=220ms
+[2026/073-06:21:06.222][I][match#8827] CHAT Lumen: gg
+[2026/073-06:21:07.829][I][match#8827] KILL Mira -> Lumen (knife, headshot, noscope)
+[2026/073-06:21:10.371][D][net] TICK rate=82Hz lag=164ms
+[2026/073-06:21:12.770][I][lobby] JOIN xX_Rex_Xx from 113.107.203.20
+[2026/073-06:21:15.751][I][match#8827] KILL xX_Rex_Xx -> Sn1per_42 (awp, headshot, noscope)
+[2026/073-06:21:15.796][I][match#8827] CHAT Dr.Frag: gg
+[2026/073-06:21:18.390][I][lobby] JOIN noob_7 from 201.129.15.249
+[2026/073-06:21:18.858][I][match#8827] CHAT Lumen: nice shot
+[2026/073-06:21:21.507][I][match#8827] KILL xX_Rex_Xx -> Mira (knife, wallbang)
+[2026/073-06:21:23.915][I][lobby] JOIN Lumen from 33.107.65.119
+[2026/073-06:21:25.153][I][match#8827] KILL kappa_99 -> noob_7 (deagle, headshot)
+[2026/073-06:21:26.144][I][match#8827] KILL Dr.Frag -> xX_Rex_Xx (awp, wallbang)
+[2026/073-06:21:28.511][I][match#8827] CHAT Lumen: lag?
+[2026/073-06:21:29.280][I][match#8827] KILL xX_Rex_Xx -> Lumen (awp, wallbang)
+[2026/073-06:21:29.316][I][match#8827] KILL noob_7 -> kappa_99 (knife, headshot, noscope)
+[2026/073-06:21:31.914][I][match#8827] KILL Mira -> xX_Rex_Xx (awp)
+[2026/073-06:21:33.186][E][anticheat] Dr.Frag flagged: aim snap 728 deg/s
+[2026/073-06:21:35.978][W][net] Sn1per_42 packet loss 6% (ping 306ms)
+[2026/073-06:21:38.753][W][net] kappa_99 packet loss 21% (ping 365ms)
+[2026/073-06:21:40.050][I][lobby] JOIN noob_7 from 138.5.170.233
+[2026/073-06:21:40.583][D][net] TICK rate=108Hz lag=85ms
+[2026/073-06:21:40.784][D][net] TICK rate=78Hz lag=114ms
+[2026/073-06:21:43.060][E][anticheat] kappa_99 flagged: aim snap 521 deg/s
+[2026/073-06:21:43.205][W][net] kappa_99 packet loss 31% (ping 351ms)
+[2026/073-06:21:45.592][I][match#8827] KILL Dr.Frag -> kappa_99 (m4a1, headshot, noscope)
+[2026/073-06:21:47.566][I][match#8827] CHAT xX_Rex_Xx: lag?
+[2026/073-06:21:48.040][I][match#8827] KILL Mira -> Sn1per_42 (knife, headshot)
+[2026/073-06:21:48.472][I][match#8827] CHAT Lumen: lag?
+[2026/073-06:21:50.587][W][net] Sn1per_42 packet loss 38% (ping 340ms)
+[2026/073-06:21:52.111][W][net] Dr.Frag packet loss 24% (ping 268ms)
+[2026/073-06:21:54.418][I][match#8827] KILL Dr.Frag -> kappa_99 (awp, headshot, noscope)
+[2026/073-06:21:56.552][I][match#8827] CHAT Lumen: lag?
+[2026/073-06:21:59.449][I][match#8827] KILL Mira -> Sn1per_42 (knife, headshot, noscope)
+[2026/073-06:22:01.066][D][net] TICK rate=117Hz lag=11ms
+[2026/073-06:22:01.661][D][net] TICK rate=63Hz lag=27ms
+[2026/073-06:22:03.510][I][match#8827] KILL Sn1per_42 -> noob_7 (knife, headshot, noscope)
+[2026/073-06:22:04.629][I][match#8827] KILL Lumen -> Dr.Frag (m4a1, wallbang)
+[2026/073-06:22:05.408][I][match#8827] KILL xX_Rex_Xx -> Dr.Frag (awp, headshot, noscope)
+[2026/073-06:22:07.430][I][match#8827] KILL Dr.Frag -> noob_7 (knife, headshot, noscope)
+[2026/073-06:22:08.540][I][match#8827] KILL noob_7 -> Mira (awp)
+[2026/073-06:22:10.828][D][net] TICK rate=128Hz lag=225ms
+[2026/073-06:22:13.607][I][lobby] JOIN noob_7 from 10.33.255.137
+[2026/073-06:22:15.226][I][match#8827] KILL Dr.Frag -> noob_7 (awp, wallbang)
+[2026/073-06:22:16.680][I][lobby] JOIN Mira from 21.82.233.48
+[2026/073-06:22:18.293][D][net] TICK rate=120Hz lag=88ms
+[2026/073-06:22:20.291][I][match#8828] ROUND_START map=de_nuke
+[2026/073-06:22:23.016][D][net] TICK rate=121Hz lag=67ms
+[2026/073-06:22:24.806][D][net] TICK rate=110Hz lag=135ms
+[2026/073-06:22:27.018][D][net] TICK rate=60Hz lag=242ms
+[2026/073-06:22:27.649][E][anticheat] Lumen flagged: aim snap 266 deg/s
+[2026/073-06:22:29.771][I][match#8828] KILL Lumen -> Mira (m4a1, wallbang)
+[2026/073-06:22:29.963][I][match#8828] KILL Dr.Frag -> xX_Rex_Xx (ak47, headshot, noscope)
+[2026/073-06:22:32.867][I][match#8828] KILL xX_Rex_Xx -> Mira (deagle)
+[2026/073-06:22:33.881][I][match#8828] KILL Lumen -> noob_7 (m4a1)
+[2026/073-06:22:34.211][D][net] TICK rate=110Hz lag=206ms
+[2026/073-06:22:36.964][I][lobby] JOIN Lumen from 50.58.23.10
+[2026/073-06:22:38.122][I][match#8828] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:22:40.629][I][match#8828] KILL kappa_99 -> noob_7 (m4a1, headshot, noscope)
+[2026/073-06:22:41.276][D][net] TICK rate=98Hz lag=181ms
+[2026/073-06:22:42.720][I][match#8828] KILL Lumen -> kappa_99 (m4a1, headshot, noscope)
+[2026/073-06:22:44.566][W][net] kappa_99 packet loss 8% (ping 359ms)
+[2026/073-06:22:45.624][I][match#8828] CHAT kappa_99: gg
+[2026/073-06:22:48.377][I][match#8828] KILL xX_Rex_Xx -> Sn1per_42 (awp, wallbang)
+[2026/073-06:22:49.261][I][match#8828] KILL Mira -> kappa_99 (awp)
+[2026/073-06:22:49.465][D][net] TICK rate=72Hz lag=36ms
+[2026/073-06:22:50.039][I][match#8828] KILL noob_7 -> Mira (m4a1)
+[2026/073-06:22:51.128][W][net] xX_Rex_Xx packet loss 13% (ping 243ms)
+[2026/073-06:22:51.922][I][match#8828] KILL Dr.Frag -> noob_7 (awp, headshot)
+[2026/073-06:22:52.457][I][match#8828] CHAT kappa_99: gg
+[2026/073-06:22:53.728][I][match#8828] KILL xX_Rex_Xx -> Mira (deagle, wallbang)
+[2026/073-06:22:54.296][I][match#8828] KILL Mira -> Lumen (deagle, wallbang)
+[2026/073-06:22:56.001][D][net] TICK rate=71Hz lag=137ms
+[2026/073-06:22:56.733][I][match#8828] KILL Sn1per_42 -> xX_Rex_Xx (awp)
+[2026/073-06:22:59.106][W][net] kappa_99 packet loss 9% (ping 200ms)
+[2026/073-06:22:59.554][D][net] TICK rate=114Hz lag=85ms
+[2026/073-06:23:00.074][I][match#8828] KILL Dr.Frag -> Sn1per_42 (m4a1)
+[2026/073-06:23:02.830][I][match#8828] KILL Lumen -> kappa_99 (awp, headshot, noscope)
+[2026/073-06:23:03.986][I][match#8828] KILL Lumen -> Dr.Frag (deagle, wallbang)
+[2026/073-06:23:05.040][D][net] TICK rate=87Hz lag=91ms
+[2026/073-06:23:06.828][I][match#8828] KILL xX_Rex_Xx -> Lumen (knife, headshot)
+[2026/073-06:23:08.124][I][match#8828] KILL Lumen -> Sn1per_42 (m4a1, headshot, noscope)
+[2026/073-06:23:10.143][I][match#8828] KILL Mira -> Sn1per_42 (deagle, wallbang)
+[2026/073-06:23:10.199][D][net] TICK rate=70Hz lag=120ms
+[2026/073-06:23:10.939][I][match#8828] KILL Lumen -> noob_7 (m4a1, headshot)
+[2026/073-06:23:11.692][D][net] TICK rate=88Hz lag=243ms
+[2026/073-06:23:12.913][E][anticheat] noob_7 flagged: aim snap 450 deg/s
+[2026/073-06:23:13.815][I][match#8828] KILL kappa_99 -> Sn1per_42 (knife, wallbang)
+[2026/073-06:23:15.262][I][match#8828] KILL noob_7 -> xX_Rex_Xx (knife, wallbang)
+[2026/073-06:23:16.152][I][match#8828] KILL Lumen -> noob_7 (ak47, headshot)
+[2026/073-06:23:16.613][I][match#8828] KILL kappa_99 -> xX_Rex_Xx (deagle, wallbang)
+[2026/073-06:23:16.910][I][match#8828] CHAT Mira: nice shot
+[2026/073-06:23:18.669][W][net] xX_Rex_Xx packet loss 14% (ping 182ms)
+[2026/073-06:23:19.354][I][match#8828] CHAT Dr.Frag: rush B
+[2026/073-06:23:20.187][I][lobby] JOIN Dr.Frag from 97.119.190.61
+[2026/073-06:23:21.353][I][match#8828] KILL Lumen -> noob_7 (knife, headshot)
+[2026/073-06:23:23.923][E][anticheat] kappa_99 flagged: aim snap 538 deg/s
+[2026/073-06:23:24.490][I][match#8828] CHAT kappa_99: rush B
+[2026/073-06:23:26.937][D][net] TICK rate=108Hz lag=225ms
+[2026/073-06:23:29.875][W][net] Sn1per_42 packet loss 39% (ping 332ms)
+[2026/073-06:23:31.882][I][match#8828] CHAT Mira: gg
+[2026/073-06:23:32.133][E][anticheat] Sn1per_42 flagged: aim snap 390 deg/s
+[2026/073-06:23:34.254][W][net] Mira packet loss 29% (ping 98ms)
+[2026/073-06:23:36.703][D][net] TICK rate=108Hz lag=29ms
+[2026/073-06:23:36.986][W][net] Sn1per_42 packet loss 27% (ping 105ms)
+[2026/073-06:23:38.681][I][lobby] JOIN Lumen from 7.114.81.236
+[2026/073-06:23:41.439][I][lobby] JOIN Dr.Frag from 141.95.253.124
+[2026/073-06:23:43.791][D][net] TICK rate=91Hz lag=45ms
+[2026/073-06:23:44.780][I][match#8828] KILL noob_7 -> Dr.Frag (m4a1, headshot, noscope)
+[2026/073-06:23:47.287][I][match#8828] CHAT Dr.Frag: lag?
+[2026/073-06:23:50.096][I][match#8828] CHAT Lumen: lag?
+[2026/073-06:23:52.144][W][net] noob_7 packet loss 13% (ping 169ms)
+[2026/073-06:23:53.822][I][match#8828] KILL Dr.Frag -> kappa_99 (knife, headshot, noscope)
+[2026/073-06:23:54.849][I][lobby] JOIN kappa_99 from 39.102.127.170
+[2026/073-06:23:55.354][I][match#8828] CHAT kappa_99: gg
+[2026/073-06:23:57.285][I][match#8828] CHAT Mira: gg
+[2026/073-06:23:59.197][D][net] TICK rate=65Hz lag=122ms
+[2026/073-06:24:01.116][I][match#8828] KILL Lumen -> kappa_99 (deagle, headshot, noscope)
+[2026/073-06:24:02.547][I][match#8829] ROUND_START map=de_inferno
+[2026/073-06:24:03.375][W][net] kappa_99 packet loss 12% (ping 83ms)
+[2026/073-06:24:04.778][I][match#8829] KILL kappa_99 -> noob_7 (deagle, headshot, noscope)
+[2026/073-06:24:05.261][W][net] Mira packet loss 36% (ping 100ms)
+[2026/073-06:24:06.273][I][match#8829] KILL xX_Rex_Xx -> Sn1per_42 (m4a1)
+[2026/073-06:24:08.169][I][match#8829] KILL noob_7 -> Sn1per_42 (deagle, headshot, noscope)
+[2026/073-06:24:08.354][E][anticheat] Mira flagged: aim snap 584 deg/s
+[2026/073-06:24:11.114][E][anticheat] noob_7 flagged: aim snap 216 deg/s
+[2026/073-06:24:11.484][D][net] TICK rate=82Hz lag=132ms
+[2026/073-06:24:13.308][I][match#8829] CHAT Sn1per_42: rush B
+[2026/073-06:24:15.076][I][match#8829] KILL noob_7 -> kappa_99 (knife)
+[2026/073-06:24:17.665][I][match#8829] KILL Lumen -> Mira (ak47, headshot, noscope)
+[2026/073-06:24:19.186][W][net] Lumen packet loss 37% (ping 104ms)
+[2026/073-06:24:20.217][I][match#8829] CHAT kappa_99: lag?
+[2026/073-06:24:23.108][D][net] TICK rate=60Hz lag=83ms
+[2026/073-06:24:23.302][I][match#8829] KILL Dr.Frag -> kappa_99 (m4a1, headshot, noscope)
+[2026/073-06:24:24.796][I][lobby] JOIN Sn1per_42 from 75.146.214.101
+[2026/073-06:24:26.593][E][anticheat] Mira flagged: aim snap 167 deg/s
+[2026/073-06:24:29.495][E][anticheat] kappa_99 flagged: aim snap 747 deg/s
+[2026/073-06:24:32.236][I][match#8829] KILL Mira -> xX_Rex_Xx (ak47, wallbang)
+[2026/073-06:24:34.136][I][match#8829] KILL Sn1per_42 -> Dr.Frag (m4a1)
+[2026/073-06:24:36.338][I][match#8829] KILL noob_7 -> Lumen (deagle, headshot, noscope)
+[2026/073-06:24:37.392][I][lobby] JOIN Lumen from 217.85.44.186
+[2026/073-06:24:39.826][I][match#8829] CHAT Sn1per_42: nice shot
+[2026/073-06:24:40.490][I][match#8829] CHAT Dr.Frag: nice shot
+[2026/073-06:24:42.732][D][net] TICK rate=102Hz lag=45ms
+[2026/073-06:24:45.518][I][match#8829] KILL kappa_99 -> Sn1per_42 (deagle, headshot)
+[2026/073-06:24:46.956][D][net] TICK rate=64Hz lag=136ms
+[2026/073-06:24:49.300][I][match#8829] CHAT xX_Rex_Xx: lag?
+[2026/073-06:24:51.061][W][net] Mira packet loss 37% (ping 194ms)
+[2026/073-06:24:51.303][D][net] TICK rate=111Hz lag=85ms
+[2026/073-06:24:53.032][I][lobby] JOIN noob_7 from 206.158.145.177
+[2026/073-06:24:55.554][I][match#8829] KILL Sn1per_42 -> Mira (knife, headshot, noscope)
+[2026/073-06:24:58.149][I][match#8829] KILL Sn1per_42 -> Dr.Frag (knife, headshot)
+[2026/073-06:24:58.314][D][net] TICK rate=116Hz lag=162ms
+[2026/073-06:24:59.708][I][match#8829] CHAT xX_Rex_Xx: rush B
+[2026/073-06:25:00.944][I][match#8829] CHAT noob_7: rush B
+[2026/073-06:25:03.096][I][match#8829] CHAT Mira: lag?
+[2026/073-06:25:03.813][D][net] TICK rate=106Hz lag=235ms
+[2026/073-06:25:04.685][D][net] TICK rate=78Hz lag=113ms
+[2026/073-06:25:07.388][I][match#8829] KILL xX_Rex_Xx -> noob_7 (m4a1, wallbang)
+[2026/073-06:25:09.091][W][net] Sn1per_42 packet loss 12% (ping 153ms)
+[2026/073-06:25:11.110][E][anticheat] kappa_99 flagged: aim snap 689 deg/s
+[2026/073-06:25:12.594][I][match#8829] KILL Dr.Frag -> kappa_99 (knife)
+[2026/073-06:25:13.578][I][match#8829] CHAT Dr.Frag: nice shot
+[2026/073-06:25:15.127][I][match#8829] KILL Sn1per_42 -> Lumen (knife, wallbang)
+[2026/073-06:25:17.486][I][match#8829] CHAT kappa_99: gg
+[2026/073-06:25:19.341][I][match#8829] KILL Sn1per_42 -> Mira (knife, headshot, noscope)
+[2026/073-06:25:20.095][I][lobby] JOIN Dr.Frag from 15.118.77.177
+[2026/073-06:25:20.487][I][match#8829] KILL kappa_99 -> Dr.Frag (awp, headshot, noscope)
+[2026/073-06:25:20.632][D][net] TICK rate=68Hz lag=197ms
+[2026/073-06:25:22.960][I][match#8829] KILL Dr.Frag -> Sn1per_42 (deagle, wallbang)
+[2026/073-06:25:23.815][W][net] Lumen packet loss 18% (ping 235ms)
+[2026/073-06:25:26.049][I][match#8829] KILL noob_7 -> Dr.Frag (deagle, headshot, noscope)
+[2026/073-06:25:27.686][I][match#8829] KILL Mira -> Sn1per_42 (awp, headshot, noscope)
+[2026/073-06:25:30.395][I][lobby] JOIN xX_Rex_Xx from 173.223.223.47
+[2026/073-06:25:32.712][D][net] TICK rate=98Hz lag=50ms
+[2026/073-06:25:35.256][I][match#8829] KILL Mira -> noob_7 (m4a1, headshot, noscope)
+[2026/073-06:25:37.039][W][net] Dr.Frag packet loss 32% (ping 363ms)
+[2026/073-06:25:39.383][I][match#8829] KILL xX_Rex_Xx -> Dr.Frag (awp, wallbang)
+[2026/073-06:25:40.921][W][net] noob_7 packet loss 33% (ping 318ms)
+[2026/073-06:25:42.921][I][match#8829] KILL Sn1per_42 -> kappa_99 (m4a1, headshot)
+[2026/073-06:25:43.576][D][net] TICK rate=73Hz lag=202ms
+[2026/073-06:25:44.088][D][net] TICK rate=128Hz lag=119ms
+[2026/073-06:25:46.887][I][match#8829] KILL Dr.Frag -> Lumen (deagle)
+[2026/073-06:25:47.323][W][net] xX_Rex_Xx packet loss 34% (ping 393ms)
+[2026/073-06:25:48.505][I][match#8829] CHAT kappa_99: nice shot
+[2026/073-06:25:49.462][I][match#8829] KILL xX_Rex_Xx -> Dr.Frag (knife, headshot, noscope)
+[2026/073-06:25:51.914][I][lobby] JOIN Mira from 55.118.154.189
+[2026/073-06:25:53.905][I][lobby] JOIN Dr.Frag from 101.134.179.179
+[2026/073-06:25:55.679][I][match#8829] KILL Lumen -> noob_7 (deagle, headshot, noscope)
+[2026/073-06:25:57.482][I][match#8829] KILL Mira -> xX_Rex_Xx (deagle)
+[2026/073-06:25:58.648][I][match#8829] CHAT Mira: lag?
+[2026/073-06:26:01.616][D][net] TICK rate=94Hz lag=98ms
+[2026/073-06:26:01.924][I][match#8829] KILL Sn1per_42 -> Mira (ak47, headshot)
+[2026/073-06:26:03.598][E][anticheat] kappa_99 flagged: aim snap 853 deg/s
+[2026/073-06:26:04.771][I][match#8829] KILL xX_Rex_Xx -> Mira (m4a1, wallbang)
+[2026/073-06:26:05.787][I][match#8829] KILL Sn1per_42 -> Dr.Frag (ak47, wallbang)
+[2026/073-06:26:06.542][I][match#8829] KILL Lumen -> xX_Rex_Xx (m4a1, wallbang)
+[2026/073-06:26:09.483][W][net] xX_Rex_Xx packet loss 20% (ping 203ms)
+[2026/073-06:26:11.851][W][net] Mira packet loss 15% (ping 122ms)
+[2026/073-06:26:14.420][W][net] Sn1per_42 packet loss 38% (ping 286ms)
+[2026/073-06:26:17.133][W][net] Sn1per_42 packet loss 38% (ping 331ms)
+[2026/073-06:26:17.815][I][match#8829] KILL Lumen -> noob_7 (m4a1, headshot, noscope)
+[2026/073-06:26:19.239][I][match#8829] KILL kappa_99 -> Mira (knife, headshot, noscope)
+[2026/073-06:26:19.257][I][match#8829] KILL kappa_99 -> Dr.Frag (knife, wallbang)
+[2026/073-06:26:20.422][I][match#8829] KILL Mira -> Dr.Frag (m4a1, headshot)
+[2026/073-06:26:22.081][I][match#8829] CHAT kappa_99: nice shot
+[2026/073-06:26:25.021][I][match#8829] KILL Sn1per_42 -> xX_Rex_Xx (deagle)
+[2026/073-06:26:26.939][D][net] TICK rate=83Hz lag=54ms
+[2026/073-06:26:27.359][I][match#8829] CHAT Dr.Frag: nice shot
+[2026/073-06:26:29.575][I][lobby] JOIN Dr.Frag from 206.158.234.177
+[2026/073-06:26:30.456][I][match#8829] CHAT Sn1per_42: nice shot
+[2026/073-06:26:32.207][I][match#8829] KILL Sn1per_42 -> Mira (deagle, headshot)
+[2026/073-06:26:32.978][I][match#8829] KILL Dr.Frag -> Mira (knife, headshot, noscope)
+[2026/073-06:26:35.845][I][match#8829] KILL kappa_99 -> Mira (deagle)
+[2026/073-06:26:38.402][I][match#8829] KILL Lumen -> kappa_99 (m4a1, headshot, noscope)
+[2026/073-06:26:40.908][I][match#8829] KILL Dr.Frag -> Sn1per_42 (awp, wallbang)
+[2026/073-06:26:43.747][I][match#8829] KILL Mira -> noob_7 (awp, wallbang)
+[2026/073-06:26:44.975][I][match#8829] KILL Sn1per_42 -> Lumen (awp, wallbang)
+[2026/073-06:26:45.856][D][net] TICK rate=101Hz lag=6ms
+[2026/073-06:26:47.289][I][match#8829] CHAT Dr.Frag: gg
+[2026/073-06:26:48.852][I][match#8829] KILL kappa_99 -> Dr.Frag (awp)
+[2026/073-06:26:50.363][D][net] TICK rate=108Hz lag=72ms
+[2026/073-06:26:52.113][I][match#8829] KILL Lumen -> Sn1per_42 (deagle, wallbang)
+[2026/073-06:26:54.813][D][net] TICK rate=78Hz lag=41ms
+[2026/073-06:26:57.613][I][match#8829] KILL Sn1per_42 -> noob_7 (awp, headshot)
+[2026/073-06:26:58.835][E][anticheat] Sn1per_42 flagged: aim snap 792 deg/s
+[2026/073-06:26:59.233][I][match#8829] KILL Dr.Frag -> Sn1per_42 (ak47)
+[2026/073-06:27:00.006][I][match#8829] KILL kappa_99 -> Dr.Frag (deagle, headshot)
+[2026/073-06:27:01.929][D][net] TICK rate=66Hz lag=24ms
+[2026/073-06:27:03.380][D][net] TICK rate=61Hz lag=13ms
+[2026/073-06:27:05.718][E][anticheat] xX_Rex_Xx flagged: aim snap 868 deg/s
+[2026/073-06:27:07.949][I][match#8829] KILL Mira -> Sn1per_42 (m4a1, headshot)
+[2026/073-06:27:08.909][W][net] kappa_99 packet loss 26% (ping 346ms)
+[2026/073-06:27:10.209][I][match#8829] KILL kappa_99 -> Sn1per_42 (ak47, headshot, noscope)
+[2026/073-06:27:10.622][W][net] Lumen packet loss 12% (ping 346ms)
+[2026/073-06:27:13.596][E][anticheat] noob_7 flagged: aim snap 661 deg/s
+[2026/073-06:27:14.053][I][lobby] JOIN xX_Rex_Xx from 48.227.11.173
+[2026/073-06:27:15.354][I][match#8829] KILL noob_7 -> kappa_99 (ak47)
+[2026/073-06:27:17.327][I][match#8829] KILL Dr.Frag -> kappa_99 (m4a1)
+[2026/073-06:27:19.948][I][lobby] JOIN Dr.Frag from 53.61.30.57
+[2026/073-06:27:19.968][I][match#8829] KILL Lumen -> kappa_99 (ak47, headshot)
+[2026/073-06:27:20.850][W][net] Mira packet loss 22% (ping 380ms)
+[2026/073-06:27:21.588][E][anticheat] Lumen flagged: aim snap 290 deg/s
+[2026/073-06:27:21.750][I][match#8829] KILL Mira -> noob_7 (ak47, headshot, noscope)
+[2026/073-06:27:22.223][I][match#8829] KILL noob_7 -> Dr.Frag (knife, headshot, noscope)
+[2026/073-06:27:24.708][I][match#8829] CHAT Dr.Frag: lag?
+[2026/073-06:27:27.650][I][lobby] JOIN Mira from 176.241.227.87
+[2026/073-06:27:30.453][I][match#8829] KILL Lumen -> Dr.Frag (knife, wallbang)
+[2026/073-06:27:32.934][I][match#8829] KILL Lumen -> Dr.Frag (m4a1)
+[2026/073-06:27:33.301][I][match#8829] KILL Mira -> xX_Rex_Xx (awp)
+[2026/073-06:27:34.270][I][match#8829] KILL xX_Rex_Xx -> noob_7 (knife)
+[2026/073-06:27:36.051][W][net] noob_7 packet loss 9% (ping 391ms)
+[2026/073-06:27:38.460][E][anticheat] kappa_99 flagged: aim snap 773 deg/s
+[2026/073-06:27:40.395][D][net] TICK rate=86Hz lag=152ms
+[2026/073-06:27:40.526][I][match#8829] KILL Sn1per_42 -> Mira (m4a1, headshot)
+[2026/073-06:27:41.902][D][net] TICK rate=91Hz lag=165ms
+[2026/073-06:27:42.685][D][net] TICK rate=128Hz lag=232ms
+[2026/073-06:27:44.516][I][match#8829] KILL Lumen -> xX_Rex_Xx (awp, wallbang)
+[2026/073-06:27:46.784][I][match#8829] KILL kappa_99 -> noob_7 (knife)
+[2026/073-06:27:47.855][I][match#8829] CHAT Lumen: nice shot
+[2026/073-06:27:49.938][I][match#8829] KILL Sn1per_42 -> noob_7 (deagle, wallbang)
+[2026/073-06:27:52.723][I][match#8829] KILL Lumen -> Mira (deagle, headshot, noscope)
+[2026/073-06:27:55.271][I][match#8829] KILL kappa_99 -> Mira (m4a1, wallbang)
+[2026/073-06:27:58.053][D][net] TICK rate=105Hz lag=207ms
+[2026/073-06:27:59.846][I][match#8830] ROUND_START map=de_nuke
+[2026/073-06:28:01.299][I][match#8830] KILL xX_Rex_Xx -> Mira (m4a1, wallbang)
+[2026/073-06:28:03.223][I][match#8830] KILL noob_7 -> Mira (awp, headshot, noscope)
+[2026/073-06:28:06.070][I][match#8831] ROUND_START map=de_dust2
+[2026/073-06:28:07.615][I][match#8831] KILL Mira -> noob_7 (ak47)
+[2026/073-06:28:09.640][W][net] Sn1per_42 packet loss 15% (ping 345ms)
+[2026/073-06:28:11.343][E][anticheat] Sn1per_42 flagged: aim snap 883 deg/s
+[2026/073-06:28:13.990][I][match#8831] KILL xX_Rex_Xx -> Mira (awp, headshot)
+[2026/073-06:28:15.771][I][match#8832] ROUND_START map=de_dust2
+[2026/073-06:28:17.880][I][lobby] JOIN Sn1per_42 from 166.165.190.232
+[2026/073-06:28:19.727][I][lobby] JOIN kappa_99 from 160.9.198.67
+[2026/073-06:28:20.917][I][match#8832] KILL kappa_99 -> Dr.Frag (awp)
+[2026/073-06:28:21.225][D][net] TICK rate=71Hz lag=56ms
+[2026/073-06:28:23.467][I][match#8832] KILL kappa_99 -> Dr.Frag (m4a1)
+[2026/073-06:28:26.044][I][lobby] JOIN Dr.Frag from 31.131.93.164
+[2026/073-06:28:26.660][I][match#8832] KILL kappa_99 -> Mira (awp, headshot)
+[2026/073-06:28:29.097][I][lobby] JOIN Dr.Frag from 156.187.122.65
+[2026/073-06:28:30.165][I][match#8832] KILL Dr.Frag -> Mira (m4a1)
+[2026/073-06:28:30.553][I][lobby] JOIN xX_Rex_Xx from 211.109.69.152
+[2026/073-06:28:33.096][D][net] TICK rate=76Hz lag=230ms
+[2026/073-06:28:35.033][W][net] Dr.Frag packet loss 26% (ping 184ms)
+[2026/073-06:28:37.826][I][match#8832] KILL kappa_99 -> xX_Rex_Xx (knife)
+[2026/073-06:28:40.078][I][match#8832] KILL Mira -> Sn1per_42 (knife)
+[2026/073-06:28:41.107][D][net] TICK rate=109Hz lag=29ms
+[2026/073-06:28:42.554][I][match#8832] KILL Lumen -> Mira (deagle)
+[2026/073-06:28:45.546][I][match#8832] KILL Sn1per_42 -> noob_7 (ak47, wallbang)
+[2026/073-06:28:47.786][W][net] Lumen packet loss 28% (ping 394ms)
+[2026/073-06:28:49.810][I][match#8832] KILL Lumen -> kappa_99 (deagle, headshot, noscope)
+[2026/073-06:28:50.871][I][lobby] JOIN Dr.Frag from 183.247.158.121
+[2026/073-06:28:52.391][I][match#8832] KILL noob_7 -> Sn1per_42 (deagle, wallbang)
+[2026/073-06:28:55.247][I][match#8832] KILL Dr.Frag -> kappa_99 (ak47, headshot, noscope)
+[2026/073-06:28:55.841][W][net] xX_Rex_Xx packet loss 15% (ping 142ms)
+[2026/073-06:28:55.983][I][match#8832] KILL kappa_99 -> Sn1per_42 (deagle)
+[2026/073-06:28:57.430][I][match#8832] KILL Dr.Frag -> noob_7 (ak47)
+[2026/073-06:28:58.888][I][match#8832] CHAT kappa_99: gg
+[2026/073-06:29:01.139][I][match#8832] KILL noob_7 -> Mira (deagle, headshot)
+[2026/073-06:29:01.999][I][lobby] JOIN Sn1per_42 from 143.157.146.52
+[2026/073-06:29:02.181][E][anticheat] Sn1per_42 flagged: aim snap 197 deg/s
+[2026/073-06:29:02.720][I][match#8832] CHAT xX_Rex_Xx: rush B
+[2026/073-06:29:04.983][I][match#8832] KILL Mira -> Lumen (ak47, headshot, noscope)
+[2026/073-06:29:05.464][W][net] Sn1per_42 packet loss 15% (ping 348ms)
+[2026/073-06:29:06.511][W][net] Lumen packet loss 38% (ping 163ms)
+[2026/073-06:29:07.907][I][match#8832] KILL Lumen -> Mira (ak47, headshot)
+[2026/073-06:29:10.715][W][net] noob_7 packet loss 15% (ping 317ms)
+[2026/073-06:29:10.944][I][match#8832] KILL Dr.Frag -> Lumen (deagle, wallbang)
+[2026/073-06:29:12.097][I][match#8832] CHAT Lumen: lag?
+[2026/073-06:29:14.628][I][match#8832] KILL Sn1per_42 -> xX_Rex_Xx (m4a1, wallbang)
+[2026/073-06:29:14.750][I][match#8832] KILL Lumen -> xX_Rex_Xx (knife, wallbang)
+[2026/073-06:29:15.671][D][net] TICK rate=92Hz lag=80ms
+[2026/073-06:29:18.116][I][match#8832] KILL kappa_99 -> Lumen (m4a1, headshot)
+[2026/073-06:29:18.301][I][match#8832] KILL Sn1per_42 -> Dr.Frag (awp)
+[2026/073-06:29:19.162][W][net] noob_7 packet loss 34% (ping 238ms)
+[2026/073-06:29:20.956][I][match#8832] CHAT noob_7: gg
+[2026/073-06:29:21.632][I][match#8832] KILL xX_Rex_Xx -> noob_7 (ak47, headshot)
+[2026/073-06:29:21.850][I][match#8832] KILL Dr.Frag -> noob_7 (m4a1, headshot)
+[2026/073-06:29:22.739][I][match#8832] KILL Sn1per_42 -> Lumen (m4a1, headshot, noscope)
+[2026/073-06:29:23.925][I][match#8832] KILL kappa_99 -> xX_Rex_Xx (m4a1, headshot)
+[2026/073-06:29:25.780][E][anticheat] xX_Rex_Xx flagged: aim snap 386 deg/s
+[2026/073-06:29:26.876][I][match#8832] KILL Dr.Frag -> Mira (awp, wallbang)
+[2026/073-06:29:27.518][I][match#8832] CHAT Lumen: gg
+[2026/073-06:29:30.503][I][match#8832] KILL Mira -> kappa_99 (deagle, headshot)
+[2026/073-06:29:32.157][D][net] TICK rate=101Hz lag=236ms
+[2026/073-06:29:33.890][W][net] Sn1per_42 packet loss 28% (ping 385ms)
+[2026/073-06:29:34.703][I][match#8833] ROUND_START map=de_nuke
+[2026/073-06:29:35.759][W][net] Mira packet loss 36% (ping 92ms)
+[2026/073-06:29:35.999][I][match#8833] KILL Dr.Frag -> kappa_99 (deagle, wallbang)
+[2026/073-06:29:36.047][E][anticheat] kappa_99 flagged: aim snap 856 deg/s
+[2026/073-06:29:37.938][I][match#8833] CHAT Sn1per_42: rush B
+[2026/073-06:29:40.680][I][match#8833] CHAT kappa_99: rush B
+[2026/073-06:29:43.456][I][match#8833] KILL kappa_99 -> Sn1per_42 (deagle, headshot)
+[2026/073-06:29:44.259][I][match#8833] KILL Sn1per_42 -> kappa_99 (m4a1, headshot, noscope)
+[2026/073-06:29:44.504][I][match#8833] KILL kappa_99 -> Lumen (deagle)
+[2026/073-06:29:44.900][I][match#8833] CHAT noob_7: lag?
+[2026/073-06:29:45.098][D][net] TICK rate=83Hz lag=149ms
+[2026/073-06:29:46.119][I][match#8833] CHAT noob_7: lag?
+[2026/073-06:29:47.849][I][match#8833] KILL Sn1per_42 -> Mira (ak47, headshot, noscope)
+[2026/073-06:29:48.592][W][net] noob_7 packet loss 12% (ping 339ms)
+[2026/073-06:29:49.738][I][match#8833] KILL Lumen -> Mira (awp, wallbang)
+[2026/073-06:29:50.414][I][match#8833] KILL Sn1per_42 -> xX_Rex_Xx (ak47, headshot)
+[2026/073-06:29:52.296][I][match#8833] KILL kappa_99 -> Lumen (m4a1, wallbang)
+[2026/073-06:29:55.017][I][match#8833] KILL Lumen -> noob_7 (m4a1, headshot)
+[2026/073-06:29:55.881][E][anticheat] Lumen flagged: aim snap 292 deg/s
+[2026/073-06:29:58.615][I][match#8833] KILL Sn1per_42 -> kappa_99 (ak47, headshot)
+[2026/073-06:30:00.340][I][match#8833] KILL Mira -> kappa_99 (awp)
+[2026/073-06:30:01.607][D][net] TICK rate=83Hz lag=23ms
+[2026/073-06:30:02.480][D][net] TICK rate=66Hz lag=51ms
+[2026/073-06:30:03.557][E][anticheat] Dr.Frag flagged: aim snap 798 deg/s
+[2026/073-06:30:03.711][E][anticheat] kappa_99 flagged: aim snap 472 deg/s
+[2026/073-06:30:04.460][W][net] noob_7 packet loss 8% (ping 229ms)
+[2026/073-06:30:05.866][I][match#8833] CHAT Dr.Frag: lag?
+[2026/073-06:30:08.537][I][match#8833] CHAT Dr.Frag: nice shot
+[2026/073-06:30:08.868][I][match#8833] KILL Sn1per_42 -> Dr.Frag (knife, headshot)
+[2026/073-06:30:11.496][W][net] Mira packet loss 35% (ping 145ms)
+[2026/073-06:30:13.879][I][match#8833] CHAT Sn1per_42: lag?
+[2026/073-06:30:15.274][I][lobby] JOIN Dr.Frag from 114.172.40.82
+[2026/073-06:30:17.292][I][match#8833] KILL xX_Rex_Xx -> Lumen (knife, wallbang)
+[2026/073-06:30:19.185][I][match#8833] KILL Dr.Frag -> xX_Rex_Xx (ak47, wallbang)
+[2026/073-06:30:20.452][I][match#8833] KILL Sn1per_42 -> xX_Rex_Xx (m4a1, headshot, noscope)
+[2026/073-06:30:20.771][I][match#8833] CHAT kappa_99: gg
+[2026/073-06:30:22.580][D][net] TICK rate=128Hz lag=177ms
+[2026/073-06:30:24.189][I][match#8833] KILL Mira -> Sn1per_42 (awp, headshot, noscope)
+[2026/073-06:30:24.261][I][match#8833] KILL noob_7 -> xX_Rex_Xx (deagle)
+[2026/073-06:30:24.644][E][anticheat] xX_Rex_Xx flagged: aim snap 317 deg/s
+[2026/073-06:30:26.981][I][match#8833] CHAT Dr.Frag: lag?
+[2026/073-06:30:29.281][I][match#8833] KILL Dr.Frag -> kappa_99 (deagle, headshot, noscope)
+[2026/073-06:30:30.666][W][net] noob_7 packet loss 34% (ping 217ms)
+[2026/073-06:30:30.838][I][lobby] JOIN Sn1per_42 from 14.128.176.171
+[2026/073-06:30:31.317][I][match#8833] KILL Sn1per_42 -> noob_7 (knife, wallbang)
+[2026/073-06:30:33.120][I][match#8833] KILL Lumen -> noob_7 (awp, wallbang)
+[2026/073-06:30:33.424][I][match#8833] KILL kappa_99 -> Sn1per_42 (awp, headshot)
+[2026/073-06:30:36.288][I][lobby] JOIN noob_7 from 92.240.31.238
+[2026/073-06:30:37.232][D][net] TICK rate=125Hz lag=164ms
+[2026/073-06:30:37.549][I][lobby] JOIN Mira from 5.134.62.4
+[2026/073-06:30:39.291][I][match#8833] KILL Mira -> Sn1per_42 (awp, wallbang)
+[2026/073-06:30:39.397][I][match#8833] KILL kappa_99 -> noob_7 (m4a1)
+[2026/073-06:30:42.250][I][match#8833] CHAT Mira: nice shot
+[2026/073-06:30:44.137][I][match#8833] CHAT noob_7: lag?
+[2026/073-06:30:45.431][I][match#8833] KILL Sn1per_42 -> Dr.Frag (deagle, headshot, noscope)
+[2026/073-06:30:46.570][W][net] kappa_99 packet loss 12% (ping 211ms)
+[2026/073-06:30:47.296][I][match#8833] KILL Sn1per_42 -> Lumen (knife)
+[2026/073-06:30:47.719][D][net] TICK rate=117Hz lag=136ms
+[2026/073-06:30:50.155][E][anticheat] xX_Rex_Xx flagged: aim snap 606 deg/s
+[2026/073-06:30:52.879][I][match#8833] KILL Mira -> Lumen (awp, wallbang)
+[2026/073-06:30:54.697][I][match#8833] KILL Sn1per_42 -> Mira (ak47, wallbang)
+[2026/073-06:30:55.354][I][match#8833] KILL Sn1per_42 -> noob_7 (awp, wallbang)
+[2026/073-06:30:56.166][D][net] TICK rate=120Hz lag=115ms
+[2026/073-06:30:57.761][I][match#8833] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:30:58.761][I][lobby] JOIN Dr.Frag from 111.100.197.134
+[2026/073-06:30:59.541][I][match#8833] KILL Lumen -> noob_7 (ak47)
+[2026/073-06:31:01.319][I][match#8833] KILL Mira -> Dr.Frag (deagle, headshot, noscope)
+[2026/073-06:31:02.347][D][net] TICK rate=86Hz lag=121ms
+[2026/073-06:31:03.182][D][net] TICK rate=122Hz lag=168ms
+[2026/073-06:31:04.993][I][match#8833] CHAT kappa_99: rush B
+[2026/073-06:31:06.850][I][match#8833] KILL xX_Rex_Xx -> Dr.Frag (awp, headshot, noscope)
+[2026/073-06:31:09.378][D][net] TICK rate=122Hz lag=138ms
+[2026/073-06:31:12.105][I][match#8833] KILL Mira -> Sn1per_42 (knife, wallbang)
+[2026/073-06:31:13.857][I][match#8833] KILL kappa_99 -> Sn1per_42 (deagle)
+[2026/073-06:31:15.522][I][match#8833] KILL kappa_99 -> xX_Rex_Xx (knife, wallbang)
+[2026/073-06:31:18.242][I][match#8833] KILL Sn1per_42 -> xX_Rex_Xx (deagle, wallbang)
+[2026/073-06:31:19.099][W][net] Mira packet loss 14% (ping 392ms)
+[2026/073-06:31:21.800][I][match#8833] KILL Dr.Frag -> Lumen (ak47)
+[2026/073-06:31:24.542][I][match#8833] KILL noob_7 -> kappa_99 (deagle, wallbang)
+[2026/073-06:31:25.546][I][match#8833] KILL Mira -> Sn1per_42 (deagle, headshot)
+[2026/073-06:31:26.362][I][match#8833] KILL kappa_99 -> noob_7 (awp, headshot)
+[2026/073-06:31:29.187][I][match#8833] KILL xX_Rex_Xx -> Dr.Frag (deagle, headshot, noscope)
+[2026/073-06:31:29.669][I][match#8833] KILL Mira -> kappa_99 (knife, headshot)
+[2026/073-06:31:31.979][I][lobby] JOIN Dr.Frag from 91.103.0.81
+[2026/073-06:31:33.230][I][match#8833] KILL kappa_99 -> Dr.Frag (knife, wallbang)
+[2026/073-06:31:35.717][W][net] Lumen packet loss 13% (ping 339ms)
+[2026/073-06:31:36.984][I][lobby] JOIN Mira from 179.215.136.236
+[2026/073-06:31:38.438][I][match#8833] CHAT Lumen: rush B
+[2026/073-06:31:40.505][W][net] Sn1per_42 packet loss 11% (ping 194ms)
+[2026/073-06:31:41.300][D][net] TICK rate=73Hz lag=113ms
+[2026/073-06:31:42.994][I][lobby] JOIN Lumen from 72.179.126.205
+[2026/073-06:31:44.748][E][anticheat] Dr.Frag flagged: aim snap 616 deg/s
+[2026/073-06:31:46.429][W][net] Sn1per_42 packet loss 22% (ping 389ms)
+[2026/073-06:31:48.691][I][match#8833] KILL xX_Rex_Xx -> Dr.Frag (awp, headshot, noscope)
+[2026/073-06:31:50.750][D][net] TICK rate=115Hz lag=155ms
+[2026/073-06:31:50.918][D][net] TICK rate=63Hz lag=234ms
+[2026/073-06:31:52.956][I][match#8833] KILL xX_Rex_Xx -> Dr.Frag (knife, headshot, noscope)
+[2026/073-06:31:55.642][I][match#8833] KILL Lumen -> Sn1per_42 (knife, headshot, noscope)
+[2026/073-06:31:57.998][D][net] TICK rate=89Hz lag=142ms
+[2026/073-06:31:58.156][W][net] kappa_99 packet loss 27% (ping 298ms)
+[2026/073-06:31:58.247][D][net] TICK rate=90Hz lag=60ms
+[2026/073-06:32:01.152][I][match#8833] KILL kappa_99 -> xX_Rex_Xx (ak47, headshot)
+[2026/073-06:32:02.084][D][net] TICK rate=101Hz lag=87ms
+[2026/073-06:32:02.160][I][match#8833] KILL Mira -> xX_Rex_Xx (awp)
+[2026/073-06:32:04.286][I][match#8834] ROUND_START map=de_inferno
+[2026/073-06:32:05.506][I][match#8834] CHAT Mira: gg
+[2026/073-06:32:06.389][I][match#8834] KILL Dr.Frag -> xX_Rex_Xx (awp, headshot, noscope)
+[2026/073-06:32:07.880][W][net] Mira packet loss 10% (ping 86ms)
+[2026/073-06:32:07.925][I][match#8834] CHAT Mira: gg
+[2026/073-06:32:10.542][D][net] TICK rate=114Hz lag=25ms
+[2026/073-06:32:12.842][I][lobby] JOIN xX_Rex_Xx from 80.200.86.111
+[2026/073-06:32:15.598][I][match#8834] KILL kappa_99 -> Lumen (m4a1, headshot, noscope)
+[2026/073-06:32:15.794][I][match#8835] ROUND_START map=de_inferno
+[2026/073-06:32:18.408][I][match#8835] CHAT Sn1per_42: gg
+[2026/073-06:32:20.586][I][match#8835] KILL noob_7 -> xX_Rex_Xx (knife)
+[2026/073-06:32:22.746][I][match#8835] KILL Mira -> xX_Rex_Xx (awp, wallbang)
+[2026/073-06:32:25.088][I][match#8835] KILL Lumen -> Mira (knife, headshot, noscope)
+[2026/073-06:32:26.922][I][match#8835] KILL Mira -> Sn1per_42 (awp, wallbang)
+[2026/073-06:32:27.370][I][match#8835] KILL Mira -> Sn1per_42 (awp)
+[2026/073-06:32:28.087][I][lobby] JOIN Dr.Frag from 76.214.176.116
+[2026/073-06:32:29.997][W][net] Dr.Frag packet loss 30% (ping 389ms)
+[2026/073-06:32:30.865][D][net] TICK rate=115Hz lag=224ms
+[2026/073-06:32:31.018][E][anticheat] Sn1per_42 flagged: aim snap 365 deg/s
+[2026/073-06:32:31.738][I][match#8835] KILL Sn1per_42 -> Dr.Frag (ak47, headshot, noscope)
+[2026/073-06:32:32.352][I][match#8835] CHAT noob_7: nice shot
+[2026/073-06:32:34.490][I][match#8835] KILL xX_Rex_Xx -> kappa_99 (deagle, headshot)
+[2026/073-06:32:34.902][D][net] TICK rate=119Hz lag=51ms
+[2026/073-06:32:37.122][I][match#8835] KILL Sn1per_42 -> noob_7 (m4a1)
+[2026/073-06:32:39.522][I][match#8835] KILL Dr.Frag -> noob_7 (deagle, headshot, noscope)
+[2026/073-06:32:41.430][I][lobby] JOIN Sn1per_42 from 141.22.219.143
+[2026/073-06:32:44.266][W][net] Mira packet loss 15% (ping 193ms)
+[2026/073-06:32:45.748][E][anticheat] Sn1per_42 flagged: aim snap 643 deg/s
+[2026/073-06:32:47.418][W][net] Lumen packet loss 24% (ping 125ms)
+[2026/073-06:32:50.330][I][lobby] JOIN Lumen from 154.223.195.55
+[2026/073-06:32:50.413][W][net] xX_Rex_Xx packet loss 31% (ping 196ms)
+[2026/073-06:32:52.430][D][net] TICK rate=63Hz lag=105ms
+[2026/073-06:32:54.333][I][match#8835] KILL Dr.Frag -> noob_7 (m4a1, headshot)
+[2026/073-06:32:56.821][I][match#8835] KILL Dr.Frag -> xX_Rex_Xx (awp)
+[2026/073-06:32:58.147][D][net] TICK rate=120Hz lag=230ms
+[2026/073-06:32:58.832][E][anticheat] Mira flagged: aim snap 168 deg/s
+[2026/073-06:33:00.643][I][match#8835] KILL Dr.Frag -> kappa_99 (m4a1, headshot, noscope)
+[2026/073-06:33:01.684][I][match#8835] KILL noob_7 -> Mira (knife, headshot)
+[2026/073-06:33:03.612][I][match#8835] KILL noob_7 -> Sn1per_42 (m4a1, headshot)
+[2026/073-06:33:03.901][I][match#8835] KILL Lumen -> Mira (deagle, wallbang)
+[2026/073-06:33:05.302][D][net] TICK rate=103Hz lag=152ms
+[2026/073-06:33:07.404][I][match#8835] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:33:09.463][I][match#8835] KILL kappa_99 -> Sn1per_42 (knife, wallbang)
+[2026/073-06:33:11.000][I][match#8835] KILL Mira -> Dr.Frag (awp, wallbang)
+[2026/073-06:33:13.423][D][net] TICK rate=76Hz lag=17ms
+[2026/073-06:33:15.433][I][match#8835] CHAT kappa_99: gg
+[2026/073-06:33:15.581][W][net] Mira packet loss 40% (ping 396ms)
+[2026/073-06:33:16.418][I][match#8835] KILL Dr.Frag -> Lumen (m4a1, headshot, noscope)
+[2026/073-06:33:19.067][D][net] TICK rate=106Hz lag=124ms
+[2026/073-06:33:20.747][D][net] TICK rate=113Hz lag=43ms
+[2026/073-06:33:23.028][I][match#8835] KILL xX_Rex_Xx -> Lumen (deagle, headshot)
+[2026/073-06:33:24.742][D][net] TICK rate=79Hz lag=82ms
+[2026/073-06:33:26.147][I][match#8835] CHAT Dr.Frag: rush B
+[2026/073-06:33:26.279][I][match#8835] KILL Mira -> Sn1per_42 (deagle)
+[2026/073-06:33:26.625][I][match#8835] KILL xX_Rex_Xx -> noob_7 (ak47)
+[2026/073-06:33:27.273][I][match#8835] KILL Lumen -> kappa_99 (ak47, wallbang)
+[2026/073-06:33:29.959][D][net] TICK rate=75Hz lag=43ms
+[2026/073-06:33:30.886][I][lobby] JOIN Sn1per_42 from 77.34.43.14
+[2026/073-06:33:32.751][E][anticheat] Sn1per_42 flagged: aim snap 369 deg/s
+[2026/073-06:33:35.539][I][match#8835] KILL Sn1per_42 -> kappa_99 (knife)
+[2026/073-06:33:37.851][I][match#8835] KILL Mira -> noob_7 (knife, wallbang)
+[2026/073-06:33:40.026][I][match#8835] KILL Dr.Frag -> Sn1per_42 (m4a1, wallbang)
+[2026/073-06:33:40.400][W][net] Sn1per_42 packet loss 8% (ping 202ms)
+[2026/073-06:33:41.444][I][match#8835] KILL Sn1per_42 -> Mira (awp)
+[2026/073-06:33:42.782][I][match#8835] CHAT Dr.Frag: nice shot
+[2026/073-06:33:44.461][I][match#8835] CHAT Lumen: lag?
+[2026/073-06:33:46.160][I][match#8835] KILL xX_Rex_Xx -> Lumen (deagle, headshot)
+[2026/073-06:33:46.352][I][match#8835] KILL Mira -> Dr.Frag (knife, headshot, noscope)
+[2026/073-06:33:47.609][I][match#8835] KILL Sn1per_42 -> xX_Rex_Xx (deagle, headshot, noscope)
+[2026/073-06:33:48.961][I][match#8836] ROUND_START map=de_dust2
+[2026/073-06:33:49.360][I][match#8836] KILL Sn1per_42 -> noob_7 (knife, headshot, noscope)
+[2026/073-06:33:52.200][E][anticheat] Lumen flagged: aim snap 874 deg/s
+[2026/073-06:33:52.620][I][match#8836] KILL xX_Rex_Xx -> Sn1per_42 (deagle, headshot, noscope)
+[2026/073-06:33:53.027][I][match#8836] KILL noob_7 -> xX_Rex_Xx (m4a1, headshot, noscope)
+[2026/073-06:33:55.126][I][match#8836] KILL Lumen -> Mira (awp, headshot, noscope)
+[2026/073-06:33:57.670][I][match#8836] CHAT Dr.Frag: lag?
+[2026/073-06:33:58.098][D][net] TICK rate=115Hz lag=243ms
+[2026/073-06:33:58.574][I][match#8836] KILL kappa_99 -> xX_Rex_Xx (m4a1, headshot)
+[2026/073-06:33:58.873][I][match#8836] KILL Lumen -> Mira (deagle, headshot)
+[2026/073-06:33:58.893][I][lobby] JOIN xX_Rex_Xx from 74.114.183.95
+[2026/073-06:33:59.339][I][match#8836] KILL Sn1per_42 -> noob_7 (m4a1, headshot, noscope)
+[2026/073-06:33:59.931][I][match#8836] KILL noob_7 -> kappa_99 (ak47, wallbang)
+[2026/073-06:34:01.464][I][match#8836] KILL xX_Rex_Xx -> Dr.Frag (deagle, headshot)
+[2026/073-06:34:04.373][I][match#8836] KILL kappa_99 -> Sn1per_42 (awp)
+[2026/073-06:34:06.399][I][match#8836] KILL kappa_99 -> xX_Rex_Xx (deagle, headshot)
+[2026/073-06:34:08.476][D][net] TICK rate=70Hz lag=188ms
+[2026/073-06:34:10.507][I][match#8836] KILL Dr.Frag -> Mira (m4a1, headshot, noscope)
+[2026/073-06:34:10.926][I][match#8836] KILL Lumen -> Sn1per_42 (m4a1, headshot)
+[2026/073-06:34:13.849][I][lobby] JOIN Mira from 69.10.124.61
+[2026/073-06:34:14.666][I][match#8836] KILL Dr.Frag -> kappa_99 (awp, headshot)
+[2026/073-06:34:16.089][I][match#8836] KILL Sn1per_42 -> Lumen (ak47)
+[2026/073-06:34:17.851][I][match#8836] CHAT noob_7: rush B
+[2026/073-06:34:19.111][I][lobby] JOIN Dr.Frag from 189.25.255.241
+[2026/073-06:34:21.025][I][match#8836] CHAT Mira: nice shot
+[2026/073-06:34:23.505][I][lobby] JOIN Sn1per_42 from 165.92.185.107
+[2026/073-06:34:24.653][I][match#8836] KILL Lumen -> kappa_99 (m4a1, wallbang)
+[2026/073-06:34:27.051][I][match#8836] KILL kappa_99 -> noob_7 (m4a1, wallbang)
+[2026/073-06:34:29.523][I][match#8837] ROUND_START map=de_dust2
+[2026/073-06:34:30.524][I][match#8837] KILL Mira -> Dr.Frag (deagle)
+[2026/073-06:34:33.451][D][net] TICK rate=104Hz lag=143ms
+[2026/073-06:34:35.934][I][match#8837] KILL Lumen -> Dr.Frag (deagle, wallbang)
+[2026/073-06:34:36.191][W][net] xX_Rex_Xx packet loss 35% (ping 362ms)
+[2026/073-06:34:37.734][I][lobby] JOIN Sn1per_42 from 197.180.203.200
+[2026/073-06:34:39.640][I][match#8837] KILL Dr.Frag -> Sn1per_42 (knife, wallbang)
+[2026/073-06:34:41.252][D][net] TICK rate=77Hz lag=130ms
+[2026/073-06:34:41.906][I][match#8837] CHAT Mira: rush B
+[2026/073-06:34:43.062][I][match#8837] CHAT kappa_99: lag?
+[2026/073-06:34:43.448][I][match#8837] CHAT noob_7: nice shot
+[2026/073-06:34:43.953][I][match#8837] KILL noob_7 -> Mira (knife)
+[2026/073-06:34:46.946][D][net] TICK rate=112Hz lag=50ms
+[2026/073-06:34:49.844][I][match#8837] CHAT Lumen: rush B
+[2026/073-06:34:51.816][I][match#8837] KILL Sn1per_42 -> xX_Rex_Xx (ak47, headshot, noscope)
+[2026/073-06:34:54.210][I][match#8837] KILL Sn1per_42 -> xX_Rex_Xx (deagle, headshot)
+[2026/073-06:34:56.257][W][net] kappa_99 packet loss 23% (ping 288ms)
+[2026/073-06:34:58.844][I][match#8837] KILL Lumen -> Dr.Frag (awp)
+[2026/073-06:35:00.425][D][net] TICK rate=118Hz lag=126ms
+[2026/073-06:35:00.898][D][net] TICK rate=105Hz lag=250ms
+[2026/073-06:35:02.604][I][match#8837] CHAT noob_7: rush B
+[2026/073-06:35:05.463][D][net] TICK rate=118Hz lag=79ms
+[2026/073-06:35:06.417][D][net] TICK rate=124Hz lag=211ms
+[2026/073-06:35:08.172][E][anticheat] Lumen flagged: aim snap 534 deg/s
+[2026/073-06:35:08.513][D][net] TICK rate=101Hz lag=42ms
+[2026/073-06:35:09.582][I][lobby] JOIN kappa_99 from 214.190.170.102
+[2026/073-06:35:11.339][I][match#8837] KILL noob_7 -> Mira (m4a1, wallbang)
+[2026/073-06:35:11.363][I][match#8837] CHAT kappa_99: lag?
+[2026/073-06:35:12.714][I][match#8837] KILL Lumen -> xX_Rex_Xx (m4a1, headshot)
+[2026/073-06:35:13.328][I][match#8837] KILL noob_7 -> Dr.Frag (knife, wallbang)
+[2026/073-06:35:14.680][I][match#8837] CHAT Dr.Frag: lag?
+[2026/073-06:35:14.939][D][net] TICK rate=82Hz lag=198ms
+[2026/073-06:35:16.623][I][match#8837] KILL Lumen -> Sn1per_42 (deagle, headshot, noscope)
+[2026/073-06:35:16.936][I][match#8837] KILL Mira -> kappa_99 (ak47, headshot)
+[2026/073-06:35:17.332][I][match#8837] KILL Dr.Frag -> xX_Rex_Xx (deagle, wallbang)
+[2026/073-06:35:18.757][I][match#8837] KILL Dr.Frag -> Sn1per_42 (awp, headshot, noscope)
+[2026/073-06:35:19.987][I][match#8837] KILL Mira -> Sn1per_42 (awp, headshot)
+[2026/073-06:35:20.762][I][match#8837] KILL Mira -> Lumen (knife, wallbang)
+[2026/073-06:35:21.171][I][match#8837] KILL kappa_99 -> Sn1per_42 (ak47, wallbang)
+[2026/073-06:35:22.842][W][net] Sn1per_42 packet loss 14% (ping 145ms)
+[2026/073-06:35:25.803][I][match#8837] KILL Lumen -> Mira (m4a1, headshot)
+[2026/073-06:35:28.063][E][anticheat] kappa_99 flagged: aim snap 455 deg/s
+[2026/073-06:35:29.491][D][net] TICK rate=120Hz lag=113ms
+[2026/073-06:35:29.986][E][anticheat] Mira flagged: aim snap 187 deg/s
+[2026/073-06:35:30.578][D][net] TICK rate=95Hz lag=197ms
+[2026/073-06:35:32.897][I][match#8837] KILL Sn1per_42 -> Lumen (m4a1, headshot, noscope)
+[2026/073-06:35:33.480][D][net] TICK rate=82Hz lag=17ms
+[2026/073-06:35:34.244][I][match#8837] CHAT kappa_99: lag?
+[2026/073-06:35:36.139][I][match#8837] CHAT Dr.Frag: gg
+[2026/073-06:35:36.584][I][match#8837] CHAT Sn1per_42: rush B
+[2026/073-06:35:38.520][I][match#8837] KILL Sn1per_42 -> xX_Rex_Xx (ak47, headshot)
+[2026/073-06:35:40.947][W][net] Dr.Frag packet loss 38% (ping 296ms)
+[2026/073-06:35:42.850][I][lobby] JOIN Lumen from 57.181.196.225
+[2026/073-06:35:43.537][E][anticheat] Dr.Frag flagged: aim snap 895 deg/s
+[2026/073-06:35:45.432][W][net] xX_Rex_Xx packet loss 23% (ping 295ms)
+[2026/073-06:35:46.161][I][match#8837] CHAT Dr.Frag: lag?
+[2026/073-06:35:49.069][I][lobby] JOIN noob_7 from 187.116.175.179
+[2026/073-06:35:50.891][I][lobby] JOIN Lumen from 207.167.221.237
+[2026/073-06:35:50.910][I][match#8837] CHAT Dr.Frag: rush B
+[2026/073-06:35:51.041][E][anticheat] Lumen flagged: aim snap 543 deg/s
+[2026/073-06:35:52.119][I][match#8837] KILL Dr.Frag -> Lumen (ak47)
+[2026/073-06:35:53.659][I][match#8837] KILL kappa_99 -> Lumen (ak47, headshot, noscope)
+[2026/073-06:35:54.552][I][match#8837] KILL xX_Rex_Xx -> Lumen (knife)
+[2026/073-06:35:57.122][I][match#8837] KILL xX_Rex_Xx -> Lumen (m4a1, headshot, noscope)
+[2026/073-06:35:57.735][W][net] noob_7 packet loss 12% (ping 126ms)
+[2026/073-06:35:58.864][I][match#8837] KILL kappa_99 -> Dr.Frag (ak47, wallbang)
+[2026/073-06:36:01.118][E][anticheat] xX_Rex_Xx flagged: aim snap 227 deg/s
+[2026/073-06:36:02.524][I][match#8837] KILL Sn1per_42 -> Mira (ak47)
+[2026/073-06:36:04.617][I][lobby] JOIN Dr.Frag from 61.84.85.221
+[2026/073-06:36:04.806][I][match#8837] KILL Sn1per_42 -> Dr.Frag (awp, wallbang)
+[2026/073-06:36:07.177][D][net] TICK rate=108Hz lag=150ms
+[2026/073-06:36:08.546][I][match#8837] KILL Dr.Frag -> noob_7 (deagle, headshot, noscope)
+[2026/073-06:36:11.452][I][match#8837] KILL Dr.Frag -> noob_7 (knife, wallbang)
+[2026/073-06:36:11.575][I][match#8837] KILL noob_7 -> kappa_99 (knife, headshot, noscope)
+[2026/073-06:36:14.231][I][match#8837] KILL Lumen -> xX_Rex_Xx (knife, wallbang)
+[2026/073-06:36:15.646][W][net] noob_7 packet loss 12% (ping 167ms)
+[2026/073-06:36:18.382][I][match#8837] KILL Sn1per_42 -> noob_7 (awp, wallbang)
+[2026/073-06:36:19.334][I][match#8837] CHAT kappa_99: rush B
+[2026/073-06:36:21.772][I][match#8837] KILL Dr.Frag -> kappa_99 (knife)
+[2026/073-06:36:23.958][I][match#8837] CHAT xX_Rex_Xx: lag?
+[2026/073-06:36:24.937][I][match#8837] KILL Dr.Frag -> xX_Rex_Xx (awp, headshot, noscope)
+[2026/073-06:36:27.213][I][match#8837] KILL xX_Rex_Xx -> noob_7 (knife, wallbang)
+[2026/073-06:36:29.480][D][net] TICK rate=119Hz lag=131ms
+[2026/073-06:36:29.710][I][match#8837] CHAT Lumen: nice shot
+[2026/073-06:36:32.151][I][match#8837] CHAT Dr.Frag: rush B
+[2026/073-06:36:32.261][I][match#8837] KILL noob_7 -> kappa_99 (m4a1, wallbang)
+[2026/073-06:36:33.823][I][match#8837] KILL noob_7 -> Dr.Frag (deagle, wallbang)
+[2026/073-06:36:34.671][I][match#8837] KILL xX_Rex_Xx -> kappa_99 (m4a1, wallbang)
+[2026/073-06:36:37.193][I][match#8837] KILL noob_7 -> xX_Rex_Xx (knife, headshot, noscope)
+[2026/073-06:36:37.881][D][net] TICK rate=116Hz lag=52ms
+[2026/073-06:36:40.411][W][net] noob_7 packet loss 22% (ping 353ms)
+[2026/073-06:36:41.925][D][net] TICK rate=123Hz lag=240ms
+[2026/073-06:36:43.894][W][net] xX_Rex_Xx packet loss 17% (ping 190ms)
+[2026/073-06:36:44.430][W][net] Sn1per_42 packet loss 19% (ping 376ms)
+[2026/073-06:36:45.065][I][match#8837] CHAT xX_Rex_Xx: gg
+[2026/073-06:36:46.787][D][net] TICK rate=61Hz lag=238ms
+[2026/073-06:36:48.807][I][lobby] JOIN kappa_99 from 122.178.156.31
+[2026/073-06:36:49.204][I][match#8837] CHAT Sn1per_42: nice shot
+[2026/073-06:36:51.754][D][net] TICK rate=90Hz lag=29ms
+[2026/073-06:36:53.046][I][match#8838] ROUND_START map=de_inferno
+[2026/073-06:36:53.061][I][lobby] JOIN kappa_99 from 31.93.107.194
+[2026/073-06:36:55.059][E][anticheat] Dr.Frag flagged: aim snap 822 deg/s
+[2026/073-06:36:56.190][I][match#8838] KILL Lumen -> Dr.Frag (m4a1, headshot, noscope)
+[2026/073-06:36:57.572][E][anticheat] Mira flagged: aim snap 303 deg/s
+[2026/073-06:36:59.260][I][match#8839] ROUND_START map=de_dust2
+[2026/073-06:37:01.349][E][anticheat] xX_Rex_Xx flagged: aim snap 690 deg/s
+[2026/073-06:37:01.633][I][lobby] JOIN kappa_99 from 127.6.155.147
+[2026/073-06:37:01.727][I][match#8839] KILL Sn1per_42 -> kappa_99 (ak47, wallbang)
+[2026/073-06:37:01.825][I][match#8839] CHAT Dr.Frag: nice shot
+[2026/073-06:37:04.376][E][anticheat] kappa_99 flagged: aim snap 498 deg/s
+[2026/073-06:37:06.735][I][match#8839] KILL noob_7 -> Lumen (awp, headshot, noscope)
+[2026/073-06:37:07.785][D][net] TICK rate=77Hz lag=19ms
+[2026/073-06:37:09.613][I][match#8839] KILL xX_Rex_Xx -> Mira (knife, headshot, noscope)
+[2026/073-06:37:11.476][I][match#8839] CHAT noob_7: lag?
+[2026/073-06:37:12.910][I][match#8839] KILL Lumen -> xX_Rex_Xx (awp, headshot)
+[2026/073-06:37:14.136][E][anticheat] kappa_99 flagged: aim snap 200 deg/s
+[2026/073-06:37:15.873][E][anticheat] Sn1per_42 flagged: aim snap 462 deg/s
+[2026/073-06:37:16.627][I][match#8839] KILL Mira -> xX_Rex_Xx (deagle)
+[2026/073-06:37:18.531][I][match#8839] KILL xX_Rex_Xx -> kappa_99 (awp, headshot, noscope)
+[2026/073-06:37:18.575][I][match#8839] CHAT kappa_99: gg
+[2026/073-06:37:18.601][I][match#8839] KILL Lumen -> xX_Rex_Xx (ak47, headshot, noscope)
+[2026/073-06:37:20.241][I][match#8839] KILL xX_Rex_Xx -> Dr.Frag (ak47, wallbang)
+[2026/073-06:37:20.648][I][match#8839] KILL Sn1per_42 -> Dr.Frag (m4a1, wallbang)
+[2026/073-06:37:23.308][I][match#8839] KILL noob_7 -> Lumen (knife, headshot)
+[2026/073-06:37:23.367][W][net] Mira packet loss 28% (ping 355ms)
+[2026/073-06:37:25.742][I][match#8839] KILL Mira -> Lumen (awp)
+[2026/073-06:37:27.543][D][net] TICK rate=103Hz lag=105ms
+[2026/073-06:37:28.249][D][net] TICK rate=109Hz lag=227ms
+[2026/073-06:37:28.864][D][net] TICK rate=71Hz lag=157ms
+[2026/073-06:37:30.828][I][match#8839] KILL noob_7 -> Sn1per_42 (deagle, wallbang)
+[2026/073-06:37:32.699][I][match#8839] KILL kappa_99 -> noob_7 (ak47)
+[2026/073-06:37:34.291][D][net] TICK rate=66Hz lag=20ms
+[2026/073-06:37:35.948][I][match#8839] KILL Mira -> Lumen (knife)
+[2026/073-06:37:38.301][I][match#8839] KILL Mira -> noob_7 (ak47)
+[2026/073-06:37:39.739][I][lobby] JOIN xX_Rex_Xx from 4.178.46.246
+[2026/073-06:37:40.548][I][match#8839] KILL xX_Rex_Xx -> Mira (awp, headshot, noscope)
+[2026/073-06:37:40.917][I][match#8839] KILL Lumen -> xX_Rex_Xx (awp, headshot)
+[2026/073-06:37:43.356][I][match#8839] KILL Lumen -> Sn1per_42 (awp, headshot)
+[2026/073-06:37:44.138][I][match#8839] KILL Dr.Frag -> Mira (m4a1, headshot)
+[2026/073-06:37:45.994][I][match#8839] KILL noob_7 -> Lumen (knife, wallbang)
+[2026/073-06:37:47.974][I][lobby] JOIN Mira from 27.71.162.172
+[2026/073-06:37:49.514][I][match#8839] CHAT Lumen: rush B
+[2026/073-06:37:50.783][I][match#8839] KILL kappa_99 -> Lumen (m4a1, headshot)
+[2026/073-06:37:51.892][W][net] xX_Rex_Xx packet loss 11% (ping 280ms)
+[2026/073-06:37:54.800][I][match#8839] KILL Dr.Frag -> kappa_99 (ak47, wallbang)
+[2026/073-06:37:55.515][I][match#8839] KILL Sn1per_42 -> noob_7 (awp, headshot, noscope)
+[2026/073-06:37:57.014][I][lobby] JOIN Lumen from 85.119.173.160
+[2026/073-06:37:58.045][I][match#8839] KILL xX_Rex_Xx -> Sn1per_42 (m4a1, headshot, noscope)
+[2026/073-06:37:58.275][E][anticheat] xX_Rex_Xx flagged: aim snap 392 deg/s
+[2026/073-06:37:59.137][D][net] TICK rate=69Hz lag=176ms
+[2026/073-06:37:59.293][I][match#8839] KILL Sn1per_42 -> noob_7 (m4a1, headshot)
+[2026/073-06:38:01.648][D][net] TICK rate=69Hz lag=138ms
+[2026/073-06:38:02.341][D][net] TICK rate=100Hz lag=45ms
+[2026/073-06:38:03.804][I][match#8839] KILL kappa_99 -> Mira (deagle)
+[2026/073-06:38:05.646][I][match#8839] KILL Dr.Frag -> Lumen (deagle, wallbang)
+[2026/073-06:38:07.398][I][match#8839] KILL Dr.Frag -> Mira (deagle)
+[2026/073-06:38:07.633][I][lobby] JOIN Dr.Frag from 89.92.133.13
+[2026/073-06:38:09.080][I][lobby] JOIN xX_Rex_Xx from 27.181.106.126
+[2026/073-06:38:10.173][D][net] TICK rate=67Hz lag=58ms
+[2026/073-06:38:11.597][D][net] TICK rate=119Hz lag=241ms
+[2026/073-06:38:12.109][W][net] Mira packet loss 29% (ping 260ms)
+[2026/073-06:38:13.698][I][match#8840] ROUND_START map=de_inferno
+[2026/073-06:38:15.659][D][net] TICK rate=94Hz lag=37ms
+[2026/073-06:38:16.037][I][match#8840] CHAT Sn1per_42: lag?
+[2026/073-06:38:17.283][I][match#8840] KILL xX_Rex_Xx -> Mira (m4a1)
+[2026/073-06:38:17.396][I][match#8840] CHAT Dr.Frag: nice shot
+[2026/073-06:38:18.763][I][match#8840] CHAT xX_Rex_Xx: rush B
+[2026/073-06:38:20.072][I][match#8840] KILL Mira -> Lumen (knife)
+[2026/073-06:38:21.836][E][anticheat] Dr.Frag flagged: aim snap 786 deg/s
+[2026/073-06:38:24.729][D][net] TICK rate=64Hz lag=250ms
+[2026/073-06:38:25.137][I][match#8840] KILL Lumen -> noob_7 (knife, headshot)
+[2026/073-06:38:26.325][I][match#8840] KILL Lumen -> xX_Rex_Xx (awp, headshot, noscope)
+[2026/073-06:38:28.947][W][net] Dr.Frag packet loss 35% (ping 165ms)
+[2026/073-06:38:29.013][E][anticheat] Dr.Frag flagged: aim snap 640 deg/s
+[2026/073-06:38:31.262][I][match#8840] CHAT Dr.Frag: gg
+[2026/073-06:38:32.798][I][match#8840] KILL noob_7 -> Dr.Frag (m4a1, headshot, noscope)
+[2026/073-06:38:33.164][I][match#8841] ROUND_START map=de_dust2
+[2026/073-06:38:33.487][I][match#8841] KILL Lumen -> Sn1per_42 (m4a1)
+[2026/073-06:38:35.009][D][net] TICK rate=60Hz lag=32ms
+[2026/073-06:38:37.558][I][match#8841] KILL Sn1per_42 -> kappa_99 (awp, headshot, noscope)
+[2026/073-06:38:40.317][W][net] Lumen packet loss 36% (ping 388ms)
+[2026/073-06:38:43.155][I][match#8841] KILL Dr.Frag -> Mira (m4a1, wallbang)
+[2026/073-06:38:44.259][I][match#8841] KILL kappa_99 -> xX_Rex_Xx (awp, headshot, noscope)
+[2026/073-06:38:46.579][I][match#8841] KILL kappa_99 -> noob_7 (awp)
+[2026/073-06:38:46.630][E][anticheat] xX_Rex_Xx flagged: aim snap 297 deg/s
+[2026/073-06:38:47.479][I][match#8841] KILL xX_Rex_Xx -> Sn1per_42 (knife, headshot, noscope)
+[2026/073-06:38:49.691][I][match#8841] KILL Dr.Frag -> xX_Rex_Xx (knife)
+[2026/073-06:38:51.725][D][net] TICK rate=83Hz lag=151ms
+[2026/073-06:38:51.736][I][match#8841] KILL xX_Rex_Xx -> Dr.Frag (deagle, wallbang)
+[2026/073-06:38:54.622][W][net] Dr.Frag packet loss 24% (ping 383ms)
+[2026/073-06:38:56.079][I][match#8841] CHAT Dr.Frag: gg
+[2026/073-06:38:57.964][I][match#8841] KILL noob_7 -> Sn1per_42 (awp)
+[2026/073-06:39:00.317][D][net] TICK rate=82Hz lag=199ms
+[2026/073-06:39:03.142][D][net] TICK rate=122Hz lag=29ms
+[2026/073-06:39:03.203][I][match#8841] KILL Sn1per_42 -> xX_Rex_Xx (awp)
+[2026/073-06:39:04.729][I][match#8842] ROUND_START map=de_dust2
+[2026/073-06:39:05.648][E][anticheat] kappa_99 flagged: aim snap 255 deg/s
+[2026/073-06:39:06.255][E][anticheat] Sn1per_42 flagged: aim snap 585 deg/s
+[2026/073-06:39:07.161][I][match#8842] KILL xX_Rex_Xx -> noob_7 (knife)
+[2026/073-06:39:08.080][D][net] TICK rate=116Hz lag=160ms
+[2026/073-06:39:08.124][D][net] TICK rate=111Hz lag=233ms
+[2026/073-06:39:10.647][I][match#8842] CHAT Mira: nice shot
+[2026/073-06:39:12.875][I][match#8842] KILL Sn1per_42 -> Dr.Frag (awp, wallbang)
+[2026/073-06:39:15.742][D][net] TICK rate=128Hz lag=249ms
+[2026/073-06:39:16.577][I][match#8842] KILL Dr.Frag -> kappa_99 (knife)
+[2026/073-06:39:17.975][I][match#8842] KILL Dr.Frag -> Lumen (deagle, wallbang)
+[2026/073-06:39:20.526][I][lobby] JOIN Lumen from 93.223.244.254
+[2026/073-06:39:22.199][I][match#8842] CHAT Dr.Frag: nice shot
+[2026/073-06:39:24.132][I][match#8842] KILL Dr.Frag -> noob_7 (m4a1, headshot, noscope)
+[2026/073-06:39:26.784][I][match#8842] KILL Lumen -> kappa_99 (awp)
+[2026/073-06:39:28.326][I][match#8842] KILL Mira -> Dr.Frag (m4a1, headshot)
+[2026/073-06:39:28.788][I][match#8842] KILL Lumen -> Mira (awp, headshot)
+[2026/073-06:39:29.209][W][net] noob_7 packet loss 8% (ping 278ms)
+[2026/073-06:39:29.673][I][match#8842] CHAT Mira: gg
+[2026/073-06:39:30.022][D][net] TICK rate=75Hz lag=105ms
+[2026/073-06:39:30.034][I][lobby] JOIN Dr.Frag from 185.202.55.37
+[2026/073-06:39:32.185][I][match#8842] CHAT Sn1per_42: lag?
+[2026/073-06:39:35.103][W][net] Sn1per_42 packet loss 39% (ping 162ms)
+[2026/073-06:39:35.775][I][match#8842] CHAT Mira: rush B
+[2026/073-06:39:36.113][I][match#8842] KILL Sn1per_42 -> Mira (ak47, headshot)
+[2026/073-06:39:38.148][I][match#8842] KILL noob_7 -> Sn1per_42 (deagle)
+[2026/073-06:39:38.358][I][match#8842] KILL Dr.Frag -> xX_Rex_Xx (awp)
+[2026/073-06:39:38.735][I][match#8842] KILL Mira -> kappa_99 (m4a1, wallbang)
+[2026/073-06:39:40.449][I][match#8842] KILL xX_Rex_Xx -> Lumen (knife, headshot)
+[2026/073-06:39:41.026][I][match#8842] KILL Sn1per_42 -> noob_7 (deagle)
+[2026/073-06:39:42.802][I][lobby] JOIN Dr.Frag from 139.32.84.8
+[2026/073-06:39:44.019][I][match#8842] KILL kappa_99 -> Sn1per_42 (m4a1)
+[2026/073-06:39:44.849][I][match#8842] CHAT Dr.Frag: gg
+[2026/073-06:39:45.921][I][match#8842] KILL Sn1per_42 -> kappa_99 (knife, wallbang)
+[2026/073-06:39:47.624][I][match#8842] CHAT noob_7: gg
+[2026/073-06:39:48.994][I][match#8842] KILL Dr.Frag -> kappa_99 (awp, headshot)
+[2026/073-06:39:49.775][D][net] TICK rate=90Hz lag=86ms
+[2026/073-06:39:50.309][D][net] TICK rate=67Hz lag=192ms
+[2026/073-06:39:51.421][I][match#8842] KILL Lumen -> Mira (deagle, wallbang)
+[2026/073-06:39:53.446][W][net] Mira packet loss 23% (ping 105ms)
+[2026/073-06:39:55.460][I][match#8842] CHAT Lumen: gg
+[2026/073-06:39:56.019][W][net] noob_7 packet loss 11% (ping 124ms)
+[2026/073-06:39:58.301][D][net] TICK rate=85Hz lag=7ms
+[2026/073-06:39:58.684][I][match#8842] CHAT kappa_99: nice shot
+[2026/073-06:40:00.973][I][match#8842] KILL Mira -> kappa_99 (ak47, headshot, noscope)
+[2026/073-06:40:03.543][I][match#8842] KILL noob_7 -> xX_Rex_Xx (awp, headshot, noscope)
+[2026/073-06:40:04.372][I][match#8842] CHAT Mira: lag?
+[2026/073-06:40:07.070][I][match#8842] CHAT noob_7: lag?
+[2026/073-06:40:08.926][W][net] kappa_99 packet loss 32% (ping 222ms)
+[2026/073-06:40:09.472][I][match#8842] KILL Lumen -> Mira (deagle, headshot, noscope)
+[2026/073-06:40:11.716][I][match#8842] KILL Sn1per_42 -> xX_Rex_Xx (awp, headshot, noscope)
+[2026/073-06:40:12.096][W][net] Mira packet loss 15% (ping 226ms)
+[2026/073-06:40:13.776][W][net] kappa_99 packet loss 36% (ping 165ms)
+[2026/073-06:40:14.108][I][match#8842] KILL Dr.Frag -> Mira (awp)
+[2026/073-06:40:15.869][I][match#8842] KILL Sn1per_42 -> noob_7 (knife)
+[2026/073-06:40:18.498][I][lobby] JOIN kappa_99 from 179.179.175.121
+[2026/073-06:40:18.880][W][net] Lumen packet loss 15% (ping 131ms)
+[2026/073-06:40:21.354][I][match#8842] CHAT noob_7: rush B
+[2026/073-06:40:21.983][D][net] TICK rate=75Hz lag=18ms
+[2026/073-06:40:23.950][I][match#8842] KILL Lumen -> Sn1per_42 (awp, headshot)
+[2026/073-06:40:25.250][W][net] kappa_99 packet loss 37% (ping 95ms)
+[2026/073-06:40:28.158][I][match#8842] CHAT Mira: rush B
+[2026/073-06:40:30.339][I][lobby] JOIN Lumen from 15.254.144.115
+[2026/073-06:40:32.725][I][match#8842] CHAT kappa_99: gg
+[2026/073-06:40:34.623][I][lobby] JOIN kappa_99 from 21.75.179.57
+[2026/073-06:40:37.041][D][net] TICK rate=75Hz lag=85ms
+[2026/073-06:40:38.531][I][match#8842] KILL noob_7 -> Lumen (ak47, headshot, noscope)
+[2026/073-06:40:40.701][D][net] TICK rate=125Hz lag=246ms
+[2026/073-06:40:41.125][I][match#8842] KILL kappa_99 -> Dr.Frag (deagle)
+[2026/073-06:40:42.225][I][match#8842] CHAT Sn1per_42: gg
+[2026/073-06:40:43.569][I][match#8842] KILL noob_7 -> Mira (ak47)
+[2026/073-06:40:44.145][I][match#8842] KILL Mira -> noob_7 (awp, headshot)
+[2026/073-06:40:46.111][I][match#8842] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:40:47.379][I][match#8842] KILL xX_Rex_Xx -> Lumen (knife, headshot)
+[2026/073-06:40:48.540][I][match#8842] KILL xX_Rex_Xx -> Lumen (ak47)
+[2026/073-06:40:49.151][I][match#8842] CHAT Sn1per_42: nice shot
+[2026/073-06:40:50.091][I][match#8842] CHAT Lumen: nice shot
+[2026/073-06:40:50.744][I][match#8842] KILL Mira -> xX_Rex_Xx (deagle)
+[2026/073-06:40:53.390][D][net] TICK rate=66Hz lag=179ms
+[2026/073-06:40:54.820][I][match#8842] KILL Sn1per_42 -> Lumen (knife, headshot, noscope)
+[2026/073-06:40:57.457][I][match#8842] KILL Lumen -> Dr.Frag (deagle, wallbang)
+[2026/073-06:41:00.010][I][lobby] JOIN Sn1per_42 from 193.162.237.209
+[2026/073-06:41:02.050][I][match#8842] KILL Mira -> Sn1per_42 (deagle)
+[2026/073-06:41:03.187][I][match#8842] KILL kappa_99 -> noob_7 (awp)
+[2026/073-06:41:05.011][I][match#8842] KILL Mira -> Lumen (deagle)
+[2026/073-06:41:06.451][I][match#8842] CHAT kappa_99: lag?
+[2026/073-06:41:08.263][I][lobby] JOIN Dr.Frag from 94.66.6.176
+[2026/073-06:41:09.415][I][match#8842] CHAT Sn1per_42: gg
+[2026/073-06:41:10.513][D][net] TICK rate=67Hz lag=87ms
+[2026/073-06:41:13.047][I][match#8842] KILL Lumen -> xX_Rex_Xx (deagle, headshot)
+[2026/073-06:41:13.678][D][net] TICK rate=120Hz lag=192ms
+[2026/073-06:41:14.827][D][net] TICK rate=65Hz lag=169ms
+[2026/073-06:41:15.114][D][net] TICK rate=99Hz lag=114ms
+[2026/073-06:41:15.364][I][match#8842] CHAT Sn1per_42: nice shot
+[2026/073-06:41:17.387][I][match#8842] CHAT kappa_99: lag?
+[2026/073-06:41:19.462][I][match#8842] KILL Sn1per_42 -> noob_7 (awp)
+[2026/073-06:41:21.053][I][match#8842] CHAT xX_Rex_Xx: rush B
+[2026/073-06:41:21.109][D][net] TICK rate=77Hz lag=168ms
+[2026/073-06:41:21.666][I][match#8842] KILL kappa_99 -> Lumen (awp, headshot)
+[2026/073-06:41:23.332][W][net] kappa_99 packet loss 15% (ping 292ms)
+[2026/073-06:41:26.306][I][match#8842] KILL Lumen -> noob_7 (awp)
+[2026/073-06:41:27.312][W][net] Dr.Frag packet loss 28% (ping 256ms)
+[2026/073-06:41:28.279][D][net] TICK rate=122Hz lag=51ms
+[2026/073-06:41:31.048][I][match#8842] CHAT kappa_99: nice shot
+[2026/073-06:41:32.738][I][match#8842] KILL kappa_99 -> xX_Rex_Xx (knife, headshot, noscope)
+[2026/073-06:41:35.056][I][match#8842] KILL kappa_99 -> Mira (knife, headshot)
+[2026/073-06:41:35.120][D][net] TICK rate=94Hz lag=199ms
+[2026/073-06:41:36.837][D][net] TICK rate=101Hz lag=168ms
+[2026/073-06:41:39.661][W][net] kappa_99 packet loss 30% (ping 292ms)
+[2026/073-06:41:40.075][I][match#8842] KILL Sn1per_42 -> noob_7 (m4a1, headshot)
+[2026/073-06:41:41.377][I][match#8842] CHAT Mira: nice shot
+[2026/073-06:41:44.252][I][match#8842] KILL Lumen -> Mira (awp, headshot)
+[2026/073-06:41:44.849][D][net] TICK rate=79Hz lag=57ms
+[2026/073-06:41:46.135][I][match#8842] CHAT Sn1per_42: gg
+[2026/073-06:41:46.523][I][match#8842] KILL Dr.Frag -> xX_Rex_Xx (ak47, headshot)
+[2026/073-06:41:48.502][W][net] Lumen packet loss 17% (ping 224ms)
+[2026/073-06:41:51.438][I][match#8842] KILL Mira -> xX_Rex_Xx (m4a1, wallbang)
+[2026/073-06:41:53.391][I][match#8842] KILL Dr.Frag -> Mira (ak47, wallbang)
+[2026/073-06:41:54.657][I][lobby] JOIN Dr.Frag from 103.178.202.95
+[2026/073-06:41:54.902][W][net] xX_Rex_Xx packet loss 15% (ping 332ms)
+[2026/073-06:41:56.522][D][net] TICK rate=75Hz lag=163ms
+[2026/073-06:41:57.585][I][match#8842] KILL Dr.Frag -> noob_7 (m4a1, headshot)
+[2026/073-06:41:59.665][I][match#8842] CHAT Lumen: gg
+[2026/073-06:42:00.205][W][net] Sn1per_42 packet loss 8% (ping 239ms)
+[2026/073-06:42:00.988][I][lobby] JOIN Lumen from 169.81.241.203
+[2026/073-06:42:02.380][D][net] TICK rate=114Hz lag=225ms
+[2026/073-06:42:04.851][I][lobby] JOIN Mira from 67.39.73.34
+[2026/073-06:42:07.457][W][net] noob_7 packet loss 12% (ping 228ms)
+[2026/073-06:42:08.843][I][match#8842] KILL Lumen -> kappa_99 (deagle, headshot)
+[2026/073-06:42:09.611][E][anticheat] Dr.Frag flagged: aim snap 682 deg/s
+[2026/073-06:42:11.078][I][lobby] JOIN xX_Rex_Xx from 114.183.52.131
+[2026/073-06:42:11.171][I][match#8842] KILL Lumen -> noob_7 (awp, headshot)
+[2026/073-06:42:14.091][W][net] noob_7 packet loss 33% (ping 286ms)
+[2026/073-06:42:15.274][I][match#8842] KILL kappa_99 -> noob_7 (deagle, wallbang)
+[2026/073-06:42:16.715][D][net] TICK rate=100Hz lag=5ms
+[2026/073-06:42:18.316][D][net] TICK rate=89Hz lag=28ms
+[2026/073-06:42:20.411][I][match#8842] CHAT xX_Rex_Xx: rush B
+[2026/073-06:42:20.773][I][match#8842] KILL Mira -> Lumen (awp, headshot, noscope)
+[2026/073-06:42:22.648][I][lobby] JOIN Dr.Frag from 27.12.191.190
+[2026/073-06:42:25.203][I][lobby] JOIN noob_7 from 150.167.204.138
+[2026/073-06:42:26.503][I][match#8842] KILL kappa_99 -> Sn1per_42 (deagle, headshot, noscope)
+[2026/073-06:42:27.628][D][net] TICK rate=124Hz lag=23ms
+[2026/073-06:42:29.325][D][net] TICK rate=114Hz lag=79ms
+[2026/073-06:42:30.469][W][net] Lumen packet loss 39% (ping 303ms)
+[2026/073-06:42:32.083][I][lobby] JOIN Dr.Frag from 204.179.153.141
+[2026/073-06:42:32.890][I][match#8842] KILL Dr.Frag -> Sn1per_42 (deagle)
+[2026/073-06:42:34.837][I][match#8842] CHAT Mira: gg
+[2026/073-06:42:35.835][I][match#8842] KILL noob_7 -> kappa_99 (knife)
+[2026/073-06:42:36.717][I][match#8842] KILL kappa_99 -> Sn1per_42 (ak47)
+[2026/073-06:42:38.646][E][anticheat] Mira flagged: aim snap 332 deg/s
+[2026/073-06:42:39.157][I][match#8842] KILL Mira -> Lumen (ak47, headshot, noscope)
+[2026/073-06:42:40.511][I][match#8842] CHAT xX_Rex_Xx: rush B
+[2026/073-06:42:42.007][D][net] TICK rate=89Hz lag=157ms
+[2026/073-06:42:42.332][W][net] Dr.Frag packet loss 22% (ping 88ms)
+[2026/073-06:42:43.728][I][match#8842] KILL kappa_99 -> Sn1per_42 (m4a1, headshot, noscope)
+[2026/073-06:42:44.283][I][match#8842] CHAT xX_Rex_Xx: gg
+[2026/073-06:42:46.746][W][net] noob_7 packet loss 9% (ping 136ms)
+[2026/073-06:42:48.085][W][net] Sn1per_42 packet loss 14% (ping 333ms)
+[2026/073-06:42:48.564][I][match#8842] KILL Sn1per_42 -> xX_Rex_Xx (awp)
+[2026/073-06:42:49.220][I][match#8842] CHAT Mira: lag?
+[2026/073-06:42:50.684][D][net] TICK rate=107Hz lag=161ms
+[2026/073-06:42:51.132][D][net] TICK rate=104Hz lag=248ms
+[2026/073-06:42:51.281][W][net] noob_7 packet loss 9% (ping 87ms)
+[2026/073-06:42:53.650][I][match#8842] KILL Mira -> xX_Rex_Xx (knife, wallbang)
+[2026/073-06:42:54.239][I][match#8842] KILL kappa_99 -> Sn1per_42 (deagle)
+[2026/073-06:42:54.408][I][match#8842] CHAT Mira: gg
+[2026/073-06:42:56.191][W][net] xX_Rex_Xx packet loss 16% (ping 222ms)
+[2026/073-06:42:58.966][I][lobby] JOIN Sn1per_42 from 213.109.242.227
+[2026/073-06:43:01.209][I][match#8842] CHAT Sn1per_42: gg
+[2026/073-06:43:03.186][I][match#8842] CHAT noob_7: rush B
+[2026/073-06:43:04.538][I][match#8842] CHAT kappa_99: nice shot
+[2026/073-06:43:05.241][I][lobby] JOIN Dr.Frag from 117.143.117.6
+[2026/073-06:43:06.564][I][match#8842] CHAT Sn1per_42: nice shot
+[2026/073-06:43:08.143][E][anticheat] xX_Rex_Xx flagged: aim snap 819 deg/s
+[2026/073-06:43:09.550][W][net] Sn1per_42 packet loss 22% (ping 164ms)
+[2026/073-06:43:10.339][I][match#8842] KILL xX_Rex_Xx -> noob_7 (ak47, wallbang)
+[2026/073-06:43:12.952][I][match#8842] KILL Sn1per_42 -> xX_Rex_Xx (deagle)
+[2026/073-06:43:13.729][D][net] TICK rate=82Hz lag=46ms
+[2026/073-06:43:15.376][I][match#8842] KILL Lumen -> kappa_99 (ak47, headshot)
+[2026/073-06:43:16.288][D][net] TICK rate=64Hz lag=23ms
+[2026/073-06:43:19.149][I][match#8842] KILL xX_Rex_Xx -> Lumen (deagle, headshot)
+[2026/073-06:43:21.438][I][match#8842] CHAT noob_7: gg
+[2026/073-06:43:22.127][I][match#8842] KILL Sn1per_42 -> kappa_99 (deagle, headshot)
+[2026/073-06:43:23.966][I][match#8842] KILL Mira -> Sn1per_42 (m4a1, wallbang)
+[2026/073-06:43:26.076][D][net] TICK rate=101Hz lag=47ms
+[2026/073-06:43:26.870][D][net] TICK rate=107Hz lag=24ms
+[2026/073-06:43:27.020][I][match#8842] KILL Dr.Frag -> kappa_99 (knife)
+[2026/073-06:43:28.888][I][lobby] JOIN Lumen from 196.230.208.79
+[2026/073-06:43:29.584][W][net] Sn1per_42 packet loss 36% (ping 352ms)
+[2026/073-06:43:30.288][I][match#8842] KILL kappa_99 -> noob_7 (ak47, wallbang)
+[2026/073-06:43:30.344][I][match#8842] KILL Sn1per_42 -> Mira (awp, headshot, noscope)
+[2026/073-06:43:31.095][I][match#8842] KILL Mira -> kappa_99 (deagle, headshot)
+[2026/073-06:43:33.608][I][match#8842] KILL Lumen -> noob_7 (m4a1, headshot, noscope)
+[2026/073-06:43:34.668][W][net] Sn1per_42 packet loss 22% (ping 102ms)
+[2026/073-06:43:36.011][I][match#8842] KILL kappa_99 -> Lumen (ak47, wallbang)
+[2026/073-06:43:38.405][D][net] TICK rate=81Hz lag=115ms
+[2026/073-06:43:39.261][I][match#8843] ROUND_START map=de_dust2
+[2026/073-06:43:39.628][I][match#8843] CHAT Mira: nice shot
+[2026/073-06:43:40.039][I][match#8843] KILL Lumen -> noob_7 (m4a1)
+[2026/073-06:43:41.614][D][net] TICK rate=63Hz lag=6ms
+[2026/073-06:43:43.058][I][match#8843] KILL xX_Rex_Xx -> Sn1per_42 (m4a1, wallbang)
+[2026/073-06:43:43.095][I][match#8843] CHAT kappa_99: gg
+[2026/073-06:43:43.289][I][match#8843] CHAT Sn1per_42: gg
+[2026/073-06:43:43.876][I][match#8843] KILL Sn1per_42 -> Mira (ak47)
+[2026/073-06:43:45.136][I][match#8843] KILL Sn1per_42 -> xX_Rex_Xx (awp, headshot)
+[2026/073-06:43:45.345][I][match#8843] KILL Lumen -> xX_Rex_Xx (m4a1)
+[2026/073-06:43:48.266][D][net] TICK rate=101Hz lag=30ms
+[2026/073-06:43:51.148][I][match#8843] KILL Mira -> noob_7 (deagle, wallbang)
+[2026/073-06:43:53.929][I][match#8844] ROUND_START map=de_inferno
+[2026/073-06:43:54.866][I][match#8845] ROUND_START map=de_dust2
+[2026/073-06:43:57.189][I][match#8845] CHAT Sn1per_42: gg
+[2026/073-06:43:59.391][I][match#8845] KILL Lumen -> kappa_99 (awp, headshot, noscope)
+[2026/073-06:44:01.847][I][lobby] JOIN Lumen from 53.203.78.32
+[2026/073-06:44:04.195][I][match#8845] KILL Dr.Frag -> kappa_99 (knife)
+[2026/073-06:44:07.177][I][match#8845] KILL xX_Rex_Xx -> Sn1per_42 (m4a1, wallbang)
+[2026/073-06:44:08.907][W][net] xX_Rex_Xx packet loss 30% (ping 139ms)
+[2026/073-06:44:11.389][I][match#8845] CHAT Dr.Frag: nice shot
+[2026/073-06:44:12.717][I][match#8845] KILL Mira -> xX_Rex_Xx (deagle, wallbang)
+[2026/073-06:44:12.985][I][match#8845] KILL Sn1per_42 -> xX_Rex_Xx (m4a1, wallbang)
+[2026/073-06:44:14.753][I][lobby] JOIN kappa_99 from 53.170.126.102
+[2026/073-06:44:16.996][I][match#8846] ROUND_START map=de_nuke
+[2026/073-06:44:17.166][E][anticheat] Lumen flagged: aim snap 696 deg/s
+[2026/073-06:44:18.514][I][match#8846] KILL noob_7 -> Mira (m4a1)
+[2026/073-06:44:19.179][I][match#8846] KILL kappa_99 -> Sn1per_42 (deagle, headshot)
+[2026/073-06:44:21.222][I][match#8846] CHAT xX_Rex_Xx: gg
+[2026/073-06:44:22.899][D][net] TICK rate=121Hz lag=200ms
+[2026/073-06:44:23.602][E][anticheat] kappa_99 flagged: aim snap 449 deg/s
+[2026/073-06:44:23.828][D][net] TICK rate=86Hz lag=132ms
+[2026/073-06:44:25.366][I][match#8846] KILL noob_7 -> Sn1per_42 (knife, headshot)
+[2026/073-06:44:25.866][I][match#8846] CHAT Sn1per_42: gg
+[2026/073-06:44:26.169][E][anticheat] noob_7 flagged: aim snap 898 deg/s
+[2026/073-06:44:27.630][I][match#8846] KILL noob_7 -> xX_Rex_Xx (m4a1, wallbang)
+[2026/073-06:44:27.909][I][match#8846] CHAT Dr.Frag: gg
+[2026/073-06:44:30.606][D][net] TICK rate=117Hz lag=15ms
+[2026/073-06:44:30.802][W][net] Lumen packet loss 27% (ping 173ms)
+[2026/073-06:44:32.896][I][match#8846] KILL noob_7 -> Lumen (awp, headshot)
+[2026/073-06:44:33.787][I][match#8846] KILL Mira -> Dr.Frag (m4a1, headshot)
+[2026/073-06:44:33.834][E][anticheat] kappa_99 flagged: aim snap 443 deg/s
+[2026/073-06:44:34.859][E][anticheat] kappa_99 flagged: aim snap 475 deg/s
+[2026/073-06:44:36.270][I][match#8846] KILL noob_7 -> kappa_99 (m4a1, headshot, noscope)
+[2026/073-06:44:37.996][I][match#8846] KILL Lumen -> Mira (knife, headshot)
+[2026/073-06:44:40.564][I][match#8846] KILL Sn1per_42 -> kappa_99 (ak47, headshot, noscope)
+[2026/073-06:44:42.439][I][match#8846] KILL noob_7 -> kappa_99 (ak47, headshot)
+[2026/073-06:44:45.134][I][lobby] JOIN Lumen from 205.211.80.48
+[2026/073-06:44:47.960][I][match#8846] KILL Dr.Frag -> xX_Rex_Xx (deagle)
+[2026/073-06:44:50.192][I][match#8846] KILL Dr.Frag -> Mira (ak47, wallbang)
+[2026/073-06:44:52.724][I][match#8846] KILL Sn1per_42 -> xX_Rex_Xx (m4a1, headshot)
+[2026/073-06:44:53.456][I][lobby] JOIN kappa_99 from 3.182.40.126
+[2026/073-06:44:56.237][W][net] xX_Rex_Xx packet loss 9% (ping 192ms)
+[2026/073-06:44:58.717][I][match#8846] KILL kappa_99 -> noob_7 (m4a1, wallbang)
+[2026/073-06:44:59.352][I][match#8846] KILL Mira -> noob_7 (knife, headshot, noscope)
+[2026/073-06:45:01.840][I][match#8846] KILL Dr.Frag -> Sn1per_42 (ak47)
+[2026/073-06:45:02.730][I][lobby] JOIN noob_7 from 189.247.236.83
+[2026/073-06:45:04.963][I][match#8846] KILL Sn1per_42 -> kappa_99 (deagle)
+[2026/073-06:45:05.925][E][anticheat] kappa_99 flagged: aim snap 758 deg/s
+[2026/073-06:45:06.769][I][match#8846] KILL Sn1per_42 -> noob_7 (knife, headshot)
+[2026/073-06:45:09.184][E][anticheat] noob_7 flagged: aim snap 455 deg/s
+[2026/073-06:45:10.898][I][match#8846] CHAT noob_7: lag?
+[2026/073-06:45:13.808][I][match#8846] KILL xX_Rex_Xx -> kappa_99 (awp)
+[2026/073-06:45:15.924][E][anticheat] Sn1per_42 flagged: aim snap 232 deg/s
+[2026/073-06:45:16.019][I][lobby] JOIN Dr.Frag from 36.9.195.161
+[2026/073-06:45:17.978][D][net] TICK rate=99Hz lag=15ms
+[2026/073-06:45:20.254][I][match#8846] KILL Sn1per_42 -> Dr.Frag (ak47)
+[2026/073-06:45:20.603][D][net] TICK rate=63Hz lag=97ms
+[2026/073-06:45:22.606][I][match#8846] KILL Mira -> Sn1per_42 (knife)
+[2026/073-06:45:23.191][I][match#8846] KILL Sn1per_42 -> Dr.Frag (knife, headshot, noscope)
+[2026/073-06:45:24.564][E][anticheat] Dr.Frag flagged: aim snap 390 deg/s
+[2026/073-06:45:24.764][I][match#8846] KILL Dr.Frag -> xX_Rex_Xx (m4a1, headshot)
+[2026/073-06:45:25.607][D][net] TICK rate=91Hz lag=56ms
+[2026/073-06:45:26.577][I][lobby] JOIN Sn1per_42 from 54.172.58.39
+[2026/073-06:45:27.359][I][match#8846] KILL Mira -> Lumen (awp)
+[2026/073-06:45:29.746][I][match#8846] CHAT Sn1per_42: nice shot
+[2026/073-06:45:31.495][I][match#8846] CHAT noob_7: rush B
+[2026/073-06:45:33.304][I][match#8846] KILL xX_Rex_Xx -> Sn1per_42 (awp, headshot)
+[2026/073-06:45:33.973][I][match#8846] KILL xX_Rex_Xx -> Lumen (ak47)
+[2026/073-06:45:35.181][I][lobby] JOIN Sn1per_42 from 10.195.29.42
+[2026/073-06:45:36.667][I][match#8846] KILL Sn1per_42 -> xX_Rex_Xx (knife, headshot, noscope)
+[2026/073-06:45:38.563][E][anticheat] noob_7 flagged: aim snap 881 deg/s
+[2026/073-06:45:38.805][E][anticheat] Lumen flagged: aim snap 609 deg/s
+[2026/073-06:45:39.152][W][net] Lumen packet loss 14% (ping 168ms)
+[2026/073-06:45:40.349][I][match#8846] KILL Sn1per_42 -> Mira (ak47, headshot, noscope)
+[2026/073-06:45:41.159][I][match#8846] CHAT xX_Rex_Xx: gg
+[2026/073-06:45:41.395][I][match#8846] KILL Mira -> Dr.Frag (deagle, headshot, noscope)
+[2026/073-06:45:41.469][I][match#8846] KILL noob_7 -> Sn1per_42 (deagle, wallbang)
+[2026/073-06:45:44.076][W][net] noob_7 packet loss 35% (ping 267ms)
+[2026/073-06:45:45.157][I][match#8846] CHAT Sn1per_42: gg
+[2026/073-06:45:47.304][I][match#8846] KILL Lumen -> kappa_99 (awp, headshot)
+[2026/073-06:45:48.105][I][match#8846] KILL Lumen -> xX_Rex_Xx (knife, headshot)
+[2026/073-06:45:50.231][I][lobby] JOIN Dr.Frag from 188.3.219.173
+[2026/073-06:45:50.843][W][net] Lumen packet loss 16% (ping 184ms)
+[2026/073-06:45:53.584][D][net] TICK rate=86Hz lag=157ms
+[2026/073-06:45:55.854][I][match#8846] KILL kappa_99 -> Dr.Frag (deagle, headshot, noscope)
+[2026/073-06:45:57.982][I][lobby] JOIN kappa_99 from 45.65.218.47
+[2026/073-06:45:59.405][D][net] TICK rate=67Hz lag=207ms
+[2026/073-06:46:01.604][W][net] Sn1per_42 packet loss 30% (ping 146ms)
+[2026/073-06:46:04.233][E][anticheat] noob_7 flagged: aim snap 433 deg/s
+[2026/073-06:46:04.919][I][match#8846] KILL noob_7 -> Sn1per_42 (awp)
+[2026/073-06:46:07.261][I][match#8846] KILL noob_7 -> kappa_99 (awp, wallbang)
+[2026/073-06:46:08.148][D][net] TICK rate=67Hz lag=104ms
+[2026/073-06:46:08.428][D][net] TICK rate=108Hz lag=166ms
+[2026/073-06:46:10.087][W][net] kappa_99 packet loss 25% (ping 220ms)
+[2026/073-06:46:10.688][I][match#8846] KILL Sn1per_42 -> Lumen (awp, headshot, noscope)
+[2026/073-06:46:13.260][I][match#8846] KILL Mira -> Sn1per_42 (m4a1, headshot)
+[2026/073-06:46:15.472][I][match#8846] KILL Sn1per_42 -> Mira (deagle)
+[2026/073-06:46:16.789][W][net] xX_Rex_Xx packet loss 28% (ping 215ms)
+[2026/073-06:46:17.167][I][match#8846] KILL Mira -> xX_Rex_Xx (awp, headshot)
+[2026/073-06:46:19.174][W][net] xX_Rex_Xx packet loss 25% (ping 360ms)
+[2026/073-06:46:21.164][I][match#8846] KILL Mira -> Sn1per_42 (ak47, headshot, noscope)
+[2026/073-06:46:21.941][I][match#8846] KILL kappa_99 -> Dr.Frag (ak47, headshot)
+[2026/073-06:46:23.103][W][net] Dr.Frag packet loss 7% (ping 174ms)
+[2026/073-06:46:25.942][I][match#8846] KILL xX_Rex_Xx -> Mira (knife)
+[2026/073-06:46:26.171][I][match#8846] KILL Lumen -> kappa_99 (awp, headshot, noscope)
+[2026/073-06:46:28.677][I][match#8847] ROUND_START map=de_inferno
+[2026/073-06:46:31.349][I][match#8847] CHAT Lumen: gg
+[2026/073-06:46:32.183][I][match#8847] KILL xX_Rex_Xx -> kappa_99 (knife, wallbang)
+[2026/073-06:46:34.848][I][match#8847] CHAT xX_Rex_Xx: lag?
+[2026/073-06:46:36.112][E][anticheat] noob_7 flagged: aim snap 738 deg/s
+[2026/073-06:46:39.034][E][anticheat] noob_7 flagged: aim snap 815 deg/s
+[2026/073-06:46:41.291][I][match#8847] KILL kappa_99 -> Dr.Frag (m4a1, wallbang)
+[2026/073-06:46:42.764][I][match#8847] CHAT Sn1per_42: gg
+[2026/073-06:46:44.170][I][match#8847] CHAT kappa_99: rush B
+[2026/073-06:46:46.644][I][match#8847] KILL Sn1per_42 -> Mira (knife, headshot, noscope)
+[2026/073-06:46:47.938][D][net] TICK rate=104Hz lag=16ms
+[2026/073-06:46:50.915][I][match#8847] KILL Dr.Frag -> xX_Rex_Xx (knife, headshot, noscope)
+[2026/073-06:46:53.457][I][match#8847] CHAT Lumen: gg
+[2026/073-06:46:56.215][I][match#8847] KILL xX_Rex_Xx -> Sn1per_42 (ak47, headshot)
+[2026/073-06:46:58.588][I][match#8847] KILL Dr.Frag -> Mira (knife, wallbang)
+[2026/073-06:47:00.961][I][match#8847] CHAT noob_7: gg
+[2026/073-06:47:02.866][I][match#8847] KILL kappa_99 -> Dr.Frag (m4a1, headshot, noscope)
+[2026/073-06:47:03.924][I][match#8848] ROUND_START map=de_dust2
+[2026/073-06:47:06.715][D][net] TICK rate=95Hz lag=81ms
+[2026/073-06:47:07.556][W][net] Lumen packet loss 9% (ping 306ms)
+[2026/073-06:47:09.407][D][net] TICK rate=63Hz lag=189ms
+[2026/073-06:47:12.038][W][net] xX_Rex_Xx packet loss 17% (ping 300ms)
+[2026/073-06:47:12.076][I][lobby] JOIN xX_Rex_Xx from 166.53.238.48
+[2026/073-06:47:12.474][I][match#8848] KILL xX_Rex_Xx -> Lumen (m4a1, headshot, noscope)
+[2026/073-06:47:13.295][I][match#8848] KILL noob_7 -> xX_Rex_Xx (m4a1, headshot)
+[2026/073-06:47:14.719][D][net] TICK rate=116Hz lag=8ms
+[2026/073-06:47:16.154][I][match#8848] KILL xX_Rex_Xx -> noob_7 (deagle)
+[2026/073-06:47:18.029][I][match#8848] CHAT kappa_99: gg
+[2026/073-06:47:20.423][D][net] TICK rate=114Hz lag=207ms
+[2026/073-06:47:20.944][I][match#8848] KILL noob_7 -> Dr.Frag (deagle, headshot)
+[2026/073-06:47:22.467][I][match#8848] CHAT kappa_99: nice shot
+[2026/073-06:47:24.160][W][net] Lumen packet loss 24% (ping 354ms)
+[2026/073-06:47:24.403][I][match#8848] KILL noob_7 -> xX_Rex_Xx (deagle, headshot)
+[2026/073-06:47:24.823][I][match#8848] KILL xX_Rex_Xx -> kappa_99 (m4a1)
+[2026/073-06:47:26.187][I][match#8848] KILL noob_7 -> Sn1per_42 (m4a1, wallbang)
+[2026/073-06:47:27.804][D][net] TICK rate=73Hz lag=12ms
+[2026/073-06:47:28.962][I][match#8848] CHAT noob_7: gg
+[2026/073-06:47:31.477][I][lobby] JOIN noob_7 from 93.220.225.43
+[2026/073-06:47:33.253][I][lobby] JOIN noob_7 from 8.132.135.77
+[2026/073-06:47:33.629][I][match#8848] CHAT Lumen: lag?
+[2026/073-06:47:36.356][I][match#8848] KILL noob_7 -> Sn1per_42 (ak47, headshot, noscope)
+[2026/073-06:47:38.777][E][anticheat] kappa_99 flagged: aim snap 849 deg/s
+[2026/073-06:47:40.410][E][anticheat] Dr.Frag flagged: aim snap 599 deg/s
+[2026/073-06:47:43.081][I][match#8848] KILL xX_Rex_Xx -> Sn1per_42 (awp, headshot)
+[2026/073-06:47:45.843][I][match#8848] CHAT kappa_99: rush B
+[2026/073-06:47:46.158][I][match#8848] KILL kappa_99 -> xX_Rex_Xx (ak47)
+[2026/073-06:47:48.840][I][match#8848] KILL Lumen -> kappa_99 (m4a1, headshot)
+[2026/073-06:47:51.838][I][match#8848] KILL kappa_99 -> noob_7 (knife)
+[2026/073-06:47:53.550][I][match#8848] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:47:54.796][I][match#8848] KILL xX_Rex_Xx -> Sn1per_42 (awp)
+[2026/073-06:47:57.335][I][match#8848] KILL Mira -> Dr.Frag (knife, wallbang)
+[2026/073-06:47:57.974][D][net] TICK rate=127Hz lag=95ms
+[2026/073-06:47:59.231][I][match#8848] CHAT Dr.Frag: nice shot
+[2026/073-06:48:00.650][I][match#8848] KILL xX_Rex_Xx -> Dr.Frag (awp)
+[2026/073-06:48:01.409][I][match#8848] KILL Mira -> noob_7 (awp, wallbang)
+[2026/073-06:48:01.652][I][match#8848] KILL Sn1per_42 -> Lumen (m4a1)
+[2026/073-06:48:03.736][I][match#8848] KILL kappa_99 -> noob_7 (m4a1)
+[2026/073-06:48:05.764][I][match#8848] CHAT xX_Rex_Xx: gg
+[2026/073-06:48:06.779][I][match#8848] KILL Lumen -> kappa_99 (ak47)
+[2026/073-06:48:07.490][W][net] noob_7 packet loss 40% (ping 382ms)
+[2026/073-06:48:09.227][I][match#8848] KILL Lumen -> Mira (m4a1, headshot, noscope)
+[2026/073-06:48:10.948][I][match#8848] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:48:13.264][I][match#8848] CHAT Sn1per_42: lag?
+[2026/073-06:48:14.970][I][match#8848] CHAT xX_Rex_Xx: gg
+[2026/073-06:48:15.586][I][match#8848] KILL kappa_99 -> Lumen (m4a1)
+[2026/073-06:48:17.905][I][match#8848] KILL Mira -> Lumen (knife)
+[2026/073-06:48:18.317][I][match#8848] CHAT Dr.Frag: rush B
+[2026/073-06:48:20.165][I][match#8848] KILL Dr.Frag -> Sn1per_42 (ak47, wallbang)
+[2026/073-06:48:21.062][W][net] Lumen packet loss 37% (ping 167ms)
+[2026/073-06:48:21.969][D][net] TICK rate=92Hz lag=205ms
+[2026/073-06:48:24.586][I][match#8848] KILL noob_7 -> kappa_99 (deagle)
+[2026/073-06:48:27.375][I][match#8848] KILL xX_Rex_Xx -> Dr.Frag (ak47, headshot)
+[2026/073-06:48:28.018][I][lobby] JOIN xX_Rex_Xx from 122.240.197.150
+[2026/073-06:48:28.820][I][match#8848] KILL Sn1per_42 -> noob_7 (knife, wallbang)
+[2026/073-06:48:30.693][I][match#8848] KILL Lumen -> kappa_99 (deagle, headshot)
+[2026/073-06:48:30.729][I][match#8848] KILL kappa_99 -> Mira (deagle, headshot)
+[2026/073-06:48:32.559][I][match#8848] CHAT Sn1per_42: rush B
+[2026/073-06:48:34.722][I][match#8848] KILL kappa_99 -> Sn1per_42 (deagle, wallbang)
+[2026/073-06:48:37.525][I][match#8848] KILL xX_Rex_Xx -> Sn1per_42 (knife)
+[2026/073-06:48:40.014][I][match#8848] KILL noob_7 -> Lumen (knife)
+[2026/073-06:48:41.496][I][match#8848] KILL Dr.Frag -> Sn1per_42 (knife)
+[2026/073-06:48:41.570][I][match#8848] KILL xX_Rex_Xx -> Lumen (ak47, headshot, noscope)
+[2026/073-06:48:42.501][W][net] kappa_99 packet loss 34% (ping 151ms)
+[2026/073-06:48:44.291][I][match#8848] CHAT kappa_99: rush B
+[2026/073-06:48:46.532][I][match#8848] KILL xX_Rex_Xx -> Sn1per_42 (ak47, headshot)
+[2026/073-06:48:47.760][W][net] noob_7 packet loss 14% (ping 208ms)
+[2026/073-06:48:49.344][I][match#8848] KILL Mira -> Sn1per_42 (ak47)
+[2026/073-06:48:49.361][W][net] Lumen packet loss 28% (ping 309ms)
+[2026/073-06:48:51.568][D][net] TICK rate=67Hz lag=126ms
+[2026/073-06:48:53.110][I][match#8848] KILL Sn1per_42 -> Lumen (knife, headshot)
+[2026/073-06:48:55.114][I][match#8848] KILL noob_7 -> Dr.Frag (deagle, wallbang)
+[2026/073-06:48:56.682][I][match#8848] KILL xX_Rex_Xx -> Lumen (ak47, headshot, noscope)
+[2026/073-06:48:58.445][I][match#8848] CHAT xX_Rex_Xx: rush B
+[2026/073-06:49:00.668][I][match#8848] KILL Dr.Frag -> Sn1per_42 (awp, headshot, noscope)
+[2026/073-06:49:02.498][I][match#8848] KILL xX_Rex_Xx -> noob_7 (awp, headshot)
+[2026/073-06:49:03.323][I][match#8848] KILL Lumen -> kappa_99 (deagle)
+[2026/073-06:49:04.049][I][match#8848] KILL Sn1per_42 -> Lumen (knife)
+[2026/073-06:49:06.264][D][net] TICK rate=109Hz lag=110ms
+[2026/073-06:49:07.813][D][net] TICK rate=96Hz lag=84ms
+[2026/073-06:49:08.782][I][match#8848] KILL xX_Rex_Xx -> Mira (deagle, headshot, noscope)
+[2026/073-06:49:10.367][I][lobby] JOIN Lumen from 25.69.19.141
+[2026/073-06:49:12.530][D][net] TICK rate=105Hz lag=247ms
+[2026/073-06:49:13.548][W][net] noob_7 packet loss 14% (ping 105ms)
+[2026/073-06:49:16.048][W][net] Lumen packet loss 38% (ping 386ms)
+[2026/073-06:49:16.094][E][anticheat] Lumen flagged: aim snap 239 deg/s
+[2026/073-06:49:17.381][I][match#8848] KILL Dr.Frag -> xX_Rex_Xx (ak47, headshot, noscope)
+[2026/073-06:49:18.276][E][anticheat] noob_7 flagged: aim snap 633 deg/s
+[2026/073-06:49:20.947][I][match#8848] KILL xX_Rex_Xx -> Sn1per_42 (ak47, wallbang)
+[2026/073-06:49:23.765][I][match#8848] KILL Lumen -> kappa_99 (ak47)
+[2026/073-06:49:26.127][D][net] TICK rate=69Hz lag=217ms
+[2026/073-06:49:27.318][I][match#8848] KILL Dr.Frag -> noob_7 (awp, headshot)
+[2026/073-06:49:27.348][D][net] TICK rate=125Hz lag=110ms
+[2026/073-06:49:27.415][W][net] Sn1per_42 packet loss 6% (ping 227ms)
+[2026/073-06:49:30.059][W][net] Lumen packet loss 8% (ping 386ms)
+[2026/073-06:49:30.660][E][anticheat] Dr.Frag flagged: aim snap 701 deg/s
+[2026/073-06:49:32.451][I][match#8848] KILL Sn1per_42 -> Lumen (m4a1, wallbang)
+[2026/073-06:49:32.599][I][match#8848] KILL noob_7 -> Sn1per_42 (ak47, headshot)
+[2026/073-06:49:34.849][I][match#8848] KILL Lumen -> noob_7 (m4a1, headshot, noscope)
+[2026/073-06:49:37.636][W][net] Dr.Frag packet loss 13% (ping 213ms)
+[2026/073-06:49:38.758][I][match#8848] KILL noob_7 -> Dr.Frag (deagle, wallbang)
+[2026/073-06:49:39.188][I][match#8848] KILL Lumen -> Dr.Frag (deagle)
+[2026/073-06:49:40.756][D][net] TICK rate=62Hz lag=59ms
+[2026/073-06:49:42.244][I][match#8848] KILL xX_Rex_Xx -> Dr.Frag (m4a1, headshot)
+[2026/073-06:49:44.761][I][match#8848] KILL Lumen -> kappa_99 (awp, headshot)
+[2026/073-06:49:45.614][I][match#8848] KILL noob_7 -> Lumen (deagle, wallbang)
+[2026/073-06:49:46.403][E][anticheat] Mira flagged: aim snap 216 deg/s
+[2026/073-06:49:48.314][I][match#8848] KILL Sn1per_42 -> xX_Rex_Xx (awp, headshot)
+[2026/073-06:49:48.888][I][match#8848] CHAT Mira: rush B
+[2026/073-06:49:50.988][I][match#8848] CHAT xX_Rex_Xx: nice shot
+[2026/073-06:49:51.089][D][net] TICK rate=101Hz lag=193ms
+[2026/073-06:49:51.259][I][match#8848] KILL Dr.Frag -> kappa_99 (knife, headshot)
+[2026/073-06:49:53.444][D][net] TICK rate=84Hz lag=82ms
+[2026/073-06:49:55.739][I][match#8848] KILL Lumen -> Dr.Frag (knife, wallbang)
+[2026/073-06:49:58.050][D][net] TICK rate=114Hz lag=186ms
+[2026/073-06:49:59.777][I][match#8848] CHAT Lumen: rush B
+[2026/073-06:50:02.478][I][match#8848] KILL kappa_99 -> Mira (deagle, wallbang)
+[2026/073-06:50:05.271][D][net] TICK rate=82Hz lag=205ms
+[2026/073-06:50:08.066][D][net] TICK rate=113Hz lag=176ms
+[2026/073-06:50:09.453][I][match#8848] KILL noob_7 -> xX_Rex_Xx (knife, headshot, noscope)
+[2026/073-06:50:12.032][I][match#8848] KILL xX_Rex_Xx -> Dr.Frag (ak47)
+[2026/073-06:50:13.233][I][match#8848] KILL Lumen -> kappa_99 (knife, wallbang)
+[2026/073-06:50:14.230][I][match#8848] KILL Sn1per_42 -> Lumen (m4a1, headshot)
+[2026/073-06:50:14.241][I][match#8848] KILL Dr.Frag -> kappa_99 (ak47)
+[2026/073-06:50:16.384][I][match#8848] KILL noob_7 -> kappa_99 (ak47, headshot)
+[2026/073-06:50:17.384][I][match#8848] CHAT Dr.Frag: lag?
+[2026/073-06:50:19.059][D][net] TICK rate=107Hz lag=228ms

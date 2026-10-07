@@ -11,6 +11,7 @@ from rich.table import Table
 from rich.text import Text
 
 from loglens.cli.app import app
+from loglens.cli.formats_cmd import FormatsDirs, format_dirs
 from loglens.detect import (
     DEFAULT_SAMPLE_RECORDS,
     FREE_TEXT,
@@ -19,8 +20,9 @@ from loglens.detect import (
     DetectReport,
     iter_detected,
 )
+from loglens.formats import cached_registry
 from loglens.ingest import IngestOptions, IngestReport, iter_lines
-from loglens.split import iter_records
+from loglens.split import SplitOptions, iter_records
 
 LINES_PER_SAMPLED_RECORD = 50
 """Line budget per sampled record: `detect` stops reading a file after
@@ -29,6 +31,7 @@ LINES_PER_SAMPLED_RECORD = 50
 
 @app.command()
 def detect(
+    ctx: typer.Context,
     paths: Annotated[
         list[Path],
         typer.Argument(help="Log files, folders, or archives; '-' reads stdin."),
@@ -37,6 +40,7 @@ def detect(
         int,
         typer.Option("--sample", "-n", min=1, help="Records sampled per file."),
     ] = DEFAULT_SAMPLE_RECORDS,
+    formats_dir: FormatsDirs = None,
 ) -> None:
     """Detect the log format of each file and show how confident the detection is."""
     ingest_report = IngestReport()
@@ -46,8 +50,12 @@ def detect(
         options=IngestOptions(max_lines_per_file=sample * LINES_PER_SAMPLED_RECORD),
         report=ingest_report,
     )
+    registry = cached_registry(format_dirs(ctx, formats_dir))
+    records = iter_records(lines, options=SplitOptions(declared_starts=registry.declared_starts()))
     detected = iter_detected(
-        iter_records(lines), options=DetectOptions(sample_records=sample), report=detect_report
+        records,
+        options=DetectOptions(sample_records=sample, detectors=registry.detectors()),
+        report=detect_report,
     )
     for _ in detected:
         pass

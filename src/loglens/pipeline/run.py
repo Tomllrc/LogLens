@@ -29,6 +29,7 @@ import duckdb
 import pyarrow as pa
 
 from loglens import __version__
+from loglens.formats import cached_registry
 from loglens.ingest import FileIssue, IngestOptions, IngestReport, InputFile, discover_inputs
 from loglens.parsers.mining import (
     MiningConfig,
@@ -75,6 +76,8 @@ class ParseSummary:
     skipped: list[FileIssue] = field(default_factory=list)
     warnings: int = 0
     failed_inputs: list[tuple[str, str]] = field(default_factory=list)
+    format_errors: list[str] = field(default_factory=list)
+    """Invalid user format plugins (skipped)."""
     records: int = 0
     events: int = 0
     malformed: int = 0
@@ -128,6 +131,8 @@ def run_parse(
     )
     summary.inputs = len(items)
     summary.skipped.extend(discovery.files_skipped)
+    registry = cached_registry(options.formats_dirs)
+    summary.format_errors = [str(error) for error in registry.errors]
     tasks = [
         Task(index, bundle, staging / f"{index:06d}.parquet", options, reference)
         for index, bundle in enumerate(bundle_inputs(items))
@@ -395,6 +400,9 @@ def _build_catalog(
         rows += [
             ("pipeline", source, f"failed: {error}") for source, error in summary.failed_inputs
         ]
+        rows += [
+            ("formats", "", f"invalid format plugin: {error}") for error in summary.format_errors
+        ]
         if rows:
             connection.executemany("INSERT INTO warnings VALUES (?, ?, ?)", rows)
         connection.execute("CREATE TABLE run_info (key VARCHAR, value VARCHAR)")
@@ -437,3 +445,27 @@ def _summarize_from_store(output_dir: Path, summary: ParseSummary) -> None:
 def _scalar(connection: duckdb.DuckDBPyConnection, sql: str) -> int:
     row = connection.execute(sql).fetchone()
     return int(row[0]) if row else 0
+
+
+LEARN_CONFIDENCE: Final = 0.6
+"""Sources parsed by the generic parser below this average confidence are worth learning."""
+
+
+def low_confidence_sources(
+    output_dir: Path, *, threshold: float = LEARN_CONFIDENCE, min_events: int = 20
+) -> list[tuple[str, int, float]]:
+    """Free-text sources the generic parser understood poorly: (source, events, confidence).
+
+    These are the candidates for the AI format learner (``loglens learn``).
+    """
+    connection = duckdb.connect(str(output_dir / DB_FILE), read_only=True)
+    try:
+        rows = connection.execute(
+            "SELECT source_file, count(*) AS n, avg(parser_confidence) AS confidence "
+            "FROM events WHERE format_name = 'free_text' GROUP BY source_file "
+            "HAVING avg(parser_confidence) < ? AND count(*) >= ? ORDER BY n DESC",
+            [threshold, min_events],
+        ).fetchall()
+    finally:
+        connection.close()
+    return [(str(source), int(n), float(confidence)) for source, n, confidence in rows]

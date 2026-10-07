@@ -97,3 +97,30 @@ Folder discovery orders `app.log.N[.gz]` before `app.log`, highest N first.
 Tests over a million lines or ten thousand files take over a minute; they are marked
 `slow`, excluded from the default `pytest` run, and run with `pytest -m slow` (CI runs
 both).
+
+## D16. Default model: gemini-3.8-flash
+
+The newest stable Flash model in the October 2026 docs, free on the free tier. It can
+be changed with `LOGLENS_LLM_MODEL` or `model:` in `~/.loglens/config.yaml`.
+
+## D17. Resilience lives outside the provider
+
+`ResilientClient` wraps any `LLMClient` with the cache, throttle and retries; the SDK's
+own retries are off, so backoff is in one place and testable with a fake clock. A 429
+mentioning a per-day quota is not retried (`QuotaExhaustedError`). Tests isolate the
+home folder and remove the key, so no test can reach the API.
+
+## D18. Format registry and plugin schema
+
+User formats use the same YAML schema as built-ins, now also checked by a JSON Schema
+(clear `path: message` errors before semantic checks). Later folders override earlier
+ones by name; invalid files are reported, never fatal. Learned formats get priority 90
+and a name that never shadows a built-in (`_learned` suffix).
+
+## D19. The learner keeps the best attempt and saves it with its real match rate
+
+Samples are picked round-robin across line shapes so rare record types are seen. When
+an attempt cannot even load, the retry still lists the records its regex misses. If no
+attempt reaches 95%, the best loadable one is saved with its measured match rate in the
+metadata, so `formats test` and the user can judge it; nothing is saved if none loads.
+

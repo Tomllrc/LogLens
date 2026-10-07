@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Tomllrc/LogLens/format.schema.json",
+  "title": "LogLens text format",
+  "description": "One YAML file per format. Semantic checks (regex compiles, samples match, groups exist) run after this schema.",
+  "type": "object",
+  "required": ["name", "description", "regex", "sample_lines"],
+  "additionalProperties": false,
+  "$defs": {
+    "text": {"type": "string", "minLength": 1},
+    "textOrList": {
+      "oneOf": [
+        {"$ref": "#/$defs/text"},
+        {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/text"}}
+      ]
+    },
+    "level": {"enum": ["TRACE", "DEBUG", "INFO", "WARN", "ERROR", "FATAL", "UNKNOWN"]}
+  },
+  "properties": {
+    "name": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$", "description": "snake_case, equal to the file name"},
+    "description": {"$ref": "#/$defs/text"},
+    "regex": {"$ref": "#/$defs/textOrList"},
+    "flags": {
+      "oneOf": [
+        {"enum": ["IGNORECASE", "DOTALL", "MULTILINE", "VERBOSE"]},
+        {"type": "array", "items": {"enum": ["IGNORECASE", "DOTALL", "MULTILINE", "VERBOSE"]}}
+      ]
+    },
+    "priority": {"type": "integer"},
+    "timestamp_format": {"$ref": "#/$defs/textOrList"},
+    "level": {
+      "type": "object",
+      "required": ["map"],
+      "additionalProperties": false,
+      "properties": {
+        "group": {"$ref": "#/$defs/text"},
+        "transform": {"enum": ["syslog_priority", "http_status"]},
+        "map": {"type": "object", "minProperties": 1, "additionalProperties": {"$ref": "#/$defs/level"}},
+        "default": {"$ref": "#/$defs/level"}
+      }
+    },
+    "null_values": {"$ref": "#/$defs/textOrList"},
+    "unquote": {"$ref": "#/$defs/textOrList"},
+    "record_start": {"$ref": "#/$defs/text"},
+    "ignore": {"$ref": "#/$defs/textOrList"},
+    "extra_fields": {
+      "type": "object",
+      "required": ["regex"],
+      "additionalProperties": false,
+      "properties": {
+        "regex": {"$ref": "#/$defs/text"},
+        "exclude": {"$ref": "#/$defs/textOrList"}
+      }
+    },
+    "sample_lines": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [
+          {"type": "string"},
+          {
+            "type": "object",
+            "required": ["line"],
+            "additionalProperties": false,
+            "properties": {"line": {"type": "string"}, "expect": {"type": "object"}}
+          }
+        ]
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Provenance, e.g. for formats taught by the AI learner",
+      "properties": {
+        "generated_by": {"enum": ["ai", "wizard", "human"]},
+        "model": {"type": "string"},
+        "generated_at": {"type": "string"},
+        "match_rate": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    }
+  }
+}

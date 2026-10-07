@@ -32,6 +32,13 @@ _WORDS: Final = {
     "emerg": "FATAL",
     "emergency": "FATAL",
     "panic": "FATAL",
+    # Three-letter abbreviations (Serilog, .NET and many embedded loggers).
+    "trc": "TRACE",
+    "vrb": "DEBUG",
+    "dbg": "DEBUG",
+    "inf": "INFO",
+    "wrn": "WARN",
+    "ftl": "FATAL",
     # Single letters of logcat, glog and similar C/C++ loggers (parsers only report them
     # when they sit in a header position).
     "v": "DEBUG",

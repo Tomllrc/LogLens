@@ -45,6 +45,7 @@ Schema (keys other than these are rejected, to catch typos):
     ``message`` or an extra field. Samples must match, and they run as tests.
 """
 
+import json
 import re
 from collections.abc import Callable, Mapping, Sequence
 from dataclasses import dataclass, field
@@ -54,6 +55,7 @@ from pathlib import Path
 from typing import Final
 
 import yaml
+from jsonschema import Draft202012Validator
 
 from loglens.parsers.base import malformed_event, structural_event
 from loglens.parsers.fields import describe_fields
@@ -99,6 +101,7 @@ _KEYS: Final = frozenset(
         "record_start",
         "ignore",
         "extra_fields",
+        "metadata",
         "sample_lines",
     }
 )
@@ -166,6 +169,7 @@ class TextFormat:
     ignore: tuple[re.Pattern[str], ...] = ()
     extra_fields: ExtraFields | None = None
     source: str = ""
+    metadata: Mapping[str, object] = field(default_factory=dict)
 
     def match(self, text: str) -> re.Match[str] | None:
         """The first alternative matching the start of ``text``, or None."""
@@ -307,11 +311,29 @@ def build_text_format(data: object, *, source: str = "<definition>") -> TextForm
         ),
         extra_fields=_extra_fields(data.get("extra_fields"), fail),
         source=source,
+        metadata=dict(data.get("metadata") or {}),
     )
     for sample in text_format.samples:
         if text_format.match(sample.line) is None:
             raise fail(f"sample line does not match the regex: {sample.line!r}")
     return text_format
+
+
+FORMAT_SCHEMA: Final = json.loads(
+    resources.files("loglens.parsers").joinpath("format.schema.json").read_text(encoding="utf-8")
+)
+"""JSON Schema of a format file (``format.schema.json``)."""
+_SCHEMA_VALIDATOR: Final = Draft202012Validator(FORMAT_SCHEMA)
+
+
+def schema_errors(data: object) -> list[str]:
+    """Every JSON Schema violation of a format definition, as ``path: message`` lines."""
+    errors = sorted(_SCHEMA_VALIDATOR.iter_errors(data), key=lambda e: list(e.absolute_path))
+    messages = []
+    for error in errors:
+        where = "/".join(str(part) for part in error.absolute_path) or "(top level)"
+        messages.append(f"{where}: {error.message}")
+    return messages
 
 
 def load_text_format(path: Traversable | Path) -> TextFormat:
@@ -321,6 +343,11 @@ def load_text_format(path: Traversable | Path) -> TextFormat:
         data = yaml.safe_load(path.read_text(encoding="utf-8"))
     except yaml.YAMLError as error:
         raise FormatDefinitionError(source, f"invalid YAML: {error}") from error
+    except OSError as error:
+        raise FormatDefinitionError(source, f"cannot read: {error}") from error
+    problems = schema_errors(data)
+    if problems:
+        raise FormatDefinitionError(source, "; ".join(problems))
     text_format = build_text_format(data, source=source)
     stem = path.name.rsplit(".", 1)[0]
     if text_format.name != stem:

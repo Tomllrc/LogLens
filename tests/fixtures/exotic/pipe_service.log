@@ -1,0 +1,2000 @@
+20260314T060001.220Z|web-04|inventory|W|-|slow query took 1325 ms
+20260314T060001.244Z|web-04|search|E|-|payment declined: card expired|shard=5|retry=1
+20260314T060002.085Z|web-06|checkout|W|-|slow query took 3469 ms|attempt=2
+20260314T060003.354Z|web-01|checkout|D|ORD-64815|cache hit for key sku:22|retry=2
+20260314T060004.163Z|web-01|inventory|W|-|slow query took 7134 ms|node=3
+20260314T060005.650Z|web-06|checkout|E|-|payment declined: card expired
+20260314T060007.260Z|web-01|cart|I|ORD-33893|user signed in
+20260314T060008.903Z|web-06|search|E|-|payment declined: card expired
+20260314T060010.559Z|web-05|checkout|F|ORD-81579|database connection pool exhausted
+20260314T060012.456Z|web-02|inventory|I|ORD-69985|order created|shard=2|node=4|attempt=3
+20260314T060013.320Z|web-04|checkout|I|-|order created|shard=4|attempt=0|node=0
+20260314T060015.268Z|web-03|inventory|F|ORD-47954|database connection pool exhausted
+20260314T060016.735Z|web-06|inventory|I|ORD-24578|user signed in|node=4
+20260314T060017.022Z|web-05|search|E|ORD-65696|payment declined: card expired
+20260314T060019.015Z|web-03|search|E|-|upstream timeout after 273 ms
+20260314T060020.953Z|web-02|checkout|F|ORD-43982|database connection pool exhausted|node=1|attempt=4
+20260314T060021.264Z|web-06|inventory|E|-|upstream timeout after 1181 ms|node=5|shard=3
+20260314T060022.087Z|web-04|auth|W|-|slow query took 6218 ms
+20260314T060023.654Z|web-05|inventory|W|ORD-32403|slow query took 3414 ms
+20260314T060025.370Z|web-04|auth|I|ORD-93146|order created
+20260314T060026.801Z|web-05|cart|E|ORD-69635|upstream timeout after 8914 ms
+20260314T060028.797Z|web-01|checkout|I|-|order created
+20260314T060029.999Z|web-04|auth|E|ORD-18683|payment declined: card expired|retry=3
+20260314T060030.876Z|web-06|search|E|ORD-57423|payment declined: card expired|node=2|retry=5
+20260314T060031.705Z|web-02|auth|W|-|slow query took 982 ms|shard=1|retry=4|attempt=1
+20260314T060032.353Z|web-05|search|D|-|cache hit for key sku:66|node=1
+20260314T060032.589Z|web-05|inventory|E|ORD-36800|payment declined: card expired|shard=2|retry=5|attempt=1
+20260314T060033.142Z|web-04|inventory|E|-|payment declined: card expired
+20260314T060033.763Z|web-02|auth|W|ORD-98983|slow query took 2441 ms|node=5|retry=0
+20260314T060035.058Z|web-04|cart|D|-|cache hit for key sku:353|shard=2|attempt=0
+20260314T060036.304Z|web-04|inventory|E|ORD-72148|upstream timeout after 7549 ms|shard=5|attempt=1|retry=2
+20260314T060038.120Z|web-04|search|E|ORD-26208|upstream timeout after 5834 ms|retry=2
+20260314T060039.272Z|web-04|search|E|-|payment declined: card expired|retry=3|attempt=2
+20260314T060040.024Z|web-04|cart|E|-|upstream timeout after 225 ms|attempt=3
+20260314T060040.363Z|web-02|inventory|I|ORD-51531|order created|attempt=5|shard=1|node=0
+20260314T060041.945Z|web-04|checkout|E|ORD-95379|upstream timeout after 5555 ms|shard=2|retry=1|attempt=0
+20260314T060043.209Z|web-06|auth|E|ORD-80811|upstream timeout after 7078 ms
+20260314T060043.479Z|web-03|auth|I|ORD-34906|user signed in|attempt=5
+20260314T060044.785Z|web-02|checkout|F|-|database connection pool exhausted|retry=5|attempt=4|shard=2
+20260314T060044.856Z|web-03|cart|W|ORD-19967|slow query took 8072 ms|node=0|shard=5
+20260314T060045.758Z|web-05|checkout|F|-|database connection pool exhausted|attempt=0|node=3
+20260314T060046.293Z|web-02|inventory|D|ORD-61668|cache hit for key sku:424|attempt=0|retry=3|shard=1
+20260314T060046.660Z|web-02|inventory|D|ORD-81009|cache hit for key sku:135|attempt=2|shard=2|retry=1
+20260314T060047.862Z|web-01|search|E|ORD-19659|payment declined: card expired|node=4|attempt=1
+20260314T060049.190Z|web-05|auth|D|-|cache hit for key sku:842|node=3|attempt=0|retry=5
+20260314T060050.363Z|web-02|auth|E|ORD-93302|upstream timeout after 8870 ms|shard=1|node=4
+20260314T060051.998Z|web-02|auth|F|ORD-28134|database connection pool exhausted|retry=2|attempt=4
+20260314T060053.867Z|web-01|checkout|I|ORD-71234|order created|attempt=4
+20260314T060055.078Z|web-03|checkout|E|ORD-28077|payment declined: card expired
+20260314T060055.254Z|web-01|search|I|-|user signed in|shard=4
+20260314T060056.845Z|web-04|auth|F|ORD-55019|database connection pool exhausted|attempt=3
+20260314T060058.631Z|web-03|cart|I|ORD-70257|user signed in|attempt=3|node=5
+20260314T060058.731Z|web-02|inventory|I|ORD-53905|user signed in
+20260314T060100.612Z|web-02|search|I|ORD-96626|order created|retry=0
+20260314T060102.172Z|web-02|auth|I|ORD-88218|order created
+20260314T060102.707Z|web-02|cart|E|ORD-29944|upstream timeout after 3845 ms|shard=2|node=1|retry=5
+20260314T060104.583Z|web-06|inventory|W|-|slow query took 7155 ms
+20260314T060105.917Z|web-03|cart|I|-|user signed in|shard=3|retry=2|node=2
+20260314T060106.513Z|web-04|search|D|ORD-31350|cache hit for key sku:687|node=5
+20260314T060107.867Z|web-02|auth|I|ORD-59692|user signed in|attempt=0|node=5|retry=0
+20260314T060108.803Z|web-04|checkout|D|ORD-15656|cache hit for key sku:178|attempt=4|node=5|retry=0
+20260314T060109.622Z|web-04|cart|E|ORD-77103|payment declined: card expired|retry=3|attempt=4|shard=0
+20260314T060110.481Z|web-01|cart|I|ORD-31319|order created
+20260314T060111.354Z|web-03|auth|E|-|upstream timeout after 5591 ms|retry=1|node=0
+20260314T060111.427Z|web-03|search|I|ORD-33586|order created|node=1|retry=5
+20260314T060112.355Z|web-03|auth|I|ORD-46472|order created|retry=0
+20260314T060113.953Z|web-06|search|I|-|user signed in|attempt=3|shard=3
+20260314T060115.654Z|web-01|inventory|I|-|order created|attempt=0
+20260314T060116.262Z|web-05|search|F|-|database connection pool exhausted
+20260314T060117.057Z|web-03|auth|E|ORD-21057|upstream timeout after 6039 ms|attempt=3|shard=4|node=3
+20260314T060117.472Z|web-05|cart|I|ORD-34766|order created|retry=0|shard=3|attempt=0
+20260314T060118.670Z|web-01|cart|I|-|order created
+20260314T060120.051Z|web-06|cart|I|ORD-73877|user signed in|shard=0|attempt=1|retry=4
+20260314T060121.165Z|web-05|checkout|D|-|cache hit for key sku:761|attempt=5
+20260314T060121.680Z|web-05|search|D|ORD-90225|cache hit for key sku:926|shard=3|node=4
+20260314T060122.506Z|web-03|search|W|ORD-22699|slow query took 7851 ms|shard=0
+20260314T060122.698Z|web-05|auth|W|ORD-47823|slow query took 8306 ms|node=0
+20260314T060123.039Z|web-01|auth|W|-|slow query took 858 ms|node=2|retry=2
+20260314T060123.503Z|web-01|auth|I|ORD-45510|user signed in|attempt=4|shard=1|node=0
+20260314T060125.366Z|web-05|checkout|W|-|slow query took 7561 ms|retry=0
+20260314T060127.340Z|web-03|inventory|I|-|user signed in|retry=4|node=1|shard=4
+20260314T060129.275Z|web-04|inventory|E|ORD-62860|upstream timeout after 3059 ms|attempt=0|shard=3
+20260314T060130.181Z|web-05|search|D|ORD-89264|cache hit for key sku:909|retry=1
+20260314T060131.614Z|web-06|search|W|-|slow query took 1722 ms|retry=1|shard=5|node=3
+20260314T060132.922Z|web-06|auth|F|-|database connection pool exhausted
+20260314T060134.479Z|web-01|auth|E|ORD-54931|upstream timeout after 905 ms|node=3|shard=4|attempt=5
+20260314T060135.149Z|web-02|inventory|E|ORD-27023|upstream timeout after 8820 ms|node=4
+20260314T060135.315Z|web-06|cart|D|ORD-59524|cache hit for key sku:649|retry=0|attempt=4|node=1
+20260314T060136.648Z|web-02|cart|F|ORD-78216|database connection pool exhausted|attempt=2
+20260314T060138.307Z|web-02|search|F|ORD-52741|database connection pool exhausted|node=2
+20260314T060139.107Z|web-02|search|W|ORD-60323|slow query took 980 ms
+20260314T060139.314Z|web-05|search|D|-|cache hit for key sku:699|shard=0
+20260314T060140.166Z|web-04|checkout|E|-|payment declined: card expired|shard=5
+20260314T060141.365Z|web-02|cart|I|ORD-94660|order created|retry=3
+20260314T060141.410Z|web-05|inventory|E|-|upstream timeout after 429 ms|node=3|attempt=0|retry=2
+20260314T060141.535Z|web-01|checkout|I|ORD-38134|user signed in|attempt=5
+20260314T060143.443Z|web-03|checkout|I|-|user signed in|node=4|shard=3|retry=0
+20260314T060145.147Z|web-06|checkout|D|-|cache hit for key sku:885
+20260314T060146.234Z|web-04|auth|E|-|upstream timeout after 7117 ms|node=0|shard=0
+20260314T060147.903Z|web-04|search|E|ORD-69544|upstream timeout after 3141 ms|shard=0|attempt=1|node=0
+20260314T060148.391Z|web-05|cart|F|ORD-14237|database connection pool exhausted
+20260314T060150.102Z|web-04|cart|I|ORD-69072|user signed in|retry=0|attempt=5|shard=1
+20260314T060150.456Z|web-04|inventory|D|-|cache hit for key sku:344|node=1
+20260314T060151.440Z|web-02|auth|E|-|payment declined: card expired|attempt=3|shard=1|retry=0
+20260314T060153.409Z|web-05|checkout|W|ORD-17791|slow query took 6598 ms|attempt=4|retry=1|node=0
+20260314T060154.521Z|web-02|inventory|D|ORD-47434|cache hit for key sku:86|retry=0
+20260314T060155.958Z|web-06|cart|E|ORD-37235|payment declined: card expired|retry=0|node=5|attempt=2
+20260314T060157.233Z|web-01|checkout|I|-|user signed in|retry=1
+20260314T060158.584Z|web-04|auth|F|ORD-31897|database connection pool exhausted
+20260314T060200.444Z|web-02|search|F|ORD-52365|database connection pool exhausted
+20260314T060201.013Z|web-06|auth|F|ORD-55882|database connection pool exhausted|shard=5|retry=1|node=4
+20260314T060201.856Z|web-02|checkout|D|-|cache hit for key sku:524|retry=1
+20260314T060203.460Z|web-06|search|D|ORD-38432|cache hit for key sku:450
+20260314T060205.199Z|web-02|inventory|D|ORD-12165|cache hit for key sku:475|attempt=2|retry=3|shard=1
+20260314T060205.608Z|web-06|search|E|-|upstream timeout after 5530 ms|retry=1
+20260314T060205.759Z|web-04|auth|E|-|upstream timeout after 3128 ms|retry=3
+20260314T060207.439Z|web-01|checkout|I|ORD-99733|user signed in|node=0|retry=4
+20260314T060207.713Z|web-06|search|I|ORD-72762|order created|retry=5|node=5|attempt=2
+20260314T060207.775Z|web-05|auth|E|ORD-49052|payment declined: card expired|attempt=3|retry=1|shard=3
+20260314T060209.340Z|web-06|checkout|E|-|upstream timeout after 8544 ms
+20260314T060209.514Z|web-04|checkout|W|ORD-37469|slow query took 1569 ms|shard=1|attempt=2|node=0
+20260314T060210.726Z|web-06|checkout|I|ORD-38465|order created|attempt=0
+20260314T060211.437Z|web-03|auth|D|-|cache hit for key sku:433|retry=0|shard=4|node=1
+20260314T060212.467Z|web-04|inventory|D|ORD-44372|cache hit for key sku:164
+20260314T060213.332Z|web-01|search|E|ORD-54376|payment declined: card expired|attempt=3
+20260314T060214.651Z|web-06|checkout|I|ORD-23302|user signed in|attempt=4|retry=1
+20260314T060216.587Z|web-04|inventory|D|ORD-96620|cache hit for key sku:279|attempt=2|retry=4
+20260314T060216.855Z|web-04|search|I|ORD-24969|order created
+20260314T060218.080Z|web-03|inventory|W|ORD-98426|slow query took 6514 ms|attempt=0|node=2|shard=5
+20260314T060218.505Z|web-05|search|D|ORD-20303|cache hit for key sku:447|retry=3|attempt=0|node=3
+20260314T060219.853Z|web-02|search|W|ORD-91353|slow query took 489 ms|node=5|shard=5|attempt=4
+20260314T060221.357Z|web-02|cart|W|ORD-93930|slow query took 4665 ms|retry=2
+20260314T060221.942Z|web-03|inventory|E|-|payment declined: card expired|retry=4|shard=5
+20260314T060223.847Z|web-02|checkout|I|ORD-33864|order created|shard=2|retry=1|node=4
+20260314T060224.994Z|web-04|search|E|ORD-15375|upstream timeout after 7915 ms|retry=2
+20260314T060226.430Z|web-01|cart|I|ORD-22804|user signed in|node=0|attempt=2|retry=3
+20260314T060226.739Z|web-03|cart|W|ORD-65794|slow query took 1206 ms|shard=3|node=4
+20260314T060228.184Z|web-03|auth|D|-|cache hit for key sku:690|attempt=3
+20260314T060228.841Z|web-04|search|I|-|order created|retry=2
+20260314T060229.512Z|web-05|auth|E|ORD-17593|upstream timeout after 1528 ms|shard=2|attempt=4
+20260314T060229.714Z|web-04|auth|W|ORD-29153|slow query took 303 ms|attempt=4
+20260314T060230.077Z|web-01|search|D|ORD-57262|cache hit for key sku:681
+20260314T060231.871Z|web-02|auth|I|ORD-61712|user signed in|retry=3|shard=1|attempt=3
+20260314T060233.642Z|web-04|auth|E|ORD-80828|payment declined: card expired|retry=4
+20260314T060235.293Z|web-02|inventory|W|ORD-68536|slow query took 3059 ms|node=3|retry=3|shard=0
+20260314T060236.979Z|web-03|inventory|E|-|upstream timeout after 3835 ms|node=3
+20260314T060238.444Z|web-03|search|E|ORD-18693|payment declined: card expired|attempt=5|shard=2|node=1
+20260314T060239.276Z|web-06|search|E|ORD-84331|upstream timeout after 4489 ms
+20260314T060239.791Z|web-06|auth|I|ORD-91720|user signed in|shard=5
+20260314T060240.914Z|web-02|auth|W|ORD-31741|slow query took 2962 ms
+20260314T060241.675Z|web-01|auth|W|ORD-36214|slow query took 3336 ms
+20260314T060241.726Z|web-03|inventory|E|ORD-74515|upstream timeout after 6408 ms
+20260314T060242.594Z|web-04|cart|E|ORD-79479|upstream timeout after 8946 ms|node=5
+20260314T060244.221Z|web-03|inventory|I|ORD-92690|user signed in|shard=5|attempt=4
+20260314T060245.508Z|web-01|cart|I|-|order created|shard=2|retry=3|node=5
+20260314T060247.081Z|web-03|inventory|I|ORD-68984|order created|node=3|retry=5|shard=5
+20260314T060248.927Z|web-06|checkout|E|-|upstream timeout after 2539 ms|retry=3|attempt=1
+20260314T060249.569Z|web-05|checkout|W|ORD-43902|slow query took 4369 ms|retry=0
+20260314T060251.023Z|web-01|auth|I|-|user signed in
+20260314T060251.724Z|web-04|auth|I|-|order created|retry=0|attempt=3
+20260314T060253.464Z|web-03|cart|E|ORD-74772|upstream timeout after 2180 ms|node=2
+20260314T060253.539Z|web-03|search|E|-|upstream timeout after 8363 ms|attempt=5
+20260314T060254.822Z|web-01|cart|I|ORD-13050|order created|node=5
+20260314T060255.542Z|web-05|checkout|I|ORD-73196|order created|attempt=3
+20260314T060255.619Z|web-01|inventory|E|-|payment declined: card expired|attempt=2|node=3|retry=2
+20260314T060257.094Z|web-02|inventory|I|ORD-17011|order created|attempt=4|retry=5
+20260314T060258.089Z|web-02|cart|D|ORD-55578|cache hit for key sku:895|retry=0|attempt=3
+20260314T060258.790Z|web-01|search|E|-|upstream timeout after 6748 ms|shard=5
+20260314T060300.113Z|web-02|inventory|I|-|order created
+20260314T060301.704Z|web-05|inventory|W|ORD-56099|slow query took 7664 ms
+20260314T060303.439Z|web-01|search|I|ORD-16962|order created
+20260314T060303.794Z|web-04|auth|W|ORD-27853|slow query took 4401 ms|attempt=4
+20260314T060304.435Z|web-02|cart|F|-|database connection pool exhausted|shard=0|node=4
+20260314T060305.923Z|web-06|auth|W|-|slow query took 4273 ms|node=3|attempt=5|retry=0
+20260314T060306.831Z|web-04|checkout|W|ORD-73602|slow query took 6368 ms
+20260314T060308.511Z|web-06|auth|D|ORD-52568|cache hit for key sku:716|attempt=0
+20260314T060308.984Z|web-02|search|I|ORD-85876|order created|retry=2
+20260314T060309.880Z|web-04|auth|F|ORD-91269|database connection pool exhausted
+20260314T060311.594Z|web-02|inventory|E|ORD-36793|upstream timeout after 6291 ms|shard=0|node=5
+20260314T060311.644Z|web-01|auth|W|ORD-10320|slow query took 7271 ms
+20260314T060313.020Z|web-05|search|F|ORD-40664|database connection pool exhausted|attempt=0
+20260314T060313.827Z|web-05|checkout|W|-|slow query took 4626 ms|node=2|shard=4
+20260314T060315.291Z|web-06|auth|E|ORD-41984|payment declined: card expired|attempt=1|node=1|retry=3
+20260314T060316.090Z|web-03|auth|I|-|order created
+20260314T060317.754Z|web-03|checkout|F|-|database connection pool exhausted|shard=3|node=0
+20260314T060319.552Z|web-02|search|D|ORD-18763|cache hit for key sku:299|attempt=4|shard=4
+20260314T060319.616Z|web-05|checkout|I|ORD-47787|user signed in|attempt=5|shard=0|node=4
+20260314T060320.837Z|web-06|search|I|ORD-38267|order created
+20260314T060321.502Z|web-02|search|E|ORD-28303|upstream timeout after 1483 ms
+20260314T060322.436Z|web-02|search|I|ORD-96411|user signed in|node=4
+20260314T060323.428Z|web-04|search|E|ORD-61164|upstream timeout after 7575 ms|shard=4|node=2|retry=5
+20260314T060325.384Z|web-01|checkout|I|ORD-84397|order created|node=1
+20260314T060326.592Z|web-06|checkout|E|-|payment declined: card expired|node=3
+20260314T060327.660Z|web-05|cart|W|ORD-13641|slow query took 5993 ms|retry=2|shard=5
+20260314T060329.108Z|web-05|search|I|-|order created|shard=3|attempt=4|node=2
+20260314T060330.720Z|web-04|search|E|ORD-27338|upstream timeout after 2653 ms
+20260314T060331.338Z|web-06|search|E|ORD-50165|payment declined: card expired
+20260314T060331.881Z|web-05|auth|E|ORD-37817|upstream timeout after 5100 ms|node=1|attempt=1
+20260314T060332.684Z|web-01|search|F|ORD-59906|database connection pool exhausted
+20260314T060334.263Z|web-03|cart|I|ORD-66002|user signed in|shard=3|attempt=0|node=0
+20260314T060334.386Z|web-04|search|D|-|cache hit for key sku:232|node=1|shard=4|attempt=0
+20260314T060334.960Z|web-05|checkout|F|ORD-82515|database connection pool exhausted
+20260314T060336.408Z|web-06|checkout|E|ORD-12025|payment declined: card expired|shard=5|node=5|attempt=2
+20260314T060336.970Z|web-04|inventory|E|ORD-58892|upstream timeout after 8325 ms|shard=2|node=5|retry=1
+20260314T060337.786Z|web-04|inventory|W|ORD-23449|slow query took 1687 ms
+20260314T060338.693Z|web-01|search|D|-|cache hit for key sku:404|attempt=0
+20260314T060340.347Z|web-03|cart|E|-|payment declined: card expired|retry=1|attempt=3|shard=3
+20260314T060340.855Z|web-03|cart|E|ORD-30134|payment declined: card expired|node=3
+20260314T060341.133Z|web-06|inventory|F|ORD-46867|database connection pool exhausted|shard=2|retry=2|attempt=2
+20260314T060342.999Z|web-04|checkout|E|-|payment declined: card expired
+20260314T060344.600Z|web-04|cart|I|ORD-56676|user signed in|node=0
+20260314T060344.778Z|web-01|inventory|F|ORD-48136|database connection pool exhausted|node=1|shard=0
+20260314T060345.549Z|web-02|cart|E|-|payment declined: card expired
+20260314T060346.888Z|web-03|auth|I|-|user signed in
+20260314T060348.418Z|web-02|cart|I|ORD-45269|order created|node=0|attempt=5
+20260314T060349.812Z|web-02|cart|D|ORD-20392|cache hit for key sku:764|attempt=2
+20260314T060351.012Z|web-06|inventory|I|ORD-77515|order created|shard=3
+20260314T060351.882Z|web-01|auth|F|ORD-55874|database connection pool exhausted
+20260314T060353.856Z|web-02|auth|W|ORD-62629|slow query took 1465 ms|node=2|shard=3|attempt=4
+20260314T060354.182Z|web-02|inventory|W|ORD-59240|slow query took 8853 ms|attempt=0|shard=4|retry=3
+20260314T060355.513Z|web-02|cart|E|-|upstream timeout after 4955 ms|attempt=0
+20260314T060356.221Z|web-02|inventory|F|-|database connection pool exhausted|node=1
+20260314T060356.504Z|web-01|auth|I|ORD-77455|user signed in|retry=4
+20260314T060356.869Z|web-01|search|D|ORD-82146|cache hit for key sku:752|retry=2|shard=3
+20260314T060356.907Z|web-05|checkout|E|ORD-11338|payment declined: card expired|shard=2|attempt=3
+20260314T060358.475Z|web-06|inventory|I|ORD-54148|user signed in|attempt=3|node=3
+20260314T060400.335Z|web-06|cart|I|-|order created|shard=5|retry=0
+20260314T060401.203Z|web-03|search|D|ORD-49987|cache hit for key sku:98|node=2
+20260314T060403.128Z|web-05|cart|E|ORD-73673|payment declined: card expired|node=5
+20260314T060405.044Z|web-06|search|E|ORD-87124|payment declined: card expired|node=3
+20260314T060406.900Z|web-01|inventory|F|ORD-50405|database connection pool exhausted
+20260314T060406.933Z|web-03|cart|I|ORD-64252|user signed in|attempt=1|retry=2
+20260314T060408.730Z|web-04|cart|W|-|slow query took 5129 ms|retry=5|shard=0|attempt=2
+20260314T060409.262Z|web-01|search|E|ORD-79859|upstream timeout after 2701 ms|node=5
+20260314T060410.123Z|web-01|inventory|I|ORD-98743|user signed in|retry=3|shard=3
+20260314T060411.315Z|web-03|checkout|F|ORD-94009|database connection pool exhausted|node=3|shard=1|attempt=0
+20260314T060411.408Z|web-01|auth|I|ORD-69373|user signed in
+20260314T060413.283Z|web-01|inventory|F|-|database connection pool exhausted|shard=5|node=1|attempt=0
+20260314T060414.724Z|web-02|cart|F|ORD-74092|database connection pool exhausted|attempt=4|node=3
+20260314T060416.285Z|web-06|auth|D|ORD-88992|cache hit for key sku:140|shard=4
+20260314T060416.507Z|web-06|checkout|E|ORD-51757|payment declined: card expired
+20260314T060417.058Z|web-02|search|I|-|user signed in|attempt=3|node=2|retry=3
+20260314T060418.019Z|web-03|cart|E|-|payment declined: card expired|retry=4|node=4
+20260314T060418.090Z|web-06|checkout|W|ORD-97237|slow query took 6199 ms|retry=0
+20260314T060418.342Z|web-01|auth|I|ORD-95343|order created
+20260314T060418.985Z|web-01|inventory|F|-|database connection pool exhausted|shard=2
+20260314T060420.544Z|web-02|cart|I|ORD-84968|order created|node=5
+20260314T060422.030Z|web-06|checkout|D|ORD-16003|cache hit for key sku:796|node=1|shard=0|retry=5
+20260314T060423.442Z|web-06|inventory|F|ORD-76382|database connection pool exhausted|retry=3
+20260314T060423.545Z|web-03|inventory|I|ORD-41463|user signed in|node=2
+20260314T060424.661Z|web-02|inventory|D|ORD-88192|cache hit for key sku:308|attempt=4
+20260314T060425.445Z|web-04|search|E|-|payment declined: card expired|retry=0
+20260314T060427.242Z|web-02|cart|I|ORD-79207|order created|retry=5|shard=5
+20260314T060429.212Z|web-04|inventory|I|ORD-20232|user signed in|shard=0|node=1
+20260314T060429.781Z|web-05|inventory|F|ORD-30435|database connection pool exhausted|attempt=3
+20260314T060430.146Z|web-02|auth|I|ORD-18052|order created|attempt=2|node=3
+20260314T060431.643Z|web-02|inventory|F|ORD-80845|database connection pool exhausted|retry=1|attempt=0
+20260314T060432.425Z|web-04|checkout|E|ORD-48547|payment declined: card expired|shard=5
+20260314T060434.035Z|web-01|search|I|ORD-39234|order created|node=2
+20260314T060435.003Z|web-01|cart|W|ORD-65182|slow query took 4805 ms
+20260314T060435.593Z|web-02|search|W|-|slow query took 1353 ms|retry=1
+20260314T060435.851Z|web-03|checkout|D|-|cache hit for key sku:13|node=2|shard=2|attempt=0
+20260314T060437.824Z|web-01|auth|F|ORD-80270|database connection pool exhausted
+20260314T060438.126Z|web-04|search|I|ORD-32666|order created|shard=2|retry=5
+20260314T060438.888Z|web-03|auth|E|ORD-84694|upstream timeout after 1571 ms|node=5|shard=1|attempt=1
+20260314T060439.768Z|web-06|checkout|I|-|user signed in|node=3
+20260314T060440.570Z|web-01|inventory|E|ORD-45674|payment declined: card expired|node=3
+20260314T060441.509Z|web-03|search|W|ORD-84927|slow query took 2706 ms|node=0|shard=2
+20260314T060443.198Z|web-02|checkout|E|ORD-39390|upstream timeout after 8064 ms|node=1|attempt=3|shard=2
+20260314T060444.607Z|web-05|cart|E|ORD-81932|payment declined: card expired|node=5
+20260314T060446.576Z|web-04|search|E|ORD-61162|upstream timeout after 5128 ms|shard=4|attempt=5
+20260314T060446.583Z|web-06|inventory|E|ORD-94131|payment declined: card expired
+20260314T060447.056Z|web-02|inventory|I|ORD-96405|order created
+20260314T060448.386Z|web-05|search|I|ORD-43452|order created|retry=3|node=5
+20260314T060448.573Z|web-04|cart|W|ORD-38592|slow query took 7180 ms|attempt=0
+20260314T060448.962Z|web-06|inventory|I|ORD-21567|user signed in
+20260314T060449.746Z|web-03|cart|I|ORD-21919|order created|node=3|attempt=5|shard=4
+20260314T060451.457Z|web-01|inventory|E|ORD-65843|payment declined: card expired|node=3|attempt=0|retry=4
+20260314T060453.219Z|web-01|inventory|I|ORD-70441|order created|retry=1|shard=5|attempt=5
+20260314T060453.864Z|web-02|auth|F|ORD-13014|database connection pool exhausted|shard=5|attempt=2|retry=4
+20260314T060454.643Z|web-06|auth|I|ORD-43261|order created|shard=3|node=5
+20260314T060456.556Z|web-02|cart|E|ORD-19861|upstream timeout after 299 ms|retry=1|shard=5
+20260314T060458.002Z|web-01|cart|W|-|slow query took 349 ms
+20260314T060459.597Z|web-06|cart|E|ORD-37603|payment declined: card expired|node=5
+20260314T060500.591Z|web-03|inventory|I|ORD-62328|order created|shard=3|retry=1|node=3
+20260314T060502.413Z|web-05|auth|E|ORD-62506|upstream timeout after 554 ms|attempt=0
+20260314T060502.885Z|web-05|checkout|I|ORD-21672|user signed in|retry=2
+20260314T060503.337Z|web-01|auth|I|ORD-51676|user signed in
+20260314T060505.114Z|web-02|inventory|I|ORD-86513|order created|node=4|attempt=4|retry=4
+20260314T060505.294Z|web-02|cart|I|ORD-76081|order created|retry=2|attempt=3
+20260314T060507.214Z|web-05|cart|F|ORD-34231|database connection pool exhausted|shard=2|node=0
+20260314T060507.243Z|web-02|inventory|D|ORD-36611|cache hit for key sku:301|attempt=5|shard=5|node=5
+20260314T060508.592Z|web-04|inventory|W|-|slow query took 2311 ms
+20260314T060509.497Z|web-03|auth|I|ORD-11009|user signed in|shard=0
+20260314T060509.865Z|web-06|inventory|I|ORD-61908|user signed in|retry=3|node=0
+20260314T060511.119Z|web-04|auth|D|ORD-88202|cache hit for key sku:380
+20260314T060513.087Z|web-06|checkout|I|ORD-69239|user signed in|retry=5|attempt=4|node=4
+20260314T060513.439Z|web-02|search|D|ORD-11785|cache hit for key sku:529|attempt=0|node=0|shard=4
+20260314T060515.168Z|web-02|checkout|W|ORD-43305|slow query took 1575 ms|node=5|attempt=5|retry=2
+20260314T060516.215Z|web-02|checkout|I|ORD-50147|order created|attempt=3|shard=1
+20260314T060517.938Z|web-03|inventory|I|ORD-17882|order created|node=2|attempt=2
+20260314T060519.213Z|web-04|auth|E|ORD-86846|upstream timeout after 1880 ms|node=2
+20260314T060520.387Z|web-04|inventory|F|ORD-75928|database connection pool exhausted|shard=4
+20260314T060521.643Z|web-01|auth|I|ORD-21696|user signed in|attempt=1|node=1|retry=3
+20260314T060521.709Z|web-02|checkout|F|ORD-96903|database connection pool exhausted|attempt=4
+20260314T060523.010Z|web-06|auth|D|ORD-68241|cache hit for key sku:377
+20260314T060523.616Z|web-03|cart|E|-|payment declined: card expired
+20260314T060524.570Z|web-02|cart|D|-|cache hit for key sku:985
+20260314T060524.782Z|web-03|inventory|W|-|slow query took 8805 ms|node=5
+20260314T060525.759Z|web-06|inventory|E|ORD-85942|upstream timeout after 5553 ms
+20260314T060526.344Z|web-02|checkout|W|-|slow query took 1517 ms|retry=1
+20260314T060527.490Z|web-05|auth|I|ORD-71946|order created
+20260314T060529.101Z|web-04|search|I|ORD-37203|user signed in|attempt=2|node=0|shard=5
+20260314T060529.726Z|web-01|inventory|F|-|database connection pool exhausted|retry=1|node=4
+20260314T060530.329Z|web-03|cart|I|-|user signed in|node=0|shard=2|attempt=3
+20260314T060530.701Z|web-06|auth|E|-|payment declined: card expired|retry=1|node=5|attempt=5
+20260314T060531.948Z|web-03|auth|F|ORD-47725|database connection pool exhausted|retry=2|shard=2
+20260314T060532.864Z|web-06|checkout|E|-|payment declined: card expired|attempt=0|retry=2|shard=1
+20260314T060534.063Z|web-01|auth|E|ORD-12023|upstream timeout after 4157 ms|shard=4
+20260314T060535.056Z|web-02|search|E|-|upstream timeout after 3489 ms|shard=3
+20260314T060536.993Z|web-03|auth|I|-|order created
+20260314T060538.851Z|web-03|search|F|-|database connection pool exhausted|retry=4|shard=5|node=0
+20260314T060539.792Z|web-02|search|W|ORD-76843|slow query took 8810 ms|shard=1
+20260314T060540.279Z|web-06|cart|I|-|order created|attempt=5|retry=3
+20260314T060540.479Z|web-05|search|W|ORD-72352|slow query took 7841 ms
+20260314T060541.616Z|web-04|search|E|ORD-29952|upstream timeout after 859 ms
+20260314T060542.384Z|web-05|checkout|E|-|upstream timeout after 6035 ms
+20260314T060543.230Z|web-04|search|D|ORD-94823|cache hit for key sku:165|attempt=0
+20260314T060544.740Z|web-04|search|D|ORD-25548|cache hit for key sku:731|shard=3|attempt=3
+20260314T060544.789Z|web-01|cart|I|-|order created
+20260314T060546.674Z|web-02|cart|I|ORD-57804|user signed in
+20260314T060547.460Z|web-03|search|E|ORD-60972|upstream timeout after 1823 ms
+20260314T060549.245Z|web-02|cart|I|ORD-87972|user signed in|node=4|shard=2
+20260314T060549.888Z|web-04|inventory|I|-|user signed in|shard=2
+20260314T060551.015Z|web-02|cart|E|-|upstream timeout after 8724 ms|retry=3|attempt=3
+20260314T060552.325Z|web-02|inventory|F|ORD-87628|database connection pool exhausted
+20260314T060554.315Z|web-04|search|I|ORD-53384|user signed in
+20260314T060555.686Z|web-01|cart|E|-|payment declined: card expired
+20260314T060557.636Z|web-06|checkout|W|ORD-72235|slow query took 3984 ms
+20260314T060559.439Z|web-02|search|E|ORD-71791|upstream timeout after 7995 ms
+20260314T060601.335Z|web-01|inventory|I|ORD-53712|user signed in|node=2|retry=3|shard=3
+20260314T060603.333Z|web-01|inventory|E|ORD-63604|payment declined: card expired|shard=1
+20260314T060603.794Z|web-03|auth|E|ORD-97838|upstream timeout after 1194 ms|retry=5|attempt=1|shard=0
+20260314T060605.711Z|web-06|cart|I|-|order created|retry=1|node=2
+20260314T060607.373Z|web-02|cart|W|-|slow query took 6386 ms|attempt=4
+20260314T060608.160Z|web-04|auth|I|-|order created|attempt=4|node=0
+20260314T060609.090Z|web-03|inventory|D|ORD-58006|cache hit for key sku:940|node=3|attempt=0
+20260314T060610.976Z|web-06|checkout|D|ORD-61253|cache hit for key sku:554
+20260314T060612.911Z|web-03|search|D|-|cache hit for key sku:479|retry=0|attempt=1
+20260314T060614.515Z|web-03|auth|D|-|cache hit for key sku:285|attempt=4|shard=3|retry=2
+20260314T060615.216Z|web-01|inventory|I|-|user signed in
+20260314T060615.755Z|web-03|auth|F|-|database connection pool exhausted|retry=3|node=1|shard=2
+20260314T060617.720Z|web-04|inventory|E|ORD-35649|upstream timeout after 6651 ms
+20260314T060618.286Z|web-05|checkout|F|ORD-55066|database connection pool exhausted
+20260314T060618.370Z|web-06|search|W|ORD-59937|slow query took 423 ms|shard=3|attempt=4|node=4
+20260314T060619.484Z|web-04|cart|F|ORD-49377|database connection pool exhausted|shard=1|attempt=0|retry=3
+20260314T060619.852Z|web-02|auth|E|ORD-94070|payment declined: card expired|retry=2|node=1|shard=2
+20260314T060620.054Z|web-04|inventory|E|ORD-29746|upstream timeout after 2310 ms|node=1|retry=5|shard=2
+20260314T060620.856Z|web-01|auth|F|ORD-86998|database connection pool exhausted|node=5
+20260314T060622.774Z|web-06|search|I|-|order created|attempt=3|retry=3|node=3
+20260314T060624.221Z|web-05|auth|I|ORD-26261|order created
+20260314T060625.951Z|web-03|cart|E|ORD-89059|upstream timeout after 2100 ms
+20260314T060627.124Z|web-01|checkout|F|ORD-67051|database connection pool exhausted|attempt=0
+20260314T060627.455Z|web-02|checkout|I|ORD-75235|user signed in|retry=0
+20260314T060628.208Z|web-02|checkout|I|-|user signed in|attempt=5
+20260314T060628.681Z|web-05|inventory|E|ORD-38956|payment declined: card expired
+20260314T060630.615Z|web-01|checkout|F|ORD-58127|database connection pool exhausted|attempt=3
+20260314T060630.732Z|web-05|search|E|ORD-67560|payment declined: card expired|node=2|retry=0|shard=4
+20260314T060631.946Z|web-03|search|I|ORD-62332|user signed in
+20260314T060633.776Z|web-01|checkout|D|ORD-83825|cache hit for key sku:717|shard=1
+20260314T060634.239Z|web-06|search|E|ORD-50823|payment declined: card expired|retry=4|attempt=4|shard=3
+20260314T060635.618Z|web-05|checkout|E|ORD-27127|upstream timeout after 6802 ms|retry=3|shard=2
+20260314T060637.382Z|web-01|checkout|D|ORD-53902|cache hit for key sku:799|node=5
+20260314T060637.476Z|web-02|cart|I|ORD-87046|user signed in|node=2|attempt=0|retry=2
+20260314T060638.317Z|web-03|cart|E|ORD-87506|upstream timeout after 1421 ms|shard=1|node=0|retry=5
+20260314T060639.978Z|web-04|inventory|E|-|payment declined: card expired|retry=1
+20260314T060640.689Z|web-06|cart|E|-|upstream timeout after 5103 ms|node=4
+20260314T060641.213Z|web-02|cart|I|ORD-99009|user signed in|node=4|retry=5|shard=0
+20260314T060643.061Z|web-03|search|W|ORD-25307|slow query took 8312 ms|shard=2
+20260314T060643.655Z|web-03|inventory|D|ORD-49920|cache hit for key sku:922|retry=3
+20260314T060644.558Z|web-06|auth|E|ORD-53626|payment declined: card expired
+20260314T060645.883Z|web-04|inventory|E|-|payment declined: card expired
+20260314T060646.544Z|web-06|inventory|E|ORD-87202|upstream timeout after 6804 ms|retry=0
+20260314T060647.247Z|web-02|search|E|ORD-16369|payment declined: card expired
+20260314T060648.605Z|web-06|checkout|I|-|user signed in|attempt=2|node=0
+20260314T060649.604Z|web-05|cart|W|ORD-16981|slow query took 5678 ms|retry=5
+20260314T060650.992Z|web-01|inventory|E|ORD-22141|upstream timeout after 3860 ms|shard=3
+20260314T060652.214Z|web-01|inventory|E|ORD-23100|upstream timeout after 8948 ms|node=1|shard=5|retry=0
+20260314T060653.752Z|web-06|inventory|I|ORD-73799|order created|node=2|attempt=0
+20260314T060654.682Z|web-04|cart|W|ORD-64725|slow query took 7250 ms|node=0|attempt=4
+20260314T060654.931Z|web-05|checkout|F|ORD-78642|database connection pool exhausted
+20260314T060656.710Z|web-02|auth|E|-|payment declined: card expired|attempt=2|shard=2|node=0
+20260314T060657.680Z|web-04|inventory|D|ORD-63328|cache hit for key sku:340|shard=0|attempt=2|retry=3
+20260314T060657.913Z|web-01|checkout|I|-|user signed in|attempt=4|node=4
+20260314T060658.893Z|web-02|cart|E|ORD-63288|upstream timeout after 288 ms|shard=1
+20260314T060659.671Z|web-04|auth|I|ORD-76472|order created|node=2|attempt=2|retry=3
+20260314T060700.084Z|web-02|search|F|ORD-97287|database connection pool exhausted
+20260314T060701.490Z|web-02|inventory|E|-|upstream timeout after 4949 ms|attempt=1|node=0|shard=4
+20260314T060702.512Z|web-06|cart|I|ORD-14027|order created|node=5|retry=2
+20260314T060703.569Z|web-03|auth|I|ORD-48468|user signed in
+20260314T060704.225Z|web-03|auth|I|ORD-97469|order created
+20260314T060705.705Z|web-01|checkout|I|ORD-18919|user signed in
+20260314T060707.663Z|web-01|inventory|I|-|order created
+20260314T060708.055Z|web-03|search|W|-|slow query took 8696 ms|node=2
+20260314T060708.254Z|web-06|inventory|E|-|payment declined: card expired|retry=5
+20260314T060709.359Z|web-03|checkout|D|-|cache hit for key sku:902|attempt=0|retry=4
+20260314T060711.020Z|web-03|cart|E|ORD-13976|payment declined: card expired
+20260314T060712.909Z|web-05|checkout|I|ORD-35193|order created|node=1
+20260314T060714.555Z|web-03|cart|E|-|payment declined: card expired
+20260314T060716.036Z|web-04|inventory|I|ORD-92177|order created
+20260314T060717.003Z|web-01|cart|E|ORD-42617|upstream timeout after 1506 ms|attempt=4|retry=1
+20260314T060717.202Z|web-04|checkout|F|ORD-71053|database connection pool exhausted
+20260314T060718.626Z|web-01|checkout|D|-|cache hit for key sku:358|attempt=4|retry=0
+20260314T060719.570Z|web-05|search|I|ORD-15155|order created|shard=1|node=5|attempt=2
+20260314T060720.383Z|web-05|search|D|-|cache hit for key sku:622|node=1
+20260314T060720.859Z|web-02|search|W|ORD-75440|slow query took 1303 ms|retry=4|node=2|attempt=1
+20260314T060721.908Z|web-02|checkout|I|-|user signed in|attempt=3|node=5
+20260314T060723.470Z|web-04|inventory|F|ORD-49595|database connection pool exhausted|attempt=0|node=1
+20260314T060724.216Z|web-05|checkout|W|ORD-88083|slow query took 3777 ms|retry=0
+20260314T060725.967Z|web-04|search|W|-|slow query took 2054 ms|shard=0
+20260314T060727.692Z|web-03|auth|D|-|cache hit for key sku:811
+20260314T060727.738Z|web-01|checkout|W|ORD-75628|slow query took 5312 ms|retry=2|shard=2|attempt=3
+20260314T060727.882Z|web-01|auth|I|-|user signed in|shard=1|attempt=4
+20260314T060728.729Z|web-06|cart|W|ORD-59004|slow query took 1134 ms|attempt=4|retry=0
+20260314T060729.605Z|web-04|search|I|ORD-35906|user signed in
+20260314T060729.852Z|web-06|cart|D|ORD-53372|cache hit for key sku:730|node=3
+20260314T060730.501Z|web-06|auth|I|ORD-13482|user signed in|retry=2|attempt=5
+20260314T060732.137Z|web-04|auth|I|-|order created|attempt=3|node=1
+20260314T060733.234Z|web-03|auth|W|ORD-31683|slow query took 3162 ms|shard=3
+20260314T060735.163Z|web-04|checkout|D|-|cache hit for key sku:381|retry=0|shard=0|attempt=0
+20260314T060735.569Z|web-06|cart|W|ORD-56403|slow query took 4352 ms|retry=2|shard=2
+20260314T060737.197Z|web-06|cart|W|ORD-24735|slow query took 6374 ms|node=4
+20260314T060738.619Z|web-05|search|D|-|cache hit for key sku:531
+20260314T060739.945Z|web-01|inventory|F|ORD-46899|database connection pool exhausted|attempt=1|retry=1
+20260314T060740.104Z|web-03|inventory|F|ORD-41149|database connection pool exhausted
+20260314T060741.097Z|web-06|search|E|ORD-83828|upstream timeout after 6152 ms
+20260314T060741.455Z|web-04|checkout|E|ORD-18595|upstream timeout after 925 ms|attempt=0|retry=1|shard=3
+20260314T060743.378Z|web-02|auth|D|ORD-33549|cache hit for key sku:362|retry=5|shard=3|attempt=3
+20260314T060744.192Z|web-06|auth|I|ORD-70485|user signed in
+20260314T060744.509Z|web-02|inventory|I|-|order created|attempt=3
+20260314T060744.629Z|web-06|auth|I|ORD-52067|order created
+20260314T060745.491Z|web-05|cart|F|ORD-41311|database connection pool exhausted|shard=5|attempt=4|node=1
+20260314T060747.371Z|web-03|inventory|I|-|user signed in|shard=3|attempt=1|retry=2
+20260314T060748.194Z|web-02|cart|D|-|cache hit for key sku:453|shard=1|retry=1|node=1
+20260314T060748.882Z|web-06|auth|D|ORD-74213|cache hit for key sku:568|attempt=4|node=3|shard=2
+20260314T060750.043Z|web-06|cart|D|-|cache hit for key sku:451|attempt=3|retry=1
+20260314T060750.210Z|web-03|auth|W|ORD-72581|slow query took 7969 ms|retry=5|node=1|shard=2
+20260314T060750.845Z|web-05|checkout|E|ORD-38535|payment declined: card expired|retry=5|shard=5
+20260314T060751.667Z|web-03|checkout|I|ORD-88048|order created|shard=5|node=5|attempt=5
+20260314T060751.863Z|web-03|search|W|ORD-26936|slow query took 1551 ms|retry=4|attempt=0|node=4
+20260314T060752.851Z|web-02|cart|E|-|payment declined: card expired|attempt=0|node=0
+20260314T060754.371Z|web-01|cart|I|ORD-39509|order created|retry=1|node=2|shard=3
+20260314T060755.173Z|web-06|checkout|D|-|cache hit for key sku:592|attempt=0|retry=2
+20260314T060756.630Z|web-04|auth|D|ORD-70220|cache hit for key sku:342|node=3|retry=5
+20260314T060757.011Z|web-05|cart|I|ORD-73132|order created|shard=4|attempt=1
+20260314T060757.215Z|web-04|auth|F|ORD-46946|database connection pool exhausted
+20260314T060758.663Z|web-04|checkout|F|ORD-69555|database connection pool exhausted|node=5|retry=1
+20260314T060759.995Z|web-05|checkout|E|-|payment declined: card expired|node=2
+20260314T060800.887Z|web-02|inventory|I|ORD-46050|user signed in|attempt=3|shard=4
+20260314T060802.776Z|web-06|auth|W|ORD-89453|slow query took 6943 ms|shard=5|node=1|attempt=1
+20260314T060804.071Z|web-01|auth|E|ORD-64046|upstream timeout after 4449 ms|attempt=5|node=2
+20260314T060805.610Z|web-03|search|F|-|database connection pool exhausted|attempt=0|shard=3
+20260314T060806.528Z|web-03|checkout|W|ORD-21599|slow query took 2636 ms|attempt=1|retry=3|node=5
+20260314T060807.661Z|web-04|cart|F|ORD-89009|database connection pool exhausted
+20260314T060809.371Z|web-02|search|I|ORD-22670|order created|node=5
+20260314T060810.612Z|web-03|inventory|F|ORD-50064|database connection pool exhausted
+20260314T060812.265Z|web-01|search|I|ORD-63205|order created|node=2
+20260314T060813.000Z|web-04|search|I|ORD-78604|user signed in|node=0|shard=0
+20260314T060813.463Z|web-06|auth|F|ORD-62039|database connection pool exhausted|attempt=3
+20260314T060814.182Z|web-06|auth|E|ORD-87653|payment declined: card expired|retry=0|attempt=5
+20260314T060815.421Z|web-05|inventory|I|-|user signed in|attempt=2|shard=3
+20260314T060816.392Z|web-02|cart|I|-|order created|shard=4|retry=4
+20260314T060816.549Z|web-05|cart|I|-|user signed in|retry=0|node=3
+20260314T060817.097Z|web-06|search|I|ORD-44175|order created|shard=3|attempt=2|node=2
+20260314T060817.568Z|web-06|search|I|-|order created
+20260314T060819.298Z|web-02|cart|I|-|user signed in|node=1
+20260314T060821.135Z|web-05|search|D|ORD-72699|cache hit for key sku:9|retry=2
+20260314T060822.565Z|web-04|search|E|ORD-31227|payment declined: card expired
+20260314T060823.700Z|web-04|auth|E|ORD-57120|payment declined: card expired
+20260314T060824.728Z|web-05|cart|E|-|payment declined: card expired|shard=0
+20260314T060825.372Z|web-02|inventory|I|ORD-58764|order created|attempt=0|node=4|shard=3
+20260314T060826.198Z|web-04|cart|W|ORD-13271|slow query took 2253 ms|shard=0
+20260314T060826.797Z|web-03|cart|E|-|payment declined: card expired|node=1
+20260314T060827.379Z|web-01|inventory|E|-|upstream timeout after 566 ms|node=5|attempt=1|retry=4
+20260314T060828.890Z|web-04|inventory|D|ORD-32598|cache hit for key sku:333|attempt=1|retry=1|node=3
+20260314T060830.636Z|web-01|cart|I|-|user signed in|retry=5|shard=3
+20260314T060831.518Z|web-04|search|E|ORD-80826|payment declined: card expired|attempt=3
+20260314T060833.049Z|web-06|inventory|E|ORD-40519|upstream timeout after 8671 ms
+20260314T060833.987Z|web-04|cart|D|ORD-60513|cache hit for key sku:560|shard=5|attempt=2
+20260314T060834.378Z|web-04|cart|E|ORD-19226|payment declined: card expired|shard=5
+20260314T060836.034Z|web-03|search|F|ORD-89689|database connection pool exhausted
+20260314T060836.774Z|web-06|auth|D|-|cache hit for key sku:375
+20260314T060837.004Z|web-06|checkout|I|ORD-91021|order created|shard=4
+20260314T060838.259Z|web-04|auth|W|-|slow query took 4945 ms|retry=4|attempt=0
+20260314T060838.757Z|web-03|search|I|ORD-87512|order created|node=1|attempt=5
+20260314T060839.176Z|web-03|inventory|I|ORD-72369|user signed in|node=5
+20260314T060840.205Z|web-04|inventory|I|-|user signed in|attempt=3
+20260314T060841.402Z|web-02|checkout|E|ORD-74735|payment declined: card expired|node=0
+20260314T060843.246Z|web-02|auth|E|-|payment declined: card expired|node=2|shard=4
+20260314T060843.699Z|web-03|checkout|E|ORD-10577|upstream timeout after 193 ms|node=2|retry=0|attempt=1
+20260314T060845.421Z|web-04|cart|I|ORD-32706|order created|shard=3|node=0
+20260314T060846.189Z|web-04|cart|D|-|cache hit for key sku:298|retry=5|attempt=4|shard=1
+20260314T060846.812Z|web-02|checkout|F|ORD-41393|database connection pool exhausted|attempt=0
+20260314T060847.924Z|web-04|inventory|I|ORD-24574|order created|shard=0|retry=2
+20260314T060848.585Z|web-04|checkout|E|ORD-31185|payment declined: card expired
+20260314T060849.527Z|web-01|inventory|I|ORD-52264|user signed in|node=2|shard=2|retry=5
+20260314T060850.318Z|web-06|cart|D|ORD-42268|cache hit for key sku:374|attempt=4|retry=1|shard=2
+20260314T060851.471Z|web-03|inventory|I|ORD-85855|user signed in
+20260314T060853.251Z|web-03|checkout|F|-|database connection pool exhausted|retry=5|shard=3|attempt=0
+20260314T060854.279Z|web-04|inventory|F|ORD-94221|database connection pool exhausted|shard=1|attempt=4
+20260314T060856.190Z|web-04|checkout|W|ORD-68004|slow query took 6335 ms|retry=5|node=1
+20260314T060856.729Z|web-05|auth|D|ORD-48099|cache hit for key sku:258|node=5
+20260314T060858.634Z|web-04|cart|F|-|database connection pool exhausted|shard=4|retry=0|attempt=5
+20260314T060859.645Z|web-01|checkout|E|ORD-55864|upstream timeout after 7022 ms|shard=3|node=3
+20260314T060900.178Z|web-03|auth|E|-|upstream timeout after 2606 ms|shard=1|retry=2
+20260314T060901.577Z|web-04|auth|F|ORD-62905|database connection pool exhausted|retry=4|shard=2
+20260314T060902.523Z|web-03|inventory|I|-|order created|attempt=0
+20260314T060902.619Z|web-04|checkout|E|-|payment declined: card expired|node=2|shard=0
+20260314T060903.928Z|web-03|cart|I|ORD-49610|user signed in|retry=2|attempt=3|shard=5
+20260314T060904.545Z|web-02|cart|I|-|order created|shard=5
+20260314T060905.517Z|web-05|auth|E|ORD-46221|upstream timeout after 2841 ms|attempt=3|shard=5
+20260314T060906.841Z|web-04|checkout|D|-|cache hit for key sku:264|attempt=5
+20260314T060907.349Z|web-02|inventory|D|ORD-58587|cache hit for key sku:635|shard=3
+20260314T060907.525Z|web-06|cart|I|ORD-99442|order created
+20260314T060908.533Z|web-02|checkout|E|ORD-51705|payment declined: card expired
+20260314T060910.113Z|web-04|inventory|I|ORD-52586|user signed in|retry=3
+20260314T060911.552Z|web-03|cart|F|ORD-25890|database connection pool exhausted|node=5|retry=4
+20260314T060912.844Z|web-03|inventory|D|ORD-29126|cache hit for key sku:220|node=4
+20260314T060914.116Z|web-04|checkout|E|ORD-78346|upstream timeout after 1925 ms
+20260314T060914.932Z|web-03|checkout|D|-|cache hit for key sku:377|attempt=1
+20260314T060916.211Z|web-01|search|I|ORD-49715|order created|node=1|shard=1
+20260314T060917.379Z|web-05|cart|D|ORD-71100|cache hit for key sku:191
+20260314T060917.528Z|web-04|auth|E|-|payment declined: card expired
+20260314T060918.181Z|web-03|inventory|E|ORD-11997|payment declined: card expired|attempt=5|shard=2|node=0
+20260314T060918.507Z|web-04|cart|F|ORD-22938|database connection pool exhausted
+20260314T060919.176Z|web-05|auth|E|ORD-67370|payment declined: card expired
+20260314T060919.567Z|web-04|cart|I|-|user signed in|node=4
+20260314T060920.583Z|web-04|auth|W|ORD-96716|slow query took 1602 ms|retry=0|node=3
+20260314T060922.528Z|web-04|cart|D|-|cache hit for key sku:401|shard=5
+20260314T060922.560Z|web-02|auth|E|ORD-42273|payment declined: card expired|attempt=4
+20260314T060923.998Z|web-05|search|D|ORD-34769|cache hit for key sku:150|shard=5
+20260314T060925.366Z|web-06|checkout|D|-|cache hit for key sku:864|node=0
+20260314T060926.512Z|web-03|cart|I|ORD-25436|user signed in
+20260314T060927.064Z|web-01|cart|I|-|order created
+20260314T060928.755Z|web-01|auth|W|-|slow query took 8651 ms
+20260314T060929.519Z|web-02|cart|I|ORD-36490|order created|node=5
+20260314T060931.494Z|web-02|auth|I|ORD-89025|order created|attempt=4|shard=1
+20260314T060932.524Z|web-01|cart|I|-|order created
+20260314T060933.279Z|web-01|inventory|F|ORD-40168|database connection pool exhausted|node=3|attempt=1
+20260314T060934.622Z|web-02|search|W|ORD-21214|slow query took 8258 ms|node=2|shard=4
+20260314T060934.635Z|web-02|cart|E|ORD-56520|payment declined: card expired
+20260314T060935.861Z|web-01|auth|F|ORD-89067|database connection pool exhausted|shard=0|retry=1|node=3
+20260314T060936.906Z|web-05|cart|I|-|user signed in|node=5
+20260314T060938.166Z|web-05|inventory|W|-|slow query took 8752 ms
+20260314T060938.880Z|web-05|auth|I|-|user signed in
+20260314T060939.130Z|web-05|auth|D|ORD-86388|cache hit for key sku:73|retry=1|node=3|attempt=2
+20260314T060941.104Z|web-06|inventory|F|ORD-59913|database connection pool exhausted|shard=2
+20260314T060941.877Z|web-06|inventory|E|ORD-60784|payment declined: card expired
+20260314T060943.403Z|web-04|search|I|ORD-24125|order created|node=3|attempt=5
+20260314T060944.626Z|web-02|search|E|ORD-19391|upstream timeout after 1155 ms
+20260314T060944.767Z|web-01|search|E|ORD-94533|upstream timeout after 728 ms
+20260314T060945.333Z|web-06|search|E|-|upstream timeout after 5989 ms|retry=5|attempt=1|shard=1
+20260314T060945.651Z|web-05|inventory|I|ORD-17774|user signed in|attempt=5|shard=4
+20260314T060946.307Z|web-04|search|E|ORD-17581|payment declined: card expired|node=4|attempt=4
+20260314T060948.304Z|web-01|inventory|D|ORD-35701|cache hit for key sku:741|retry=4
+20260314T060949.643Z|web-05|cart|E|ORD-50883|upstream timeout after 4634 ms|attempt=4|retry=0
+20260314T060950.389Z|web-02|cart|W|-|slow query took 7280 ms
+20260314T060950.557Z|web-01|inventory|F|ORD-92625|database connection pool exhausted
+20260314T060951.488Z|web-03|checkout|I|ORD-34621|order created|retry=4
+20260314T060953.459Z|web-04|checkout|E|-|payment declined: card expired|attempt=1|retry=2
+20260314T060954.564Z|web-02|auth|I|ORD-31069|order created|node=2|attempt=4|shard=4
+20260314T060956.451Z|web-02|inventory|E|ORD-86635|upstream timeout after 7792 ms
+20260314T060956.672Z|web-04|search|E|ORD-54858|payment declined: card expired|attempt=3|shard=1|retry=2
+20260314T060958.469Z|web-05|search|I|ORD-28382|user signed in|node=2|shard=4
+20260314T060959.197Z|web-01|search|E|ORD-28311|payment declined: card expired|attempt=1
+20260314T061000.202Z|web-06|cart|E|ORD-76303|payment declined: card expired
+20260314T061000.380Z|web-06|auth|W|ORD-97199|slow query took 6041 ms|attempt=5
+20260314T061001.219Z|web-06|checkout|D|ORD-30332|cache hit for key sku:92
+20260314T061001.490Z|web-06|checkout|E|-|upstream timeout after 256 ms
+20260314T061001.578Z|web-02|checkout|F|ORD-91111|database connection pool exhausted|retry=0|shard=3|node=0
+20260314T061003.083Z|web-01|inventory|I|ORD-78110|user signed in|node=0|retry=4
+20260314T061003.697Z|web-02|cart|W|ORD-70698|slow query took 2068 ms|attempt=3
+20260314T061005.120Z|web-06|inventory|F|ORD-41646|database connection pool exhausted|retry=5
+20260314T061005.435Z|web-03|inventory|I|ORD-60251|user signed in|node=5|shard=0
+20260314T061005.668Z|web-02|search|I|ORD-42837|order created|node=0|attempt=2|shard=2
+20260314T061006.350Z|web-06|cart|I|ORD-53701|user signed in|retry=0
+20260314T061007.502Z|web-01|inventory|E|ORD-47360|payment declined: card expired|node=3|retry=5|shard=5
+20260314T061008.202Z|web-01|auth|E|ORD-97361|upstream timeout after 6155 ms|shard=5|retry=2
+20260314T061009.067Z|web-01|auth|E|-|payment declined: card expired|shard=1|node=0
+20260314T061011.007Z|web-03|search|F|ORD-30060|database connection pool exhausted|node=0|shard=0
+20260314T061011.405Z|web-06|cart|I|ORD-62333|user signed in
+20260314T061012.911Z|web-06|auth|D|ORD-40140|cache hit for key sku:265|node=5
+20260314T061013.676Z|web-01|inventory|I|ORD-32713|order created|node=2|retry=2
+20260314T061015.146Z|web-03|inventory|E|ORD-36169|upstream timeout after 4133 ms|node=2
+20260314T061015.473Z|web-01|search|W|-|slow query took 5293 ms|shard=2
+20260314T061015.815Z|web-01|auth|I|-|user signed in|attempt=4|node=1
+20260314T061017.633Z|web-01|checkout|E|-|upstream timeout after 6366 ms
+20260314T061018.553Z|web-02|search|E|ORD-46952|upstream timeout after 1584 ms|attempt=1
+20260314T061020.528Z|web-01|cart|I|ORD-80244|user signed in|retry=1|node=5|shard=4
+20260314T061021.928Z|web-01|search|I|ORD-95645|order created|retry=4|shard=3
+20260314T061023.033Z|web-06|auth|W|-|slow query took 8126 ms|retry=5
+20260314T061024.645Z|web-01|auth|I|ORD-67978|user signed in|node=5
+20260314T061025.688Z|web-04|cart|F|-|database connection pool exhausted|retry=4|shard=4
+20260314T061027.284Z|web-02|search|I|ORD-82483|order created|node=4|retry=0
+20260314T061028.933Z|web-06|cart|I|ORD-62138|user signed in
+20260314T061029.307Z|web-06|checkout|I|ORD-52125|order created|shard=0|node=2|retry=3
+20260314T061030.737Z|web-02|inventory|E|ORD-57817|upstream timeout after 5223 ms
+20260314T061031.590Z|web-04|checkout|E|ORD-37996|payment declined: card expired|attempt=0|retry=1
+20260314T061032.154Z|web-04|search|I|ORD-78384|user signed in|shard=5
+20260314T061033.615Z|web-05|auth|E|-|upstream timeout after 8582 ms|shard=4|attempt=1
+20260314T061033.844Z|web-05|cart|W|-|slow query took 6435 ms|retry=5|shard=4|node=3
+20260314T061035.532Z|web-05|inventory|I|ORD-35339|order created
+20260314T061036.985Z|web-01|auth|F|ORD-84287|database connection pool exhausted
+20260314T061037.159Z|web-02|auth|E|ORD-18473|payment declined: card expired|shard=2
+20260314T061038.079Z|web-03|search|W|ORD-94238|slow query took 5344 ms
+20260314T061038.588Z|web-06|checkout|I|ORD-57360|order created|node=5|shard=2|attempt=3
+20260314T061039.359Z|web-04|cart|D|ORD-98220|cache hit for key sku:330
+20260314T061039.526Z|web-04|cart|E|ORD-70096|payment declined: card expired|node=0
+20260314T061040.344Z|web-03|checkout|W|-|slow query took 6042 ms
+20260314T061041.555Z|web-04|inventory|I|-|user signed in|retry=5
+20260314T061042.505Z|web-04|inventory|F|ORD-32539|database connection pool exhausted|shard=5|retry=5|attempt=0
+20260314T061043.462Z|web-05|cart|I|ORD-29864|order created|shard=1
+20260314T061044.784Z|web-03|checkout|I|ORD-33600|order created|shard=0|retry=0
+20260314T061046.486Z|web-01|auth|E|ORD-63907|payment declined: card expired|node=3|shard=1
+20260314T061047.734Z|web-04|cart|I|ORD-73421|order created
+20260314T061048.437Z|web-06|checkout|D|-|cache hit for key sku:588|retry=0|node=4
+20260314T061050.158Z|web-06|cart|E|-|payment declined: card expired|node=3|attempt=4
+20260314T061050.244Z|web-02|auth|I|-|user signed in|node=4|shard=3|attempt=3
+20260314T061050.825Z|web-06|cart|I|ORD-78240|user signed in|shard=4|node=2|retry=4
+20260314T061051.735Z|web-02|search|E|ORD-28689|upstream timeout after 5377 ms|retry=0|attempt=1|shard=0
+20260314T061053.021Z|web-05|auth|I|ORD-37137|order created|attempt=2
+20260314T061053.103Z|web-06|inventory|F|ORD-62359|database connection pool exhausted|shard=3|attempt=3|retry=2
+20260314T061054.127Z|web-05|auth|I|-|user signed in|node=5|attempt=0
+20260314T061054.929Z|web-04|search|F|ORD-61967|database connection pool exhausted|attempt=4
+20260314T061056.012Z|web-01|auth|I|ORD-18196|order created
+20260314T061056.453Z|web-02|cart|E|ORD-52792|upstream timeout after 5389 ms|node=1|retry=3|shard=5
+20260314T061057.988Z|web-05|inventory|D|-|cache hit for key sku:595|shard=3|attempt=5|node=0
+20260314T061059.658Z|web-06|auth|D|ORD-92393|cache hit for key sku:331|node=2|retry=2|shard=3
+20260314T061059.919Z|web-01|checkout|F|-|database connection pool exhausted|shard=5|node=4|retry=4
+20260314T061101.157Z|web-06|checkout|F|ORD-99241|database connection pool exhausted|shard=5
+20260314T061101.410Z|web-02|checkout|E|ORD-49164|upstream timeout after 1332 ms|shard=4|node=4|attempt=5
+20260314T061103.363Z|web-04|inventory|D|ORD-37228|cache hit for key sku:292|attempt=3
+20260314T061103.722Z|web-06|auth|I|ORD-77495|order created|shard=2
+20260314T061105.619Z|web-03|search|F|-|database connection pool exhausted|node=0|retry=5
+20260314T061105.831Z|web-03|auth|I|ORD-58512|order created|node=5|retry=5|attempt=2
+20260314T061106.251Z|web-01|search|E|ORD-36532|upstream timeout after 5875 ms|shard=0|retry=0|node=3
+20260314T061106.852Z|web-02|checkout|F|-|database connection pool exhausted
+20260314T061107.283Z|web-05|auth|I|-|order created|attempt=1|node=3|retry=5
+20260314T061108.267Z|web-01|search|F|-|database connection pool exhausted|shard=1
+20260314T061109.071Z|web-03|cart|D|ORD-81573|cache hit for key sku:145|node=0
+20260314T061110.909Z|web-04|inventory|I|-|user signed in
+20260314T061111.214Z|web-04|checkout|D|-|cache hit for key sku:33
+20260314T061111.602Z|web-04|inventory|I|ORD-23022|user signed in
+20260314T061112.134Z|web-01|cart|I|ORD-34425|user signed in|node=3|retry=1
+20260314T061112.730Z|web-04|inventory|E|-|payment declined: card expired|node=5|retry=5
+20260314T061113.119Z|web-05|auth|W|ORD-96427|slow query took 2796 ms|attempt=0|retry=1
+20260314T061115.042Z|web-05|inventory|I|ORD-85022|order created
+20260314T061115.223Z|web-04|inventory|D|ORD-36549|cache hit for key sku:530
+20260314T061115.502Z|web-04|checkout|W|ORD-99194|slow query took 3646 ms|shard=4|node=1|retry=1
+20260314T061117.272Z|web-03|auth|I|ORD-77000|order created|node=2
+20260314T061119.233Z|web-01|inventory|F|-|database connection pool exhausted
+20260314T061120.697Z|web-01|inventory|W|ORD-11039|slow query took 8595 ms
+20260314T061122.515Z|web-06|search|W|ORD-12106|slow query took 3136 ms
+20260314T061123.091Z|web-04|auth|I|-|order created
+20260314T061123.639Z|web-01|inventory|E|ORD-24110|upstream timeout after 4516 ms|node=4
+20260314T061124.970Z|web-02|search|D|-|cache hit for key sku:396
+20260314T061125.060Z|web-04|cart|E|-|upstream timeout after 5032 ms|shard=5|node=5|retry=5
+20260314T061126.879Z|web-04|cart|D|-|cache hit for key sku:373
+20260314T061126.894Z|web-02|auth|I|-|order created|retry=3
+20260314T061127.658Z|web-05|cart|E|-|payment declined: card expired|attempt=1
+20260314T061129.007Z|web-05|search|W|ORD-27911|slow query took 468 ms|shard=0
+20260314T061130.945Z|web-02|auth|F|-|database connection pool exhausted|node=2
+20260314T061131.141Z|web-03|inventory|E|ORD-85265|upstream timeout after 3812 ms|node=3
+20260314T061132.168Z|web-03|cart|W|ORD-95682|slow query took 2773 ms|node=4|retry=0|shard=5
+20260314T061134.146Z|web-01|inventory|D|ORD-71519|cache hit for key sku:925|attempt=4|retry=1|node=0
+20260314T061134.442Z|web-06|search|E|ORD-51048|upstream timeout after 4795 ms|shard=1
+20260314T061134.756Z|web-05|auth|W|ORD-72909|slow query took 6732 ms|retry=1|shard=5
+20260314T061135.641Z|web-04|cart|W|ORD-30430|slow query took 4162 ms|retry=3|attempt=4|node=5
+20260314T061136.907Z|web-02|checkout|E|ORD-91704|payment declined: card expired|retry=1
+20260314T061138.376Z|web-03|auth|I|ORD-14590|order created|node=4|shard=1|attempt=3
+20260314T061139.551Z|web-04|auth|I|ORD-39586|user signed in|retry=5
+20260314T061141.447Z|web-06|checkout|I|ORD-43154|user signed in|attempt=3
+20260314T061142.953Z|web-06|cart|I|-|user signed in|node=3|shard=2
+20260314T061143.758Z|web-03|checkout|D|ORD-32649|cache hit for key sku:155|shard=1|attempt=3|retry=4
+20260314T061145.104Z|web-04|inventory|D|ORD-55479|cache hit for key sku:929|attempt=0
+20260314T061146.190Z|web-01|auth|W|ORD-44699|slow query took 8217 ms
+20260314T061147.324Z|web-04|auth|E|ORD-76215|payment declined: card expired
+20260314T061148.556Z|web-04|inventory|E|ORD-52609|upstream timeout after 2156 ms|node=3|retry=0|shard=3
+20260314T061150.116Z|web-05|inventory|E|-|payment declined: card expired|retry=5|attempt=1|node=3
+20260314T061151.407Z|web-03|search|I|-|user signed in|node=2|shard=1
+20260314T061152.963Z|web-05|checkout|D|-|cache hit for key sku:732
+20260314T061153.513Z|web-01|inventory|F|-|database connection pool exhausted
+20260314T061155.099Z|web-05|search|W|ORD-70881|slow query took 3933 ms|node=3|shard=1|retry=3
+20260314T061155.118Z|web-02|auth|W|ORD-13981|slow query took 500 ms|shard=5
+20260314T061155.384Z|web-01|search|D|-|cache hit for key sku:756|node=5
+20260314T061155.800Z|web-02|checkout|I|-|user signed in
+20260314T061155.820Z|web-06|cart|I|-|user signed in|shard=4|retry=1|node=2
+20260314T061156.132Z|web-04|search|D|ORD-29360|cache hit for key sku:552
+20260314T061157.938Z|web-02|search|W|ORD-86876|slow query took 7172 ms|retry=2
+20260314T061158.544Z|web-03|inventory|D|-|cache hit for key sku:615
+20260314T061159.638Z|web-04|cart|F|-|database connection pool exhausted|retry=3
+20260314T061201.487Z|web-03|cart|W|ORD-36886|slow query took 6401 ms|retry=5|node=1
+20260314T061201.805Z|web-02|checkout|I|ORD-19507|order created|node=3|attempt=3
+20260314T061202.729Z|web-01|auth|I|ORD-17939|user signed in|attempt=4
+20260314T061203.660Z|web-03|cart|E|ORD-94949|upstream timeout after 8031 ms|shard=2
+20260314T061203.983Z|web-03|inventory|E|ORD-93150|upstream timeout after 5892 ms|node=2|retry=2|shard=2
+20260314T061204.793Z|web-01|auth|I|-|order created|attempt=4|retry=2|node=5
+20260314T061206.093Z|web-01|auth|I|-|user signed in|attempt=5
+20260314T061207.950Z|web-05|auth|D|ORD-93673|cache hit for key sku:262|node=5
+20260314T061208.773Z|web-06|search|F|ORD-90818|database connection pool exhausted|shard=5
+20260314T061209.284Z|web-01|checkout|D|ORD-96909|cache hit for key sku:869|shard=0|retry=3
+20260314T061210.731Z|web-02|auth|I|ORD-77205|order created|retry=4|node=2
+20260314T061211.453Z|web-02|checkout|W|ORD-28664|slow query took 7061 ms|attempt=3
+20260314T061211.650Z|web-05|inventory|E|ORD-59360|payment declined: card expired|shard=1|retry=1
+20260314T061211.854Z|web-02|inventory|I|ORD-87230|order created
+20260314T061213.749Z|web-04|search|I|-|user signed in|node=0|attempt=4|retry=1
+20260314T061213.950Z|web-01|checkout|E|ORD-27246|payment declined: card expired|shard=0|retry=3|attempt=1
+20260314T061214.249Z|web-02|inventory|E|ORD-61825|payment declined: card expired|attempt=4|node=2
+20260314T061214.851Z|web-03|inventory|I|-|user signed in|shard=2|node=5
+20260314T061216.229Z|web-06|cart|I|ORD-22268|user signed in|node=4
+20260314T061216.654Z|web-04|inventory|F|-|database connection pool exhausted|shard=3|attempt=2|retry=2
+20260314T061218.112Z|web-06|inventory|D|ORD-52770|cache hit for key sku:101|retry=3|shard=0|node=1
+20260314T061218.263Z|web-05|search|W|-|slow query took 4013 ms|node=2|attempt=3
+20260314T061218.740Z|web-01|inventory|F|ORD-87825|database connection pool exhausted|attempt=1|node=5|retry=2
+20260314T061220.122Z|web-01|inventory|I|-|order created|attempt=4|node=1
+20260314T061220.891Z|web-06|cart|I|ORD-33269|order created
+20260314T061221.543Z|web-04|cart|F|ORD-53435|database connection pool exhausted|node=0|shard=3
+20260314T061223.317Z|web-01|cart|F|ORD-25524|database connection pool exhausted|attempt=5|shard=3
+20260314T061224.838Z|web-04|checkout|D|-|cache hit for key sku:452|retry=5|attempt=5
+20260314T061226.499Z|web-01|search|I|ORD-16544|user signed in
+20260314T061228.035Z|web-06|auth|D|ORD-97098|cache hit for key sku:198
+20260314T061229.319Z|web-06|auth|E|-|upstream timeout after 2714 ms|shard=5|retry=5
+20260314T061231.215Z|web-01|checkout|I|ORD-22907|user signed in|retry=4|attempt=3
+20260314T061231.548Z|web-05|auth|I|ORD-92887|order created|retry=5|node=0
+20260314T061232.795Z|web-01|checkout|D|-|cache hit for key sku:888|shard=0
+20260314T061234.442Z|web-02|auth|I|ORD-50378|order created|retry=0|shard=1|node=0
+20260314T061236.248Z|web-01|auth|I|ORD-35100|user signed in|retry=3|attempt=0|shard=5
+20260314T061236.334Z|web-06|checkout|F|ORD-42737|database connection pool exhausted|node=4|attempt=1|shard=4
+20260314T061237.833Z|web-05|checkout|I|ORD-35166|user signed in
+20260314T061238.431Z|web-02|search|I|ORD-69341|user signed in|node=5|shard=3|retry=2
+20260314T061239.034Z|web-01|auth|W|ORD-94374|slow query took 8281 ms|node=2|shard=5
+20260314T061240.722Z|web-04|inventory|F|ORD-21474|database connection pool exhausted|retry=2|attempt=1
+20260314T061241.274Z|web-04|checkout|E|ORD-75205|payment declined: card expired|attempt=4
+20260314T061241.630Z|web-04|checkout|E|ORD-81782|payment declined: card expired|retry=0|shard=3|attempt=5
+20260314T061243.262Z|web-05|auth|E|ORD-77275|upstream timeout after 235 ms|node=5|retry=1|shard=2
+20260314T061244.325Z|web-04|checkout|D|-|cache hit for key sku:735|node=0|attempt=2|shard=5
+20260314T061245.610Z|web-06|cart|E|ORD-81508|upstream timeout after 711 ms|retry=3
+20260314T061247.078Z|web-04|cart|F|-|database connection pool exhausted|shard=0
+20260314T061249.057Z|web-04|checkout|I|ORD-95371|user signed in|attempt=0
+20260314T061250.278Z|web-04|inventory|E|ORD-50510|payment declined: card expired|shard=5|attempt=4|node=2
+20260314T061250.869Z|web-03|cart|I|ORD-54328|order created
+20260314T061252.851Z|web-03|cart|I|ORD-96792|order created|attempt=5|node=0
+20260314T061253.789Z|web-04|cart|F|ORD-12628|database connection pool exhausted|attempt=4
+20260314T061254.671Z|web-01|checkout|E|ORD-40272|payment declined: card expired
+20260314T061256.366Z|web-04|search|D|ORD-88628|cache hit for key sku:122
+20260314T061257.277Z|web-01|checkout|D|-|cache hit for key sku:148|shard=3|node=1|attempt=2
+20260314T061258.118Z|web-04|auth|E|ORD-16705|upstream timeout after 1537 ms|attempt=5
+20260314T061258.304Z|web-03|search|I|ORD-55032|user signed in|retry=5|attempt=5
+20260314T061259.484Z|web-02|auth|I|ORD-36651|user signed in
+20260314T061300.407Z|web-06|cart|E|ORD-37246|upstream timeout after 8577 ms|node=5
+20260314T061300.745Z|web-05|checkout|I|ORD-53442|order created|retry=2
+20260314T061302.279Z|web-03|cart|E|ORD-25735|upstream timeout after 4612 ms|retry=2
+20260314T061302.306Z|web-05|cart|F|ORD-26903|database connection pool exhausted
+20260314T061304.296Z|web-01|auth|I|ORD-34226|user signed in|node=4|attempt=2
+20260314T061305.758Z|web-05|checkout|E|-|upstream timeout after 6354 ms
+20260314T061307.280Z|web-05|cart|D|ORD-92023|cache hit for key sku:183|retry=0
+20260314T061307.916Z|web-03|checkout|E|-|payment declined: card expired
+20260314T061309.370Z|web-06|auth|F|ORD-31541|database connection pool exhausted|node=2
+20260314T061310.782Z|web-04|auth|E|-|upstream timeout after 4199 ms|shard=1|attempt=2|node=1
+20260314T061311.561Z|web-05|search|F|ORD-77483|database connection pool exhausted|attempt=3|retry=4
+20260314T061311.617Z|web-01|cart|W|-|slow query took 8386 ms
+20260314T061311.828Z|web-06|inventory|E|ORD-44761|payment declined: card expired|attempt=1
+20260314T061313.632Z|web-05|search|I|ORD-89915|order created
+20260314T061314.690Z|web-03|cart|E|ORD-96392|upstream timeout after 2910 ms|retry=2|attempt=4
+20260314T061315.476Z|web-02|cart|F|ORD-25777|database connection pool exhausted
+20260314T061317.358Z|web-02|checkout|F|ORD-41864|database connection pool exhausted
+20260314T061318.285Z|web-06|auth|W|ORD-37052|slow query took 5179 ms|attempt=5|node=0|shard=1
+20260314T061319.513Z|web-05|checkout|E|-|payment declined: card expired|shard=3
+20260314T061320.830Z|web-04|inventory|W|ORD-44129|slow query took 3142 ms
+20260314T061322.561Z|web-02|cart|D|-|cache hit for key sku:384
+20260314T061322.579Z|web-02|inventory|E|-|payment declined: card expired
+20260314T061324.558Z|web-01|search|I|ORD-47294|order created|attempt=1
+20260314T061325.612Z|web-05|inventory|E|ORD-50866|payment declined: card expired|node=4
+20260314T061326.893Z|web-05|search|D|ORD-41707|cache hit for key sku:849|retry=0|node=2
+20260314T061327.935Z|web-02|inventory|F|ORD-16932|database connection pool exhausted|attempt=4|shard=4
+20260314T061329.727Z|web-01|search|D|ORD-61143|cache hit for key sku:373|attempt=4|shard=1|retry=4
+20260314T061331.359Z|web-06|cart|I|ORD-69387|order created|attempt=1|retry=2
+20260314T061331.950Z|web-02|checkout|I|-|user signed in|node=2
+20260314T061332.992Z|web-04|inventory|F|ORD-21978|database connection pool exhausted|retry=4|attempt=0
+20260314T061334.568Z|web-02|inventory|D|-|cache hit for key sku:556|shard=2
+20260314T061336.056Z|web-03|search|D|ORD-15925|cache hit for key sku:984|retry=2|node=3|attempt=5
+20260314T061336.873Z|web-03|checkout|F|-|database connection pool exhausted|attempt=4|shard=1
+20260314T061337.445Z|web-02|auth|I|-|user signed in|retry=2|node=1|attempt=3
+20260314T061338.214Z|web-06|search|I|ORD-61888|order created|attempt=0
+20260314T061340.142Z|web-04|search|D|ORD-94761|cache hit for key sku:779
+20260314T061340.675Z|web-04|inventory|E|ORD-64671|upstream timeout after 8914 ms|retry=2|attempt=2
+20260314T061341.090Z|web-03|checkout|E|ORD-71464|payment declined: card expired|retry=0|attempt=1
+20260314T061341.785Z|web-05|checkout|D|ORD-62670|cache hit for key sku:912|node=2|retry=4
+20260314T061341.876Z|web-04|auth|F|-|database connection pool exhausted|attempt=3|shard=0
+20260314T061343.697Z|web-05|checkout|W|ORD-17775|slow query took 427 ms|attempt=0|retry=1
+20260314T061345.675Z|web-01|checkout|I|-|order created|attempt=3
+20260314T061347.368Z|web-06|checkout|I|-|order created|retry=2|shard=2
+20260314T061347.907Z|web-03|cart|E|-|upstream timeout after 5059 ms
+20260314T061348.202Z|web-01|checkout|D|ORD-50154|cache hit for key sku:678|node=4
+20260314T061349.746Z|web-05|inventory|I|ORD-88162|user signed in|retry=0|attempt=5|node=0
+20260314T061349.895Z|web-01|search|F|ORD-43356|database connection pool exhausted|retry=3|attempt=1
+20260314T061350.024Z|web-05|auth|I|ORD-92258|user signed in|node=3|shard=5
+20260314T061351.300Z|web-05|auth|E|ORD-39428|payment declined: card expired|attempt=5
+20260314T061352.557Z|web-02|auth|D|-|cache hit for key sku:244|retry=3|attempt=2
+20260314T061353.521Z|web-01|cart|I|ORD-83959|user signed in
+20260314T061353.636Z|web-04|auth|W|ORD-68496|slow query took 3287 ms
+20260314T061354.890Z|web-03|inventory|F|ORD-64401|database connection pool exhausted
+20260314T061355.019Z|web-02|search|D|ORD-75458|cache hit for key sku:315|shard=4|retry=0|attempt=2
+20260314T061355.669Z|web-04|checkout|D|ORD-68955|cache hit for key sku:894|attempt=4|shard=0|node=4
+20260314T061355.754Z|web-04|auth|D|ORD-51293|cache hit for key sku:977|shard=1
+20260314T061357.140Z|web-04|cart|W|-|slow query took 8618 ms
+20260314T061357.204Z|web-04|inventory|F|ORD-35981|database connection pool exhausted|node=3|shard=0
+20260314T061357.230Z|web-02|search|I|ORD-19066|user signed in|node=0|shard=5|attempt=4
+20260314T061357.315Z|web-01|inventory|F|ORD-54443|database connection pool exhausted|shard=5|retry=3|attempt=1
+20260314T061357.645Z|web-01|inventory|I|ORD-80057|user signed in|shard=2|attempt=4
+20260314T061358.088Z|web-02|checkout|E|-|payment declined: card expired
+20260314T061359.847Z|web-05|cart|I|-|user signed in|node=5|shard=0
+20260314T061400.007Z|web-01|search|E|-|payment declined: card expired|shard=5
+20260314T061400.065Z|web-06|cart|F|-|database connection pool exhausted|retry=4
+20260314T061401.024Z|web-02|cart|E|ORD-84956|payment declined: card expired|shard=3|attempt=1
+20260314T061401.304Z|web-04|cart|E|ORD-74789|upstream timeout after 8637 ms
+20260314T061401.481Z|web-05|search|W|ORD-17703|slow query took 8774 ms|retry=0|shard=5|node=0
+20260314T061403.241Z|web-06|checkout|D|-|cache hit for key sku:312|attempt=2
+20260314T061404.589Z|web-02|inventory|D|-|cache hit for key sku:743|shard=3|retry=1|node=0
+20260314T061405.264Z|web-03|search|D|ORD-69883|cache hit for key sku:899|node=2|attempt=1|retry=4
+20260314T061407.048Z|web-03|cart|E|ORD-88116|upstream timeout after 3187 ms|node=2
+20260314T061407.359Z|web-03|checkout|E|ORD-77980|payment declined: card expired|node=0|shard=0|retry=3
+20260314T061408.827Z|web-05|search|E|ORD-11275|upstream timeout after 2026 ms|shard=0|node=1
+20260314T061410.220Z|web-04|inventory|E|ORD-96366|payment declined: card expired|retry=2|attempt=0|node=0
+20260314T061411.020Z|web-04|auth|E|ORD-19291|payment declined: card expired|attempt=3|retry=2
+20260314T061411.316Z|web-02|checkout|E|ORD-88712|upstream timeout after 7452 ms|node=4|shard=4
+20260314T061411.357Z|web-01|search|E|ORD-28608|payment declined: card expired|node=0|attempt=1|shard=2
+20260314T061411.984Z|web-02|checkout|E|ORD-14643|upstream timeout after 3231 ms|retry=2|shard=4|attempt=4
+20260314T061413.443Z|web-04|cart|W|-|slow query took 408 ms
+20260314T061413.735Z|web-03|cart|D|ORD-72017|cache hit for key sku:919|node=1
+20260314T061414.935Z|web-02|cart|F|-|database connection pool exhausted
+20260314T061415.759Z|web-01|checkout|E|ORD-78745|payment declined: card expired|retry=5
+20260314T061415.805Z|web-05|cart|W|ORD-62884|slow query took 8568 ms|retry=2
+20260314T061416.715Z|web-05|checkout|D|ORD-37645|cache hit for key sku:341|retry=5|shard=4|attempt=1
+20260314T061417.527Z|web-04|search|E|ORD-69324|payment declined: card expired|shard=4|node=0|attempt=3
+20260314T061417.643Z|web-03|cart|W|ORD-12760|slow query took 2239 ms|shard=4
+20260314T061419.010Z|web-06|inventory|I|ORD-73089|order created|shard=1|attempt=0|retry=4
+20260314T061419.156Z|web-04|search|I|ORD-77912|order created|attempt=3|node=4|shard=4
+20260314T061420.182Z|web-01|cart|E|ORD-83902|upstream timeout after 103 ms|node=1
+20260314T061420.500Z|web-06|checkout|W|ORD-99723|slow query took 2240 ms
+20260314T061422.312Z|web-06|checkout|W|ORD-86062|slow query took 374 ms|retry=2|attempt=1
+20260314T061424.091Z|web-04|cart|D|-|cache hit for key sku:737|node=3|attempt=0
+20260314T061424.551Z|web-05|auth|I|ORD-96258|order created
+20260314T061425.590Z|web-02|search|I|ORD-89565|user signed in|attempt=5|shard=0
+20260314T061427.472Z|web-02|cart|E|ORD-60599|payment declined: card expired
+20260314T061427.498Z|web-06|search|D|ORD-59696|cache hit for key sku:651|retry=2|node=0|shard=2
+20260314T061428.388Z|web-05|inventory|F|ORD-99719|database connection pool exhausted
+20260314T061429.205Z|web-02|inventory|I|ORD-37157|user signed in|node=3|retry=4|attempt=1
+20260314T061429.977Z|web-05|inventory|I|-|user signed in|shard=2|attempt=0|retry=3
+20260314T061431.366Z|web-02|checkout|I|-|order created|attempt=1
+20260314T061431.525Z|web-04|cart|E|ORD-75597|payment declined: card expired|retry=1|attempt=2
+20260314T061432.481Z|web-05|auth|D|-|cache hit for key sku:607
+20260314T061433.639Z|web-02|search|F|ORD-64125|database connection pool exhausted
+20260314T061433.778Z|web-04|auth|I|ORD-73831|order created|shard=1|retry=1|attempt=4
+20260314T061433.837Z|web-02|search|D|ORD-27617|cache hit for key sku:40|node=2|retry=2
+20260314T061435.461Z|web-01|search|E|-|payment declined: card expired|retry=0|attempt=2|shard=5
+20260314T061435.555Z|web-04|search|D|ORD-19177|cache hit for key sku:946|retry=4|shard=1|node=4
+20260314T061436.762Z|web-03|cart|E|ORD-30899|upstream timeout after 737 ms
+20260314T061437.161Z|web-01|inventory|E|ORD-23986|payment declined: card expired|node=1|shard=0|attempt=1
+20260314T061437.637Z|web-03|search|E|-|upstream timeout after 1935 ms|retry=5
+20260314T061438.444Z|web-02|cart|W|ORD-80914|slow query took 6692 ms
+20260314T061439.709Z|web-04|cart|W|-|slow query took 5738 ms|retry=5|node=4|attempt=0
+20260314T061441.245Z|web-04|checkout|I|-|order created|node=1|shard=3
+20260314T061441.628Z|web-03|checkout|I|-|order created|shard=2|attempt=2
+20260314T061442.475Z|web-03|inventory|I|-|order created|node=1|attempt=1|retry=1
+20260314T061442.740Z|web-05|inventory|D|ORD-60531|cache hit for key sku:173|node=3
+20260314T061443.739Z|web-05|checkout|I|ORD-14856|order created|node=0
+20260314T061444.349Z|web-03|checkout|F|ORD-57009|database connection pool exhausted
+20260314T061444.888Z|web-03|auth|W|ORD-20036|slow query took 8081 ms
+20260314T061446.283Z|web-06|auth|I|ORD-59919|order created|retry=2|shard=3|attempt=4
+20260314T061447.334Z|web-02|cart|E|ORD-70355|payment declined: card expired|node=1|attempt=2|shard=5
+20260314T061447.806Z|web-03|checkout|I|ORD-10888|order created|shard=5|node=4|retry=4
+20260314T061448.075Z|web-05|checkout|F|ORD-20096|database connection pool exhausted|attempt=0
+20260314T061448.270Z|web-02|auth|I|-|order created
+20260314T061449.670Z|web-05|inventory|E|ORD-96158|upstream timeout after 5360 ms|retry=2|shard=1|node=3
+20260314T061451.378Z|web-02|auth|I|ORD-23498|order created
+20260314T061453.097Z|web-02|checkout|W|ORD-96465|slow query took 1464 ms
+20260314T061453.505Z|web-05|inventory|F|ORD-23273|database connection pool exhausted
+20260314T061453.789Z|web-03|inventory|I|ORD-11999|order created|shard=5
+20260314T061454.310Z|web-05|search|W|ORD-66378|slow query took 4706 ms|attempt=5
+20260314T061455.929Z|web-01|search|D|ORD-12074|cache hit for key sku:107|node=5|shard=3|retry=4
+20260314T061457.431Z|web-03|inventory|E|ORD-81544|payment declined: card expired
+20260314T061458.283Z|web-02|checkout|F|ORD-36324|database connection pool exhausted|node=1|shard=3|attempt=4
+20260314T061459.878Z|web-06|cart|I|ORD-69550|order created|node=4
+20260314T061459.902Z|web-06|inventory|W|ORD-91129|slow query took 7174 ms|node=2
+20260314T061501.756Z|web-06|auth|E|ORD-72800|upstream timeout after 5886 ms|shard=3
+20260314T061502.218Z|web-02|search|E|ORD-44661|upstream timeout after 7953 ms
+20260314T061502.614Z|web-05|cart|D|-|cache hit for key sku:31|attempt=5
+20260314T061504.297Z|web-03|search|F|ORD-87326|database connection pool exhausted
+20260314T061504.429Z|web-06|checkout|F|ORD-74963|database connection pool exhausted|shard=3|attempt=2|retry=0
+20260314T061506.345Z|web-02|search|I|ORD-55146|order created|retry=2|shard=4|attempt=1
+20260314T061507.347Z|web-04|checkout|E|ORD-84341|upstream timeout after 2824 ms
+20260314T061509.039Z|web-02|checkout|E|ORD-75506|payment declined: card expired
+20260314T061509.178Z|web-05|inventory|I|ORD-27918|order created|shard=2|retry=0
+20260314T061509.911Z|web-04|checkout|E|-|upstream timeout after 3972 ms|shard=1|attempt=2|node=4
+20260314T061510.565Z|web-04|cart|W|-|slow query took 4446 ms|shard=5
+20260314T061510.655Z|web-04|search|W|ORD-35487|slow query took 6900 ms|retry=5|attempt=5
+20260314T061512.382Z|web-04|checkout|I|ORD-90457|user signed in|shard=5|attempt=4|node=0
+20260314T061512.928Z|web-04|cart|E|ORD-33251|upstream timeout after 8929 ms|attempt=0
+20260314T061514.003Z|web-05|auth|E|ORD-85636|payment declined: card expired|shard=4
+20260314T061514.903Z|web-04|cart|D|ORD-56080|cache hit for key sku:823
+20260314T061516.154Z|web-06|checkout|W|ORD-56178|slow query took 5746 ms|attempt=0
+20260314T061516.608Z|web-01|cart|F|ORD-83516|database connection pool exhausted|attempt=0|shard=5
+20260314T061517.719Z|web-03|auth|I|-|order created|shard=3|attempt=1|node=4
+20260314T061519.042Z|web-06|checkout|I|ORD-98310|order created|node=1|shard=0|attempt=3
+20260314T061520.536Z|web-04|checkout|E|ORD-61794|upstream timeout after 8603 ms|attempt=3|retry=3|shard=4
+20260314T061521.688Z|web-05|checkout|E|ORD-63461|payment declined: card expired
+20260314T061522.229Z|web-04|cart|E|-|upstream timeout after 6190 ms|shard=5|retry=0|node=0
+20260314T061522.669Z|web-04|checkout|I|-|user signed in|node=5
+20260314T061523.044Z|web-05|checkout|W|ORD-73397|slow query took 8467 ms|retry=1
+20260314T061523.285Z|web-06|cart|F|-|database connection pool exhausted
+20260314T061523.736Z|web-01|search|D|ORD-45914|cache hit for key sku:55|node=0|retry=4|shard=0
+20260314T061524.200Z|web-04|auth|I|ORD-70363|order created|attempt=2
+20260314T061525.715Z|web-04|inventory|W|ORD-48695|slow query took 172 ms
+20260314T061526.776Z|web-06|search|E|ORD-59128|upstream timeout after 8891 ms
+20260314T061527.794Z|web-03|cart|E|ORD-11985|upstream timeout after 597 ms|node=1|retry=0
+20260314T061528.256Z|web-06|auth|F|ORD-91221|database connection pool exhausted|attempt=5|shard=1
+20260314T061529.574Z|web-04|cart|D|-|cache hit for key sku:982|shard=2|retry=1
+20260314T061530.156Z|web-01|checkout|E|ORD-80573|payment declined: card expired
+20260314T061531.181Z|web-02|auth|E|ORD-69235|payment declined: card expired
+20260314T061532.383Z|web-01|cart|W|ORD-47098|slow query took 4362 ms|node=3|shard=1|retry=3
+20260314T061533.051Z|web-06|auth|F|ORD-72916|database connection pool exhausted
+20260314T061533.730Z|web-03|inventory|E|ORD-79825|upstream timeout after 427 ms
+20260314T061535.285Z|web-01|checkout|D|-|cache hit for key sku:863|retry=1|node=3|shard=0
+20260314T061536.129Z|web-02|auth|I|ORD-16982|order created|retry=1
+20260314T061537.835Z|web-06|search|I|ORD-34569|user signed in|retry=2|attempt=3
+20260314T061539.516Z|web-03|inventory|F|ORD-26349|database connection pool exhausted|attempt=0|shard=3|retry=2
+20260314T061539.953Z|web-06|inventory|I|ORD-84899|order created|shard=2|retry=0|node=1
+20260314T061540.106Z|web-03|inventory|F|ORD-56646|database connection pool exhausted|node=1
+20260314T061541.042Z|web-01|auth|F|-|database connection pool exhausted|attempt=2|node=1
+20260314T061541.505Z|web-05|inventory|W|-|slow query took 8952 ms|retry=3|shard=5
+20260314T061543.467Z|web-05|auth|F|ORD-23619|database connection pool exhausted|node=4|retry=3
+20260314T061544.472Z|web-02|auth|E|-|payment declined: card expired
+20260314T061546.424Z|web-01|inventory|W|ORD-71089|slow query took 1030 ms|node=5
+20260314T061547.131Z|web-06|checkout|E|ORD-28361|payment declined: card expired|node=1|retry=5
+20260314T061548.789Z|web-05|checkout|I|-|user signed in
+20260314T061549.529Z|web-01|checkout|D|ORD-14799|cache hit for key sku:924|shard=2|attempt=5
+20260314T061550.626Z|web-01|auth|I|ORD-36739|user signed in
+20260314T061552.203Z|web-04|inventory|I|-|user signed in|node=4|shard=5
+20260314T061553.204Z|web-06|auth|W|-|slow query took 4195 ms|shard=4
+20260314T061554.035Z|web-01|cart|W|ORD-92581|slow query took 1788 ms|shard=2
+20260314T061554.775Z|web-01|auth|F|ORD-46501|database connection pool exhausted|node=5|retry=2|attempt=4
+20260314T061555.811Z|web-04|search|I|-|order created|attempt=2|shard=0|node=4
+20260314T061556.043Z|web-04|auth|D|ORD-33666|cache hit for key sku:300|retry=3
+20260314T061556.255Z|web-05|inventory|D|ORD-83721|cache hit for key sku:593|attempt=5|retry=4|shard=3
+20260314T061556.998Z|web-02|inventory|I|ORD-80273|order created|node=5
+20260314T061558.348Z|web-01|cart|W|ORD-38185|slow query took 8262 ms
+20260314T061559.341Z|web-01|checkout|W|ORD-12141|slow query took 2893 ms
+20260314T061600.520Z|web-06|search|I|ORD-39780|order created
+20260314T061601.144Z|web-04|checkout|D|ORD-79148|cache hit for key sku:415|attempt=3|shard=4|retry=1
+20260314T061603.014Z|web-06|auth|E|-|payment declined: card expired|node=4|retry=5|attempt=3
+20260314T061603.544Z|web-06|auth|I|ORD-88090|order created|shard=0
+20260314T061604.267Z|web-05|inventory|E|ORD-44077|upstream timeout after 2038 ms|shard=2
+20260314T061605.776Z|web-02|checkout|D|-|cache hit for key sku:839|attempt=5|shard=5|retry=2
+20260314T061606.753Z|web-02|checkout|W|-|slow query took 1732 ms|retry=1|shard=4
+20260314T061607.360Z|web-04|auth|W|-|slow query took 1282 ms|node=3|retry=1|shard=2
+20260314T061609.275Z|web-05|auth|F|ORD-74161|database connection pool exhausted|node=5
+20260314T061610.092Z|web-01|auth|E|-|upstream timeout after 8926 ms|retry=5|shard=3|node=3
+20260314T061610.749Z|web-03|cart|W|ORD-27533|slow query took 6587 ms|retry=2
+20260314T061611.214Z|web-06|checkout|D|-|cache hit for key sku:552|attempt=5|retry=1|shard=2
+20260314T061612.968Z|web-04|cart|F|ORD-64739|database connection pool exhausted
+20260314T061614.563Z|web-01|auth|F|-|database connection pool exhausted|retry=0|shard=3
+20260314T061615.229Z|web-05|auth|I|ORD-46259|user signed in|retry=3
+20260314T061615.828Z|web-01|cart|W|ORD-78919|slow query took 3352 ms|retry=3|shard=1
+20260314T061616.310Z|web-04|inventory|I|ORD-71449|user signed in|shard=3
+20260314T061617.918Z|web-05|auth|E|ORD-44160|payment declined: card expired|attempt=2|shard=4
+20260314T061619.788Z|web-03|search|E|ORD-23727|upstream timeout after 4506 ms
+20260314T061620.000Z|web-04|cart|F|-|database connection pool exhausted|node=1
+20260314T061620.861Z|web-05|inventory|F|-|database connection pool exhausted|attempt=1
+20260314T061621.617Z|web-05|inventory|D|ORD-18922|cache hit for key sku:940|node=1|attempt=4|shard=5
+20260314T061622.487Z|web-06|inventory|E|ORD-52703|upstream timeout after 6659 ms|shard=5|node=1
+20260314T061622.961Z|web-05|search|I|ORD-77812|user signed in|node=0
+20260314T061624.143Z|web-06|search|W|ORD-46569|slow query took 8434 ms|attempt=5
+20260314T061625.032Z|web-05|inventory|E|ORD-97179|payment declined: card expired|node=1|retry=3
+20260314T061625.518Z|web-01|search|W|ORD-44267|slow query took 6303 ms|node=4|attempt=3|shard=4
+20260314T061627.352Z|web-05|search|F|ORD-12887|database connection pool exhausted|node=4|attempt=0
+20260314T061628.861Z|web-05|cart|F|ORD-52279|database connection pool exhausted|shard=0
+20260314T061629.879Z|web-01|auth|F|ORD-95697|database connection pool exhausted|retry=1|node=2|shard=0
+20260314T061631.373Z|web-06|search|E|ORD-35575|payment declined: card expired|attempt=3|retry=5
+20260314T061631.486Z|web-04|checkout|I|ORD-75441|order created
+20260314T061633.382Z|web-04|cart|I|ORD-79874|user signed in|attempt=1
+20260314T061633.711Z|web-06|inventory|D|ORD-99026|cache hit for key sku:522
+20260314T061635.368Z|web-05|cart|E|ORD-48196|upstream timeout after 1737 ms|node=2
+20260314T061637.197Z|web-01|inventory|E|ORD-14610|payment declined: card expired|node=1
+20260314T061638.535Z|web-02|auth|D|ORD-26657|cache hit for key sku:132|shard=0|retry=4
+20260314T061639.179Z|web-05|search|D|ORD-63373|cache hit for key sku:507
+20260314T061640.058Z|web-04|auth|I|-|order created|shard=0
+20260314T061640.937Z|web-01|cart|I|-|order created
+20260314T061642.173Z|web-02|inventory|W|ORD-96903|slow query took 7200 ms
+20260314T061642.942Z|web-01|checkout|I|ORD-82018|user signed in
+20260314T061644.486Z|web-02|cart|W|ORD-32596|slow query took 1113 ms|node=2
+20260314T061645.406Z|web-02|inventory|I|ORD-43756|user signed in|retry=5|attempt=5|shard=3
+20260314T061647.238Z|web-05|auth|E|ORD-97708|upstream timeout after 5854 ms|shard=3
+20260314T061648.644Z|web-05|inventory|E|ORD-17334|upstream timeout after 7559 ms
+20260314T061650.161Z|web-01|auth|E|ORD-10324|payment declined: card expired|retry=4|attempt=2
+20260314T061650.651Z|web-05|search|W|ORD-52876|slow query took 3760 ms|retry=0|attempt=2|node=5
+20260314T061650.947Z|web-01|checkout|W|ORD-53064|slow query took 5601 ms|node=2|attempt=2|shard=5
+20260314T061651.337Z|web-06|inventory|D|-|cache hit for key sku:539
+20260314T061652.526Z|web-01|checkout|W|ORD-38470|slow query took 4440 ms|retry=2|shard=2
+20260314T061653.138Z|web-03|checkout|F|-|database connection pool exhausted|retry=2
+20260314T061654.800Z|web-06|inventory|D|-|cache hit for key sku:197
+20260314T061654.975Z|web-01|checkout|E|ORD-51842|payment declined: card expired|shard=2|attempt=1
+20260314T061655.616Z|web-03|auth|D|ORD-42995|cache hit for key sku:385|shard=1|retry=3|attempt=4
+20260314T061656.141Z|web-01|search|F|ORD-19092|database connection pool exhausted|node=0|attempt=3
+20260314T061656.698Z|web-01|inventory|D|ORD-72525|cache hit for key sku:663|shard=4|attempt=0
+20260314T061657.222Z|web-03|search|E|-|upstream timeout after 7913 ms|retry=0|shard=0|node=2
+20260314T061658.436Z|web-02|search|E|-|payment declined: card expired|attempt=3|retry=5
+20260314T061658.751Z|web-02|search|D|-|cache hit for key sku:715|shard=0|retry=3|node=3
+20260314T061659.152Z|web-04|cart|I|ORD-43046|user signed in|node=4|attempt=3
+20260314T061659.544Z|web-02|search|I|-|user signed in
+20260314T061700.924Z|web-02|inventory|W|ORD-15704|slow query took 2178 ms|attempt=1|shard=5
+20260314T061701.989Z|web-05|search|E|ORD-28735|payment declined: card expired|attempt=4|node=1
+20260314T061703.040Z|web-06|search|D|ORD-74733|cache hit for key sku:437|attempt=5|node=1|retry=5
+20260314T061704.374Z|web-03|checkout|E|ORD-84733|upstream timeout after 6556 ms
+20260314T061704.391Z|web-03|checkout|E|ORD-54126|payment declined: card expired|node=5
+20260314T061704.836Z|web-02|inventory|E|-|upstream timeout after 5803 ms|retry=2|node=0
+20260314T061706.567Z|web-05|cart|F|ORD-49508|database connection pool exhausted|retry=2|node=5|attempt=4
+20260314T061707.625Z|web-01|auth|I|-|order created
+20260314T061707.759Z|web-03|auth|I|ORD-25072|user signed in|retry=3
+20260314T061708.864Z|web-06|cart|E|ORD-41888|upstream timeout after 4946 ms|retry=0|shard=5|attempt=2
+20260314T061709.236Z|web-04|checkout|F|ORD-33483|database connection pool exhausted
+20260314T061710.618Z|web-03|auth|D|ORD-41846|cache hit for key sku:528|node=4|shard=2
+20260314T061712.138Z|web-01|cart|W|ORD-72517|slow query took 843 ms|node=1|attempt=0|shard=4
+20260314T061712.398Z|web-01|search|F|ORD-72177|database connection pool exhausted
+20260314T061712.582Z|web-02|checkout|W|ORD-98050|slow query took 6487 ms|attempt=5|shard=4
+20260314T061712.738Z|web-02|inventory|D|-|cache hit for key sku:661|shard=3|retry=3|node=1
+20260314T061714.240Z|web-05|auth|F|ORD-54473|database connection pool exhausted|node=0|retry=0
+20260314T061714.569Z|web-01|auth|I|ORD-88911|user signed in|attempt=2|retry=1
+20260314T061716.215Z|web-04|inventory|E|ORD-16578|upstream timeout after 6285 ms|node=3|retry=4|shard=3
+20260314T061716.488Z|web-02|cart|E|-|payment declined: card expired|node=5
+20260314T061718.163Z|web-05|auth|E|ORD-47233|payment declined: card expired|node=3|retry=2
+20260314T061718.504Z|web-04|inventory|E|ORD-88701|payment declined: card expired|node=1|attempt=3
+20260314T061719.379Z|web-05|checkout|E|-|payment declined: card expired|attempt=3|retry=0|shard=1
+20260314T061720.126Z|web-05|cart|I|ORD-36899|user signed in|attempt=5
+20260314T061721.717Z|web-05|auth|I|ORD-62263|order created
+20260314T061723.309Z|web-04|auth|E|-|upstream timeout after 5278 ms|attempt=4
+20260314T061724.771Z|web-01|auth|E|ORD-34808|upstream timeout after 5710 ms
+20260314T061726.169Z|web-06|inventory|I|ORD-46788|user signed in|retry=4|attempt=3|node=3
+20260314T061726.767Z|web-06|auth|E|ORD-45940|upstream timeout after 6574 ms
+20260314T061728.475Z|web-02|inventory|E|-|payment declined: card expired|retry=3|shard=0|attempt=2
+20260314T061729.805Z|web-06|cart|E|ORD-82463|upstream timeout after 8637 ms|node=0
+20260314T061731.506Z|web-04|checkout|D|-|cache hit for key sku:608|node=5|retry=3|attempt=3
+20260314T061731.942Z|web-05|inventory|E|ORD-78610|upstream timeout after 8647 ms|shard=3
+20260314T061733.768Z|web-01|checkout|F|-|database connection pool exhausted
+20260314T061735.511Z|web-03|search|W|ORD-63295|slow query took 4497 ms|shard=0|retry=3
+20260314T061736.282Z|web-01|search|F|-|database connection pool exhausted|attempt=1
+20260314T061736.619Z|web-06|inventory|E|-|upstream timeout after 8961 ms|retry=4|node=2
+20260314T061737.666Z|web-05|auth|D|ORD-88891|cache hit for key sku:424|attempt=2
+20260314T061738.585Z|web-03|cart|D|-|cache hit for key sku:182|attempt=4
+20260314T061738.901Z|web-05|checkout|D|ORD-11436|cache hit for key sku:117|node=0|attempt=3|retry=5
+20260314T061739.924Z|web-05|checkout|E|ORD-49751|payment declined: card expired|retry=4
+20260314T061740.120Z|web-02|search|D|ORD-66688|cache hit for key sku:687|retry=5
+20260314T061741.570Z|web-06|inventory|F|ORD-13426|database connection pool exhausted|node=3
+20260314T061742.969Z|web-01|search|I|ORD-67187|user signed in|node=1|shard=4
+20260314T061744.831Z|web-01|inventory|D|ORD-20182|cache hit for key sku:786
+20260314T061745.314Z|web-05|cart|E|ORD-30669|upstream timeout after 5947 ms|node=5
+20260314T061747.256Z|web-02|search|D|ORD-99886|cache hit for key sku:936|retry=2|node=3|attempt=3
+20260314T061747.365Z|web-03|auth|I|-|order created|retry=2
+20260314T061748.523Z|web-01|inventory|E|-|upstream timeout after 1623 ms|node=0|attempt=3
+20260314T061749.915Z|web-04|search|W|ORD-27032|slow query took 2464 ms|attempt=2
+20260314T061750.518Z|web-03|search|E|ORD-49918|payment declined: card expired|retry=0|node=3
+20260314T061752.283Z|web-02|auth|E|-|payment declined: card expired
+20260314T061752.625Z|web-05|search|D|-|cache hit for key sku:270|retry=4|node=3|attempt=0
+20260314T061753.529Z|web-04|cart|E|ORD-39657|upstream timeout after 259 ms|node=5|attempt=4|shard=0
+20260314T061755.137Z|web-02|cart|D|ORD-92723|cache hit for key sku:57
+20260314T061755.796Z|web-02|inventory|W|ORD-81978|slow query took 4458 ms|shard=4|attempt=0|retry=3
+20260314T061757.522Z|web-01|checkout|I|ORD-53223|user signed in|node=3|attempt=2|retry=1
+20260314T061758.834Z|web-02|checkout|F|ORD-16962|database connection pool exhausted|node=5|attempt=0|retry=3
+20260314T061759.664Z|web-01|inventory|F|-|database connection pool exhausted
+20260314T061800.938Z|web-05|checkout|W|ORD-32016|slow query took 5645 ms|attempt=0|node=5
+20260314T061802.916Z|web-05|inventory|I|ORD-92716|order created|retry=1
+20260314T061802.949Z|web-03|cart|I|ORD-21355|order created
+20260314T061803.076Z|web-06|cart|I|ORD-42226|order created|retry=2|node=5|attempt=3
+20260314T061804.981Z|web-02|cart|I|ORD-32553|order created|retry=0
+20260314T061806.513Z|web-03|auth|F|-|database connection pool exhausted
+20260314T061807.573Z|web-02|inventory|I|ORD-13091|user signed in|attempt=1|retry=5|shard=3
+20260314T061807.691Z|web-01|cart|E|-|upstream timeout after 2076 ms|node=2
+20260314T061809.599Z|web-05|auth|E|-|payment declined: card expired|shard=2|retry=2
+20260314T061810.809Z|web-02|auth|D|-|cache hit for key sku:707|retry=5|node=0
+20260314T061811.315Z|web-03|auth|W|ORD-34568|slow query took 3495 ms
+20260314T061812.993Z|web-04|cart|F|ORD-23127|database connection pool exhausted|node=0
+20260314T061814.978Z|web-01|checkout|W|-|slow query took 4780 ms|node=5|retry=1|attempt=0
+20260314T061815.848Z|web-05|auth|F|ORD-16479|database connection pool exhausted
+20260314T061817.771Z|web-06|auth|F|ORD-94149|database connection pool exhausted|retry=4|node=0
+20260314T061819.258Z|web-01|auth|I|-|user signed in|retry=2|shard=3|attempt=1
+20260314T061820.158Z|web-06|inventory|I|ORD-60551|order created|attempt=5
+20260314T061820.523Z|web-02|search|E|ORD-67064|payment declined: card expired|retry=2
+20260314T061821.417Z|web-05|search|W|-|slow query took 8899 ms|retry=5
+20260314T061823.012Z|web-06|checkout|E|ORD-93908|upstream timeout after 7585 ms
+20260314T061823.182Z|web-01|inventory|I|-|order created|node=5|attempt=3|retry=4
+20260314T061824.967Z|web-02|cart|F|ORD-19224|database connection pool exhausted|retry=0
+20260314T061826.728Z|web-02|checkout|E|ORD-57826|upstream timeout after 142 ms|attempt=1|retry=4
+20260314T061827.429Z|web-04|auth|D|ORD-52519|cache hit for key sku:763|shard=4
+20260314T061827.499Z|web-02|checkout|F|ORD-85449|database connection pool exhausted|node=2|shard=4|retry=5
+20260314T061828.262Z|web-05|cart|D|-|cache hit for key sku:208|attempt=0
+20260314T061828.273Z|web-01|search|F|ORD-89721|database connection pool exhausted|shard=3|attempt=4
+20260314T061829.732Z|web-01|search|E|-|payment declined: card expired|attempt=4|node=0|shard=5
+20260314T061831.465Z|web-03|cart|I|ORD-35500|order created
+20260314T061831.576Z|web-04|auth|W|-|slow query took 3396 ms|node=1|retry=0
+20260314T061832.768Z|web-01|auth|I|-|user signed in|attempt=4|shard=5|node=0
+20260314T061833.926Z|web-06|inventory|W|ORD-28206|slow query took 5079 ms|attempt=5
+20260314T061834.335Z|web-02|auth|D|-|cache hit for key sku:253|shard=0|node=3
+20260314T061834.561Z|web-04|cart|F|ORD-28519|database connection pool exhausted|retry=3|node=5|attempt=1
+20260314T061835.915Z|web-02|checkout|I|-|user signed in|shard=2
+20260314T061836.115Z|web-03|checkout|W|ORD-30751|slow query took 2136 ms
+20260314T061837.585Z|web-05|search|F|ORD-57368|database connection pool exhausted
+20260314T061839.331Z|web-05|checkout|E|-|upstream timeout after 3990 ms
+20260314T061841.193Z|web-01|checkout|F|-|database connection pool exhausted
+20260314T061841.358Z|web-05|auth|F|ORD-57754|database connection pool exhausted|shard=4
+20260314T061841.427Z|web-02|search|E|-|payment declined: card expired
+20260314T061842.178Z|web-02|inventory|D|ORD-98681|cache hit for key sku:830|attempt=2|shard=5|node=4
+20260314T061842.754Z|web-06|checkout|W|-|slow query took 7918 ms|shard=5|node=5|retry=4
+20260314T061843.503Z|web-02|auth|I|-|order created|retry=1|shard=0|node=2
+20260314T061844.581Z|web-05|search|E|ORD-46182|upstream timeout after 4885 ms
+20260314T061845.639Z|web-03|auth|E|ORD-18604|payment declined: card expired|attempt=3|shard=0|retry=0
+20260314T061846.045Z|web-03|cart|E|-|upstream timeout after 5034 ms|retry=2|node=3
+20260314T061846.259Z|web-03|search|F|ORD-97565|database connection pool exhausted|node=5|retry=3
+20260314T061847.155Z|web-06|inventory|I|ORD-88616|order created|shard=2|node=1|retry=1
+20260314T061847.301Z|web-06|search|I|ORD-64626|order created|retry=5|attempt=3
+20260314T061847.467Z|web-03|auth|W|-|slow query took 6325 ms|attempt=4|node=2|retry=5
+20260314T061849.357Z|web-03|inventory|F|ORD-91110|database connection pool exhausted|node=2
+20260314T061850.241Z|web-05|auth|I|-|order created|attempt=3|retry=0
+20260314T061851.854Z|web-02|auth|I|ORD-20700|order created
+20260314T061852.212Z|web-06|cart|W|ORD-35123|slow query took 5045 ms|shard=4|retry=2|attempt=2
+20260314T061853.959Z|web-05|auth|I|-|user signed in|attempt=4
+20260314T061854.291Z|web-02|checkout|F|ORD-82228|database connection pool exhausted|shard=0
+20260314T061854.489Z|web-04|cart|I|-|user signed in|node=4
+20260314T061856.432Z|web-02|inventory|I|ORD-41368|order created|retry=1
+20260314T061857.836Z|web-06|auth|F|-|database connection pool exhausted|retry=1|node=0
+20260314T061858.679Z|web-02|auth|E|ORD-39052|upstream timeout after 1767 ms|retry=5|attempt=5|shard=0
+20260314T061900.598Z|web-06|checkout|I|ORD-87185|user signed in|shard=2|attempt=2
+20260314T061901.689Z|web-03|checkout|I|ORD-23494|order created|retry=3
+20260314T061902.178Z|web-03|inventory|D|ORD-91668|cache hit for key sku:65|shard=2|node=0|retry=5
+20260314T061903.330Z|web-01|auth|E|-|payment declined: card expired
+20260314T061903.579Z|web-02|auth|E|ORD-17585|payment declined: card expired|retry=2|attempt=3|shard=3
+20260314T061904.452Z|web-03|cart|I|-|order created|retry=4
+20260314T061904.579Z|web-05|search|E|-|payment declined: card expired|attempt=2|shard=2|retry=3
+20260314T061905.602Z|web-04|checkout|F|ORD-18533|database connection pool exhausted|shard=4
+20260314T061906.423Z|web-04|cart|W|ORD-57605|slow query took 2550 ms
+20260314T061907.042Z|web-01|search|D|-|cache hit for key sku:265|attempt=0|shard=2
+20260314T061907.774Z|web-03|cart|E|-|payment declined: card expired|node=2
+20260314T061909.600Z|web-03|cart|E|-|payment declined: card expired|node=1|shard=2|retry=4
+20260314T061909.753Z|web-03|inventory|I|ORD-70451|order created
+20260314T061910.365Z|web-06|inventory|W|ORD-39486|slow query took 8325 ms
+20260314T061911.883Z|web-02|cart|I|ORD-65824|user signed in|retry=2|node=5|shard=4
+20260314T061911.914Z|web-03|search|D|ORD-28042|cache hit for key sku:400|attempt=1|node=5|shard=5
+20260314T061913.432Z|web-03|cart|D|ORD-83501|cache hit for key sku:209|node=0|attempt=5
+20260314T061913.953Z|web-06|checkout|W|ORD-18562|slow query took 2458 ms
+20260314T061914.904Z|web-05|checkout|E|ORD-95119|payment declined: card expired|retry=1
+20260314T061915.221Z|web-06|inventory|E|ORD-44324|payment declined: card expired|retry=0
+20260314T061916.533Z|web-02|search|I|ORD-79641|order created
+20260314T061918.063Z|web-02|checkout|F|ORD-18539|database connection pool exhausted|retry=2
+20260314T061918.587Z|web-01|cart|E|ORD-37054|payment declined: card expired|retry=2
+20260314T061918.880Z|web-04|checkout|I|ORD-87757|order created|attempt=4|retry=0
+20260314T061919.576Z|web-02|inventory|I|-|order created
+20260314T061920.882Z|web-03|cart|I|ORD-32937|order created|node=3|attempt=3|retry=5
+20260314T061922.607Z|web-05|search|E|ORD-86752|upstream timeout after 3434 ms|node=0|attempt=1
+20260314T061923.087Z|web-02|checkout|E|ORD-95731|upstream timeout after 8134 ms|attempt=2
+20260314T061924.269Z|web-02|auth|E|ORD-34468|payment declined: card expired|node=2|retry=2
+20260314T061925.810Z|web-04|auth|I|ORD-66384|order created|attempt=1
+20260314T061927.349Z|web-04|cart|W|-|slow query took 6517 ms|shard=2
+20260314T061928.318Z|web-03|checkout|E|ORD-25635|payment declined: card expired|node=1
+20260314T061928.564Z|web-03|checkout|W|ORD-51358|slow query took 8089 ms|shard=3|attempt=1
+20260314T061928.701Z|web-02|inventory|E|ORD-41130|upstream timeout after 5571 ms
+20260314T061929.577Z|web-05|search|F|ORD-52674|database connection pool exhausted|node=3|retry=2
+20260314T061930.614Z|web-01|auth|I|-|order created|attempt=5|retry=0
+20260314T061931.542Z|web-03|auth|E|ORD-46972|payment declined: card expired|attempt=0|node=2|retry=2
+20260314T061933.361Z|web-04|cart|W|ORD-38183|slow query took 6911 ms
+20260314T061933.991Z|web-06|auth|D|ORD-46635|cache hit for key sku:257|attempt=3|node=2|retry=2
+20260314T061934.187Z|web-05|search|W|ORD-79051|slow query took 8965 ms
+20260314T061934.986Z|web-04|cart|I|ORD-47341|user signed in|retry=5
+20260314T061936.693Z|web-04|search|F|-|database connection pool exhausted
+20260314T061938.146Z|web-06|checkout|D|ORD-98704|cache hit for key sku:62
+20260314T061939.844Z|web-03|checkout|F|ORD-81017|database connection pool exhausted|shard=5|retry=0
+20260314T061941.612Z|web-01|checkout|E|-|upstream timeout after 7679 ms|attempt=1|node=5
+20260314T061943.349Z|web-06|cart|E|ORD-68517|payment declined: card expired|node=1
+20260314T061945.197Z|web-04|checkout|D|-|cache hit for key sku:244|attempt=3|node=1|retry=0
+20260314T061946.234Z|web-02|search|E|ORD-20108|upstream timeout after 6622 ms|retry=0|node=5
+20260314T061947.666Z|web-04|cart|F|-|database connection pool exhausted|node=0
+20260314T061948.421Z|web-05|search|W|ORD-59487|slow query took 5776 ms|shard=4|node=5|attempt=2
+20260314T061949.097Z|web-06|cart|D|-|cache hit for key sku:747|node=5|attempt=4|shard=1
+20260314T061950.804Z|web-05|checkout|E|-|payment declined: card expired|shard=2
+20260314T061950.911Z|web-03|cart|F|ORD-55908|database connection pool exhausted|node=4
+20260314T061951.646Z|web-06|cart|E|ORD-80498|upstream timeout after 3115 ms|retry=0
+20260314T061951.919Z|web-01|auth|D|-|cache hit for key sku:591|attempt=0
+20260314T061953.160Z|web-01|search|D|-|cache hit for key sku:408|attempt=5
+20260314T061954.535Z|web-02|checkout|I|ORD-51795|user signed in|shard=1|node=5
+20260314T061955.531Z|web-06|checkout|I|ORD-93962|order created
+20260314T061956.603Z|web-01|auth|I|ORD-43397|order created|attempt=0|shard=4|retry=2
+20260314T061957.776Z|web-03|checkout|I|-|order created|shard=4|retry=2
+20260314T061959.603Z|web-03|auth|I|ORD-48161|order created|attempt=1
+20260314T062001.297Z|web-01|auth|D|ORD-86496|cache hit for key sku:551|shard=0|retry=3
+20260314T062002.418Z|web-02|cart|E|ORD-13151|upstream timeout after 4046 ms
+20260314T062003.481Z|web-02|auth|E|ORD-97920|upstream timeout after 6588 ms|shard=0|attempt=0|node=0
+20260314T062004.915Z|web-02|auth|F|ORD-15465|database connection pool exhausted|shard=3
+20260314T062006.658Z|web-03|cart|I|-|user signed in|attempt=5
+20260314T062007.689Z|web-01|auth|I|ORD-22444|order created|shard=5
+20260314T062009.635Z|web-06|checkout|I|ORD-48436|order created|retry=1|shard=5
+20260314T062010.889Z|web-01|auth|E|ORD-66001|upstream timeout after 6414 ms|node=3|attempt=1|shard=4
+20260314T062011.795Z|web-04|cart|E|ORD-76759|upstream timeout after 3235 ms
+20260314T062012.760Z|web-06|inventory|W|-|slow query took 2586 ms
+20260314T062013.926Z|web-02|auth|W|ORD-47985|slow query took 7568 ms|retry=4|node=3
+20260314T062014.480Z|web-06|auth|E|-|payment declined: card expired
+20260314T062016.042Z|web-04|checkout|D|ORD-21561|cache hit for key sku:845|shard=1
+20260314T062016.947Z|web-05|cart|W|ORD-27957|slow query took 3951 ms|retry=5
+20260314T062017.557Z|web-04|inventory|E|-|upstream timeout after 3973 ms
+20260314T062019.204Z|web-04|auth|F|-|database connection pool exhausted|attempt=2|node=5|shard=3
+20260314T062020.438Z|web-01|search|I|ORD-27774|order created
+20260314T062022.295Z|web-04|auth|W|ORD-33684|slow query took 4023 ms|shard=5|node=4|attempt=4
+20260314T062023.601Z|web-01|checkout|I|ORD-72752|order created|node=2|retry=3|attempt=3
+20260314T062023.827Z|web-05|auth|I|-|user signed in
+20260314T062024.247Z|web-02|auth|F|ORD-40963|database connection pool exhausted|attempt=5|retry=1
+20260314T062026.027Z|web-04|cart|D|ORD-60246|cache hit for key sku:891
+20260314T062027.900Z|web-04|inventory|W|-|slow query took 3410 ms
+20260314T062028.970Z|web-02|auth|W|ORD-32782|slow query took 5822 ms|retry=0
+20260314T062029.363Z|web-03|auth|W|ORD-97797|slow query took 4656 ms|retry=0
+20260314T062029.980Z|web-04|inventory|I|ORD-43717|order created|attempt=3|retry=0|node=4
+20260314T062030.899Z|web-01|cart|F|ORD-19171|database connection pool exhausted|retry=4|shard=5|attempt=0
+20260314T062031.427Z|web-05|search|D|-|cache hit for key sku:834|shard=0|retry=2|node=0
+20260314T062031.694Z|web-01|inventory|I|ORD-33263|user signed in
+20260314T062031.847Z|web-01|search|F|ORD-78781|database connection pool exhausted|attempt=2|node=2|retry=1
+20260314T062032.879Z|web-05|cart|E|ORD-95413|upstream timeout after 2996 ms|retry=3
+20260314T062034.768Z|web-02|search|I|-|order created|shard=0
+20260314T062035.502Z|web-05|auth|F|-|database connection pool exhausted|retry=3|attempt=4|node=2
+20260314T062037.369Z|web-04|checkout|D|ORD-58476|cache hit for key sku:658|retry=4|attempt=2
+20260314T062039.198Z|web-06|search|F|ORD-24125|database connection pool exhausted
+20260314T062039.414Z|web-01|cart|I|-|user signed in|shard=2|retry=0|attempt=4
+20260314T062040.789Z|web-05|search|I|ORD-47152|user signed in|attempt=1|retry=2
+20260314T062041.870Z|web-03|cart|D|ORD-59680|cache hit for key sku:489|attempt=5|shard=2|node=5
+20260314T062042.740Z|web-04|checkout|I|-|order created|node=5|attempt=3
+20260314T062044.136Z|web-01|search|I|ORD-42821|order created|node=5|retry=5|shard=0
+20260314T062045.266Z|web-06|checkout|I|-|user signed in
+20260314T062045.531Z|web-03|checkout|I|-|user signed in|node=0|shard=3
+20260314T062047.155Z|web-01|auth|I|ORD-74231|user signed in
+20260314T062048.329Z|web-06|checkout|I|ORD-16623|user signed in|node=2
+20260314T062050.238Z|web-01|search|E|ORD-35560|upstream timeout after 8767 ms|attempt=4
+20260314T062051.287Z|web-01|checkout|D|ORD-45416|cache hit for key sku:785
+20260314T062053.286Z|web-01|auth|F|-|database connection pool exhausted|retry=1
+20260314T062054.515Z|web-05|checkout|F|ORD-72684|database connection pool exhausted|retry=1|shard=5
+20260314T062056.358Z|web-02|cart|I|ORD-30944|user signed in|node=1|retry=5
+20260314T062057.925Z|web-02|search|W|ORD-80297|slow query took 6404 ms
+20260314T062059.571Z|web-02|auth|E|-|payment declined: card expired|shard=1
+20260314T062100.182Z|web-01|cart|I|ORD-58721|order created
+20260314T062101.625Z|web-05|checkout|F|-|database connection pool exhausted|retry=3|shard=2|attempt=1
+20260314T062102.831Z|web-01|auth|I|ORD-18977|order created|shard=1|attempt=5
+20260314T062103.809Z|web-04|inventory|E|-|upstream timeout after 8594 ms
+20260314T062105.057Z|web-06|checkout|E|ORD-81461|upstream timeout after 914 ms
+20260314T062107.020Z|web-03|auth|W|ORD-76360|slow query took 8681 ms|shard=2|attempt=3|node=5
+20260314T062107.597Z|web-03|inventory|D|ORD-12446|cache hit for key sku:256|node=5
+20260314T062109.112Z|web-06|cart|E|ORD-71135|payment declined: card expired|attempt=1
+20260314T062110.940Z|web-03|search|E|-|payment declined: card expired|shard=2
+20260314T062112.336Z|web-06|checkout|E|ORD-86012|upstream timeout after 8877 ms
+20260314T062112.527Z|web-06|checkout|I|ORD-50369|order created
+20260314T062113.412Z|web-01|cart|D|ORD-15315|cache hit for key sku:593
+20260314T062113.565Z|web-05|search|E|ORD-33241|payment declined: card expired|retry=3
+20260314T062115.550Z|web-05|search|E|ORD-32889|payment declined: card expired|retry=1|node=5
+20260314T062116.587Z|web-05|inventory|D|ORD-30887|cache hit for key sku:685|attempt=0|retry=1
+20260314T062116.888Z|web-04|cart|I|-|user signed in
+20260314T062117.987Z|web-01|search|E|ORD-31964|payment declined: card expired|attempt=2
+20260314T062118.047Z|web-03|checkout|I|-|user signed in|retry=5|node=0|shard=1
+20260314T062119.743Z|web-02|auth|I|-|order created
+20260314T062121.177Z|web-02|auth|W|ORD-37390|slow query took 1415 ms|node=0|shard=2
+20260314T062123.052Z|web-05|inventory|E|-|upstream timeout after 4695 ms|node=2|shard=0|attempt=3
+20260314T062124.142Z|web-05|auth|E|-|upstream timeout after 6957 ms|node=1
+20260314T062124.280Z|web-01|inventory|W|-|slow query took 5955 ms|node=0|attempt=5
+20260314T062125.703Z|web-02|inventory|I|ORD-95250|order created|attempt=5
+20260314T062127.303Z|web-03|checkout|E|ORD-92292|payment declined: card expired|attempt=2|shard=1|node=3
+20260314T062128.772Z|web-06|cart|W|-|slow query took 1180 ms|shard=4
+20260314T062128.828Z|web-06|inventory|E|ORD-23383|payment declined: card expired|shard=0|attempt=0|node=3
+20260314T062130.258Z|web-04|checkout|E|ORD-73869|payment declined: card expired|node=1|shard=3|retry=3
+20260314T062131.481Z|web-05|inventory|I|-|order created|shard=3
+20260314T062133.076Z|web-06|inventory|F|ORD-14939|database connection pool exhausted|shard=4|attempt=3|retry=0
+20260314T062133.744Z|web-02|search|D|ORD-93181|cache hit for key sku:522|retry=1
+20260314T062134.506Z|web-05|search|F|-|database connection pool exhausted|node=3|shard=3
+20260314T062135.558Z|web-02|inventory|E|-|upstream timeout after 4797 ms|node=3|retry=1|attempt=0
+20260314T062136.587Z|web-04|checkout|W|ORD-13344|slow query took 4764 ms
+20260314T062136.912Z|web-02|inventory|W|-|slow query took 7422 ms|node=3|attempt=5|shard=3
+20260314T062137.958Z|web-01|cart|E|-|payment declined: card expired|attempt=1|node=0
+20260314T062139.907Z|web-04|inventory|E|-|payment declined: card expired
+20260314T062139.919Z|web-01|checkout|E|ORD-33316|upstream timeout after 8617 ms|retry=2|shard=0
+20260314T062140.894Z|web-05|inventory|I|ORD-16176|user signed in|shard=1|retry=5|attempt=0
+20260314T062141.104Z|web-04|auth|D|ORD-45839|cache hit for key sku:41|retry=1
+20260314T062142.963Z|web-02|inventory|D|ORD-24682|cache hit for key sku:738|node=5
+20260314T062143.473Z|web-06|auth|I|ORD-21555|order created|node=0
+20260314T062143.619Z|web-02|auth|E|ORD-43356|payment declined: card expired
+20260314T062144.454Z|web-02|cart|I|ORD-44399|user signed in|node=4
+20260314T062145.162Z|web-01|inventory|W|ORD-76626|slow query took 1155 ms|shard=1|node=1|retry=3
+20260314T062146.812Z|web-01|auth|F|ORD-94322|database connection pool exhausted|shard=0
+20260314T062147.960Z|web-04|inventory|E|ORD-78922|upstream timeout after 8063 ms|node=5|retry=0
+20260314T062149.361Z|web-01|auth|I|-|user signed in|retry=3|attempt=2
+20260314T062150.354Z|web-04|checkout|F|ORD-29829|database connection pool exhausted
+20260314T062151.446Z|web-05|auth|D|ORD-21632|cache hit for key sku:10|shard=5|node=1
+20260314T062152.776Z|web-03|auth|I|ORD-76656|order created
+20260314T062153.585Z|web-01|search|I|ORD-64351|order created|shard=3|attempt=3|retry=5
+20260314T062153.788Z|web-06|checkout|I|ORD-46416|user signed in|shard=3
+20260314T062155.533Z|web-06|checkout|F|ORD-11924|database connection pool exhausted|shard=1
+20260314T062155.829Z|web-04|inventory|E|-|upstream timeout after 483 ms|shard=4|node=4|retry=5
+20260314T062156.385Z|web-02|search|I|ORD-30730|user signed in|shard=3|node=5
+20260314T062158.008Z|web-05|auth|F|ORD-18558|database connection pool exhausted|shard=3|retry=4
+20260314T062158.929Z|web-06|auth|I|-|user signed in|attempt=1
+20260314T062200.562Z|web-01|inventory|F|-|database connection pool exhausted|attempt=3|shard=4|node=0
+20260314T062202.079Z|web-06|cart|D|ORD-89761|cache hit for key sku:317
+20260314T062202.526Z|web-03|auth|W|ORD-34495|slow query took 5855 ms|node=5
+20260314T062203.015Z|web-02|auth|I|-|order created|retry=4|node=0|shard=1
+20260314T062203.870Z|web-03|checkout|W|ORD-48819|slow query took 3161 ms|shard=5
+20260314T062204.038Z|web-01|cart|I|ORD-83117|order created
+20260314T062204.306Z|web-01|inventory|E|ORD-30125|payment declined: card expired
+20260314T062204.699Z|web-03|checkout|I|ORD-85958|user signed in|retry=5
+20260314T062205.649Z|web-02|inventory|I|-|user signed in|retry=1|attempt=5
+20260314T062206.633Z|web-02|search|D|-|cache hit for key sku:782|attempt=3|node=1|shard=2
+20260314T062207.224Z|web-03|checkout|W|-|slow query took 8337 ms|attempt=5
+20260314T062207.973Z|web-01|inventory|D|-|cache hit for key sku:348
+20260314T062209.768Z|web-01|auth|D|ORD-59505|cache hit for key sku:191|attempt=5
+20260314T062211.499Z|web-04|checkout|I|ORD-73076|order created|node=1
+20260314T062211.904Z|web-03|inventory|I|ORD-34648|user signed in|retry=0|attempt=0
+20260314T062212.601Z|web-05|cart|W|ORD-69515|slow query took 4861 ms|shard=5|attempt=4|retry=4
+20260314T062213.780Z|web-04|search|W|-|slow query took 615 ms|node=4|shard=3
+20260314T062215.057Z|web-06|checkout|E|ORD-82093|upstream timeout after 7772 ms|node=5|shard=1
+20260314T062216.545Z|web-04|cart|F|ORD-27147|database connection pool exhausted|attempt=5
+20260314T062217.901Z|web-03|cart|I|ORD-55822|order created|node=2|retry=3
+20260314T062218.170Z|web-02|auth|E|-|upstream timeout after 4545 ms|node=4
+20260314T062219.040Z|web-02|search|W|ORD-74272|slow query took 6898 ms
+20260314T062219.645Z|web-01|checkout|I|ORD-23966|order created
+20260314T062220.848Z|web-05|auth|I|ORD-15814|user signed in|retry=4|attempt=3|node=4
+20260314T062221.248Z|web-04|checkout|W|ORD-86150|slow query took 1002 ms
+20260314T062222.122Z|web-04|search|E|ORD-42377|upstream timeout after 7581 ms
+20260314T062222.966Z|web-05|checkout|F|ORD-40525|database connection pool exhausted|shard=2
+20260314T062223.402Z|web-03|cart|D|ORD-23086|cache hit for key sku:342|shard=2|retry=5|attempt=4
+20260314T062223.708Z|web-06|inventory|I|ORD-79013|user signed in|node=4|retry=4
+20260314T062225.434Z|web-04|auth|E|-|upstream timeout after 4393 ms
+20260314T062227.395Z|web-03|checkout|D|ORD-89161|cache hit for key sku:453|retry=3
+20260314T062229.318Z|web-01|search|F|ORD-45922|database connection pool exhausted
+20260314T062229.474Z|web-05|checkout|W|-|slow query took 2643 ms|shard=4|attempt=4|retry=3
+20260314T062231.414Z|web-01|inventory|D|ORD-62655|cache hit for key sku:153
+20260314T062232.036Z|web-04|search|E|-|upstream timeout after 614 ms|attempt=3|shard=4
+20260314T062233.968Z|web-05|checkout|E|-|payment declined: card expired|attempt=1|shard=4|node=5
+20260314T062234.422Z|web-03|search|I|ORD-83281|order created
+20260314T062235.512Z|web-05|search|I|ORD-10438|order created|attempt=4
+20260314T062235.715Z|web-06|auth|W|-|slow query took 2609 ms
+20260314T062237.031Z|web-05|cart|W|ORD-80016|slow query took 2957 ms
+20260314T062238.971Z|web-05|checkout|W|ORD-39883|slow query took 4728 ms|retry=3
+20260314T062240.690Z|web-01|search|F|ORD-68980|database connection pool exhausted|shard=4
+20260314T062242.255Z|web-02|checkout|E|-|payment declined: card expired
+20260314T062242.725Z|web-01|checkout|F|ORD-70105|database connection pool exhausted|attempt=1
+20260314T062244.306Z|web-03|inventory|E|ORD-63802|upstream timeout after 1479 ms|shard=3|attempt=0|retry=0
+20260314T062245.920Z|web-01|search|D|ORD-32088|cache hit for key sku:200|node=1
+20260314T062247.696Z|web-04|auth|I|-|order created|node=4|shard=4|retry=0
+20260314T062247.907Z|web-01|inventory|W|ORD-88547|slow query took 1957 ms|shard=5|retry=0|attempt=0
+20260314T062249.178Z|web-01|inventory|D|ORD-67590|cache hit for key sku:248
+20260314T062250.760Z|web-01|checkout|E|-|upstream timeout after 1195 ms|node=4|retry=5
+20260314T062251.756Z|web-06|auth|F|-|database connection pool exhausted|attempt=2|retry=4
+20260314T062251.990Z|web-01|search|D|-|cache hit for key sku:142|attempt=2|node=0|retry=0
+20260314T062253.685Z|web-05|search|W|ORD-60977|slow query took 1367 ms|retry=4
+20260314T062254.592Z|web-03|auth|F|ORD-69447|database connection pool exhausted|retry=4|node=2
+20260314T062256.457Z|web-01|search|F|ORD-41699|database connection pool exhausted|shard=4
+20260314T062257.420Z|web-06|search|E|-|payment declined: card expired|attempt=1|shard=4|retry=0
+20260314T062258.692Z|web-02|cart|E|ORD-95176|upstream timeout after 783 ms|retry=0|attempt=2
+20260314T062259.282Z|web-06|checkout|E|ORD-91120|upstream timeout after 5158 ms|node=5|retry=1|attempt=3
+20260314T062300.271Z|web-01|checkout|D|-|cache hit for key sku:81|shard=0|node=2|retry=1
+20260314T062301.589Z|web-03|cart|W|ORD-74805|slow query took 196 ms|node=4|retry=0|shard=1
+20260314T062302.025Z|web-05|checkout|D|-|cache hit for key sku:590|shard=2|node=1
+20260314T062302.290Z|web-05|search|W|ORD-34446|slow query took 3253 ms|retry=5|node=4
+20260314T062302.834Z|web-04|cart|E|ORD-96513|upstream timeout after 6981 ms|attempt=3
+20260314T062304.406Z|web-01|checkout|E|ORD-94200|payment declined: card expired|retry=0|shard=5
+20260314T062306.116Z|web-06|search|I|ORD-98297|order created|retry=5
+20260314T062307.492Z|web-04|checkout|D|ORD-49937|cache hit for key sku:161
+20260314T062308.612Z|web-06|inventory|F|-|database connection pool exhausted|retry=1
+20260314T062308.845Z|web-06|auth|E|ORD-94516|payment declined: card expired|shard=4
+20260314T062309.316Z|web-06|search|F|-|database connection pool exhausted|shard=5|retry=0
+20260314T062310.478Z|web-06|inventory|W|ORD-39527|slow query took 8146 ms|node=1
+20260314T062311.539Z|web-02|auth|I|ORD-70140|order created
+20260314T062312.047Z|web-03|search|F|ORD-52109|database connection pool exhausted|shard=3
+20260314T062312.992Z|web-01|inventory|E|ORD-60436|payment declined: card expired|retry=3|node=3|attempt=2
+20260314T062313.433Z|web-03|cart|E|ORD-45543|payment declined: card expired|node=3
+20260314T062313.849Z|web-01|inventory|E|ORD-12793|upstream timeout after 5048 ms
+20260314T062314.894Z|web-06|search|D|ORD-60114|cache hit for key sku:547|attempt=4|shard=0
+20260314T062315.384Z|web-04|checkout|D|ORD-82189|cache hit for key sku:599
+20260314T062316.294Z|web-04|cart|F|ORD-46432|database connection pool exhausted|attempt=5|retry=4
+20260314T062317.926Z|web-01|inventory|F|ORD-26919|database connection pool exhausted|attempt=4
+20260314T062318.317Z|web-01|auth|I|ORD-79328|user signed in|shard=4
+20260314T062318.779Z|web-02|cart|W|-|slow query took 7646 ms|attempt=5|node=4|shard=4
+20260314T062320.683Z|web-01|cart|W|ORD-62234|slow query took 1798 ms|attempt=1
+20260314T062321.811Z|web-01|search|W|ORD-71038|slow query took 5662 ms
+20260314T062323.757Z|web-02|search|E|ORD-42361|upstream timeout after 7482 ms|attempt=4|node=0
+20260314T062325.363Z|web-02|checkout|D|-|cache hit for key sku:504|retry=2|node=1|attempt=4
+20260314T062325.691Z|web-02|checkout|I|ORD-30307|order created|retry=3|node=3|attempt=1
+20260314T062326.084Z|web-06|auth|F|ORD-42471|database connection pool exhausted|shard=0|node=2
+20260314T062327.152Z|web-03|checkout|I|ORD-89792|user signed in|node=3|attempt=5
+20260314T062327.190Z|web-02|search|I|ORD-55464|user signed in|node=0
+20260314T062327.428Z|web-06|search|E|ORD-79239|payment declined: card expired
+20260314T062327.609Z|web-02|auth|I|-|order created|node=3|retry=1|attempt=2
+20260314T062327.710Z|web-05|auth|W|ORD-87631|slow query took 2663 ms|retry=4
+20260314T062329.447Z|web-03|auth|E|-|upstream timeout after 7539 ms|retry=3
+20260314T062330.878Z|web-04|inventory|W|ORD-15874|slow query took 6880 ms|attempt=5
+20260314T062331.229Z|web-06|cart|I|ORD-46687|user signed in|node=4|attempt=4
+20260314T062332.455Z|web-03|cart|W|-|slow query took 3670 ms|node=5|shard=2|retry=4
+20260314T062334.293Z|web-03|checkout|E|-|payment declined: card expired
+20260314T062336.199Z|web-05|inventory|E|ORD-84902|upstream timeout after 3460 ms|attempt=5|shard=0
+20260314T062336.271Z|web-04|auth|E|ORD-39273|payment declined: card expired
+20260314T062336.861Z|web-06|cart|D|ORD-95588|cache hit for key sku:887|attempt=3|shard=2|node=5
+20260314T062337.146Z|web-04|inventory|I|ORD-95801|order created
+20260314T062337.951Z|web-05|search|D|ORD-21991|cache hit for key sku:358|attempt=0|shard=4
+20260314T062339.620Z|web-05|search|D|ORD-13332|cache hit for key sku:912|retry=3|shard=2|attempt=3
+20260314T062339.963Z|web-03|inventory|F|-|database connection pool exhausted|retry=4|attempt=5
+20260314T062340.240Z|web-06|checkout|E|ORD-85348|payment declined: card expired|node=3
+20260314T062340.461Z|web-04|inventory|W|ORD-62730|slow query took 8667 ms|shard=4|retry=0|attempt=5
+20260314T062342.194Z|web-04|auth|I|-|order created
+20260314T062344.079Z|web-01|cart|E|-|upstream timeout after 5658 ms|attempt=0|shard=5
+20260314T062345.711Z|web-02|inventory|E|ORD-78437|payment declined: card expired|node=5|retry=4|attempt=4
+20260314T062347.437Z|web-05|cart|I|ORD-97952|user signed in
+20260314T062349.142Z|web-03|checkout|F|ORD-48804|database connection pool exhausted
+20260314T062349.590Z|web-02|auth|E|ORD-22285|upstream timeout after 8130 ms|node=5
+20260314T062350.256Z|web-03|inventory|I|ORD-40290|order created|retry=0|shard=0
+20260314T062351.469Z|web-05|cart|I|-|user signed in|retry=1|node=3
+20260314T062351.926Z|web-06|checkout|I|ORD-64692|user signed in|retry=0|node=0|shard=0
+20260314T062353.447Z|web-04|inventory|I|ORD-76388|user signed in|retry=4|node=4|attempt=1
+20260314T062355.283Z|web-03|checkout|D|ORD-88401|cache hit for key sku:579|retry=3|attempt=0|node=3
+20260314T062355.889Z|web-01|checkout|F|-|database connection pool exhausted|attempt=2|shard=0|node=2
+20260314T062357.104Z|web-03|checkout|F|ORD-19542|database connection pool exhausted|node=0|retry=3
+20260314T062358.873Z|web-02|auth|E|ORD-50684|upstream timeout after 5558 ms|shard=3
+20260314T062400.257Z|web-05|search|E|ORD-84406|payment declined: card expired|node=1
+20260314T062400.786Z|web-05|inventory|W|ORD-27973|slow query took 6578 ms|retry=2
+20260314T062401.434Z|web-02|auth|D|ORD-34628|cache hit for key sku:374|node=5
+20260314T062403.386Z|web-01|checkout|F|ORD-92213|database connection pool exhausted|shard=3
+20260314T062403.806Z|web-01|inventory|W|ORD-97005|slow query took 6759 ms
+20260314T062403.907Z|web-02|search|W|ORD-54792|slow query took 8742 ms|attempt=5|node=1|retry=0
+20260314T062403.953Z|web-04|cart|F|ORD-40063|database connection pool exhausted|attempt=0|node=4|retry=0
+20260314T062405.032Z|web-04|inventory|I|-|order created
+20260314T062405.368Z|web-06|search|E|-|upstream timeout after 5676 ms|node=1|retry=0
+20260314T062405.860Z|web-06|checkout|I|-|user signed in|shard=1|attempt=4
+20260314T062407.561Z|web-02|search|E|ORD-88282|payment declined: card expired
+20260314T062409.318Z|web-04|auth|W|ORD-15254|slow query took 8283 ms|attempt=5
+20260314T062410.085Z|web-04|checkout|F|ORD-47031|database connection pool exhausted|attempt=0|node=5
+20260314T062410.769Z|web-06|cart|I|-|user signed in|node=4|shard=4
+20260314T062410.959Z|web-03|inventory|D|ORD-49961|cache hit for key sku:297
+20260314T062411.856Z|web-02|auth|I|-|user signed in|shard=1|retry=5|attempt=5
+20260314T062412.095Z|web-03|checkout|I|-|order created|shard=3|retry=5
+20260314T062412.335Z|web-01|search|W|-|slow query took 4262 ms|attempt=3
+20260314T062413.088Z|web-03|checkout|I|-|user signed in|shard=4|retry=0
+20260314T062414.996Z|web-02|auth|F|-|database connection pool exhausted|node=5|attempt=1
+20260314T062416.349Z|web-06|search|F|ORD-32469|database connection pool exhausted|shard=0|retry=2
+20260314T062417.306Z|web-01|search|E|ORD-98952|upstream timeout after 4847 ms|attempt=0|retry=1|shard=3
+20260314T062417.685Z|web-05|cart|W|-|slow query took 6677 ms|shard=4
+20260314T062418.315Z|web-03|search|F|-|database connection pool exhausted
+20260314T062419.439Z|web-03|checkout|E|ORD-68659|upstream timeout after 2010 ms|retry=4|node=4
+20260314T062420.258Z|web-03|inventory|E|-|upstream timeout after 4266 ms
+20260314T062421.499Z|web-02|inventory|E|-|upstream timeout after 1308 ms|node=0
+20260314T062423.277Z|web-06|inventory|I|ORD-87041|order created
+20260314T062424.482Z|web-01|auth|W|ORD-96383|slow query took 5313 ms|retry=3
+20260314T062426.467Z|web-04|checkout|D|ORD-34936|cache hit for key sku:117|node=4|retry=0
+20260314T062427.409Z|web-05|auth|E|ORD-37015|payment declined: card expired|node=2|shard=2|retry=2
+20260314T062428.071Z|web-06|inventory|I|-|user signed in
+20260314T062428.466Z|web-03|search|W|-|slow query took 7421 ms|node=0|shard=5
+20260314T062429.043Z|web-04|cart|E|ORD-24507|payment declined: card expired|attempt=2|node=1
+20260314T062430.711Z|web-02|search|D|ORD-47813|cache hit for key sku:461
+20260314T062430.883Z|web-06|cart|D|ORD-11815|cache hit for key sku:583|shard=3|retry=1
+20260314T062432.684Z|web-01|inventory|E|ORD-81225|payment declined: card expired|retry=3|attempt=4|node=5
+20260314T062434.526Z|web-02|checkout|E|ORD-59807|upstream timeout after 5364 ms|node=1
+20260314T062435.173Z|web-02|cart|E|ORD-13096|payment declined: card expired
+20260314T062436.818Z|web-04|search|I|ORD-18315|user signed in|node=2
+20260314T062437.424Z|web-05|checkout|F|ORD-79006|database connection pool exhausted
+20260314T062438.153Z|web-04|inventory|E|ORD-90855|upstream timeout after 1907 ms|attempt=3|node=0
+20260314T062439.889Z|web-03|checkout|W|ORD-25771|slow query took 4040 ms|node=4|attempt=1
+20260314T062440.987Z|web-02|inventory|I|ORD-53388|user signed in|shard=3|attempt=4|retry=1
+20260314T062441.749Z|web-04|checkout|E|-|upstream timeout after 5625 ms|node=0|attempt=4|retry=4
+20260314T062442.799Z|web-06|cart|D|ORD-55677|cache hit for key sku:771|attempt=3|shard=0|retry=0
+20260314T062442.839Z|web-03|inventory|F|ORD-32457|database connection pool exhausted|attempt=1|retry=2
+20260314T062443.141Z|web-01|cart|F|ORD-65339|database connection pool exhausted
+20260314T062444.369Z|web-04|inventory|I|ORD-12789|user signed in|shard=2
+20260314T062445.705Z|web-05|checkout|D|-|cache hit for key sku:115
+20260314T062447.097Z|web-03|cart|D|ORD-93033|cache hit for key sku:167|shard=5
+20260314T062448.430Z|web-01|cart|I|-|user signed in
+20260314T062449.314Z|web-02|auth|D|-|cache hit for key sku:882|node=5|shard=2
+20260314T062449.776Z|web-03|checkout|D|-|cache hit for key sku:419
+20260314T062450.460Z|web-04|auth|I|ORD-45545|order created|attempt=0|node=0
+20260314T062451.895Z|web-02|search|W|-|slow query took 284 ms|attempt=0
+20260314T062452.968Z|web-03|auth|W|ORD-87771|slow query took 8620 ms|attempt=4
+20260314T062453.447Z|web-02|checkout|E|-|payment declined: card expired|retry=0|node=4
+20260314T062454.799Z|web-04|checkout|F|-|database connection pool exhausted|retry=2
+20260314T062456.012Z|web-03|search|W|-|slow query took 4227 ms|node=4
+20260314T062457.566Z|web-04|auth|W|-|slow query took 8004 ms|retry=4|attempt=3|shard=5
+20260314T062458.191Z|web-03|checkout|D|-|cache hit for key sku:953|node=4|shard=5|retry=0
+20260314T062459.885Z|web-03|search|I|-|order created|shard=3|attempt=3
+20260314T062501.171Z|web-05|auth|D|ORD-46136|cache hit for key sku:969
+20260314T062501.253Z|web-01|cart|E|ORD-39816|upstream timeout after 2353 ms|attempt=5
+20260314T062502.342Z|web-03|checkout|E|-|payment declined: card expired|attempt=2
+20260314T062503.262Z|web-02|inventory|F|ORD-26050|database connection pool exhausted
+20260314T062504.164Z|web-04|inventory|D|ORD-15074|cache hit for key sku:473
+20260314T062506.015Z|web-03|cart|W|-|slow query took 7825 ms|attempt=1
+20260314T062506.715Z|web-04|checkout|W|-|slow query took 7258 ms|shard=5
+20260314T062507.609Z|web-04|inventory|I|ORD-42581|order created|retry=3|node=2|shard=5
+20260314T062509.191Z|web-01|inventory|I|ORD-32760|user signed in
+20260314T062510.015Z|web-01|checkout|I|ORD-23604|order created|retry=0|shard=0|attempt=5
+20260314T062510.737Z|web-03|search|I|ORD-16677|user signed in|shard=5|node=1
+20260314T062512.175Z|web-06|search|I|ORD-23165|order created|shard=0
+20260314T062513.708Z|web-02|search|I|-|order created
+20260314T062515.060Z|web-01|auth|E|-|payment declined: card expired|attempt=2|node=2
+20260314T062516.467Z|web-01|inventory|I|ORD-56513|user signed in|shard=0|node=5|attempt=4
+20260314T062516.979Z|web-06|checkout|I|-|order created|retry=2|node=1
+20260314T062518.117Z|web-03|inventory|I|ORD-18972|order created|attempt=3
+20260314T062519.431Z|web-04|auth|E|ORD-11632|upstream timeout after 6155 ms
+20260314T062520.153Z|web-05|inventory|E|ORD-37006|upstream timeout after 1339 ms|retry=0|attempt=3
+20260314T062521.267Z|web-02|checkout|F|ORD-85870|database connection pool exhausted|retry=0|attempt=0|shard=4
+20260314T062523.152Z|web-02|auth|I|-|order created|attempt=4|shard=1
+20260314T062523.974Z|web-02|search|F|ORD-80440|database connection pool exhausted|attempt=3|shard=3|node=4
+20260314T062525.835Z|web-02|auth|E|-|upstream timeout after 5025 ms|retry=5
+20260314T062526.629Z|web-04|auth|W|ORD-28386|slow query took 3683 ms
+20260314T062527.488Z|web-05|search|W|-|slow query took 1996 ms|attempt=2
+20260314T062528.488Z|web-03|checkout|I|ORD-66824|user signed in|attempt=0|shard=3
+20260314T062529.776Z|web-04|checkout|W|-|slow query took 7906 ms|shard=4|node=5|retry=2
+20260314T062530.975Z|web-02|inventory|F|ORD-27287|database connection pool exhausted|node=4|shard=5
+20260314T062531.131Z|web-01|auth|E|-|upstream timeout after 7582 ms
+20260314T062532.090Z|web-03|auth|E|ORD-74778|payment declined: card expired|node=0|retry=4
+20260314T062533.501Z|web-02|inventory|D|-|cache hit for key sku:113
+20260314T062534.313Z|web-06|checkout|E|-|upstream timeout after 7638 ms
+20260314T062535.189Z|web-05|search|F|-|database connection pool exhausted
+20260314T062536.432Z|web-05|checkout|I|-|user signed in
+20260314T062537.363Z|web-02|inventory|D|-|cache hit for key sku:357|node=4|attempt=0
+20260314T062539.109Z|web-04|cart|E|ORD-51387|upstream timeout after 8805 ms
+20260314T062540.133Z|web-01|inventory|E|-|upstream timeout after 215 ms|shard=2|attempt=0|retry=4
+20260314T062541.023Z|web-05|checkout|W|-|slow query took 7230 ms|node=5
+20260314T062541.292Z|web-02|checkout|I|ORD-93878|order created|node=1|shard=3|attempt=2
+20260314T062541.861Z|web-02|search|D|ORD-87158|cache hit for key sku:664|retry=0|attempt=0
+20260314T062542.546Z|web-06|checkout|D|ORD-83088|cache hit for key sku:503|shard=3
+20260314T062543.550Z|web-05|auth|E|-|upstream timeout after 1099 ms
+20260314T062544.922Z|web-02|search|I|ORD-45178|user signed in|retry=3|node=0|shard=1
+20260314T062545.178Z|web-06|search|D|-|cache hit for key sku:236
+20260314T062545.720Z|web-06|search|E|ORD-67376|payment declined: card expired|node=1|attempt=0|retry=5
+20260314T062547.513Z|web-01|cart|D|ORD-57837|cache hit for key sku:116
+20260314T062547.784Z|web-01|cart|F|ORD-88743|database connection pool exhausted|shard=3|node=4
+20260314T062549.010Z|web-03|checkout|D|-|cache hit for key sku:181|attempt=5|retry=5
+20260314T062550.770Z|web-01|inventory|F|ORD-14857|database connection pool exhausted|node=1|retry=5
+20260314T062552.218Z|web-04|checkout|D|-|cache hit for key sku:680
+20260314T062553.878Z|web-02|checkout|W|ORD-79354|slow query took 8971 ms
+20260314T062555.400Z|web-02|checkout|F|ORD-31583|database connection pool exhausted|shard=4|attempt=5|node=3
+20260314T062555.423Z|web-06|auth|F|ORD-38542|database connection pool exhausted
+20260314T062556.334Z|web-05|cart|D|-|cache hit for key sku:811|shard=4|retry=1
+20260314T062557.508Z|web-04|checkout|E|-|upstream timeout after 1165 ms|attempt=2|shard=1|retry=4
+20260314T062558.835Z|web-02|auth|F|-|database connection pool exhausted|attempt=4|retry=4|shard=4
+20260314T062559.728Z|web-03|cart|E|ORD-83321|payment declined: card expired|node=5
+20260314T062601.647Z|web-03|cart|D|ORD-11422|cache hit for key sku:229
+20260314T062603.600Z|web-02|auth|E|ORD-13802|payment declined: card expired|node=2|retry=5
+20260314T062604.741Z|web-03|auth|F|ORD-27943|database connection pool exhausted
+20260314T062605.836Z|web-02|inventory|E|-|payment declined: card expired|node=0
+20260314T062607.147Z|web-06|inventory|I|ORD-61509|user signed in|node=4|retry=0|shard=3
+20260314T062607.922Z|web-04|cart|F|ORD-73079|database connection pool exhausted|attempt=2|node=0|retry=5
+20260314T062608.643Z|web-02|checkout|I|ORD-60682|order created|shard=4|retry=4
+20260314T062608.924Z|web-06|inventory|D|-|cache hit for key sku:905
+20260314T062609.300Z|web-04|inventory|D|-|cache hit for key sku:866|retry=1|attempt=3|node=3
+20260314T062611.235Z|web-05|cart|I|ORD-26215|user signed in|attempt=4|retry=5
+20260314T062612.967Z|web-06|search|W|-|slow query took 7649 ms|retry=5|attempt=3|shard=3
+20260314T062612.981Z|web-06|checkout|W|ORD-89398|slow query took 2747 ms|attempt=3|retry=4|node=3
+20260314T062613.349Z|web-02|inventory|W|ORD-78280|slow query took 8636 ms
+20260314T062614.847Z|web-05|cart|D|ORD-84398|cache hit for key sku:195|shard=5|retry=5
+20260314T062616.218Z|web-01|cart|F|ORD-99036|database connection pool exhausted|retry=1|attempt=0
+20260314T062616.870Z|web-03|search|I|-|user signed in
+20260314T062616.986Z|web-02|checkout|D|ORD-83192|cache hit for key sku:562|attempt=2|retry=2|node=3
+20260314T062617.571Z|web-04|inventory|E|-|payment declined: card expired
+20260314T062618.465Z|web-06|inventory|E|ORD-54586|payment declined: card expired|node=4|shard=3|retry=1
+20260314T062620.145Z|web-04|auth|W|ORD-19687|slow query took 6299 ms|node=0|shard=3|attempt=1
+20260314T062620.568Z|web-02|checkout|E|ORD-27260|upstream timeout after 1380 ms
+20260314T062620.980Z|web-01|cart|I|ORD-70056|order created|node=1
+20260314T062621.227Z|web-03|auth|F|ORD-50134|database connection pool exhausted|shard=3
+20260314T062621.810Z|web-02|checkout|W|ORD-85640|slow query took 1351 ms
+20260314T062622.871Z|web-03|auth|E|ORD-79761|payment declined: card expired|shard=2|retry=4
+20260314T062623.332Z|web-06|checkout|W|ORD-35851|slow query took 5502 ms
+20260314T062624.001Z|web-03|checkout|I|ORD-63428|order created|node=0
+20260314T062625.344Z|web-02|inventory|I|ORD-23340|order created|retry=0|node=1|attempt=5
+20260314T062625.499Z|web-01|auth|W|ORD-66267|slow query took 4843 ms|shard=2
+20260314T062626.545Z|web-03|search|E|ORD-17761|payment declined: card expired
+20260314T062627.848Z|web-06|cart|W|-|slow query took 6246 ms|node=3|shard=3|attempt=3
+20260314T062629.605Z|web-01|inventory|F|ORD-91123|database connection pool exhausted|shard=0
+20260314T062630.673Z|web-02|inventory|W|ORD-97783|slow query took 7522 ms|retry=1
+20260314T062632.434Z|web-05|checkout|D|ORD-60671|cache hit for key sku:191|retry=3|node=2|shard=4
+20260314T062633.662Z|web-06|auth|E|ORD-14128|payment declined: card expired
+20260314T062634.016Z|web-04|auth|I|ORD-12717|user signed in
+20260314T062634.166Z|web-06|cart|D|ORD-95112|cache hit for key sku:619|shard=4|attempt=0
+20260314T062635.341Z|web-05|cart|E|-|upstream timeout after 1185 ms|shard=4|node=3
+20260314T062635.566Z|web-03|checkout|F|ORD-71322|database connection pool exhausted|shard=3
+20260314T062636.946Z|web-06|cart|I|ORD-44809|user signed in|attempt=1|retry=1|node=5
+20260314T062637.823Z|web-05|auth|W|ORD-77980|slow query took 5176 ms|attempt=5|shard=5
+20260314T062639.502Z|web-06|search|E|ORD-16882|payment declined: card expired
+20260314T062640.060Z|web-02|inventory|D|ORD-35838|cache hit for key sku:558|retry=4
+20260314T062640.656Z|web-01|checkout|I|ORD-52287|user signed in|attempt=3
+20260314T062641.134Z|web-03|checkout|I|ORD-96695|user signed in|retry=5
+20260314T062642.786Z|web-01|cart|E|-|upstream timeout after 5717 ms|node=0|retry=1|shard=1
+20260314T062644.067Z|web-04|auth|I|ORD-83056|order created|retry=1|attempt=3|node=2
+20260314T062645.173Z|web-06|checkout|D|-|cache hit for key sku:22|attempt=5|shard=2
+20260314T062645.281Z|web-04|cart|I|ORD-10712|user signed in|attempt=4|node=2|shard=5
+20260314T062646.771Z|web-04|inventory|D|-|cache hit for key sku:808
+20260314T062647.348Z|web-03|checkout|F|ORD-42527|database connection pool exhausted|shard=3
+20260314T062647.604Z|web-05|inventory|D|ORD-88588|cache hit for key sku:991|attempt=1
+20260314T062648.474Z|web-01|auth|F|ORD-14938|database connection pool exhausted|node=2
+20260314T062648.613Z|web-04|cart|W|ORD-44000|slow query took 2982 ms
+20260314T062649.230Z|web-05|auth|F|ORD-22348|database connection pool exhausted
+20260314T062650.012Z|web-06|cart|F|ORD-24670|database connection pool exhausted
+20260314T062650.572Z|web-06|checkout|E|ORD-59118|upstream timeout after 2098 ms|shard=3
+20260314T062652.249Z|web-06|auth|I|ORD-51373|user signed in
+20260314T062653.968Z|web-06|search|I|-|user signed in
+20260314T062654.433Z|web-04|inventory|W|ORD-99655|slow query took 5764 ms|shard=4|node=3
+20260314T062655.549Z|web-06|inventory|W|ORD-34893|slow query took 2118 ms|attempt=0
+20260314T062657.365Z|web-06|cart|I|ORD-38883|user signed in|shard=1
+20260314T062659.210Z|web-04|checkout|D|ORD-14999|cache hit for key sku:874
+20260314T062659.632Z|web-01|inventory|I|-|order created|retry=4
+20260314T062659.657Z|web-06|checkout|I|ORD-44238|order created
+20260314T062700.965Z|web-05|inventory|E|ORD-54484|payment declined: card expired|attempt=0|node=1|retry=3
+20260314T062702.892Z|web-05|cart|E|ORD-96136|payment declined: card expired|node=1
+20260314T062703.702Z|web-02|inventory|I|ORD-99837|order created
+20260314T062704.347Z|web-06|cart|F|ORD-38161|database connection pool exhausted|shard=3
+20260314T062704.971Z|web-03|cart|E|ORD-18032|upstream timeout after 6382 ms
+20260314T062705.814Z|web-05|checkout|F|-|database connection pool exhausted|shard=1|retry=0
+20260314T062707.603Z|web-03|inventory|E|-|payment declined: card expired|attempt=1|retry=1|shard=0
+20260314T062708.414Z|web-04|search|I|ORD-13728|user signed in|shard=4|attempt=5
+20260314T062709.735Z|web-06|search|I|-|order created|shard=1
+20260314T062710.992Z|web-05|auth|I|ORD-17302|order created|node=0|retry=4|shard=5
+20260314T062712.080Z|web-04|inventory|W|ORD-60936|slow query took 8527 ms|attempt=3
+20260314T062712.177Z|web-06|search|W|ORD-19969|slow query took 8925 ms
+20260314T062713.575Z|web-01|search|D|ORD-76670|cache hit for key sku:127|attempt=1|shard=5|node=1
+20260314T062715.438Z|web-05|inventory|E|-|payment declined: card expired|retry=3
+20260314T062716.634Z|web-02|auth|D|-|cache hit for key sku:85|attempt=3|node=0
+20260314T062717.079Z|web-03|cart|E|ORD-19920|upstream timeout after 4917 ms|attempt=5|node=0
+20260314T062717.988Z|web-02|inventory|I|ORD-10091|order created|attempt=3
+20260314T062718.512Z|web-06|auth|I|ORD-81203|order created
+20260314T062719.727Z|web-05|search|E|-|upstream timeout after 2889 ms|attempt=5|retry=3
+20260314T062720.862Z|web-05|cart|F|ORD-42528|database connection pool exhausted
+20260314T062721.858Z|web-04|checkout|I|ORD-20601|order created
+20260314T062722.485Z|web-06|auth|I|-|user signed in|retry=1
+20260314T062723.635Z|web-03|inventory|F|ORD-50396|database connection pool exhausted
+20260314T062725.417Z|web-05|auth|F|ORD-25686|database connection pool exhausted|retry=3|node=3|attempt=5
+20260314T062727.215Z|web-01|search|D|ORD-26351|cache hit for key sku:381
+20260314T062727.295Z|web-02|checkout|E|-|payment declined: card expired|node=1|attempt=4
+20260314T062727.844Z|web-05|auth|I|ORD-37922|user signed in
+20260314T062728.537Z|web-02|search|F|-|database connection pool exhausted|node=3
+20260314T062729.421Z|web-06|auth|F|ORD-83155|database connection pool exhausted
+20260314T062729.996Z|web-06|cart|I|-|order created|node=1
+20260314T062730.215Z|web-04|search|E|ORD-28625|payment declined: card expired|shard=1|node=0|attempt=1
+20260314T062731.308Z|web-04|auth|E|-|payment declined: card expired
+20260314T062731.861Z|web-04|checkout|F|-|database connection pool exhausted|attempt=5|retry=5
+20260314T062732.899Z|web-02|search|E|-|payment declined: card expired|shard=0|retry=1
+20260314T062734.854Z|web-03|auth|E|ORD-36794|upstream timeout after 5998 ms|attempt=3|shard=3|node=4
+20260314T062736.667Z|web-06|inventory|E|ORD-17078|upstream timeout after 5316 ms|attempt=5|retry=2
+20260314T062736.931Z|web-04|inventory|I|-|order created
+20260314T062737.224Z|web-03|cart|F|ORD-82264|database connection pool exhausted|node=4|shard=3|attempt=1
+20260314T062738.720Z|web-03|auth|D|ORD-53507|cache hit for key sku:990|retry=1
+20260314T062740.507Z|web-06|auth|W|-|slow query took 6100 ms|node=1|attempt=4|shard=2
+20260314T062741.556Z|web-02|search|E|ORD-92888|payment declined: card expired
+20260314T062742.904Z|web-01|cart|D|-|cache hit for key sku:73|shard=2
+20260314T062744.253Z|web-02|checkout|D|-|cache hit for key sku:131
+20260314T062745.862Z|web-04|inventory|D|ORD-84969|cache hit for key sku:447
+20260314T062746.018Z|web-03|search|I|ORD-95301|order created|retry=3|attempt=5
+20260314T062746.341Z|web-02|checkout|F|ORD-46262|database connection pool exhausted|attempt=5
+20260314T062748.184Z|web-04|search|I|-|user signed in|retry=2
+20260314T062749.565Z|web-05|auth|E|ORD-55560|upstream timeout after 204 ms|attempt=4|shard=5
+20260314T062751.173Z|web-05|auth|I|ORD-35458|user signed in|attempt=5
+20260314T062751.952Z|web-02|cart|D|ORD-44165|cache hit for key sku:297|node=2|shard=0|attempt=5
+20260314T062753.774Z|web-05|checkout|D|ORD-25206|cache hit for key sku:857|attempt=2|node=0
+20260314T062754.740Z|web-02|auth|D|ORD-62816|cache hit for key sku:928|shard=2
+20260314T062755.571Z|web-02|auth|W|-|slow query took 1125 ms|attempt=4
+20260314T062756.535Z|web-06|auth|F|-|database connection pool exhausted|retry=2|shard=5
+20260314T062757.025Z|web-03|auth|I|ORD-82137|user signed in|attempt=0|node=3|retry=1
+20260314T062757.399Z|web-04|inventory|I|ORD-55275|user signed in
+20260314T062758.743Z|web-05|checkout|F|-|database connection pool exhausted|attempt=5
+20260314T062759.176Z|web-05|auth|F|ORD-28160|database connection pool exhausted|retry=5|shard=2|node=0
+20260314T062759.992Z|web-03|inventory|I|-|user signed in|shard=3
+20260314T062801.943Z|web-06|checkout|E|ORD-93223|payment declined: card expired|attempt=5
+20260314T062802.396Z|web-05|cart|I|-|order created|node=4
+20260314T062802.957Z|web-01|checkout|D|-|cache hit for key sku:620|node=3|shard=2
+20260314T062804.187Z|web-06|auth|D|ORD-49958|cache hit for key sku:355|node=1|shard=5
+20260314T062805.522Z|web-02|search|D|ORD-60977|cache hit for key sku:649|shard=3|attempt=0|retry=3
+20260314T062806.277Z|web-03|auth|D|ORD-31815|cache hit for key sku:188
+20260314T062807.045Z|web-06|search|W|-|slow query took 4617 ms|attempt=0|node=1
+20260314T062808.014Z|web-06|search|E|-|payment declined: card expired|shard=1
+20260314T062809.352Z|web-05|cart|I|ORD-54018|user signed in|retry=4|shard=1
+20260314T062811.205Z|web-01|auth|E|ORD-38093|upstream timeout after 5528 ms|shard=3
+20260314T062811.496Z|web-01|search|I|-|order created
+20260314T062812.069Z|web-06|auth|I|ORD-36746|user signed in|node=3|attempt=2
+20260314T062813.000Z|web-06|checkout|E|-|upstream timeout after 8408 ms|attempt=3|shard=5
+20260314T062814.389Z|web-03|inventory|F|-|database connection pool exhausted|node=4|retry=1
+20260314T062815.250Z|web-05|cart|F|-|database connection pool exhausted|node=5|retry=1|attempt=3
+20260314T062816.661Z|web-05|inventory|E|ORD-45777|upstream timeout after 4741 ms|retry=2|node=1|attempt=4
+20260314T062817.396Z|web-04|checkout|D|ORD-76474|cache hit for key sku:915|attempt=3|retry=5
+20260314T062819.004Z|web-02|cart|D|ORD-21827|cache hit for key sku:527
+20260314T062819.578Z|web-04|checkout|W|ORD-15294|slow query took 1282 ms|attempt=3|node=2
+20260314T062819.639Z|web-04|checkout|E|ORD-31824|upstream timeout after 976 ms|attempt=1
+20260314T062821.448Z|web-03|search|E|ORD-15481|payment declined: card expired|attempt=2|retry=0
+20260314T062822.878Z|web-02|auth|I|ORD-69920|user signed in|node=2|shard=3
+20260314T062824.558Z|web-02|checkout|E|ORD-13019|payment declined: card expired|retry=2|shard=1|attempt=2
+20260314T062826.404Z|web-04|auth|I|ORD-63027|user signed in|retry=5|shard=4|node=4
+20260314T062828.401Z|web-03|checkout|W|ORD-88673|slow query took 6536 ms|attempt=3
+20260314T062828.537Z|web-06|search|I|ORD-79553|user signed in|attempt=1
+20260314T062829.999Z|web-02|checkout|I|ORD-25407|user signed in|attempt=5|shard=2|retry=0
+20260314T062831.235Z|web-04|auth|I|ORD-37028|order created
+20260314T062832.389Z|web-04|search|E|ORD-38580|payment declined: card expired|shard=2
+20260314T062832.571Z|web-03|inventory|I|ORD-33957|user signed in|retry=4
+20260314T062834.295Z|web-05|inventory|F|-|database connection pool exhausted|node=0
+20260314T062834.314Z|web-05|inventory|I|ORD-88716|user signed in|node=1
+20260314T062835.320Z|web-03|checkout|I|ORD-76337|order created|shard=2|attempt=1
+20260314T062837.071Z|web-03|inventory|W|-|slow query took 8398 ms
+20260314T062837.420Z|web-02|cart|I|-|order created|attempt=4
+20260314T062838.137Z|web-04|auth|F|-|database connection pool exhausted|attempt=3|shard=4
+20260314T062838.285Z|web-01|cart|E|ORD-41065|upstream timeout after 2160 ms|attempt=0|shard=5|retry=3
+20260314T062838.332Z|web-05|search|I|ORD-64393|user signed in
+20260314T062839.138Z|web-03|checkout|D|ORD-45364|cache hit for key sku:345
+20260314T062839.488Z|web-04|search|E|-|payment declined: card expired|retry=5
+20260314T062840.721Z|web-01|auth|F|ORD-60368|database connection pool exhausted|attempt=0|shard=2|node=4
+20260314T062842.298Z|web-05|cart|F|-|database connection pool exhausted|retry=2|shard=4|node=2
+20260314T062844.035Z|web-06|search|E|-|upstream timeout after 5221 ms|shard=1|retry=3|attempt=2
+20260314T062844.953Z|web-02|inventory|I|ORD-18709|user signed in|node=2|attempt=3
+20260314T062846.524Z|web-02|cart|E|ORD-89959|payment declined: card expired|node=3
+20260314T062847.885Z|web-04|cart|D|-|cache hit for key sku:271|retry=0
+20260314T062849.533Z|web-06|cart|D|ORD-34724|cache hit for key sku:371|attempt=1
+20260314T062850.875Z|web-04|checkout|E|-|payment declined: card expired
+20260314T062851.665Z|web-04|inventory|E|ORD-17468|upstream timeout after 7359 ms|shard=0|node=0|attempt=3
+20260314T062852.436Z|web-01|inventory|I|ORD-48444|order created|retry=2|node=3|attempt=0
+20260314T062852.816Z|web-06|search|F|ORD-54179|database connection pool exhausted|shard=3|attempt=3|node=3
+20260314T062854.788Z|web-06|inventory|E|ORD-57932|payment declined: card expired|attempt=2|node=0
+20260314T062854.853Z|web-01|search|I|ORD-84140|order created
+20260314T062856.783Z|web-04|cart|W|ORD-95244|slow query took 7970 ms|attempt=1|node=5
+20260314T062858.288Z|web-01|checkout|W|-|slow query took 3397 ms|attempt=5|node=3|retry=5
+20260314T062858.522Z|web-03|inventory|W|ORD-47888|slow query took 519 ms|node=4|shard=5
+20260314T062900.401Z|web-02|search|D|ORD-71386|cache hit for key sku:487|retry=0|shard=0|attempt=2
+20260314T062901.976Z|web-04|inventory|D|ORD-12461|cache hit for key sku:112|shard=4|node=3|attempt=0
+20260314T062903.752Z|web-03|auth|I|ORD-22993|order created|shard=3|attempt=2
+20260314T062905.204Z|web-03|cart|E|ORD-52846|payment declined: card expired|node=2|attempt=4
+20260314T062906.364Z|web-01|checkout|I|ORD-80262|user signed in|attempt=3|node=2|shard=2
+20260314T062906.459Z|web-04|cart|D|ORD-68325|cache hit for key sku:387|attempt=1|shard=4
+20260314T062907.921Z|web-03|inventory|W|ORD-91108|slow query took 2914 ms|retry=0|attempt=2
+20260314T062908.174Z|web-05|auth|W|ORD-44930|slow query took 2193 ms|retry=2|shard=2
+20260314T062908.386Z|web-05|cart|E|ORD-31903|upstream timeout after 4689 ms
+20260314T062910.114Z|web-01|auth|D|-|cache hit for key sku:674|attempt=1
+20260314T062911.097Z|web-06|checkout|F|-|database connection pool exhausted|retry=4|node=1|shard=0
+20260314T062912.077Z|web-04|checkout|E|ORD-84984|payment declined: card expired
+20260314T062913.841Z|web-04|auth|I|ORD-28577|user signed in|attempt=0|retry=4
+20260314T062914.933Z|web-02|auth|D|ORD-28486|cache hit for key sku:824|shard=4
+20260314T062915.988Z|web-03|checkout|I|ORD-64276|order created|attempt=0
+20260314T062916.748Z|web-04|auth|D|-|cache hit for key sku:621
+20260314T062918.103Z|web-02|auth|E|ORD-32116|upstream timeout after 2492 ms|shard=1|retry=0
+20260314T062918.357Z|web-05|search|I|ORD-90934|user signed in|node=2|shard=5|retry=0
+20260314T062920.188Z|web-01|search|I|ORD-13026|user signed in|attempt=0
+20260314T062920.815Z|web-01|auth|I|ORD-16619|user signed in|attempt=5|retry=5
+20260314T062922.671Z|web-06|auth|E|ORD-62476|payment declined: card expired
+20260314T062924.339Z|web-05|cart|E|-|upstream timeout after 5361 ms|attempt=4|node=4|shard=3
+20260314T062925.658Z|web-02|auth|I|ORD-94229|order created|retry=0|node=2|attempt=4
+20260314T062925.771Z|web-05|cart|E|ORD-65153|payment declined: card expired|shard=4
+20260314T062927.347Z|web-03|checkout|E|ORD-35027|payment declined: card expired|retry=2|attempt=3|node=5
+20260314T062928.922Z|web-02|cart|D|ORD-84693|cache hit for key sku:65|node=4|attempt=5|retry=5
+20260314T062928.989Z|web-05|auth|W|ORD-95654|slow query took 7232 ms|node=0|retry=0
+20260314T062929.540Z|web-04|inventory|D|ORD-26123|cache hit for key sku:716|attempt=1|node=4|shard=4
+20260314T062931.404Z|web-06|checkout|I|ORD-40823|order created
+20260314T062931.923Z|web-04|search|I|-|order created|node=5
+20260314T062932.067Z|web-02|checkout|I|-|user signed in
+20260314T062932.698Z|web-05|inventory|E|ORD-70820|payment declined: card expired
+20260314T062934.483Z|web-03|inventory|E|ORD-38254|payment declined: card expired|attempt=5|node=1|shard=0
+20260314T062935.787Z|web-03|cart|W|ORD-87624|slow query took 6174 ms|shard=0|attempt=4|retry=5
+20260314T062936.800Z|web-06|checkout|E|ORD-36932|payment declined: card expired|node=3
+20260314T062938.783Z|web-03|inventory|D|-|cache hit for key sku:315
+20260314T062938.887Z|web-05|cart|F|ORD-21927|database connection pool exhausted|shard=1|node=1
+20260314T062939.632Z|web-04|checkout|E|-|payment declined: card expired|attempt=3
+20260314T062940.976Z|web-01|inventory|E|ORD-29300|payment declined: card expired|node=5
+20260314T062942.579Z|web-01|inventory|W|ORD-18698|slow query took 8579 ms|retry=4|node=5|attempt=2
+20260314T062944.239Z|web-01|search|E|-|payment declined: card expired|attempt=0
+20260314T062944.255Z|web-04|inventory|E|ORD-94630|payment declined: card expired
+20260314T062945.370Z|web-06|inventory|E|-|payment declined: card expired|retry=0|node=0|shard=1
+20260314T062945.816Z|web-04|checkout|E|-|upstream timeout after 524 ms|node=0|attempt=5|shard=2
+20260314T062946.633Z|web-02|search|E|-|payment declined: card expired|shard=5
+20260314T062947.472Z|web-03|cart|W|ORD-29973|slow query took 4841 ms
+20260314T062948.408Z|web-04|cart|F|ORD-70879|database connection pool exhausted|shard=5|attempt=4
+20260314T062950.214Z|web-01|checkout|W|ORD-21689|slow query took 8080 ms|retry=5
+20260314T062951.319Z|web-05|cart|E|-|payment declined: card expired|attempt=4|node=4|shard=4
+20260314T062952.808Z|web-04|search|E|ORD-35042|payment declined: card expired|node=2|retry=1
+20260314T062952.990Z|web-04|cart|I|ORD-70004|user signed in|retry=0|shard=4
+20260314T062953.867Z|web-02|cart|F|ORD-42391|database connection pool exhausted
+20260314T062955.177Z|web-05|cart|D|ORD-73908|cache hit for key sku:938|shard=5|attempt=1
+20260314T062956.999Z|web-01|inventory|D|-|cache hit for key sku:282|shard=2|attempt=3
+20260314T062958.638Z|web-03|cart|I|-|order created|node=5|shard=4|retry=5
+20260314T062959.488Z|web-01|cart|I|ORD-45280|order created|shard=0|attempt=4|node=2
+20260314T063001.278Z|web-05|checkout|F|ORD-80402|database connection pool exhausted|attempt=4|node=3|retry=4
+20260314T063002.407Z|web-02|search|E|ORD-86619|upstream timeout after 5138 ms
+20260314T063003.640Z|web-03|checkout|W|ORD-94952|slow query took 6501 ms|node=1
+20260314T063004.124Z|web-02|checkout|E|ORD-86475|upstream timeout after 8428 ms|node=0
+20260314T063005.173Z|web-06|search|W|-|slow query took 943 ms|node=5|attempt=2
+20260314T063005.961Z|web-02|checkout|E|-|upstream timeout after 1739 ms|attempt=2|shard=1|retry=5
+20260314T063007.264Z|web-04|inventory|E|ORD-29023|upstream timeout after 5907 ms|retry=1
+20260314T063007.754Z|web-01|search|I|-|order created|node=0|shard=1
+20260314T063009.225Z|web-04|search|E|ORD-57741|payment declined: card expired|node=2|attempt=1|shard=3
+20260314T063010.825Z|web-01|search|E|-|payment declined: card expired
+20260314T063012.234Z|web-01|cart|D|ORD-47833|cache hit for key sku:862|shard=3|node=4|attempt=3
+20260314T063013.241Z|web-04|auth|E|ORD-67370|upstream timeout after 1599 ms|node=0|shard=3
+20260314T063014.178Z|web-01|checkout|E|-|payment declined: card expired|node=2
+20260314T063015.084Z|web-01|checkout|I|-|order created
+20260314T063015.786Z|web-02|checkout|I|-|user signed in|node=3|attempt=5|shard=2
+20260314T063016.810Z|web-03|auth|I|ORD-48919|order created|retry=3
+20260314T063018.160Z|web-06|inventory|F|ORD-62701|database connection pool exhausted|shard=2|attempt=5|retry=5
+20260314T063018.719Z|web-02|search|D|ORD-30899|cache hit for key sku:920|retry=4|shard=1
+20260314T063019.928Z|web-03|cart|W|ORD-67653|slow query took 6749 ms|shard=2|node=0
+20260314T063020.389Z|web-05|inventory|F|ORD-56317|database connection pool exhausted|node=2
+20260314T063021.017Z|web-02|cart|E|-|payment declined: card expired|retry=5
+20260314T063022.514Z|web-06|inventory|D|ORD-16656|cache hit for key sku:584|attempt=5|retry=5
+20260314T063023.678Z|web-03|cart|F|ORD-80140|database connection pool exhausted
+20260314T063024.750Z|web-06|auth|F|-|database connection pool exhausted
+20260314T063026.528Z|web-05|auth|F|ORD-88544|database connection pool exhausted|shard=0|node=1
+20260314T063027.331Z|web-02|search|E|ORD-33803|payment declined: card expired|attempt=5|shard=3|retry=5
+20260314T063028.088Z|web-03|search|I|ORD-87959|user signed in|shard=5|retry=1
+20260314T063029.155Z|web-01|auth|F|-|database connection pool exhausted|retry=1|attempt=5
+20260314T063029.432Z|web-02|inventory|E|ORD-69655|payment declined: card expired
+20260314T063030.072Z|web-02|auth|I|ORD-13659|order created
+20260314T063030.924Z|web-05|inventory|I|-|user signed in|attempt=2|node=0|shard=4
+20260314T063031.587Z|web-03|cart|F|ORD-80634|database connection pool exhausted|node=3
+20260314T063032.758Z|web-02|checkout|E|ORD-64656|payment declined: card expired|retry=2|attempt=2|shard=5
+20260314T063033.917Z|web-04|auth|I|ORD-71209|user signed in
+20260314T063035.037Z|web-04|checkout|I|ORD-72269|order created|retry=1|shard=5|node=0
+20260314T063037.009Z|web-04|cart|E|ORD-42515|upstream timeout after 5254 ms|shard=4|retry=2|attempt=4
+20260314T063038.427Z|web-03|inventory|W|ORD-28130|slow query took 8662 ms|node=5|retry=0
+20260314T063038.591Z|web-03|auth|D|ORD-85860|cache hit for key sku:574
+20260314T063039.852Z|web-05|checkout|D|ORD-77321|cache hit for key sku:160
+20260314T063040.227Z|web-03|inventory|F|-|database connection pool exhausted
+20260314T063042.006Z|web-02|checkout|I|-|user signed in
+20260314T063043.205Z|web-05|cart|D|ORD-84484|cache hit for key sku:601
+20260314T063043.981Z|web-04|checkout|I|-|order created|attempt=5
+20260314T063044.605Z|web-01|search|I|ORD-64544|order created|node=0
+20260314T063045.848Z|web-05|auth|F|-|database connection pool exhausted|retry=3
+20260314T063046.034Z|web-02|checkout|D|ORD-18004|cache hit for key sku:451|node=0|retry=3
+20260314T063047.134Z|web-01|cart|I|-|user signed in|node=5|shard=3|attempt=0
+20260314T063048.519Z|web-06|auth|D|ORD-82054|cache hit for key sku:730|attempt=1
+20260314T063049.744Z|web-02|checkout|I|ORD-97652|user signed in|node=5|attempt=0|retry=5
+20260314T063051.571Z|web-06|inventory|F|-|database connection pool exhausted|attempt=3
+20260314T063052.399Z|web-03|checkout|F|ORD-76325|database connection pool exhausted|retry=5
+20260314T063054.133Z|web-06|auth|F|-|database connection pool exhausted|node=4
+20260314T063054.267Z|web-01|inventory|E|ORD-19012|payment declined: card expired|attempt=4|node=5
+20260314T063054.720Z|web-06|inventory|E|ORD-47055|payment declined: card expired|node=3|shard=1
+20260314T063055.183Z|web-02|checkout|F|ORD-88777|database connection pool exhausted
+20260314T063056.715Z|web-02|cart|I|-|order created
+20260314T063058.401Z|web-01|cart|F|ORD-74423|database connection pool exhausted
+20260314T063100.148Z|web-04|cart|I|ORD-21940|order created
+20260314T063100.886Z|web-04|cart|D|-|cache hit for key sku:374|retry=4|attempt=2|shard=4
+20260314T063101.639Z|web-04|inventory|E|ORD-34682|payment declined: card expired|shard=0
+20260314T063102.923Z|web-01|search|E|ORD-26940|payment declined: card expired|attempt=4|shard=1
+20260314T063104.287Z|web-06|auth|W|ORD-85454|slow query took 5885 ms
+20260314T063105.094Z|web-02|auth|E|ORD-31640|upstream timeout after 5733 ms|retry=1|attempt=2
+20260314T063106.073Z|web-03|search|W|ORD-67060|slow query took 768 ms
+20260314T063106.866Z|web-06|auth|F|ORD-67877|database connection pool exhausted|node=4|retry=3|shard=0
+20260314T063108.267Z|web-05|cart|D|ORD-58421|cache hit for key sku:633|node=0
+20260314T063109.787Z|web-06|cart|F|ORD-87411|database connection pool exhausted|attempt=4|retry=1|shard=3
+20260314T063110.132Z|web-01|inventory|E|ORD-14606|payment declined: card expired
+20260314T063111.606Z|web-03|cart|W|ORD-89799|slow query took 8139 ms|node=1|attempt=1|retry=1
+20260314T063113.357Z|web-03|checkout|I|-|user signed in|node=2
+20260314T063113.416Z|web-01|checkout|E|-|payment declined: card expired|node=2|shard=2
+20260314T063114.826Z|web-01|cart|F|ORD-56285|database connection pool exhausted|shard=5|retry=5
+20260314T063116.392Z|web-06|inventory|E|-|payment declined: card expired|shard=3|retry=0|attempt=2
+20260314T063117.580Z|web-04|search|I|-|user signed in|attempt=5|shard=5|node=5
+20260314T063117.888Z|web-01|checkout|E|-|upstream timeout after 7133 ms|attempt=2|shard=3
+20260314T063118.122Z|web-02|cart|I|ORD-54015|order created|attempt=0
+20260314T063119.374Z|web-05|cart|D|ORD-68068|cache hit for key sku:902|shard=5
+20260314T063120.890Z|web-02|cart|W|ORD-88850|slow query took 8671 ms|node=2
+20260314T063120.996Z|web-01|cart|I|ORD-90103|user signed in|shard=1|retry=1
+20260314T063121.309Z|web-06|cart|I|-|user signed in|attempt=5
+20260314T063123.306Z|web-06|cart|D|-|cache hit for key sku:422|node=5|retry=1
+20260314T063125.019Z|web-06|auth|I|-|user signed in|retry=4
+20260314T063126.806Z|web-03|checkout|E|ORD-14277|payment declined: card expired|node=5|shard=5|attempt=4
+20260314T063128.124Z|web-06|auth|I|-|user signed in
+20260314T063129.906Z|web-02|auth|E|-|payment declined: card expired|attempt=3
+20260314T063129.927Z|web-02|search|E|ORD-95174|upstream timeout after 1714 ms|attempt=4|node=2|shard=0
+20260314T063131.668Z|web-03|search|W|ORD-47585|slow query took 8307 ms|node=2
+20260314T063132.508Z|web-05|inventory|I|ORD-33136|user signed in|shard=0
+20260314T063134.416Z|web-03|inventory|E|-|upstream timeout after 4886 ms|shard=4|attempt=0|node=1
+20260314T063135.635Z|web-04|cart|E|ORD-89832|upstream timeout after 4157 ms|attempt=1
+20260314T063137.091Z|web-06|search|F|-|database connection pool exhausted|shard=0|node=4|attempt=1
+20260314T063138.935Z|web-03|inventory|W|-|slow query took 8184 ms|retry=1|shard=5
+20260314T063139.571Z|web-04|auth|F|ORD-68336|database connection pool exhausted
+20260314T063140.465Z|web-03|auth|W|ORD-44659|slow query took 5443 ms|retry=4|node=1
+20260314T063141.424Z|web-06|search|D|ORD-67390|cache hit for key sku:828|attempt=2
+20260314T063142.105Z|web-05|inventory|F|ORD-83002|database connection pool exhausted|node=4|attempt=1|retry=1
+20260314T063143.714Z|web-01|auth|E|-|payment declined: card expired
+20260314T063144.977Z|web-04|inventory|I|ORD-23371|user signed in|node=1|shard=5|retry=0
+20260314T063146.257Z|web-04|inventory|I|ORD-16491|user signed in|node=2|shard=2
+20260314T063148.128Z|web-06|checkout|D|ORD-22006|cache hit for key sku:40|shard=4|node=0|attempt=0
+20260314T063148.266Z|web-05|auth|I|ORD-82854|order created|node=2
+20260314T063149.525Z|web-06|checkout|E|-|payment declined: card expired|attempt=4
+20260314T063150.613Z|web-02|checkout|E|ORD-47498|payment declined: card expired
+20260314T063151.625Z|web-04|search|W|ORD-99579|slow query took 3572 ms|attempt=0|node=2
+20260314T063153.404Z|web-05|search|D|-|cache hit for key sku:760|retry=3|attempt=5|shard=1
+20260314T063154.813Z|web-05|cart|W|ORD-40116|slow query took 407 ms|shard=0|retry=3|attempt=0
+20260314T063156.349Z|web-06|cart|F|ORD-36822|database connection pool exhausted|node=4
+20260314T063156.355Z|web-03|inventory|E|ORD-95470|upstream timeout after 3857 ms|node=1
+20260314T063157.902Z|web-06|auth|E|-|upstream timeout after 6836 ms|node=3
+20260314T063159.093Z|web-05|auth|I|-|user signed in|node=4|retry=5
+20260314T063159.622Z|web-01|auth|I|ORD-15843|user signed in|retry=0|node=0
+20260314T063201.096Z|web-01|auth|D|ORD-21683|cache hit for key sku:543|node=2
+20260314T063203.088Z|web-01|inventory|E|ORD-13596|payment declined: card expired
+20260314T063204.289Z|web-03|inventory|I|ORD-71641|order created|retry=2|shard=0|attempt=3
+20260314T063204.467Z|web-06|cart|D|ORD-10442|cache hit for key sku:227|shard=3
+20260314T063205.084Z|web-02|auth|I|ORD-12616|user signed in|retry=5
+20260314T063206.405Z|web-04|inventory|I|ORD-49963|user signed in|node=4|attempt=2
+20260314T063206.501Z|web-02|cart|I|ORD-18503|user signed in|retry=2|attempt=5|node=3
+20260314T063207.036Z|web-06|auth|I|ORD-49983|user signed in
+20260314T063207.394Z|web-02|inventory|I|-|user signed in|retry=4
+20260314T063208.850Z|web-03|auth|W|-|slow query took 1541 ms
+20260314T063210.687Z|web-03|auth|E|-|payment declined: card expired|retry=4|attempt=4
+20260314T063211.027Z|web-01|checkout|I|ORD-39668|user signed in|shard=5|retry=5
+20260314T063212.958Z|web-06|search|I|ORD-64993|user signed in|node=5
+20260314T063214.781Z|web-01|inventory|D|ORD-63711|cache hit for key sku:31|node=3
+20260314T063216.329Z|web-01|auth|E|ORD-89331|upstream timeout after 4222 ms
+20260314T063217.808Z|web-01|checkout|I|ORD-72585|order created|node=3|shard=0
+20260314T063218.310Z|web-05|inventory|E|ORD-72709|upstream timeout after 6457 ms|attempt=3|shard=3|node=3
+20260314T063219.382Z|web-04|auth|I|ORD-93460|user signed in|shard=2
+20260314T063219.566Z|web-04|auth|D|-|cache hit for key sku:159|retry=4
+20260314T063220.135Z|web-04|search|I|ORD-37910|order created|shard=3
+20260314T063221.146Z|web-06|search|W|ORD-13136|slow query took 7793 ms|attempt=5
+20260314T063223.049Z|web-03|auth|W|-|slow query took 7936 ms|shard=3|node=0
+20260314T063223.369Z|web-05|auth|E|ORD-59400|payment declined: card expired|node=2|attempt=5
+20260314T063224.081Z|web-03|search|I|ORD-63611|user signed in
+20260314T063225.933Z|web-04|checkout|E|ORD-75584|payment declined: card expired
+20260314T063226.852Z|web-03|auth|I|ORD-60026|user signed in|shard=2|attempt=2|retry=1
+20260314T063228.541Z|web-01|auth|I|ORD-22848|user signed in
+20260314T063229.929Z|web-01|inventory|E|ORD-17845|upstream timeout after 3874 ms|node=4
+20260314T063230.788Z|web-05|checkout|W|ORD-80106|slow query took 3506 ms|shard=4|attempt=0
+20260314T063230.887Z|web-03|search|E|ORD-32927|upstream timeout after 716 ms|retry=1
+20260314T063231.108Z|web-02|cart|E|ORD-94377|upstream timeout after 1037 ms|node=3
+20260314T063231.806Z|web-04|cart|I|ORD-67409|user signed in
+20260314T063232.347Z|web-05|checkout|I|-|order created|retry=2
+20260314T063233.058Z|web-05|auth|I|ORD-49131|user signed in
+20260314T063233.330Z|web-05|search|E|ORD-54161|upstream timeout after 1102 ms|retry=2|node=0
+20260314T063234.016Z|web-02|auth|E|-|upstream timeout after 3438 ms|attempt=2
+20260314T063235.899Z|web-05|search|W|ORD-90591|slow query took 2431 ms|attempt=2|node=3
+20260314T063237.164Z|web-05|auth|I|-|order created
+20260314T063237.751Z|web-01|checkout|E|ORD-66604|payment declined: card expired
+20260314T063239.254Z|web-02|auth|E|ORD-27625|upstream timeout after 3170 ms|retry=4|attempt=2
+20260314T063239.519Z|web-04|auth|E|ORD-50378|payment declined: card expired|attempt=5|node=4|shard=3
+20260314T063240.995Z|web-06|auth|I|-|order created
+20260314T063242.674Z|web-04|checkout|I|ORD-44868|order created|retry=5|shard=3|attempt=0
+20260314T063243.820Z|web-05|auth|W|ORD-21822|slow query took 3799 ms|retry=1|node=4|shard=4
+20260314T063243.931Z|web-04|checkout|I|ORD-18915|order created
+20260314T063244.856Z|web-01|checkout|E|ORD-81654|payment declined: card expired
+20260314T063246.709Z|web-02|checkout|E|ORD-66158|upstream timeout after 2055 ms|shard=3
+20260314T063247.586Z|web-06|cart|E|-|upstream timeout after 411 ms|retry=0|attempt=5
+20260314T063248.908Z|web-05|search|E|-|payment declined: card expired|shard=5|attempt=4|retry=5
+20260314T063249.984Z|web-04|inventory|D|-|cache hit for key sku:205|shard=4|attempt=4
+20260314T063251.939Z|web-06|inventory|W|-|slow query took 485 ms|node=2|retry=5
+20260314T063253.552Z|web-05|search|W|ORD-37896|slow query took 2412 ms|shard=5
+20260314T063254.694Z|web-06|auth|I|ORD-88177|user signed in|node=2|retry=1
+20260314T063255.153Z|web-01|auth|E|-|payment declined: card expired
+20260314T063255.615Z|web-03|inventory|F|ORD-52735|database connection pool exhausted
+20260314T063256.182Z|web-03|checkout|F|-|database connection pool exhausted|shard=1|retry=1|node=1
+20260314T063257.185Z|web-06|search|E|ORD-99251|upstream timeout after 4226 ms|attempt=3|retry=2
+20260314T063258.503Z|web-06|search|F|ORD-22788|database connection pool exhausted|retry=3|shard=0
+20260314T063259.410Z|web-02|auth|D|ORD-71063|cache hit for key sku:765
+20260314T063259.419Z|web-05|inventory|W|ORD-68288|slow query took 7415 ms|attempt=3|node=4|retry=0
+20260314T063301.123Z|web-02|checkout|E|ORD-86798|upstream timeout after 2869 ms|retry=2
+20260314T063302.622Z|web-01|checkout|E|ORD-82751|payment declined: card expired
+20260314T063304.012Z|web-02|auth|E|ORD-90645|payment declined: card expired|attempt=5|node=3
+20260314T063304.212Z|web-03|inventory|D|ORD-36462|cache hit for key sku:483|retry=2|shard=2
+20260314T063305.488Z|web-04|checkout|I|ORD-22490|user signed in|node=0
+20260314T063305.510Z|web-05|inventory|I|-|order created|node=2|shard=2
+20260314T063307.001Z|web-04|auth|I|-|order created|node=3|shard=4|attempt=5
+20260314T063308.605Z|web-03|inventory|F|ORD-31542|database connection pool exhausted|retry=1|shard=0|attempt=2
+20260314T063309.843Z|web-05|cart|I|ORD-56171|order created|retry=0|node=2
+20260314T063311.281Z|web-03|auth|I|ORD-13338|user signed in|attempt=3
+20260314T063312.266Z|web-03|auth|E|ORD-13814|upstream timeout after 2448 ms|retry=0|node=0
+20260314T063313.989Z|web-03|checkout|F|ORD-35262|database connection pool exhausted|attempt=5|retry=3|node=2
+20260314T063315.912Z|web-02|cart|F|ORD-91160|database connection pool exhausted|node=1|shard=1
+20260314T063317.873Z|web-06|search|I|ORD-85797|user signed in|attempt=3
+20260314T063319.752Z|web-01|search|W|-|slow query took 5156 ms|retry=2
+20260314T063321.558Z|web-04|inventory|I|-|order created|node=0|retry=0|shard=1
+20260314T063321.966Z|web-01|checkout|I|ORD-88581|user signed in
+20260314T063323.242Z|web-04|auth|E|ORD-91742|payment declined: card expired|node=2|attempt=4|retry=4
+20260314T063323.393Z|web-06|cart|D|ORD-33744|cache hit for key sku:114|attempt=1
+20260314T063324.370Z|web-01|auth|E|-|upstream timeout after 695 ms|attempt=0|retry=3
+20260314T063324.949Z|web-01|checkout|W|-|slow query took 3982 ms
+20260314T063326.004Z|web-05|checkout|F|-|database connection pool exhausted|node=1|retry=1
+20260314T063326.695Z|web-04|inventory|E|ORD-63624|upstream timeout after 5316 ms|attempt=3
+20260314T063327.039Z|web-03|inventory|W|ORD-53384|slow query took 1656 ms|attempt=5|node=0
+20260314T063327.470Z|web-01|auth|I|ORD-61854|order created|attempt=0|node=4
+20260314T063328.545Z|web-01|cart|F|-|database connection pool exhausted
+20260314T063328.789Z|web-02|cart|E|-|payment declined: card expired|attempt=5|node=4|retry=1
+20260314T063330.435Z|web-04|cart|I|ORD-58363|user signed in|node=1
+20260314T063331.063Z|web-04|cart|E|ORD-31974|upstream timeout after 5833 ms|attempt=1|retry=0|shard=4
+20260314T063332.962Z|web-02|auth|F|-|database connection pool exhausted
+20260314T063334.295Z|web-06|inventory|E|ORD-18561|upstream timeout after 573 ms|retry=5|node=2|attempt=5
+20260314T063335.668Z|web-05|inventory|I|ORD-49122|order created
+20260314T063336.758Z|web-01|inventory|W|ORD-91660|slow query took 3262 ms
+20260314T063337.244Z|web-03|auth|F|-|database connection pool exhausted|shard=4|node=1
+20260314T063338.849Z|web-06|checkout|I|ORD-88640|order created|attempt=2|retry=2
+20260314T063338.990Z|web-04|auth|F|ORD-45266|database connection pool exhausted
+20260314T063339.767Z|web-02|search|I|ORD-29170|user signed in|attempt=0
+20260314T063341.040Z|web-03|auth|E|ORD-18163|upstream timeout after 7795 ms|shard=2
+20260314T063341.725Z|web-03|cart|I|ORD-54101|order created|shard=3|attempt=5|node=1
+20260314T063343.488Z|web-05|inventory|W|ORD-26842|slow query took 8204 ms|attempt=5|shard=3
+20260314T063344.684Z|web-05|search|E|ORD-64547|payment declined: card expired
+20260314T063344.860Z|web-03|auth|D|ORD-39313|cache hit for key sku:638
+20260314T063345.195Z|web-01|cart|E|ORD-44570|upstream timeout after 1286 ms|attempt=1|node=4

@@ -24,6 +24,8 @@ class ParseOptions:
     masking_file: Path | None = None
     state_file: Path | None = None
     batch_rows: int = 10_000
+    formats_dirs: tuple[Path, ...] = ()
+    """User format plugin folders, later ones overriding earlier ones and built-ins."""
 
     def __post_init__(self) -> None:
         try:

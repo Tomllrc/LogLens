@@ -13,8 +13,13 @@ from rich.panel import Panel
 from rich.table import Table
 from rich.text import Text
 
-from loglens.cli.app import app, console, fail, spinner_for
-from loglens.pipeline import ParseOptions, ParseSummary, run_parse
+from loglens.ai.format_learner import learn_format
+from loglens.ai.llm import AIError, UsageTracker
+from loglens.cli import ai_cmd
+from loglens.cli.app import app, console, fail, settings_of, spinner_for
+from loglens.cli.formats_cmd import FormatsDirs, format_dirs
+from loglens.formats import cached_registry
+from loglens.pipeline import ParseOptions, ParseSummary, low_confidence_sources, run_parse
 from loglens.pipeline.options import DEFAULT_WORKERS
 from loglens.schema import LEVELS
 from loglens.store import StoreError, query
@@ -30,8 +35,42 @@ LEVEL_STYLES = {
 }
 
 
+MAX_LEARNED = 3
+"""Files learned per `parse --learn` run (each costs one or a few model calls)."""
+
+
+def _learn_formats(ctx: typer.Context, sources: list[str], yes: bool) -> bool:
+    """Run the AI learner on each source; True if at least one format was saved."""
+    settings = settings_of(ctx)
+    tracker = UsageTracker()
+    try:
+        client = ai_cmd.make_client(settings, tracker)
+    except AIError as error:
+        console().print(f"[red]{error}[/red]")
+        return False
+    saved = False
+    for source in sources:
+        console().print(f"[bold]Learning the format of {source}[/bold]")
+        try:
+            result = learn_format(
+                source,
+                client,
+                formats_dir=settings.formats_dir,
+                confirm=None if yes else ai_cmd.confirm_samples(settings),
+            )
+        except AIError as error:
+            console().print(f"[red]{error}[/red]")
+            continue
+        ai_cmd.show_learn_result(result)
+        saved = saved or result.path is not None
+    console().print(tracker.summary(settings.model))
+    cached_registry.cache_clear()
+    return saved
+
+
 @app.command()
 def parse(
+    ctx: typer.Context,
     paths: Annotated[
         list[Path], typer.Argument(help="Log files, folders, or archives; '-' reads stdin.")
     ],
@@ -58,6 +97,12 @@ def parse(
     masking: Annotated[
         Path | None, typer.Option("--masking", help="Variable masking rules (YAML).")
     ] = None,
+    formats_dir: FormatsDirs = None,
+    learn: Annotated[
+        bool,
+        typer.Option("--learn", help="Learn formats (AI) for files parsed with low confidence."),
+    ] = False,
+    yes: Annotated[bool, typer.Option("--yes", "-y", help="With --learn: do not ask.")] = False,
 ) -> None:
     """Parse logs into the unified event table (Parquet + DuckDB) and summarize them."""
     if output is None:
@@ -70,6 +115,7 @@ def parse(
             workers=workers,
             max_record_lines=max_record_lines,
             masking_file=masking,
+            formats_dirs=format_dirs(ctx, formats_dir),
         )
     except ValueError as error:
         raise fail(str(error)) from error
@@ -85,6 +131,20 @@ def parse(
     out.print(render_summary(summary))
     if not summary.files:
         raise typer.Exit(code=1)
+    candidates = low_confidence_sources(output)
+    if not candidates:
+        return
+    if not learn:
+        for source, events, confidence in candidates[:5]:
+            out.print(
+                f"[yellow]Low confidence[/yellow] ({confidence:.2f} over {events:,} events): "
+                f"{source}\n  teach LogLens this format: [bold]loglens learn {source}[/bold]"
+            )
+        return
+    if _learn_formats(ctx, [source for source, _, _ in candidates[:MAX_LEARNED]], yes):
+        out.print("[bold]Re-parsing with the learned formats...[/bold]")
+        summary = run_parse([str(p) for p in paths], output, options)
+        out.print(render_summary(summary))
 
 
 def render_summary(summary: ParseSummary) -> Group:

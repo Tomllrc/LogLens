@@ -93,7 +93,7 @@ Every event, from any source, has the same shape:
 | Parsers for 11 text formats declared in YAML: syslog, Apache/Nginx, log4j, Python, Go, journald, Windows events | ✅ Done |
 | Generic parser, variable masking, Drain template mining, normalization | ✅ Done |
 | Unified event table (Parquet + DuckDB), `loglens parse` and `loglens query` | ✅ Done |
-| AI-taught format plugins | Planned |
+| Format plugins (`loglens formats list/test/new`) and AI-taught formats (`loglens learn`) | ✅ Done |
 | Analysis: recurring issues, anomalies, incident reports | Planned |
 | AI investigator with cited answers | Planned |
 | CLI, HTTP API, web dashboard | Partial: `loglens detect` works |
@@ -141,6 +141,23 @@ $ loglens detect logs.tar.gz
 ```
 
 The archive, and the gzip file nested inside it, are opened transparently. `Details` shows what a format learned about the file (for CSV: `delimiter=tab, columns=4, header=no`). `Runner-up` shows the next-best candidate, so ambiguous files are easy to spot. Folders, several paths, and stdin (`-`) work too.
+
+### Teach LogLens a new format
+
+Any log layout can be added as a YAML plugin in `~/.loglens/formats/` (or a folder given with `--formats-dir`). User formats override built-in ones with the same name.
+
+```bash
+uv run loglens formats list                         # built-in and user formats, invalid plugins
+uv run loglens formats new --sample my.log          # wizard: write a regex, test it live, save
+uv run loglens formats test my_format.yaml my.log   # match rate, matched fields, misses
+```
+
+Or let a language model write the plugin. `loglens learn my.log` sends about 50 varied sample lines to Gemini in one call. It validates the proposed parser on up to 10,000 records, and retries with the lines it missed until it matches at least 95% (3 retries at most). It then saves the YAML with its provenance. `loglens parse --learn` does the same for every file it could only parse with low confidence.
+
+AI features need the optional extra (`uv sync --extra ai`) and a free [Gemini API key](https://aistudio.google.com/apikey) in a `.env` file (copy [`.env.example`](.env.example); `.env` is git-ignored). `loglens doctor` checks the setup without ever printing the key. Every command prints the tokens it used. Answers are cached, so re-running a command costs nothing.
+
+> [!WARNING]
+> **Privacy.** AI commands send log samples to Google. On the free tier, Google may use prompts and responses to improve its products. Only send logs you are allowed to share. `--no-ai`, `LOGLENS_AI=0`, or `ai: false` in `~/.loglens/config.yaml` turns every AI feature off, and everything else works without it.
 
 ### Use the pipeline from Python
 

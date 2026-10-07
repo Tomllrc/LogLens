@@ -1,0 +1,2000 @@
+14.03.26 06:00:08,063  ET200SP/IM155  FLT 0903  Safety relay K6 tripped, line 6 stopped
+    > input I4.0 = FALSE
+    > last OK cycle: 105 ms ago
+14.03.26 06:00:15,758  ET200SP/IM155  ACK 0099  Alarm 977 acknowledged by operator 7
+14.03.26 06:00:23,827  S7-1200/PLC_Press  ACK 0101  Alarm 865 acknowledged by operator 5
+14.03.26 06:00:24,092  S7-1200/PLC_Press  WRN 0020  Filter 5 differential pressure high: 2.3 mbar
+14.03.26 06:00:30,619  S7-1500/CPU2  ALM 0057  Pressure on press 3 above limit: 52.9 bar
+14.03.26 06:00:38,540  S7-1500/CPU2  WRN 0019  Filter 1 differential pressure high: 57.3 mbar
+14.03.26 06:00:44,328  S7-1200/PLC_Press  WRN 0019  Filter 5 differential pressure high: 17.2 mbar
+14.03.26 06:00:44,616  S7-1500/CPU2  ALM 0045  Conveyor 2 motor overcurrent: 43.8 A
+14.03.26 06:00:52,458  ET200SP/IM155  INF 0001  Batch 5761 started on line 1
+14.03.26 06:01:01,204  S7-1500/CPU1  ACK 0099  Alarm 46 acknowledged by operator 8
+14.03.26 06:01:06,127  S7-1200/PLC_Press  INF 0001  Batch 4468 started on line 8
+14.03.26 06:01:12,666  S7-1500/CPU2  WRN 0020  Filter 1 differential pressure high: 42.1 mbar
+14.03.26 06:01:15,698  S7-1500/CPU2  ALM 0043  Conveyor 4 motor overcurrent: 94.6 A
+14.03.26 06:01:16,218  S7-1200/PLC_Press  INF 0005  Recipe R-620 loaded on station 8
+14.03.26 06:01:16,812  S7-1500/CPU1  ACK 0101  Alarm 105 acknowledged by operator 5
+14.03.26 06:01:22,789  S7-1500/CPU2  WRN 0013  Cycle time 330 ms exceeds target on station 4
+14.03.26 06:01:24,003  S7-1500/CPU1  INF 0008  Recipe R-165 loaded on station 6
+14.03.26 06:01:27,890  S7-1200/PLC_Press  WRN 0019  Filter 6 differential pressure high: 25.7 mbar
+14.03.26 06:01:32,795  S7-1200/PLC_Press  INF 0005  Recipe R-742 loaded on station 1
+14.03.26 06:01:38,012  S7-1200/PLC_Press  INF 0003  Batch 966 started on line 6
+14.03.26 06:01:39,601  S7-1200/PLC_Press  ALM 0064  Hydraulic oil temperature 63 C on unit 2
+14.03.26 06:01:41,867  S7-1200/PLC_Press  WRN 0014  Cycle time 4180 ms exceeds target on station 1
+14.03.26 06:01:49,443  S7-1200/PLC_Press  ALM 0043  Conveyor 5 motor overcurrent: 19.9 A
+14.03.26 06:01:53,198  S7-1200/PLC_Press  ALM 0064  Hydraulic oil temperature 17 C on unit 1
+14.03.26 06:01:58,049  S7-1500/CPU1  WRN 0018  Filter 5 differential pressure high: 44.5 mbar
+14.03.26 06:02:03,818  S7-1200/PLC_Press  INF 0004  Batch 8234 started on line 4
+14.03.26 06:02:09,657  S7-1500/CPU2  INF 0008  Recipe R-853 loaded on station 7
+14.03.26 06:02:18,071  S7-1200/PLC_Press  INF 0004  Operator login at HMI 5
+14.03.26 06:02:23,309  S7-1500/CPU2  FLT 0901  Safety relay K5 tripped, line 5 stopped
+    > input I5.7 = FALSE
+    > last OK cycle: 605 ms ago
+14.03.26 06:02:29,041  S7-1500/CPU1  INF 0003  Batch 7217 started on line 7
+14.03.26 06:02:31,845  S7-1500/CPU1  INF 0004  Batch 2533 started on line 3
+14.03.26 06:02:35,598  S7-1500/CPU1  ACK 0099  Alarm 68 acknowledged by operator 4
+14.03.26 06:02:42,538  S7-1500/CPU2  ALM 0043  Conveyor 3 motor overcurrent: 80.8 A
+14.03.26 06:02:45,511  S7-1500/CPU1  ALM 0064  Hydraulic oil temperature 49 C on unit 6
+14.03.26 06:02:54,000  ET200SP/IM155  ALM 0061  Hydraulic oil temperature 62 C on unit 6
+14.03.26 06:03:02,950  S7-1500/CPU1  WRN 0014  Cycle time 3470 ms exceeds target on station 3
+14.03.26 06:03:07,949  S7-1200/PLC_Press  WRN 0021  Filter 5 differential pressure high: 93.0 mbar
+14.03.26 06:03:08,983  S7-1500/CPU1  FLT 0902  Safety relay K1 tripped, line 1 stopped
+    > input I2.1 = FALSE
+    > last OK cycle: 897 ms ago
+14.03.26 06:03:09,208  S7-1500/CPU1  WRN 0021  Filter 2 differential pressure high: 11.7 mbar
+14.03.26 06:03:10,252  S7-1200/PLC_Press  ALM 0057  Pressure on press 2 above limit: 55.8 bar
+14.03.26 06:03:16,375  S7-1200/PLC_Press  INF 0004  Batch 1494 started on line 4
+14.03.26 06:03:21,431  S7-1500/CPU2  ALM 0060  Pressure on press 5 above limit: 57.2 bar
+14.03.26 06:03:24,047  S7-1500/CPU1  FLT 0902  Safety relay K5 tripped, line 5 stopped
+    > input I0.5 = FALSE
+    > last OK cycle: 580 ms ago
+14.03.26 06:03:27,347  S7-1500/CPU2  WRN 0012  Cycle time 490 ms exceeds target on station 7
+14.03.26 06:03:27,537  ET200SP/IM155  WRN 0021  Filter 8 differential pressure high: 35.1 mbar
+14.03.26 06:03:33,691  S7-1500/CPU1  WRN 0019  Filter 8 differential pressure high: 1.9 mbar
+14.03.26 06:03:34,567  ET200SP/IM155  INF 0004  Operator login at HMI 3
+14.03.26 06:03:42,045  S7-1500/CPU1  ACK 0101  Alarm 923 acknowledged by operator 5
+14.03.26 06:03:47,640  S7-1500/CPU1  INF 0001  Batch 3524 started on line 4
+14.03.26 06:03:55,295  S7-1500/CPU2  INF 0005  Operator login at HMI 8
+14.03.26 06:04:01,939  ET200SP/IM155  INF 0005  Operator login at HMI 3
+14.03.26 06:04:10,778  S7-1200/PLC_Press  ALM 0063  Hydraulic oil temperature 11 C on unit 7
+14.03.26 06:04:16,195  S7-1500/CPU1  ALM 0061  Hydraulic oil temperature 7 C on unit 6
+14.03.26 06:04:18,018  ET200SP/IM155  INF 0006  Operator login at HMI 8
+14.03.26 06:04:20,256  S7-1200/PLC_Press  INF 0004  Batch 9601 started on line 1
+14.03.26 06:04:21,740  S7-1500/CPU1  INF 0004  Batch 4955 started on line 5
+14.03.26 06:04:24,201  ET200SP/IM155  WRN 0014  Cycle time 1130 ms exceeds target on station 5
+14.03.26 06:04:26,596  S7-1500/CPU1  WRN 0012  Cycle time 6760 ms exceeds target on station 6
+14.03.26 06:04:35,563  S7-1200/PLC_Press  INF 0003  Operator login at HMI 1
+14.03.26 06:04:36,479  S7-1500/CPU2  ALM 0060  Pressure on press 2 above limit: 93.2 bar
+14.03.26 06:04:42,804  S7-1200/PLC_Press  INF 0007  Recipe R-414 loaded on station 7
+14.03.26 06:04:48,243  S7-1500/CPU2  ALM 0058  Pressure on press 6 above limit: 40.9 bar
+14.03.26 06:04:50,584  S7-1500/CPU1  ALM 0064  Hydraulic oil temperature 27 C on unit 1
+14.03.26 06:04:56,400  S7-1500/CPU2  INF 0006  Recipe R-513 loaded on station 1
+14.03.26 06:04:58,008  S7-1500/CPU1  WRN 0015  Cycle time 5210 ms exceeds target on station 5
+14.03.26 06:05:03,898  S7-1200/PLC_Press  FLT 0902  Safety relay K3 tripped, line 3 stopped
+    > input I5.2 = FALSE
+    > last OK cycle: 376 ms ago
+14.03.26 06:05:06,878  ET200SP/IM155  INF 0001  Batch 6744 started on line 4
+14.03.26 06:05:12,255  S7-1500/CPU2  ACK 0099  Alarm 419 acknowledged by operator 1
+14.03.26 06:05:17,796  S7-1500/CPU1  ACK 0101  Alarm 118 acknowledged by operator 7
+14.03.26 06:05:21,911  S7-1200/PLC_Press  WRN 0015  Cycle time 5780 ms exceeds target on station 6
+14.03.26 06:05:26,671  ET200SP/IM155  WRN 0019  Filter 2 differential pressure high: 60.5 mbar
+14.03.26 06:05:28,719  S7-1500/CPU1  ALM 0059  Pressure on press 5 above limit: 91.3 bar
+14.03.26 06:05:30,076  S7-1500/CPU1  WRN 0019  Filter 8 differential pressure high: 16.3 mbar
+14.03.26 06:05:34,693  S7-1200/PLC_Press  WRN 0014  Cycle time 1880 ms exceeds target on station 5
+14.03.26 06:05:37,364  ET200SP/IM155  ACK 0102  Alarm 779 acknowledged by operator 1
+14.03.26 06:05:38,083  S7-1500/CPU2  ACK 0102  Alarm 944 acknowledged by operator 5
+14.03.26 06:05:46,878  S7-1500/CPU1  WRN 0021  Filter 1 differential pressure high: 60.6 mbar
+14.03.26 06:05:54,213  S7-1500/CPU1  INF 0006  Operator login at HMI 2
+14.03.26 06:06:00,259  ET200SP/IM155  INF 0004  Operator login at HMI 1
+14.03.26 06:06:06,622  ET200SP/IM155  INF 0006  Operator login at HMI 3
+14.03.26 06:06:10,397  S7-1500/CPU2  INF 0006  Recipe R-407 loaded on station 4
+14.03.26 06:06:12,331  S7-1500/CPU1  INF 0004  Operator login at HMI 1
+14.03.26 06:06:16,341  S7-1500/CPU2  ACK 0101  Alarm 873 acknowledged by operator 7
+14.03.26 06:06:23,475  S7-1500/CPU1  WRN 0020  Filter 4 differential pressure high: 56.7 mbar
+14.03.26 06:06:27,700  S7-1200/PLC_Press  WRN 0020  Filter 4 differential pressure high: 69.3 mbar
+14.03.26 06:06:31,074  S7-1500/CPU2  WRN 0012  Cycle time 6570 ms exceeds target on station 4
+14.03.26 06:06:38,638  ET200SP/IM155  ALM 0044  Conveyor 3 motor overcurrent: 78.1 A
+14.03.26 06:06:42,196  ET200SP/IM155  ALM 0063  Hydraulic oil temperature 6 C on unit 8
+14.03.26 06:06:46,200  ET200SP/IM155  INF 0002  Batch 9131 started on line 1
+14.03.26 06:06:50,971  S7-1500/CPU1  INF 0007  Recipe R-207 loaded on station 6
+14.03.26 06:06:58,162  ET200SP/IM155  WRN 0020  Filter 7 differential pressure high: 42.0 mbar
+14.03.26 06:07:04,941  ET200SP/IM155  ACK 0102  Alarm 830 acknowledged by operator 8
+14.03.26 06:07:12,668  S7-1500/CPU1  WRN 0018  Filter 3 differential pressure high: 7.6 mbar
+14.03.26 06:07:12,840  S7-1500/CPU1  WRN 0012  Cycle time 3180 ms exceeds target on station 4
+14.03.26 06:07:13,672  S7-1200/PLC_Press  INF 0004  Batch 7507 started on line 7
+14.03.26 06:07:16,937  S7-1500/CPU1  INF 0005  Operator login at HMI 8
+14.03.26 06:07:20,467  S7-1500/CPU1  WRN 0015  Cycle time 4750 ms exceeds target on station 1
+14.03.26 06:07:22,747  S7-1500/CPU2  ACK 0100  Alarm 826 acknowledged by operator 6
+14.03.26 06:07:31,642  S7-1200/PLC_Press  FLT 0903  Safety relay K1 tripped, line 1 stopped
+    > input I8.7 = FALSE
+    > last OK cycle: 614 ms ago
+14.03.26 06:07:35,057  ET200SP/IM155  FLT 0900  Safety relay K1 tripped, line 1 stopped
+    > input I2.0 = FALSE
+    > last OK cycle: 179 ms ago
+14.03.26 06:07:41,469  S7-1500/CPU1  ALM 0060  Pressure on press 8 above limit: 13.2 bar
+14.03.26 06:07:45,117  S7-1500/CPU1  WRN 0018  Filter 4 differential pressure high: 20.8 mbar
+14.03.26 06:07:50,825  S7-1500/CPU2  ACK 0101  Alarm 535 acknowledged by operator 4
+14.03.26 06:07:59,517  S7-1500/CPU2  ACK 0102  Alarm 605 acknowledged by operator 7
+14.03.26 06:08:06,061  S7-1500/CPU2  WRN 0021  Filter 8 differential pressure high: 50.9 mbar
+14.03.26 06:08:12,334  ET200SP/IM155  ACK 0102  Alarm 961 acknowledged by operator 1
+14.03.26 06:08:12,863  S7-1200/PLC_Press  WRN 0012  Cycle time 1060 ms exceeds target on station 3
+14.03.26 06:08:14,156  ET200SP/IM155  INF 0005  Operator login at HMI 5
+14.03.26 06:08:18,267  ET200SP/IM155  INF 0007  Recipe R-83 loaded on station 3
+14.03.26 06:08:18,499  S7-1500/CPU1  ALM 0057  Pressure on press 2 above limit: 1.5 bar
+14.03.26 06:08:26,876  ET200SP/IM155  INF 0006  Recipe R-402 loaded on station 7
+14.03.26 06:08:30,222  S7-1500/CPU2  INF 0003  Batch 9108 started on line 8
+14.03.26 06:08:32,649  ET200SP/IM155  INF 0007  Recipe R-242 loaded on station 1
+14.03.26 06:08:38,802  S7-1500/CPU2  INF 0006  Recipe R-53 loaded on station 8
+14.03.26 06:08:39,704  ET200SP/IM155  FLT 0901  Safety relay K4 tripped, line 4 stopped
+    > input I4.3 = FALSE
+    > last OK cycle: 972 ms ago
+14.03.26 06:08:42,588  S7-1200/PLC_Press  ACK 0100  Alarm 141 acknowledged by operator 7
+14.03.26 06:08:50,323  S7-1500/CPU2  INF 0002  Batch 5342 started on line 2
+14.03.26 06:08:52,584  S7-1200/PLC_Press  INF 0006  Operator login at HMI 5
+14.03.26 06:08:57,427  ET200SP/IM155  INF 0007  Recipe R-759 loaded on station 5
+14.03.26 06:08:59,446  S7-1500/CPU1  INF 0008  Recipe R-683 loaded on station 4
+14.03.26 06:09:01,009  ET200SP/IM155  ACK 0102  Alarm 473 acknowledged by operator 5
+14.03.26 06:09:09,706  S7-1500/CPU2  INF 0006  Recipe R-48 loaded on station 6
+14.03.26 06:09:10,787  ET200SP/IM155  ALM 0043  Conveyor 5 motor overcurrent: 65.5 A
+14.03.26 06:09:19,588  S7-1200/PLC_Press  WRN 0012  Cycle time 7580 ms exceeds target on station 2
+14.03.26 06:09:24,211  S7-1500/CPU2  INF 0003  Batch 1236 started on line 6
+14.03.26 06:09:31,797  ET200SP/IM155  ACK 0102  Alarm 293 acknowledged by operator 4
+14.03.26 06:09:38,439  S7-1500/CPU2  INF 0001  Batch 9561 started on line 1
+14.03.26 06:09:44,796  S7-1500/CPU1  INF 0005  Recipe R-194 loaded on station 3
+14.03.26 06:09:50,301  S7-1200/PLC_Press  INF 0004  Operator login at HMI 8
+14.03.26 06:09:57,380  S7-1500/CPU2  ACK 0100  Alarm 837 acknowledged by operator 5
+14.03.26 06:10:01,328  S7-1500/CPU2  ALM 0060  Pressure on press 5 above limit: 18.3 bar
+14.03.26 06:10:08,178  S7-1500/CPU2  INF 0006  Operator login at HMI 3
+14.03.26 06:10:16,547  S7-1500/CPU2  INF 0007  Recipe R-617 loaded on station 6
+14.03.26 06:10:18,205  S7-1200/PLC_Press  ALM 0061  Hydraulic oil temperature 71 C on unit 7
+14.03.26 06:10:21,538  ET200SP/IM155  ACK 0102  Alarm 690 acknowledged by operator 3
+14.03.26 06:10:23,575  S7-1500/CPU2  WRN 0015  Cycle time 4290 ms exceeds target on station 8
+14.03.26 06:10:28,757  S7-1500/CPU2  WRN 0019  Filter 4 differential pressure high: 37.2 mbar
+14.03.26 06:10:30,774  ET200SP/IM155  INF 0001  Batch 9737 started on line 7
+14.03.26 06:10:39,619  S7-1500/CPU2  FLT 0902  Safety relay K7 tripped, line 7 stopped
+    > input I2.3 = FALSE
+    > last OK cycle: 297 ms ago
+14.03.26 06:10:43,322  S7-1500/CPU1  ALM 0043  Conveyor 2 motor overcurrent: 58.6 A
+14.03.26 06:10:44,651  ET200SP/IM155  INF 0003  Operator login at HMI 2
+14.03.26 06:10:45,877  ET200SP/IM155  ALM 0060  Pressure on press 2 above limit: 94.4 bar
+14.03.26 06:10:51,181  ET200SP/IM155  INF 0006  Operator login at HMI 3
+14.03.26 06:10:58,688  S7-1200/PLC_Press  INF 0006  Operator login at HMI 3
+14.03.26 06:11:00,828  ET200SP/IM155  ALM 0063  Hydraulic oil temperature 3 C on unit 1
+14.03.26 06:11:00,973  S7-1200/PLC_Press  WRN 0018  Filter 4 differential pressure high: 32.5 mbar
+14.03.26 06:11:05,820  S7-1500/CPU2  INF 0002  Batch 6162 started on line 2
+14.03.26 06:11:05,873  S7-1500/CPU1  INF 0002  Batch 8938 started on line 8
+14.03.26 06:11:13,977  S7-1500/CPU2  ALM 0061  Hydraulic oil temperature 50 C on unit 3
+14.03.26 06:11:21,256  ET200SP/IM155  INF 0006  Recipe R-468 loaded on station 3
+14.03.26 06:11:23,120  S7-1200/PLC_Press  WRN 0012  Cycle time 6500 ms exceeds target on station 2
+14.03.26 06:11:30,472  S7-1200/PLC_Press  ALM 0043  Conveyor 1 motor overcurrent: 7.0 A
+14.03.26 06:11:38,609  ET200SP/IM155  ACK 0100  Alarm 86 acknowledged by operator 1
+14.03.26 06:11:41,364  S7-1500/CPU2  ALM 0043  Conveyor 7 motor overcurrent: 48.6 A
+14.03.26 06:11:47,962  S7-1500/CPU2  INF 0007  Recipe R-933 loaded on station 6
+14.03.26 06:11:53,607  S7-1200/PLC_Press  WRN 0015  Cycle time 2330 ms exceeds target on station 3
+14.03.26 06:11:53,904  S7-1200/PLC_Press  INF 0003  Operator login at HMI 7
+14.03.26 06:11:57,925  S7-1500/CPU1  FLT 0903  Safety relay K4 tripped, line 4 stopped
+    > input I4.6 = FALSE
+    > last OK cycle: 710 ms ago
+14.03.26 06:12:06,863  ET200SP/IM155  ALM 0060  Pressure on press 2 above limit: 51.5 bar
+14.03.26 06:12:11,893  S7-1500/CPU1  INF 0002  Batch 7607 started on line 7
+14.03.26 06:12:19,563  S7-1200/PLC_Press  ACK 0100  Alarm 189 acknowledged by operator 7
+14.03.26 06:12:21,237  ET200SP/IM155  INF 0004  Batch 6481 started on line 1
+14.03.26 06:12:24,070  ET200SP/IM155  ALM 0058  Pressure on press 2 above limit: 67.8 bar
+14.03.26 06:12:28,051  S7-1500/CPU1  ACK 0099  Alarm 527 acknowledged by operator 3
+14.03.26 06:12:32,760  S7-1500/CPU1  WRN 0015  Cycle time 8510 ms exceeds target on station 8
+14.03.26 06:12:33,773  S7-1500/CPU2  INF 0007  Recipe R-886 loaded on station 7
+14.03.26 06:12:34,449  ET200SP/IM155  WRN 0021  Filter 4 differential pressure high: 98.3 mbar
+14.03.26 06:12:38,556  S7-1500/CPU1  ACK 0102  Alarm 164 acknowledged by operator 8
+14.03.26 06:12:41,754  S7-1500/CPU1  INF 0001  Batch 5805 started on line 5
+14.03.26 06:12:48,833  S7-1500/CPU1  ALM 0063  Hydraulic oil temperature 5 C on unit 1
+14.03.26 06:12:51,439  ET200SP/IM155  ALM 0063  Hydraulic oil temperature 95 C on unit 4
+14.03.26 06:12:55,476  S7-1500/CPU1  ACK 0102  Alarm 283 acknowledged by operator 4
+14.03.26 06:12:56,804  S7-1500/CPU2  WRN 0015  Cycle time 9650 ms exceeds target on station 6
+14.03.26 06:12:58,723  ET200SP/IM155  INF 0008  Recipe R-474 loaded on station 1
+14.03.26 06:13:05,644  S7-1500/CPU2  INF 0005  Recipe R-38 loaded on station 4
+14.03.26 06:13:08,550  S7-1500/CPU2  ALM 0042  Conveyor 1 motor overcurrent: 71.8 A
+14.03.26 06:13:16,285  S7-1200/PLC_Press  WRN 0015  Cycle time 5650 ms exceeds target on station 4
+14.03.26 06:13:23,944  S7-1500/CPU1  INF 0006  Operator login at HMI 6
+14.03.26 06:13:30,741  ET200SP/IM155  WRN 0018  Filter 7 differential pressure high: 83.4 mbar
+14.03.26 06:13:31,545  S7-1500/CPU1  ALM 0063  Hydraulic oil temperature 49 C on unit 1
+14.03.26 06:13:39,315  S7-1200/PLC_Press  INF 0004  Batch 2763 started on line 3
+14.03.26 06:13:41,065  S7-1500/CPU2  INF 0004  Operator login at HMI 8
+14.03.26 06:13:45,920  S7-1500/CPU2  ALM 0042  Conveyor 4 motor overcurrent: 71.2 A
+14.03.26 06:13:53,517  S7-1500/CPU1  ALM 0044  Conveyor 6 motor overcurrent: 99.1 A
+14.03.26 06:13:58,502  ET200SP/IM155  WRN 0012  Cycle time 8860 ms exceeds target on station 4
+14.03.26 06:14:02,412  ET200SP/IM155  INF 0004  Operator login at HMI 4
+14.03.26 06:14:09,185  ET200SP/IM155  ALM 0043  Conveyor 7 motor overcurrent: 23.6 A
+14.03.26 06:14:17,800  S7-1200/PLC_Press  INF 0004  Batch 946 started on line 6
+14.03.26 06:14:21,170  S7-1500/CPU2  INF 0007  Recipe R-711 loaded on station 4
+14.03.26 06:14:28,518  S7-1200/PLC_Press  INF 0003  Batch 3984 started on line 4
+14.03.26 06:14:28,636  ET200SP/IM155  INF 0007  Recipe R-842 loaded on station 8
+14.03.26 06:14:34,626  ET200SP/IM155  WRN 0015  Cycle time 4020 ms exceeds target on station 1
+14.03.26 06:14:37,071  S7-1500/CPU2  INF 0006  Operator login at HMI 5
+14.03.26 06:14:41,298  S7-1500/CPU2  INF 0005  Operator login at HMI 8
+14.03.26 06:14:48,472  ET200SP/IM155  INF 0004  Operator login at HMI 4
+14.03.26 06:14:50,622  S7-1200/PLC_Press  FLT 0900  Safety relay K2 tripped, line 2 stopped
+    > input I5.5 = FALSE
+    > last OK cycle: 295 ms ago
+14.03.26 06:14:54,382  S7-1500/CPU2  ACK 0100  Alarm 443 acknowledged by operator 5
+14.03.26 06:14:58,374  ET200SP/IM155  INF 0001  Batch 6705 started on line 5
+14.03.26 06:15:05,557  S7-1500/CPU2  ALM 0042  Conveyor 2 motor overcurrent: 52.7 A
+14.03.26 06:15:07,379  S7-1500/CPU1  ALM 0042  Conveyor 5 motor overcurrent: 90.7 A
+14.03.26 06:15:08,574  S7-1500/CPU1  ALM 0045  Conveyor 2 motor overcurrent: 81.9 A
+14.03.26 06:15:09,059  ET200SP/IM155  INF 0005  Operator login at HMI 3
+14.03.26 06:15:12,902  S7-1500/CPU2  INF 0008  Recipe R-916 loaded on station 8
+14.03.26 06:15:21,075  S7-1500/CPU2  WRN 0014  Cycle time 6320 ms exceeds target on station 8
+14.03.26 06:15:29,491  S7-1200/PLC_Press  ACK 0100  Alarm 157 acknowledged by operator 1
+14.03.26 06:15:35,037  S7-1500/CPU2  INF 0005  Operator login at HMI 3
+14.03.26 06:15:38,871  ET200SP/IM155  WRN 0014  Cycle time 1920 ms exceeds target on station 5
+14.03.26 06:15:43,601  S7-1200/PLC_Press  ALM 0063  Hydraulic oil temperature 50 C on unit 4
+14.03.26 06:15:46,281  S7-1500/CPU1  INF 0008  Recipe R-220 loaded on station 4
+14.03.26 06:15:53,092  ET200SP/IM155  INF 0004  Batch 7247 started on line 7
+14.03.26 06:15:56,512  S7-1500/CPU1  ACK 0100  Alarm 635 acknowledged by operator 8
+14.03.26 06:16:01,309  S7-1200/PLC_Press  INF 0005  Recipe R-870 loaded on station 8
+14.03.26 06:16:03,566  S7-1500/CPU2  ALM 0061  Hydraulic oil temperature 75 C on unit 2
+14.03.26 06:16:03,949  S7-1500/CPU1  INF 0001  Batch 3972 started on line 2
+14.03.26 06:16:08,827  S7-1200/PLC_Press  INF 0003  Batch 353 started on line 3
+14.03.26 06:16:12,402  ET200SP/IM155  FLT 0903  Safety relay K7 tripped, line 7 stopped
+    > input I9.4 = FALSE
+    > last OK cycle: 263 ms ago
+14.03.26 06:16:18,851  S7-1200/PLC_Press  INF 0002  Batch 1723 started on line 3
+14.03.26 06:16:26,555  S7-1500/CPU2  INF 0002  Batch 2778 started on line 8
+14.03.26 06:16:34,420  ET200SP/IM155  ACK 0101  Alarm 792 acknowledged by operator 4
+14.03.26 06:16:35,464  S7-1200/PLC_Press  INF 0004  Operator login at HMI 3
+14.03.26 06:16:39,541  S7-1500/CPU2  INF 0004  Batch 6796 started on line 6
+14.03.26 06:16:44,243  ET200SP/IM155  ALM 0060  Pressure on press 4 above limit: 47.2 bar
+14.03.26 06:16:52,739  S7-1500/CPU2  INF 0005  Recipe R-749 loaded on station 4
+14.03.26 06:17:01,550  S7-1500/CPU2  INF 0003  Operator login at HMI 8
+14.03.26 06:17:02,224  S7-1500/CPU2  ALM 0042  Conveyor 1 motor overcurrent: 42.9 A
+14.03.26 06:17:09,804  S7-1200/PLC_Press  WRN 0012  Cycle time 4380 ms exceeds target on station 8
+14.03.26 06:17:12,763  S7-1500/CPU1  ACK 0102  Alarm 319 acknowledged by operator 4
+14.03.26 06:17:20,008  S7-1500/CPU1  INF 0004  Operator login at HMI 3
+14.03.26 06:17:23,132  ET200SP/IM155  WRN 0018  Filter 2 differential pressure high: 83.0 mbar
+14.03.26 06:17:30,996  S7-1200/PLC_Press  ALM 0064  Hydraulic oil temperature 54 C on unit 4
+14.03.26 06:17:39,081  S7-1200/PLC_Press  ALM 0060  Pressure on press 4 above limit: 46.6 bar
+14.03.26 06:17:44,564  S7-1500/CPU1  INF 0003  Batch 5734 started on line 4
+14.03.26 06:17:46,934  ET200SP/IM155  INF 0006  Recipe R-413 loaded on station 4
+14.03.26 06:17:52,097  S7-1200/PLC_Press  INF 0003  Batch 4425 started on line 5
+14.03.26 06:18:00,583  ET200SP/IM155  WRN 0020  Filter 8 differential pressure high: 68.8 mbar
+14.03.26 06:18:05,247  S7-1200/PLC_Press  INF 0002  Batch 5218 started on line 8
+14.03.26 06:18:10,327  S7-1500/CPU2  ALM 0058  Pressure on press 5 above limit: 26.2 bar
+14.03.26 06:18:15,413  S7-1500/CPU2  WRN 0015  Cycle time 8940 ms exceeds target on station 8
+14.03.26 06:18:19,906  ET200SP/IM155  ALM 0064  Hydraulic oil temperature 46 C on unit 6
+14.03.26 06:18:22,656  S7-1200/PLC_Press  INF 0002  Batch 1517 started on line 7
+14.03.26 06:18:28,025  S7-1200/PLC_Press  ALM 0061  Hydraulic oil temperature 59 C on unit 6
+14.03.26 06:18:35,815  S7-1500/CPU1  ALM 0058  Pressure on press 1 above limit: 23.1 bar
+14.03.26 06:18:39,617  S7-1200/PLC_Press  INF 0006  Recipe R-359 loaded on station 2
+14.03.26 06:18:40,946  S7-1500/CPU1  WRN 0020  Filter 2 differential pressure high: 32.3 mbar
+14.03.26 06:18:46,637  S7-1500/CPU1  FLT 0902  Safety relay K7 tripped, line 7 stopped
+    > input I8.4 = FALSE
+    > last OK cycle: 991 ms ago
+14.03.26 06:18:47,453  S7-1500/CPU1  FLT 0903  Safety relay K3 tripped, line 3 stopped
+    > input I4.1 = FALSE
+    > last OK cycle: 919 ms ago
+14.03.26 06:18:51,209  S7-1500/CPU2  INF 0002  Batch 776 started on line 6
+14.03.26 06:18:53,646  S7-1500/CPU1  FLT 0900  Safety relay K2 tripped, line 2 stopped
+    > input I1.0 = FALSE
+    > last OK cycle: 290 ms ago
+14.03.26 06:18:56,966  S7-1500/CPU1  ACK 0101  Alarm 656 acknowledged by operator 4
+14.03.26 06:19:00,103  S7-1500/CPU1  INF 0007  Recipe R-70 loaded on station 6
+14.03.26 06:19:08,935  S7-1500/CPU1  INF 0005  Recipe R-288 loaded on station 4
+14.03.26 06:19:09,032  S7-1200/PLC_Press  INF 0002  Batch 1697 started on line 7
+14.03.26 06:19:17,363  S7-1200/PLC_Press  INF 0003  Operator login at HMI 1
+14.03.26 06:19:21,763  S7-1200/PLC_Press  ACK 0099  Alarm 377 acknowledged by operator 6
+14.03.26 06:19:26,093  S7-1500/CPU2  INF 0008  Recipe R-41 loaded on station 7
+14.03.26 06:19:33,716  S7-1500/CPU1  INF 0007  Recipe R-679 loaded on station 2
+14.03.26 06:19:39,438  S7-1500/CPU2  INF 0006  Operator login at HMI 6
+14.03.26 06:19:41,855  S7-1200/PLC_Press  ALM 0060  Pressure on press 3 above limit: 43.9 bar
+14.03.26 06:19:45,228  S7-1500/CPU1  ALM 0042  Conveyor 2 motor overcurrent: 68.6 A
+14.03.26 06:19:53,717  S7-1200/PLC_Press  ALM 0063  Hydraulic oil temperature 24 C on unit 1
+14.03.26 06:19:58,154  S7-1500/CPU2  INF 0004  Operator login at HMI 7
+14.03.26 06:19:58,731  ET200SP/IM155  WRN 0012  Cycle time 6470 ms exceeds target on station 8
+14.03.26 06:20:07,671  ET200SP/IM155  ALM 0062  Hydraulic oil temperature 80 C on unit 7
+14.03.26 06:20:12,187  S7-1200/PLC_Press  ACK 0102  Alarm 198 acknowledged by operator 6
+14.03.26 06:20:16,130  S7-1500/CPU2  INF 0005  Operator login at HMI 6
+14.03.26 06:20:23,181  ET200SP/IM155  ALM 0063  Hydraulic oil temperature 30 C on unit 1
+14.03.26 06:20:23,962  S7-1500/CPU2  WRN 0012  Cycle time 840 ms exceeds target on station 3
+14.03.26 06:20:31,228  S7-1500/CPU2  INF 0006  Operator login at HMI 1
+14.03.26 06:20:37,172  ET200SP/IM155  INF 0006  Operator login at HMI 6
+14.03.26 06:20:39,299  ET200SP/IM155  FLT 0900  Safety relay K5 tripped, line 5 stopped
+    > input I3.6 = FALSE
+    > last OK cycle: 162 ms ago
+14.03.26 06:20:42,242  S7-1500/CPU2  WRN 0014  Cycle time 7000 ms exceeds target on station 8
+14.03.26 06:20:43,912  S7-1500/CPU1  INF 0003  Batch 1747 started on line 7
+14.03.26 06:20:51,940  S7-1500/CPU1  ALM 0042  Conveyor 4 motor overcurrent: 8.8 A
+14.03.26 06:20:56,511  S7-1500/CPU2  INF 0001  Batch 101 started on line 1
+14.03.26 06:20:58,232  S7-1200/PLC_Press  WRN 0015  Cycle time 6840 ms exceeds target on station 1
+14.03.26 06:21:03,590  ET200SP/IM155  INF 0004  Batch 9454 started on line 4
+14.03.26 06:21:09,948  ET200SP/IM155  WRN 0014  Cycle time 850 ms exceeds target on station 5
+14.03.26 06:21:11,484  ET200SP/IM155  ALM 0058  Pressure on press 6 above limit: 65.0 bar
+14.03.26 06:21:18,418  S7-1500/CPU2  INF 0005  Recipe R-785 loaded on station 5
+14.03.26 06:21:19,788  ET200SP/IM155  INF 0005  Recipe R-367 loaded on station 3
+14.03.26 06:21:24,000  S7-1500/CPU1  INF 0005  Recipe R-131 loaded on station 5
+14.03.26 06:21:25,271  S7-1200/PLC_Press  ALM 0059  Pressure on press 4 above limit: 3.8 bar
+14.03.26 06:21:27,225  ET200SP/IM155  FLT 0900  Safety relay K1 tripped, line 1 stopped
+    > input I3.4 = FALSE
+    > last OK cycle: 845 ms ago
+14.03.26 06:21:28,053  ET200SP/IM155  ALM 0057  Pressure on press 1 above limit: 60.7 bar
+14.03.26 06:21:33,185  ET200SP/IM155  FLT 0900  Safety relay K8 tripped, line 8 stopped
+    > input I9.0 = FALSE
+    > last OK cycle: 473 ms ago
+14.03.26 06:21:34,144  S7-1500/CPU2  INF 0003  Batch 375 started on line 5
+14.03.26 06:21:39,661  S7-1200/PLC_Press  WRN 0020  Filter 7 differential pressure high: 11.2 mbar
+14.03.26 06:21:43,233  S7-1200/PLC_Press  INF 0006  Recipe R-726 loaded on station 2
+14.03.26 06:21:45,044  ET200SP/IM155  ACK 0099  Alarm 896 acknowledged by operator 5
+14.03.26 06:21:47,928  S7-1200/PLC_Press  WRN 0019  Filter 4 differential pressure high: 93.8 mbar
+14.03.26 06:21:56,638  S7-1500/CPU2  INF 0001  Batch 2571 started on line 1
+14.03.26 06:21:57,068  S7-1500/CPU1  ACK 0102  Alarm 937 acknowledged by operator 2
+14.03.26 06:22:05,912  S7-1500/CPU2  ACK 0099  Alarm 560 acknowledged by operator 7
+14.03.26 06:22:14,044  S7-1500/CPU2  WRN 0013  Cycle time 9400 ms exceeds target on station 6
+14.03.26 06:22:16,859  S7-1500/CPU1  FLT 0902  Safety relay K6 tripped, line 6 stopped
+    > input I4.5 = FALSE
+    > last OK cycle: 345 ms ago
+14.03.26 06:22:23,533  S7-1500/CPU1  INF 0006  Operator login at HMI 1
+14.03.26 06:22:25,027  S7-1500/CPU2  INF 0005  Operator login at HMI 3
+14.03.26 06:22:30,469  ET200SP/IM155  ALM 0058  Pressure on press 8 above limit: 68.6 bar
+14.03.26 06:22:35,871  S7-1500/CPU1  WRN 0014  Cycle time 8940 ms exceeds target on station 3
+14.03.26 06:22:37,164  S7-1200/PLC_Press  INF 0005  Operator login at HMI 8
+14.03.26 06:22:40,818  S7-1200/PLC_Press  INF 0002  Batch 6957 started on line 7
+14.03.26 06:22:42,086  S7-1500/CPU2  ACK 0099  Alarm 441 acknowledged by operator 4
+14.03.26 06:22:44,040  S7-1200/PLC_Press  WRN 0012  Cycle time 6610 ms exceeds target on station 3
+14.03.26 06:22:44,174  S7-1500/CPU1  INF 0005  Operator login at HMI 4
+14.03.26 06:22:45,889  S7-1500/CPU2  ALM 0063  Hydraulic oil temperature 15 C on unit 6
+14.03.26 06:22:50,293  S7-1200/PLC_Press  ACK 0100  Alarm 712 acknowledged by operator 3
+14.03.26 06:22:57,928  ET200SP/IM155  WRN 0021  Filter 5 differential pressure high: 43.7 mbar
+14.03.26 06:23:04,446  S7-1500/CPU2  INF 0005  Recipe R-914 loaded on station 7
+14.03.26 06:23:12,318  S7-1200/PLC_Press  INF 0003  Batch 2178 started on line 8
+14.03.26 06:23:17,974  S7-1500/CPU2  INF 0007  Recipe R-165 loaded on station 4
+14.03.26 06:23:21,061  S7-1500/CPU2  INF 0004  Operator login at HMI 3
+14.03.26 06:23:28,280  ET200SP/IM155  WRN 0018  Filter 5 differential pressure high: 70.4 mbar
+14.03.26 06:23:33,712  S7-1500/CPU2  ALM 0059  Pressure on press 5 above limit: 88.5 bar
+14.03.26 06:23:42,134  ET200SP/IM155  WRN 0020  Filter 1 differential pressure high: 19.4 mbar
+14.03.26 06:23:44,520  S7-1500/CPU2  ALM 0064  Hydraulic oil temperature 35 C on unit 1
+14.03.26 06:23:45,545  S7-1500/CPU2  INF 0003  Operator login at HMI 1
+14.03.26 06:23:50,001  S7-1500/CPU2  ACK 0101  Alarm 825 acknowledged by operator 7
+14.03.26 06:23:55,114  S7-1500/CPU1  INF 0002  Batch 4152 started on line 2
+14.03.26 06:24:02,950  S7-1500/CPU1  ACK 0102  Alarm 497 acknowledged by operator 1
+14.03.26 06:24:03,596  ET200SP/IM155  INF 0002  Batch 5402 started on line 2
+14.03.26 06:24:08,462  S7-1500/CPU2  WRN 0015  Cycle time 750 ms exceeds target on station 7
+14.03.26 06:24:11,048  S7-1500/CPU2  INF 0003  Operator login at HMI 2
+14.03.26 06:24:17,836  S7-1500/CPU2  ALM 0062  Hydraulic oil temperature 45 C on unit 7
+14.03.26 06:24:18,543  S7-1200/PLC_Press  ACK 0100  Alarm 641 acknowledged by operator 7
+14.03.26 06:24:26,993  ET200SP/IM155  INF 0004  Batch 2013 started on line 3
+14.03.26 06:24:33,092  S7-1500/CPU2  ACK 0102  Alarm 347 acknowledged by operator 1
+14.03.26 06:24:34,263  S7-1500/CPU1  INF 0004  Batch 4692 started on line 2
+14.03.26 06:24:35,957  S7-1500/CPU1  WRN 0014  Cycle time 2800 ms exceeds target on station 8
+14.03.26 06:24:44,828  S7-1500/CPU2  FLT 0902  Safety relay K5 tripped, line 5 stopped
+    > input I6.3 = FALSE
+    > last OK cycle: 214 ms ago
+14.03.26 06:24:49,801  S7-1200/PLC_Press  INF 0004  Batch 3804 started on line 4
+14.03.26 06:24:57,577  ET200SP/IM155  ACK 0101  Alarm 392 acknowledged by operator 5
+14.03.26 06:25:02,650  S7-1500/CPU1  FLT 0901  Safety relay K4 tripped, line 4 stopped
+    > input I9.7 = FALSE
+    > last OK cycle: 475 ms ago
+14.03.26 06:25:06,442  S7-1500/CPU2  ACK 0101  Alarm 587 acknowledged by operator 4
+14.03.26 06:25:08,767  S7-1500/CPU1  WRN 0013  Cycle time 6180 ms exceeds target on station 7
+14.03.26 06:25:12,690  S7-1500/CPU1  INF 0008  Recipe R-633 loaded on station 1
+14.03.26 06:25:16,888  S7-1500/CPU1  WRN 0015  Cycle time 9150 ms exceeds target on station 5
+14.03.26 06:25:21,499  ET200SP/IM155  WRN 0018  Filter 6 differential pressure high: 69.6 mbar
+14.03.26 06:25:21,753  S7-1500/CPU2  INF 0003  Operator login at HMI 5
+14.03.26 06:25:22,239  S7-1200/PLC_Press  ALM 0062  Hydraulic oil temperature 78 C on unit 4
+14.03.26 06:25:31,226  ET200SP/IM155  ACK 0102  Alarm 816 acknowledged by operator 6
+14.03.26 06:25:35,239  ET200SP/IM155  INF 0007  Recipe R-486 loaded on station 5
+14.03.26 06:25:39,930  S7-1500/CPU2  INF 0008  Recipe R-659 loaded on station 1
+14.03.26 06:25:40,134  S7-1500/CPU1  ACK 0101  Alarm 166 acknowledged by operator 3
+14.03.26 06:25:42,258  S7-1500/CPU2  INF 0006  Recipe R-162 loaded on station 3
+14.03.26 06:25:47,437  S7-1200/PLC_Press  ALM 0064  Hydraulic oil temperature 1 C on unit 4
+14.03.26 06:25:51,245  S7-1200/PLC_Press  ALM 0044  Conveyor 5 motor overcurrent: 56.1 A
+14.03.26 06:25:53,252  ET200SP/IM155  WRN 0021  Filter 8 differential pressure high: 4.6 mbar
+14.03.26 06:26:00,590  S7-1200/PLC_Press  WRN 0018  Filter 7 differential pressure high: 56.6 mbar
+14.03.26 06:26:01,301  S7-1500/CPU1  ALM 0060  Pressure on press 5 above limit: 38.0 bar
+14.03.26 06:26:04,932  S7-1500/CPU2  ALM 0063  Hydraulic oil temperature 26 C on unit 8
+14.03.26 06:26:13,525  S7-1500/CPU2  INF 0002  Batch 2844 started on line 4
+14.03.26 06:26:13,840  S7-1500/CPU2  ALM 0064  Hydraulic oil temperature 65 C on unit 1
+14.03.26 06:26:14,935  ET200SP/IM155  ALM 0045  Conveyor 2 motor overcurrent: 33.9 A
+14.03.26 06:26:18,863  S7-1500/CPU2  ALM 0063  Hydraulic oil temperature 5 C on unit 6
+14.03.26 06:26:22,086  S7-1500/CPU2  ACK 0102  Alarm 57 acknowledged by operator 6
+14.03.26 06:26:23,772  S7-1500/CPU1  INF 0008  Recipe R-206 loaded on station 4
+14.03.26 06:26:30,534  ET200SP/IM155  INF 0004  Operator login at HMI 5
+14.03.26 06:26:37,957  ET200SP/IM155  INF 0007  Recipe R-271 loaded on station 5
+14.03.26 06:26:45,402  S7-1500/CPU1  ACK 0102  Alarm 86 acknowledged by operator 5
+14.03.26 06:26:48,077  S7-1500/CPU2  ALM 0060  Pressure on press 6 above limit: 74.1 bar
+14.03.26 06:26:51,560  ET200SP/IM155  ALM 0044  Conveyor 2 motor overcurrent: 66.7 A
+14.03.26 06:27:00,487  S7-1500/CPU1  WRN 0014  Cycle time 9480 ms exceeds target on station 5
+14.03.26 06:27:04,252  S7-1500/CPU1  WRN 0014  Cycle time 1830 ms exceeds target on station 4
+14.03.26 06:27:10,649  S7-1500/CPU2  ALM 0064  Hydraulic oil temperature 1 C on unit 1
+14.03.26 06:27:15,275  S7-1500/CPU2  INF 0005  Operator login at HMI 4
+14.03.26 06:27:21,309  ET200SP/IM155  ACK 0102  Alarm 25 acknowledged by operator 6
+14.03.26 06:27:23,016  S7-1200/PLC_Press  INF 0006  Recipe R-585 loaded on station 1
+14.03.26 06:27:27,395  ET200SP/IM155  INF 0001  Batch 672 started on line 2
+14.03.26 06:27:35,287  S7-1500/CPU1  ACK 0099  Alarm 603 acknowledged by operator 6
+14.03.26 06:27:43,794  ET200SP/IM155  FLT 0900  Safety relay K1 tripped, line 1 stopped
+    > input I8.5 = FALSE
+    > last OK cycle: 542 ms ago
+14.03.26 06:27:47,684  S7-1200/PLC_Press  ALM 0042  Conveyor 1 motor overcurrent: 95.7 A
+14.03.26 06:27:56,442  ET200SP/IM155  INF 0002  Batch 3995 started on line 5
+14.03.26 06:27:58,142  S7-1500/CPU1  WRN 0018  Filter 1 differential pressure high: 58.9 mbar
+14.03.26 06:28:05,518  ET200SP/IM155  WRN 0015  Cycle time 8430 ms exceeds target on station 3
+14.03.26 06:28:11,079  S7-1200/PLC_Press  WRN 0014  Cycle time 2070 ms exceeds target on station 8
+14.03.26 06:28:16,205  S7-1500/CPU1  ALM 0044  Conveyor 3 motor overcurrent: 57.8 A
+14.03.26 06:28:19,514  S7-1200/PLC_Press  ALM 0060  Pressure on press 3 above limit: 78.4 bar
+14.03.26 06:28:25,028  S7-1500/CPU2  INF 0005  Recipe R-597 loaded on station 2
+14.03.26 06:28:30,386  S7-1200/PLC_Press  WRN 0018  Filter 7 differential pressure high: 7.2 mbar
+14.03.26 06:28:34,194  ET200SP/IM155  ALM 0044  Conveyor 2 motor overcurrent: 26.6 A
+14.03.26 06:28:40,080  S7-1500/CPU2  INF 0005  Operator login at HMI 6
+14.03.26 06:28:42,406  S7-1500/CPU1  WRN 0015  Cycle time 7710 ms exceeds target on station 7
+14.03.26 06:28:45,596  S7-1200/PLC_Press  WRN 0013  Cycle time 8090 ms exceeds target on station 6
+14.03.26 06:28:49,737  S7-1500/CPU2  INF 0006  Operator login at HMI 8
+14.03.26 06:28:52,950  S7-1200/PLC_Press  WRN 0013  Cycle time 9140 ms exceeds target on station 8
+14.03.26 06:28:58,892  S7-1500/CPU2  WRN 0013  Cycle time 3200 ms exceeds target on station 2
+14.03.26 06:29:03,492  S7-1200/PLC_Press  ALM 0057  Pressure on press 8 above limit: 1.0 bar
+14.03.26 06:29:12,297  ET200SP/IM155  INF 0004  Operator login at HMI 5
+14.03.26 06:29:18,998  S7-1200/PLC_Press  ACK 0100  Alarm 197 acknowledged by operator 5
+14.03.26 06:29:25,919  S7-1200/PLC_Press  ALM 0044  Conveyor 7 motor overcurrent: 2.1 A
+14.03.26 06:29:27,936  S7-1500/CPU1  INF 0005  Operator login at HMI 8
+14.03.26 06:29:30,806  S7-1500/CPU1  INF 0005  Recipe R-441 loaded on station 5
+14.03.26 06:29:38,184  ET200SP/IM155  INF 0002  Batch 7342 started on line 2
+14.03.26 06:29:44,091  ET200SP/IM155  ALM 0064  Hydraulic oil temperature 40 C on unit 4
+14.03.26 06:29:44,469  S7-1500/CPU1  INF 0007  Recipe R-758 loaded on station 5
+14.03.26 06:29:46,165  ET200SP/IM155  FLT 0903  Safety relay K2 tripped, line 2 stopped
+    > input I7.2 = FALSE
+    > last OK cycle: 312 ms ago
+14.03.26 06:29:46,613  S7-1200/PLC_Press  ALM 0060  Pressure on press 4 above limit: 94.0 bar
+14.03.26 06:29:49,115  S7-1200/PLC_Press  FLT 0903  Safety relay K5 tripped, line 5 stopped
+    > input I4.4 = FALSE
+    > last OK cycle: 140 ms ago
+14.03.26 06:29:54,999  S7-1500/CPU2  ALM 0063  Hydraulic oil temperature 17 C on unit 8
+14.03.26 06:30:00,800  ET200SP/IM155  ALM 0058  Pressure on press 6 above limit: 19.1 bar
+14.03.26 06:30:08,846  S7-1200/PLC_Press  ACK 0101  Alarm 426 acknowledged by operator 2
+14.03.26 06:30:12,584  S7-1500/CPU1  INF 0008  Recipe R-523 loaded on station 6
+14.03.26 06:30:14,286  S7-1200/PLC_Press  ACK 0100  Alarm 527 acknowledged by operator 8
+14.03.26 06:30:17,298  ET200SP/IM155  FLT 0902  Safety relay K7 tripped, line 7 stopped
+    > input I3.4 = FALSE
+    > last OK cycle: 339 ms ago
+14.03.26 06:30:25,985  S7-1200/PLC_Press  ALM 0057  Pressure on press 5 above limit: 11.4 bar
+14.03.26 06:30:32,939  ET200SP/IM155  INF 0006  Recipe R-659 loaded on station 7
+14.03.26 06:30:34,599  ET200SP/IM155  WRN 0020  Filter 8 differential pressure high: 54.0 mbar
+14.03.26 06:30:35,343  S7-1500/CPU1  INF 0003  Operator login at HMI 1
+14.03.26 06:30:38,367  S7-1500/CPU1  INF 0004  Batch 1762 started on line 2
+14.03.26 06:30:39,113  ET200SP/IM155  ALM 0060  Pressure on press 8 above limit: 3.2 bar
+14.03.26 06:30:45,420  S7-1200/PLC_Press  INF 0005  Operator login at HMI 8
+14.03.26 06:30:53,401  S7-1200/PLC_Press  ACK 0101  Alarm 63 acknowledged by operator 8
+14.03.26 06:30:59,899  S7-1200/PLC_Press  INF 0005  Recipe R-382 loaded on station 7
+14.03.26 06:31:02,332  S7-1500/CPU1  INF 0005  Operator login at HMI 5
+14.03.26 06:31:11,254  S7-1500/CPU2  INF 0005  Operator login at HMI 2
+14.03.26 06:31:15,738  S7-1500/CPU2  INF 0004  Batch 6941 started on line 1
+14.03.26 06:31:23,502  S7-1500/CPU2  INF 0003  Batch 1988 started on line 8
+14.03.26 06:31:23,982  S7-1500/CPU2  ALM 0063  Hydraulic oil temperature 77 C on unit 7
+14.03.26 06:31:31,480  S7-1200/PLC_Press  INF 0001  Batch 4477 started on line 7
+14.03.26 06:31:39,402  S7-1200/PLC_Press  WRN 0012  Cycle time 7010 ms exceeds target on station 4
+14.03.26 06:31:43,516  S7-1200/PLC_Press  INF 0008  Recipe R-221 loaded on station 8
+14.03.26 06:31:51,514  S7-1500/CPU2  ALM 0059  Pressure on press 1 above limit: 42.2 bar
+14.03.26 06:31:53,855  S7-1500/CPU1  WRN 0014  Cycle time 1930 ms exceeds target on station 8
+14.03.26 06:32:02,085  S7-1500/CPU2  INF 0007  Recipe R-111 loaded on station 5
+14.03.26 06:32:10,537  S7-1200/PLC_Press  INF 0006  Operator login at HMI 6
+14.03.26 06:32:12,526  S7-1500/CPU1  WRN 0015  Cycle time 3020 ms exceeds target on station 5
+14.03.26 06:32:21,027  S7-1500/CPU2  INF 0007  Recipe R-465 loaded on station 8
+14.03.26 06:32:28,225  S7-1200/PLC_Press  WRN 0020  Filter 8 differential pressure high: 38.1 mbar
+14.03.26 06:32:35,961  ET200SP/IM155  WRN 0021  Filter 5 differential pressure high: 63.3 mbar
+14.03.26 06:32:37,288  S7-1200/PLC_Press  ALM 0058  Pressure on press 6 above limit: 38.1 bar
+14.03.26 06:32:45,683  ET200SP/IM155  INF 0008  Recipe R-166 loaded on station 6
+14.03.26 06:32:48,028  S7-1500/CPU2  FLT 0900  Safety relay K3 tripped, line 3 stopped
+    > input I5.2 = FALSE
+    > last OK cycle: 469 ms ago
+14.03.26 06:32:54,158  S7-1500/CPU2  ALM 0058  Pressure on press 3 above limit: 61.8 bar
+14.03.26 06:33:02,805  S7-1500/CPU2  INF 0006  Operator login at HMI 8
+14.03.26 06:33:03,660  S7-1500/CPU2  WRN 0020  Filter 5 differential pressure high: 15.0 mbar
+14.03.26 06:33:04,215  S7-1500/CPU2  WRN 0020  Filter 7 differential pressure high: 30.1 mbar
+14.03.26 06:33:05,641  S7-1200/PLC_Press  INF 0005  Recipe R-171 loaded on station 3
+14.03.26 06:33:13,242  S7-1500/CPU2  WRN 0020  Filter 4 differential pressure high: 98.9 mbar
+14.03.26 06:33:17,454  S7-1200/PLC_Press  ALM 0044  Conveyor 4 motor overcurrent: 35.8 A
+14.03.26 06:33:19,804  ET200SP/IM155  INF 0002  Batch 6021 started on line 1
+14.03.26 06:33:20,612  S7-1500/CPU1  WRN 0021  Filter 8 differential pressure high: 52.9 mbar
+14.03.26 06:33:25,853  ET200SP/IM155  INF 0003  Operator login at HMI 2
+14.03.26 06:33:31,033  S7-1500/CPU2  INF 0006  Recipe R-766 loaded on station 5
+14.03.26 06:33:37,655  S7-1200/PLC_Press  ALM 0058  Pressure on press 3 above limit: 37.6 bar
+14.03.26 06:33:42,838  S7-1500/CPU1  WRN 0014  Cycle time 6970 ms exceeds target on station 7
+14.03.26 06:33:45,103  S7-1500/CPU1  INF 0007  Recipe R-125 loaded on station 2
+14.03.26 06:33:53,244  S7-1500/CPU1  WRN 0012  Cycle time 7310 ms exceeds target on station 5
+14.03.26 06:33:59,357  S7-1500/CPU1  ACK 0100  Alarm 626 acknowledged by operator 2
+14.03.26 06:34:02,800  S7-1200/PLC_Press  INF 0001  Batch 4765 started on line 5
+14.03.26 06:34:09,343  S7-1200/PLC_Press  WRN 0014  Cycle time 4340 ms exceeds target on station 5
+14.03.26 06:34:10,228  ET200SP/IM155  ALM 0042  Conveyor 8 motor overcurrent: 34.1 A
+14.03.26 06:34:15,610  S7-1200/PLC_Press  INF 0005  Recipe R-707 loaded on station 4
+14.03.26 06:34:16,657  S7-1200/PLC_Press  FLT 0901  Safety relay K8 tripped, line 8 stopped
+    > input I2.6 = FALSE
+    > last OK cycle: 952 ms ago
+14.03.26 06:34:24,810  ET200SP/IM155  ACK 0100  Alarm 768 acknowledged by operator 8
+14.03.26 06:34:28,152  S7-1500/CPU2  WRN 0015  Cycle time 5030 ms exceeds target on station 8
+14.03.26 06:34:36,052  S7-1500/CPU2  ACK 0102  Alarm 616 acknowledged by operator 4
+14.03.26 06:34:44,011  S7-1200/PLC_Press  WRN 0020  Filter 6 differential pressure high: 50.0 mbar
+14.03.26 06:34:49,826  S7-1500/CPU1  INF 0005  Operator login at HMI 6
+14.03.26 06:34:56,453  S7-1200/PLC_Press  ACK 0101  Alarm 797 acknowledged by operator 6
+14.03.26 06:34:59,409  S7-1200/PLC_Press  INF 0002  Batch 6202 started on line 2
+14.03.26 06:35:03,257  ET200SP/IM155  FLT 0902  Safety relay K8 tripped, line 8 stopped
+    > input I1.6 = FALSE
+    > last OK cycle: 480 ms ago
+14.03.26 06:35:08,081  S7-1500/CPU1  ALM 0064  Hydraulic oil temperature 45 C on unit 6
+14.03.26 06:35:10,561  ET200SP/IM155  INF 0007  Recipe R-41 loaded on station 3
+14.03.26 06:35:17,039  S7-1500/CPU2  INF 0002  Batch 113 started on line 3
+14.03.26 06:35:25,512  S7-1200/PLC_Press  INF 0005  Recipe R-160 loaded on station 5
+14.03.26 06:35:32,627  S7-1500/CPU1  FLT 0903  Safety relay K2 tripped, line 2 stopped
+    > input I4.3 = FALSE
+    > last OK cycle: 795 ms ago
+14.03.26 06:35:38,689  S7-1500/CPU1  WRN 0015  Cycle time 6820 ms exceeds target on station 2
+14.03.26 06:35:38,959  S7-1200/PLC_Press  INF 0004  Batch 671 started on line 1
+14.03.26 06:35:41,405  S7-1200/PLC_Press  INF 0002  Batch 6148 started on line 8
+14.03.26 06:35:44,022  S7-1500/CPU1  ALM 0045  Conveyor 5 motor overcurrent: 34.1 A
+14.03.26 06:35:51,707  S7-1500/CPU1  WRN 0015  Cycle time 9730 ms exceeds target on station 4
+14.03.26 06:35:59,929  S7-1500/CPU1  INF 0004  Operator login at HMI 2
+14.03.26 06:36:07,107  S7-1500/CPU2  ACK 0101  Alarm 495 acknowledged by operator 3
+14.03.26 06:36:08,671  ET200SP/IM155  ACK 0099  Alarm 764 acknowledged by operator 6
+14.03.26 06:36:12,285  ET200SP/IM155  INF 0006  Recipe R-13 loaded on station 4
+14.03.26 06:36:18,112  S7-1500/CPU2  WRN 0012  Cycle time 1070 ms exceeds target on station 8
+14.03.26 06:36:21,106  ET200SP/IM155  INF 0007  Recipe R-731 loaded on station 7
+14.03.26 06:36:27,680  S7-1200/PLC_Press  INF 0001  Batch 6921 started on line 1
+14.03.26 06:36:30,403  S7-1500/CPU1  WRN 0015  Cycle time 5330 ms exceeds target on station 4
+14.03.26 06:36:37,909  S7-1200/PLC_Press  WRN 0012  Cycle time 4180 ms exceeds target on station 4
+14.03.26 06:36:38,181  S7-1500/CPU1  ALM 0064  Hydraulic oil temperature 63 C on unit 1
+14.03.26 06:36:43,785  ET200SP/IM155  WRN 0014  Cycle time 6290 ms exceeds target on station 7
+14.03.26 06:36:45,854  S7-1500/CPU2  INF 0002  Batch 8492 started on line 2
+14.03.26 06:36:50,398  S7-1200/PLC_Press  INF 0008  Recipe R-923 loaded on station 2
+14.03.26 06:36:50,996  S7-1200/PLC_Press  WRN 0012  Cycle time 2630 ms exceeds target on station 7
+14.03.26 06:36:51,540  S7-1200/PLC_Press  INF 0006  Recipe R-205 loaded on station 7
+14.03.26 06:36:51,917  S7-1200/PLC_Press  FLT 0902  Safety relay K4 tripped, line 4 stopped
+    > input I9.4 = FALSE
+    > last OK cycle: 103 ms ago
+14.03.26 06:36:56,129  S7-1200/PLC_Press  WRN 0012  Cycle time 7200 ms exceeds target on station 3
+14.03.26 06:37:01,300  ET200SP/IM155  WRN 0020  Filter 6 differential pressure high: 89.0 mbar
+14.03.26 06:37:02,819  S7-1200/PLC_Press  WRN 0020  Filter 8 differential pressure high: 71.8 mbar
+14.03.26 06:37:03,571  S7-1500/CPU1  INF 0005  Operator login at HMI 7
+14.03.26 06:37:12,095  S7-1200/PLC_Press  INF 0008  Recipe R-577 loaded on station 6
+14.03.26 06:37:15,355  S7-1500/CPU2  ALM 0042  Conveyor 8 motor overcurrent: 3.4 A
+14.03.26 06:37:19,447  S7-1500/CPU1  INF 0003  Batch 3265 started on line 5
+14.03.26 06:37:27,622  S7-1200/PLC_Press  ALM 0045  Conveyor 6 motor overcurrent: 46.7 A
+14.03.26 06:37:35,312  S7-1200/PLC_Press  ALM 0059  Pressure on press 2 above limit: 48.7 bar
+14.03.26 06:37:36,097  S7-1500/CPU1  FLT 0902  Safety relay K6 tripped, line 6 stopped
+    > input I5.3 = FALSE
+    > last OK cycle: 495 ms ago
+14.03.26 06:37:40,713  ET200SP/IM155  INF 0003  Operator login at HMI 3
+14.03.26 06:37:48,257  S7-1200/PLC_Press  INF 0006  Operator login at HMI 6
+14.03.26 06:37:50,504  S7-1200/PLC_Press  ALM 0060  Pressure on press 8 above limit: 38.5 bar
+14.03.26 06:37:52,344  S7-1500/CPU1  INF 0005  Operator login at HMI 1
+14.03.26 06:37:57,650  S7-1200/PLC_Press  ACK 0101  Alarm 168 acknowledged by operator 5
+14.03.26 06:37:59,893  S7-1500/CPU1  WRN 0014  Cycle time 2300 ms exceeds target on station 3
+14.03.26 06:38:00,848  S7-1500/CPU2  INF 0006  Operator login at HMI 5
+14.03.26 06:38:08,438  ET200SP/IM155  WRN 0018  Filter 2 differential pressure high: 89.2 mbar
+14.03.26 06:38:12,076  ET200SP/IM155  INF 0007  Recipe R-826 loaded on station 8
+14.03.26 06:38:18,540  S7-1200/PLC_Press  ACK 0099  Alarm 480 acknowledged by operator 5
+14.03.26 06:38:26,030  S7-1500/CPU1  INF 0006  Operator login at HMI 7
+14.03.26 06:38:33,306  ET200SP/IM155  WRN 0012  Cycle time 4470 ms exceeds target on station 7
+14.03.26 06:38:33,577  S7-1500/CPU1  WRN 0019  Filter 8 differential pressure high: 22.1 mbar
+14.03.26 06:38:38,110  S7-1500/CPU1  WRN 0020  Filter 7 differential pressure high: 68.4 mbar
+14.03.26 06:38:44,204  S7-1500/CPU1  WRN 0020  Filter 5 differential pressure high: 4.3 mbar
+14.03.26 06:38:50,728  ET200SP/IM155  ALM 0060  Pressure on press 8 above limit: 38.4 bar
+14.03.26 06:38:53,711  ET200SP/IM155  INF 0003  Batch 8745 started on line 5
+14.03.26 06:39:01,832  S7-1500/CPU2  INF 0007  Recipe R-699 loaded on station 2
+14.03.26 06:39:02,775  S7-1500/CPU2  ACK 0099  Alarm 570 acknowledged by operator 3
+14.03.26 06:39:08,287  ET200SP/IM155  FLT 0900  Safety relay K5 tripped, line 5 stopped
+    > input I2.3 = FALSE
+    > last OK cycle: 178 ms ago
+14.03.26 06:39:11,058  ET200SP/IM155  WRN 0014  Cycle time 7590 ms exceeds target on station 2
+14.03.26 06:39:12,330  S7-1500/CPU2  FLT 0901  Safety relay K2 tripped, line 2 stopped
+    > input I8.3 = FALSE
+    > last OK cycle: 981 ms ago
+14.03.26 06:39:12,786  S7-1500/CPU2  FLT 0902  Safety relay K8 tripped, line 8 stopped
+    > input I8.0 = FALSE
+    > last OK cycle: 811 ms ago
+14.03.26 06:39:15,676  ET200SP/IM155  ALM 0060  Pressure on press 3 above limit: 75.9 bar
+14.03.26 06:39:22,113  ET200SP/IM155  INF 0004  Batch 5292 started on line 2
+14.03.26 06:39:27,165  S7-1500/CPU2  WRN 0019  Filter 3 differential pressure high: 45.7 mbar
+14.03.26 06:39:32,261  S7-1500/CPU2  INF 0008  Recipe R-274 loaded on station 7
+14.03.26 06:39:37,566  S7-1200/PLC_Press  WRN 0015  Cycle time 8810 ms exceeds target on station 7
+14.03.26 06:39:39,697  ET200SP/IM155  WRN 0020  Filter 2 differential pressure high: 93.2 mbar
+14.03.26 06:39:46,756  S7-1500/CPU1  INF 0004  Batch 4798 started on line 8
+14.03.26 06:39:50,320  S7-1500/CPU2  WRN 0014  Cycle time 5030 ms exceeds target on station 3
+14.03.26 06:39:52,705  S7-1200/PLC_Press  INF 0005  Operator login at HMI 1
+14.03.26 06:39:54,170  S7-1200/PLC_Press  ALM 0058  Pressure on press 1 above limit: 30.4 bar
+14.03.26 06:39:57,557  S7-1500/CPU1  INF 0008  Recipe R-902 loaded on station 8
+14.03.26 06:40:02,154  S7-1500/CPU1  ACK 0099  Alarm 843 acknowledged by operator 3
+14.03.26 06:40:08,464  S7-1200/PLC_Press  ALM 0064  Hydraulic oil temperature 59 C on unit 7
+14.03.26 06:40:15,778  S7-1500/CPU2  ALM 0058  Pressure on press 8 above limit: 13.9 bar
+14.03.26 06:40:19,215  S7-1500/CPU2  ACK 0100  Alarm 99 acknowledged by operator 2
+14.03.26 06:40:23,594  S7-1200/PLC_Press  INF 0006  Operator login at HMI 5
+14.03.26 06:40:26,947  S7-1500/CPU1  FLT 0901  Safety relay K8 tripped, line 8 stopped
+    > input I0.0 = FALSE
+    > last OK cycle: 560 ms ago
+14.03.26 06:40:30,743  S7-1500/CPU2  INF 0004  Operator login at HMI 1
+14.03.26 06:40:31,507  S7-1500/CPU1  ALM 0045  Conveyor 8 motor overcurrent: 2.1 A
+14.03.26 06:40:35,294  S7-1500/CPU1  INF 0003  Batch 8351 started on line 1
+14.03.26 06:40:39,162  S7-1200/PLC_Press  ACK 0102  Alarm 517 acknowledged by operator 2
+14.03.26 06:40:42,807  ET200SP/IM155  INF 0001  Batch 8651 started on line 1
+14.03.26 06:40:47,151  S7-1500/CPU1  FLT 0902  Safety relay K8 tripped, line 8 stopped
+    > input I5.5 = FALSE
+    > last OK cycle: 278 ms ago
+14.03.26 06:40:48,510  ET200SP/IM155  INF 0004  Operator login at HMI 5
+14.03.26 06:40:57,209  ET200SP/IM155  WRN 0019  Filter 8 differential pressure high: 9.7 mbar
+14.03.26 06:41:05,441  S7-1500/CPU1  ACK 0100  Alarm 469 acknowledged by operator 7
+14.03.26 06:41:06,907  S7-1500/CPU2  WRN 0013  Cycle time 9570 ms exceeds target on station 8
+14.03.26 06:41:11,810  S7-1500/CPU2  WRN 0012  Cycle time 2200 ms exceeds target on station 3
+14.03.26 06:41:14,502  S7-1200/PLC_Press  INF 0006  Operator login at HMI 4
+14.03.26 06:41:22,690  S7-1500/CPU1  INF 0005  Recipe R-12 loaded on station 6
+14.03.26 06:41:29,510  S7-1500/CPU1  WRN 0014  Cycle time 5900 ms exceeds target on station 8
+14.03.26 06:41:31,856  S7-1500/CPU1  INF 0004  Operator login at HMI 4
+14.03.26 06:41:35,971  S7-1500/CPU2  ALM 0044  Conveyor 4 motor overcurrent: 17.3 A
+14.03.26 06:41:42,062  S7-1200/PLC_Press  INF 0005  Operator login at HMI 2
+14.03.26 06:41:43,587  S7-1500/CPU2  INF 0003  Batch 992 started on line 2
+14.03.26 06:41:43,770  S7-1500/CPU1  ALM 0061  Hydraulic oil temperature 47 C on unit 8
+14.03.26 06:41:46,478  S7-1500/CPU2  WRN 0014  Cycle time 7280 ms exceeds target on station 6
+14.03.26 06:41:54,667  ET200SP/IM155  INF 0004  Batch 617 started on line 7
+14.03.26 06:41:55,973  S7-1200/PLC_Press  INF 0007  Recipe R-22 loaded on station 5
+14.03.26 06:42:04,146  ET200SP/IM155  INF 0007  Recipe R-745 loaded on station 5
+14.03.26 06:42:07,204  S7-1200/PLC_Press  WRN 0014  Cycle time 9720 ms exceeds target on station 4
+14.03.26 06:42:10,755  ET200SP/IM155  INF 0003  Batch 7106 started on line 6
+14.03.26 06:42:18,572  S7-1200/PLC_Press  ACK 0100  Alarm 157 acknowledged by operator 2
+14.03.26 06:42:24,127  ET200SP/IM155  ALM 0043  Conveyor 1 motor overcurrent: 59.1 A
+14.03.26 06:42:28,540  S7-1500/CPU1  INF 0003  Operator login at HMI 7
+14.03.26 06:42:30,192  S7-1500/CPU2  WRN 0015  Cycle time 3760 ms exceeds target on station 3
+14.03.26 06:42:31,894  S7-1200/PLC_Press  ACK 0102  Alarm 11 acknowledged by operator 1
+14.03.26 06:42:32,531  S7-1200/PLC_Press  ALM 0060  Pressure on press 4 above limit: 68.8 bar
+14.03.26 06:42:38,138  S7-1500/CPU1  WRN 0018  Filter 4 differential pressure high: 61.4 mbar
+14.03.26 06:42:42,344  ET200SP/IM155  INF 0005  Recipe R-242 loaded on station 6
+14.03.26 06:42:42,627  S7-1500/CPU2  INF 0007  Recipe R-344 loaded on station 3
+14.03.26 06:42:43,118  S7-1200/PLC_Press  INF 0001  Batch 1421 started on line 1
+14.03.26 06:42:46,435  S7-1500/CPU2  FLT 0902  Safety relay K2 tripped, line 2 stopped
+    > input I8.1 = FALSE
+    > last OK cycle: 389 ms ago
+14.03.26 06:42:55,276  S7-1200/PLC_Press  INF 0006  Operator login at HMI 2
+14.03.26 06:43:02,760  S7-1200/PLC_Press  WRN 0014  Cycle time 4360 ms exceeds target on station 7
+14.03.26 06:43:09,916  S7-1500/CPU1  INF 0005  Recipe R-765 loaded on station 2
+14.03.26 06:43:15,783  S7-1500/CPU1  FLT 0903  Safety relay K6 tripped, line 6 stopped
+    > input I5.0 = FALSE
+    > last OK cycle: 289 ms ago
+14.03.26 06:43:21,853  ET200SP/IM155  ACK 0100  Alarm 375 acknowledged by operator 7
+14.03.26 06:43:27,838  S7-1500/CPU1  INF 0008  Recipe R-268 loaded on station 2
+14.03.26 06:43:31,208  ET200SP/IM155  INF 0003  Operator login at HMI 6
+14.03.26 06:43:38,868  S7-1500/CPU2  WRN 0013  Cycle time 6870 ms exceeds target on station 5
+14.03.26 06:43:42,181  S7-1500/CPU1  INF 0004  Batch 5046 started on line 6
+14.03.26 06:43:48,067  S7-1200/PLC_Press  FLT 0900  Safety relay K8 tripped, line 8 stopped
+    > input I1.2 = FALSE
+    > last OK cycle: 355 ms ago
+14.03.26 06:43:52,005  S7-1500/CPU2  ACK 0100  Alarm 612 acknowledged by operator 3
+14.03.26 06:43:56,260  S7-1500/CPU2  WRN 0012  Cycle time 6100 ms exceeds target on station 3
+14.03.26 06:44:01,187  S7-1500/CPU1  WRN 0019  Filter 1 differential pressure high: 36.8 mbar
+14.03.26 06:44:02,923  S7-1500/CPU2  INF 0006  Recipe R-248 loaded on station 5
+14.03.26 06:44:09,353  ET200SP/IM155  INF 0007  Recipe R-127 loaded on station 3
+14.03.26 06:44:11,649  S7-1500/CPU2  INF 0003  Batch 6178 started on line 8
+14.03.26 06:44:15,585  S7-1500/CPU1  ALM 0063  Hydraulic oil temperature 30 C on unit 5
+14.03.26 06:44:21,033  S7-1500/CPU1  INF 0007  Recipe R-385 loaded on station 7
+14.03.26 06:44:22,266  S7-1200/PLC_Press  INF 0005  Operator login at HMI 2
+14.03.26 06:44:24,761  S7-1200/PLC_Press  WRN 0018  Filter 2 differential pressure high: 97.2 mbar
+14.03.26 06:44:28,548  S7-1500/CPU2  INF 0004  Batch 1461 started on line 1
+14.03.26 06:44:31,493  S7-1500/CPU2  INF 0008  Recipe R-152 loaded on station 7
+14.03.26 06:44:34,802  S7-1500/CPU1  WRN 0018  Filter 4 differential pressure high: 32.8 mbar
+14.03.26 06:44:35,443  S7-1500/CPU1  INF 0005  Recipe R-226 loaded on station 5
+14.03.26 06:44:38,809  S7-1500/CPU1  INF 0008  Recipe R-236 loaded on station 2
+14.03.26 06:44:40,386  S7-1500/CPU1  WRN 0020  Filter 3 differential pressure high: 54.5 mbar
+14.03.26 06:44:45,178  ET200SP/IM155  ALM 0062  Hydraulic oil temperature 92 C on unit 1
+14.03.26 06:44:51,287  ET200SP/IM155  WRN 0020  Filter 3 differential pressure high: 20.9 mbar
+14.03.26 06:44:51,642  ET200SP/IM155  INF 0004  Operator login at HMI 6
+14.03.26 06:44:57,454  S7-1500/CPU2  WRN 0013  Cycle time 6120 ms exceeds target on station 8
+14.03.26 06:44:58,553  ET200SP/IM155  ACK 0101  Alarm 597 acknowledged by operator 8
+14.03.26 06:44:58,648  S7-1500/CPU1  INF 0002  Batch 2092 started on line 2
+14.03.26 06:45:06,981  ET200SP/IM155  ACK 0101  Alarm 159 acknowledged by operator 3
+14.03.26 06:45:15,204  ET200SP/IM155  INF 0007  Recipe R-586 loaded on station 2
+14.03.26 06:45:17,940  ET200SP/IM155  INF 0003  Batch 7114 started on line 4
+14.03.26 06:45:24,280  S7-1500/CPU1  INF 0008  Recipe R-309 loaded on station 5
+14.03.26 06:45:28,416  S7-1500/CPU2  ALM 0060  Pressure on press 8 above limit: 63.7 bar
+14.03.26 06:45:35,485  S7-1500/CPU1  INF 0003  Operator login at HMI 4
+14.03.26 06:45:38,203  S7-1500/CPU1  ALM 0043  Conveyor 1 motor overcurrent: 83.9 A
+14.03.26 06:45:40,786  S7-1500/CPU2  INF 0005  Operator login at HMI 8
+14.03.26 06:45:46,015  ET200SP/IM155  WRN 0018  Filter 1 differential pressure high: 93.1 mbar
+14.03.26 06:45:53,148  S7-1200/PLC_Press  INF 0001  Batch 2025 started on line 5
+14.03.26 06:45:56,684  ET200SP/IM155  ALM 0044  Conveyor 7 motor overcurrent: 53.5 A
+14.03.26 06:46:04,670  S7-1500/CPU2  ALM 0060  Pressure on press 5 above limit: 3.3 bar
+14.03.26 06:46:05,221  S7-1200/PLC_Press  WRN 0013  Cycle time 8320 ms exceeds target on station 1
+14.03.26 06:46:07,459  S7-1500/CPU1  INF 0004  Operator login at HMI 3
+14.03.26 06:46:14,854  ET200SP/IM155  INF 0004  Batch 3055 started on line 5
+14.03.26 06:46:22,916  S7-1500/CPU2  WRN 0021  Filter 4 differential pressure high: 60.2 mbar
+14.03.26 06:46:30,714  S7-1500/CPU2  INF 0001  Batch 8418 started on line 8
+14.03.26 06:46:39,471  S7-1200/PLC_Press  INF 0003  Operator login at HMI 6
+14.03.26 06:46:41,142  S7-1500/CPU2  ACK 0099  Alarm 399 acknowledged by operator 7
+14.03.26 06:46:42,732  S7-1500/CPU2  INF 0008  Recipe R-76 loaded on station 8
+14.03.26 06:46:49,472  S7-1200/PLC_Press  ACK 0102  Alarm 514 acknowledged by operator 7
+14.03.26 06:46:50,047  S7-1500/CPU1  ACK 0102  Alarm 361 acknowledged by operator 6
+14.03.26 06:46:58,926  S7-1200/PLC_Press  ALM 0062  Hydraulic oil temperature 7 C on unit 4
+14.03.26 06:47:07,045  ET200SP/IM155  ACK 0100  Alarm 20 acknowledged by operator 4
+14.03.26 06:47:08,837  S7-1500/CPU1  FLT 0901  Safety relay K4 tripped, line 4 stopped
+    > input I1.5 = FALSE
+    > last OK cycle: 838 ms ago
+14.03.26 06:47:11,532  S7-1200/PLC_Press  ACK 0102  Alarm 357 acknowledged by operator 4
+14.03.26 06:47:18,930  S7-1200/PLC_Press  ACK 0102  Alarm 682 acknowledged by operator 2
+14.03.26 06:47:22,421  S7-1500/CPU2  ALM 0061  Hydraulic oil temperature 94 C on unit 2
+14.03.26 06:47:27,763  ET200SP/IM155  ACK 0099  Alarm 443 acknowledged by operator 3
+14.03.26 06:47:36,289  S7-1500/CPU1  FLT 0902  Safety relay K6 tripped, line 6 stopped
+    > input I8.4 = FALSE
+    > last OK cycle: 720 ms ago
+14.03.26 06:47:38,978  ET200SP/IM155  FLT 0902  Safety relay K7 tripped, line 7 stopped
+    > input I3.1 = FALSE
+    > last OK cycle: 610 ms ago
+14.03.26 06:47:46,758  S7-1200/PLC_Press  INF 0005  Recipe R-372 loaded on station 2
+14.03.26 06:47:48,082  S7-1200/PLC_Press  INF 0006  Operator login at HMI 5
+14.03.26 06:47:50,011  ET200SP/IM155  ALM 0045  Conveyor 4 motor overcurrent: 90.9 A
+14.03.26 06:47:52,200  ET200SP/IM155  ALM 0043  Conveyor 7 motor overcurrent: 67.0 A
+14.03.26 06:47:56,476  S7-1500/CPU1  INF 0003  Batch 1803 started on line 3
+14.03.26 06:48:00,753  S7-1500/CPU2  ALM 0061  Hydraulic oil temperature 78 C on unit 6
+14.03.26 06:48:01,783  S7-1200/PLC_Press  WRN 0014  Cycle time 5700 ms exceeds target on station 4
+14.03.26 06:48:05,760  ET200SP/IM155  INF 0006  Operator login at HMI 7
+14.03.26 06:48:06,771  ET200SP/IM155  INF 0004  Operator login at HMI 8
+14.03.26 06:48:10,082  S7-1500/CPU1  WRN 0013  Cycle time 1680 ms exceeds target on station 4
+14.03.26 06:48:15,899  S7-1500/CPU2  WRN 0015  Cycle time 3370 ms exceeds target on station 8
+14.03.26 06:48:21,542  S7-1500/CPU2  INF 0006  Recipe R-340 loaded on station 2
+14.03.26 06:48:21,860  S7-1500/CPU1  INF 0005  Operator login at HMI 1
+14.03.26 06:48:22,420  S7-1500/CPU1  INF 0006  Operator login at HMI 2
+14.03.26 06:48:30,284  S7-1500/CPU1  INF 0004  Operator login at HMI 1
+14.03.26 06:48:32,555  S7-1200/PLC_Press  ALM 0059  Pressure on press 5 above limit: 91.1 bar
+14.03.26 06:48:38,814  ET200SP/IM155  INF 0001  Batch 3587 started on line 7
+14.03.26 06:48:40,436  ET200SP/IM155  ALM 0064  Hydraulic oil temperature 63 C on unit 6
+14.03.26 06:48:43,585  S7-1500/CPU2  INF 0007  Recipe R-14 loaded on station 1
+14.03.26 06:48:52,390  S7-1500/CPU1  ACK 0100  Alarm 146 acknowledged by operator 7
+14.03.26 06:48:57,309  S7-1200/PLC_Press  INF 0004  Operator login at HMI 6
+14.03.26 06:49:05,334  S7-1500/CPU2  ALM 0059  Pressure on press 7 above limit: 99.7 bar
+14.03.26 06:49:06,381  S7-1500/CPU2  INF 0002  Batch 7348 started on line 8
+14.03.26 06:49:14,599  S7-1500/CPU1  INF 0004  Batch 9547 started on line 7
+14.03.26 06:49:16,178  S7-1200/PLC_Press  ALM 0064  Hydraulic oil temperature 18 C on unit 2
+14.03.26 06:49:23,572  S7-1200/PLC_Press  INF 0007  Recipe R-591 loaded on station 1
+14.03.26 06:49:25,161  S7-1500/CPU1  ACK 0101  Alarm 668 acknowledged by operator 3
+14.03.26 06:49:27,121  S7-1200/PLC_Press  ALM 0045  Conveyor 5 motor overcurrent: 98.4 A
+14.03.26 06:49:35,289  S7-1200/PLC_Press  ACK 0099  Alarm 807 acknowledged by operator 3
+14.03.26 06:49:38,607  S7-1200/PLC_Press  ACK 0102  Alarm 135 acknowledged by operator 8
+14.03.26 06:49:40,213  S7-1500/CPU1  WRN 0020  Filter 7 differential pressure high: 6.8 mbar
+14.03.26 06:49:48,097  S7-1200/PLC_Press  ALM 0063  Hydraulic oil temperature 51 C on unit 3
+14.03.26 06:49:48,394  ET200SP/IM155  ACK 0101  Alarm 708 acknowledged by operator 5
+14.03.26 06:49:52,612  S7-1500/CPU1  WRN 0015  Cycle time 1410 ms exceeds target on station 7
+14.03.26 06:50:00,906  S7-1500/CPU1  WRN 0018  Filter 4 differential pressure high: 48.2 mbar
+14.03.26 06:50:09,407  ET200SP/IM155  INF 0006  Recipe R-878 loaded on station 5
+14.03.26 06:50:11,504  S7-1500/CPU2  ACK 0101  Alarm 700 acknowledged by operator 7
+14.03.26 06:50:17,253  S7-1200/PLC_Press  INF 0006  Recipe R-323 loaded on station 5
+14.03.26 06:50:25,552  ET200SP/IM155  INF 0006  Recipe R-628 loaded on station 4
+14.03.26 06:50:29,414  S7-1200/PLC_Press  INF 0001  Batch 3618 started on line 8
+14.03.26 06:50:31,498  S7-1200/PLC_Press  ACK 0099  Alarm 440 acknowledged by operator 5
+14.03.26 06:50:36,832  S7-1500/CPU1  FLT 0901  Safety relay K1 tripped, line 1 stopped
+    > input I4.1 = FALSE
+    > last OK cycle: 390 ms ago
+14.03.26 06:50:40,454  ET200SP/IM155  INF 0002  Batch 4963 started on line 3
+14.03.26 06:50:44,170  S7-1500/CPU2  INF 0004  Operator login at HMI 3
+14.03.26 06:50:50,504  S7-1500/CPU2  INF 0006  Recipe R-832 loaded on station 6
+14.03.26 06:50:59,248  S7-1500/CPU2  WRN 0014  Cycle time 8590 ms exceeds target on station 2
+14.03.26 06:51:07,477  S7-1200/PLC_Press  INF 0007  Recipe R-130 loaded on station 3
+14.03.26 06:51:12,623  S7-1200/PLC_Press  INF 0007  Recipe R-313 loaded on station 8
+14.03.26 06:51:19,399  S7-1200/PLC_Press  INF 0006  Operator login at HMI 1
+14.03.26 06:51:22,475  ET200SP/IM155  ALM 0044  Conveyor 3 motor overcurrent: 30.3 A
+14.03.26 06:51:22,978  ET200SP/IM155  ALM 0060  Pressure on press 3 above limit: 4.3 bar
+14.03.26 06:51:23,998  S7-1200/PLC_Press  ACK 0100  Alarm 980 acknowledged by operator 4
+14.03.26 06:51:24,574  ET200SP/IM155  INF 0005  Operator login at HMI 4
+14.03.26 06:51:30,467  ET200SP/IM155  ALM 0043  Conveyor 2 motor overcurrent: 30.2 A
+14.03.26 06:51:37,656  S7-1500/CPU1  FLT 0901  Safety relay K3 tripped, line 3 stopped
+    > input I9.7 = FALSE
+    > last OK cycle: 642 ms ago
+14.03.26 06:51:43,411  S7-1500/CPU2  INF 0008  Recipe R-645 loaded on station 8
+14.03.26 06:51:46,240  S7-1500/CPU1  INF 0008  Recipe R-563 loaded on station 1
+14.03.26 06:51:54,632  ET200SP/IM155  WRN 0019  Filter 4 differential pressure high: 52.7 mbar
+14.03.26 06:52:00,069  S7-1500/CPU1  INF 0005  Operator login at HMI 8
+14.03.26 06:52:03,633  S7-1200/PLC_Press  ALM 0057  Pressure on press 6 above limit: 46.4 bar
+14.03.26 06:52:03,798  ET200SP/IM155  ALM 0062  Hydraulic oil temperature 26 C on unit 7
+14.03.26 06:52:09,485  ET200SP/IM155  INF 0008  Recipe R-782 loaded on station 3
+14.03.26 06:52:10,620  S7-1200/PLC_Press  ACK 0100  Alarm 634 acknowledged by operator 2
+14.03.26 06:52:11,339  S7-1200/PLC_Press  INF 0007  Recipe R-149 loaded on station 8
+14.03.26 06:52:18,640  ET200SP/IM155  ALM 0062  Hydraulic oil temperature 87 C on unit 2
+14.03.26 06:52:22,143  ET200SP/IM155  ALM 0045  Conveyor 6 motor overcurrent: 48.3 A
+14.03.26 06:52:24,036  ET200SP/IM155  ALM 0058  Pressure on press 8 above limit: 63.8 bar
+14.03.26 06:52:29,277  S7-1500/CPU2  INF 0007  Recipe R-515 loaded on station 6
+14.03.26 06:52:35,645  S7-1200/PLC_Press  INF 0001  Batch 5146 started on line 6
+14.03.26 06:52:37,141  S7-1200/PLC_Press  FLT 0902  Safety relay K4 tripped, line 4 stopped
+    > input I7.1 = FALSE
+    > last OK cycle: 263 ms ago
+14.03.26 06:52:41,966  S7-1200/PLC_Press  ACK 0099  Alarm 860 acknowledged by operator 1
+14.03.26 06:52:47,826  S7-1200/PLC_Press  ALM 0058  Pressure on press 5 above limit: 98.8 bar
+14.03.26 06:52:55,091  S7-1500/CPU1  ACK 0101  Alarm 591 acknowledged by operator 2
+14.03.26 06:53:01,678  S7-1200/PLC_Press  WRN 0021  Filter 1 differential pressure high: 34.4 mbar
+14.03.26 06:53:10,183  ET200SP/IM155  INF 0003  Batch 2273 started on line 3
+14.03.26 06:53:15,264  S7-1200/PLC_Press  FLT 0903  Safety relay K8 tripped, line 8 stopped
+    > input I0.4 = FALSE
+    > last OK cycle: 389 ms ago
+14.03.26 06:53:23,821  S7-1500/CPU2  ACK 0101  Alarm 767 acknowledged by operator 6
+14.03.26 06:53:26,301  S7-1500/CPU1  ALM 0057  Pressure on press 6 above limit: 39.9 bar
+14.03.26 06:53:28,676  S7-1200/PLC_Press  ALM 0043  Conveyor 6 motor overcurrent: 56.5 A
+14.03.26 06:53:34,386  S7-1500/CPU2  ACK 0099  Alarm 321 acknowledged by operator 6
+14.03.26 06:53:37,269  S7-1200/PLC_Press  WRN 0018  Filter 4 differential pressure high: 65.1 mbar
+14.03.26 06:53:38,598  S7-1500/CPU2  WRN 0018  Filter 8 differential pressure high: 8.6 mbar
+14.03.26 06:53:39,591  ET200SP/IM155  INF 0008  Recipe R-862 loaded on station 1
+14.03.26 06:53:43,214  S7-1500/CPU2  ALM 0045  Conveyor 1 motor overcurrent: 58.1 A
+14.03.26 06:53:46,033  S7-1200/PLC_Press  INF 0003  Batch 4683 started on line 3
+14.03.26 06:53:53,007  S7-1500/CPU1  ACK 0099  Alarm 663 acknowledged by operator 4
+14.03.26 06:53:58,457  S7-1500/CPU2  WRN 0018  Filter 1 differential pressure high: 24.9 mbar
+14.03.26 06:54:06,427  S7-1200/PLC_Press  ALM 0043  Conveyor 2 motor overcurrent: 59.2 A
+14.03.26 06:54:07,899  ET200SP/IM155  ACK 0102  Alarm 943 acknowledged by operator 1
+14.03.26 06:54:16,409  S7-1200/PLC_Press  INF 0006  Operator login at HMI 7
+14.03.26 06:54:17,854  S7-1500/CPU1  ALM 0064  Hydraulic oil temperature 73 C on unit 3
+14.03.26 06:54:19,055  S7-1500/CPU1  ACK 0100  Alarm 412 acknowledged by operator 8
+14.03.26 06:54:26,347  S7-1500/CPU2  ACK 0100  Alarm 243 acknowledged by operator 1
+14.03.26 06:54:29,553  ET200SP/IM155  ALM 0057  Pressure on press 7 above limit: 96.6 bar
+14.03.26 06:54:35,292  S7-1200/PLC_Press  INF 0006  Operator login at HMI 7
+14.03.26 06:54:39,199  S7-1200/PLC_Press  ALM 0057  Pressure on press 6 above limit: 92.0 bar
+14.03.26 06:54:45,525  S7-1500/CPU1  WRN 0021  Filter 1 differential pressure high: 3.1 mbar
+14.03.26 06:54:47,611  S7-1500/CPU2  WRN 0019  Filter 8 differential pressure high: 58.7 mbar
+14.03.26 06:54:50,957  S7-1200/PLC_Press  FLT 0901  Safety relay K6 tripped, line 6 stopped
+    > input I4.2 = FALSE
+    > last OK cycle: 390 ms ago
+14.03.26 06:54:54,835  S7-1200/PLC_Press  FLT 0902  Safety relay K4 tripped, line 4 stopped
+    > input I2.0 = FALSE
+    > last OK cycle: 904 ms ago
+14.03.26 06:54:58,357  S7-1200/PLC_Press  WRN 0021  Filter 2 differential pressure high: 50.6 mbar
+14.03.26 06:54:59,746  S7-1500/CPU2  WRN 0013  Cycle time 6280 ms exceeds target on station 6
+14.03.26 06:55:02,356  S7-1500/CPU1  ALM 0057  Pressure on press 8 above limit: 82.2 bar
+14.03.26 06:55:05,035  S7-1500/CPU1  ALM 0064  Hydraulic oil temperature 50 C on unit 7
+14.03.26 06:55:08,977  S7-1500/CPU1  WRN 0021  Filter 8 differential pressure high: 21.4 mbar
+14.03.26 06:55:09,381  S7-1500/CPU2  WRN 0021  Filter 5 differential pressure high: 72.1 mbar
+14.03.26 06:55:18,357  S7-1500/CPU2  INF 0008  Recipe R-319 loaded on station 3
+14.03.26 06:55:23,012  S7-1500/CPU1  INF 0006  Operator login at HMI 8
+14.03.26 06:55:28,459  ET200SP/IM155  INF 0002  Batch 2001 started on line 1
+14.03.26 06:55:34,782  S7-1500/CPU1  WRN 0012  Cycle time 3740 ms exceeds target on station 7
+14.03.26 06:55:43,435  S7-1500/CPU1  WRN 0012  Cycle time 9150 ms exceeds target on station 8
+14.03.26 06:55:46,393  S7-1500/CPU2  ALM 0062  Hydraulic oil temperature 46 C on unit 2
+14.03.26 06:55:49,128  ET200SP/IM155  ACK 0102  Alarm 866 acknowledged by operator 3
+14.03.26 06:55:55,677  ET200SP/IM155  ALM 0064  Hydraulic oil temperature 5 C on unit 2
+14.03.26 06:55:57,920  S7-1500/CPU2  INF 0005  Recipe R-331 loaded on station 7
+14.03.26 06:55:58,189  ET200SP/IM155  WRN 0013  Cycle time 9550 ms exceeds target on station 7
+14.03.26 06:56:03,377  S7-1500/CPU1  ACK 0101  Alarm 428 acknowledged by operator 1
+14.03.26 06:56:07,814  S7-1200/PLC_Press  WRN 0019  Filter 5 differential pressure high: 76.8 mbar
+14.03.26 06:56:16,599  ET200SP/IM155  INF 0005  Operator login at HMI 3
+14.03.26 06:56:18,405  S7-1500/CPU1  INF 0003  Batch 9978 started on line 8
+14.03.26 06:56:24,347  ET200SP/IM155  WRN 0021  Filter 1 differential pressure high: 87.8 mbar
+14.03.26 06:56:25,458  S7-1500/CPU2  INF 0001  Batch 3898 started on line 8
+14.03.26 06:56:31,518  S7-1500/CPU2  INF 0006  Operator login at HMI 6
+14.03.26 06:56:38,726  S7-1500/CPU2  ALM 0061  Hydraulic oil temperature 55 C on unit 2
+14.03.26 06:56:43,042  S7-1500/CPU1  INF 0008  Recipe R-499 loaded on station 3
+14.03.26 06:56:49,547  S7-1200/PLC_Press  ACK 0101  Alarm 854 acknowledged by operator 1
+14.03.26 06:56:50,169  ET200SP/IM155  INF 0006  Recipe R-638 loaded on station 2
+14.03.26 06:56:53,658  ET200SP/IM155  ALM 0061  Hydraulic oil temperature 4 C on unit 3
+14.03.26 06:56:53,862  ET200SP/IM155  INF 0004  Batch 6077 started on line 7
+14.03.26 06:56:56,014  S7-1500/CPU2  ACK 0101  Alarm 251 acknowledged by operator 2
+14.03.26 06:56:56,400  S7-1500/CPU1  INF 0006  Recipe R-719 loaded on station 5
+14.03.26 06:56:57,061  S7-1200/PLC_Press  INF 0006  Recipe R-383 loaded on station 2
+14.03.26 06:57:05,040  S7-1200/PLC_Press  INF 0005  Operator login at HMI 2
+14.03.26 06:57:12,031  ET200SP/IM155  INF 0006  Operator login at HMI 4
+14.03.26 06:57:19,426  S7-1500/CPU1  WRN 0019  Filter 8 differential pressure high: 28.7 mbar
+14.03.26 06:57:28,147  S7-1500/CPU1  WRN 0021  Filter 6 differential pressure high: 34.1 mbar
+14.03.26 06:57:32,943  S7-1200/PLC_Press  ALM 0058  Pressure on press 6 above limit: 3.8 bar
+14.03.26 06:57:38,181  S7-1200/PLC_Press  ALM 0062  Hydraulic oil temperature 14 C on unit 2
+14.03.26 06:57:38,887  S7-1200/PLC_Press  INF 0006  Operator login at HMI 4
+14.03.26 06:57:42,019  ET200SP/IM155  FLT 0902  Safety relay K8 tripped, line 8 stopped
+    > input I2.7 = FALSE
+    > last OK cycle: 764 ms ago
+14.03.26 06:57:44,484  S7-1500/CPU1  FLT 0900  Safety relay K1 tripped, line 1 stopped
+    > input I1.4 = FALSE
+    > last OK cycle: 943 ms ago
+14.03.26 06:57:45,390  ET200SP/IM155  INF 0005  Recipe R-358 loaded on station 6
+14.03.26 06:57:48,588  S7-1500/CPU1  ALM 0057  Pressure on press 8 above limit: 51.9 bar
+14.03.26 06:57:49,955  S7-1200/PLC_Press  ACK 0100  Alarm 707 acknowledged by operator 7
+14.03.26 06:57:53,515  S7-1200/PLC_Press  ALM 0044  Conveyor 3 motor overcurrent: 83.4 A
+14.03.26 06:58:02,073  S7-1500/CPU1  WRN 0013  Cycle time 5320 ms exceeds target on station 3
+14.03.26 06:58:10,682  S7-1500/CPU2  INF 0003  Batch 3481 started on line 1
+14.03.26 06:58:14,760  S7-1500/CPU2  WRN 0020  Filter 7 differential pressure high: 82.1 mbar
+14.03.26 06:58:21,030  S7-1200/PLC_Press  ACK 0102  Alarm 102 acknowledged by operator 8
+14.03.26 06:58:26,968  S7-1500/CPU2  ALM 0057  Pressure on press 7 above limit: 24.5 bar
+14.03.26 06:58:30,649  S7-1500/CPU1  ALM 0042  Conveyor 3 motor overcurrent: 80.0 A
+14.03.26 06:58:39,103  S7-1500/CPU1  WRN 0015  Cycle time 7270 ms exceeds target on station 8
+14.03.26 06:58:40,172  S7-1500/CPU2  WRN 0015  Cycle time 7430 ms exceeds target on station 7
+14.03.26 06:58:48,041  S7-1500/CPU2  INF 0005  Recipe R-601 loaded on station 1
+14.03.26 06:58:50,095  ET200SP/IM155  INF 0008  Recipe R-532 loaded on station 1
+14.03.26 06:58:58,988  S7-1500/CPU1  INF 0003  Batch 2625 started on line 5
+14.03.26 06:59:06,477  S7-1500/CPU1  INF 0007  Recipe R-451 loaded on station 5
+14.03.26 06:59:15,207  S7-1500/CPU2  INF 0004  Operator login at HMI 3
+14.03.26 06:59:23,235  S7-1500/CPU2  INF 0002  Batch 3305 started on line 5
+14.03.26 06:59:31,900  S7-1200/PLC_Press  ACK 0102  Alarm 272 acknowledged by operator 4
+14.03.26 06:59:35,471  ET200SP/IM155  ALM 0059  Pressure on press 3 above limit: 73.2 bar
+14.03.26 06:59:36,180  S7-1500/CPU2  INF 0007  Recipe R-374 loaded on station 1
+14.03.26 06:59:39,034  S7-1500/CPU1  INF 0006  Recipe R-450 loaded on station 3
+14.03.26 06:59:46,816  S7-1500/CPU1  WRN 0014  Cycle time 8150 ms exceeds target on station 5
+14.03.26 06:59:52,462  ET200SP/IM155  WRN 0021  Filter 6 differential pressure high: 78.4 mbar
+14.03.26 07:00:00,440  ET200SP/IM155  INF 0003  Operator login at HMI 6
+14.03.26 07:00:05,237  S7-1500/CPU1  FLT 0902  Safety relay K1 tripped, line 1 stopped
+    > input I9.7 = FALSE
+    > last OK cycle: 226 ms ago
+14.03.26 07:00:09,658  S7-1500/CPU2  FLT 0901  Safety relay K1 tripped, line 1 stopped
+    > input I5.3 = FALSE
+    > last OK cycle: 956 ms ago
+14.03.26 07:00:12,345  S7-1500/CPU2  ALM 0058  Pressure on press 5 above limit: 32.7 bar
+14.03.26 07:00:14,544  S7-1500/CPU1  WRN 0012  Cycle time 6060 ms exceeds target on station 4
+14.03.26 07:00:15,344  ET200SP/IM155  INF 0004  Batch 9418 started on line 8
+14.03.26 07:00:15,829  ET200SP/IM155  ALM 0043  Conveyor 5 motor overcurrent: 88.1 A
+14.03.26 07:00:16,035  ET200SP/IM155  INF 0005  Recipe R-236 loaded on station 5
+14.03.26 07:00:22,185  S7-1500/CPU1  ACK 0099  Alarm 471 acknowledged by operator 5
+14.03.26 07:00:29,999  ET200SP/IM155  WRN 0019  Filter 6 differential pressure high: 14.9 mbar
+14.03.26 07:00:30,543  ET200SP/IM155  WRN 0013  Cycle time 4260 ms exceeds target on station 5
+14.03.26 07:00:32,223  ET200SP/IM155  WRN 0013  Cycle time 9930 ms exceeds target on station 3
+14.03.26 07:00:40,476  S7-1200/PLC_Press  ALM 0064  Hydraulic oil temperature 83 C on unit 3
+14.03.26 07:00:47,907  S7-1500/CPU2  INF 0003  Operator login at HMI 6
+14.03.26 07:00:55,820  ET200SP/IM155  WRN 0014  Cycle time 7920 ms exceeds target on station 8
+14.03.26 07:01:03,051  ET200SP/IM155  INF 0004  Operator login at HMI 2
+14.03.26 07:01:04,308  ET200SP/IM155  ALM 0064  Hydraulic oil temperature 11 C on unit 8
+14.03.26 07:01:06,862  S7-1200/PLC_Press  ALM 0060  Pressure on press 2 above limit: 86.5 bar
+14.03.26 07:01:11,869  S7-1500/CPU2  WRN 0018  Filter 1 differential pressure high: 9.2 mbar
+14.03.26 07:01:19,652  S7-1500/CPU1  INF 0005  Operator login at HMI 7
+14.03.26 07:01:20,779  S7-1500/CPU1  ALM 0058  Pressure on press 4 above limit: 30.1 bar
+14.03.26 07:01:23,612  ET200SP/IM155  ACK 0100  Alarm 611 acknowledged by operator 1
+14.03.26 07:01:30,686  S7-1200/PLC_Press  INF 0008  Recipe R-248 loaded on station 1
+14.03.26 07:01:32,145  S7-1500/CPU1  INF 0002  Batch 6761 started on line 1
+14.03.26 07:01:38,261  S7-1200/PLC_Press  INF 0006  Recipe R-528 loaded on station 5
+14.03.26 07:01:45,181  ET200SP/IM155  INF 0007  Recipe R-74 loaded on station 7
+14.03.26 07:01:48,838  ET200SP/IM155  INF 0001  Batch 4862 started on line 2
+14.03.26 07:01:56,065  ET200SP/IM155  INF 0005  Operator login at HMI 6
+14.03.26 07:01:59,595  ET200SP/IM155  INF 0007  Recipe R-640 loaded on station 7
+14.03.26 07:02:08,339  S7-1500/CPU2  INF 0004  Operator login at HMI 5
+14.03.26 07:02:12,594  ET200SP/IM155  FLT 0903  Safety relay K5 tripped, line 5 stopped
+    > input I3.6 = FALSE
+    > last OK cycle: 272 ms ago
+14.03.26 07:02:13,597  S7-1200/PLC_Press  INF 0002  Batch 568 started on line 8
+14.03.26 07:02:17,618  ET200SP/IM155  INF 0008  Recipe R-152 loaded on station 6
+14.03.26 07:02:19,488  S7-1500/CPU1  INF 0003  Operator login at HMI 7
+14.03.26 07:02:23,619  S7-1500/CPU2  FLT 0902  Safety relay K7 tripped, line 7 stopped
+    > input I7.6 = FALSE
+    > last OK cycle: 981 ms ago
+14.03.26 07:02:26,712  S7-1500/CPU1  ALM 0057  Pressure on press 1 above limit: 91.4 bar
+14.03.26 07:02:33,658  S7-1500/CPU1  INF 0004  Batch 5157 started on line 7
+14.03.26 07:02:36,469  S7-1500/CPU1  ALM 0043  Conveyor 1 motor overcurrent: 99.5 A
+14.03.26 07:02:38,665  S7-1500/CPU1  WRN 0021  Filter 8 differential pressure high: 54.0 mbar
+14.03.26 07:02:45,088  S7-1500/CPU2  INF 0005  Operator login at HMI 4
+14.03.26 07:02:52,551  ET200SP/IM155  INF 0004  Batch 9626 started on line 6
+14.03.26 07:02:58,759  S7-1200/PLC_Press  ALM 0045  Conveyor 6 motor overcurrent: 58.0 A
+14.03.26 07:03:04,035  ET200SP/IM155  ALM 0042  Conveyor 4 motor overcurrent: 9.6 A
+14.03.26 07:03:04,333  S7-1200/PLC_Press  WRN 0014  Cycle time 9390 ms exceeds target on station 3
+14.03.26 07:03:04,751  S7-1500/CPU2  WRN 0019  Filter 2 differential pressure high: 50.0 mbar
+14.03.26 07:03:08,250  S7-1200/PLC_Press  ALM 0043  Conveyor 1 motor overcurrent: 95.7 A
+14.03.26 07:03:14,527  S7-1500/CPU1  INF 0008  Recipe R-823 loaded on station 7
+14.03.26 07:03:21,232  S7-1500/CPU2  ACK 0101  Alarm 556 acknowledged by operator 1
+14.03.26 07:03:21,497  S7-1500/CPU2  ALM 0044  Conveyor 1 motor overcurrent: 53.9 A
+14.03.26 07:03:25,836  S7-1500/CPU1  ACK 0101  Alarm 443 acknowledged by operator 6
+14.03.26 07:03:32,954  S7-1500/CPU1  ALM 0058  Pressure on press 8 above limit: 86.2 bar
+14.03.26 07:03:34,636  ET200SP/IM155  ACK 0099  Alarm 700 acknowledged by operator 8
+14.03.26 07:03:39,252  S7-1200/PLC_Press  WRN 0018  Filter 5 differential pressure high: 86.3 mbar
+14.03.26 07:03:47,420  S7-1200/PLC_Press  INF 0005  Operator login at HMI 7
+14.03.26 07:03:49,414  ET200SP/IM155  WRN 0019  Filter 5 differential pressure high: 21.5 mbar
+14.03.26 07:03:52,053  ET200SP/IM155  ALM 0045  Conveyor 5 motor overcurrent: 45.3 A
+14.03.26 07:04:00,351  S7-1500/CPU2  WRN 0019  Filter 7 differential pressure high: 12.7 mbar
+14.03.26 07:04:04,091  S7-1500/CPU1  WRN 0012  Cycle time 7020 ms exceeds target on station 7
+14.03.26 07:04:07,129  S7-1500/CPU2  ALM 0042  Conveyor 7 motor overcurrent: 62.7 A
+14.03.26 07:04:08,612  S7-1500/CPU1  INF 0001  Batch 5692 started on line 2
+14.03.26 07:04:15,958  ET200SP/IM155  FLT 0902  Safety relay K3 tripped, line 3 stopped
+    > input I5.7 = FALSE
+    > last OK cycle: 508 ms ago
+14.03.26 07:04:16,049  S7-1200/PLC_Press  ALM 0042  Conveyor 8 motor overcurrent: 20.4 A
+14.03.26 07:04:18,397  S7-1500/CPU1  WRN 0021  Filter 1 differential pressure high: 29.5 mbar
+14.03.26 07:04:24,810  S7-1500/CPU2  INF 0004  Batch 7403 started on line 3
+14.03.26 07:04:24,921  S7-1500/CPU1  INF 0006  Operator login at HMI 2
+14.03.26 07:04:32,255  S7-1500/CPU2  INF 0001  Batch 9592 started on line 2
+14.03.26 07:04:37,460  S7-1500/CPU1  INF 0006  Recipe R-107 loaded on station 7
+14.03.26 07:04:37,746  S7-1500/CPU1  INF 0004  Batch 3316 started on line 6
+14.03.26 07:04:39,298  S7-1500/CPU2  INF 0005  Operator login at HMI 6
+14.03.26 07:04:40,942  S7-1200/PLC_Press  INF 0002  Batch 5956 started on line 6
+14.03.26 07:04:47,114  S7-1500/CPU1  ALM 0063  Hydraulic oil temperature 48 C on unit 8
+14.03.26 07:04:47,931  S7-1200/PLC_Press  INF 0006  Operator login at HMI 8
+14.03.26 07:04:49,056  S7-1500/CPU2  ALM 0063  Hydraulic oil temperature 73 C on unit 7
+14.03.26 07:04:54,819  S7-1200/PLC_Press  INF 0004  Operator login at HMI 7
+14.03.26 07:05:03,372  ET200SP/IM155  ALM 0063  Hydraulic oil temperature 79 C on unit 1
+14.03.26 07:05:11,880  S7-1500/CPU2  INF 0003  Operator login at HMI 4
+14.03.26 07:05:17,722  ET200SP/IM155  INF 0001  Batch 4087 started on line 7
+14.03.26 07:05:21,278  S7-1500/CPU1  ALM 0043  Conveyor 3 motor overcurrent: 97.3 A
+14.03.26 07:05:28,879  S7-1500/CPU1  INF 0003  Operator login at HMI 8
+14.03.26 07:05:37,711  S7-1500/CPU1  ALM 0044  Conveyor 4 motor overcurrent: 38.7 A
+14.03.26 07:05:38,919  S7-1500/CPU2  INF 0001  Batch 7853 started on line 3
+14.03.26 07:05:41,209  ET200SP/IM155  INF 0004  Batch 563 started on line 3
+14.03.26 07:05:44,069  S7-1500/CPU2  INF 0001  Batch 1668 started on line 8
+14.03.26 07:05:45,757  S7-1500/CPU1  ACK 0102  Alarm 670 acknowledged by operator 1
+14.03.26 07:05:52,896  S7-1200/PLC_Press  ALM 0063  Hydraulic oil temperature 10 C on unit 6
+14.03.26 07:05:54,205  S7-1500/CPU2  WRN 0013  Cycle time 2030 ms exceeds target on station 8
+14.03.26 07:06:02,281  S7-1500/CPU2  INF 0005  Operator login at HMI 1
+14.03.26 07:06:05,873  S7-1500/CPU2  WRN 0015  Cycle time 1190 ms exceeds target on station 4
+14.03.26 07:06:14,399  S7-1500/CPU1  INF 0002  Batch 1422 started on line 2
+14.03.26 07:06:21,155  S7-1200/PLC_Press  INF 0007  Recipe R-350 loaded on station 1
+14.03.26 07:06:29,641  S7-1500/CPU1  INF 0003  Operator login at HMI 8
+14.03.26 07:06:36,717  ET200SP/IM155  WRN 0013  Cycle time 1410 ms exceeds target on station 3
+14.03.26 07:06:42,481  S7-1200/PLC_Press  ACK 0099  Alarm 478 acknowledged by operator 3
+14.03.26 07:06:42,939  S7-1500/CPU1  INF 0003  Operator login at HMI 1
+14.03.26 07:06:50,002  S7-1500/CPU1  ALM 0057  Pressure on press 8 above limit: 76.7 bar
+14.03.26 07:06:55,354  S7-1500/CPU2  WRN 0018  Filter 8 differential pressure high: 61.2 mbar
+14.03.26 07:06:58,841  S7-1200/PLC_Press  INF 0005  Operator login at HMI 4
+14.03.26 07:07:05,373  S7-1500/CPU1  INF 0002  Batch 105 started on line 5
+14.03.26 07:07:10,860  ET200SP/IM155  WRN 0021  Filter 3 differential pressure high: 71.6 mbar
+14.03.26 07:07:19,816  S7-1500/CPU2  ALM 0064  Hydraulic oil temperature 92 C on unit 7
+14.03.26 07:07:25,787  ET200SP/IM155  INF 0006  Operator login at HMI 6
+14.03.26 07:07:27,085  S7-1500/CPU1  INF 0003  Batch 3168 started on line 8
+14.03.26 07:07:29,183  S7-1500/CPU2  WRN 0015  Cycle time 4020 ms exceeds target on station 8
+14.03.26 07:07:37,622  S7-1200/PLC_Press  WRN 0021  Filter 2 differential pressure high: 1.1 mbar
+14.03.26 07:07:44,390  ET200SP/IM155  FLT 0903  Safety relay K6 tripped, line 6 stopped
+    > input I4.7 = FALSE
+    > last OK cycle: 721 ms ago
+14.03.26 07:07:47,808  ET200SP/IM155  INF 0008  Recipe R-828 loaded on station 1
+14.03.26 07:07:52,595  S7-1500/CPU2  INF 0005  Recipe R-895 loaded on station 1
+14.03.26 07:07:56,597  ET200SP/IM155  WRN 0018  Filter 8 differential pressure high: 60.3 mbar
+14.03.26 07:08:01,962  ET200SP/IM155  ACK 0101  Alarm 456 acknowledged by operator 1
+14.03.26 07:08:07,349  S7-1500/CPU1  INF 0004  Operator login at HMI 3
+14.03.26 07:08:08,941  S7-1200/PLC_Press  INF 0005  Recipe R-513 loaded on station 8
+14.03.26 07:08:10,944  S7-1500/CPU2  INF 0005  Recipe R-102 loaded on station 8
+14.03.26 07:08:13,783  S7-1200/PLC_Press  ACK 0101  Alarm 92 acknowledged by operator 5
+14.03.26 07:08:22,434  S7-1500/CPU1  ALM 0060  Pressure on press 6 above limit: 47.8 bar
+14.03.26 07:08:28,637  S7-1200/PLC_Press  ACK 0100  Alarm 965 acknowledged by operator 2
+14.03.26 07:08:30,558  S7-1500/CPU1  INF 0007  Recipe R-882 loaded on station 8
+14.03.26 07:08:36,034  S7-1500/CPU1  INF 0006  Operator login at HMI 7
+14.03.26 07:08:40,414  S7-1500/CPU2  INF 0002  Batch 6527 started on line 7
+14.03.26 07:08:41,730  S7-1200/PLC_Press  INF 0005  Recipe R-207 loaded on station 2
+14.03.26 07:08:46,559  S7-1500/CPU2  INF 0006  Operator login at HMI 3
+14.03.26 07:08:47,568  S7-1500/CPU1  FLT 0902  Safety relay K7 tripped, line 7 stopped
+    > input I6.3 = FALSE
+    > last OK cycle: 565 ms ago
+14.03.26 07:08:48,001  S7-1500/CPU2  INF 0005  Recipe R-674 loaded on station 3
+14.03.26 07:08:48,755  S7-1500/CPU1  ALM 0058  Pressure on press 4 above limit: 85.1 bar
+14.03.26 07:08:54,591  S7-1500/CPU2  ACK 0100  Alarm 514 acknowledged by operator 6
+14.03.26 07:08:57,438  S7-1500/CPU2  INF 0004  Operator login at HMI 5
+14.03.26 07:08:59,501  ET200SP/IM155  INF 0001  Batch 6348 started on line 8
+14.03.26 07:09:07,234  S7-1500/CPU1  ALM 0062  Hydraulic oil temperature 25 C on unit 3
+14.03.26 07:09:11,056  ET200SP/IM155  ALM 0057  Pressure on press 5 above limit: 57.4 bar
+14.03.26 07:09:17,668  S7-1200/PLC_Press  ALM 0045  Conveyor 6 motor overcurrent: 89.5 A
+14.03.26 07:09:18,756  ET200SP/IM155  INF 0007  Recipe R-620 loaded on station 7
+14.03.26 07:09:20,736  S7-1500/CPU1  INF 0006  Operator login at HMI 2
+14.03.26 07:09:25,982  S7-1500/CPU2  ACK 0101  Alarm 131 acknowledged by operator 7
+14.03.26 07:09:30,858  S7-1200/PLC_Press  INF 0002  Batch 8108 started on line 8
+14.03.26 07:09:39,577  S7-1200/PLC_Press  ACK 0099  Alarm 653 acknowledged by operator 5
+14.03.26 07:09:42,600  S7-1500/CPU2  ALM 0057  Pressure on press 4 above limit: 90.8 bar
+14.03.26 07:09:46,240  ET200SP/IM155  ACK 0100  Alarm 451 acknowledged by operator 3
+14.03.26 07:09:52,197  S7-1200/PLC_Press  INF 0006  Recipe R-13 loaded on station 6
+14.03.26 07:10:01,000  S7-1500/CPU1  INF 0005  Recipe R-19 loaded on station 5
+14.03.26 07:10:03,517  S7-1200/PLC_Press  WRN 0015  Cycle time 4570 ms exceeds target on station 2
+14.03.26 07:10:10,408  S7-1200/PLC_Press  ACK 0100  Alarm 453 acknowledged by operator 6
+14.03.26 07:10:16,943  ET200SP/IM155  WRN 0020  Filter 1 differential pressure high: 23.8 mbar
+14.03.26 07:10:24,859  ET200SP/IM155  WRN 0019  Filter 5 differential pressure high: 33.9 mbar
+14.03.26 07:10:25,799  ET200SP/IM155  WRN 0015  Cycle time 2980 ms exceeds target on station 8
+14.03.26 07:10:26,489  ET200SP/IM155  WRN 0018  Filter 7 differential pressure high: 35.4 mbar
+14.03.26 07:10:33,241  S7-1500/CPU2  INF 0002  Batch 9703 started on line 3
+14.03.26 07:10:37,600  ET200SP/IM155  ACK 0102  Alarm 314 acknowledged by operator 3
+14.03.26 07:10:41,098  ET200SP/IM155  ALM 0059  Pressure on press 6 above limit: 46.7 bar
+14.03.26 07:10:47,662  ET200SP/IM155  WRN 0012  Cycle time 7430 ms exceeds target on station 8
+14.03.26 07:10:53,902  S7-1500/CPU2  ACK 0099  Alarm 19 acknowledged by operator 5
+14.03.26 07:10:57,198  S7-1500/CPU1  FLT 0902  Safety relay K1 tripped, line 1 stopped
+    > input I0.0 = FALSE
+    > last OK cycle: 176 ms ago
+14.03.26 07:11:02,827  S7-1500/CPU1  WRN 0013  Cycle time 8040 ms exceeds target on station 1
+14.03.26 07:11:10,008  ET200SP/IM155  INF 0003  Batch 1822 started on line 2
+14.03.26 07:11:18,341  ET200SP/IM155  INF 0004  Batch 5685 started on line 5
+14.03.26 07:11:22,959  S7-1500/CPU1  ALM 0059  Pressure on press 1 above limit: 82.8 bar
+14.03.26 07:11:26,898  S7-1500/CPU2  INF 0004  Batch 7032 started on line 2
+14.03.26 07:11:27,385  ET200SP/IM155  ALM 0064  Hydraulic oil temperature 47 C on unit 7
+14.03.26 07:11:35,464  S7-1200/PLC_Press  INF 0004  Batch 7504 started on line 4
+14.03.26 07:11:42,557  S7-1500/CPU1  INF 0001  Batch 9791 started on line 1
+14.03.26 07:11:44,614  ET200SP/IM155  INF 0005  Operator login at HMI 8
+14.03.26 07:11:48,953  S7-1200/PLC_Press  INF 0003  Batch 1957 started on line 7
+14.03.26 07:11:50,070  S7-1500/CPU2  INF 0003  Operator login at HMI 3
+14.03.26 07:11:55,095  S7-1200/PLC_Press  ALM 0059  Pressure on press 3 above limit: 65.7 bar
+14.03.26 07:11:57,461  ET200SP/IM155  WRN 0019  Filter 7 differential pressure high: 49.4 mbar
+14.03.26 07:12:00,372  S7-1500/CPU2  INF 0006  Recipe R-278 loaded on station 2
+14.03.26 07:12:05,977  S7-1500/CPU2  ACK 0101  Alarm 888 acknowledged by operator 8
+14.03.26 07:12:13,436  S7-1200/PLC_Press  WRN 0018  Filter 4 differential pressure high: 43.3 mbar
+14.03.26 07:12:15,044  S7-1500/CPU2  ALM 0057  Pressure on press 5 above limit: 59.5 bar
+14.03.26 07:12:15,291  S7-1500/CPU2  INF 0008  Recipe R-980 loaded on station 4
+14.03.26 07:12:17,159  S7-1500/CPU2  INF 0006  Recipe R-987 loaded on station 7
+14.03.26 07:12:24,436  ET200SP/IM155  WRN 0018  Filter 2 differential pressure high: 85.6 mbar
+14.03.26 07:12:29,450  S7-1500/CPU1  INF 0005  Operator login at HMI 2
+14.03.26 07:12:31,926  S7-1200/PLC_Press  WRN 0014  Cycle time 9620 ms exceeds target on station 4
+14.03.26 07:12:40,357  ET200SP/IM155  ACK 0102  Alarm 992 acknowledged by operator 3
+14.03.26 07:12:49,113  ET200SP/IM155  ACK 0099  Alarm 659 acknowledged by operator 4
+14.03.26 07:12:49,838  S7-1500/CPU1  WRN 0014  Cycle time 4200 ms exceeds target on station 3
+14.03.26 07:12:53,564  ET200SP/IM155  ALM 0064  Hydraulic oil temperature 35 C on unit 8
+14.03.26 07:12:57,927  S7-1200/PLC_Press  INF 0005  Recipe R-334 loaded on station 2
+14.03.26 07:13:06,756  S7-1200/PLC_Press  ALM 0057  Pressure on press 7 above limit: 65.0 bar
+14.03.26 07:13:12,537  ET200SP/IM155  INF 0005  Operator login at HMI 8
+14.03.26 07:13:15,563  S7-1500/CPU1  INF 0003  Batch 1404 started on line 4
+14.03.26 07:13:23,993  S7-1200/PLC_Press  ALM 0064  Hydraulic oil temperature 35 C on unit 6
+14.03.26 07:13:25,504  S7-1500/CPU2  INF 0001  Batch 3008 started on line 8
+14.03.26 07:13:29,638  ET200SP/IM155  WRN 0014  Cycle time 5810 ms exceeds target on station 1
+14.03.26 07:13:33,325  S7-1500/CPU2  INF 0001  Batch 9764 started on line 4
+14.03.26 07:13:34,918  S7-1500/CPU2  INF 0003  Operator login at HMI 5
+14.03.26 07:13:37,239  ET200SP/IM155  INF 0006  Recipe R-654 loaded on station 7
+14.03.26 07:13:43,962  S7-1500/CPU2  INF 0007  Recipe R-379 loaded on station 8
+14.03.26 07:13:52,606  S7-1500/CPU2  INF 0006  Recipe R-159 loaded on station 8
+14.03.26 07:13:56,686  S7-1500/CPU1  ALM 0060  Pressure on press 8 above limit: 58.3 bar
+14.03.26 07:14:03,212  ET200SP/IM155  ALM 0043  Conveyor 2 motor overcurrent: 83.2 A
+14.03.26 07:14:07,710  S7-1200/PLC_Press  ALM 0042  Conveyor 5 motor overcurrent: 80.2 A
+14.03.26 07:14:11,874  S7-1500/CPU2  INF 0005  Operator login at HMI 7
+14.03.26 07:14:18,807  S7-1500/CPU1  WRN 0015  Cycle time 4440 ms exceeds target on station 1
+14.03.26 07:14:24,466  S7-1500/CPU1  INF 0005  Operator login at HMI 4
+14.03.26 07:14:32,440  S7-1500/CPU1  WRN 0015  Cycle time 8060 ms exceeds target on station 2
+14.03.26 07:14:37,935  ET200SP/IM155  INF 0005  Operator login at HMI 3
+14.03.26 07:14:38,322  S7-1200/PLC_Press  INF 0006  Operator login at HMI 3
+14.03.26 07:14:44,186  S7-1500/CPU2  INF 0003  Batch 3501 started on line 1
+14.03.26 07:14:50,390  S7-1500/CPU2  ALM 0062  Hydraulic oil temperature 3 C on unit 3
+14.03.26 07:14:51,215  S7-1500/CPU2  ALM 0063  Hydraulic oil temperature 40 C on unit 4
+14.03.26 07:14:54,184  S7-1500/CPU1  ACK 0102  Alarm 392 acknowledged by operator 8
+14.03.26 07:15:01,465  ET200SP/IM155  ALM 0058  Pressure on press 4 above limit: 60.1 bar
+14.03.26 07:15:07,756  S7-1200/PLC_Press  ALM 0057  Pressure on press 2 above limit: 8.2 bar
+14.03.26 07:15:08,502  S7-1200/PLC_Press  WRN 0018  Filter 3 differential pressure high: 87.0 mbar
+14.03.26 07:15:11,110  S7-1500/CPU2  ALM 0057  Pressure on press 5 above limit: 12.8 bar
+14.03.26 07:15:11,196  S7-1200/PLC_Press  WRN 0020  Filter 5 differential pressure high: 4.9 mbar
+14.03.26 07:15:13,128  S7-1500/CPU1  INF 0005  Operator login at HMI 7
+14.03.26 07:15:13,222  S7-1200/PLC_Press  INF 0003  Operator login at HMI 3
+14.03.26 07:15:17,057  S7-1500/CPU2  ALM 0058  Pressure on press 8 above limit: 31.8 bar
+14.03.26 07:15:24,940  ET200SP/IM155  ACK 0100  Alarm 509 acknowledged by operator 7
+14.03.26 07:15:28,637  S7-1500/CPU2  ALM 0058  Pressure on press 3 above limit: 94.6 bar
+14.03.26 07:15:28,874  S7-1200/PLC_Press  INF 0004  Operator login at HMI 8
+14.03.26 07:15:31,920  S7-1200/PLC_Press  INF 0006  Operator login at HMI 5
+14.03.26 07:15:33,958  S7-1200/PLC_Press  ALM 0043  Conveyor 8 motor overcurrent: 25.7 A
+14.03.26 07:15:40,482  S7-1200/PLC_Press  ACK 0100  Alarm 199 acknowledged by operator 1
+14.03.26 07:15:48,993  ET200SP/IM155  INF 0008  Recipe R-459 loaded on station 5
+14.03.26 07:15:51,370  S7-1500/CPU1  ACK 0100  Alarm 167 acknowledged by operator 5
+14.03.26 07:15:57,521  S7-1500/CPU2  ACK 0101  Alarm 807 acknowledged by operator 1
+14.03.26 07:16:04,099  S7-1500/CPU1  INF 0005  Operator login at HMI 2
+14.03.26 07:16:06,061  ET200SP/IM155  INF 0005  Recipe R-90 loaded on station 6
+14.03.26 07:16:10,173  S7-1200/PLC_Press  FLT 0901  Safety relay K7 tripped, line 7 stopped
+    > input I3.3 = FALSE
+    > last OK cycle: 127 ms ago
+14.03.26 07:16:12,348  S7-1200/PLC_Press  INF 0005  Recipe R-184 loaded on station 6
+14.03.26 07:16:19,742  ET200SP/IM155  FLT 0901  Safety relay K2 tripped, line 2 stopped
+    > input I0.2 = FALSE
+    > last OK cycle: 511 ms ago
+14.03.26 07:16:27,888  ET200SP/IM155  ALM 0057  Pressure on press 6 above limit: 65.6 bar
+14.03.26 07:16:34,723  S7-1500/CPU1  INF 0005  Recipe R-510 loaded on station 2
+14.03.26 07:16:41,742  S7-1500/CPU2  ALM 0058  Pressure on press 4 above limit: 79.9 bar
+14.03.26 07:16:47,589  S7-1200/PLC_Press  INF 0005  Recipe R-687 loaded on station 1
+14.03.26 07:16:55,307  S7-1500/CPU2  WRN 0014  Cycle time 9040 ms exceeds target on station 8
+14.03.26 07:16:59,314  S7-1500/CPU2  INF 0004  Operator login at HMI 3
+14.03.26 07:17:01,822  S7-1500/CPU2  ACK 0099  Alarm 52 acknowledged by operator 1
+14.03.26 07:17:09,007  S7-1200/PLC_Press  INF 0003  Operator login at HMI 5
+14.03.26 07:17:17,792  S7-1200/PLC_Press  INF 0004  Batch 4677 started on line 7
+14.03.26 07:17:23,405  S7-1500/CPU2  FLT 0903  Safety relay K1 tripped, line 1 stopped
+    > input I6.2 = FALSE
+    > last OK cycle: 248 ms ago
+14.03.26 07:17:26,722  S7-1500/CPU2  INF 0003  Operator login at HMI 7
+14.03.26 07:17:30,498  S7-1500/CPU2  INF 0001  Batch 6882 started on line 2
+14.03.26 07:17:31,212  S7-1200/PLC_Press  FLT 0901  Safety relay K6 tripped, line 6 stopped
+    > input I4.2 = FALSE
+    > last OK cycle: 910 ms ago
+14.03.26 07:17:37,902  S7-1200/PLC_Press  WRN 0013  Cycle time 4820 ms exceeds target on station 6
+14.03.26 07:17:44,997  S7-1500/CPU2  FLT 0900  Safety relay K8 tripped, line 8 stopped
+    > input I6.5 = FALSE
+    > last OK cycle: 319 ms ago
+14.03.26 07:17:46,194  S7-1500/CPU1  ACK 0102  Alarm 505 acknowledged by operator 6
+14.03.26 07:17:49,730  S7-1500/CPU1  INF 0004  Operator login at HMI 6
+14.03.26 07:17:53,337  S7-1500/CPU1  ALM 0045  Conveyor 3 motor overcurrent: 36.2 A
+14.03.26 07:17:58,698  S7-1500/CPU2  INF 0003  Operator login at HMI 7
+14.03.26 07:18:06,104  S7-1200/PLC_Press  ALM 0057  Pressure on press 1 above limit: 47.9 bar
+14.03.26 07:18:08,260  ET200SP/IM155  ACK 0099  Alarm 264 acknowledged by operator 8
+14.03.26 07:18:09,505  ET200SP/IM155  WRN 0018  Filter 5 differential pressure high: 11.4 mbar
+14.03.26 07:18:17,595  S7-1500/CPU2  ALM 0064  Hydraulic oil temperature 42 C on unit 4
+14.03.26 07:18:25,331  S7-1200/PLC_Press  ACK 0102  Alarm 174 acknowledged by operator 3
+14.03.26 07:18:31,505  S7-1200/PLC_Press  INF 0007  Recipe R-383 loaded on station 5
+14.03.26 07:18:36,230  ET200SP/IM155  ACK 0102  Alarm 721 acknowledged by operator 6
+14.03.26 07:18:40,690  S7-1200/PLC_Press  INF 0006  Operator login at HMI 6
+14.03.26 07:18:45,279  S7-1200/PLC_Press  WRN 0012  Cycle time 5470 ms exceeds target on station 1
+14.03.26 07:18:47,875  S7-1500/CPU2  ALM 0057  Pressure on press 4 above limit: 54.3 bar
+14.03.26 07:18:51,263  S7-1500/CPU1  WRN 0019  Filter 3 differential pressure high: 36.8 mbar
+14.03.26 07:18:53,429  ET200SP/IM155  ACK 0100  Alarm 947 acknowledged by operator 1
+14.03.26 07:18:54,688  ET200SP/IM155  ACK 0099  Alarm 852 acknowledged by operator 6
+14.03.26 07:19:01,861  S7-1500/CPU1  INF 0003  Batch 3378 started on line 8
+14.03.26 07:19:04,520  S7-1200/PLC_Press  FLT 0901  Safety relay K4 tripped, line 4 stopped
+    > input I5.2 = FALSE
+    > last OK cycle: 777 ms ago
+14.03.26 07:19:11,454  S7-1500/CPU2  ALM 0061  Hydraulic oil temperature 10 C on unit 5
+14.03.26 07:19:14,959  S7-1500/CPU1  ACK 0100  Alarm 243 acknowledged by operator 1
+14.03.26 07:19:19,096  S7-1200/PLC_Press  ACK 0099  Alarm 101 acknowledged by operator 7
+14.03.26 07:19:23,074  ET200SP/IM155  INF 0003  Operator login at HMI 6
+14.03.26 07:19:26,683  S7-1500/CPU2  WRN 0020  Filter 5 differential pressure high: 10.3 mbar
+14.03.26 07:19:30,473  ET200SP/IM155  INF 0005  Recipe R-881 loaded on station 3
+14.03.26 07:19:34,491  S7-1200/PLC_Press  ALM 0057  Pressure on press 8 above limit: 13.1 bar
+14.03.26 07:19:42,785  ET200SP/IM155  WRN 0021  Filter 3 differential pressure high: 54.1 mbar
+14.03.26 07:19:46,331  S7-1200/PLC_Press  INF 0007  Recipe R-572 loaded on station 7
+14.03.26 07:19:50,941  ET200SP/IM155  INF 0005  Operator login at HMI 1
+14.03.26 07:19:58,224  S7-1200/PLC_Press  WRN 0020  Filter 3 differential pressure high: 3.6 mbar
+14.03.26 07:20:06,354  S7-1500/CPU2  ALM 0059  Pressure on press 4 above limit: 71.7 bar
+14.03.26 07:20:10,942  S7-1200/PLC_Press  ALM 0059  Pressure on press 4 above limit: 42.0 bar
+14.03.26 07:20:18,526  S7-1200/PLC_Press  WRN 0020  Filter 7 differential pressure high: 68.1 mbar
+14.03.26 07:20:27,106  S7-1200/PLC_Press  WRN 0012  Cycle time 9840 ms exceeds target on station 6
+14.03.26 07:20:29,875  ET200SP/IM155  INF 0006  Recipe R-546 loaded on station 4
+14.03.26 07:20:33,887  ET200SP/IM155  INF 0005  Recipe R-115 loaded on station 3
+14.03.26 07:20:40,969  S7-1500/CPU2  INF 0007  Recipe R-781 loaded on station 8
+14.03.26 07:20:41,188  S7-1200/PLC_Press  ALM 0061  Hydraulic oil temperature 3 C on unit 5
+14.03.26 07:20:44,531  S7-1500/CPU2  ALM 0058  Pressure on press 3 above limit: 56.0 bar
+14.03.26 07:20:52,384  S7-1500/CPU2  WRN 0018  Filter 8 differential pressure high: 96.3 mbar
+14.03.26 07:20:54,085  S7-1200/PLC_Press  INF 0007  Recipe R-322 loaded on station 7
+14.03.26 07:20:58,249  ET200SP/IM155  ALM 0060  Pressure on press 8 above limit: 96.7 bar
+14.03.26 07:21:03,658  S7-1500/CPU2  WRN 0013  Cycle time 6200 ms exceeds target on station 6
+14.03.26 07:21:05,797  S7-1200/PLC_Press  ALM 0059  Pressure on press 6 above limit: 3.2 bar
+14.03.26 07:21:13,257  S7-1200/PLC_Press  FLT 0903  Safety relay K3 tripped, line 3 stopped
+    > input I1.5 = FALSE
+    > last OK cycle: 477 ms ago
+14.03.26 07:21:16,301  S7-1500/CPU2  FLT 0903  Safety relay K5 tripped, line 5 stopped
+    > input I5.0 = FALSE
+    > last OK cycle: 837 ms ago
+14.03.26 07:21:19,182  S7-1200/PLC_Press  INF 0008  Recipe R-917 loaded on station 5
+14.03.26 07:21:22,005  S7-1500/CPU2  ACK 0100  Alarm 427 acknowledged by operator 6
+14.03.26 07:21:22,893  S7-1500/CPU1  ALM 0043  Conveyor 8 motor overcurrent: 95.6 A
+14.03.26 07:21:28,034  S7-1200/PLC_Press  WRN 0021  Filter 8 differential pressure high: 54.5 mbar
+14.03.26 07:21:31,723  S7-1500/CPU1  INF 0001  Batch 3803 started on line 3
+14.03.26 07:21:40,062  S7-1500/CPU2  ALM 0057  Pressure on press 6 above limit: 40.6 bar
+14.03.26 07:21:47,100  S7-1200/PLC_Press  INF 0004  Operator login at HMI 7
+14.03.26 07:21:53,137  S7-1200/PLC_Press  INF 0006  Recipe R-823 loaded on station 1
+14.03.26 07:21:57,530  S7-1200/PLC_Press  ACK 0101  Alarm 275 acknowledged by operator 4
+14.03.26 07:21:58,254  S7-1500/CPU1  INF 0004  Batch 9238 started on line 8
+14.03.26 07:22:01,848  ET200SP/IM155  FLT 0902  Safety relay K2 tripped, line 2 stopped
+    > input I9.7 = FALSE
+    > last OK cycle: 915 ms ago
+14.03.26 07:22:06,767  S7-1500/CPU1  INF 0005  Operator login at HMI 4
+14.03.26 07:22:08,746  S7-1200/PLC_Press  WRN 0019  Filter 1 differential pressure high: 71.1 mbar
+14.03.26 07:22:11,842  S7-1200/PLC_Press  ALM 0044  Conveyor 5 motor overcurrent: 8.3 A
+14.03.26 07:22:15,193  S7-1500/CPU1  WRN 0021  Filter 2 differential pressure high: 33.6 mbar
+14.03.26 07:22:20,739  S7-1200/PLC_Press  ACK 0100  Alarm 22 acknowledged by operator 5
+14.03.26 07:22:24,945  S7-1500/CPU2  ALM 0057  Pressure on press 4 above limit: 38.3 bar
+14.03.26 07:22:30,752  S7-1200/PLC_Press  WRN 0013  Cycle time 4200 ms exceeds target on station 4
+14.03.26 07:22:37,760  ET200SP/IM155  ALM 0043  Conveyor 8 motor overcurrent: 60.4 A
+14.03.26 07:22:44,689  S7-1200/PLC_Press  WRN 0013  Cycle time 6290 ms exceeds target on station 3
+14.03.26 07:22:50,497  S7-1500/CPU2  ALM 0062  Hydraulic oil temperature 69 C on unit 4
+14.03.26 07:22:58,952  S7-1200/PLC_Press  ACK 0102  Alarm 889 acknowledged by operator 2
+14.03.26 07:23:05,807  S7-1200/PLC_Press  INF 0005  Recipe R-522 loaded on station 3
+14.03.26 07:23:07,696  S7-1200/PLC_Press  WRN 0019  Filter 8 differential pressure high: 18.1 mbar
+14.03.26 07:23:15,095  S7-1500/CPU2  FLT 0903  Safety relay K8 tripped, line 8 stopped
+    > input I4.1 = FALSE
+    > last OK cycle: 213 ms ago
+14.03.26 07:23:17,250  S7-1500/CPU2  ACK 0100  Alarm 843 acknowledged by operator 5
+14.03.26 07:23:19,363  S7-1500/CPU1  WRN 0012  Cycle time 9380 ms exceeds target on station 7
+14.03.26 07:23:23,333  ET200SP/IM155  INF 0007  Recipe R-784 loaded on station 6
+14.03.26 07:23:30,583  S7-1500/CPU2  ALM 0045  Conveyor 4 motor overcurrent: 33.1 A
+14.03.26 07:23:31,548  S7-1200/PLC_Press  ACK 0101  Alarm 744 acknowledged by operator 3
+14.03.26 07:23:32,884  S7-1500/CPU1  ALM 0042  Conveyor 8 motor overcurrent: 77.4 A
+14.03.26 07:23:33,403  ET200SP/IM155  FLT 0902  Safety relay K7 tripped, line 7 stopped
+    > input I5.5 = FALSE
+    > last OK cycle: 502 ms ago
+14.03.26 07:23:39,447  ET200SP/IM155  INF 0005  Recipe R-822 loaded on station 8
+14.03.26 07:23:40,209  S7-1500/CPU1  ALM 0062  Hydraulic oil temperature 1 C on unit 3
+14.03.26 07:23:49,187  S7-1200/PLC_Press  ALM 0062  Hydraulic oil temperature 42 C on unit 8
+14.03.26 07:23:49,263  S7-1200/PLC_Press  ALM 0060  Pressure on press 3 above limit: 45.5 bar
+14.03.26 07:23:52,542  ET200SP/IM155  WRN 0020  Filter 5 differential pressure high: 37.6 mbar
+14.03.26 07:23:57,514  S7-1500/CPU2  WRN 0018  Filter 6 differential pressure high: 5.0 mbar
+14.03.26 07:24:05,993  S7-1500/CPU1  ALM 0063  Hydraulic oil temperature 62 C on unit 7
+14.03.26 07:24:13,493  S7-1500/CPU1  WRN 0020  Filter 8 differential pressure high: 84.3 mbar
+14.03.26 07:24:17,161  S7-1500/CPU2  ACK 0101  Alarm 25 acknowledged by operator 8
+14.03.26 07:24:21,668  S7-1200/PLC_Press  WRN 0015  Cycle time 9310 ms exceeds target on station 3
+14.03.26 07:24:29,343  S7-1500/CPU2  INF 0006  Operator login at HMI 2
+14.03.26 07:24:36,140  ET200SP/IM155  ALM 0058  Pressure on press 3 above limit: 4.1 bar
+14.03.26 07:24:41,322  S7-1500/CPU1  INF 0004  Batch 1905 started on line 5
+14.03.26 07:24:41,666  S7-1500/CPU1  INF 0004  Operator login at HMI 3
+14.03.26 07:24:48,610  S7-1500/CPU2  FLT 0900  Safety relay K1 tripped, line 1 stopped
+    > input I9.6 = FALSE
+    > last OK cycle: 208 ms ago
+14.03.26 07:24:57,599  S7-1200/PLC_Press  WRN 0013  Cycle time 9450 ms exceeds target on station 7
+14.03.26 07:24:58,124  ET200SP/IM155  INF 0006  Operator login at HMI 2
+14.03.26 07:25:02,749  ET200SP/IM155  INF 0001  Batch 5691 started on line 1
+14.03.26 07:25:03,973  S7-1500/CPU1  INF 0008  Recipe R-669 loaded on station 7
+14.03.26 07:25:07,656  S7-1500/CPU2  ALM 0057  Pressure on press 7 above limit: 53.5 bar
+14.03.26 07:25:10,856  ET200SP/IM155  ALM 0043  Conveyor 5 motor overcurrent: 95.4 A
+14.03.26 07:25:12,192  S7-1200/PLC_Press  WRN 0012  Cycle time 5890 ms exceeds target on station 8
+14.03.26 07:25:16,176  S7-1200/PLC_Press  WRN 0018  Filter 2 differential pressure high: 36.6 mbar
+14.03.26 07:25:19,884  S7-1500/CPU1  INF 0006  Recipe R-993 loaded on station 8
+14.03.26 07:25:28,726  S7-1500/CPU2  ALM 0062  Hydraulic oil temperature 22 C on unit 4
+14.03.26 07:25:35,063  S7-1200/PLC_Press  INF 0002  Batch 6404 started on line 4
+14.03.26 07:25:40,082  ET200SP/IM155  INF 0008  Recipe R-124 loaded on station 7
+14.03.26 07:25:41,517  S7-1500/CPU1  ALM 0057  Pressure on press 3 above limit: 4.8 bar
+14.03.26 07:25:46,542  S7-1500/CPU1  ALM 0044  Conveyor 3 motor overcurrent: 71.8 A
+14.03.26 07:25:51,485  S7-1500/CPU1  ALM 0062  Hydraulic oil temperature 77 C on unit 2
+14.03.26 07:25:56,859  S7-1500/CPU2  ALM 0062  Hydraulic oil temperature 7 C on unit 5
+14.03.26 07:26:04,577  S7-1200/PLC_Press  INF 0003  Batch 7548 started on line 8
+14.03.26 07:26:11,163  S7-1500/CPU2  INF 0006  Operator login at HMI 4
+14.03.26 07:26:11,242  S7-1500/CPU1  WRN 0013  Cycle time 2070 ms exceeds target on station 6
+14.03.26 07:26:13,641  ET200SP/IM155  ACK 0099  Alarm 357 acknowledged by operator 2
+14.03.26 07:26:19,723  S7-1200/PLC_Press  FLT 0901  Safety relay K1 tripped, line 1 stopped
+    > input I1.0 = FALSE
+    > last OK cycle: 549 ms ago
+14.03.26 07:26:19,972  S7-1500/CPU1  INF 0006  Operator login at HMI 6
+14.03.26 07:26:23,737  S7-1500/CPU2  INF 0002  Batch 9768 started on line 8
+14.03.26 07:26:29,268  S7-1200/PLC_Press  WRN 0015  Cycle time 5300 ms exceeds target on station 7
+14.03.26 07:26:33,467  S7-1500/CPU2  INF 0003  Batch 3774 started on line 4
+14.03.26 07:26:41,331  ET200SP/IM155  FLT 0902  Safety relay K3 tripped, line 3 stopped
+    > input I8.1 = FALSE
+    > last OK cycle: 886 ms ago
+14.03.26 07:26:42,921  S7-1500/CPU2  INF 0005  Operator login at HMI 2
+14.03.26 07:26:43,803  S7-1200/PLC_Press  ALM 0059  Pressure on press 4 above limit: 86.2 bar
+14.03.26 07:26:47,034  S7-1200/PLC_Press  INF 0006  Recipe R-562 loaded on station 3
+14.03.26 07:26:49,740  S7-1200/PLC_Press  ALM 0057  Pressure on press 6 above limit: 73.2 bar
+14.03.26 07:26:52,676  ET200SP/IM155  ALM 0043  Conveyor 7 motor overcurrent: 10.6 A
+14.03.26 07:26:56,673  ET200SP/IM155  INF 0003  Operator login at HMI 2
+14.03.26 07:26:57,885  S7-1500/CPU2  INF 0005  Recipe R-24 loaded on station 8
+14.03.26 07:27:03,268  S7-1500/CPU1  ALM 0060  Pressure on press 1 above limit: 14.3 bar
+14.03.26 07:27:04,773  S7-1500/CPU1  ALM 0042  Conveyor 3 motor overcurrent: 16.9 A
+14.03.26 07:27:09,289  ET200SP/IM155  ACK 0101  Alarm 220 acknowledged by operator 4
+14.03.26 07:27:17,695  S7-1500/CPU1  FLT 0900  Safety relay K7 tripped, line 7 stopped
+    > input I0.6 = FALSE
+    > last OK cycle: 605 ms ago
+14.03.26 07:27:25,834  ET200SP/IM155  INF 0007  Recipe R-968 loaded on station 7
+14.03.26 07:27:27,036  S7-1200/PLC_Press  WRN 0013  Cycle time 9970 ms exceeds target on station 6
+14.03.26 07:27:35,202  ET200SP/IM155  ALM 0057  Pressure on press 4 above limit: 70.5 bar
+14.03.26 07:27:42,356  S7-1500/CPU1  WRN 0015  Cycle time 9820 ms exceeds target on station 7
+14.03.26 07:27:47,116  ET200SP/IM155  FLT 0902  Safety relay K5 tripped, line 5 stopped
+    > input I6.4 = FALSE
+    > last OK cycle: 588 ms ago
+14.03.26 07:27:55,720  ET200SP/IM155  WRN 0021  Filter 2 differential pressure high: 20.5 mbar
+14.03.26 07:27:57,436  S7-1500/CPU2  ACK 0102  Alarm 597 acknowledged by operator 4
+14.03.26 07:28:01,157  S7-1500/CPU2  WRN 0014  Cycle time 9910 ms exceeds target on station 6
+14.03.26 07:28:06,603  S7-1200/PLC_Press  ALM 0062  Hydraulic oil temperature 64 C on unit 7
+14.03.26 07:28:07,859  S7-1200/PLC_Press  INF 0005  Operator login at HMI 1
+14.03.26 07:28:10,924  ET200SP/IM155  ACK 0101  Alarm 515 acknowledged by operator 3
+14.03.26 07:28:13,407  S7-1500/CPU2  ACK 0102  Alarm 665 acknowledged by operator 2
+14.03.26 07:28:16,603  ET200SP/IM155  INF 0005  Recipe R-70 loaded on station 5
+14.03.26 07:28:18,454  ET200SP/IM155  INF 0006  Operator login at HMI 5
+14.03.26 07:28:27,279  S7-1200/PLC_Press  INF 0006  Operator login at HMI 6
+14.03.26 07:28:29,189  S7-1500/CPU1  INF 0003  Batch 9063 started on line 3
+14.03.26 07:28:32,466  S7-1200/PLC_Press  WRN 0014  Cycle time 7190 ms exceeds target on station 6
+14.03.26 07:28:32,630  ET200SP/IM155  ACK 0100  Alarm 385 acknowledged by operator 1
+14.03.26 07:28:36,970  S7-1500/CPU1  ACK 0102  Alarm 946 acknowledged by operator 8
+14.03.26 07:28:39,069  S7-1500/CPU2  INF 0007  Recipe R-715 loaded on station 2
+14.03.26 07:28:45,129  S7-1500/CPU1  INF 0004  Operator login at HMI 3
+14.03.26 07:28:52,706  S7-1200/PLC_Press  WRN 0015  Cycle time 950 ms exceeds target on station 3
+14.03.26 07:28:53,509  S7-1500/CPU2  WRN 0020  Filter 6 differential pressure high: 62.7 mbar
+14.03.26 07:28:57,363  ET200SP/IM155  ALM 0058  Pressure on press 4 above limit: 74.3 bar
+14.03.26 07:28:57,730  ET200SP/IM155  ALM 0044  Conveyor 2 motor overcurrent: 60.2 A
+14.03.26 07:29:01,471  ET200SP/IM155  ACK 0102  Alarm 142 acknowledged by operator 2
+14.03.26 07:29:06,193  S7-1500/CPU1  INF 0004  Operator login at HMI 5
+14.03.26 07:29:11,942  S7-1500/CPU2  FLT 0903  Safety relay K5 tripped, line 5 stopped
+    > input I9.0 = FALSE
+    > last OK cycle: 424 ms ago
+14.03.26 07:29:16,146  S7-1200/PLC_Press  INF 0005  Recipe R-933 loaded on station 1
+14.03.26 07:29:24,682  S7-1500/CPU2  INF 0008  Recipe R-600 loaded on station 4
+14.03.26 07:29:30,693  S7-1500/CPU2  ACK 0101  Alarm 543 acknowledged by operator 4
+14.03.26 07:29:31,404  ET200SP/IM155  ALM 0059  Pressure on press 8 above limit: 97.6 bar
+14.03.26 07:29:38,626  S7-1200/PLC_Press  ALM 0064  Hydraulic oil temperature 58 C on unit 4
+14.03.26 07:29:42,079  S7-1500/CPU1  ACK 0100  Alarm 947 acknowledged by operator 3
+14.03.26 07:29:49,205  S7-1500/CPU2  FLT 0903  Safety relay K6 tripped, line 6 stopped
+    > input I9.1 = FALSE
+    > last OK cycle: 810 ms ago
+14.03.26 07:29:51,334  S7-1500/CPU2  FLT 0903  Safety relay K4 tripped, line 4 stopped
+    > input I1.2 = FALSE
+    > last OK cycle: 150 ms ago
+14.03.26 07:29:59,742  ET200SP/IM155  INF 0006  Operator login at HMI 3
+14.03.26 07:30:01,295  S7-1500/CPU1  ALM 0042  Conveyor 3 motor overcurrent: 57.5 A
+14.03.26 07:30:09,180  S7-1500/CPU1  ALM 0045  Conveyor 6 motor overcurrent: 78.4 A
+14.03.26 07:30:16,332  ET200SP/IM155  WRN 0012  Cycle time 7800 ms exceeds target on station 2
+14.03.26 07:30:24,177  S7-1500/CPU1  INF 0008  Recipe R-485 loaded on station 3
+14.03.26 07:30:24,573  S7-1500/CPU2  INF 0003  Batch 991 started on line 1
+14.03.26 07:30:25,971  S7-1200/PLC_Press  INF 0006  Operator login at HMI 4
+14.03.26 07:30:31,689  S7-1500/CPU1  ALM 0063  Hydraulic oil temperature 22 C on unit 5
+14.03.26 07:30:32,225  S7-1500/CPU2  INF 0005  Recipe R-134 loaded on station 1
+14.03.26 07:30:39,747  S7-1200/PLC_Press  INF 0006  Operator login at HMI 1
+14.03.26 07:30:48,411  S7-1200/PLC_Press  ACK 0101  Alarm 615 acknowledged by operator 1
+14.03.26 07:30:54,628  ET200SP/IM155  INF 0001  Batch 9835 started on line 5
+14.03.26 07:30:56,916  S7-1500/CPU2  WRN 0020  Filter 3 differential pressure high: 34.3 mbar
+14.03.26 07:31:04,255  S7-1500/CPU2  INF 0001  Batch 7032 started on line 2
+14.03.26 07:31:10,689  S7-1500/CPU2  WRN 0018  Filter 8 differential pressure high: 25.3 mbar
+14.03.26 07:31:12,780  S7-1200/PLC_Press  ALM 0057  Pressure on press 6 above limit: 84.9 bar
+14.03.26 07:31:15,374  S7-1500/CPU1  ALM 0063  Hydraulic oil temperature 92 C on unit 2
+14.03.26 07:31:23,793  S7-1500/CPU1  ALM 0059  Pressure on press 4 above limit: 82.0 bar
+14.03.26 07:31:30,832  ET200SP/IM155  WRN 0020  Filter 5 differential pressure high: 79.7 mbar
+14.03.26 07:31:38,877  S7-1500/CPU2  FLT 0900  Safety relay K2 tripped, line 2 stopped
+    > input I8.1 = FALSE
+    > last OK cycle: 668 ms ago
+14.03.26 07:31:47,420  S7-1200/PLC_Press  ALM 0064  Hydraulic oil temperature 34 C on unit 7
+14.03.26 07:31:54,016  S7-1500/CPU2  FLT 0901  Safety relay K5 tripped, line 5 stopped
+    > input I7.6 = FALSE
+    > last OK cycle: 627 ms ago
+14.03.26 07:32:01,105  S7-1500/CPU1  INF 0004  Batch 4747 started on line 7
+14.03.26 07:32:07,730  S7-1500/CPU1  ALM 0064  Hydraulic oil temperature 2 C on unit 2
+14.03.26 07:32:09,990  ET200SP/IM155  ACK 0099  Alarm 595 acknowledged by operator 4
+14.03.26 07:32:10,074  S7-1200/PLC_Press  INF 0003  Operator login at HMI 7
+14.03.26 07:32:10,296  S7-1500/CPU1  WRN 0015  Cycle time 4870 ms exceeds target on station 4
+14.03.26 07:32:11,393  S7-1500/CPU2  WRN 0018  Filter 2 differential pressure high: 53.4 mbar
+14.03.26 07:32:17,395  S7-1200/PLC_Press  INF 0005  Operator login at HMI 7
+14.03.26 07:32:23,894  S7-1500/CPU2  ALM 0059  Pressure on press 4 above limit: 94.9 bar
+14.03.26 07:32:24,306  S7-1500/CPU1  WRN 0018  Filter 7 differential pressure high: 57.9 mbar
+14.03.26 07:32:27,430  S7-1200/PLC_Press  INF 0002  Batch 3722 started on line 2
+14.03.26 07:32:30,340  S7-1500/CPU2  INF 0003  Batch 6177 started on line 7
+14.03.26 07:32:36,643  S7-1200/PLC_Press  INF 0001  Batch 1727 started on line 7
+14.03.26 07:32:44,083  S7-1500/CPU1  INF 0003  Batch 7974 started on line 4
+14.03.26 07:32:47,639  S7-1200/PLC_Press  INF 0002  Batch 9011 started on line 1
+14.03.26 07:32:56,308  S7-1200/PLC_Press  WRN 0020  Filter 4 differential pressure high: 7.5 mbar
+14.03.26 07:33:00,985  S7-1500/CPU2  INF 0006  Operator login at HMI 7
+14.03.26 07:33:07,658  S7-1500/CPU2  ACK 0100  Alarm 687 acknowledged by operator 6
+14.03.26 07:33:12,981  S7-1500/CPU1  INF 0004  Batch 7594 started on line 4
+14.03.26 07:33:15,314  ET200SP/IM155  INF 0001  Batch 3528 started on line 8
+14.03.26 07:33:15,982  S7-1500/CPU2  FLT 0900  Safety relay K8 tripped, line 8 stopped
+    > input I2.3 = FALSE
+    > last OK cycle: 781 ms ago
+14.03.26 07:33:24,947  ET200SP/IM155  ALM 0044  Conveyor 1 motor overcurrent: 28.2 A
+14.03.26 07:33:27,522  S7-1500/CPU1  WRN 0019  Filter 6 differential pressure high: 34.1 mbar
+14.03.26 07:33:30,268  S7-1500/CPU2  ALM 0059  Pressure on press 2 above limit: 21.3 bar
+14.03.26 07:33:36,856  ET200SP/IM155  INF 0008  Recipe R-229 loaded on station 3
+14.03.26 07:33:39,383  S7-1200/PLC_Press  FLT 0903  Safety relay K2 tripped, line 2 stopped
+    > input I2.3 = FALSE
+    > last OK cycle: 327 ms ago
+14.03.26 07:33:46,683  ET200SP/IM155  INF 0008  Recipe R-997 loaded on station 2
+14.03.26 07:33:49,673  S7-1500/CPU1  FLT 0900  Safety relay K5 tripped, line 5 stopped
+    > input I5.6 = FALSE
+    > last OK cycle: 248 ms ago
+14.03.26 07:33:52,894  S7-1500/CPU1  INF 0003  Batch 7526 started on line 6
+14.03.26 07:33:56,282  S7-1500/CPU2  WRN 0014  Cycle time 250 ms exceeds target on station 4
+14.03.26 07:33:59,277  S7-1200/PLC_Press  ACK 0101  Alarm 742 acknowledged by operator 5
+14.03.26 07:34:02,687  S7-1500/CPU1  WRN 0014  Cycle time 6140 ms exceeds target on station 5
+14.03.26 07:34:09,023  S7-1500/CPU1  ALM 0058  Pressure on press 5 above limit: 20.9 bar
+14.03.26 07:34:09,092  S7-1200/PLC_Press  ACK 0099  Alarm 793 acknowledged by operator 2
+14.03.26 07:34:16,348  S7-1200/PLC_Press  INF 0006  Operator login at HMI 5
+14.03.26 07:34:18,326  S7-1500/CPU1  WRN 0012  Cycle time 2930 ms exceeds target on station 4
+14.03.26 07:34:25,190  S7-1500/CPU1  INF 0007  Recipe R-223 loaded on station 3
+14.03.26 07:34:29,733  S7-1200/PLC_Press  ACK 0101  Alarm 688 acknowledged by operator 4
+14.03.26 07:34:32,522  S7-1500/CPU1  INF 0007  Recipe R-923 loaded on station 3
+14.03.26 07:34:40,636  S7-1500/CPU2  INF 0003  Batch 9984 started on line 4
+14.03.26 07:34:41,914  S7-1500/CPU1  ALM 0062  Hydraulic oil temperature 7 C on unit 8
+14.03.26 07:34:45,132  ET200SP/IM155  ACK 0100  Alarm 107 acknowledged by operator 2
+14.03.26 07:34:47,664  S7-1500/CPU1  INF 0005  Recipe R-93 loaded on station 6
+14.03.26 07:34:52,036  ET200SP/IM155  INF 0002  Batch 9434 started on line 4
+14.03.26 07:34:52,818  S7-1500/CPU1  ACK 0101  Alarm 66 acknowledged by operator 7
+14.03.26 07:34:56,828  S7-1200/PLC_Press  INF 0003  Operator login at HMI 3
+14.03.26 07:35:00,269  S7-1200/PLC_Press  INF 0005  Recipe R-541 loaded on station 7
+14.03.26 07:35:06,322  S7-1200/PLC_Press  INF 0003  Batch 7585 started on line 5
+14.03.26 07:35:14,136  ET200SP/IM155  INF 0002  Batch 256 started on line 6
+14.03.26 07:35:21,344  S7-1200/PLC_Press  ALM 0058  Pressure on press 8 above limit: 83.3 bar
+14.03.26 07:35:25,173  S7-1200/PLC_Press  ACK 0099  Alarm 402 acknowledged by operator 3
+14.03.26 07:35:27,939  S7-1500/CPU2  WRN 0013  Cycle time 5510 ms exceeds target on station 6
+14.03.26 07:35:34,170  S7-1500/CPU2  INF 0006  Recipe R-470 loaded on station 7
+14.03.26 07:35:40,003  S7-1200/PLC_Press  WRN 0021  Filter 1 differential pressure high: 50.1 mbar
+14.03.26 07:35:44,588  S7-1200/PLC_Press  WRN 0019  Filter 3 differential pressure high: 79.3 mbar
+14.03.26 07:35:47,746  S7-1500/CPU2  INF 0007  Recipe R-293 loaded on station 8
+14.03.26 07:35:52,544  ET200SP/IM155  ALM 0045  Conveyor 2 motor overcurrent: 13.0 A
+14.03.26 07:35:59,385  S7-1500/CPU1  WRN 0019  Filter 5 differential pressure high: 99.9 mbar
+14.03.26 07:36:03,778  S7-1500/CPU1  WRN 0018  Filter 3 differential pressure high: 92.2 mbar
+14.03.26 07:36:09,284  S7-1200/PLC_Press  ACK 0099  Alarm 474 acknowledged by operator 4
+14.03.26 07:36:10,973  S7-1200/PLC_Press  INF 0005  Recipe R-278 loaded on station 2
+14.03.26 07:36:11,690  ET200SP/IM155  INF 0007  Recipe R-314 loaded on station 5
+14.03.26 07:36:12,345  S7-1200/PLC_Press  WRN 0015  Cycle time 1330 ms exceeds target on station 1
+14.03.26 07:36:15,695  S7-1500/CPU2  WRN 0012  Cycle time 2850 ms exceeds target on station 6
+14.03.26 07:36:16,307  S7-1500/CPU2  INF 0002  Batch 8672 started on line 2
+14.03.26 07:36:24,778  ET200SP/IM155  WRN 0021  Filter 2 differential pressure high: 83.7 mbar
+14.03.26 07:36:26,583  S7-1500/CPU1  INF 0008  Recipe R-450 loaded on station 6
+14.03.26 07:36:27,791  ET200SP/IM155  ALM 0058  Pressure on press 2 above limit: 28.4 bar
+14.03.26 07:36:28,323  ET200SP/IM155  INF 0008  Recipe R-558 loaded on station 3
+14.03.26 07:36:33,560  ET200SP/IM155  ACK 0101  Alarm 751 acknowledged by operator 4
+14.03.26 07:36:42,354  S7-1500/CPU1  INF 0006  Recipe R-763 loaded on station 5
+14.03.26 07:36:51,275  S7-1200/PLC_Press  WRN 0018  Filter 8 differential pressure high: 54.1 mbar
+14.03.26 07:36:59,390  ET200SP/IM155  WRN 0018  Filter 5 differential pressure high: 86.2 mbar
+14.03.26 07:36:59,519  ET200SP/IM155  FLT 0903  Safety relay K4 tripped, line 4 stopped
+    > input I4.5 = FALSE
+    > last OK cycle: 116 ms ago
+14.03.26 07:37:07,289  ET200SP/IM155  WRN 0013  Cycle time 5480 ms exceeds target on station 7
+14.03.26 07:37:12,576  S7-1500/CPU2  ACK 0102  Alarm 747 acknowledged by operator 1
+14.03.26 07:37:14,928  S7-1500/CPU2  ALM 0044  Conveyor 1 motor overcurrent: 9.1 A
+14.03.26 07:37:18,526  S7-1200/PLC_Press  ACK 0100  Alarm 186 acknowledged by operator 7
+14.03.26 07:37:20,521  ET200SP/IM155  ALM 0042  Conveyor 1 motor overcurrent: 83.4 A
+14.03.26 07:37:26,236  ET200SP/IM155  FLT 0901  Safety relay K3 tripped, line 3 stopped
+    > input I1.6 = FALSE
+    > last OK cycle: 927 ms ago
+14.03.26 07:37:33,530  S7-1500/CPU2  INF 0004  Operator login at HMI 2
+14.03.26 07:37:37,875  S7-1500/CPU2  ACK 0101  Alarm 562 acknowledged by operator 3
+14.03.26 07:37:38,292  ET200SP/IM155  INF 0001  Batch 8972 started on line 2
+14.03.26 07:37:45,550  S7-1200/PLC_Press  ALM 0064  Hydraulic oil temperature 31 C on unit 8
+14.03.26 07:37:48,135  S7-1200/PLC_Press  INF 0004  Operator login at HMI 5
+14.03.26 07:37:55,847  S7-1200/PLC_Press  ALM 0045  Conveyor 2 motor overcurrent: 62.1 A
+14.03.26 07:38:02,266  ET200SP/IM155  WRN 0019  Filter 1 differential pressure high: 28.5 mbar
+14.03.26 07:38:04,662  S7-1500/CPU2  WRN 0018  Filter 6 differential pressure high: 47.9 mbar
+14.03.26 07:38:06,198  S7-1500/CPU2  ACK 0101  Alarm 238 acknowledged by operator 1
+14.03.26 07:38:10,018  S7-1500/CPU2  ACK 0099  Alarm 142 acknowledged by operator 7
+14.03.26 07:38:15,236  S7-1500/CPU1  ACK 0099  Alarm 833 acknowledged by operator 3
+14.03.26 07:38:17,285  ET200SP/IM155  ALM 0061  Hydraulic oil temperature 6 C on unit 2
+14.03.26 07:38:25,187  S7-1200/PLC_Press  WRN 0020  Filter 8 differential pressure high: 84.9 mbar
+14.03.26 07:38:28,593  S7-1200/PLC_Press  INF 0005  Recipe R-425 loaded on station 6
+14.03.26 07:38:34,025  ET200SP/IM155  INF 0005  Operator login at HMI 8
+14.03.26 07:38:41,612  S7-1500/CPU1  WRN 0015  Cycle time 9740 ms exceeds target on station 5
+14.03.26 07:38:46,347  S7-1500/CPU2  ACK 0099  Alarm 655 acknowledged by operator 2
+14.03.26 07:38:54,669  S7-1500/CPU2  INF 0001  Batch 3485 started on line 5
+14.03.26 07:39:03,005  S7-1500/CPU2  ALM 0043  Conveyor 1 motor overcurrent: 35.2 A
+14.03.26 07:39:07,108  ET200SP/IM155  INF 0005  Operator login at HMI 8
+14.03.26 07:39:09,908  ET200SP/IM155  ACK 0099  Alarm 74 acknowledged by operator 2
+14.03.26 07:39:17,746  S7-1200/PLC_Press  WRN 0019  Filter 3 differential pressure high: 84.1 mbar
+14.03.26 07:39:26,047  S7-1500/CPU2  WRN 0014  Cycle time 2730 ms exceeds target on station 2
+14.03.26 07:39:30,592  S7-1500/CPU1  FLT 0901  Safety relay K7 tripped, line 7 stopped
+    > input I5.0 = FALSE
+    > last OK cycle: 635 ms ago
+14.03.26 07:39:39,015  S7-1500/CPU1  INF 0008  Recipe R-935 loaded on station 2
+14.03.26 07:39:39,377  S7-1200/PLC_Press  ACK 0102  Alarm 911 acknowledged by operator 2
+14.03.26 07:39:44,657  ET200SP/IM155  INF 0003  Operator login at HMI 7
+14.03.26 07:39:50,861  ET200SP/IM155  FLT 0900  Safety relay K5 tripped, line 5 stopped
+    > input I9.6 = FALSE
+    > last OK cycle: 977 ms ago
+14.03.26 07:39:54,554  S7-1200/PLC_Press  WRN 0018  Filter 8 differential pressure high: 74.6 mbar
+14.03.26 07:40:02,985  ET200SP/IM155  INF 0004  Batch 6302 started on line 2
+14.03.26 07:40:09,401  S7-1500/CPU2  WRN 0015  Cycle time 6470 ms exceeds target on station 4
+14.03.26 07:40:11,982  S7-1200/PLC_Press  ALM 0058  Pressure on press 4 above limit: 22.9 bar
+14.03.26 07:40:12,151  ET200SP/IM155  INF 0006  Operator login at HMI 4
+14.03.26 07:40:16,267  S7-1200/PLC_Press  INF 0006  Recipe R-520 loaded on station 3
+14.03.26 07:40:19,044  S7-1500/CPU2  INF 0003  Batch 8254 started on line 4
+14.03.26 07:40:26,988  S7-1200/PLC_Press  INF 0005  Operator login at HMI 5
+14.03.26 07:40:30,423  S7-1200/PLC_Press  INF 0006  Operator login at HMI 8
+14.03.26 07:40:36,983  S7-1200/PLC_Press  WRN 0020  Filter 2 differential pressure high: 51.5 mbar
+14.03.26 07:40:38,219  ET200SP/IM155  INF 0007  Recipe R-631 loaded on station 8
+14.03.26 07:40:41,626  S7-1500/CPU1  INF 0004  Batch 3356 started on line 6
+14.03.26 07:40:46,924  S7-1500/CPU1  ALM 0045  Conveyor 7 motor overcurrent: 57.5 A
+14.03.26 07:40:49,285  S7-1500/CPU2  INF 0003  Operator login at HMI 8
+14.03.26 07:40:55,679  S7-1200/PLC_Press  ACK 0099  Alarm 980 acknowledged by operator 2
+14.03.26 07:41:03,976  S7-1200/PLC_Press  INF 0003  Batch 405 started on line 5
+14.03.26 07:41:08,957  ET200SP/IM155  ACK 0102  Alarm 929 acknowledged by operator 2
+14.03.26 07:41:10,944  S7-1200/PLC_Press  INF 0003  Operator login at HMI 5
+14.03.26 07:41:18,183  S7-1200/PLC_Press  ALM 0058  Pressure on press 5 above limit: 95.1 bar
+14.03.26 07:41:25,634  S7-1500/CPU2  ACK 0101  Alarm 695 acknowledged by operator 7
+14.03.26 07:41:26,949  S7-1500/CPU1  WRN 0014  Cycle time 9080 ms exceeds target on station 6
+14.03.26 07:41:27,392  S7-1500/CPU1  WRN 0013  Cycle time 7240 ms exceeds target on station 4
+14.03.26 07:41:31,974  S7-1500/CPU2  INF 0005  Recipe R-452 loaded on station 8
+14.03.26 07:41:38,348  S7-1500/CPU2  WRN 0021  Filter 6 differential pressure high: 89.5 mbar
+14.03.26 07:41:41,029  S7-1200/PLC_Press  ACK 0102  Alarm 51 acknowledged by operator 2
+14.03.26 07:41:46,684  ET200SP/IM155  ALM 0057  Pressure on press 5 above limit: 38.8 bar
+14.03.26 07:41:55,396  ET200SP/IM155  INF 0002  Batch 4048 started on line 8
+14.03.26 07:41:59,661  S7-1500/CPU1  WRN 0013  Cycle time 5550 ms exceeds target on station 8
+14.03.26 07:42:07,651  ET200SP/IM155  WRN 0015  Cycle time 1030 ms exceeds target on station 7
+14.03.26 07:42:09,316  ET200SP/IM155  ACK 0101  Alarm 768 acknowledged by operator 7
+14.03.26 07:42:15,392  S7-1500/CPU1  ACK 0101  Alarm 215 acknowledged by operator 3
+14.03.26 07:42:20,084  S7-1500/CPU2  FLT 0901  Safety relay K6 tripped, line 6 stopped
+    > input I8.2 = FALSE
+    > last OK cycle: 704 ms ago
+14.03.26 07:42:25,826  S7-1200/PLC_Press  INF 0003  Operator login at HMI 8
+14.03.26 07:42:28,643  ET200SP/IM155  ALM 0059  Pressure on press 5 above limit: 21.8 bar
+14.03.26 07:42:32,216  S7-1200/PLC_Press  ACK 0099  Alarm 858 acknowledged by operator 8
+14.03.26 07:42:40,237  S7-1500/CPU1  ALM 0057  Pressure on press 8 above limit: 68.4 bar
+14.03.26 07:42:47,174  S7-1500/CPU1  INF 0003  Batch 2481 started on line 1
+14.03.26 07:42:50,784  S7-1500/CPU1  WRN 0012  Cycle time 2350 ms exceeds target on station 7
+14.03.26 07:42:57,661  S7-1500/CPU2  INF 0005  Operator login at HMI 6
+14.03.26 07:43:05,609  S7-1500/CPU2  ALM 0042  Conveyor 6 motor overcurrent: 1.5 A
+14.03.26 07:43:13,224  S7-1200/PLC_Press  ACK 0101  Alarm 942 acknowledged by operator 2
+14.03.26 07:43:20,671  S7-1200/PLC_Press  FLT 0900  Safety relay K6 tripped, line 6 stopped
+    > input I8.3 = FALSE
+    > last OK cycle: 112 ms ago
+14.03.26 07:43:28,743  ET200SP/IM155  ALM 0045  Conveyor 4 motor overcurrent: 64.6 A
+14.03.26 07:43:36,570  ET200SP/IM155  INF 0004  Batch 4871 started on line 1
+14.03.26 07:43:45,150  S7-1500/CPU2  ACK 0100  Alarm 297 acknowledged by operator 2
+14.03.26 07:43:51,053  S7-1200/PLC_Press  INF 0005  Recipe R-211 loaded on station 6
+14.03.26 07:43:52,206  S7-1500/CPU2  INF 0006  Operator login at HMI 2
+14.03.26 07:43:55,708  S7-1500/CPU1  INF 0005  Recipe R-305 loaded on station 3
+14.03.26 07:44:01,939  S7-1500/CPU2  ALM 0062  Hydraulic oil temperature 57 C on unit 2
+14.03.26 07:44:02,900  S7-1500/CPU2  INF 0001  Batch 3732 started on line 2
+14.03.26 07:44:07,182  S7-1500/CPU1  ALM 0060  Pressure on press 1 above limit: 21.5 bar
+14.03.26 07:44:11,362  S7-1200/PLC_Press  INF 0005  Recipe R-785 loaded on station 4
+14.03.26 07:44:12,116  S7-1500/CPU2  ALM 0044  Conveyor 3 motor overcurrent: 24.8 A
+14.03.26 07:44:12,601  ET200SP/IM155  INF 0008  Recipe R-804 loaded on station 6
+14.03.26 07:44:13,332  S7-1200/PLC_Press  ALM 0058  Pressure on press 7 above limit: 98.9 bar
+14.03.26 07:44:16,566  S7-1500/CPU2  INF 0004  Batch 9776 started on line 6
+14.03.26 07:44:21,315  S7-1200/PLC_Press  INF 0005  Operator login at HMI 8
+14.03.26 07:44:27,656  S7-1200/PLC_Press  ALM 0045  Conveyor 1 motor overcurrent: 96.5 A
+14.03.26 07:44:35,721  S7-1200/PLC_Press  WRN 0013  Cycle time 6130 ms exceeds target on station 3
+14.03.26 07:44:39,108  ET200SP/IM155  INF 0002  Batch 3392 started on line 2
+14.03.26 07:44:41,359  S7-1500/CPU2  INF 0002  Batch 244 started on line 4
+14.03.26 07:44:42,858  ET200SP/IM155  ACK 0101  Alarm 456 acknowledged by operator 6
+14.03.26 07:44:51,478  S7-1200/PLC_Press  ALM 0063  Hydraulic oil temperature 2 C on unit 2
+14.03.26 07:44:52,476  S7-1500/CPU1  ACK 0101  Alarm 332 acknowledged by operator 2
+14.03.26 07:45:00,530  S7-1200/PLC_Press  ALM 0062  Hydraulic oil temperature 19 C on unit 8
+14.03.26 07:45:03,366  S7-1200/PLC_Press  WRN 0021  Filter 1 differential pressure high: 21.4 mbar
+14.03.26 07:45:05,058  S7-1500/CPU1  WRN 0020  Filter 2 differential pressure high: 51.1 mbar
+14.03.26 07:45:13,143  S7-1200/PLC_Press  WRN 0020  Filter 3 differential pressure high: 37.2 mbar
+14.03.26 07:45:15,581  S7-1200/PLC_Press  INF 0005  Recipe R-688 loaded on station 6
+14.03.26 07:45:15,837  S7-1500/CPU2  ACK 0101  Alarm 175 acknowledged by operator 2
+14.03.26 07:45:17,084  S7-1500/CPU1  INF 0008  Recipe R-272 loaded on station 3
+14.03.26 07:45:21,559  S7-1200/PLC_Press  WRN 0020  Filter 6 differential pressure high: 20.6 mbar
+14.03.26 07:45:24,555  S7-1500/CPU2  ACK 0101  Alarm 662 acknowledged by operator 5
+14.03.26 07:45:28,821  S7-1200/PLC_Press  ALM 0044  Conveyor 3 motor overcurrent: 90.2 A
+14.03.26 07:45:31,056  ET200SP/IM155  WRN 0012  Cycle time 7600 ms exceeds target on station 5
+14.03.26 07:45:31,366  ET200SP/IM155  WRN 0020  Filter 3 differential pressure high: 60.6 mbar
+14.03.26 07:45:34,948  S7-1500/CPU2  INF 0004  Batch 7938 started on line 8
+14.03.26 07:45:37,434  S7-1500/CPU2  ACK 0100  Alarm 973 acknowledged by operator 7
+14.03.26 07:45:39,060  S7-1500/CPU1  WRN 0018  Filter 1 differential pressure high: 87.2 mbar
+14.03.26 07:45:39,859  ET200SP/IM155  WRN 0021  Filter 4 differential pressure high: 62.8 mbar
+14.03.26 07:45:42,936  ET200SP/IM155  INF 0006  Recipe R-900 loaded on station 7
+14.03.26 07:45:43,089  ET200SP/IM155  ALM 0061  Hydraulic oil temperature 45 C on unit 5
+14.03.26 07:45:49,927  S7-1500/CPU2  INF 0004  Operator login at HMI 8
+14.03.26 07:45:55,460  S7-1500/CPU1  WRN 0013  Cycle time 360 ms exceeds target on station 7
+14.03.26 07:46:03,171  S7-1500/CPU2  ACK 0101  Alarm 773 acknowledged by operator 2
+14.03.26 07:46:08,785  S7-1500/CPU2  ALM 0064  Hydraulic oil temperature 49 C on unit 7
+14.03.26 07:46:10,084  S7-1500/CPU2  INF 0002  Batch 7623 started on line 3
+14.03.26 07:46:16,549  S7-1500/CPU1  ALM 0063  Hydraulic oil temperature 51 C on unit 5
+14.03.26 07:46:16,683  ET200SP/IM155  WRN 0021  Filter 2 differential pressure high: 94.6 mbar
+14.03.26 07:46:19,758  S7-1500/CPU1  INF 0003  Batch 4996 started on line 6
+14.03.26 07:46:24,241  S7-1500/CPU1  INF 0003  Batch 343 started on line 3
+14.03.26 07:46:25,888  S7-1200/PLC_Press  ACK 0099  Alarm 17 acknowledged by operator 6
+14.03.26 07:46:28,342  S7-1500/CPU1  INF 0005  Operator login at HMI 4
+14.03.26 07:46:28,744  S7-1500/CPU1  ALM 0057  Pressure on press 1 above limit: 74.3 bar
+14.03.26 07:46:29,264  S7-1500/CPU1  INF 0008  Recipe R-936 loaded on station 6
+14.03.26 07:46:37,389  S7-1500/CPU2  INF 0004  Batch 7238 started on line 8
+14.03.26 07:46:46,320  S7-1500/CPU1  INF 0007  Recipe R-630 loaded on station 5
+14.03.26 07:46:47,682  S7-1200/PLC_Press  INF 0005  Operator login at HMI 7
+14.03.26 07:46:56,118  S7-1500/CPU2  ACK 0100  Alarm 932 acknowledged by operator 6
+14.03.26 07:47:01,443  S7-1500/CPU2  FLT 0903  Safety relay K1 tripped, line 1 stopped
+    > input I7.2 = FALSE
+    > last OK cycle: 924 ms ago
+14.03.26 07:47:07,128  S7-1200/PLC_Press  FLT 0900  Safety relay K2 tripped, line 2 stopped
+    > input I6.5 = FALSE
+    > last OK cycle: 739 ms ago
+14.03.26 07:47:09,342  S7-1500/CPU1  ACK 0099  Alarm 512 acknowledged by operator 7
+14.03.26 07:47:15,814  S7-1500/CPU1  ALM 0045  Conveyor 3 motor overcurrent: 31.8 A
+14.03.26 07:47:18,571  ET200SP/IM155  ALM 0045  Conveyor 7 motor overcurrent: 37.8 A
+14.03.26 07:47:26,325  S7-1500/CPU2  ALM 0063  Hydraulic oil temperature 94 C on unit 8
+14.03.26 07:47:32,853  S7-1500/CPU2  INF 0006  Recipe R-777 loaded on station 5
+14.03.26 07:47:33,446  ET200SP/IM155  INF 0002  Batch 2913 started on line 3
+14.03.26 07:47:39,330  S7-1500/CPU2  ACK 0099  Alarm 51 acknowledged by operator 1
+14.03.26 07:47:46,845  S7-1200/PLC_Press  WRN 0013  Cycle time 8050 ms exceeds target on station 6
+14.03.26 07:47:52,833  S7-1200/PLC_Press  INF 0008  Recipe R-31 loaded on station 1
+14.03.26 07:47:57,073  S7-1200/PLC_Press  WRN 0015  Cycle time 510 ms exceeds target on station 4
+14.03.26 07:47:58,760  ET200SP/IM155  ALM 0057  Pressure on press 3 above limit: 16.8 bar
+14.03.26 07:48:05,721  ET200SP/IM155  INF 0006  Recipe R-752 loaded on station 2
+14.03.26 07:48:12,123  ET200SP/IM155  INF 0004  Operator login at HMI 4
+14.03.26 07:48:20,797  S7-1500/CPU1  WRN 0014  Cycle time 2500 ms exceeds target on station 3
+14.03.26 07:48:25,247  S7-1200/PLC_Press  ALM 0062  Hydraulic oil temperature 4 C on unit 8
+14.03.26 07:48:26,107  S7-1200/PLC_Press  INF 0004  Operator login at HMI 5
+14.03.26 07:48:29,417  S7-1500/CPU1  INF 0002  Batch 7155 started on line 5
+14.03.26 07:48:37,402  ET200SP/IM155  WRN 0018  Filter 8 differential pressure high: 51.1 mbar
+14.03.26 07:48:38,108  ET200SP/IM155  ALM 0042  Conveyor 4 motor overcurrent: 65.7 A
+14.03.26 07:48:42,416  S7-1500/CPU1  ALM 0059  Pressure on press 4 above limit: 4.9 bar
+14.03.26 07:48:47,336  S7-1500/CPU1  INF 0005  Recipe R-497 loaded on station 1
+14.03.26 07:48:49,819  S7-1500/CPU1  ALM 0057  Pressure on press 3 above limit: 94.1 bar
+14.03.26 07:48:58,732  S7-1200/PLC_Press  INF 0003  Batch 8725 started on line 5
+14.03.26 07:49:06,894  ET200SP/IM155  WRN 0021  Filter 6 differential pressure high: 70.9 mbar
+14.03.26 07:49:15,793  S7-1500/CPU2  ALM 0059  Pressure on press 4 above limit: 62.4 bar
+14.03.26 07:49:17,183  ET200SP/IM155  INF 0002  Batch 2553 started on line 3
+14.03.26 07:49:18,620  S7-1500/CPU2  INF 0008  Recipe R-837 loaded on station 8
+14.03.26 07:49:25,798  S7-1500/CPU2  WRN 0018  Filter 6 differential pressure high: 73.9 mbar
+14.03.26 07:49:31,447  ET200SP/IM155  WRN 0013  Cycle time 2600 ms exceeds target on station 2
+14.03.26 07:49:37,685  S7-1500/CPU2  INF 0007  Recipe R-852 loaded on station 1
+14.03.26 07:49:41,342  S7-1500/CPU1  INF 0001  Batch 5027 started on line 7
+14.03.26 07:49:43,554  S7-1200/PLC_Press  INF 0003  Batch 8882 started on line 2
+14.03.26 07:49:46,440  S7-1500/CPU1  WRN 0012  Cycle time 6600 ms exceeds target on station 1
+14.03.26 07:49:54,170  S7-1500/CPU1  ALM 0059  Pressure on press 7 above limit: 81.5 bar
+14.03.26 07:49:56,334  ET200SP/IM155  INF 0003  Batch 7187 started on line 7
+14.03.26 07:50:04,246  S7-1200/PLC_Press  INF 0005  Operator login at HMI 2
+14.03.26 07:50:06,093  ET200SP/IM155  INF 0006  Recipe R-796 loaded on station 7
+14.03.26 07:50:10,706  ET200SP/IM155  INF 0002  Batch 6168 started on line 8
+14.03.26 07:50:19,055  ET200SP/IM155  ALM 0057  Pressure on press 4 above limit: 98.6 bar
+14.03.26 07:50:23,014  S7-1500/CPU1  INF 0001  Batch 7953 started on line 3
+14.03.26 07:50:29,833  S7-1500/CPU2  INF 0003  Batch 6666 started on line 6
+14.03.26 07:50:38,082  S7-1200/PLC_Press  INF 0004  Batch 6833 started on line 3
+14.03.26 07:50:38,847  S7-1500/CPU1  INF 0003  Batch 7758 started on line 8
+14.03.26 07:50:44,033  ET200SP/IM155  INF 0005  Operator login at HMI 4
+14.03.26 07:50:51,883  S7-1500/CPU2  ACK 0101  Alarm 872 acknowledged by operator 1
+14.03.26 07:50:52,419  S7-1500/CPU1  INF 0006  Recipe R-852 loaded on station 2
+14.03.26 07:50:52,588  S7-1500/CPU2  INF 0005  Recipe R-907 loaded on station 5
+14.03.26 07:50:54,391  S7-1500/CPU1  INF 0005  Operator login at HMI 7
+14.03.26 07:50:56,962  ET200SP/IM155  WRN 0020  Filter 8 differential pressure high: 89.5 mbar
+14.03.26 07:51:02,967  S7-1200/PLC_Press  ACK 0100  Alarm 260 acknowledged by operator 5
+14.03.26 07:51:05,414  ET200SP/IM155  ALM 0062  Hydraulic oil temperature 99 C on unit 5
+14.03.26 07:51:08,355  ET200SP/IM155  ALM 0045  Conveyor 8 motor overcurrent: 3.9 A
+14.03.26 07:51:13,649  S7-1500/CPU2  INF 0008  Recipe R-45 loaded on station 4
+14.03.26 07:51:21,200  ET200SP/IM155  ALM 0044  Conveyor 1 motor overcurrent: 1.1 A
+14.03.26 07:51:26,071  S7-1500/CPU1  WRN 0020  Filter 8 differential pressure high: 13.0 mbar
+14.03.26 07:51:26,945  S7-1500/CPU1  ACK 0100  Alarm 695 acknowledged by operator 1
+14.03.26 07:51:32,628  S7-1200/PLC_Press  INF 0002  Batch 5913 started on line 3
+14.03.26 07:51:37,894  ET200SP/IM155  ACK 0101  Alarm 374 acknowledged by operator 4
+14.03.26 07:51:41,037  S7-1200/PLC_Press  INF 0001  Batch 538 started on line 8
+14.03.26 07:51:43,982  S7-1500/CPU2  ACK 0100  Alarm 156 acknowledged by operator 6
+14.03.26 07:51:45,418  S7-1500/CPU2  ACK 0101  Alarm 395 acknowledged by operator 8
+14.03.26 07:51:52,420  S7-1500/CPU2  INF 0005  Recipe R-477 loaded on station 4
+14.03.26 07:51:53,422  S7-1200/PLC_Press  WRN 0019  Filter 1 differential pressure high: 62.8 mbar
+14.03.26 07:51:54,675  ET200SP/IM155  INF 0005  Recipe R-124 loaded on station 2
+14.03.26 07:51:56,791  S7-1500/CPU2  INF 0003  Batch 1246 started on line 6
+14.03.26 07:52:01,515  S7-1500/CPU2  ACK 0100  Alarm 272 acknowledged by operator 3
+14.03.26 07:52:09,831  S7-1500/CPU1  WRN 0012  Cycle time 7640 ms exceeds target on station 4
+14.03.26 07:52:17,343  S7-1500/CPU1  INF 0006  Recipe R-871 loaded on station 3
+14.03.26 07:52:24,770  ET200SP/IM155  WRN 0014  Cycle time 8780 ms exceeds target on station 4
+14.03.26 07:52:29,033  ET200SP/IM155  INF 0003  Operator login at HMI 1
+14.03.26 07:52:37,211  S7-1200/PLC_Press  FLT 0900  Safety relay K7 tripped, line 7 stopped
+    > input I9.6 = FALSE
+    > last OK cycle: 895 ms ago
+14.03.26 07:52:39,243  ET200SP/IM155  ACK 0102  Alarm 682 acknowledged by operator 2
+14.03.26 07:52:47,216  ET200SP/IM155  WRN 0012  Cycle time 3700 ms exceeds target on station 8
+14.03.26 07:52:48,515  ET200SP/IM155  INF 0004  Batch 5981 started on line 1
+14.03.26 07:52:49,078  ET200SP/IM155  ACK 0099  Alarm 618 acknowledged by operator 5
+14.03.26 07:52:53,995  S7-1500/CPU2  INF 0007  Recipe R-344 loaded on station 5
+14.03.26 07:53:02,739  ET200SP/IM155  INF 0002  Batch 7264 started on line 4
+14.03.26 07:53:10,051  S7-1200/PLC_Press  ACK 0101  Alarm 671 acknowledged by operator 8
+14.03.26 07:53:18,871  S7-1500/CPU1  WRN 0021  Filter 2 differential pressure high: 96.8 mbar
+14.03.26 07:53:27,487  ET200SP/IM155  INF 0001  Batch 3462 started on line 2
+14.03.26 07:53:35,872  S7-1500/CPU2  INF 0003  Batch 4676 started on line 6
+14.03.26 07:53:37,261  S7-1500/CPU2  INF 0002  Batch 5044 started on line 4
+14.03.26 07:53:41,435  S7-1500/CPU1  ACK 0100  Alarm 687 acknowledged by operator 1
+14.03.26 07:53:46,846  ET200SP/IM155  WRN 0018  Filter 5 differential pressure high: 38.6 mbar
+14.03.26 07:53:54,760  S7-1200/PLC_Press  INF 0005  Recipe R-72 loaded on station 3
+14.03.26 07:54:03,079  S7-1500/CPU1  WRN 0013  Cycle time 7580 ms exceeds target on station 3
+14.03.26 07:54:06,861  ET200SP/IM155  INF 0001  Batch 3178 started on line 8
+14.03.26 07:54:09,675  S7-1200/PLC_Press  INF 0007  Recipe R-364 loaded on station 2
+14.03.26 07:54:11,653  S7-1500/CPU1  WRN 0018  Filter 8 differential pressure high: 40.0 mbar
+14.03.26 07:54:19,236  S7-1500/CPU1  FLT 0902  Safety relay K4 tripped, line 4 stopped
+    > input I2.2 = FALSE
+    > last OK cycle: 373 ms ago
+14.03.26 07:54:25,012  S7-1500/CPU2  FLT 0902  Safety relay K1 tripped, line 1 stopped
+    > input I7.2 = FALSE
+    > last OK cycle: 635 ms ago
+14.03.26 07:54:29,069  S7-1500/CPU1  WRN 0018  Filter 7 differential pressure high: 59.8 mbar
+14.03.26 07:54:33,015  S7-1500/CPU1  ALM 0044  Conveyor 7 motor overcurrent: 7.2 A
+14.03.26 07:54:33,346  S7-1200/PLC_Press  INF 0005  Recipe R-639 loaded on station 7
+14.03.26 07:54:35,067  ET200SP/IM155  INF 0007  Recipe R-288 loaded on station 5
+14.03.26 07:54:41,951  S7-1500/CPU2  WRN 0020  Filter 1 differential pressure high: 4.5 mbar
+14.03.26 07:54:50,213  ET200SP/IM155  ACK 0099  Alarm 195 acknowledged by operator 5
+14.03.26 07:54:56,554  ET200SP/IM155  WRN 0015  Cycle time 7940 ms exceeds target on station 1
+14.03.26 07:54:58,142  S7-1500/CPU2  ALM 0058  Pressure on press 4 above limit: 87.9 bar
+14.03.26 07:55:02,085  S7-1500/CPU2  ALM 0042  Conveyor 6 motor overcurrent: 19.7 A
+14.03.26 07:55:06,441  S7-1500/CPU2  FLT 0903  Safety relay K2 tripped, line 2 stopped
+    > input I2.3 = FALSE
+    > last OK cycle: 647 ms ago
+14.03.26 07:55:14,207  ET200SP/IM155  INF 0006  Recipe R-654 loaded on station 2
+14.03.26 07:55:20,164  S7-1200/PLC_Press  INF 0002  Batch 5768 started on line 8
+14.03.26 07:55:23,466  S7-1500/CPU1  INF 0001  Batch 5107 started on line 7
+14.03.26 07:55:25,754  S7-1500/CPU2  ACK 0099  Alarm 377 acknowledged by operator 5
+14.03.26 07:55:27,553  S7-1500/CPU2  ACK 0099  Alarm 806 acknowledged by operator 4
+14.03.26 07:55:35,318  S7-1500/CPU2  INF 0006  Operator login at HMI 5
+14.03.26 07:55:37,274  S7-1200/PLC_Press  WRN 0013  Cycle time 2880 ms exceeds target on station 8
+14.03.26 07:55:43,803  ET200SP/IM155  INF 0006  Operator login at HMI 2
+14.03.26 07:55:46,764  ET200SP/IM155  FLT 0900  Safety relay K5 tripped, line 5 stopped
+    > input I0.4 = FALSE
+    > last OK cycle: 967 ms ago
+14.03.26 07:55:54,331  S7-1500/CPU1  ALM 0057  Pressure on press 8 above limit: 28.1 bar
+14.03.26 07:55:56,262  ET200SP/IM155  ACK 0100  Alarm 43 acknowledged by operator 6
+14.03.26 07:56:01,802  S7-1200/PLC_Press  ACK 0101  Alarm 373 acknowledged by operator 2
+14.03.26 07:56:07,858  S7-1500/CPU1  ACK 0101  Alarm 648 acknowledged by operator 3
+14.03.26 07:56:13,831  ET200SP/IM155  ACK 0099  Alarm 577 acknowledged by operator 6
+14.03.26 07:56:20,309  ET200SP/IM155  INF 0006  Recipe R-936 loaded on station 8
+14.03.26 07:56:22,649  S7-1500/CPU1  ACK 0101  Alarm 109 acknowledged by operator 1
+14.03.26 07:56:25,466  S7-1500/CPU1  INF 0007  Recipe R-932 loaded on station 5
+14.03.26 07:56:30,834  S7-1500/CPU2  WRN 0012  Cycle time 9610 ms exceeds target on station 2
+14.03.26 07:56:35,119  S7-1500/CPU2  WRN 0012  Cycle time 9750 ms exceeds target on station 4
+14.03.26 07:56:35,291  ET200SP/IM155  WRN 0012  Cycle time 7490 ms exceeds target on station 7
+14.03.26 07:56:43,294  S7-1500/CPU1  INF 0002  Batch 6646 started on line 6
+14.03.26 07:56:47,907  S7-1200/PLC_Press  WRN 0012  Cycle time 9340 ms exceeds target on station 2
+14.03.26 07:56:54,166  S7-1500/CPU1  WRN 0018  Filter 7 differential pressure high: 93.0 mbar
+14.03.26 07:56:56,039  S7-1500/CPU2  INF 0006  Operator login at HMI 2
+14.03.26 07:57:01,452  S7-1500/CPU2  INF 0008  Recipe R-996 loaded on station 1
+14.03.26 07:57:09,119  S7-1500/CPU2  INF 0003  Batch 3053 started on line 3
+14.03.26 07:57:12,311  S7-1200/PLC_Press  INF 0004  Operator login at HMI 6
+14.03.26 07:57:18,960  S7-1500/CPU1  ALM 0059  Pressure on press 3 above limit: 89.6 bar
+14.03.26 07:57:19,934  S7-1200/PLC_Press  ALM 0060  Pressure on press 2 above limit: 5.6 bar
+14.03.26 07:57:24,608  ET200SP/IM155  WRN 0019  Filter 3 differential pressure high: 69.8 mbar
+14.03.26 07:57:28,320  S7-1500/CPU2  INF 0005  Recipe R-962 loaded on station 7
+14.03.26 07:57:36,751  S7-1200/PLC_Press  ACK 0102  Alarm 508 acknowledged by operator 6
+14.03.26 07:57:43,066  S7-1200/PLC_Press  ALM 0042  Conveyor 7 motor overcurrent: 69.3 A
+14.03.26 07:57:47,603  S7-1500/CPU1  WRN 0012  Cycle time 1220 ms exceeds target on station 7
+14.03.26 07:57:56,396  S7-1200/PLC_Press  INF 0005  Recipe R-375 loaded on station 8
+14.03.26 07:58:02,956  S7-1200/PLC_Press  WRN 0015  Cycle time 1960 ms exceeds target on station 6
+14.03.26 07:58:04,178  S7-1500/CPU2  INF 0003  Operator login at HMI 8
+14.03.26 07:58:05,627  S7-1500/CPU2  WRN 0014  Cycle time 8060 ms exceeds target on station 8
+14.03.26 07:58:08,508  ET200SP/IM155  ALM 0062  Hydraulic oil temperature 35 C on unit 1
+14.03.26 07:58:09,421  S7-1200/PLC_Press  INF 0004  Batch 717 started on line 7
+14.03.26 07:58:17,678  ET200SP/IM155  INF 0006  Recipe R-501 loaded on station 7
+14.03.26 07:58:19,152  S7-1200/PLC_Press  ACK 0102  Alarm 72 acknowledged by operator 2
+14.03.26 07:58:22,363  S7-1500/CPU1  WRN 0018  Filter 8 differential pressure high: 56.9 mbar
+14.03.26 07:58:22,707  S7-1500/CPU2  ALM 0043  Conveyor 2 motor overcurrent: 35.5 A
+14.03.26 07:58:30,928  S7-1500/CPU1  INF 0005  Recipe R-99 loaded on station 5
+14.03.26 07:58:33,145  ET200SP/IM155  ALM 0063  Hydraulic oil temperature 1 C on unit 7
+14.03.26 07:58:33,231  S7-1500/CPU2  WRN 0021  Filter 8 differential pressure high: 62.3 mbar
+14.03.26 07:58:37,756  S7-1200/PLC_Press  INF 0004  Operator login at HMI 4
+14.03.26 07:58:39,426  S7-1500/CPU2  INF 0002  Batch 5087 started on line 7
+14.03.26 07:58:44,544  S7-1200/PLC_Press  INF 0005  Operator login at HMI 5
+14.03.26 07:58:49,657  ET200SP/IM155  ALM 0044  Conveyor 8 motor overcurrent: 99.3 A
+14.03.26 07:58:50,720  S7-1500/CPU2  ACK 0101  Alarm 847 acknowledged by operator 5
+14.03.26 07:58:57,010  S7-1500/CPU1  ALM 0058  Pressure on press 3 above limit: 62.9 bar
+14.03.26 07:58:58,269  S7-1500/CPU1  ALM 0043  Conveyor 7 motor overcurrent: 72.7 A
+14.03.26 07:59:00,515  S7-1500/CPU1  WRN 0014  Cycle time 3290 ms exceeds target on station 8
+14.03.26 07:59:07,577  S7-1500/CPU1  WRN 0021  Filter 3 differential pressure high: 49.3 mbar
+14.03.26 07:59:12,709  S7-1500/CPU2  INF 0007  Recipe R-953 loaded on station 2
+14.03.26 07:59:13,759  S7-1500/CPU1  WRN 0013  Cycle time 6280 ms exceeds target on station 3
+14.03.26 07:59:14,265  S7-1500/CPU1  ACK 0101  Alarm 726 acknowledged by operator 4
+14.03.26 07:59:21,727  S7-1500/CPU1  INF 0006  Recipe R-534 loaded on station 1
+14.03.26 07:59:27,147  S7-1500/CPU2  WRN 0013  Cycle time 6090 ms exceeds target on station 1
+14.03.26 07:59:32,321  S7-1500/CPU2  WRN 0018  Filter 8 differential pressure high: 75.2 mbar
+14.03.26 07:59:38,223  S7-1500/CPU1  INF 0002  Batch 8637 started on line 7
+14.03.26 07:59:38,473  S7-1200/PLC_Press  WRN 0020  Filter 3 differential pressure high: 61.1 mbar
+14.03.26 07:59:43,505  S7-1500/CPU1  INF 0004  Batch 9556 started on line 6
+14.03.26 07:59:44,799  S7-1200/PLC_Press  INF 0005  Operator login at HMI 6
+14.03.26 07:59:50,944  S7-1500/CPU1  INF 0002  Batch 4802 started on line 2
+14.03.26 07:59:51,347  S7-1200/PLC_Press  INF 0001  Batch 6503 started on line 3
+14.03.26 07:59:54,583  S7-1500/CPU2  INF 0002  Batch 2041 started on line 1
+14.03.26 08:00:02,619  S7-1500/CPU1  FLT 0902  Safety relay K7 tripped, line 7 stopped
+    > input I4.0 = FALSE
+    > last OK cycle: 389 ms ago
+14.03.26 08:00:07,526  S7-1500/CPU1  INF 0005  Recipe R-358 loaded on station 6
+14.03.26 08:00:11,787  ET200SP/IM155  ACK 0102  Alarm 121 acknowledged by operator 3
+14.03.26 08:00:13,342  ET200SP/IM155  WRN 0021  Filter 2 differential pressure high: 40.7 mbar
+14.03.26 08:00:19,919  S7-1500/CPU2  ACK 0101  Alarm 863 acknowledged by operator 5
+14.03.26 08:00:25,520  S7-1500/CPU2  INF 0007  Recipe R-542 loaded on station 3
+14.03.26 08:00:25,687  S7-1500/CPU1  WRN 0018  Filter 8 differential pressure high: 20.6 mbar
+14.03.26 08:00:30,450  S7-1500/CPU1  WRN 0014  Cycle time 5630 ms exceeds target on station 5
+14.03.26 08:00:37,788  S7-1500/CPU2  INF 0006  Operator login at HMI 4
+14.03.26 08:00:40,047  S7-1500/CPU2  ALM 0042  Conveyor 6 motor overcurrent: 9.2 A
+14.03.26 08:00:44,212  S7-1200/PLC_Press  INF 0003  Batch 2956 started on line 6
+14.03.26 08:00:52,982  S7-1500/CPU1  INF 0002  Batch 1308 started on line 8
+14.03.26 08:00:55,434  ET200SP/IM155  ALM 0045  Conveyor 2 motor overcurrent: 26.9 A
+14.03.26 08:00:56,189  ET200SP/IM155  WRN 0020  Filter 5 differential pressure high: 73.3 mbar
+14.03.26 08:00:59,135  S7-1500/CPU2  ALM 0061  Hydraulic oil temperature 20 C on unit 8
+14.03.26 08:01:01,095  ET200SP/IM155  INF 0006  Operator login at HMI 3
+14.03.26 08:01:08,172  S7-1200/PLC_Press  INF 0006  Recipe R-65 loaded on station 3
+14.03.26 08:01:14,653  S7-1200/PLC_Press  ALM 0045  Conveyor 2 motor overcurrent: 20.2 A
+14.03.26 08:01:16,058  ET200SP/IM155  ALM 0064  Hydraulic oil temperature 90 C on unit 2
+14.03.26 08:01:19,478  S7-1500/CPU2  WRN 0020  Filter 5 differential pressure high: 36.2 mbar
+14.03.26 08:01:19,788  S7-1500/CPU1  ALM 0061  Hydraulic oil temperature 80 C on unit 8
+14.03.26 08:01:21,790  ET200SP/IM155  WRN 0012  Cycle time 8560 ms exceeds target on station 1
+14.03.26 08:01:28,652  S7-1500/CPU2  WRN 0019  Filter 2 differential pressure high: 37.0 mbar
+14.03.26 08:01:37,065  S7-1200/PLC_Press  INF 0006  Operator login at HMI 2
+14.03.26 08:01:42,794  ET200SP/IM155  INF 0005  Recipe R-292 loaded on station 1
+14.03.26 08:01:49,262  S7-1500/CPU2  ALM 0064  Hydraulic oil temperature 43 C on unit 3
+14.03.26 08:01:50,606  S7-1500/CPU1  INF 0006  Recipe R-359 loaded on station 7
+14.03.26 08:01:52,267  S7-1200/PLC_Press  INF 0008  Recipe R-555 loaded on station 8
+14.03.26 08:01:57,098  S7-1500/CPU1  ACK 0101  Alarm 836 acknowledged by operator 6
+14.03.26 08:02:00,265  ET200SP/IM155  INF 0004  Operator login at HMI 4
+14.03.26 08:02:00,917  S7-1500/CPU2  INF 0006  Operator login at HMI 8
+14.03.26 08:02:06,148  ET200SP/IM155  ALM 0062  Hydraulic oil temperature 52 C on unit 2
+14.03.26 08:02:10,840  S7-1200/PLC_Press  WRN 0013  Cycle time 9230 ms exceeds target on station 7
+14.03.26 08:02:17,640  S7-1200/PLC_Press  WRN 0021  Filter 4 differential pressure high: 34.4 mbar
+14.03.26 08:02:21,246  S7-1500/CPU1  ALM 0043  Conveyor 4 motor overcurrent: 19.3 A
+14.03.26 08:02:29,829  ET200SP/IM155  ACK 0099  Alarm 945 acknowledged by operator 3
+14.03.26 08:02:35,816  S7-1200/PLC_Press  INF 0004  Operator login at HMI 7
+14.03.26 08:02:37,812  S7-1200/PLC_Press  INF 0006  Recipe R-263 loaded on station 6
+14.03.26 08:02:43,818  ET200SP/IM155  INF 0005  Recipe R-155 loaded on station 2
+14.03.26 08:02:49,090  ET200SP/IM155  INF 0001  Batch 9644 started on line 4
+14.03.26 08:02:57,172  S7-1200/PLC_Press  INF 0005  Operator login at HMI 1
+14.03.26 08:03:03,013  ET200SP/IM155  WRN 0014  Cycle time 7610 ms exceeds target on station 8
+14.03.26 08:03:07,949  S7-1200/PLC_Press  INF 0006  Operator login at HMI 1
+14.03.26 08:03:10,135  S7-1200/PLC_Press  WRN 0015  Cycle time 8970 ms exceeds target on station 4
+14.03.26 08:03:17,306  S7-1500/CPU1  FLT 0901  Safety relay K6 tripped, line 6 stopped
+    > input I2.7 = FALSE
+    > last OK cycle: 638 ms ago
+14.03.26 08:03:21,951  S7-1200/PLC_Press  ALM 0061  Hydraulic oil temperature 58 C on unit 7
+14.03.26 08:03:25,605  S7-1500/CPU1  INF 0003  Batch 1163 started on line 3
+14.03.26 08:03:33,126  ET200SP/IM155  WRN 0014  Cycle time 1250 ms exceeds target on station 4
+14.03.26 08:03:33,215  ET200SP/IM155  WRN 0018  Filter 4 differential pressure high: 33.8 mbar
+14.03.26 08:03:34,488  S7-1200/PLC_Press  ACK 0101  Alarm 452 acknowledged by operator 8
+14.03.26 08:03:40,153  S7-1500/CPU2  ALM 0062  Hydraulic oil temperature 15 C on unit 4
+14.03.26 08:03:45,763  S7-1200/PLC_Press  FLT 0902  Safety relay K2 tripped, line 2 stopped
+    > input I4.7 = FALSE
+    > last OK cycle: 406 ms ago
+14.03.26 08:03:49,524  ET200SP/IM155  INF 0006  Operator login at HMI 3
+14.03.26 08:03:53,972  ET200SP/IM155  WRN 0021  Filter 5 differential pressure high: 79.5 mbar
+14.03.26 08:03:57,107  S7-1500/CPU1  ALM 0044  Conveyor 7 motor overcurrent: 36.0 A
+14.03.26 08:04:05,095  S7-1500/CPU2  ALM 0059  Pressure on press 1 above limit: 11.3 bar
+14.03.26 08:04:13,698  S7-1500/CPU2  FLT 0901  Safety relay K4 tripped, line 4 stopped
+    > input I7.6 = FALSE
+    > last OK cycle: 925 ms ago
+14.03.26 08:04:21,922  S7-1500/CPU1  INF 0006  Operator login at HMI 5
+14.03.26 08:04:30,383  S7-1500/CPU1  WRN 0014  Cycle time 1690 ms exceeds target on station 5
+14.03.26 08:04:32,951  S7-1500/CPU2  INF 0003  Operator login at HMI 4
+14.03.26 08:04:35,074  ET200SP/IM155  WRN 0018  Filter 6 differential pressure high: 53.2 mbar
+14.03.26 08:04:42,117  S7-1500/CPU2  ALM 0043  Conveyor 7 motor overcurrent: 35.9 A
+14.03.26 08:04:48,014  S7-1200/PLC_Press  ALM 0044  Conveyor 1 motor overcurrent: 78.1 A
+14.03.26 08:04:55,536  S7-1200/PLC_Press  ACK 0099  Alarm 224 acknowledged by operator 1
+14.03.26 08:05:01,829  S7-1500/CPU1  ACK 0101  Alarm 982 acknowledged by operator 3
+14.03.26 08:05:02,155  ET200SP/IM155  WRN 0012  Cycle time 6060 ms exceeds target on station 4
+14.03.26 08:05:09,514  ET200SP/IM155  INF 0004  Batch 5825 started on line 5
+14.03.26 08:05:16,574  ET200SP/IM155  ACK 0099  Alarm 113 acknowledged by operator 4
+14.03.26 08:05:16,947  S7-1500/CPU1  INF 0008  Recipe R-549 loaded on station 7
+14.03.26 08:05:24,068  S7-1500/CPU1  INF 0008  Recipe R-989 loaded on station 4
+14.03.26 08:05:26,410  ET200SP/IM155  INF 0003  Batch 4468 started on line 8
+14.03.26 08:05:32,180  S7-1200/PLC_Press  ALM 0045  Conveyor 4 motor overcurrent: 94.2 A
+14.03.26 08:05:33,716  ET200SP/IM155  WRN 0019  Filter 1 differential pressure high: 52.0 mbar
+14.03.26 08:05:42,425  S7-1200/PLC_Press  INF 0007  Recipe R-321 loaded on station 4
+14.03.26 08:05:49,735  S7-1200/PLC_Press  ALM 0058  Pressure on press 8 above limit: 62.1 bar
+14.03.26 08:05:50,926  ET200SP/IM155  ACK 0101  Alarm 336 acknowledged by operator 4
+14.03.26 08:05:52,354  ET200SP/IM155  ALM 0045  Conveyor 1 motor overcurrent: 52.4 A
+14.03.26 08:05:59,233  ET200SP/IM155  ALM 0057  Pressure on press 1 above limit: 3.8 bar
+14.03.26 08:06:06,078  S7-1200/PLC_Press  ALM 0045  Conveyor 7 motor overcurrent: 97.7 A
+14.03.26 08:06:13,943  S7-1500/CPU1  INF 0007  Recipe R-534 loaded on station 7
+14.03.26 08:06:20,560  S7-1500/CPU2  INF 0004  Batch 6258 started on line 8
+14.03.26 08:06:26,387  S7-1500/CPU2  ALM 0042  Conveyor 4 motor overcurrent: 62.9 A
+14.03.26 08:06:29,983  S7-1500/CPU1  INF 0002  Batch 831 started on line 1
+14.03.26 08:06:33,563  S7-1500/CPU1  ACK 0101  Alarm 410 acknowledged by operator 2
+14.03.26 08:06:42,016  S7-1500/CPU1  INF 0003  Operator login at HMI 3
+14.03.26 08:06:50,169  S7-1200/PLC_Press  INF 0006  Operator login at HMI 2
+14.03.26 08:06:57,009  ET200SP/IM155  ACK 0099  Alarm 638 acknowledged by operator 4
+14.03.26 08:06:59,819  ET200SP/IM155  INF 0008  Recipe R-926 loaded on station 6
+14.03.26 08:07:06,436  S7-1200/PLC_Press  WRN 0013  Cycle time 5200 ms exceeds target on station 2
+14.03.26 08:07:12,876  S7-1500/CPU1  ALM 0063  Hydraulic oil temperature 96 C on unit 5
+14.03.26 08:07:13,059  S7-1500/CPU2  ALM 0064  Hydraulic oil temperature 28 C on unit 4
+14.03.26 08:07:14,289  ET200SP/IM155  INF 0006  Operator login at HMI 8
+14.03.26 08:07:19,251  ET200SP/IM155  INF 0007  Recipe R-972 loaded on station 2
+14.03.26 08:07:21,729  S7-1500/CPU1  ACK 0102  Alarm 697 acknowledged by operator 3
+14.03.26 08:07:29,638  ET200SP/IM155  ALM 0061  Hydraulic oil temperature 30 C on unit 3
+14.03.26 08:07:29,873  ET200SP/IM155  ALM 0060  Pressure on press 5 above limit: 8.3 bar
+14.03.26 08:07:30,149  ET200SP/IM155  ALM 0058  Pressure on press 8 above limit: 60.3 bar
+14.03.26 08:07:36,042  S7-1200/PLC_Press  ALM 0044  Conveyor 2 motor overcurrent: 21.7 A
+14.03.26 08:07:36,120  S7-1200/PLC_Press  WRN 0020  Filter 8 differential pressure high: 40.3 mbar
+14.03.26 08:07:37,388  S7-1200/PLC_Press  INF 0004  Operator login at HMI 1
+14.03.26 08:07:41,202  S7-1500/CPU2  WRN 0015  Cycle time 1710 ms exceeds target on station 2
+14.03.26 08:07:46,035  S7-1200/PLC_Press  INF 0007  Recipe R-545 loaded on station 4
+14.03.26 08:07:49,542  S7-1200/PLC_Press  ALM 0059  Pressure on press 8 above limit: 17.3 bar
+14.03.26 08:07:53,162  ET200SP/IM155  INF 0007  Recipe R-939 loaded on station 8
+14.03.26 08:07:53,783  S7-1500/CPU2  INF 0007  Recipe R-875 loaded on station 5
+14.03.26 08:07:59,715  S7-1500/CPU1  ACK 0100  Alarm 117 acknowledged by operator 6
+14.03.26 08:08:05,854  S7-1500/CPU1  WRN 0012  Cycle time 6150 ms exceeds target on station 5
+14.03.26 08:08:09,839  S7-1500/CPU2  FLT 0903  Safety relay K2 tripped, line 2 stopped
+    > input I9.5 = FALSE
+    > last OK cycle: 357 ms ago
+14.03.26 08:08:10,280  S7-1200/PLC_Press  INF 0008  Recipe R-881 loaded on station 2
+14.03.26 08:08:14,582  ET200SP/IM155  ACK 0102  Alarm 522 acknowledged by operator 2
+14.03.26 08:08:17,992  S7-1500/CPU1  WRN 0012  Cycle time 1410 ms exceeds target on station 1
+14.03.26 08:08:22,276  S7-1200/PLC_Press  FLT 0903  Safety relay K5 tripped, line 5 stopped
+    > input I3.7 = FALSE
+    > last OK cycle: 790 ms ago
+14.03.26 08:08:30,116  S7-1200/PLC_Press  INF 0003  Operator login at HMI 6
+14.03.26 08:08:31,363  S7-1500/CPU2  INF 0006  Recipe R-90 loaded on station 8
+14.03.26 08:08:34,104  S7-1200/PLC_Press  WRN 0012  Cycle time 2900 ms exceeds target on station 6
+14.03.26 08:08:40,697  S7-1500/CPU1  ALM 0061  Hydraulic oil temperature 27 C on unit 6
+14.03.26 08:08:41,381  S7-1500/CPU2  WRN 0019  Filter 4 differential pressure high: 28.1 mbar
+14.03.26 08:08:48,804  ET200SP/IM155  WRN 0020  Filter 7 differential pressure high: 55.3 mbar
+14.03.26 08:08:55,797  S7-1200/PLC_Press  INF 0002  Batch 8776 started on line 6
+14.03.26 08:08:59,602  ET200SP/IM155  INF 0001  Batch 8412 started on line 2
+14.03.26 08:09:06,990  ET200SP/IM155  WRN 0019  Filter 1 differential pressure high: 27.4 mbar
+14.03.26 08:09:12,965  S7-1500/CPU1  ALM 0063  Hydraulic oil temperature 15 C on unit 5
+14.03.26 08:09:18,144  S7-1200/PLC_Press  INF 0005  Recipe R-41 loaded on station 4
+14.03.26 08:09:18,790  S7-1500/CPU2  INF 0003  Batch 2813 started on line 3
+14.03.26 08:09:20,915  S7-1500/CPU2  INF 0003  Operator login at HMI 3
+14.03.26 08:09:29,426  ET200SP/IM155  INF 0005  Operator login at HMI 5
+14.03.26 08:09:37,098  S7-1200/PLC_Press  ALM 0042  Conveyor 8 motor overcurrent: 14.7 A
+14.03.26 08:09:37,839  S7-1500/CPU1  ACK 0099  Alarm 152 acknowledged by operator 5
+14.03.26 08:09:44,727  ET200SP/IM155  INF 0005  Recipe R-683 loaded on station 5
+14.03.26 08:09:51,553  S7-1500/CPU2  INF 0005  Recipe R-500 loaded on station 2
+14.03.26 08:09:54,646  S7-1200/PLC_Press  INF 0004  Operator login at HMI 7
+14.03.26 08:09:58,488  ET200SP/IM155  INF 0007  Recipe R-413 loaded on station 8
+14.03.26 08:10:00,294  S7-1500/CPU2  INF 0006  Operator login at HMI 7
+14.03.26 08:10:06,881  S7-1200/PLC_Press  INF 0005  Recipe R-284 loaded on station 1
+14.03.26 08:10:09,618  S7-1200/PLC_Press  ACK 0099  Alarm 91 acknowledged by operator 1
+14.03.26 08:10:13,301  S7-1200/PLC_Press  ACK 0100  Alarm 994 acknowledged by operator 7
+14.03.26 08:10:19,195  ET200SP/IM155  INF 0005  Recipe R-953 loaded on station 1
+14.03.26 08:10:26,834  ET200SP/IM155  ACK 0099  Alarm 267 acknowledged by operator 5
+14.03.26 08:10:29,636  S7-1500/CPU2  ALM 0061  Hydraulic oil temperature 37 C on unit 6
+14.03.26 08:10:37,299  S7-1200/PLC_Press  INF 0005  Operator login at HMI 7
+14.03.26 08:10:38,099  S7-1500/CPU2  INF 0003  Operator login at HMI 4
+14.03.26 08:10:39,324  S7-1200/PLC_Press  ACK 0101  Alarm 369 acknowledged by operator 6
+14.03.26 08:10:40,340  S7-1200/PLC_Press  INF 0008  Recipe R-621 loaded on station 6
+14.03.26 08:10:41,325  S7-1500/CPU2  INF 0004  Batch 9214 started on line 4
+14.03.26 08:10:46,425  ET200SP/IM155  ALM 0063  Hydraulic oil temperature 39 C on unit 2
+14.03.26 08:10:46,978  ET200SP/IM155  WRN 0013  Cycle time 8050 ms exceeds target on station 5
+14.03.26 08:10:51,165  ET200SP/IM155  INF 0002  Batch 9685 started on line 5
+14.03.26 08:10:54,345  S7-1500/CPU2  WRN 0018  Filter 2 differential pressure high: 78.8 mbar
+14.03.26 08:10:57,277  S7-1500/CPU1  WRN 0013  Cycle time 1210 ms exceeds target on station 4
+14.03.26 08:11:05,486  S7-1500/CPU2  ACK 0102  Alarm 470 acknowledged by operator 4
+14.03.26 08:11:13,309  S7-1200/PLC_Press  ALM 0043  Conveyor 6 motor overcurrent: 44.5 A
+14.03.26 08:11:18,653  S7-1200/PLC_Press  ALM 0064  Hydraulic oil temperature 1 C on unit 6
+14.03.26 08:11:24,814  S7-1500/CPU2  INF 0007  Recipe R-671 loaded on station 1
+14.03.26 08:11:32,501  ET200SP/IM155  ACK 0101  Alarm 909 acknowledged by operator 7
+14.03.26 08:11:32,577  ET200SP/IM155  INF 0001  Batch 4916 started on line 6
+14.03.26 08:11:34,525  ET200SP/IM155  ACK 0102  Alarm 662 acknowledged by operator 5
+14.03.26 08:11:36,743  S7-1200/PLC_Press  INF 0003  Operator login at HMI 4
+14.03.26 08:11:40,918  S7-1500/CPU1  INF 0006  Operator login at HMI 8
+14.03.26 08:11:41,201  S7-1500/CPU1  INF 0002  Batch 9415 started on line 5
+14.03.26 08:11:43,600  ET200SP/IM155  ALM 0043  Conveyor 2 motor overcurrent: 1.5 A
+14.03.26 08:11:44,285  ET200SP/IM155  ACK 0099  Alarm 189 acknowledged by operator 3
+14.03.26 08:11:49,101  S7-1500/CPU2  WRN 0021  Filter 5 differential pressure high: 37.9 mbar
+14.03.26 08:11:52,230  S7-1500/CPU1  INF 0004  Operator login at HMI 5
+14.03.26 08:11:52,466  ET200SP/IM155  ACK 0099  Alarm 325 acknowledged by operator 5
+14.03.26 08:11:52,783  S7-1500/CPU1  INF 0004  Operator login at HMI 6
+14.03.26 08:11:53,851  ET200SP/IM155  INF 0007  Recipe R-469 loaded on station 8
+14.03.26 08:11:55,778  S7-1200/PLC_Press  ACK 0102  Alarm 706 acknowledged by operator 7
+14.03.26 08:12:03,366  S7-1500/CPU2  ALM 0042  Conveyor 8 motor overcurrent: 37.0 A
+14.03.26 08:12:07,856  S7-1500/CPU1  ALM 0059  Pressure on press 4 above limit: 25.5 bar
+14.03.26 08:12:09,150  S7-1500/CPU2  ACK 0100  Alarm 902 acknowledged by operator 7
+14.03.26 08:12:10,652  S7-1500/CPU1  INF 0006  Recipe R-433 loaded on station 8
+14.03.26 08:12:15,237  ET200SP/IM155  ALM 0062  Hydraulic oil temperature 47 C on unit 7
+14.03.26 08:12:22,291  S7-1200/PLC_Press  FLT 0903  Safety relay K3 tripped, line 3 stopped
+    > input I1.5 = FALSE
+    > last OK cycle: 518 ms ago
+14.03.26 08:12:30,234  S7-1500/CPU1  ALM 0064  Hydraulic oil temperature 50 C on unit 5
+14.03.26 08:12:32,775  S7-1200/PLC_Press  WRN 0015  Cycle time 7210 ms exceeds target on station 1
+14.03.26 08:12:39,227  S7-1200/PLC_Press  ALM 0042  Conveyor 2 motor overcurrent: 71.3 A
+14.03.26 08:12:41,564  S7-1500/CPU1  ALM 0063  Hydraulic oil temperature 9 C on unit 4
+14.03.26 08:12:43,840  S7-1500/CPU2  ALM 0060  Pressure on press 2 above limit: 83.8 bar
+14.03.26 08:12:49,092  S7-1500/CPU1  INF 0001  Batch 8041 started on line 1
+14.03.26 08:12:56,804  S7-1200/PLC_Press  INF 0002  Batch 1215 started on line 5
+14.03.26 08:13:01,527  S7-1500/CPU2  ALM 0064  Hydraulic oil temperature 14 C on unit 2
+14.03.26 08:13:07,620  S7-1200/PLC_Press  ALM 0042  Conveyor 4 motor overcurrent: 65.6 A
+14.03.26 08:13:10,652  S7-1200/PLC_Press  INF 0006  Operator login at HMI 4
+14.03.26 08:13:11,089  S7-1500/CPU1  INF 0005  Operator login at HMI 5
+14.03.26 08:13:19,413  S7-1500/CPU1  INF 0006  Recipe R-180 loaded on station 8
+14.03.26 08:13:21,968  S7-1200/PLC_Press  WRN 0015  Cycle time 1670 ms exceeds target on station 5
+14.03.26 08:13:29,983  S7-1200/PLC_Press  ACK 0100  Alarm 345 acknowledged by operator 6
+14.03.26 08:13:35,511  S7-1500/CPU2  ACK 0099  Alarm 970 acknowledged by operator 4
+14.03.26 08:13:37,339  S7-1500/CPU1  WRN 0012  Cycle time 2680 ms exceeds target on station 3
+14.03.26 08:13:46,116  ET200SP/IM155  ALM 0063  Hydraulic oil temperature 17 C on unit 4
+14.03.26 08:13:54,451  ET200SP/IM155  WRN 0020  Filter 2 differential pressure high: 73.6 mbar
