@@ -168,14 +168,18 @@ class LLMClient(Protocol):
 
 @dataclass
 class UsageTracker:
-    """Token usage of a command, printed at its end."""
+    """Token usage of a command, printed at its end, with any model switch."""
 
     calls: int = 0
     cached_calls: int = 0
     usage: Usage = Usage()
+    models: list[str] = field(default_factory=list)
+    notes: list[str] = field(default_factory=list)
 
     def record(self, response: LLMResponse) -> None:
         """Count a response (cached ones cost nothing)."""
+        if response.model and response.model not in self.models:
+            self.models.append(response.model)
         if response.cached:
             self.cached_calls += 1
         else:
@@ -183,12 +187,13 @@ class UsageTracker:
             self.usage = self.usage + response.usage
 
     def summary(self, model: str) -> str:
-        """``Gemini tokens: 1,234 input, 567 output (3 calls, 1 cached) - model``."""
-        return (
-            f"AI tokens ({model}): {self.usage.input_tokens:,} input, "
+        """``AI tokens (model): 1,234 input, 567 output (3 calls, 1 cached)``, then notes."""
+        line = (
+            f"AI tokens ({', '.join(self.models) or model}): {self.usage.input_tokens:,} input, "
             f"{self.usage.output_tokens:,} output "
             f"({self.calls} call{'s' if self.calls != 1 else ''}, {self.cached_calls} cached)"
         )
+        return "\n".join([line, *self.notes])
 
 
 # --- Cache ----------------------------------------------------------------------------------
@@ -256,21 +261,29 @@ class ResponseCache:
 
 
 class ResilientClient:
-    """Cache, throttle and retry around any :class:`LLMClient`, and count tokens."""
+    """Cache, throttle, retry and fall back around any :class:`LLMClient`; count tokens.
+
+    ``fallbacks`` are tried in order when the active client's daily quota is exhausted
+    or it stays rate limited after every retry (free-tier quotas are per model).
+    """
 
     def __init__(
         self,
         inner: LLMClient,
         *,
+        fallbacks: Sequence[LLMClient] = (),
         cache: ResponseCache | None = None,
         min_delay_seconds: float = 0.0,
-        max_retries: int = 5,
+        max_retries: int = 3,
         base_backoff_seconds: float = 2.0,
         tracker: UsageTracker | None = None,
         sleep: Callable[[float], None] = time.sleep,
         clock: Callable[[], float] = time.monotonic,
     ) -> None:
         self.inner = inner
+        self.fallbacks = tuple(fallbacks)
+        self._clients = (inner, *self.fallbacks)
+        self._active = 0
         self.cache = cache
         self.min_delay_seconds = min_delay_seconds
         self.max_retries = max_retries
@@ -282,11 +295,27 @@ class ResilientClient:
 
     @property
     def model(self) -> str:
-        return self.inner.model
+        """The model currently answering (changes after a fallback)."""
+        return self._clients[self._active].model
 
     def complete(self, request: LLMRequest) -> LLMResponse:
-        """Cached answer if any; else a throttled call, retried on transient limits."""
-        key = request_key(self.model, request)
+        """Cached answer if any; else a throttled, retried call, falling back if needed."""
+        while True:
+            client = self._clients[self._active]
+            try:
+                return self._complete_with(client, request)
+            except (QuotaExhaustedError, RateLimitError) as error:
+                if self._active + 1 >= len(self._clients):
+                    raise
+                self._active += 1
+                if isinstance(error, QuotaExhaustedError):
+                    reason = "daily quota exhausted"
+                else:
+                    reason = "still unavailable after retries"
+                self.tracker.notes.append(f"{client.model}: {reason}; switched to {self.model}")
+
+    def _complete_with(self, client: LLMClient, request: LLMRequest) -> LLMResponse:
+        key = request_key(client.model, request)
         if self.cache is not None:
             cached = self.cache.get(key)
             if cached is not None:
@@ -296,7 +325,7 @@ class ResilientClient:
         while True:
             self._throttle()
             try:
-                response = self.inner.complete(request)
+                response = client.complete(request)
             except RateLimitError as error:
                 if attempt >= self.max_retries:
                     raise RateLimitError(
@@ -386,8 +415,10 @@ def create_client(settings: Settings, *, tracker: UsageTracker | None = None) ->
         )
     from loglens.ai.gemini import GeminiClient  # optional dependency, imported on use
 
+    fallbacks = [GeminiClient(m) for m in settings.fallback_models if m != settings.model]
     return ResilientClient(
         GeminiClient(settings.model),
+        fallbacks=fallbacks,
         cache=ResponseCache(settings.cache_dir),
         min_delay_seconds=settings.min_delay_seconds,
         max_retries=settings.max_retries,

@@ -8,9 +8,11 @@ variables already set.
 The Gemini API key is read **only** from the ``GEMINI_API_KEY`` environment variable
 (usually set through ``.env``); it is never written to a file, printed or logged.
 
-``config.yaml`` keys: ``ai`` (true/false), ``model``, ``min_delay_seconds``,
-``max_retries``. Environment variables: ``LOGLENS_AI`` (``0``/``false``/``off``
-disables AI), ``LOGLENS_LLM_MODEL``, ``LOGLENS_LLM_MIN_DELAY``, ``LOGLENS_LLM_MAX_RETRIES``.
+``config.yaml`` keys: ``ai`` (true/false), ``model``, ``fallback_models`` (list),
+``min_delay_seconds``, ``max_retries``. Environment variables: ``LOGLENS_AI``
+(``0``/``false``/``off`` disables AI), ``LOGLENS_LLM_MODEL``,
+``LOGLENS_LLM_FALLBACK_MODELS`` (comma-separated; empty or ``none`` disables fallback),
+``LOGLENS_LLM_MIN_DELAY``, ``LOGLENS_LLM_MAX_RETRIES``.
 """
 
 import os
@@ -26,7 +28,10 @@ DEFAULT_MODEL: Final = "gemini-3.8-flash"
 """Newest stable Gemini Flash model; free on the free tier (October 2026 docs)."""
 DEFAULT_MIN_DELAY_SECONDS: Final = 4.0
 """Minimum spacing between real API calls, to stay under free-tier per-minute limits."""
-DEFAULT_MAX_RETRIES: Final = 5
+DEFAULT_MAX_RETRIES: Final = 3
+"""Every attempt, failed or not, counts against the free tier's requests per day."""
+DEFAULT_FALLBACK_MODELS: Final = ("gemini-3.5-flash-lite",)
+"""Used when the main model's daily quota is exhausted (free-tier quotas are per model)."""
 API_KEY_VARIABLE: Final = "GEMINI_API_KEY"
 _FALSE: Final = frozenset({"0", "false", "no", "off"})
 
@@ -44,6 +49,7 @@ class Settings:
     model: str = DEFAULT_MODEL
     min_delay_seconds: float = DEFAULT_MIN_DELAY_SECONDS
     max_retries: int = DEFAULT_MAX_RETRIES
+    fallback_models: tuple[str, ...] = DEFAULT_FALLBACK_MODELS
 
     @property
     def formats_dir(self) -> Path:
@@ -104,9 +110,26 @@ def load_settings(environ: Mapping[str, str] | None = None) -> Settings:
         raise ConfigError(f"invalid LogLens setting: {error}") from error
     if delay < 0 or retries < 0:
         raise ConfigError("min_delay_seconds and max_retries must not be negative")
+    if "LOGLENS_LLM_FALLBACK_MODELS" in env:
+        fallbacks = _models(env["LOGLENS_LLM_FALLBACK_MODELS"].split(","))
+    elif "fallback_models" in file_values:
+        value = file_values["fallback_models"]
+        fallbacks = _models(value if isinstance(value, list) else str(value or "").split(","))
+    else:
+        fallbacks = DEFAULT_FALLBACK_MODELS
     return replace(
-        settings, ai_enabled=ai, model=model, min_delay_seconds=delay, max_retries=retries
+        settings,
+        ai_enabled=ai,
+        model=model,
+        min_delay_seconds=delay,
+        max_retries=retries,
+        fallback_models=fallbacks,
     )
+
+
+def _models(values: list[object] | list[str]) -> tuple[str, ...]:
+    names = (str(value).strip() for value in values)
+    return tuple(name for name in names if name and name.lower() != "none")
 
 
 def api_key_is_set(environ: Mapping[str, str] | None = None) -> bool:

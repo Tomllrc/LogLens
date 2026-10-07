@@ -16,4 +16,5 @@ def _isolated_environment(
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     monkeypatch.delenv("LOGLENS_AI", raising=False)
     monkeypatch.delenv("LOGLENS_LLM_MODEL", raising=False)
+    monkeypatch.delenv("LOGLENS_LLM_FALLBACK_MODELS", raising=False)
     return home

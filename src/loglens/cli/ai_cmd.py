@@ -50,6 +50,7 @@ def doctor(
         f"{API_KEY_VARIABLE}", "set" if api_key_is_set() else Text("not set", style="red")
     )
     table.add_row("Model", settings.model)
+    table.add_row("Fallback models", ", ".join(settings.fallback_models) or "none")
     table.add_row("Min delay between calls", f"{settings.min_delay_seconds:g} s")
     table.add_row("Home", str(settings.home))
     table.add_row("Response cache", f"{settings.cache_dir} ({cache_entries} entries)")

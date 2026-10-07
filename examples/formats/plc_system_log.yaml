@@ -1,0 +1,30 @@
+name: plc_system_log
+description: Industrial PLC system logs with timestamps, device components, level codes, and event messages.
+regex:
+- ^(?P<timestamp>\d{2}\.\d{2}\.\d{2} \d{2}:\d{2}:\d{2},\d{3})\s+(?P<component>\S+)\s+(?P<level>ALM|FLT|WRN|INF|ACK)\s+(?P<code_id>\d+)\s+(?P<message>.*)
+priority: 90
+timestamp_format:
+- '%d.%m.%y %H:%M:%S,%f'
+level:
+  group: level
+  map:
+    ALM: ERROR
+    FLT: FATAL
+    WRN: WARN
+    INF: INFO
+    ACK: INFO
+record_start: ^\d{2}\.\d{2}\.\d{2} \d{2}:\d{2}:\d{2},\d{3}
+sample_lines:
+- '14.03.26 06:00:30,619  S7-1500/CPU2  ALM 0057  Pressure on press 3 above limit: 52.9 bar'
+- 14.03.26 06:00:23,827  S7-1200/PLC_Press  ACK 0101  Alarm 865 acknowledged by operator 5
+- "14.03.26 06:00:08,063  ET200SP/IM155  FLT 0903  Safety relay K6 tripped, line 6 stopped\n    > input I4.0 = FALSE\n    > last OK cycle: 105 ms ago"
+- '14.03.26 06:00:38,540  S7-1500/CPU2  WRN 0019  Filter 1 differential pressure high: 57.3 mbar'
+- '14.03.26 06:00:24,092  S7-1200/PLC_Press  WRN 0020  Filter 5 differential pressure high: 2.3 mbar'
+- 14.03.26 06:00:15,758  ET200SP/IM155  ACK 0099  Alarm 977 acknowledged by operator 7
+- '14.03.26 06:00:44,616  S7-1500/CPU2  ALM 0045  Conveyor 2 motor overcurrent: 43.8 A'
+- '14.03.26 06:00:44,328  S7-1200/PLC_Press  WRN 0019  Filter 5 differential pressure high: 17.2 mbar'
+metadata:
+  generated_by: ai
+  model: gemini-3.5-flash-lite
+  generated_at: '2026-10-07T20:07:52+00:00'
+  match_rate: 1.0

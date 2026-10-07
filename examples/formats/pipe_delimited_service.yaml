@@ -1,0 +1,29 @@
+name: pipe_delimited_service
+description: Pipe-delimited application logs with compact ISO-8601 timestamps, host, component, single-letter log levels, and order IDs.
+regex:
+- (?P<timestamp>\d{8}T\d{6}\.\d{3}Z)\|(?P<host>[^|]+)\|(?P<component>[^|]+)\|(?P<level>[A-Z])\|(?P<order_id>[^|]+)\|(?P<message>.*)
+priority: 90
+timestamp_format:
+- '%Y%m%dT%H%M%S.%fZ'
+level:
+  group: level
+  map:
+    D: DEBUG
+    I: INFO
+    W: WARN
+    E: ERROR
+    F: FATAL
+sample_lines:
+- 20260314T060007.260Z|web-01|cart|I|ORD-33893|user signed in
+- 20260314T060003.354Z|web-01|checkout|D|ORD-64815|cache hit for key sku:22|retry=2
+- 20260314T060001.220Z|web-04|inventory|W|-|slow query took 1325 ms
+- '20260314T060001.244Z|web-04|search|E|-|payment declined: card expired|shard=5|retry=1'
+- 20260314T060002.085Z|web-06|checkout|W|-|slow query took 3469 ms|attempt=2
+- 20260314T060025.370Z|web-04|auth|I|ORD-93146|order created
+- 20260314T060010.559Z|web-05|checkout|F|ORD-81579|database connection pool exhausted
+- 20260314T060004.163Z|web-01|inventory|W|-|slow query took 7134 ms|node=3
+metadata:
+  generated_by: ai
+  model: gemini-3.8-flash
+  generated_at: '2026-10-07T20:02:43+00:00'
+  match_rate: 1.0

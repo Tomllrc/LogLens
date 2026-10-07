@@ -6,6 +6,7 @@ from pathlib import Path
 import pytest
 
 from loglens.config import (
+    DEFAULT_FALLBACK_MODELS,
     DEFAULT_MODEL,
     ConfigError,
     api_key_is_set,
@@ -98,3 +99,16 @@ def test_env_file_is_loaded_without_overriding(
         assert os.environ["LOGLENS_TEST_B"] == "env"
     finally:
         os.environ.pop("LOGLENS_TEST_A", None)
+
+
+def test_fallback_models(tmp_path: Path) -> None:
+    home = {"LOGLENS_HOME": str(tmp_path)}
+    assert load_settings(home).fallback_models == DEFAULT_FALLBACK_MODELS
+    from_env = load_settings({**home, "LOGLENS_LLM_FALLBACK_MODELS": " x , y ,"})
+    assert from_env.fallback_models == ("x", "y")
+    assert load_settings({**home, "LOGLENS_LLM_FALLBACK_MODELS": ""}).fallback_models == ()
+    assert load_settings({**home, "LOGLENS_LLM_FALLBACK_MODELS": "none"}).fallback_models == ()
+    (tmp_path / "config.yaml").write_text("fallback_models: [p, q]\n", encoding="utf-8")
+    assert load_settings(home).fallback_models == ("p", "q")
+    (tmp_path / "config.yaml").write_text("fallback_models: r\n", encoding="utf-8")
+    assert load_settings(home).fallback_models == ("r",)

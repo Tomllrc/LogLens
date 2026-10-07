@@ -1,0 +1,28 @@
+name: game_server_log
+description: Game server log containing match events, anticheat flags, and network status.
+regex:
+- ^\[(?P<timestamp>\d{4}/\d{3}-\d{2}:\d{2}:\d{2}\.\d{3})\]\[(?P<level>\S+)\]\[(?P<component>[^\]]+)\] (?P<message>.*)
+priority: 90
+timestamp_format:
+- '%Y/%j-%H:%M:%S.%f'
+level:
+  group: level
+  map:
+    I: INFO
+    D: DEBUG
+    W: WARN
+    E: ERROR
+sample_lines:
+- '[2026/073-06:00:02.130][I][match#8812] KILL Mira -> noob_7 (deagle, headshot, noscope)'
+- '[2026/073-06:00:06.433][D][net] TICK rate=116Hz lag=149ms'
+- '[2026/073-06:00:03.732][E][anticheat] Sn1per_42 flagged: aim snap 731 deg/s'
+- '[2026/073-06:00:31.704][W][net] noob_7 packet loss 13% (ping 303ms)'
+- '[2026/073-06:00:35.536][W][net] xX_Rex_Xx packet loss 40% (ping 328ms)'
+- '[2026/073-06:02:22.291][W][net] Sn1per_42 packet loss 8% (ping 254ms)'
+- '[2026/073-06:04:14.168][W][net] kappa_99 packet loss 7% (ping 298ms)'
+- '[2026/073-06:04:32.626][W][net] Dr.Frag packet loss 9% (ping 247ms)'
+metadata:
+  generated_by: ai
+  model: gemini-3.5-flash-lite
+  generated_at: '2026-10-07T20:07:59+00:00'
+  match_rate: 1.0

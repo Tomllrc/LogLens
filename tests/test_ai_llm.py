@@ -241,3 +241,59 @@ def test_create_client_wraps_gemini(tmp_path: Path, monkeypatch: pytest.MonkeyPa
     assert client.model == "gemini-test"
     assert client.min_delay_seconds == 1.5
     assert client.cache is not None and client.cache.directory == tmp_path / "cache" / "llm"
+
+
+# --- Model fallback ---------------------------------------------------------------------
+
+
+def test_daily_quota_switches_to_the_fallback_model(tmp_path: Path) -> None:
+    main = FakeClient([QuotaExhaustedError("daily quota")], model="main")
+    backup = FakeClient([LLMResponse(text="from backup"), LLMResponse(text="again")], model="lite")
+    tracker = UsageTracker()
+    client = ResilientClient(
+        main, fallbacks=[backup], cache=ResponseCache(tmp_path), tracker=tracker
+    )
+    assert client.model == "main"
+    assert client.complete(REQUEST).text == "from backup"
+    assert client.model == "lite"
+    client.complete(LLMRequest.from_prompt("next"))
+    assert len(main.requests) == 1  # the exhausted model is not asked again
+    summary = tracker.summary("main")
+    assert summary.startswith("AI tokens (lite): ")
+    assert "main: daily quota exhausted; switched to lite" in summary
+
+
+def test_persistent_overload_switches_after_the_retries() -> None:
+    time = FakeTime()
+    main = FakeClient([RateLimitError("503")] * 2, model="main")
+    backup = FakeClient([LLMResponse(text="ok")], model="lite")
+    client = resilient(main, time, fallbacks=[backup], max_retries=1)
+    assert client.complete(REQUEST).text == "ok"
+    assert len(main.requests) == 2
+    assert "still unavailable after retries" in client.tracker.notes[0]
+
+
+def test_last_fallback_failure_is_raised() -> None:
+    main = FakeClient([QuotaExhaustedError("main quota")], model="main")
+    backup = FakeClient([QuotaExhaustedError("lite quota")], model="lite")
+    client = ResilientClient(main, fallbacks=[backup])
+    with pytest.raises(QuotaExhaustedError, match="lite quota"):
+        client.complete(REQUEST)
+
+
+def test_other_errors_do_not_switch_models() -> None:
+    main = FakeClient([ProviderError("bad request")], model="main")
+    backup = FakeClient([LLMResponse(text="unused")], model="lite")
+    with pytest.raises(ProviderError):
+        ResilientClient(main, fallbacks=[backup]).complete(REQUEST)
+    assert backup.requests == []
+
+
+def test_create_client_builds_the_fallbacks(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    pytest.importorskip("google.genai")
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    settings = Settings(home=tmp_path, model="a", fallback_models=("a", "b"))
+    client = create_client(settings)
+    assert [fallback.model for fallback in client.fallbacks] == ["b"]

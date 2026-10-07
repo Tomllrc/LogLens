@@ -157,7 +157,9 @@ def test_daily_quota_is_reported_clearly() -> None:
 
 @pytest.mark.parametrize("code", [500, 503])
 def test_server_errors_are_retryable(code: int) -> None:
-    assert isinstance(map_api_error(api_error(code, "UNAVAILABLE")), RateLimitError)
+    error = map_api_error(api_error(code, "UNAVAILABLE"))
+    assert isinstance(error, RateLimitError)
+    assert error.retry_after == 10.0  # an overloaded model is not hammered
 
 
 def test_bad_key_and_bad_request() -> None:

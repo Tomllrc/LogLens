@@ -152,7 +152,7 @@ uv run loglens formats new --sample my.log          # wizard: write a regex, tes
 uv run loglens formats test my_format.yaml my.log   # match rate, matched fields, misses
 ```
 
-Or let a language model write the plugin. `loglens learn my.log` sends about 50 varied sample lines to Gemini in one call. It validates the proposed parser on up to 10,000 records, and retries with the lines it missed until it matches at least 95% (3 retries at most). It then saves the YAML with its provenance. `loglens parse --learn` does the same for every file it could only parse with low confidence.
+Or let a language model write the plugin. `loglens learn my.log` sends about 50 varied sample lines to Gemini in one call. It validates the proposed parser on up to 10,000 records, and retries with the lines it missed until it matches at least 95% (3 retries at most). It then saves the YAML with its provenance. `loglens parse --learn` does the same for every file it could only parse with low confidence. On three invented formats (a PLC alarm journal, a game server, a pipe-delimited service log), the generic parser found 0% of timestamps, levels and components; each learned format reached 100%, on the first attempt ([docs/ai-parser.md](docs/ai-parser.md)).
 
 AI features need the optional extra (`uv sync --extra ai`) and a free [Gemini API key](https://aistudio.google.com/apikey) in a `.env` file (copy [`.env.example`](.env.example); `.env` is git-ignored). `loglens doctor` checks the setup without ever printing the key. Every command prints the tokens it used. Answers are cached, so re-running a command costs nothing.
 

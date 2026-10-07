@@ -35,6 +35,8 @@ except ImportError as error:  # pragma: no cover - exercised only without the ex
     ) from error
 
 TIMEOUT_MS: Final = 120_000
+OVERLOAD_RETRY_SECONDS: Final = 10.0
+"""Minimum wait after a 5xx: retrying an overloaded model at once only spends quota."""
 _RETRY_DELAY: Final = re.compile(r'"retryDelay":\s*"(\d+(?:\.\d+)?)s"')
 
 
@@ -95,7 +97,8 @@ def to_config(request: LLMRequest) -> types.GenerateContentConfig:
                 ]
             )
         ]
-        config["automatic_function_calling"] = types.AutomaticFunctionCallingConfig(disable=True)
+    # LogLens runs tools itself; disabled always (the SDK warns when it is left on).
+    config["automatic_function_calling"] = types.AutomaticFunctionCallingConfig(disable=True)
     return types.GenerateContentConfig(**config)
 
 
@@ -167,7 +170,7 @@ def map_api_error(error: errors.APIError) -> Exception:
         delay = _RETRY_DELAY.search(details)
         return RateLimitError(message, float(delay.group(1)) if delay else None)
     if error.code in {500, 502, 503, 504}:
-        return RateLimitError(message)
+        return RateLimitError(message, OVERLOAD_RETRY_SECONDS)
     if error.code in {401, 403}:
         return ProviderError(f"{message}. Check that {API_KEY_VARIABLE} holds a valid key.")
     return ProviderError(message)

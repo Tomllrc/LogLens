@@ -124,3 +124,13 @@ an attempt cannot even load, the retry still lists the records its regex misses.
 attempt reaches 95%, the best loadable one is saved with its measured match rate in the
 metadata, so `formats test` and the user can judge it; nothing is saved if none loads.
 
+## D20. Fewer, slower retries and a per-model fallback
+
+The first real run hit 503 "overloaded" errors; five quick retries per request spent the
+whole free-tier allowance of `gemini-3.8-flash` (20 requests per day), because failed
+attempts count. Retries now default to 3, at least 10 s apart after a 5xx. Quotas are
+per model, so on an exhausted daily quota (or a model still unavailable after its
+retries) the client switches to the next of `fallback_models` (default
+`gemini-3.5-flash-lite`) and says so under the token summary. The cache stays keyed by
+model: answers of different models are not interchangeable.
+
