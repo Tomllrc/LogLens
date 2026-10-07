@@ -10,6 +10,7 @@ dependencies = [
     "duckdb>=1.0",
     "polars>=1.0",
     "pyarrow>=15.0",
+    "pytz>=2026.5",
     "pyyaml>=6.0.3",
     "rich>=13.0",
     "typer>=0.12",
@@ -50,6 +51,11 @@ select = ["E", "W", "F", "I", "UP", "B", "SIM", "RUF"]
 python_version = "3.11"
 strict = true
 files = ["src"]
+
+[[tool.mypy.overrides]]
+# Third-party libraries without type information: imports are typed as Any.
+module = ["pyarrow", "pyarrow.*", "drain3", "drain3.*"]
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

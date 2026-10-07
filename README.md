@@ -91,8 +91,9 @@ Every event, from any source, has the same shape:
 | Format detection: 12 formats, per-file scores, `loglens detect` | ✅ Done |
 | Parsers for structured formats: JSON, prefix + JSON, CSV/TSV, logfmt, XML, with automatic field mapping | ✅ Done |
 | Parsers for 11 text formats declared in YAML: syslog, Apache/Nginx, log4j, Python, Go, journald, Windows events | ✅ Done |
-| Generic parser (free text, Drain templates), normalization, AI-taught plugins | 🚧 Next |
-| Unified event table (Parquet + DuckDB) | Planned |
+| Generic parser, variable masking, Drain template mining, normalization | ✅ Done |
+| Unified event table (Parquet + DuckDB), `loglens parse` and `loglens query` | ✅ Done |
+| AI-taught format plugins | Planned |
 | Analysis: recurring issues, anomalies, incident reports | Planned |
 | AI investigator with cited answers | Planned |
 | CLI, HTTP API, web dashboard | Partial: `loglens detect` works |

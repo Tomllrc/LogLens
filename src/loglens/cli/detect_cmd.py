@@ -1,4 +1,4 @@
-"""Command-line interface for LogLens."""
+"""`loglens detect`: show each file's detected format."""
 
 from collections.abc import Mapping
 from pathlib import Path
@@ -10,7 +10,7 @@ from rich.console import Console
 from rich.table import Table
 from rich.text import Text
 
-from loglens import __version__
+from loglens.cli.app import app
 from loglens.detect import (
     DEFAULT_SAMPLE_RECORDS,
     FREE_TEXT,
@@ -21,37 +21,6 @@ from loglens.detect import (
 )
 from loglens.ingest import IngestOptions, IngestReport, iter_lines
 from loglens.split import iter_records
-
-app = typer.Typer(
-    name="loglens",
-    help="Turn any log into structured events, recurring issues, and cited answers.",
-    no_args_is_help=True,
-    add_completion=False,
-)
-
-
-def _version_callback(value: bool) -> None:
-    """Print the version and exit when `--version` is passed."""
-    if value:
-        typer.echo(f"loglens {__version__}")
-        raise typer.Exit()
-
-
-@app.callback()
-def main(
-    version: Annotated[
-        bool,
-        typer.Option(
-            "--version",
-            "-V",
-            callback=_version_callback,
-            is_eager=True,
-            help="Show the version and exit.",
-        ),
-    ] = False,
-) -> None:
-    """LogLens: AI-powered log investigation."""
-
 
 LINES_PER_SAMPLED_RECORD = 50
 """Line budget per sampled record: `detect` stops reading a file after
@@ -124,15 +93,3 @@ def _confidence_style(result: DetectionResult) -> str:
     if result.format_name == FREE_TEXT:
         return "dim"
     return "green" if result.confidence >= 0.9 else "yellow"
-
-
-@app.command()
-def parse(
-    paths: Annotated[
-        list[Path],
-        typer.Argument(help="Log files, folders, or archives to parse."),
-    ],
-) -> None:
-    """Parse logs into the unified event table (not implemented yet)."""
-    typer.echo("`loglens parse` is not implemented yet.", err=True)
-    raise typer.Exit(code=1)

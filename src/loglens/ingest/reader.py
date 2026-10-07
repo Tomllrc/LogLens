@@ -76,27 +76,69 @@ def iter_lines(
     Never raises on bad input: problems are recorded in ``report``, which is filled in
     progressively as lines are consumed.
     """
+    options = options or IngestOptions()
+    report = report if report is not None else IngestReport()
+    for item in discover_inputs(inputs, options=options, report=report):
+        yield from iter_input_lines(item, options=options, report=report, stdin=stdin)
+
+
+@dataclass(frozen=True)
+class InputFile:
+    """One unit of input: a file on disk (possibly an archive), or stdin (``path`` None).
+
+    ``filtered`` is True for files discovered inside a folder: include/exclude patterns
+    apply to them, while paths given explicitly are always read.
+    """
+
+    path: Path | None
+    filtered: bool = False
+
+    @property
+    def source(self) -> str:
+        """The source name lines from this input get (POSIX path, or ``<stdin>``)."""
+        return STDIN_SOURCE if self.path is None else self.path.as_posix()
+
+
+def discover_inputs(
+    inputs: InputPath | Iterable[InputPath],
+    *,
+    options: IngestOptions | None = None,
+    report: IngestReport | None = None,
+) -> Iterator[InputFile]:
+    """Expand inputs into files to read, without reading them: folders are walked
+    (in a stable order, excluded directories pruned), ``"-"`` becomes stdin."""
     ctx = _Context(options or IngestOptions(), report if report is not None else IngestReport())
     for item in _as_input_list(inputs):
         if os.fspath(item) == STDIN_MARKER:
-            stream = stdin if stdin is not None else sys.stdin.buffer
-            yield from _read_stream(STDIN_SOURCE, stream, ctx, filtered=False)
+            yield InputFile(None)
+            continue
+        path = Path(item)
+        if path.is_dir():
+            yield from (InputFile(file_path, filtered=True) for file_path in _walk(path, ctx))
         else:
-            yield from _read_path(Path(item), ctx)
+            yield InputFile(path)
+
+
+def iter_input_lines(
+    item: InputFile,
+    *,
+    options: IngestOptions | None = None,
+    report: IngestReport | None = None,
+    stdin: ByteSource | None = None,
+) -> Iterator[Line]:
+    """Lazily yield the lines of one input found by :func:`discover_inputs`."""
+    ctx = _Context(options or IngestOptions(), report if report is not None else IngestReport())
+    if item.path is None:
+        stream = stdin if stdin is not None else sys.stdin.buffer
+        yield from _read_stream(STDIN_SOURCE, stream, ctx, filtered=False)
+    else:
+        yield from _read_file(item.path, ctx, filtered=item.filtered)
 
 
 def _as_input_list(inputs: InputPath | Iterable[InputPath]) -> list[InputPath]:
     if isinstance(inputs, str | os.PathLike):
         return [inputs]
     return list(inputs)
-
-
-def _read_path(path: Path, ctx: _Context) -> Iterator[Line]:
-    if path.is_dir():
-        for file_path in _walk(path, ctx):
-            yield from _read_file(file_path, ctx, filtered=True)
-    else:
-        yield from _read_file(path, ctx, filtered=False)
 
 
 def _walk(root: Path, ctx: _Context) -> Iterator[Path]:

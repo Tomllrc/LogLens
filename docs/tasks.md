@@ -5,15 +5,15 @@ survives context resets together with the "Current status" section of `CLAUDE.md
 Legend: `[x]` done, `[~]` in progress, `[ ]` to do.
 
 ## Phase 1: Template mining and the full parse pipeline
-- [ ] 1.0 Generic parser for free text (timestamp / level / component extraction). Missing from the repo although listed as done; built first because the pipeline falls back to it.
-- [ ] 1.1 Variable masking with typed placeholders, YAML-configurable, values kept in order
-- [ ] 1.2 Drain3 template mining: persisted state, stable `template_id`, single-placeholder merge, confidence from match quality
-- [ ] 1.3 Timestamp normalization (UTC, `--timezone`, year inference) and level normalization
-- [ ] 1.4 Pipeline: ingest -> split -> detect -> parse (+ generic fallback) -> mask -> mine -> unified events
-- [ ] 1.5 Parquet output (exact schema, batches, partitioned by source file) + DuckDB file; process pool across files
-- [ ] 1.6 CLI `loglens parse` (summary) and `loglens query`
-- [ ] 1.7 Tests: known-template fixtures, end-to-end mixed folder (JSON + syslog + free text + stack traces + zip)
-- [ ] 1.8 Checks, CHANGELOG, CLAUDE.md status, commit "Phase 1: ..."
+- [x] 1.0 Generic parser for free text (timestamp / level / component extraction). Missing from the repo although listed as done; built first because the pipeline falls back to it.
+- [x] 1.1 Variable masking with typed placeholders, YAML-configurable, values kept in order
+- [x] 1.2 Drain3 template mining: persisted state, stable `template_id`, single-placeholder merge, confidence from match quality
+- [x] 1.3 Timestamp normalization (UTC, `--timezone`, year inference) and level normalization
+- [x] 1.4 Pipeline: ingest -> split -> detect -> parse (+ generic fallback) -> mask -> mine -> unified events
+- [x] 1.5 Parquet output (exact schema, batches, partitioned by source file) + DuckDB file; process pool across files
+- [x] 1.6 CLI `loglens parse` (summary) and `loglens query`
+- [x] 1.7 Tests: known-template fixtures, end-to-end mixed folder (JSON + syslog + free text + stack traces + zip)
+- [x] 1.8 Checks, CHANGELOG, CLAUDE.md status, commit "Phase 1: ..."
 
 ## Phase 2: Benchmark and robustness
 - [ ] 2.1 Loghub 2k download (data/loghub, gitignored), grouping/parsing accuracy, timestamp/level rates, throughput; RESULTS.md + JSON history; regression check

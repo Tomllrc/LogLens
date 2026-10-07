@@ -44,14 +44,66 @@ def test_no_args_shows_help() -> None:
     assert "parse" in result.output
 
 
-def test_parse_placeholder_fails_explicitly(tmp_path: Path) -> None:
+def test_parse_without_output_fails_explicitly(tmp_path: Path) -> None:
+    # Was "parse is a placeholder that fails"; parse now exists and fails explicitly
+    # when it cannot do its job (no output directory).
     log_file = tmp_path / "app.log"
     log_file.write_text("2026-01-01 INFO started\n", encoding="utf-8")
 
     result = runner.invoke(app, ["parse", str(log_file)])
 
     assert result.exit_code == 1
-    assert "not implemented" in result.output
+    assert "output directory is required" in result.output
+
+
+def test_parse_and_query(tmp_path: Path) -> None:
+    log_file = tmp_path / "app.log"
+    log_file.write_text(
+        "".join(f"2026-03-14 09:00:{i:02d} ERROR Job {i} failed after {i}s\n" for i in range(5))
+        + "2026-03-14 09:01:00 INFO all good\n",
+        encoding="utf-8",
+    )
+    out = tmp_path / "out"
+
+    parsed = runner.invoke(app, ["parse", str(log_file), "-o", str(out), "-w", "1"], env=WIDE)
+    assert parsed.exit_code == 0, parsed.output
+    for text in ("Records", "Throughput", "Top templates", "Top error templates", "free_text"):
+        assert text in parsed.output
+    assert "Job <NUM> failed after <DURATION>" in parsed.output
+
+    queried = runner.invoke(
+        app,
+        [
+            "query",
+            str(out),
+            "SELECT level, count(*) AS n FROM events GROUP BY level ORDER BY n DESC",
+        ],
+        env=WIDE,
+    )
+    assert queried.exit_code == 0, queried.output
+    assert "ERROR" in queried.output and "2 rows" in queried.output
+
+
+def test_parse_rejects_an_unknown_timezone(tmp_path: Path) -> None:
+    result = runner.invoke(app, ["parse", str(tmp_path), "-o", str(tmp_path / "o"), "-z", "Mars/X"])
+    assert result.exit_code == 1
+    assert "unknown timezone" in result.output
+
+
+def test_parse_with_nothing_readable_exits_1(tmp_path: Path) -> None:
+    result = runner.invoke(app, ["parse", str(tmp_path / "missing.log"), "-o", str(tmp_path / "o")])
+    assert result.exit_code == 1
+    assert "not found" in result.output
+
+
+def test_query_errors(tmp_path: Path) -> None:
+    not_a_store = runner.invoke(app, ["query", str(tmp_path), "SELECT 1"])
+    assert not_a_store.exit_code == 1 and "not a LogLens output directory" in not_a_store.output
+    log_file = tmp_path / "a.log"
+    log_file.write_text("x\n", encoding="utf-8")
+    runner.invoke(app, ["parse", str(log_file), "-o", str(tmp_path / "out"), "-w", "1"])
+    bad_sql = runner.invoke(app, ["query", str(tmp_path / "out"), "SELEC nonsense"])
+    assert bad_sql.exit_code == 1 and "SQL error" in bad_sql.output
 
 
 DETECT_FIXTURES = Path(__file__).parent / "fixtures" / "detect"
