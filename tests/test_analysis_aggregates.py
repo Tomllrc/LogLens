@@ -212,3 +212,10 @@ def test_empty_store(tmp_path: Path) -> None:
         assert event_refs(connection, []) == []
     finally:
         connection.close()
+
+
+def test_sample_events_of_any_template_and_levels(conn: duckdb.DuckDBPyConnection) -> None:
+    refs = sample_events(conn, None, ALL, k=1, levels=["WARN"])
+    assert [r.level for r in refs] == ["WARN"]
+    everything = sample_events(conn, None, TimeWindow(until=T0 + 2 * M), k=5)
+    assert [r.line_start for r in everything] == [1, 2]

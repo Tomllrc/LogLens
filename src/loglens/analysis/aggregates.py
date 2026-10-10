@@ -294,16 +294,29 @@ _ORDER: Final = "timestamp NULLS LAST, source_file, line_start"
 
 
 def sample_events(
-    conn: Connection, template_ids: Sequence[str], window: TimeWindow, k: int = 3
+    conn: Connection,
+    template_ids: Sequence[str] | None,
+    window: TimeWindow,
+    k: int = 3,
+    levels: Sequence[str] | None = None,
 ) -> list[EventRef]:
-    """The first and last events of the templates, plus up to ``k`` spread between them."""
-    if not template_ids:
+    """The first and last matching events, plus up to ``k`` spread between them.
+
+    ``template_ids`` None matches every template; ``levels`` restricts the levels.
+    """
+    if template_ids is not None and not template_ids:
         return []
     where, params = _where(window)
-    filtered = f"FROM events WHERE {where} AND list_contains(?, template_id)"
-    total_row = conn.execute(
-        f"SELECT count(*) {filtered}", [*params, list(template_ids)]
-    ).fetchone()
+    conditions = [where]
+    filter_params: list[object] = [*params]
+    if template_ids is not None:
+        conditions.append("list_contains(?, template_id)")
+        filter_params.append(list(template_ids))
+    if levels is not None:
+        conditions.append("list_contains(?, level)")
+        filter_params.append(list(levels))
+    filtered = f"FROM events WHERE {' AND '.join(conditions)}"
+    total_row = conn.execute(f"SELECT count(*) {filtered}", filter_params).fetchone()
     total = int(total_row[0]) if total_row else 0
     if total == 0:
         return []
@@ -314,7 +327,7 @@ def sample_events(
             SELECT *, row_number() OVER (ORDER BY {_ORDER}) AS rn {filtered}
         ) WHERE list_contains(?, rn) ORDER BY rn
         """,
-        [*params, list(template_ids), positions],
+        [*filter_params, positions],
     ).fetchall()
     return _refs(rows)
 
