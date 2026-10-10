@@ -4,6 +4,7 @@ Series are small (at most ``MAX_BUCKETS`` points), so everything here works on p
 sequences; change points use ``ruptures`` (PELT).
 """
 
+import itertools
 import math
 import re
 import statistics
@@ -140,7 +141,7 @@ def change_points(
 
 
 def _noise_sigma(values: Sequence[float]) -> float:
-    diffs = [b - a for a, b in zip(values, values[1:], strict=False)]
+    diffs = [b - a for a, b in itertools.pairwise(values)]
     mad = statistics.median(abs(d - statistics.median(diffs)) for d in diffs)
     sigma = _MAD_SCALE * mad / math.sqrt(2)
     return sigma if sigma > 0 else statistics.pstdev(values)

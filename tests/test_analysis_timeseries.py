@@ -43,8 +43,13 @@ def test_bucket_count_includes_the_last_partial_bucket() -> None:
 
 @pytest.mark.parametrize(
     ("text", "value"),
-    [("30s", timedelta(seconds=30)), ("5m", timedelta(minutes=5)), ("2h", timedelta(hours=2)),
-     ("1d", timedelta(days=1)), (" 10S ", timedelta(seconds=10))],
+    [
+        ("30s", timedelta(seconds=30)),
+        ("5m", timedelta(minutes=5)),
+        ("2h", timedelta(hours=2)),
+        ("1d", timedelta(days=1)),
+        (" 10S ", timedelta(seconds=10)),
+    ],
 )
 def test_parse_bucket(text: str, value: timedelta) -> None:
     assert parse_bucket(text) == value
