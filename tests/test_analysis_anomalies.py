@@ -101,6 +101,13 @@ def test_burst_is_a_spike_in_template_errors_and_total(conn: duckdb.DuckDBPyConn
         for ref in template_spike.evidence
     )
     assert max(a.score for a in spikes) == 1.0
+    assert template_spike.raw_score >= 75  # excess events over the median, not a capped z
+
+
+def test_spike_scores_rank_bigger_bursts_higher(conn: duckdb.DuckDBPyConnection) -> None:
+    spikes = find_anomalies(conn).by_kind("spike")
+    by_series = {a.series: a for a in spikes}
+    assert by_series["total"].raw_score >= by_series["template"].raw_score
 
 
 def test_drop_is_a_level_shift(conn: duckdb.DuckDBPyConnection) -> None:

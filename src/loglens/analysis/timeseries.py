@@ -25,6 +25,8 @@ BUCKETS: Final = (
     timedelta(hours=1),
     timedelta(hours=6),
     timedelta(days=1),
+    timedelta(days=7),
+    timedelta(days=30),
 )
 MAX_BUCKETS: Final = 500
 MIN_POINTS: Final = 20
@@ -37,7 +39,7 @@ SHIFT_MIN_SIZE: Final = 3
 
 _MAD_SCALE: Final = 1.4826  # MAD -> standard deviation for normal data
 _MEAN_AD_SCALE: Final = 1.2533  # mean absolute deviation -> standard deviation
-_UNITS: Final = {"s": 1, "m": 60, "h": 3600, "d": 86400}
+_UNITS: Final = {"s": 1, "m": 60, "h": 3600, "d": 86400, "w": 604800}
 
 
 def bucket_count(span: timedelta, bucket: timedelta) -> int:
@@ -54,11 +56,21 @@ def choose_bucket(span: timedelta) -> timedelta:
 
 
 def parse_bucket(text: str) -> timedelta:
-    """Parse ``30s``, ``5m``, ``2h`` or ``1d``."""
-    match = re.fullmatch(r"([0-9]+)([smhd])", text.strip().lower())
+    """Parse ``30s``, ``5m``, ``2h``, ``1d`` or ``1w``."""
+    match = re.fullmatch(r"([0-9]+)([smhdw])", text.strip().lower())
     if not match or int(match.group(1)) == 0:
-        raise ValueError(f"invalid bucket {text!r}: use a positive number and s, m, h or d")
+        raise ValueError(f"invalid bucket {text!r}: use a positive number and s, m, h, d or w")
     return timedelta(seconds=int(match.group(1)) * _UNITS[match.group(2)])
+
+
+def format_bucket(bucket: timedelta) -> str:
+    """The shortest exact form: ``10s``, ``5m``, ``6h``, ``1d``, ``1w``, ``30d``."""
+    seconds = int(bucket.total_seconds())
+    for unit in ("w", "d", "h", "m"):
+        size = _UNITS[unit]
+        if seconds % size == 0 and (unit != "w" or seconds == size):
+            return f"{seconds // size}{unit}"
+    return f"{seconds}s"
 
 
 def robust_z(values: Sequence[float]) -> list[float]:

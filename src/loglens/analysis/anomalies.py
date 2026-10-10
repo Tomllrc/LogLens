@@ -3,7 +3,8 @@
 Four detectors, each looking only at the unified events:
 
 * ``spike``: a bucket far above the series' median (robust z-score), on the total
-  volume, the ERROR+FATAL volume, and the busiest templates.
+  volume, the ERROR+FATAL volume, and the busiest templates. Scored by the excess
+  events over the median, so bigger bursts rank higher.
 * ``level_shift``: the volume settles at a new level (PELT change points), on the total
   and on each level's series.
 * ``new_pattern``: a template first seen after the baseline period.
@@ -43,13 +44,12 @@ from loglens.analysis.aggregates import (
 from loglens.analysis.issues import group_candidates, issue_id_for
 from loglens.analysis.model import EventRef, TimeWindow
 from loglens.analysis.signals import Signals, load_signals
-from loglens.analysis.timeseries import MIN_POINTS, change_points, robust_z, spikes
+from loglens.analysis.timeseries import MIN_POINTS, change_points, format_bucket, spikes
 from loglens.schema.levels import ERROR_LEVELS
 
 KINDS: Final = ("spike", "level_shift", "new_pattern", "rare_transition")
 
 TOP_TEMPLATE_SERIES: Final = 50
-MAX_SPIKE_Z: Final = 50.0
 BASELINE_SHARE: Final = 0.2
 RARE_PROBABILITY: Final = 0.001
 RARE_MIN_SUPPORT: Final = 100
@@ -202,7 +202,6 @@ def _spikes(context: _Context, grid: Grid) -> list[Anomaly]:
         flagged = spikes(values)
         if not flagged:
             continue
-        z = robust_z(values)
         median = statistics.median(values)
         for run in _runs(flagged):
             peak = max(run, key=lambda i: values[i])
@@ -221,14 +220,14 @@ def _spikes(context: _Context, grid: Grid) -> list[Anomaly]:
                 Anomaly(
                     kind="spike",
                     score=0.0,
-                    raw_score=min(max(z[i] for i in run), MAX_SPIKE_Z),
+                    raw_score=sum(values[i] - median for i in run),
                     start=grid.bucket_start(run[0]),
                     end=grid.bucket_end(run[-1]),
                     series=name,
                     template_ids=(template_id,) if template_id else (),
                     issue_id=context.issues.get(template_id or ""),
                     summary=(
-                        f"{label}: {values[peak]:,} in one {_duration(grid.bucket)} bucket at "
+                        f"{label}: {values[peak]:,} in one {format_bucket(grid.bucket)} bucket at "
                         f"{_when(grid, peak)} (median {median:g})"
                     ),
                     buckets=tuple(run),
@@ -271,7 +270,7 @@ def _level_shifts(context: _Context, grid: Grid) -> list[Anomaly]:
                     summary=(
                         f"{label} volume x{point.ratio:.1f} {direction} from "
                         f"{_when(grid, point.index)} ({point.before:g} -> {point.after:g} "
-                        f"per {_duration(grid.bucket)})"
+                        f"per {format_bucket(grid.bucket)})"
                     ),
                     buckets=(point.index,),
                     evidence=tuple(evidence),
@@ -410,11 +409,3 @@ def _intersect(a: TimeWindow, b: TimeWindow) -> TimeWindow:
         return choose(x, y)
 
     return TimeWindow(pick(a.since, b.since, max), pick(a.until, b.until, min))
-
-
-def _duration(value: timedelta) -> str:
-    seconds = int(value.total_seconds())
-    for unit, size in (("d", 86400), ("h", 3600), ("m", 60)):
-        if seconds % size == 0:
-            return f"{seconds // size}{unit}"
-    return f"{seconds}s"

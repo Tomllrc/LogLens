@@ -13,6 +13,7 @@ from loglens.analysis.timeseries import (
     bucket_count,
     change_points,
     choose_bucket,
+    format_bucket,
     parse_bucket,
     robust_z,
     spikes,
@@ -26,13 +27,18 @@ from loglens.analysis.timeseries import (
         (timedelta(minutes=5), timedelta(seconds=1)),
         (timedelta(minutes=10), timedelta(seconds=10)),
         (timedelta(hours=24), timedelta(minutes=5)),
-        (timedelta(days=3 * 365), timedelta(days=1)),
+        (timedelta(days=400), timedelta(days=1)),
+        (timedelta(days=3 * 365), timedelta(days=7)),
+        (timedelta(days=30 * 365), timedelta(days=30)),
     ],
 )
 def test_choose_bucket_keeps_at_most_500_buckets(span: timedelta, bucket: timedelta) -> None:
     assert choose_bucket(span) == bucket
-    if span < timedelta(days=500):
-        assert bucket_count(span, bucket) <= 500
+    assert bucket_count(span, bucket) <= 500
+
+
+def test_absurd_spans_use_the_largest_bucket() -> None:
+    assert choose_bucket(timedelta(days=100 * 365)) == timedelta(days=30)
 
 
 def test_bucket_count_includes_the_last_partial_bucket() -> None:
@@ -163,3 +169,19 @@ def test_robust_z_is_invariant_under_positive_affine_maps(
             assert math.isinf(y) or abs(y) > 1e6
         else:
             assert y == pytest.approx(x, rel=1e-6, abs=1e-6)
+
+
+@pytest.mark.parametrize(
+    ("bucket", "text"),
+    [
+        (timedelta(seconds=10), "10s"),
+        (timedelta(minutes=5), "5m"),
+        (timedelta(hours=6), "6h"),
+        (timedelta(days=1), "1d"),
+        (timedelta(days=7), "1w"),
+        (timedelta(days=30), "30d"),
+        (timedelta(seconds=90), "90s"),
+    ],
+)
+def test_format_bucket(bucket: timedelta, text: str) -> None:
+    assert format_bucket(bucket) == text

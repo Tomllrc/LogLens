@@ -26,3 +26,29 @@ def build_store(root: Path, files: Mapping[str, Iterable[str]], name: str = "sto
     output = root / name
     run_parse([logs], output, ParseOptions(workers=1))
     return output
+
+
+_M = timedelta(minutes=1)
+
+
+def two_hour_lines(first_hour: bool, second_hour: bool) -> list[str]:
+    """Two hours of an app log: steady INFO and refused errors; payment timeouts grow
+    from 5 to 60 in the second hour, cache warm-up warnings stop, disk-quota errors start.
+    """
+    lines = []
+    for minute in range(120):
+        if (minute < 60 and not first_hour) or (minute >= 60 and not second_hour):
+            continue
+        lines.append(line(minute * _M, "INFO", f"GET /api/items/{minute} served in 5ms"))
+        lines.append(line(minute * _M, "ERROR", f"Connection to 10.0.0.{minute} refused by peer"))
+        if minute < 60 and minute % 12 == 0:
+            lines.append(line(minute * _M, "ERROR", f"Payment gateway timeout after {minute} ms"))
+        if minute >= 60:
+            lines.append(line(minute * _M, "ERROR", f"Payment gateway timeout after {minute} ms"))
+        if minute < 60 and minute % 10 == 0:
+            lines.append(line(minute * _M, "WARN", f"Cache warm-up failed for shard {minute}"))
+        if minute >= 60 and minute % 5 == 0:
+            lines.append(
+                line(minute * _M, "ERROR", f"Disk quota exceeded on volume /data/{minute}")
+            )
+    return lines

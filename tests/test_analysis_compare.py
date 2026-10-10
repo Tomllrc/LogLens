@@ -6,7 +6,7 @@ from pathlib import Path
 
 import duckdb
 import pytest
-from tests.analysis_helpers import T0, build_store, line
+from tests.analysis_helpers import T0, build_store, line, two_hour_lines
 
 from loglens.analysis.compare import compare, rate_test
 from loglens.analysis.model import TimeWindow
@@ -23,27 +23,9 @@ def test_rate_test() -> None:
     assert rate_test(0, 1.0, 0, 1.0) == 1.0
 
 
-def _lines(first_hour: bool, second_hour: bool) -> list[str]:
-    lines = []
-    for minute in range(120):
-        if (minute < 60 and not first_hour) or (minute >= 60 and not second_hour):
-            continue
-        lines.append(line(minute * M, "INFO", f"GET /api/items/{minute} served in 5ms"))
-        lines.append(line(minute * M, "ERROR", f"Connection to 10.0.0.{minute} refused by peer"))
-        if minute < 60 and minute % 12 == 0:
-            lines.append(line(minute * M, "ERROR", f"Payment gateway timeout after {minute} ms"))
-        if minute >= 60:
-            lines.append(line(minute * M, "ERROR", f"Payment gateway timeout after {minute} ms"))
-        if minute < 60 and minute % 10 == 0:
-            lines.append(line(minute * M, "WARN", f"Cache warm-up failed for shard {minute}"))
-        if minute >= 60 and minute % 5 == 0:
-            lines.append(line(minute * M, "ERROR", f"Disk quota exceeded on volume /data/{minute}"))
-    return lines
-
-
 @pytest.fixture(scope="module")
 def store(tmp_path_factory: pytest.TempPathFactory) -> Path:
-    return build_store(tmp_path_factory.mktemp("compare"), {"app.log": _lines(True, True)})
+    return build_store(tmp_path_factory.mktemp("compare"), {"app.log": two_hour_lines(True, True)})
 
 
 @pytest.fixture
@@ -76,8 +58,8 @@ def test_split_mode(conn: duckdb.DuckDBPyConnection) -> None:
 
 
 def test_two_stores_give_the_same_answer(tmp_path: Path) -> None:
-    base = build_store(tmp_path, {"app.log": _lines(True, False)}, name="base")
-    target = build_store(tmp_path, {"app.log": _lines(False, True)}, name="target")
+    base = build_store(tmp_path, {"app.log": two_hour_lines(True, False)}, name="base")
+    target = build_store(tmp_path, {"app.log": two_hour_lines(False, True)}, name="target")
     base_conn, target_conn = connect(base), connect(target)
     try:
         report = compare(base_conn, target_conn)
