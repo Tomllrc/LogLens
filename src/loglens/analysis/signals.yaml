@@ -1,0 +1,39 @@
+# Signals for recurring-issue detection (loglens.analysis.signals).
+#
+# A template is a candidate issue when it has WARN, ERROR or FATAL events, or UNKNOWN
+# events and its text contains one of these words (whole word, case-insensitive; each
+# entry is a regular expression). Templates with only INFO/DEBUG/TRACE events are never
+# candidates: when a log has levels, they are more trustworthy than words.
+failure_keywords:
+  - error
+  - errors
+  - fail
+  - failed
+  - failure
+  - failing
+  - exception
+  - timeout
+  - timed out
+  - refused
+  - denied
+  - fatal
+  - panic
+  - abort
+  - aborted
+  - corrupt
+  - corrupted
+  - unreachable
+  - crash
+  - crashed
+  - killed
+  - segfault
+  - unavailable
+
+# Impact of an issue = sum over its events of the weight of their level.
+level_weights:
+  FATAL: 10
+  ERROR: 5
+  WARN: 1
+
+# Weight of an UNKNOWN-level event whose template matches a failure keyword.
+unknown_keyword_weight: 2
