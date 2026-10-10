@@ -180,7 +180,10 @@ Kinds and rules:
    (`baseline_until`, default: start + 20% of the time span). Candidates first. Raw
    score = signal weight of the template's dominant level + 1 (so non-candidates still
    appear, ranked last). Evidence: the first occurrence.
-4. `rare_transition`: pairs a->b with `P(b|a) < 0.001` and `count(a) >= 100`. Raw
+4. `rare_transition`: pairs a->b with `P(b|a) < 0.001`, `count(a) >= 100`, and a's most
+   frequent successor accounting for >= 90% of a's transitions (a belongs to a predictable
+   sequence; without this, every low-rate template in randomly interleaved traffic would be
+   a "rare successor" of everything). Raw
    score = `-log10(P(b|a))`. Evidence: up to 5 b-events.
 
 Scores are normalized to 0-1 within each kind (divide by the kind's max raw score).
@@ -223,11 +226,11 @@ All three in `cli/analysis_cmd.py`; each prints a Rich table and supports `--jso
 - `loglens anomalies STORE [--bucket 5m] [--since T] [--until T] [--baseline-until T] [--kind K]... [--signals FILE] [--json]`.
   One table per kind: score, time range, summary, issue, evidence location.
 - `loglens compare BASELINE [TARGET] [--split T] [--signals FILE] [--json]`. Exactly one
-  of TARGET or `--split` is required (otherwise exit 2 with a clear message).
+  of TARGET or `--split` is required (otherwise exit 1 with a clear message).
   Sections: new, gone, changed, overall.
 
 Timestamps on the command line accept ISO 8601; naive values are UTC. Errors
-(`StoreError`, `SignalsError`, bad timestamps) print one line and exit 2, like
+(`StoreError`, `SignalsError`, bad timestamps) print one line and exit 1, like
 `loglens query`.
 
 ## Evaluation (`benchmarks/anomaly_eval.py`)
@@ -265,7 +268,8 @@ Timestamps on the command line accept ISO 8601; naive values are UTC. Errors
   seed; edit the script, never the files) into `tests/fixtures/analysis/`:
   24 h of background traffic plus an ERROR burst at a known minute, a new error
   pattern from hour 18, total traffic halving at hour 12, one rare transition, one
-  issue split across `<IP>` / `<HOST>` templates that must merge into one issue, and
+  issue split across two template lengths ("refused by peer" / "refused by remote
+  peer"; `<IP>`/`<HOST>` variants are already merged by Phase 1) that must merge, and
   one dominant issue for Pareto. Tests assert each item is found at the right time.
   A background-only twin must give zero spikes and zero level shifts.
 - **Universality**: the same scenario rendered as JSON lines and as free text gives
@@ -281,12 +285,12 @@ Timestamps on the command line accept ISO 8601; naive values are UTC. Errors
 
 | Situation | Behavior |
 |---|---|
-| Missing directory / not a store | One-line message, exit 2 |
+| Missing directory / not a store | One-line message, exit 1 |
 | Empty store | Empty report, note "no events" |
 | No timestamps | Issues work (persistence `n/a`); time detectors skipped with a note |
 | Fewer than 20 buckets | Time detectors skipped with a note |
-| Invalid `signals.yaml` override | `SignalsError` naming the file, exit 2 |
-| Invalid timestamp option | One-line message, exit 2 |
+| Invalid `signals.yaml` override | `SignalsError` naming the file, exit 1 |
+| Invalid timestamp option | One-line message, exit 1 |
 | Huge store | Bounded: 50 template series, 500 buckets, transition evidence capped |
 
 ## Dependencies
