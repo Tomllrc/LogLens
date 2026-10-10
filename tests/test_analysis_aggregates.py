@@ -6,9 +6,11 @@ from pathlib import Path
 
 import duckdb
 import pytest
+from tests.analysis_helpers import T0, build_store, line
 
 from loglens.analysis.aggregates import (
     Grid,
+    TemplateStats,
     event_ids_in_cells,
     event_refs,
     first_event_ids,
@@ -24,7 +26,6 @@ from loglens.analysis.aggregates import (
 )
 from loglens.analysis.model import TimeWindow
 from loglens.store import connect
-from tests.analysis_helpers import T0, build_store, line
 
 M = timedelta(minutes=1)
 
@@ -54,8 +55,17 @@ def conn(store: Path) -> Iterator[duckdb.DuckDBPyConnection]:
     connection.close()
 
 
-def _stats_by_text(conn: duckdb.DuckDBPyConnection, window: TimeWindow = TimeWindow()) -> dict:
+ALL = TimeWindow()
+
+
+def _stats_by_text(
+    conn: duckdb.DuckDBPyConnection, window: TimeWindow = ALL
+) -> dict[str, TemplateStats]:
     return {s.template: s for s in template_stats(conn, window)}
+
+
+def _template_id(conn: duckdb.DuckDBPyConnection, needle: str) -> str:
+    return next(s.template_id for s in template_stats(conn, ALL) if needle in s.template)
 
 
 def test_template_stats_counts_levels_times_and_sources(conn: duckdb.DuckDBPyConnection) -> None:
