@@ -364,3 +364,26 @@ def event_ids_in_cells(
         [*bucket_params, *params, keyed, whole, *level_params],
     ).fetchall()
     return {event_id for (event_id,) in rows}
+
+
+def group_source_counts(
+    conn: Connection, groups: Sequence[Sequence[str]], window: TimeWindow
+) -> list[int]:
+    """For each group of template ids, the number of distinct source files with its events."""
+    if not groups:
+        return []
+    template_ids = [template_id for group in groups for template_id in group]
+    indexes = [index for index, group in enumerate(groups) for _ in group]
+    where, params = _where(window)
+    rows = conn.execute(
+        f"""
+        SELECT g, count(DISTINCT source_file) FROM events
+        JOIN (SELECT unnest(?) AS tid, unnest(?) AS g) AS m ON events.template_id = m.tid
+        WHERE {where} GROUP BY g
+        """,
+        [template_ids, indexes, *params],
+    ).fetchall()
+    counts = [0] * len(groups)
+    for index, count in rows:
+        counts[index] = count
+    return counts
