@@ -64,8 +64,15 @@ files = ["src"]
 
 [[tool.mypy.overrides]]
 # Third-party libraries without type information: imports are typed as Any.
-module = ["pyarrow", "pyarrow.*", "drain3", "drain3.*"]
+module = ["pyarrow", "pyarrow.*", "drain3", "drain3.*", "ruptures", "ruptures.*"]
 ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+# numpy and scipy stubs use syntax newer than the 3.11 target (numpy >= 2.5 on 3.12+),
+# so they are not followed: the few calls into them are typed as Any.
+module = ["numpy", "numpy.*", "scipy", "scipy.*"]
+follow_imports = "skip"
+follow_imports_for_stubs = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
