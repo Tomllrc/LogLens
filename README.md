@@ -35,7 +35,7 @@ LogLens takes a third route: **no configuration, no assumptions about the format
 | **Reads anything** | Files, nested folders, `.gz` / `.bz2` / `.zip` / `.tar` archives (even archives inside archives), stdin. Any encoding, any line-ending style, any size: files larger than RAM are streamed. |
 | **Understands structure** | Groups multi-line records (stack traces, pretty-printed JSON, multi-line SQL) into single events and detects each file's format automatically. |
 | **Normalizes** | Every event from every source lands in the same schema: timestamp in UTC, normalized level, component, message, template. Stored as Parquet, queryable with SQL through DuckDB. |
-| **Finds patterns** *(planned)* | Mines message templates, so `user 4812 timed out` and `user 77 timed out` become one recurring issue with a count. Detects bursts and anomalies. |
+| **Finds patterns** | Mines message templates, so `user 4812 timed out` and `user 77 timed out` become one recurring issue with a count. Ranks issues by impact (`loglens issues`, with the Pareto "vital few"), detects spikes, level shifts, new patterns and broken sequences (`loglens anomalies`), and shows what changed between two runs or two periods (`loglens compare`). |
 | **Explains** *(planned)* | Ask questions in plain language ("what happened before the payment service started failing?"). Every answer cites the exact `file:line` it relies on. |
 
 ## How it works
@@ -94,9 +94,10 @@ Every event, from any source, has the same shape:
 | Generic parser, variable masking, Drain template mining, normalization | ✅ Done |
 | Unified event table (Parquet + DuckDB), `loglens parse` and `loglens query` | ✅ Done |
 | Format plugins (`loglens formats list/test/new`) and AI-taught formats (`loglens learn`) | ✅ Done |
-| Analysis: recurring issues, anomalies, incident reports | Planned |
+| Analysis: recurring issues, anomalies, compare (`loglens issues/anomalies/compare`), evaluated on labeled BGL | ✅ Done |
+| Incident reports | Planned |
 | AI investigator with cited answers | Planned |
-| CLI, HTTP API, web dashboard | Partial: `loglens detect` works |
+| CLI, HTTP API, web dashboard | Partial: the CLI works |
 
 ## Benchmarks
 

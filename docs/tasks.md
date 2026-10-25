@@ -32,10 +32,10 @@ Legend: `[x]` done, `[~]` in progress, `[ ]` to do.
 - [x] 3.7 Checks, docs, commit
 
 ## Phase 4: Analysis (no AI)
-- [ ] 4.1 Recurring issues (+ optional embeddings/HDBSCAN), impact score doc, `loglens issues` with Pareto
-- [ ] 4.2 Anomalies (volume MAD + ruptures, new patterns, sequence), `loglens compare`
-- [ ] 4.3 Anomaly evaluation on labeled Loghub data, honest precision/recall
-- [ ] 4.4 Synthetic planted-issue tests; checks, docs, commit
+- [x] 4.1 Recurring issues (lexical grouping; embeddings/HDBSCAN left out, D22), impact score doc, `loglens issues` with Pareto
+- [x] 4.2 Anomalies (volume MAD + ruptures, new patterns, rare transitions), `loglens anomalies`, `loglens compare`
+- [x] 4.3 Anomaly evaluation on labeled BGL (2k + full), honest precision/recall against baselines
+- [x] 4.4 Synthetic planted-issue tests; checks, docs, commit
 
 ## Phase 5: AI investigator and reports
 - [ ] 5.1 Investigator (function calling, read-only tools, citations validated, tool-call cap)

@@ -37,6 +37,7 @@ import pyarrow as pa
 
 from loglens.analysis.anomalies import find_anomalies, predictions_by_detector
 from loglens.analysis.issues import find_issues
+from loglens.analysis.timeseries import format_bucket
 from loglens.pipeline import ParseOptions, run_parse
 from loglens.store import connect
 
@@ -185,7 +186,7 @@ def evaluate(log: Path, workdir: Path, workers: int = 1) -> Evaluation:
     result.baselines["issue-candidate lines"] = score(candidate_lines, labels)
     result.baselines["random (base rate)"] = random_baseline(labels)
     if report.grid is not None:
-        result.notes.append(f"{report.grid.size} buckets of {report.grid.bucket}")
+        result.notes.append(f"{report.grid.size} buckets of {format_bucket(report.grid.bucket)}")
     result.seconds = time.perf_counter() - started
     return result
 

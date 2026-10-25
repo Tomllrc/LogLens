@@ -134,3 +134,61 @@ retries) the client switches to the next of `fallback_models` (default
 `gemini-3.5-flash-lite`) and says so under the token summary. The cache stays keyed by
 model: answers of different models are not interchangeable.
 
+
+## D21. Analysis runs in DuckDB, then pure Python on bounded aggregates
+
+`analysis/aggregates.py` is the only module with SQL; it returns per-template counts,
+bucketed series (at most 500 buckets: the bucket list goes up to 7 and 30 days so long
+stores stay bounded), transitions and capped evidence. Issues, anomalies and compare are
+pure functions of those, computed on demand (nothing is stored at parse time), so a
+scoring change never needs a re-parse and each rule is tested without a store.
+
+## D22. Issues: level first, keywords for unleveled logs, lexical merge
+
+A template is a candidate issue when it has WARN/ERROR/FATAL events, or UNKNOWN events
+and a failure keyword (`analysis/signals.yaml`, overridable with `--signals`); INFO-only
+templates never are, whatever their words. Candidates whose constant tokens have a
+Jaccard similarity >= 0.8 (both with >= 3 constant tokens) form one issue (union-find).
+Impact = FATAL 10, ERROR 5, WARN 1, keyword-UNKNOWN 2 per event; the Pareto "vital few"
+is the shortest prefix reaching 80% of impact. Embeddings/HDBSCAN were left out: a heavy
+dependency for a merge the lexical rule already explains.
+
+## D23. Detector rules, fixed before the evaluation
+
+Spike: robust z >= 5 (1.4826 x MAD, mean absolute deviation when the MAD is 0) and at
+least median + 3 events, on total, ERROR+FATAL and the 50 busiest templates. Spikes are
+scored by excess events over the median: with sparse series the z-score saturates and
+could not rank anything. Level shift: ruptures PELT (l2, penalty 3 log(n) sigma^2, sigma
+from first differences), kept when the segment *medians* differ by >= 2x with segments
+of >= 3 buckets (medians keep a lone spike from posing as a new level). New pattern:
+first seen after the first 20% of the span (or `--baseline-until`). Time detectors need
+>= 20 buckets.
+
+## D24. A rare transition needs an expected successor
+
+Within a file, a -> b is flagged when P(b|a) < 0.001, a has >= 100 transitions, *and*
+a's most frequent successor takes >= 90% of them. Without the last rule, every low-rate
+template in randomly interleaved traffic is a "rare successor" of everything (the clean
+twin of the planted scenario raised false alarms); with it, only broken sequences
+(job steps, protocol exchanges) count.
+
+## D25. Compare matches issues through templates and tests rates
+
+Template ids are content hashes, so they match across stores; templates generalized
+differently by two runs fall back to the lexical rule. An issue has changed when its
+rate per hour differs >= 2x and an exact Poisson rate test (conditional binomial,
+scipy) gives p < 0.01. Without timestamps on a side, raw counts are compared (noted).
+
+## D26. ruptures, numpy and scipy are base dependencies
+
+Chosen over a hand-written change-point detector for a tested PELT. mypy does not follow
+numpy/scipy (their stubs use 3.12 syntax while mypy targets 3.11) and ignores ruptures'
+missing stubs; the few call sites are typed as Any.
+
+## D27. Anomaly evaluation protocol
+
+`benchmarks/anomaly_eval.py` removes BGL's label column before parsing, scores flagged
+lines per detector and combined, and always prints three baselines (ERROR/FATAL lines,
+issue-candidate lines, random at the base rate). Thresholds were frozen (commit a11d907)
+before the first run and are not tuned to the labels; the results are reported as they
+come, including where a baseline wins.

@@ -124,3 +124,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - Gentler retries: 3 by default (was 5), and at least 10 s after a 5xx, because every failed attempt counts against the daily quota.
   - The token summary names the models that actually answered. Automatic function calling is always disabled (it silences an SDK warning; LogLens runs tools itself).
   - 7 new tests (1,056 total).
+- Phase 4: analysis without AI.
+  - `loglens issues`: candidate templates (WARN/ERROR/FATAL, or UNKNOWN with a failure keyword from `analysis/signals.yaml`, `--signals` to override) grouped into issues by lexical similarity (Jaccard >= 0.8 on constant tokens), ranked by impact (FATAL 10, ERROR 5, WARN 1, keyword-UNKNOWN 2 per event) with a Pareto "vital few" (80% of impact), persistence, files, components and first/middle/last evidence lines.
+  - `loglens anomalies`: volume spikes (robust z >= 5 and >= median + 3, on total, ERROR+FATAL and the 50 busiest templates; scored by excess events), level shifts (ruptures PELT, segment medians >= 2x apart), new patterns (after the first 20% of the span or `--baseline-until`), rare transitions (a broken predictable sequence: P(b|a) < 0.001 where a's usual successor takes >= 90%). Automatic buckets (<= 500, from 1 s to 30 days), `--bucket`, `--kind`, `--since/--until`.
+  - `loglens compare BASELINE TARGET` or `compare STORE --split T`: new, gone and changed issues (rate per hour >= 2x and exact Poisson test p < 0.01), matched by template id then lexically; error rate on both sides.
+  - Every command prints a Rich view or `--json` (`analysis.model.jsonable`); errors exit 1 with one line.
+  - `analysis/aggregates.py` is the only SQL: bounded DuckDB aggregates; the rest are pure, unit-tested functions.
+  - Planted-issue scenario generator (`tests/fixtures/make_analysis_fixtures.py`) with end-to-end tests: all planted problems found at the right time, a clean twin raises nothing, free text and JSON give the same analysis.
+  - `benchmarks/anomaly_eval.py`: precision/recall/F1 per detector on labeled BGL (labels removed before parsing), against ERROR/FATAL, issue-candidate and random baselines; `--full` downloads the 4.7M-line BGL log. Results in `benchmarks/ANOMALY_RESULTS.md`, discussion in `docs/analysis.md`.
+  - New dependency: `ruptures` (brings numpy and scipy). Docs: `docs/analysis.md`, decisions D21-D27.
+  - `pythonpath = ["."]` in the pytest config: tests importing `tests.<module>` failed to collect under plain `uv run pytest`.
