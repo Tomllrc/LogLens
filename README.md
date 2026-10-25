@@ -13,7 +13,7 @@
 </div>
 
 > [!NOTE]
-> LogLens is in active early development. Ingestion, record splitting, and format detection are implemented and tested. Parsing, analysis, and the AI investigator are next. See [Project status](#project-status).
+> LogLens is in active development. The full pipeline works today from the command line: parsing any log into one event table, AI-taught formats, recurring issues, anomaly detection and run-to-run comparison. The AI investigator, incident reports, HTTP API and web dashboard are next. See [Project status](#project-status).
 
 ---
 
@@ -62,7 +62,13 @@ flowchart LR
    - parsers for known formats. Structured ones (JSON, logfmt, CSV, XML) map their fields automatically. Text formats are declared in YAML, one file per format ([`src/loglens/parsers/patterns/`](src/loglens/parsers/patterns)): a regex with named groups, timestamp hints, a level mapping, and sample lines that double as tests. Adding a format needs no Python code;
    - a generic parser that extracts timestamps and levels, masks variables (IDs, IPs, numbers), and mines message templates with the [Drain](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf) algorithm;
    - an AI-taught parser: for an unknown format, a language model proposes a parser as a YAML plugin, which is validated against the file before it is used.
-5. **Analyze.** Clusters recurring issues, detects anomalies, and produces incident reports. The AI investigator answers questions with citations back to source lines.
+5. **Store.** Events are written as Parquet (one folder per source file) with a DuckDB catalog of templates, files and warnings, so any question is one SQL query away (`loglens query`).
+6. **Analyze.** Works only on the unified table, so it behaves the same on every format:
+   - **recurring issues**: warning and error templates (or, in logs without levels, templates with failure words), merged when Drain split one problem in two, ranked by an explicit impact score with the Pareto "vital few";
+   - **anomalies**: volume spikes (robust z-score on the median and MAD), level shifts (change points with [ruptures](https://centre-borelli.github.io/ruptures-docs/)), patterns that first appear late, and broken sequences (a step that is almost always followed by the same next step, until once it isn't);
+   - **compare**: new, gone and changed issues between two runs or two periods, with a Poisson rate test so that 1 → 3 events isn't news but 5 → 60 is.
+
+   Every finding cites the `file:line` of its evidence. Rules and thresholds: [docs/analysis.md](docs/analysis.md). Next: an AI investigator that answers questions with citations, and incident reports.
 
 ### The unified event
 
@@ -95,14 +101,16 @@ Every event, from any source, has the same shape:
 | Unified event table (Parquet + DuckDB), `loglens parse` and `loglens query` | ✅ Done |
 | Format plugins (`loglens formats list/test/new`) and AI-taught formats (`loglens learn`) | ✅ Done |
 | Analysis: recurring issues, anomalies, compare (`loglens issues/anomalies/compare`), evaluated on labeled BGL | ✅ Done |
-| Incident reports | Planned |
-| AI investigator with cited answers | Planned |
-| CLI, HTTP API, web dashboard | Partial: the CLI works |
+| Command-line interface (`parse`, `query`, `detect`, `issues`, `anomalies`, `compare`, `learn`, `formats`, `doctor`) | ✅ Done |
+| AI investigator with cited answers | Next |
+| Incident reports (Markdown / HTML) | Next |
+| HTTP API and web dashboard | Planned |
 
 ## Benchmarks
 
 **Loghub** ([16 public datasets](https://github.com/logpai/loghub), 2,000 lines each, with ground-truth templates), full pipeline, no per-dataset tuning: average **grouping accuracy 75.8%**, parsing accuracy 33.4%, timestamps found on 100% of lines, about **23,000 lines/s per worker**. Per-dataset table: [benchmarks/RESULTS.md](benchmarks/RESULTS.md); what failed and what was fixed: [benchmarks/ANALYSIS.md](benchmarks/ANALYSIS.md).
 
+**Anomaly detection on labeled BGL** (4.7M lines, labels removed before parsing, thresholds fixed before the first run): reported honestly, the detectors (F1 14.7%) lose to the simplest baseline, flagging every ERROR/FATAL line (F1 52.2%), because BGL labels individual lines and those lines carry the log's own FATAL level, while the detectors are built to say *when* something changed. Numbers: [benchmarks/ANOMALY_RESULTS.md](benchmarks/ANOMALY_RESULTS.md); discussion: [docs/analysis.md](docs/analysis.md#evaluation-on-labeled-data-bgl).
 
 Text-format parsing (regex match, field mapping, level normalization, event construction), measured with [`benchmarks/bench_text_formats.py`](benchmarks/bench_text_formats.py) on one core of a laptop, Python 3.13:
 
@@ -128,6 +136,77 @@ cd LogLens
 uv sync
 uv run loglens --version
 ```
+
+### Find what went wrong in 24 hours of logs
+
+The repository can generate a realistic test case: 24 hours of a web app and a job worker (13,047 lines, plain text, no format declared) with five planted problems. LogLens isn't told what they are.
+
+```bash
+uv run python tests/fixtures/make_analysis_fixtures.py data/demo   # writes data/demo/scenario-text/
+uv run loglens parse data/demo/scenario-text -o out                # 13,047 events, 13 templates, 0.6 s
+uv run loglens issues out
+uv run loglens anomalies out
+```
+
+`loglens issues` ranks recurring problems by impact. The two variants of the connection error ("refused by peer" and "refused by remote peer") are merged into one issue:
+
+```text
+  #   Impact   Share   Cum.   Events   First seen            Last seen             Issue
+  1    1,120   40.5%    41%      224   2026-03-01 00:00:13   2026-03-01 23:00:13   Payment gateway timeout after <DURATION>
+  2      900   32.6%    73%      180   2026-03-01 18:00:23   2026-03-01 23:58:23   Disk quota exceeded on volume <PATH>
+  3      600   21.7%    95%      120   2026-03-01 00:00:17   2026-03-01 23:48:17   Connection to <IP> refused by peer (+1 similar)
+  4      144    5.2%   100%      144   2026-03-01 00:00:07   2026-03-01 23:50:07   Cache miss rate high for region <*>
+
+3 of 4 issues account for 95% of impact (bold rows).
+```
+
+`loglens anomalies` finds the other planted problems at the right time, each with the line to look at (abridged):
+
+```text
+2026-03-01 00:00:00 -> 2026-03-01 23:59:30, 288 buckets of 5m
+Spike        06:30:00   Payment gateway timeout after <DURATION>: 200 in one 5m bucket (median 0)   app.log:3964
+Level shift  12:00:00   total volume x2.7 down (64 -> 24 per 5m)                                     app.log:7545
+Level shift  18:00:00   ERROR volume x6.0 up (0 -> 3 per 5m)                                         app.log:8405
+New pattern  18:00:23   Disk quota exceeded on volume <PATH> (180 events)                            app.log:8407
+Rare transition 18:00:01  'Job <NUM> step load skipped from cache' after 'Job <NUM> started on
+                          worker pool' (1 of 1,200; usually 'Job <NUM> step load done')               worker.log:2702
+```
+
+The same scenario written as JSON lines gives the same analysis, and a clean twin without the planted problems raises no spike, level shift or rare transition (both are checked in the test suite). Two runs or two periods can be compared:
+
+```bash
+uv run loglens compare out --split 2026-03-01T12:00:00Z    # before noon vs after
+uv run loglens compare yesterday/ today/                   # two parse runs
+```
+
+```text
+New issues
+  Before/h   After/h   Ratio       p   Issue
+       0.0      15.0       -       -   Disk quota exceeded on volume <PATH>
+Changed issues
+      17.7       1.0   x17.7   2e-48   Payment gateway timeout after <DURATION>
+
+Baseline: 9,344 events, 2.9% errors. Target: 3,703 events, 6.8% errors.
+```
+
+Every analysis command also takes `--json`, and `--since` / `--until` to narrow the window.
+
+### Query events with SQL
+
+The event table is plain Parquet behind a DuckDB view named `events`:
+
+```bash
+uv run loglens query out "SELECT level, count(*) AS n FROM events GROUP BY level ORDER BY n DESC"
+```
+
+```text
+  level   n
+  INFO    12379
+  ERROR   524
+  WARN    144
+```
+
+From Python, `loglens.store.connect("out")` returns a read-only DuckDB connection with the same view.
 
 ### Detect the format of every file
 
@@ -162,31 +241,34 @@ AI features need the optional extra (`uv sync --extra ai`) and a free [Gemini AP
 
 ### Use the pipeline from Python
 
-The `parse` command is not wired up yet, but the implemented stages can already be used as a library:
+Everything the CLI does is available as a library:
 
 ```python
-from loglens.ingest import iter_lines
-from loglens.split import SplitReport, iter_records
+from pathlib import Path
 
-report = SplitReport()
-for record in iter_records(iter_lines("logs.tar.gz"), report=report):
-    print(
-        f"{record.source_file}:{record.line_start}-{record.line_end}",
-        record.text.splitlines()[0][:48],
-    )
+from loglens.analysis.issues import find_issues
+from loglens.pipeline import run_parse
+from loglens.store import connect
 
-print(report.signatures)
+if __name__ == "__main__":  # parsing uses a process pool
+    run_parse(["data/demo/scenario-text"], Path("out"))
+
+    conn = connect(Path("out"))  # read-only DuckDB connection
+    for issue in find_issues(conn).issues[:2]:
+        first = issue.evidence[0]
+        print(f"{issue.impact:>6.0f}  {issue.title}  ({first.source_file}:{first.line_start})")
+
+    sql = "SELECT level, count(*) FROM events GROUP BY level ORDER BY 2 DESC"
+    print(conn.execute(sql).fetchall())
 ```
 
 ```text
-logs.tar.gz!/logs/app.log:1-1 2026-03-14 09:12:01,114 INFO  [main] c.a.OrderSe
-logs.tar.gz!/logs/app.log:2-7 2026-03-14 09:12:01,532 ERROR [main] c.a.OrderSe
-logs.tar.gz!/logs/app.log:8-8 2026-03-14 09:12:02,007 WARN  [main] c.a.OrderSe
-logs.tar.gz!/logs/payments.json.gz:1-1 {"ts":"2026-03-14T09:12:03Z","level":"error","ms
-{'logs.tar.gz!/logs/app.log': 'timestamp', 'logs.tar.gz!/logs/payments.json.gz': 'json'}
+  1120  Payment gateway timeout after <DURATION>  (data/demo/scenario-text/app.log:4)
+   900  Disk quota exceeded on volume <PATH>  (data/demo/scenario-text/app.log:8407)
+[('INFO', 12379), ('ERROR', 524), ('WARN', 144)]
 ```
 
-The six-line Java stack trace (lines 2–7) comes out as one record. The gzip file nested inside the tarball is read transparently. Each file got its own record-start rule.
+Each stage can also be used alone, lazily: `loglens.ingest.iter_lines()` → `loglens.split.iter_records()` → `loglens.detect.iter_detected()`.
 
 ## Design principles
 
@@ -211,13 +293,17 @@ src/loglens/
 ├── ingest/     files, folders, archives, stdin, encodings → lines
 ├── split/      lines → multi-line records
 ├── detect/     format detection
-├── parsers/    known-format, generic (Drain), AI-taught parsers
-├── schema/     the unified event schema
-├── analysis/   recurring issues, anomalies, incident reports
-├── ai/         plain-language investigator
-├── api/        HTTP API
-└── cli.py      `loglens` command
+├── parsers/    known-format, generic (Drain), YAML text formats, masking, template mining
+├── schema/     the unified event schema, level normalization
+├── pipeline/   orchestration: ingest → split → detect → parse, one worker process per input
+├── store/      Parquet writer and the DuckDB catalog
+├── analysis/   recurring issues, anomalies, compare (aggregates.py is the only SQL)
+├── ai/         LLM interface (Gemini, fake client for tests), AI format learner
+├── api/        HTTP API (planned)
+└── cli/        `loglens` commands, one module per command group
 ```
+
+Design notes: [docs/analysis.md](docs/analysis.md) (analysis rules), [docs/ai-parser.md](docs/ai-parser.md) (AI-taught formats), [docs/decisions.md](docs/decisions.md) (every judgment call, with its reason).
 
 Changes are tracked in [CHANGELOG.md](CHANGELOG.md).
 

@@ -111,4 +111,38 @@ The overall line gives events and the ERROR+FATAL share on each side.
 See `benchmarks/ANOMALY_RESULTS.md` for the latest numbers, produced by
 `uv run python -I benchmarks/anomaly_eval.py [--full]`.
 
-EVALUATION_PLACEHOLDER
+BGL (Blue Gene/L supercomputer, Loghub) labels each line as an alert or not. The labels
+are stripped before parsing, so LogLens sees an ordinary log. Thresholds were frozen
+before the first run (D27). Run of 2026-10-25, commit `e6d8188`:
+
+| Method | BGL_2k F1 % | Full BGL (4.7M lines) P / R / F1 % |
+|---|---:|---:|
+| spike | 11.8 | 8.0 / 87.0 / 14.7 |
+| new_pattern | 9.3 | 13.2 / 0.0 / 0.0 |
+| rare_transition | 0.0 | 10.3 / 0.2 / 0.4 |
+| all detectors | 12.4 | 8.0 / 87.2 / 14.7 |
+| baseline: ERROR/FATAL lines | 53.2 | 35.3 / 100.0 / 52.2 |
+| baseline: issue-candidate lines | 50.6 | 31.1 / 100.0 / 47.4 |
+| baseline: random (base rate) | 7.1 | 7.3 / 7.3 / 7.3 |
+
+**What this says, plainly.** On this benchmark the anomaly detectors lose to the
+simplest baseline: flagging every ERROR/FATAL line has three times their precision and
+full recall. The detectors beat random only modestly (spike precision 8.0% against a
+7.3% base rate; rare transitions 10.3%).
+
+**Why.** BGL's labels are *per line* and follow the log's own severity: almost every
+alert line is FATAL or FAILURE, which the level baseline reads directly. The time-based
+detectors answer a different question, *when* something unusual happened, and the
+benchmark has to turn that into lines: BGL spans 215 days, so buckets are one day wide
+and a spike flags every event of a template on that day, alerts and normal lines alike
+(3.5M false positives). New patterns flag only a template's first event, so their
+recall is near zero by construction. BGL is also not built for sequence anomalies: its
+alerts are bursts of the same messages, not broken sequences.
+
+**What it means for LogLens.** The level-based issues view (`loglens issues`) is the
+right first answer when the log has trustworthy levels, and it already uses them.
+Anomalies add *when* and *what changed* (a burst, a new error, a log that went quiet,
+a skipped step), which the planted scenario checks end to end and which level filtering
+alone cannot say. A benchmark with incident-level labels (a time window per incident)
+would measure that better than line labels. The thresholds were not tuned to improve
+these numbers, by design (D27).

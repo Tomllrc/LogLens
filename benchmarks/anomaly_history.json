@@ -71,5 +71,144 @@
         }
       }
     ]
+  },
+  {
+    "date": "2026-10-25T23:15:45+00:00",
+    "commit": "e6d8188",
+    "label": "BGL_2k + full BGL",
+    "results": [
+      {
+        "name": "BGL_2k.log",
+        "lines": 2000,
+        "positives": 143,
+        "seconds": 2.29,
+        "detectors": {
+          "spike": {
+            "tp": 97,
+            "fp": 1410,
+            "fn": 46,
+            "precision": 0.0644,
+            "recall": 0.6783,
+            "f1": 0.1176
+          },
+          "new_pattern": {
+            "tp": 9,
+            "fp": 42,
+            "fn": 134,
+            "precision": 0.1765,
+            "recall": 0.0629,
+            "f1": 0.0928
+          },
+          "rare_transition": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "all detectors": {
+            "tp": 105,
+            "fp": 1440,
+            "fn": 38,
+            "precision": 0.068,
+            "recall": 0.7343,
+            "f1": 0.1244
+          }
+        },
+        "baselines": {
+          "ERROR/FATAL lines": {
+            "tp": 143,
+            "fp": 252,
+            "fn": 0,
+            "precision": 0.362,
+            "recall": 1.0,
+            "f1": 0.5316
+          },
+          "issue-candidate lines": {
+            "tp": 143,
+            "fp": 279,
+            "fn": 0,
+            "precision": 0.3389,
+            "recall": 1.0,
+            "f1": 0.5062
+          },
+          "random (base rate)": {
+            "tp": 10.224499999999999,
+            "fp": 132.7755,
+            "fn": 132.7755,
+            "precision": 0.0715,
+            "recall": 0.0715,
+            "f1": 0.0715
+          }
+        }
+      },
+      {
+        "name": "BGL.log",
+        "lines": 4747963,
+        "positives": 348460,
+        "seconds": 241.25,
+        "detectors": {
+          "spike": {
+            "tp": 303045,
+            "fp": 3474840,
+            "fn": 45415,
+            "precision": 0.0802,
+            "recall": 0.8697,
+            "f1": 0.1469
+          },
+          "new_pattern": {
+            "tp": 29,
+            "fp": 190,
+            "fn": 348431,
+            "precision": 0.1324,
+            "recall": 0.0001,
+            "f1": 0.0002
+          },
+          "rare_transition": {
+            "tp": 697,
+            "fp": 6051,
+            "fn": 347763,
+            "precision": 0.1033,
+            "recall": 0.002,
+            "f1": 0.0039
+          },
+          "all detectors": {
+            "tp": 303713,
+            "fp": 3480514,
+            "fn": 44747,
+            "precision": 0.0803,
+            "recall": 0.8716,
+            "f1": 0.147
+          }
+        },
+        "baselines": {
+          "ERROR/FATAL lines": {
+            "tp": 348398,
+            "fp": 638671,
+            "fn": 62,
+            "precision": 0.353,
+            "recall": 0.9998,
+            "f1": 0.5217
+          },
+          "issue-candidate lines": {
+            "tp": 348460,
+            "fp": 773722,
+            "fn": 0,
+            "precision": 0.3105,
+            "recall": 1.0,
+            "f1": 0.4739
+          },
+          "random (base rate)": {
+            "tp": 25573.992804914444,
+            "fp": 322886.0071950856,
+            "fn": 322886.0071950856,
+            "precision": 0.0734,
+            "recall": 0.0734,
+            "f1": 0.0734
+          }
+        }
+      }
+    ]
   }
 ]

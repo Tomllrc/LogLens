@@ -134,3 +134,4 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - `benchmarks/anomaly_eval.py`: precision/recall/F1 per detector on labeled BGL (labels removed before parsing), against ERROR/FATAL, issue-candidate and random baselines; `--full` downloads the 4.7M-line BGL log. Results in `benchmarks/ANOMALY_RESULTS.md`, discussion in `docs/analysis.md`.
   - New dependency: `ruptures` (brings numpy and scipy). Docs: `docs/analysis.md`, decisions D21-D27.
   - `pythonpath = ["."]` in the pytest config: tests importing `tests.<module>` failed to collect under plain `uv run pytest`.
+- README brought up to date with the CLI as it is: a "find what went wrong" walkthrough on the planted-issue scenario (real `issues`, `anomalies`, `compare` and `query` output), a working library example, the analysis pipeline stages, the anomaly evaluation and the current package layout. `docs/analysis.md` gets its BGL evaluation section, with the full 4.7M-line BGL run.
