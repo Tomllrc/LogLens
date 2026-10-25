@@ -23,6 +23,8 @@ def test_no_built_in_format_claims_them(tmp_path: Path) -> None:
     assert summary.events == sum(len(load_records(EXOTIC / name)) for name in FILES)
     flagged = {Path(source).name for source, _, _ in low_confidence_sources(tmp_path / "out")}
     assert flagged == set(FILES)
+    # The summary agrees with the learning hint: these events are low confidence too.
+    assert summary.low_confidence_share == 1.0
 
 
 @pytest.mark.parametrize("name", FILES)

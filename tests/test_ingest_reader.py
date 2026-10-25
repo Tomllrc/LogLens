@@ -180,6 +180,22 @@ def test_exclude_prunes_directories(log_tree: Path) -> None:
     assert report.files_skipped == [FileIssue(_src(log_tree / "b" / "deep"), "excluded by pattern")]
 
 
+def test_exclude_with_trailing_slash_prunes_directories(log_tree: Path) -> None:
+    lines, report = _read(log_tree, exclude=("deep/",))
+    assert _texts(lines) == ["a1", "a2", "b1", "gz1"]
+    assert report.files_skipped == [FileIssue(_src(log_tree / "b" / "deep"), "excluded by pattern")]
+
+
+def test_exclude_with_trailing_slash_skips_archive_folders(tmp_path: Path) -> None:
+    archive = tmp_path / "bundle.zip"
+    with zipfile.ZipFile(archive, "w") as zf:
+        zf.writestr("app.log", "keep\n")
+        zf.writestr("old/app.log", "drop\n")
+        zf.writestr("old", "file named old\n")
+    lines, _ = _read(archive, exclude=("old/",))
+    assert sorted(_texts(lines)) == ["file named old", "keep"]
+
+
 def test_explicit_files_ignore_filters(log_tree: Path) -> None:
     lines, _ = _read(log_tree / "b" / "deep" / "c.txt", include=("*.log",), exclude=("*.txt",))
     assert _texts(lines) == ["c1"]

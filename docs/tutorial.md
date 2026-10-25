@@ -352,6 +352,8 @@ uv run loglens issues data/plc
 ```
 
 ```text
+  Low confidence           100.0%
+...
 Low confidence (0.54 over 1,796 events): tests/fixtures/exotic/plc_alarm.log
   teach LogLens this format: loglens learn tests/fixtures/exotic/plc_alarm.log
 
@@ -417,11 +419,11 @@ offline, and `--no-ai` turns AI off completely.
 uv run loglens parse /var/log -o data/mine           # a folder, read recursively
 uv run loglens parse logs.tar.gz -o data/mine        # archives, even nested ones
 cat app.log | uv run loglens parse - -o data/mine    # stdin
-uv run loglens parse logs/ -o data/mine --include "*.log" --exclude old --timezone Europe/Paris
+uv run loglens parse logs/ -o data/mine --include "*.log" --exclude "old/" --timezone Europe/Paris
 ```
 
-The last line reads only `*.log` files, skips any folder named `old`, and reads
-timestamps without a zone as Paris time.
+The last line reads only `*.log` files, skips any folder named `old` (a trailing `/`
+matches folders only), and reads timestamps without a zone as Paris time.
 
 Archives (`.gz`, `.bz2`, `.zip`, `.tar`) are opened on the fly, and binary files are
 skipped. The encoding is detected per file, and files larger than memory are streamed.
@@ -489,7 +491,7 @@ Written in Python 3.11+ with Polars, DuckDB, PyArrow, drain3, ruptures, Typer an
 
 ### Quality practices
 
-- **1,219 automated tests**, run by GitHub Actions on Python 3.11 and 3.12 for every
+- **1,231 automated tests**, run by GitHub Actions on Python 3.11 and 3.12 for every
   push, together with the linter (ruff) and strict type checking (mypy).
 - **Property-based tests** (Hypothesis) generate random inputs, and a fuzz test runs them
   through the whole pipeline.

@@ -9,6 +9,11 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 LOW_CONFIDENCE: Final = 0.5
 """Records parsed below this confidence are re-parsed by the generic parser."""
 
+LEARN_CONFIDENCE: Final = 0.6
+"""What users are told is low confidence: the parse summary counts events below it, and
+free-text sources whose average is below it are suggested for learning (one threshold, so
+the two never disagree)."""
+
 DEFAULT_WORKERS: Final = max(1, min(8, (os.cpu_count() or 2) - 1))
 
 

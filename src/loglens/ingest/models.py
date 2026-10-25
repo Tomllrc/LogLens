@@ -33,6 +33,8 @@ class IngestOptions:
     and against its basename. They filter files discovered inside folders and archives;
     paths given explicitly are always read. ``exclude`` also prunes whole directories and
     archives, while ``include`` only applies to text files (archives are always opened).
+    A pattern ending with ``/`` matches directories only (``old/``: anything under a
+    directory named ``old``).
 
     Lines longer than ``max_line_chars`` are yielded in several pieces sharing one line
     number, so a file without line breaks cannot exhaust memory.

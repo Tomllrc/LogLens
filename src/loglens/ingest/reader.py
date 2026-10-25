@@ -158,7 +158,7 @@ def _walk(root: Path, ctx: _Context) -> Iterator[Path]:
         kept = []
         for dirname in sorted(dirnames):
             dir_source = Path(dirpath, dirname).as_posix()
-            if ctx.is_excluded(dir_source):
+            if ctx.is_excluded(dir_source + "/"):  # trailing "/": a directory
                 ctx.skip(dir_source, "excluded by pattern")
             else:
                 kept.append(dirname)

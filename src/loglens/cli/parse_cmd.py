@@ -86,7 +86,11 @@ def parse(
     ] = None,
     exclude: Annotated[
         list[str] | None,
-        typer.Option("--exclude", "-x", help="Glob of files or folders to skip (repeatable)."),
+        typer.Option(
+            "--exclude",
+            "-x",
+            help="Glob of files or folders to skip (repeatable); a trailing / matches folders.",
+        ),
     ] = None,
     workers: Annotated[
         int, typer.Option("--workers", "-w", min=1, help="Parallel worker processes.")

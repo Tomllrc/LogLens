@@ -40,7 +40,7 @@ from loglens.parsers.mining import (
     literal_share,
     template_id,
 )
-from loglens.pipeline.options import LOW_CONFIDENCE, ParseOptions
+from loglens.pipeline.options import LEARN_CONFIDENCE, ParseOptions
 from loglens.pipeline.worker import Task, TaskResult, run_task
 from loglens.schema.events import EVENT_SCHEMA
 from loglens.schema.levels import ERROR_LEVELS
@@ -98,7 +98,7 @@ class ParseSummary:
 
     @property
     def low_confidence_share(self) -> float:
-        """Share of events parsed below the low-confidence threshold."""
+        """Share of events parsed below ``LEARN_CONFIDENCE``."""
         return self.low_confidence / self.events if self.events else 0.0
 
 
@@ -428,7 +428,7 @@ def _summarize_from_store(output_dir: Path, summary: ParseSummary) -> None:
             dict(connection.execute("SELECT level, count(*) FROM events GROUP BY level").fetchall())
         )
         summary.low_confidence = _scalar(
-            connection, f"SELECT count(*) FROM events WHERE parser_confidence < {LOW_CONFIDENCE}"
+            connection, f"SELECT count(*) FROM events WHERE parser_confidence < {LEARN_CONFIDENCE}"
         )
         summary.top_templates = connection.execute(
             "SELECT template, events FROM templates ORDER BY events DESC, template LIMIT 10"
@@ -445,10 +445,6 @@ def _summarize_from_store(output_dir: Path, summary: ParseSummary) -> None:
 def _scalar(connection: duckdb.DuckDBPyConnection, sql: str) -> int:
     row = connection.execute(sql).fetchone()
     return int(row[0]) if row else 0
-
-
-LEARN_CONFIDENCE: Final = 0.6
-"""Sources parsed by the generic parser below this average confidence are worth learning."""
 
 
 def low_confidence_sources(
