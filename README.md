@@ -15,6 +15,8 @@
 > [!NOTE]
 > LogLens is in active development. The full pipeline works today from the command line: parsing any log into one event table, AI-taught formats, recurring issues, anomaly detection and run-to-run comparison. The AI investigator, incident reports, HTTP API and web dashboard are next. See [Project status](#project-status).
 
+**New here? Read the [tutorial](docs/tutorial.md)**: why LogLens exists in two minutes, then a 10-minute hands-on investigation of a generated incident.
+
 ---
 
 ## Why LogLens
@@ -139,7 +141,7 @@ uv run loglens --version
 
 ### Find what went wrong in 24 hours of logs
 
-The repository can generate a realistic test case: 24 hours of a web app and a job worker (13,047 lines, plain text, no format declared) with five planted problems. LogLens isn't told what they are.
+The [tutorial](docs/tutorial.md) walks through this example step by step. In short: the repository can generate a realistic test case: 24 hours of a web app and a job worker (13,047 lines, plain text, no format declared) with five planted problems. LogLens isn't told what they are.
 
 ```bash
 uv run python tests/fixtures/make_analysis_fixtures.py data/demo   # writes data/demo/scenario-text/
