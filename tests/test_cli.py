@@ -106,6 +106,15 @@ def test_query_errors(tmp_path: Path) -> None:
     assert bad_sql.exit_code == 1 and "SQL error" in bad_sql.output
 
 
+def test_errors_are_not_wrapped_or_read_as_markup(tmp_path: Path) -> None:
+    """A long error with brackets prints verbatim on one line, whatever the width."""
+    odd_dir = tmp_path / ("logs[bold]" + "x" * 80)
+    odd_dir.mkdir()
+    result = runner.invoke(app, ["query", str(odd_dir), "SELECT 1"], env={"COLUMNS": "40"})
+    assert result.exit_code == 1
+    assert f"{odd_dir} is not a LogLens output directory" in result.output
+
+
 DETECT_FIXTURES = Path(__file__).parent / "fixtures" / "detect"
 WIDE = {"COLUMNS": "250"}  # keep Rich from folding long paths in the table
 

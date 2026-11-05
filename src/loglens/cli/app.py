@@ -27,8 +27,8 @@ def spinner_for(out: Console) -> str:
 
 
 def fail(message: str, code: int = 1) -> typer.Exit:
-    """Print an error and return the Exit to raise."""
-    console().print(f"[red]{message}[/red]")
+    """Print an error verbatim (no markup, no wrapping) and return the Exit to raise."""
+    console().print(message, style="red", markup=False, soft_wrap=True)
     return typer.Exit(code=code)
 
 
