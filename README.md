@@ -10,6 +10,10 @@
 ![mypy](https://img.shields.io/badge/types-mypy%20strict-2A6DB2)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
+<br>
+
+<img src="docs/media/loglens-linkedin-featured.png" alt="LogLens: any log in. Parse any format, unify every source into one event table, analyse recurring issues and anomalies." width="100%">
+
 </div>
 
 > [!NOTE]
@@ -42,20 +46,14 @@ LogLens takes a third route: **no configuration, no assumptions about the format
 
 ## How it works
 
-LogLens is a streaming pipeline. The key design rule is **universality**: only the parsers know about specific log formats. Everything after parsing sees one unified event schema, so analysis works the same on a syslog, a Kubernetes JSON log, or a format LogLens has never seen before.
+LogLens is a streaming pipeline in eight stages. The key design rule is **universality**: only the parsers know about specific log formats. Below the **format boundary**, everything sees one unified event schema, so analysis works the same on a syslog, a Kubernetes JSON log, or a format LogLens has never seen before.
 
-```mermaid
-flowchart LR
-    A["Files · folders<br/>archives · stdin"] --> B["1. Ingest"]
-    B --> C["2. Split records"]
-    C --> D["3. Detect format"]
-    D --> E["4. Parse"]
-    E --> F[("Unified events<br/>Parquet + DuckDB")]
-    F --> G["Analysis"]
-    F --> H["AI investigator"]
-    G --> I["CLI · API · Dashboard"]
-    H --> I
-```
+<p align="center">
+  <a href="docs/media/loglens-architecture.html"><img src="docs/media/loglens-architecture.png" alt="LogLens architecture. Format-aware stages: any log goes through 01 Ingest, 02 Split, 03 Detect (17 detectors, best score above 0.6 wins) and 04 Parse (known formats, generic parser with Drain, AI-taught formats). Then the format boundary: nothing below it knows a log format. 05 Unified event table with 16 columns, Parquet and DuckDB. Format-agnostic stages: 06 Analysis (shipped), 07 AI investigator (next), 08 Interface." width="100%"></a>
+</p>
+
+> [!TIP]
+> **Interactive version:** [`docs/media/loglens-architecture.html`](docs/media/loglens-architecture.html). Open it in a browser after cloning: the pipeline animates, and clicking any stage, parse strategy, detector or table column opens an inspector with how it works, real numbers, source files, design decisions and commands to try.
 
 1. **Ingest.** Opens every input and streams its lines lazily. Archives are recognized by their content (magic bytes), not their file extension, and unpacked on the fly. Members get traceable names like `logs.tar.gz!/app/server.log`. Binary files are detected and skipped. The encoding is detected per file (BOMs, UTF-16, UTF-8, legacy code pages). Memory stays constant regardless of file size.
 2. **Split records.** Learns, per file, what the start of a record looks like (a timestamp, a level token, a JSON object, a bracketed prefix) by scoring candidates on a sample. Continuation lines such as `at com.acme…`, `Caused by:`, `Traceback`, or indented JSON are attached to the record they belong to.
@@ -64,13 +62,15 @@ flowchart LR
    - parsers for known formats. Structured ones (JSON, logfmt, CSV, XML) map their fields automatically. Text formats are declared in YAML, one file per format ([`src/loglens/parsers/patterns/`](src/loglens/parsers/patterns)): a regex with named groups, timestamp hints, a level mapping, and sample lines that double as tests. Adding a format needs no Python code;
    - a generic parser that extracts timestamps and levels, masks variables (IDs, IPs, numbers), and mines message templates with the [Drain](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf) algorithm;
    - an AI-taught parser: for an unknown format, a language model proposes a parser as a YAML plugin, which is validated against the file before it is used.
-5. **Store.** Events are written as Parquet (one folder per source file) with a DuckDB catalog of templates, files and warnings, so any question is one SQL query away (`loglens query`).
-6. **Analyze.** Works only on the unified table, so it behaves the same on every format:
+5. **Unified event table.** Events are written as Parquet (one folder per source file) with a DuckDB catalog of templates, files and warnings, so any question is one SQL query away (`loglens query`). This is the format boundary: from here on, no code knows what a log looked like.
+6. **Analysis.** Works only on the unified table, so it behaves the same on every format:
    - **recurring issues**: warning and error templates (or, in logs without levels, templates with failure words), merged when Drain split one problem in two, ranked by an explicit impact score with the Pareto "vital few";
    - **anomalies**: volume spikes (robust z-score on the median and MAD), level shifts (change points with [ruptures](https://centre-borelli.github.io/ruptures-docs/)), patterns that first appear late, and broken sequences (a step that is almost always followed by the same next step, until once it isn't);
    - **compare**: new, gone and changed issues between two runs or two periods, with a Poisson rate test so that 1 → 3 events isn't news but 5 → 60 is.
 
-   Every finding cites the `file:line` of its evidence. Rules and thresholds: [docs/analysis.md](docs/analysis.md). Next: an AI investigator that answers questions with citations, and incident reports.
+   Every finding cites the `file:line` of its evidence. Rules and thresholds: [docs/analysis.md](docs/analysis.md).
+7. **AI investigator** *(next)*. Plain-language questions answered through function calling over read-only tools on the event store. Every citation is validated against the store before the answer is shown. Incident reports in Markdown and HTML come with it.
+8. **Interface.** The `loglens` CLI today (Typer + Rich, a thin layer over the library); an HTTP API and a web dashboard are planned.
 
 ### The unified event
 
@@ -96,7 +96,7 @@ Every event, from any source, has the same shape:
 |---|---|
 | Ingestion: files, folders, archives, stdin, encodings, streaming | ✅ Done |
 | Record splitting: stack traces, multi-line JSON and SQL | ✅ Done |
-| Format detection: 12 formats, per-file scores, `loglens detect` | ✅ Done |
+| Format detection: 17 detectors (JSON, XML, prefix + JSON, logfmt, CSV, 11 YAML text formats, free text), per-file scores, `loglens detect` | ✅ Done |
 | Parsers for structured formats: JSON, prefix + JSON, CSV/TSV, logfmt, XML, with automatic field mapping | ✅ Done |
 | Parsers for 11 text formats declared in YAML: syslog, Apache/Nginx, log4j, Python, Go, journald, Windows events | ✅ Done |
 | Generic parser, variable masking, Drain template mining, normalization | ✅ Done |
