@@ -75,7 +75,21 @@ All five planted problems are found. The same scenario written as JSON lines giv
 
 LogLens is one streaming pipeline: any format in, one event schema out. The key design rule is a **format boundary**. Only the four stages above the line know what a log looks like. Everything below works on the unified table, so analysis behaves the same on a syslog, a Kubernetes JSON log, or a format LogLens has never seen.
 
-![LogLens architecture: eight stages, with a format boundary between the format-aware stages and the format-agnostic ones](docs/media/loglens-architecture.png)
+```mermaid
+flowchart LR
+    subgraph A["Format-aware: only these stages know what a log looks like"]
+        direction LR
+        IN["Files · folders<br/>archives · stdin"] --> I["1. Ingest"] --> S["2. Split"] --> D["3. Detect"] --> P["4. Parse"]
+    end
+    P --> T[("5. Unified events<br/>Parquet + DuckDB")]
+    subgraph B["Format-agnostic: reads only the unified table"]
+        direction LR
+        T --> AN["6. Analysis<br/>issues · anomalies · compare"]
+        T --> AI["7. AI investigator<br/>(next)"]
+        AN --> UI["8. CLI · API · dashboard"]
+        AI --> UI
+    end
+```
 
 **Above the boundary, format-aware:**
 

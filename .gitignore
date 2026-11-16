@@ -31,3 +31,6 @@ data/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Presentation visuals kept locally only
+docs/media/
