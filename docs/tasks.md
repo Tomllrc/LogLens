@@ -1,7 +1,7 @@
 # Task list
 
-Working list for completing LogLens (phases 1 to 7). Updated as work progresses, so it
-survives context resets together with the "Current status" section of `CLAUDE.md`.
+Working list for completing LogLens (phases 1 to 7). Updated as work progresses; the
+"Current status" section of `CLAUDE.md` gives the summary.
 Legend: `[x]` done, `[~]` in progress, `[ ]` to do.
 
 ## Phase 1: Template mining and the full parse pipeline

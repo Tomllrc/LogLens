@@ -47,7 +47,7 @@ Every stage after parsing sees only the **unified event schema**. Analysis code 
 - **LLM provider: Gemini via google-genai** (free tier). Key only from `GEMINI_API_KEY` (gitignored `.env`); model from `LOGLENS_LLM_MODEL`; business logic depends only on the `ai/llm.py` interface (`GeminiClient`, `FakeClient` for tests; CI never calls the real API).
 - Typer and Rich for the CLI
 - pytest (+ pytest-cov, hypothesis), ruff, mypy (strict on `src/`)
-- src layout: `src/loglens/`, with one subpackage per pipeline stage: `ingest`, `split`, `detect`, `parsers`, `schema`, `store` (Parquet + DuckDB), `pipeline` (orchestration), `analysis`, `ai`, `api`; the CLI is the `loglens/cli/` package (one module per command group, thin layer)
+- src layout: `src/loglens/`, with one subpackage per pipeline stage: `ingest`, `split`, `detect`, `parsers`, `schema`, `store` (Parquet + DuckDB), `pipeline` (orchestration), `analysis`, `ai` (`api` is added with the HTTP API in Phase 6); the CLI is the `loglens/cli/` package (one module per command group, thin layer)
 - CI: GitHub Actions (`.github/workflows/ci.yml`) runs ruff, mypy, and pytest with coverage on Python 3.11 and 3.12
 
 ## Coding rules

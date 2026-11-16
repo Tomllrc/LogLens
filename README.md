@@ -311,7 +311,6 @@ src/loglens/
 ├── store/      Parquet writer and the DuckDB catalog
 ├── analysis/   recurring issues, anomalies, compare (aggregates.py is the only SQL)
 ├── ai/         LLM interface (Gemini, fake client for tests), AI format learner
-├── api/        HTTP API (planned)
 └── cli/        `loglens` commands, one module per command group
 ```
 
